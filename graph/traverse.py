@@ -12,7 +12,8 @@ python is so concise, rich builtin makes coding consise and easier to remember
 use python builtin function set(), set.add(el)
 use python list as a stack to store vertex to be visited, list.pop(), list.extend(set1)
   list.extend(list1): Extend the list by appending all the items in the given list; equivalent to a[len(a):] = L.
-           
+
+refer to       
 '''
 
 graph = {'A': set(['B', 'C']),
