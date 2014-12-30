@@ -13,7 +13,10 @@ use python builtin function set(), set.add(el)
 use python list as a stack to store vertex to be visited, list.pop(), list.extend(set1)
   list.extend(list1): Extend the list by appending all the items in the given list; equivalent to a[len(a):] = L.
 
-refer to       
+refer to  
+
+to recall, think of a set for visited vertex and a stack to store nodes to be visited in DFS
+or a queue to store nodes to be visited in BFS     
 '''
 
 graph = {'A': set(['B', 'C']),
@@ -22,6 +25,22 @@ graph = {'A': set(['B', 'C']),
          'D': set(['B']),
          'E': set(['B', 'F']),
          'F': set(['C', 'E'])}
+
+def dfsy_path(graph,start,end): 
+   
+    stack = [(start,[start])]
+   
+    while stack:
+        (v,path) = stack.pop()
+        for n in graph[v] - set(path):
+            #visit v
+            if  n == end:
+                yield path + [n]
+            else:
+                stack.append((n,path + [n]))
+            
+    
+
 def dfs(graph, start):
     visited, stack = set(), [start]
     while stack:

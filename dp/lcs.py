@@ -134,8 +134,8 @@ def lcsTable( A, B ):
           m[x][y] = max( m[x][y - 1], m[x - 1][y] )
  
     return m
- 
- 
+ # Add __repr__ overload method for printing objects
+
  
 #=======================================================================
 # Extract an actual LCS from the length table, which effectively
