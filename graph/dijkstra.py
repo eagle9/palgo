@@ -3,6 +3,7 @@ Created on Dec 29, 2014
 
 @author: XY1267
 
+http://stackoverflow.com/questions/22897209/dijkstras-algorithm-in-python
                A
            5  3  12  5
         B 1   D    E   F 
