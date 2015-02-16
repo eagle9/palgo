@@ -20,14 +20,14 @@ def grow_cluster(i,j):
     if (i < 0 or i >= ROWS): return 0
     if (j < 0 or j >= COLS): return 0
     if (a[i][j] == 1 and not used[i][j]):
-            used[i][j]= True
-            grow_cluster(i-1,j) # //up
-            grow_cluster(i+1,j) # //down
-            grow_cluster(i,j-1) #//left
-            grow_cluster(i,j+1) # //right
-            return 1
+        used[i][j]= True
+        grow_cluster(i-1,j) # //up
+        grow_cluster(i+1,j) # //down
+        grow_cluster(i,j-1) #//left
+        grow_cluster(i,j+1) # //right
+        return 1
     else:  #  //white or already counted in some previous found cluster
-            return 0
+        return 0
 
 def demo():
     count = 0

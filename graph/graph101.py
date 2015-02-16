@@ -3,6 +3,7 @@ Created on Jan 2, 2015
 
 @author: XY1267
 '''
+''' adjacency list representation '''
 class Vertex:
     def __init__(self,key):
         self.id = key
@@ -12,7 +13,7 @@ class Vertex:
         self.connectedTo[nbr] = weight
 
     def __str__(self):
-        return str(self.id) + ' connectedTo: ' + str([x.id for x in self.connectedTo])
+        return s(self.id) + ' connectedTo: ' + s([x.id for x in self.connectedTo])
 
     def getConnections(self):
         return self.connectedTo.keys()
@@ -22,7 +23,7 @@ class Vertex:
 
     def getWeight(self,nbr):
         return self.connectedTo[nbr]
-
+''' graph is represented by a master dictionary of vertices '''
 class Graph:
     def __init__(self):
         self.vertList = {}

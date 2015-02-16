@@ -9,7 +9,7 @@ Created on Dec 31, 2014
    3
 '''
 #Definition for a  binary tree node
-class TreeNode:
+class TreeNode1:
     def __init__(self, x):
         self.val = x
         self.__val2 = x
@@ -48,7 +48,7 @@ class Solution:
     def createTree(self,list,start,end):
         if (start > end ): return None
         mid = (start + end)/2
-        root = TreeNode(mid)
+        root = TreeNode1(mid)
         root.left = self.createTree(list,start,mid-1)
         root.right= self.createTree(list, mid+1, end)
         return root
@@ -56,7 +56,7 @@ class Solution:
 
 n = {}
 for i in range(1,4):
-    n[i] = TreeNode(i)
+    n[i] = TreeNode1(i)
 for i in range(1,4):
     print n[i].val
 

@@ -15,7 +15,7 @@ def toStr(n,base):
         n = n // base
     res = ""
     while stack:
-        res = res + str(stack.pop())
+        res = res + s(stack.pop())
     return res
 
 def toStr2(n,base):

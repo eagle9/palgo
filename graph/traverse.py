@@ -17,6 +17,8 @@ refer to
 
 to recall, think of a set for visited vertex and a stack to store nodes to be visited in DFS
 or a queue to store nodes to be visited in BFS     
+
+graph is represented by a master dictionary key by vertex
 '''
 
 graph = {'A': set(['B', 'C']),
