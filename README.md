@@ -1,6 +1,6 @@
 Algorithms in Python
 ==========================
-- My effort to build algorithms repository in python
+- Algorithms in python
 - Python's rich builtin and terse syntax enables you to write concise code, which is easy to understand and remember
 
 
