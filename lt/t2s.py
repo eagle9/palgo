@@ -16,14 +16,28 @@ class Solution:
         for i in range(len(array)):
             r = target - array[i]
             if r in position0: 
-                return ( position0[r] + 1, i + 1)
+                return ( position0[r], i)
             else: 
                 position0[array[i]] = i
         return None
                 
 
-nums = [2,7,3,4]
+num_list = [2,7,3,4]
  
-c = Solution()
-print c.twoSum(nums,9)   
-print c.twoSum2(nums,7)
+sol = Solution()
+print sol.twoSum(num_list,9)   
+print sol.twoSum2(num_list,7)
+
+'''
+no 167 Two Sum
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+Example:
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+
+'''
