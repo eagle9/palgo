@@ -29,6 +29,7 @@ class Solution(object):
         """
         :type words: List[str]
         :rtype: List[str]
+	similar to my initial idea, but better use of set and python built in functions. The improved version beats 59%
         """
         rs = map(set, ['qwertyuiop','asdfghjkl','zxcvbnm'])
         ans = []
