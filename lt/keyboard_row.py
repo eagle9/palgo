@@ -40,3 +40,19 @@ class Solution(object):
                 ans.append(word)
         return ans
 
+    def findWords3(self, words):
+        """
+        :type words: List[str]
+        :rtype: List[str]
+	similar to my initial idea, but better use of set and python built in functions. The improved version beats 59%
+	my own implementation, note any([wset <= row for row in ref]). I put [] notation around the list comprehension expression
+        """
+
+	ref = map(set,['qwewe','addf','zcv'])
+	ans = []
+	for word in words:
+	    wset = set(word.lower())
+	    if any([wset <= row for row in ref]):
+	        ans.append(word)
+	return ans
+		
