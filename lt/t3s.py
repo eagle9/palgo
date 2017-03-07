@@ -4,7 +4,7 @@ class Solution(object):
         nums.sort()
         res = []
         length = len(nums)
-        for i in range(0, length - 2):
+        for i in xrange(0, length - 2):
             if i and nums[i] == nums[i - 1]:
                 continue
             target = nums[i] * -1
