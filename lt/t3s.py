@@ -1,3 +1,4 @@
+import unittest
 class Solution(object):
     def threeSum(self,nums):
         nums.sort()
@@ -22,3 +23,26 @@ class Solution(object):
                 else:
                     left += 1
         return res
+import unittest
+
+class Test(unittest.TestCase):
+    def test1(self):
+        a = [-1, 0, 1, 2, -1, -4]
+        self.assertItemsEqual(Solution().threeSum(a), [ [-1, 0, 1], [-1, -1, 2] ])
+
+if __name__ == '__main__':
+    unittest.main()
+
+'''
+Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+
+Note: The solution set must not contain duplicate triplets.
+
+For example, given array S = [-1, 0, 1, 2, -1, -4],
+
+A solution set is:
+[
+  [-1, 0, 1],
+  [-1, -1, 2]
+]
+'''
