@@ -11,6 +11,7 @@ ans: try learning rate = 0.01 ,then 0.5 ,if the model improves, then keep increa
 '''
 #an input layer with 784 neurons, an output layer with 10 neurons, hidden layer 30 neurons
 net = network.Network([784,30,10])
+#SGD stands for stochastic gradient descent
 net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
 '''
 Epoch 0: 8985 / 10000
@@ -24,7 +25,9 @@ the trained network gives us a classification rate of about 9507 percent - 95.07
 ''' 
 
 '''
-#Let's rerun the above experiment, changing the number of hidden neurons to 100 0
+#Let's rerun the above experiment, changing the number of hidden neurons to 100
+net.SGD hyper parameters
+make specific choices for the number of epochs of training, the mini-batch size, and the learning rate 
 '''
 net = network.Network([784, 100, 10])
 net.SGD(training_data, 30, 10, 3.0, test_data=test_data)
@@ -35,8 +38,22 @@ Epoch 26: 8732 / 10000
 Epoch 27: 8731 / 10000
 Epoch 28: 8720 / 10000
 Epoch 29: 8724 / 10000
-no improvement after increase number of neurons at hidden layer. Michael Nielsen said doing so the recognition rate increased to 96%. However it got worse in my test run.
+no improvement after increase number of neurons at hidden layer. Michael Nielsen said doing so the recognition rate increased to 96%. However it got worse in my test run. try more test runs. take  the best results 
 
 '''
+#chapter 3
+import network2 
+net = network2.Network([784, 30, 10], cost=network2.CrossEntropyCost)
+net.large_weight_initializer()
+net.SGD(training_data[:1000], 400, 10, 0.5, \
+        evaluation_data=test_data, lmbda = 0.1,\
+        monitor_evaluation_cost=True, monitor_evaluation_accuracy=True, \
+        monitor_training_cost=True, monitor_training_accuracy=True)
+
+#peak at 9616/10000 accuracy with my test run
+net.large_weight_initializer()
+net.SGD(training_data, 30, 10, 0.5, \
+        evaluation_data=test_data, lmbda = 5.0, \
+        monitor_evaluation_accuracy=True, monitor_training_accuracy=True)
 
 

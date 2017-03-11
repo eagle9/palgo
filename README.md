@@ -1,8 +1,9 @@
 Algorithms in Python
 ==========================
-- Algorithms in python
-- Python's rich builtin and terse syntax enables you to write concise code, which is easy to understand and remember
-
+- Python rich builtin and terse syntax enables you to write concise code, which is easy to understand and remember, and you can focus more on algorithms themselves
+- Key python functions and collections
+- Algorithms and data structures
+- Machine learning, ml, nndl(neural network and deep learning) 
 
 References
 ==========

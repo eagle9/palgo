@@ -15,8 +15,10 @@ from sklearn import svm
 def svm_baseline():
     training_data, validation_data, test_data = mnist_loader.load_data()
     # train
-    gamma =  0.00728932024638
-    C = 2.82842712475
+    #http://peekaboo-vision.blogspot.de/2010/09/mnist-for-ever.html
+    gamma =  0.00728932024638  #kernel coefficient
+    C = 2.82842712475   #penalty parameter  of error term
+
     clf = svm.SVC(C=C,gamma=gamma)
     clf.fit(training_data[0], training_data[1])
     # test
