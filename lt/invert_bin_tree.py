@@ -20,6 +20,7 @@
 # Space: O(w), w is the max number of the nodes of the levels.
 # BFS solution.
 class Queue:
+	#import collections study deque, more efficient that list to implement stack or queue
     def __init__(self):
         self.data = collections.deque()
         
