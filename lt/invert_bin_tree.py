@@ -1,5 +1,3 @@
-# Time:  O(n)
-# Space: O(h)
 #
 # Invert a binary tree.
 #
@@ -18,7 +16,7 @@
 
 # Time:  O(n)
 # Space: O(w), w is the max number of the nodes of the levels.
-# BFS solution.
+# BFS solution. faster than using stack or recursive calls
 class Queue:
 	#import collections study deque, more efficient that list to implement stack or queue
     def __init__(self):
@@ -60,5 +58,37 @@ class Solution:
                     nodes.push(node.left)
                 if node.right is not None:
                     nodes.push(node.right)
+        
+        return root
+# Time:  O(n)
+# Space: O(h)
+# Stack solution.
+class Solution2:
+    # @param {TreeNode} root
+    # @return {TreeNode}
+    def invertTree(self, root):
+        if root is not None:
+            nodes = []
+            nodes.append(root)
+            while nodes:
+                node = nodes.pop()
+                node.left, node.right = node.right, node.left
+                if node.left is not None:
+                    nodes.append(node.left)
+                if node.right is not None:
+                    nodes.append(node.right)
+        
+        return root
+  
+# Time:  O(n)
+# Space: O(h)
+# DFS, Recursive solution.
+class Solution3:
+    # @param {TreeNode} root
+    # @return {TreeNode}
+    def invertTree(self, root):
+        if root is not None:
+            root.left, root.right = self.invertTree(root.right), \
+                                    self.invertTree(root.left)
         
         return root
