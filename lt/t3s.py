@@ -5,22 +5,22 @@ class Solution(object):
         res = []
         length = len(nums)
         for i in xrange(0, length - 2):
-            if i and nums[i] == nums[i - 1]:
+            if i > 0 and nums[i] == nums[i - 1]:
                 continue
             target = nums[i] * -1
             left, right = i + 1, length - 1
             while left < right:
-                if nums[left] + nums[right] == target:
+                if nums[left] + nums[right] == target: #case 1,=target, found a triplet
                     res.append([nums[i], nums[left], nums[right]])
                     right -= 1
                     left += 1
                     while left < right and nums[left] == nums[left - 1]:
-                        left += 1
+                        left += 1 #left pointer goes to right
                     while left < right and nums[right] == nums[right + 1]:
-                        right -= 1
-                elif nums[left] + nums[right] > target:
+                        right -= 1 #right pointer goes to left
+                elif nums[left] + nums[right] > target: #case 2, >target, looking for smaller number 
                     right -= 1
-                else:
+                else: #case 3, <target, looking for greater number
                     left += 1
         return res
 import unittest
