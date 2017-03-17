@@ -13,3 +13,5 @@ References
 
 recursion, sorting, dp bag of tricks
 tree, graph representation and manipulation(traversal, etc.)
+
+ml tried kmeans, with sklearn iris data set and driver data set from datascienceinc, tried to visualize data and results, to understand kmeans more. driver data analysis centriods do not much the blog, why?  to study more
