@@ -28,6 +28,9 @@ for name, est in estimators.items():
     plt.cla()
     est.fit(X)
     labels = est.labels_
+    print  X[:, 3],X[:, 0],X[:, 2]
+    '''
+    
 
     ax.scatter(X[:, 3], X[:, 0], X[:, 2], c=labels.astype(np.float))
 
@@ -38,6 +41,7 @@ for name, est in estimators.items():
     ax.set_ylabel('Sepal length')
     ax.set_zlabel('Petal length')
     fignum = fignum + 1
+    '''
 
 # Plot the ground truth
 fig = plt.figure(fignum, figsize=(4, 3))
