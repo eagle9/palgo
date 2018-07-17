@@ -77,4 +77,8 @@ def moveDown( aList, first, last ):
  
 def swap( A, x, y ):
 	A[x],A[y] = A[y],A[x]
+arr = [8,5,3,1,9,6,0,7,4,2,5]
+print 'before: ', arr
+heapsort(arr)
+print 'after: ', arr
 	
