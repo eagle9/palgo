@@ -15,3 +15,13 @@ recursion, sorting, dp bag of tricks
 tree, graph representation and manipulation(traversal, etc.)
 
 ml tried kmeans, with sklearn iris data set and driver data set from datascienceinc, tried to visualize data and results, to understand kmeans more. driver data analysis centriods do not much the blog, why?  to study more
+
+jiuzhang series
+chapter 2 binary search and logN algorithms
+===========================================
+http://www.lintcode.com/problem/classical-binary-search/
+http://www.lintcode.com/problem/first-position-of-target/
+http://www.lintcode.com/problem/last-position-of-target/
+
+http://www.lintcode.com/problem/first-bad-version/
+http://www.lintcode.com/problem/find-k-closest-elements/
