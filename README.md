@@ -24,4 +24,4 @@ http://www.lintcode.com/problem/first-position-of-target/
 http://www.lintcode.com/problem/last-position-of-target/
 
 http://www.lintcode.com/problem/first-bad-version/
-http://www.lintcode.com/problem/find-k-closest-elements/
+http://www.lintcode.com/problem/find-k-closest-elements/ ---- to understand
