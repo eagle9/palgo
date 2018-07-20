@@ -25,3 +25,31 @@ http://www.lintcode.com/problem/last-position-of-target/
 
 http://www.lintcode.com/problem/first-bad-version/
 http://www.lintcode.com/problem/find-k-closest-elements/ ---- to understand
+http://www.lintcode.com/problem/search-in-a-big-sorted-array/ c++
+http://www.lintcode.com/problem/find-minimum-in-rotated-sorted-array/
+http://www.lintcode.com/problem/maximum-number-in-mountain-sequence/
+
+Search a 2D Matrix
+ http://www.lintcode.com/en/problem/search-a-2d-matrix/
+ http://www.lintcode.com/en/problem/search-a-2d-matrix-ii/
+
+Search for a Range
+ http://www.lintcode.com/en/problem/search-for-a-range/
+ http://www.lintcode.com/en/problem/total-occurrence-of-target/
+
+Smallest Rectangle Enclosing black Pixels
+ http://www.lintcode.com/problem/smallest-rectangle-enclosing-black-pixels/
+ http://www.lintcode.com/problem/find-peak-element/
+solve the following problem, then say you can do binary search
+http://www.lintcode.com/problem/search-in-rotated-sorted-array/
+
+other logN algorithms
+=====================
+http://www.lintcode.com/problem/fast-power/
+http://www.lintcode.com/problem/powx-n/
+hard one
+http://www.lintcode.com/problem/copy-books/
+
+other resource
+http://www.jiuzhang.com/qa/974/
+http://www.jiuzhang.com/tutorial/algorithm/
