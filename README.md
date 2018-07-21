@@ -16,7 +16,7 @@ tree, graph representation and manipulation(traversal, etc.)
 
 ml tried kmeans, with sklearn iris data set and driver data set from datascienceinc, tried to visualize data and results, to understand kmeans more. driver data analysis centriods do not much the blog, why?  to study more
 
-jiuzhang series
+J9 series
 chapter 2 binary search and logN algorithms
 ===========================================
 http://www.lintcode.com/problem/classical-binary-search/
@@ -24,8 +24,8 @@ http://www.lintcode.com/problem/first-position-of-target/
 http://www.lintcode.com/problem/last-position-of-target/
 
 http://www.lintcode.com/problem/first-bad-version/
-http://www.lintcode.com/problem/find-k-closest-elements/ ---- to understand
-http://www.lintcode.com/problem/search-in-a-big-sorted-array/ c++
+http://www.lintcode.com/problem/find-k-closest-elements/ ---- to understand more
+http://www.lintcode.com/problem/search-in-a-big-sorted-array/ ---done to this point
 http://www.lintcode.com/problem/find-minimum-in-rotated-sorted-array/
 http://www.lintcode.com/problem/maximum-number-in-mountain-sequence/
 
@@ -49,6 +49,18 @@ http://www.lintcode.com/problem/fast-power/
 http://www.lintcode.com/problem/powx-n/
 hard one
 http://www.lintcode.com/problem/copy-books/
+
+
+Chapter 3. Two pointers
+=======================
+http://www.lintcode.com/problem/window-sum/
+http://www.lintcode.com/problem/remove-duplicate-numbers-in-array/
+http://www.lintcode.com/problem/intersection-of-two-linked-lists/
+http://www.lintcode.com/problem/linked-list-cycle/
+http://www.lintcode.com/problem/linked-list-cycle-ii/
+http://www.lintcode.com/problem/intersection-of-two-linked-lists/
+
+http://www.lintcode.com/problem/move-zeroes/
 
 other resource
 http://www.jiuzhang.com/qa/974/
