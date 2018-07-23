@@ -60,7 +60,15 @@ http://www.lintcode.com/problem/linked-list-cycle/
 http://www.lintcode.com/problem/linked-list-cycle-ii/
 http://www.lintcode.com/problem/intersection-of-two-linked-lists/
 
-http://www.lintcode.com/problem/move-zeroes/
+http://www.lintcode.com/problem/move-zeroes/   done
+http://www.lintcode.com/problem/valid-palindrome/ done
+http://www.lintcode.com/problem/valid-palindrome-ii/ -- done
+use only HashMap
+http://www.lintcode.com/problem/two-sum-data-structure-design/
+http://www.jiuzhang.com/solutions/two-sum-data-structure-design/
+use two Pointers
+http://www.lintcode.com/problem/two-sum-input-array-is-sorted/
+http://www.jiuzhang.com/solutions/two-sum-input-array-is-sorted/
 
 other resource
 http://www.jiuzhang.com/qa/974/
