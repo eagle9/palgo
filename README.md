@@ -64,11 +64,86 @@ http://www.lintcode.com/problem/move-zeroes/   done
 http://www.lintcode.com/problem/valid-palindrome/ done
 http://www.lintcode.com/problem/valid-palindrome-ii/ -- done
 use only HashMap
-http://www.lintcode.com/problem/two-sum-data-structure-design/
+http://www.lintcode.com/problem/two-sum-data-structure-design/ -- done
 http://www.jiuzhang.com/solutions/two-sum-data-structure-design/
 use two Pointers
-http://www.lintcode.com/problem/two-sum-input-array-is-sorted/
+http://www.lintcode.com/problem/two-sum-input-array-is-sorted/ -- done
 http://www.jiuzhang.com/solutions/two-sum-input-array-is-sorted/
+
+ask if i can drop duplicates first
+http://www.lintcode.com/en/problem/two-sum-unique-pairs/ --done
+http://www.jiuzhang.com/solutions/two-sum-unique-pairs/
+
+http://www.lintcode.com/problem/3sum/ -- todo
+http://www.jiuzhang.com/solutions/3sum/
+
+http://www.lintcode.com/problem/triangle-count/ 
+http://www.jiuzhang.com/solutions/triangle-count/
+
+http://www.lintcode.com/problem/two-sum-less-than-or-equal-to-target/
+http://www.jiuzhang.com/solutions/two-sum-less-than-or-equal-to-target/
+http://www.lintcode.com/en/problem/two-sum-greater-than-target/
+http://www.jiuzhang.com/solutions/two-sum-greater-than-target/
+
+http://www.lintcode.com/problem/two-sum-closest-to-target/
+http://www.jiuzhang.com/solutions/two-sum-closest/
+
+Follow Up: 3Sum Closest
+http://www.lintcode.com/problem/3sum-closest/
+http://www.jiuzhang.com/solutions/3sum-closest/
+
+4Sum
+http://www.lintcode.com/problem/4sum/
+http://www.jiuzhang.com/solutions/4sum/
+
+Two Sum - difference equals to target
+http://www.lintcode.com/problem/two-sum-difference-equals-to-target/
+http://www.jiuzhang.com/solutions/two-sum-difference-equals-to-target/
+
+http://www.lintcode.com/problem/partition-array/
+http://www.jiuzhang.com/solutions/partition-array/
+
+quick select 
+http://www.jiuzhang.com/tutorial/algorithm/321
+http://www.lintcode.com/problem/kth-smallest-numbers-in-unsorted-array/
+http://www.lintcode.com/problem/kth-largest-element/
+
+Partition Array by Odd and Even
+http://www.lintcode.com/problem/partition-array-by-odd-and-even/
+http://www.jiuzhang.com/solutions/partition-array-by-odd-and-even/
+
+Interleaving Positive and Negative Numbers
+http://www.lintcode.com/problem/interleaving-positive-and-negative-numbers/
+http://www.jiuzhang.com/solutions/interleaving-positive-and-negative-integers/
+
+Sort Letters by Case
+http://www.lintcode.com/problem/sort-letters-by-case/
+http://www.jiuzhang.com/solutions/sort-letters-by-case/
+
+Sort Colors
+http://www.lintcode.com/problem/sort-colors/
+http://www.jiuzhang.com/solutions/sort-colors/
+http://www.jiuzhang.com/tutorial/algorithm/354
+
+http://www.lintcode.com/en/problem/sort-colors-ii/
+http://www.jiuzhang.com/solutions/sort-colors-ii/
+
+3 pointer
+http://www.jiuzhang.com/tutorial/algorithm/335
+http://www.lintcode.com/problem/pancake-sorting/
+
+C4
+==========
+http://www.jiuzhang.com/tutorial/algorithm/14
+what is queue, implement your own queue
+interface, linkedlist and queue and their relationship
+what is topogical sorting
+define data structure for a graph
+
+
+
+
+
 
 other resource
 http://www.jiuzhang.com/qa/974/
