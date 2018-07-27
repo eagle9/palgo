@@ -140,11 +140,7 @@ interface, linkedlist and queue and their relationship
 what is topogical sorting
 define data structure for a graph
 
-
-
-
-
-
 other resource
 http://www.jiuzhang.com/qa/974/
 http://www.jiuzhang.com/tutorial/algorithm/
+http://www.lintcode.com/problem/binary-tree-level-order-traversal/
