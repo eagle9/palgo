@@ -1,5 +1,7 @@
 //jz Your submission beats 60.40% Submissions!
-//not quite understand
+//not quite understand this java code. Check py code where I understand better after adapt
+//jiadai c++ is not accepted
+//todo: translate to c++ too
 
 public class Solution {
     /**
