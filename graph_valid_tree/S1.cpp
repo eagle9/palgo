@@ -49,10 +49,16 @@ private:
 //yubin bai's c++ modified to lintcode parameter signature
 int main() {
   Solution sol;
-  vector<vector<int, int>> v1 = {};
-  for (vector<int,int> v :{{0, 1}, {0, 2}, {0, 3}, {1, 4}}) {
-	v1.push_back(v);
+  cout << "hello" << endl;
+  int a[4][2] = {{0, 1}, {0, 2}, {0, 3}, {1, 4}};
+  vector<vector<int,int> > v1 = {};
+  for (int i = 0; i < 4; i++) {
+    vector<int,int> v = {a[i][0],a[i][1]};
+    v1.push_back(v);
+    cout << a[i][0] <<"," << a[i][1] << endl;
   }
+  //vector<vector<int, int> > v1 = {{0, 1}, {0, 2}, {0, 3}, {1, 4}};
+  /*
   cout << sol.validTree(5, v1) << endl;
 
   vector<vector<int, int>> v2 = {}
@@ -60,5 +66,6 @@ int main() {
     v2.push_back(v);
   }
   cout << sol.validTree(5, v2) << endl;
+  */
   return 0;
 }
