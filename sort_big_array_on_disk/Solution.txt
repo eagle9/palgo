@@ -19,3 +19,7 @@ if N is even {
 } else {
     median = A[(N-1)/2]
 } 
+index is either N/2-1, N/2 or (N-1)/2
+
+the no. of chuck = index / K 
+load Kth chunk, get (index % K), then we will get the median 
