@@ -1,5 +1,5 @@
 # 618. Search Graph Nodes
-
+tag: apple
 Difficulty: Medium
 
 http://www.lintcode.com/en/problem/search-graph-nodes/
