@@ -1,6 +1,10 @@
-#there are n queues, each queue can store up to 5 elements
+'''
+There are n queues, each queue can store up to 5 elements
 q is a list of such queues
 BigQueue is the big queue that we will implement with these small queues
+
+The assumption is that these size 5 small queues are stored in a list, use a int variable head to track the head queue index, int variable tail to track the tail queue index, int variable count to track its total number of elements, built in queue available_queue to track the indexes of empty small queues, and built in queue used_queues to tracked small queues that are in use
+'''
 class BigQueue:
     def __init__(self,head,tail,count):
         self.head = 0
