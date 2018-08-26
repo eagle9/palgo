@@ -1,0 +1,1 @@
+Implement a special queue class, with same add and poll method. This queue has a very unique requirement. It consists of many small normal queues, each small normal queue size is limited to max 5 elements.

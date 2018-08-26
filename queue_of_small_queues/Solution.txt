@@ -1,0 +1,43 @@
+#there are n queues, each queue can store up to 5 elements
+q is a list of such queues
+BigQueue is the big queue that we will implement with these small queues
+class BigQueue:
+    def __init__(self,head,tail,count):
+        self.head = 0
+        self.tail = 0
+        self.count = 0
+        available_queues = [i for i in range(n)]
+        used_queues = [0]
+   
+    def offer(self,element):   #enter element into BQ from tail
+        tail_queue = q[tail] 
+        if len(tail_queue) < 5:
+            tail_queue.append(element)
+        else:
+            #tail_queue is full now, find next queue, get one from available
+            self.used_queues.append(tail)
+
+            tail = self.available_queues.pop(0)
+            if tail == None:
+                return False #big Queue is full
+            else:
+                tail_queue = q[tail]
+                tail_queue.append(element)
+                count+=1
+        
+    def poll(self): #remove element from BigQueue from head
+        head_queue = q[head]
+        if len(head_queue) == 0 and count < 5:
+            return None
+        if len(head_queue) == 0: 
+            head = used_queues.pop(0)
+        head_queue = q[head]
+        element = head_queue.pop(0)
+        count -= 1
+            
+        if len(head_queue) == 0:
+            # now head_queue is empty now, add head_queue to available 
+            self.available.append(head)
+            # Update head
+            head = self.used_queues.pop(0) 
+        return element
