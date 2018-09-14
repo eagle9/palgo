@@ -1,3 +1,4 @@
+
 Algorithms in Python
 ==========================
 - Python rich builtin and terse syntax enables you to write concise code, which is easy to understand and remember, and you can focus more on algorithms themselves
@@ -10,6 +11,10 @@ References
 - http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/
 - http://www.geekviewpoint.com/
 - http://interactivepython.org/runestone/static/pythonds/index.html
+- http://www.cnblogs.com/yuzhangcmu/p/4040418.html thumbs up
+- jiadai github c++, very complete and 99% accepted
+- jiuzhang.com/solutions
+- https://www.programmerinterview.com/
 
 recursion, sorting, dp bag of tricks
 tree, graph representation and manipulation(traversal, etc.)
