@@ -1,4 +1,4 @@
-//Your submission beats 99.60% Submissions!
+//yuzhangcmu, Your submission beats 99.60% Submissions!
 public class Solution {
     public int[] nextPermutation(int[] num) {
         if (num == null) {

@@ -15,3 +15,8 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 
 Challenge
 The replacement must be in-place, do not allocate extra memory.
+Difficulty: medium
+
+Next permutation asks to return next permutation.
+Next permutation ii can be easily modified from next permutation
+basically the same algorithm, slight difference in method signature

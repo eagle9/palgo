@@ -1,5 +1,4 @@
-//jiadai Your submission beats 99.60% Submissions!
-
+//jiadai c++ --> java Your submission beats 99.60% Submissions!
 public class Solution{
     /*
      * @param nums: An array of integers

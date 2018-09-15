@@ -6,3 +6,8 @@ Example
 Given "abb", return ["abb", "bab", "bba"].
 
 Given "aabb", return ["aabb", "abab", "baba", "bbaa", "abba", "baab"].
+
+Difficulty: Medium
+
+Fastest: jz, zhengyang, all use next permutation 
+   dfs recursive is not that fast
