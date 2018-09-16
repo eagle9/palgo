@@ -12,3 +12,6 @@ The string will only contain lowercase characters a-z. The maximum length of the
 **Example**  
 Given s = "aba" return true  
 Given s = "abca" return true // delete c
+
+Take grandyang's solution,easier to understand and fast.  translated to java
+natural to extend from valid palindrome to ii
