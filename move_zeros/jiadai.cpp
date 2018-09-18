@@ -1,3 +1,4 @@
+//jiadai Your submission beats 100.00% Submissions!
 class Solution {
 public:
     /**
@@ -8,10 +9,10 @@ public:
      //jiadai c++
     void moveZeroes(vector<int>& nums) {
         // Write your code here
-        int i = 0; //position of non zeros stored
+        int indexNonZ = 0; //position of non zeros stored
         for (int j = 0; j < nums.size(); ++j) {
             if (nums[j]) {
-                swap(nums[i++], nums[j]);
+                swap(nums[indexNonZ++], nums[j]);
             }
         }
     }

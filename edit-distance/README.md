@@ -9,5 +9,8 @@ Delete a character
 Replace a character
 Example
 Given word1 = "mart" and word2 = "karma", return 3.
-grandyang dp solution is pretty short, not yet fully understand
-need to review dp
+grandyang dp solution is pretty short, now fully understood 
+using a distance[i][j] array to track the number of steps from word1 first i to word2 first j
+then buttom up to get distance[n1] [n2]  where n1 is the length of word1 and n2 is the length of word2
+
+compare fibonacci sequence, longest common sequence, you will find the similarity

@@ -6,6 +6,13 @@ Algorithms in Java, C++, Python
 - Algorithms and data structures
 - Machine learning, ml, nndl(neural network and deep learning) 
 
+TODO
+=====
+strstr ii, n-queens
+reverse, permutation, combination, more dp
+dfs, bfs very bad 
+get to 200, 300, 400, 500
+
 Top References
 ==============
 grandyang cnblogs

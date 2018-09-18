@@ -1,3 +1,4 @@
+//jz, Your submission beats 90.20% Submissions! use charAt is faster
 class Solution {
     /**
      * Returns a index to the first occurrence of target in source,
@@ -10,17 +11,24 @@ class Solution {
             return -1;
         }
         
-        for (int i = 0; i < source.length() - target.length() + 1; i++) {
+        int n = source.length(), m = target.length();
+        for (int i = 0; i <= n - m; i++) { //n-m n-1, m chars
             int j = 0;
-            for (j = 0; j < target.length(); j++) {
+            //java if (condition), condition must be inside ()
+            //if (source.substring(i,i+m).equals(target))
+            //if (target.equals(source.substring(i,i+m)))
+            //    return i;
+            
+            for (j = 0; j <= m-1; j++) {
                 if (source.charAt(i + j) != target.charAt(j)) {
                     break;
                 }
             }
             // finished loop, target found
-            if (j == target.length()) {
+            if (j == m) {
                 return i;
             }
+            
         }
         return -1;
     }

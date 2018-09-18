@@ -25,3 +25,4 @@ There exist two distinct solutions to the 4-queens puzzle:
 ]
 Challenge
 Can you do it without recursion?
+Classical problem

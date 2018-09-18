@@ -1,6 +1,7 @@
 # 13. strStr
 
 Difficulty: Easy
+Com: apple, ms, facebook
 
 http://www.lintcode.com/en/problem/strstr/
 
@@ -17,3 +18,4 @@ Not necessary. When you meet this problem in a real interview, the interviewer m
 If source = "source" and target = "target", return -1.
 
 If source = "abcdabcdefg" and target = "bcd", return 1.
+
