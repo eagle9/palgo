@@ -7,7 +7,7 @@ Algorithms in Java, C++, Python
 - Machine learning, ml, nndl(neural network and deep learning) 
 
 TODO
-=====
+====
 strstr ii, n-queens
 reverse, permutation, combination, more dp
 dfs, bfs very bad 
@@ -16,10 +16,10 @@ get to 200, 300, 400, 500
 Top References
 ==============
 grandyang cnblogs
-yuanbin gitbook
-zhengyang gitbook
-yuzhangcmu cnblos 
-   http://www.cnblogs.com/yuzhangcmu/p/4040418.html thumbs up
+https://pobenliu.gitbooks.io/leetcode/
+https://algorithm.yuanbin.me/en/
+https://zhengyang2015.gitbooks.io/lintcode/content/
+http://www.cnblogs.com/yuzhangcmu/p/4040418.html thumbs up
 jiadai  github
    github c++, very complete and 99% accepted
 jiuzhang.com/solutions
