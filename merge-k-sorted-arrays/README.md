@@ -19,4 +19,3 @@ Do it in O(N log k).
 N is the total number of integers.
 k is the number of arrays.
 Related Problems: 839 merge two sorted interval lists, 104 merge k sorted lists 
-
