@@ -27,7 +27,8 @@ public class Solution {
             String sub = s.substring(index, i + 1);
             cd.add(sub);
             dfs(res, cd, i + 1, s);
-            cd.remove(cd.size() - 1); //back tracking
+            //Before return from deeper call, need to remove deeper call’s impact (back tracking), so need to cd.remove(cd.size()-1)
+            cd.remove(cd.size() - 1);
         }
         
         

@@ -10,3 +10,5 @@ Related Problems
 concatenated string with uncommon characters of two strings, word break ii, word break, subsets, subsets ii
 
 Difficulty: easy
+
+jz and lxp. similar idea but lxp is faster because substring is only called once for each recursion, use index to track last split position
