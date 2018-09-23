@@ -1,4 +1,4 @@
-//jz java, Your submission beats 84.20% Submissions!
+//jz java recursive, Your submission beats beats 90.40% Submissions!
 class Solution {
     /**
      * Get all distinct N-Queen solutions
@@ -13,7 +13,7 @@ class Solution {
         }
         
         dfs(res, new ArrayList<Integer>(), n);
-        return results;
+        return res;
     }
     
     /*
@@ -35,19 +35,22 @@ class Solution {
             //add a good colIndex to cols candidate
             cols.add(colIndex);
             //go deeper
-            dfs(results, cols, n);
+            dfs(res, cols, n);
             //back tracking 
             cols.remove(cols.size() - 1);
         }
     }
     
     //draw chessboard
+    //each row is a string ...Q.... where Q is at 4th column
     private List<String> draw(List<Integer> cols) {
         List<String> chessboard = new ArrayList<>();
-        for (int i = 0; i < cols.size(); i++) {
+        int n = cols.size();
+        for (int i = 0; i < n; i++) {
+            int col = cols.get(i); //col position for row i
             StringBuilder sb = new StringBuilder();
-            for (int j = 0; j < cols.size(); j++) {
-                sb.append(j == cols.get(i) ? 'Q' : '.');
+            for (int j = 0; j < n; j++) {
+                sb.append(j == col ? 'Q' : '.');
             }
             chessboard.add(sb.toString());
         }
@@ -61,7 +64,7 @@ class Solution {
             //same column, not valid
             if (colIndex == column)  return false;
             //diagonal
-            if (rowIndex - row == colIndex - column)  return false;
+            if (Math.abs(rowIndex - row) == Math.abs(colIndex - column))  return false;
             //if (rowIndex - colIndex == row - column)  return false;
         }
         return true;
