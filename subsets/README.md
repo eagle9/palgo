@@ -17,5 +17,10 @@ If S = [1,2,3], a solution is:
   [1,2],
   []
 ]
+
 Challenge
 Can you do it in both recursively and iteratively?
+
+iterative way use 1-2^n binary number representation
+recursive way use dfs or bfs
+each subset requires that its elements in non-descending order, so the input array will be sorted

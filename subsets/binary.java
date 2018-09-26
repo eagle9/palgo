@@ -1,5 +1,5 @@
 // Non Recursion
-//use binary way to enumerate subsets
+//use binary way to enumerate subsets, rely on math
 //Your submission beats 90.60% Submissions!
 
 class Solution {
@@ -19,11 +19,13 @@ class Solution {
         // 2 -> 010 -> [2]
         // ..
         // 7 -> 111 -> [1,2,3]
-        for (int i = 0; i < (1 << n); i++) {
+        int N = 1 << n;
+        for (int i = 0; i < N; i++) {
             List<Integer> subset = new ArrayList<Integer>();
             for (int j = 0; j < n; j++) {
                 // check whether the jth digit in i's binary representation is 1
-                if ((i & (1 << j)) != 0) {
+                int mask = 1 << j;
+                if ((i & mask) != 0) {  //==1 okay? NO!, 2's power
                     subset.add(nums[j]);
                 }
             }

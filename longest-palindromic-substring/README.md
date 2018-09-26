@@ -5,3 +5,7 @@ Given the string = "abcdzdcab", return "cdzdc".
 
 Challenge
 O(n2) time is acceptable. Can you do it in O(n) time.
+
+O(n^2) linhuchong enumerate
+O(n)
+
