@@ -16,18 +16,19 @@ get to 200, 300, 400, 500
 Top References
 ==============
 grandyang cnblogs
-https://pobenliu.gitbooks.io/leetcode/
-https://algorithm.yuanbin.me/en/
-https://zhengyang2015.gitbooks.io/lintcode/content/
-http://www.cnblogs.com/yuzhangcmu/p/4040418.html thumbs up
-jiadai  github
+- https://pobenliu.gitbooks.io/leetcode/
+- https://algorithm.yuanbin.me/en/
+- https://zhengyang2015.gitbooks.io/lintcode/content/
+- http://www.cnblogs.com/yuzhangcmu/p/4040418.html thumbs up
+- jiadai  github
    github c++, very complete and 99% accepted
-jiuzhang.com/solutions
+- jiuzhang.com/solutions
 
 - http://eddmann.com/posts/depth-first-search-and-breadth-first-search-in-python/
 - http://www.geekviewpoint.com/
 - http://interactivepython.org/runestone/static/pythonds/index.html
 - https://www.programmerinterview.com/
+- https://lefttree.gitbooks.io/leetcode-categories/content/
 
 recursion, sorting, dp bag of tricks
 tree, graph representation and manipulation(traversal, etc.)
