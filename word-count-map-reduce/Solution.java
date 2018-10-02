@@ -5,6 +5,7 @@
  *         // Adds a key/value pair to the output buffer
  * }
  */
+ //jz beats 76.40%
 public class WordCount {
 
     public static class Map {

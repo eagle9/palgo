@@ -27,7 +27,7 @@ public class Solution {
         }
         
         int total_size = 0;
-        Queue<Element> Q = new PriorityQueue<Element>(
+        Queue<Element> Q = new PriorityQueue<Element>( //size of the queue = number of the arrays
             arrays.length, EC);
         
         //put each array's first element into heap  
@@ -46,7 +46,7 @@ public class Solution {
             Element elem = Q.poll();
             result[index++] = elem.val;
             // ir elem's array still have elements, 
-            if (elem.col + 1 < arrays[elem.row].length) {
+            if (elem.col < arrays[elem.row].length-1) { //last elem is length-1
                 elem.col += 1;
                 elem.val = arrays[elem.row][elem.col];
                 Q.add(elem);
