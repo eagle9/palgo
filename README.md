@@ -29,6 +29,7 @@ grandyang cnblogs
 - http://interactivepython.org/runestone/static/pythonds/index.html
 - https://www.programmerinterview.com/
 - https://lefttree.gitbooks.io/leetcode-categories/content/
+- http://bookshadow.com/weblog/categories/leetcode/
 
 recursion, sorting, dp bag of tricks
 tree, graph representation and manipulation(traversal, etc.)
