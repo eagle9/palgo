@@ -15,9 +15,11 @@ Learn more about representation of graphs
 
 **Example**  
 For graph as follow:
-
-![alt text](images.jpg)
-
+  ->  1   -> 4
+0 ->  2   -> 4
+          -> 5
+  ->  3 -> 4
+        -> 5
 The topological order can be:
 ```
 [0, 1, 2, 3, 4, 5]
