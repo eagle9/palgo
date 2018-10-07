@@ -7,10 +7,10 @@
  * };
  */
 //shaun adapted from python bfs, 40% tests passed, wrong answer
-
+//fix a typo, then accepted, beats 92.00%, same idea as jz
 public class Solution {
     public UndirectedGraphNode cloneGraph(UndirectedGraphNode node){
-        UndirectedGraphNode root = node;
+        
         if (node == null) 
             return null; 
             
@@ -25,14 +25,14 @@ public class Solution {
         
         //copy neighbors(edges)
         for (UndirectedGraphNode n : nodes) {
-            UndirectedGraphNode new_node = mapping.get(node);
+            UndirectedGraphNode new_node = mapping.get(n);
             for (UndirectedGraphNode neighbor : n.neighbors) {
                 UndirectedGraphNode new_neighbor = mapping.get(neighbor);
                 new_node.neighbors.add(new_neighbor);
             }
         }
         
-        return mapping.get(root);
+        return mapping.get(node);
     }
 
     //bfs traversal of graph return set of nodes    
