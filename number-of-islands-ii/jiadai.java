@@ -28,6 +28,7 @@ public class Solution {
         
         int count = 0;
         int [] parent = new int [n * m]; // -1);
+        //Arrays.fill(parent,-1); //works but slower
         for (int i = 0; i < parent.length; i++) {
             parent[i] = -1; //set to -1 is key, default value 0 won't work
         }

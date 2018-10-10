@@ -22,4 +22,10 @@ end = "cog"
 dict = ["hot","dot","dog","lot","log"]
 As one shortest transformation is "hit" -> "hot" -> "dot" -> "dog" -> "cog",
 return its length 5.
+
+difficulty: medium
+companies: many
+
+idea: bfs is natural solution , level to level traversal of the graph
+related: word ladder ii
 ```
