@@ -1,4 +1,5 @@
 //jz, Your submission beats 19.80% Submissions!
+//this is too slow
 //O(n) space and O(n) time, 
 public class Solution {
     /*
