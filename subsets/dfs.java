@@ -1,3 +1,4 @@
+//jz dfs, beats 88.80%
 public class Solution {
     /**
      * @param nums: A set of numbers
@@ -35,5 +36,22 @@ public class Solution {
         subset.remove(subset.size()-1);
         dfs(nums, index+1, subset, res);
         
+    }
+	//beats 73.80%
+    private void dfs2(int [] nums, int index, List<Integer> subset, List<List<Integer>> res) {
+        //recursion exit: 
+        if (index == nums.length) {
+            res.add(subset); //no need to clone subset now since subset won't be changed.
+            return;
+        }
+        
+        //for example given nums = [1, 2, 3], use 1 first,  you get 1, 12, 123, not use it you get 2, 23, 3, etc. so try to use it first, since we look at smaller number first
+        // use nums[index] first, why?
+        List<Integer> newSet = new ArrayList<>(subset);
+        newSet.add(nums[index]);
+        dfs(nums, index+1, newSet, res);
+        
+        //then try not use nums[index]
+        dfs(nums, index+1, subset, res);
     }
 }
