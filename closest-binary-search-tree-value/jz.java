@@ -9,14 +9,34 @@
  *     }
  * }
  */
-/*linhuchong beats 69%
+/*linhuchong beats 78.60%
 look for lowerBound and upperBoun.  < target max and >= target lower
 then find which one is closer to target and return
 
 time = O(h). Note if you use in-order traversal, time is  o(n) which is not the best. time is not  O(logn)because the height of bst is not logn when it is not balanced.
 */
 class Solution {
+    
+    //find the node value in BST that is cloest to given target
     public int closestValue(TreeNode root, double target) {
+        if (root == null) 
+            return 0; //given by problem specification, not found case
+            
+        TreeNode lower = lowerBound(root, target);
+        
+        TreeNode upper = upperBound(root, target);
+        if (lower == null) 
+            return upper.val;
+        if (upper == null)
+            return lower.val;
+        if (target - lower.val < upper.val - target) {
+            return lower.val;
+        }else {
+            return upper.val;
+        }
+    }
+    
+    public int closestValue2(TreeNode root, double target) {
         if (root == null) {
             return 0;
         }
@@ -40,7 +60,7 @@ class Solution {
     }
     
     // find the node with the largest value that smaller than target
-    private TreeNode lowerBound(TreeNode root, double target) {
+    private TreeNode lowerBound2(TreeNode root, double target) {
         if (root == null) {
             return null;
         }
@@ -57,6 +77,35 @@ class Solution {
         
         return root;
     }
+    
+    //lower bound for target, but maximum
+    private TreeNode lowerBound(TreeNode root, double target) {
+        if (root == null) 
+            return null;
+        
+        if (root.val > target) { //lowerbound is in left tree
+            return lowerBound(root.left, target);
+        }
+        
+        if (root.val <= target) { //root already a lowerBound, now max it
+            TreeNode lowerbound = lowerBound(root.right, target);
+            if (lowerbound != null)
+                return lowerbound;
+        }
+        return root;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     // find the node with the smallest value that larger than or equal to target
     private TreeNode upperBound(TreeNode root, double target) {
