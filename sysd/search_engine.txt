@@ -1,4 +1,7 @@
+http://infolab.stanford.edu/~backrub/google.html
+notes
 crawler, distributed, download web pages
+
 url server that sends list of URLs to be fetched to the crawler
 storeserver stores the pages, compress and store pages into a repository
 each page has an associated docId
@@ -13,6 +16,20 @@ sorter ---> takes the barrels which are sorted by docID, resorts them by wordId 
 searcher ---> a web server that uses the lexicon together with the inverted index and the pageranks to answer queries 
   inverted index,   word ---> docId where the word is located 
 
+my questions
+  - find more links in the given url, download the pages that are linked, to a certain depth, avoid loop  
+  - given search term, with inverted index, we know the docs that this term is located.  use the page rank algorithm to find the top docs and display the links  to the user. what if the search query contains multiple words? 
+  word1, word2 ---> shared docs, then rank 
+  - what are barrels?  store output of indexer. 
+  - what are indexer? -- generating inverted index for docs? 
+indexing docs into barrels
+  each word ---> wordID according to in memory hash table called lexicon
+lexicon is linguistics term. linguistics consider human language with two parts 
+lexicon and grammar. lexicon is the catalog of words or dictionary. grammer is the rule for combining the words. 
+  indexer convert word to wordID
 
+sorting what and why? 
+  not quite fully understand 
+  
 more at 
 https://nlp.stanford.edu/IR-book/html/htmledition/irbook.html
