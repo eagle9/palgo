@@ -1,0 +1,18 @@
+crawler, distributed, download web pages
+url server that sends list of URLs to be fetched to the crawler
+storeserver stores the pages, compress and store pages into a repository
+each page has an associated docId
+indexer and sorter perform the index function
+indexer --> reads the repo, uncompress the docs, parse thme
+  each doc is converted to a set of word occurences called hits
+  hits record the word, position
+  indexer distributes the hits into a set of 'barrels', creating partially sorted forward index. 
+ 
+sorter ---> takes the barrels which are sorted by docID, resorts them by wordId to generate the inverted index. 
+  also produces a list of wordIDs and offsets into the inverted index
+searcher ---> a web server that uses the lexicon together with the inverted index and the pageranks to answer queries 
+  inverted index,   word ---> docId where the word is located 
+
+
+more at 
+https://nlp.stanford.edu/IR-book/html/htmledition/irbook.html

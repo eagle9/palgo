@@ -1,0 +1,24 @@
+hadoop made more effective realtime system
+paper notes
+tradeoffs 
+a combination of large clusters of mysql databases 
+and caching tiers built using memached. 
+it is difficult to scale up mysql clusters rapidly
+while maintaining good load balancing and high uptime. 
+500 millions users, many petabytes of data
+facebook messages. 
+specific improvements made to hdfs and hbase to enable 
+them to scale to big workload 
+
+workload types
+1.high write throughput
+  millions of messages and billions of instant mesg daily
+2.large tables
+  each mailbox will grow indefinitely
+  messages are read only a number of times
+3. migration
+  
+avarta nodes wrapper of name node
+still not clear about what improvements 
+reading such paper reward is very slight
+
