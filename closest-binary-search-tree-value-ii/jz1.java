@@ -11,11 +11,11 @@
  */
  
  /* jz linhuchong beats 42.20%
-brutal force, time is  O(n)，space is O(n)
+brutal force, time is  O(n), space is O(n)
 
 use inorder traversal 
 find the first node  >= target  and its index
-start from index-1 and index, use two pointer left and right，get the closest k numbers
+start from index-1 and index, use two pointer left and right to get the closest k numbers
 */
 class Solution {
     public List<Integer> closestKValues(TreeNode root, double target, int k) {
@@ -40,11 +40,11 @@ class Solution {
         List<Integer> result = new ArrayList<>();
         for (i = 0; i < k; i++) {
             //if (left >= 0 && (right >= n || target - values.get(left) < values.get(right) - target)) {
-            //left inbound and (right outbound or left is closer)
+            //left inbound and (left is closer or right outbound)
             if (left >= 0 && (right >= n || target - values.get(left) < values.get(right) - target)) {
                 result.add(values.get(left));
                 left--;
-            } else {
+            } else { //other cases, go right 
                 result.add(values.get(right));
                 right++;
             }

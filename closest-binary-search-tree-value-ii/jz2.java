@@ -11,14 +11,14 @@
  */
 /*
 jz linhuchong beats 85.20%, compared to simple solution that only beats 40%
-improved algorithm, time is  O(k + logn)，space is O(logn)
+improved algorithm, time is  O(k + logn), space is O(logn)
 
 implements the following functions:
 
-getStack() => imagine to insert target，store the travered nodes to stack for iteration later
+getStack() => imagine to insert target store the travered nodes to stack for iteration later
 moveUpper(stack) => use stack to move to next node
 moveLower(stack) => use stack to move to prev node
-with these functions，we can treat the BST as an array，only that i++ use moveUpper，i-- use moveLower
+with these functions we can treat the BST as an array only that i++ use moveUpper i-- use moveLower
 
 */
 class Solution {
