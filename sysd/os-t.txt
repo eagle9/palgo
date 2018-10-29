@@ -1,0 +1,17 @@
+application-specific thread schedulers can tune an application better than the kernel
+
+switch between threads inside a single process is more efficient
+switch between processes is more costly
+
+round robin scheduling --- setting the quantum too short causes too many process switches and lowers the cpu efficiency, setting too long cause poor response to short interactive requests. trade off ---  a quantum around 20-50 msec often a reasonable trade off
+
+
+priority scheduling ----
+/Users/shaun/projects/palgo/sysd 
+
+multiprocessor systems
+multicores that share memory, with bush and cache, 
+multiprocessors racked with high speed interconnect, micro secs 
+distributed systesm,  milli secs level delay, 
+middleware, document based, file based, object based, coordination based (publish subscribe)
+
