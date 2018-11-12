@@ -15,3 +15,31 @@ multiprocessors racked with high speed interconnect, micro secs
 distributed systesm,  milli secs level delay, 
 middleware, document based, file based, object based, coordination based (publish subscribe)
 
+
+OS
+Threads for smaller tasks.  Process for larger tasks such as running applications. 
+A process can have many threads that share address spaces.  Process does not share address space. 
+So how concurrent threads share address space. Using Semaphore, mutex, conditional variable, monitor. 
+
+A threads has program counter that keeps track of which instruction to execute next, and registers which holds current working variables, and stack contains execution history, with one frame for each procedure called but not yet returned. 
+
+Memory are divided into segments such as data, code, stack, heap.
+Threads share memory within a process, except stack. Stack has its own program counter, registers, and stack. 
+
+Each thread belongs to a process. Thread is a way to achieve finer granularity of concurrency with a process.
+All threads in a process share the single memory space and resources controlled by the process. 
+
+How to synchronize threads in java? 
+
+Class MyThread exends Thread {
+  //override run method
+}
+Class Thread1 implements Runnable {
+	Public void run() {
+}
+}
+Life cycle of a thread?   
+   new, runnable, blocked( io), timed waiting(sleep), waiting(join), terminated(done normally, segmentation fault, exception). 
+
+
+
