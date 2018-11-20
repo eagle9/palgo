@@ -23,6 +23,7 @@ simpler code for next and a little faster, beats 43.60%
 public class BSTIterator {
     public BSTIterator(TreeNode root) {
         // do intialization if necessary
+		//going left from root, push all nodes along the path to stack
         stack = new Stack<>();
         while (root != null) {
             stack.push(root);

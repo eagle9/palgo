@@ -22,7 +22,7 @@ not very fast, only beats 23.20%. but easy to understand
 stack stores all the nodes during traversal, stack.peek() point to iterator current node.
 hasNext only have to test if stack.isEmpty
 
-next only needs to return  stack.peek(), modify the tack for next call
+next only needs to return  stack.peek(), modify the stack for next call
 
 move to next node as follows:
 if the current node has right subtree, then next is subtree's left most node
