@@ -62,8 +62,10 @@ public class Solution {
                 q.offer(i);
             }
         }
-        int cnt = 0;
-        while (q.size() ==1) { //why? unique topological sorting
+		//index of number in the reconstruction
+        int index = 0;
+        while (q.size() ==1) { //why == 1? 
+		//unique topological sorting, if >=1, then not unique
             int v = q.poll();
             for (int next : graph.get(v)) {
                 /*indegree.put(next, indegree.get(next) - 1);
@@ -75,13 +77,14 @@ public class Solution {
                     q.offer(next);
                 }
             }
-            //the order we get v is in topological sorting
-            if (v != org[cnt]) {
+            //the order we get these v's should be in topological sorting
+	    	//otherwise seq reconstruction is false
+            if (v != org[index]) {
                 return false;
             }
-            cnt++;
+            index++;
         }
-		
-        return cnt == n;
+		//last v will be at index-1		
+        return index == n;
     }
 }
