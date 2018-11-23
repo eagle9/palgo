@@ -5,10 +5,12 @@ public class Solution {
      * @return an integer
      */
     public int numIslands(boolean[][] grid) {
+		//number of rows = m
         m = grid.length;
         if (m == 0) {
             return 0;
         }
+		//number of columns = n
         n = grid[0].length;
         if (n == 0) {
             return 0;

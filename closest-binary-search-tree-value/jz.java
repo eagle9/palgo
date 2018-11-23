@@ -10,6 +10,7 @@
  * }
  */
 /*linhuchong beats 78.60%
+shaun rewrites, beats 90.60%
 look for lowerBound and upperBoun.  < target max and >= target lower
 then find which one is closer to target and return
 
@@ -41,8 +42,8 @@ class Solution {
             return 0;
         }
         
-        TreeNode lowerNode = lowerBound(root, target);
-        TreeNode upperNode = upperBound(root, target);
+        TreeNode lowerNode = lowerBound2(root, target);
+        TreeNode upperNode = upperBound2(root, target);
         
         if (lowerNode == null) {
             return upperNode.val;
@@ -78,6 +79,20 @@ class Solution {
         return root;
     }
     
+    // find the node with the smallest upperbound
+    private TreeNode upperBound2(TreeNode root, double target) {
+        if (root == null)
+            return null;
+        if (target > root.val) { // upperbound in right subtree
+            return upperBound2(root.right, target);
+        }
+        //now target <= root, root is already upperbound, look for smaller upperbound
+        TreeNode upperNode = upperBound2(root.left, target);
+        if (upperNode != null)
+            return upperNode;
+        return root;
+    }
+    
     //lower bound for target, but maximum
     private TreeNode lowerBound(TreeNode root, double target) {
         if (root == null) 
@@ -94,18 +109,6 @@ class Solution {
         }
         return root;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     // find the node with the smallest value that larger than or equal to target
     private TreeNode upperBound(TreeNode root, double target) {

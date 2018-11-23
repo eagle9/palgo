@@ -9,8 +9,7 @@
  *     }
  * }
  */
- //based on jiadia c++
- //Your submission beats 47.40% Submissions!
+ //based on jiadia c++, beats 76.60%
 import java.util.Queue;
 import java.util.LinkedList;
 public class Solution {
@@ -21,17 +20,16 @@ public class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         // write your code here
         List<List<Integer>> result = new ArrayList<List<Integer>>();
-        //List<List<Integer>> result = new ArrayList<ArrayList<Integer>>(); does not work
         if (root == null)
             return result;
-        
-        Queue q = new LinkedList<Integer>();
+        //bfs for level traversal
+        Queue<TreeNode> q = new LinkedList<>();
         q.offer(root);
-        while (!q.isEmpty()) {  //q.empty -> q.isEmpty()
+        while (!q.isEmpty()) {
             int n = q.size();
             List<Integer> path = new ArrayList<Integer>();
             for (int i = 0; i < n; i++) {
-                TreeNode p = (TreeNode) q.poll();   //remove from front, q.peek() does not remove
+                TreeNode p = (TreeNode) q.poll();
                 path.add(p.val);
                 if (p.left != null) {
                     q.offer(p.left);
@@ -46,4 +44,3 @@ public class Solution {
         return result;
     }
 }
-

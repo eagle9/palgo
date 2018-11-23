@@ -24,3 +24,4 @@ return its level order traversal as:
   [15,7]
 ]
 ```
+jiadai use bfs, same idea as what's in jz's

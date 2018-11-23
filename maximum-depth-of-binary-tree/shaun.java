@@ -15,6 +15,7 @@ public class Solution {
      * @param root: The root of binary tree.
      * @return: An integer
      */
+	//divide and conquer
     public int maxDepth1(TreeNode root) {
         if (root == null)
             return 0;
@@ -29,7 +30,7 @@ public class Solution {
         return Math.max(leftDepth, rightDepth) + 1;
     }
     
-    //jz idea, shaun implemented himself, beats 62.00%
+    //jz idea,traverse, shaun implemented himself, beats 62.00%
     public int maxDepth(TreeNode root) {
         if (root == null)
             return 0;

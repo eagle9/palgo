@@ -20,15 +20,19 @@ public class Solution {
     //using jz divide and conquer, beats 48.40%
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> res = new ArrayList<>();
+		//corner case 1: empty tree
         if (root == null) 
             return res;
+		//corner case 2: single node tree
         if (root.left == null && root.right == null) {
             res.add(String.valueOf(root.val));
             return res;
         }
+		//divide and conquer
         List<String> leftPaths = binaryTreePaths(root.left);
         List<String> rightPaths = binaryTreePaths(root.right);
-        
+       
+	    //assemble bigger solution	
         for (String p : leftPaths) {
             res.add(String.valueOf(root.val) + "->" + p);
         }
@@ -38,7 +42,8 @@ public class Solution {
         
         return res;
     }
-    
+   
+    //dfs recursion	
     public List<String> binaryTreePaths2(TreeNode root) {
         List<String> res = new ArrayList<>();
         if (root == null) 
@@ -48,7 +53,6 @@ public class Solution {
     }
     private void dfs(TreeNode root, String path, List<String> res) {
         if (root == null) {
-            
             //res.add( path2String(path));
             return;
         }
@@ -56,7 +60,6 @@ public class Solution {
             res.add( path);
             return;
         }
-            
         
         if (root.left != null)
             dfs(root.left, path + "->" + String.valueOf(root.left.val), res);
