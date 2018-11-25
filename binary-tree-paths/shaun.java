@@ -18,7 +18,7 @@ public class Solution {
      */
     
     //using jz divide and conquer, beats 48.40%
-    public List<String> binaryTreePaths(TreeNode root) {
+    public List<String> binaryTreePaths1(TreeNode root) {
         List<String> res = new ArrayList<>();
 		//corner case 1: empty tree
         if (root == null) 
@@ -43,8 +43,8 @@ public class Solution {
         return res;
     }
    
-    //dfs recursion	
-    public List<String> binaryTreePaths2(TreeNode root) {
+    //dfs recursion, beats 79.20%
+    public List<String> binaryTreePaths(TreeNode root) {
         List<String> res = new ArrayList<>();
         if (root == null) 
             return res;
@@ -53,7 +53,6 @@ public class Solution {
     }
     private void dfs(TreeNode root, String path, List<String> res) {
         if (root == null) {
-            //res.add( path2String(path));
             return;
         }
         if (root.left == null && root.right == null) {
@@ -63,9 +62,10 @@ public class Solution {
         
         if (root.left != null)
             dfs(root.left, path + "->" + String.valueOf(root.left.val), res);
-        //path.remove(path.size()-1);
+        
         if (root.right != null)
             dfs(root.right, path + "->" + String.valueOf(root.right.val), res);
     }
     
 }
+
