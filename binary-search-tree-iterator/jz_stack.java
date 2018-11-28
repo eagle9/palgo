@@ -27,8 +27,6 @@ next only needs to return  stack.peek(), modify the stack for next call
 move to next node as follows:
 if the current node has right subtree, then next is subtree's left most node
 if the current node has NO right subtree,  then next is the first left turned node in the path from root to the current node
-
-
 */
 
 public class BSTIterator {
