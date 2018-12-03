@@ -15,7 +15,15 @@ get to 200, 300, 400, 500
 
 Top References
 ==============
-grandyang cnblogs
+two blogs for leetcode
+key points to practice solving coding questions
+https://www.quora.com/I-have-practiced-over-300-algorithms-questions-on-LintCode-and-LeetCode-I-have-been-unemployed-for-almost-9-months-and-I-got-8-interviews-and-all-failed-in-the-coding-test-I-still-cant-get-any-offer-What-should-I-do
+
+https://www.quora.com/Is-practicing-500-programming-questions-on-LeetCode-HackerEarth-etc-enough-to-prepare-for-a-Google-interview
+
+- https://my.oschina.net/yysue/blog/1864017
+- grandyang cnblogs has many good explanations
+	https://www.cnblogs.com/grandyang/category/625406.html
 - https://pobenliu.gitbooks.io/leetcode/
 - https://algorithm.yuanbin.me/en/
 - https://zhengyang2015.gitbooks.io/lintcode/content/

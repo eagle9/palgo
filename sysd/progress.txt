@@ -1,0 +1,19 @@
+Track how many full rounds that I go through each system design
+mark 1 when i can fully recite all the design process, QA, diagram and estimation, sketch of algorithm
+
+1. design a news feed or twitter,   0.8, oct 2018
+
+2. design a URL shortening service, 0.6: dec 2 2018
+   to do fully understand consistent hashing
+   estimate QPS, 19k for reading, 
+   figured out key duplication issue
+   understood offline key generation service
+   db partition 
+   load balancer
+
+3. design gfs, distributed file system
+
+4. design bigtable
+
+5. design rate limiter
+
