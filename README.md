@@ -15,6 +15,10 @@ get to 200, 300, 400, 500
 
 Top References
 ==============
+fishercode github, good list or problem link and solution
+good for quick go through all
+https://github.com/fishercoder1534/Leetcode
+
 two blogs for leetcode
 key points to practice solving coding questions
 https://www.quora.com/I-have-practiced-over-300-algorithms-questions-on-LintCode-and-LeetCode-I-have-been-unemployed-for-almost-9-months-and-I-got-8-interviews-and-all-failed-in-the-coding-test-I-still-cant-get-any-offer-What-should-I-do
@@ -29,6 +33,7 @@ https://www.quora.com/Is-practicing-500-programming-questions-on-LeetCode-Hacker
 - https://zhengyang2015.gitbooks.io/lintcode/content/
 - http://www.cnblogs.com/yuzhangcmu/p/4040418.html thumbs up
 - jiadai  github
+ https://github.com/jiadaizhao/LintCode
    github c++, very complete and 99% accepted
 - jiuzhang.com/solutions
 

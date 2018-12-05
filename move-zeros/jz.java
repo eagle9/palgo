@@ -1,6 +1,8 @@
 //jiuzhang, Your submission beats 94.80% Submissions!
 //use swap function, beats 99.40%, also code simpler
 //same idea as jiadai, different coding, shaun modified for easier understanding
+//index and swap part similar to quicksort
+//beats 50% at leetcode
 public class Solution {
     /**
      * @param nums an integer array
