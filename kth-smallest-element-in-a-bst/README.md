@@ -12,3 +12,5 @@ What if the BST is modified (insert/delete operations) often and you need to fin
 
 Related Problems
 second minimum node in a binary tree, binary tree inorder traversal
+Company: Google
+Difficulty: medium

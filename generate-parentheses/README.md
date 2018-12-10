@@ -9,3 +9,5 @@ Given n = 3, a solution set is:
 
 Related Problems
 valid parentheses, unique binary search tree ii, unique binary tree
+Difficulty: Medium
+Company: Google

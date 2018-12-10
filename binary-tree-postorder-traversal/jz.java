@@ -15,8 +15,9 @@ public class Solution {
      * @param root: A Tree
      * @return: Postorder in ArrayList which contains node values.
      */
-    //Iterative, beats 98.00%
-    //postorderTraversal using stack is pretty hard to code
+    //jz Iterative, beats 98.00%
+    //postorderTraversal using stack is pretty hard to code or remember
+	//not recommended 
     //the key to understand code:
     // 1) use prev to track previous node
     // 3) using a simple binary tree to figure out the 3 cases 

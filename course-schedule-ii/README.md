@@ -18,4 +18,6 @@ Related Problems
 topological sorting, sourse schedule, sequence recontruction
 course schedule iii, palindrome permutation, alien dictionary
 course schedule iv
-
+Difficulty: Medium
+Companies: Amazon, Facebook
+Tag: Topoligical sort, bfs
