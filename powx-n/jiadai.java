@@ -10,11 +10,12 @@ public class Solution {
             return 1;
         }
         long ln = n; //to prevent overflow
-        if (ln < 0) { //make ln positive
+        if (ln < 0) { //make ln positive, n can be negative
             x = 1 / x;
             ln = -ln;
         }
         double result = 1;
+		//basic, x * x * x ... * x, n times
         while (ln != 0) {
             if (ln % 2 == 1) {
                 result *= x;
@@ -26,6 +27,16 @@ public class Solution {
 
         return result;
     }
-    
+   	//grandyang, beats 68%,
+    double myPow(double x, int n) {
+        if (n < 0) return 1 / power(x, -n);
+        return power(x, n);
+    }
+    double power(double x, int n) {
+        if (n == 0) return 1;
+        double half = power(x, n / 2);
+        if (n % 2 == 0) return half * half;
+        return x * half * half;
+    } 
     
 };

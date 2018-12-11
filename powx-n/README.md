@@ -12,3 +12,4 @@ Challenge
 O(logn) time
 
 Related Problems
+super pow, fibonacci ii, sqrtx, fast power

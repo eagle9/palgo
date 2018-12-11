@@ -31,10 +31,11 @@ class Solution {
         });
         Interval prev = intervals.get(0);
         for (Interval interval : intervals) {
-            if (prev.end < interval.start) {
+			//no overlapping
+            if (interval.start > prev.end) {
                 result.add(prev);
                 prev = interval;
-            } else {
+            } else { //overlapping
                 prev.start = Math.min(prev.start, interval.start);
                 prev.end = Math.max(prev.end, interval.end);
             }
