@@ -9,14 +9,14 @@
  *     }
  * }
  */
-//shaun's own code, beats 69.00%
+//shaun's own code, beats 100%
 public class Solution {
     /**
      * @param root: The root of binary tree.
      * @return: An integer
      */
-	//divide and conquer
-    public int maxDepth1(TreeNode root) {
+	//divide and conquer, beats 100%
+    public int maxDepth(TreeNode root) {
         if (root == null)
             return 0;
         int leftDepth = maxDepth(root.left);
@@ -30,8 +30,8 @@ public class Solution {
         return Math.max(leftDepth, rightDepth) + 1;
     }
     
-    //jz idea,traverse, shaun implemented himself, beats 62.00%
-    public int maxDepth(TreeNode root) {
+    //jz idea,traverse, shaun implemented himself, beats 100%
+    public int maxDepth2(TreeNode root) {
         if (root == null)
             return 0;
         helper(root,1);
