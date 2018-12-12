@@ -17,11 +17,13 @@ public class Solution {
      */
     public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
         // write your code here
-        /*
+        
+        //beats 99.66%
         dfs(root,p);
         return succ;
-        */
-        return inOrder(root,p);
+        
+        //beats 10%
+        //return inOrder(root,p);
     }
     
     //inspired by one of the jz student solution to predecessor, beats 60.80%
@@ -29,11 +31,12 @@ public class Solution {
     private void dfs(TreeNode root, TreeNode p) {
         if (root == null)
             return;
+        //divide and conquer with bt, succ in right tree
         if (p.val >= root.val) {
             dfs(root.right,p);
         }else {
-            //p.val < root.val
-            succ = root;
+            //p.val < root.val, succ either root or in left tree
+            succ = root; //key to come up succ variable, root is a candidate of succ, make it closest
             dfs(root.left, p);
         }
     }

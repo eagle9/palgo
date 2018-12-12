@@ -21,3 +21,4 @@ Related Problems:
 House robber ii, paint house ii, paint house,house robber
 Difficulty: easy
 Company: Google
+Tag: dp

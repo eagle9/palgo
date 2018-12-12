@@ -5,7 +5,7 @@ public class Solution {
      */
      
      //recursive call, 44% test cases passed, TLE
-    public boolean canWinNim1(int n) {
+    public boolean canWinNim0(int n) {
         // Write your code here
         
         if (n == 1 || n == 2 || n == 3)
@@ -20,7 +20,30 @@ public class Solution {
             return true;
         
     }
-    //beats 61%, find the rule from recursive call
+    ///MLE -- memory limit exceeded
+    public boolean canWinNim2(int n) {
+        // Write your code here
+        boolean [] dp = new boolean[n+1];
+        if (n == 1 || n == 2 || n == 3)
+            return true;
+        
+        dp[1] = true; 
+        dp[2] = true;
+        dp[3] = true;
+        dp[4] = false;
+        
+        for (int i = 5; i <= n; i++) {
+            //i take 1,2, 3, he always win, then i lose
+            if (dp[i-1] && dp[i-2] && dp[i-3])
+                dp[i] = false;
+            else //at lease one way for him to lose, i win
+                dp[i] = true;
+        }
+        return dp[n];
+        
+    }
+    
+    //beats 61%, find the rule from recursive call, beats 100%
     public boolean canWinNim(int n) {
         return n%4 == 0? false: true;
     }

@@ -1,14 +1,16 @@
+
 public class Solution {
     /**
      * @param n: a positive integer
      * @return: the nth digit of the infinite integer sequence
      */
-     //grandyang idea, shaun code in java and commented,  beats 64%
+     //grandyang idea, shaun code in java and commented,  beats 64%, beats 88.57%
     public int findNthDigit(int n) {
         // write your code here
         //1 - 9, 1 digit, 9 numbers, start =1
         //10 -99, 2 digits, 90 numbers, start = 10,
         //100 - 999, 3 digits, 900 numbers,  start = 100
+        //use long, int does not work, why? overflow!!!
         long len = 1, cnt = 9;
         long start = 1;
         while (cnt * len < n) {
@@ -30,3 +32,4 @@ public class Solution {
 
     }
 }
+
