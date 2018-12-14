@@ -9,7 +9,7 @@ public class Solution extends GuessGame {
      * @return the number you guess
      */
      //shaun TLE first try
-     //modified some details, beats 68.40%
+     //modified some details, beats 100%
     public int guessNumber(int n) {
         // Write your code here
         

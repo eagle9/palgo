@@ -8,7 +8,6 @@ Every time you guess wrong, I'll tell you whether the number is higher or lower.
 
 You call a pre-defined API guess(int num) which returns 3 possible results (-1, 1, or 0):
 
-Have you met this question in a real interview?  
 Example
 n = 10, I pick 4 (but you don't know)
 

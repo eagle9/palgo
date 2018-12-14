@@ -36,24 +36,26 @@ class Solution {
             dfs(grid,visited,i-1,j);
     }
     
-    //stackoverflow
+    //stackoverflow, array index out of bound, modified, beats 100%
     private void dfsy(char[][] grid, boolean [][] visited, int i, int j) {
         //recursive dfs exit cases
         if (i < 0 || i >= grid.length) return;
         if (j < 0 || j >= grid[0].length) return;
+        if (visited[i][j])  return;
+        if (grid[i][j] != '1') return;
+        //now i, j in bound, not visited and grid i j == 1
+        //expand the island
         
-        
-        //now i and j all in bound
         visited[i][j] = true;
         
         //extending 1's that makes up the island
-        if (grid[i][j+1] == '1')
+        //if (grid[i][j+1] == '1') //can be out of bound
             dfsy(grid,visited,i,j+1);
-        if (grid[i][j-1] == '1')
+        //if (grid[i][j-1] == '1')
             dfsy(grid,visited,i,j-1);
-        if (grid[i+1][j] == '1')
+        //if (grid[i+1][j] == '1')
             dfsy(grid,visited,i+1,j);
-        if (grid[i-1][j] == '1')
+        //if (grid[i-1][j] == '1')
             dfsy(grid,visited,i-1,j);
     }
 

@@ -5,7 +5,6 @@ I pick a number from 1 to n. You have to guess which number I picked.
 Every time you guess wrong, I'll tell you whether the number I picked is higher or lower.
 However, when you guess a particular number x, and you guess wrong, you pay $x. You win the game when you guess the number I picked.
 
-Have you met this question in a real interview?  
 Example
 Given n = 10, I pick 8.
 First round: You guess 5, I tell you that it's higher. You pay $5.
