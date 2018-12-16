@@ -6,8 +6,8 @@ class MyCalendar {
         calendar = new TreeMap();
     }
     
-    //grandyang idea, shaun java code, beats 24%
-    public boolean book_grandyang(int start, int end) {
+    //grandyang idea, shaun java code, beats 66%
+    public boolean book(int start, int end) {
         //int next won't compile
         Integer next = calendar.ceilingKey(start);
         //    start ---- end, end must < next , otherwise false
@@ -27,8 +27,8 @@ class MyCalendar {
     }
     
     //jz idea, it is harder to find okay to insert case though
-    //beats 16%
-    public boolean book(int start, int end) {
+    //beats 65%
+    public boolean book_jz(int start, int end) {
         Integer previous = calendar.floorKey(start), next = calendar.ceilingKey(start);
         //not easy to come up with the following conditions
         //previous == null, no event earlier

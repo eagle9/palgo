@@ -10,10 +10,9 @@
  * }
  */
 /*linhuchong beats 78.60%
-shaun rewrites, beats 90.60%
+shaun rewrites, beats 100%
 look for lowerBound and upperBoun.  < target max and >= target lower
 then find which one is closer to target and return
-
 time = O(h). Note if you use in-order traversal, time is  o(n) which is not the best. time is not  O(logn)because the height of bst is not logn when it is not balanced.
 */
 class Solution {
@@ -70,8 +69,9 @@ class Solution {
             return lowerBound(root.left, target);
         }
         
-        // target > root.val, root already lower, look for larger lower in right
+        // root.val < target, root already lower, look for larger lower in right
         TreeNode lowerNode = lowerBound(root.right, target);
+        //!= null, found larger lowerbound
         if (lowerNode != null) {
             return lowerNode;
         }

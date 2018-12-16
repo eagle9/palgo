@@ -4,15 +4,14 @@ public class Solution {
      * @return: An integer, the minimum cost to paint all houses
      */
      //grandyang idea, not very natural to use same costs array
-     //beats 78%
+     //beats 78% at lintcode, beats 100% at leetcode
      //smaller problem done, how to solve the larger problem, key to DP
-    public int minCost000(int[][] costs) {
+    public int minCost(int[][] costs) {
             if (costs == null || costs.length == 0) {
                 return 0;
             }
             
             int last = costs.length - 1; //last house index
-            int [][] dp = new int[costs.length][3];
             
             //now costs[i][j]表示刷到第i+1房子用颜色j的最小花费
             for (int i = 1; i <= last; i++) {
@@ -26,7 +25,7 @@ public class Solution {
             
             return Math.min(Math.min(costs[last][0], costs[last][1]), costs[last][2]);
     }
-    public int minCost(int [][] costs) {
+    public int minCost111(int [][] costs) {
         if (costs == null || costs.length == 0) {
                 return 0;
         }

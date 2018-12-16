@@ -10,7 +10,7 @@
  * }
  */
 
-//shaun's own, beats 67.40%
+//shaun's own idea, straight forward traversal , beats 5% at leetcode
 public class Solution {
     
     /**
@@ -23,7 +23,10 @@ public class Solution {
             return 0;
         List<Integer> vals = new ArrayList<>();
         helper(root, vals);
+        
+        //inorder traversal get ascending order in vals
         int first = vals.get(0);
+        // target 0 1 2 ..... n   target
         if (target <= first) {
             return first;
         }
@@ -32,6 +35,7 @@ public class Solution {
             return last;
         }
         for (int i=1; i < vals.size(); i++) {
+            //when iterate, look at two adjacent numbers at the same time
             int prev = vals.get(i-1);
             int v = vals.get(i);
             if (target <= v) {
@@ -40,6 +44,8 @@ public class Solution {
                 else 
                     return prev;
             }
+            //target > v
+            //continue, get closer
         }
         
         //why this 

@@ -1,5 +1,7 @@
 //grandyang java, beats 99%
 //not easy to understand this problem, not quite with details
+//key is understand level by \t, store len by level
+//level of folders from left to right, understand better now
 public class Solution {
     public int lengthLongestPath(String input) {
         int res = 0;

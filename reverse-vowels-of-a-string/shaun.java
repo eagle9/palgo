@@ -1,3 +1,4 @@
+//jz idea same as grandyang, beats 100%
 public class Solution {
     /**
      * @param s: a string
@@ -27,7 +28,11 @@ public class Solution {
         //left == right
         return String.valueOf(chars);
     }
+    //simple code but slower, down from 100% to 84%
     private boolean isVowel(char c) {
+        return "aeiouAEIOU".indexOf(c) >=0;
+    }
+    private boolean isVowel222(char c) {
         if (c == 'a' || c =='e' || c == 'i' || c == 'o' || c == 'u'||
             c == 'A' || c =='E' || c == 'I' || c == 'O' || c == 'U') {
             return true;

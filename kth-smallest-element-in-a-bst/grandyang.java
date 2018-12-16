@@ -1,6 +1,15 @@
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
 // grandyang idea, to address the Follow up(the bst is modified often) that we need to find the kth smallest element frequently. 
 //key point: instead of count the nodes each time, we save the count inside the node. however, when the tree is modified, we need to update the count field for each node that has been impacted. 
-//beats 87.40%
+//beats 87.40% at lintcode, beats 63%
 class Solution {
     class MyTreeNode {
         int val,count;
@@ -53,4 +62,3 @@ class Solution {
         
     }
 }
-
