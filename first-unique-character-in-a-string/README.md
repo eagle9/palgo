@@ -1,13 +1,13 @@
-209. First Unique Character in a String
-Description
-Find the first unique character in a given string. You can assume that there is at least one unique character in the string.
+387. First Unique Character in a String
+Easy
 
-Example
-For "abaccdeff", return 'b'.
+Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
 
-Challenge
-use no extra storage
+Examples:
 
-Related Problems
-first unique number in a stream ii, unique characters
-Companies: Microsoft, Amazon, Google, Bloomberg
+s = "leetcode"
+return 0.
+
+s = "loveleetcode",
+return 2.
+Note: You may assume the string contain only lowercase letters.

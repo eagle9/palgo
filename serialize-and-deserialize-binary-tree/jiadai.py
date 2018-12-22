@@ -5,9 +5,9 @@ class TreeNode:
         self.val = val
         self.left, self.right = None, None
 """
-#Your submission beats 51.20% Submissions!
+#Your submission beats 99% Submissions!
 
-class Solution:
+class Codec:
     def serialize(self, root):
         if root is None:
             return "{}"

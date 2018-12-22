@@ -4,8 +4,8 @@ public class Solution {
      * @param num2: a non-negative integers
      * @return: return sum of num1 and num2
      */
-     //shaun own, beats 34%
-    public String addStrings0000(String num1, String num2) {
+     //shaun own, beats 8%
+    public String addStrings(String num1, String num2) {
         // write your code here
         List<Character> res = new ArrayList<>();
         int m = num1.length(), n = num2.length();
@@ -53,9 +53,9 @@ public class Solution {
         
     }
     
-    //shaun modified, beats 38%
+    //shaun modified, beats 8%
     //key point: java int to char,   char to in
-    public String addStrings(String num1, String num2) {
+    public String addStrings222(String num1, String num2) {
         // write your code here
         List<Character> res = new ArrayList<>();
         int m = num1.length(), n = num2.length();
@@ -84,4 +84,3 @@ public class Solution {
         
     }
 }
-

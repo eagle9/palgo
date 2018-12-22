@@ -10,8 +10,9 @@
  *     }
  * }
  */
-//Your submission beats 76.00% Submissions! jiadai c++
-class Solution {
+//Your submission beats 76.00% Submissions at lintcode! jiadai c++
+//beats 91% at leetcode
+class Codec {
 public:
     /**
      * This method will be invoked first, you should design your own algorithm 
@@ -116,3 +117,4 @@ private:
         return s;
     }
 };
+

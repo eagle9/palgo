@@ -10,19 +10,17 @@
  * }
  */
 
-/*jz bfs Your submission beats 71.80% Submissions!
+/*jz bfs Your submission beats 65% Submissions!
 use the example to understand, 
 An example of testdata: Binary tree {3,9,20,#,#,15,7}, denote the following structure:
-
   3
  / \
 9  20
   /  \
  15   7
-
 */
 
-public class Solution {
+public class Codec {
     /**
      * This method will be invoked first, you should design your own algorithm 
      * to serialize a binary tree which denote by a root node to a string which
