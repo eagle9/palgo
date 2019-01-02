@@ -12,7 +12,7 @@ public class Solution {
     }
     
     
-    //grandyang idea, beats 90%
+    //grandyang idea, beats 61%
     //run some tests? 
     //@left: number of ( to add)
     //@right: number of ) to add

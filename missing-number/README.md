@@ -1,19 +1,25 @@
-196. Missing Number
-Description
-Given an array contains N numbers of 0 .. N, find which number doesn't exist in the array.
+268. Missing Number
+Easy
+Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
 
-Example
-Given N = 3 and the array [0, 1, 3], return 2.
+Example 1:
 
-Challenge
-Do it in-place with O(1) extra memory and O(n) time.
+Input: [3,0,1]
+Output: 2
+Example 2:
 
-Related Problems
-first missing prime number
+Input: [9,6,4,2,3,5,7,0,1]
+Output: 8
+Note:
+Your algorithm should run in linear runtime complexity. Could you implement it using only constant extra space complexity?
+
+Topic: array, math, bit manipulation
+
+Similar Problems
+first missing positive
+single number
 find the duplicate number
 find the missing number ii
-first missing positive
-
-difficulty: medium
-company: facebook, microsoft
+first missing prime number
+couples holding hands
 

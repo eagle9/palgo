@@ -22,3 +22,21 @@ Classical problem: very trickly, key to get this kind of basic classic problem o
 
 jz provided a good dfs recursive solution, understand some, not deep
 found one iterative solution at leetcode discussion board, not yet understand
+77. Combinations
+Medium
+Given two integers n and k, return all possible combinations of k numbers out of 1 ... n.
+
+Example:
+
+Input: n = 4, k = 2
+Output:
+[
+  [2,4],
+  [3,4],
+  [2,3],
+  [1,2],
+  [1,3],
+  [1,4],
+]
+topic: backtracking
+similar: combination sum, permutations

@@ -1,4 +1,4 @@
-427. Generate Parentheses
+lintcode 427. Generate Parentheses
 Description
 Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 
@@ -11,3 +11,19 @@ Related Problems
 valid parentheses, unique binary search tree ii, unique binary tree
 Difficulty: Medium
 Company: Google
+
+leetcode 22. Generate Parentheses
+Medium
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+For example, given n = 3, a solution set is:
+
+[
+  "((()))",
+  "(()())",
+  "(())()",
+  "()(())",
+  "()()()"
+]
+topic: String, backtracking
+similar: valid parentheses, letter combinations of a phone number
