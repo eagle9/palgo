@@ -21,3 +21,7 @@ Answer: 3
 
 Credits:
 Special thanks to @mithmatt for adding this problem and creating all test cases.
+
+topic: dfs, bfs, union find
+Similar: surrounded regions, walls and gates, number of islands ii, number of connected components in a undirected graph,
+number of distinct islands, max area of island

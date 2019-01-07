@@ -1,3 +1,5 @@
+//shaun own java code, modified from index out of bound error, beats 31%
+//key point: prevent out of bound index
 class Solution {
     public int numIslands(char[][] grid) {
         if (grid.length == 0 || grid[0].length ==0)
@@ -6,6 +8,7 @@ class Solution {
         boolean [][]visited = new boolean[m][n];
         for (int i =0; i < m ; i++) {
             for (int j = 0; j < n; j++) {
+                //new island encountered, mark all its connected 1s visisted, and count
                 if (grid[i][j] == '1' && !visited[i][j]) {
                     dfsy(grid, visited,i,j);
                     res++;
@@ -36,20 +39,20 @@ class Solution {
             dfs(grid,visited,i-1,j);
     }
     
-    //stackoverflow, array index out of bound, modified, beats 100%
+    //stackoverflow
     private void dfsy(char[][] grid, boolean [][] visited, int i, int j) {
         //recursive dfs exit cases
         if (i < 0 || i >= grid.length) return;
         if (j < 0 || j >= grid[0].length) return;
-        if (visited[i][j])  return;
-        if (grid[i][j] != '1') return;
-        //now i, j in bound, not visited and grid i j == 1
-        //expand the island
         
+        //mark all connected 1s visited 
+        if (visited[i][j] || grid[i][j] != '1')
+            return;
+        //now i and j all in bound, not visited and it is 1
         visited[i][j] = true;
         
         //extending 1's that makes up the island
-        //if (grid[i][j+1] == '1') //can be out of bound
+        //if (grid[i][j+1] == '1')
             dfsy(grid,visited,i,j+1);
         //if (grid[i][j-1] == '1')
             dfsy(grid,visited,i,j-1);
