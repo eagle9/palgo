@@ -19,3 +19,4 @@ Explanation: Given three people living at (0,0), (0,4), and (2,2):
              of 2+2+2=6 is minimal. So return 6.
 Topic: Math, Sort
 Similar: Shortest Distance from all buildings, minimum moves to equal array
+Hint1: Try to solve it in one dimension first. How can this solution apply to the two dimension case?
