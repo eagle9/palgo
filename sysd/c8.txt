@@ -1,0 +1,21 @@
+design a bigtable
+  NoSQL, SSTable, Bloom Filter
+what is NoSQL, from CAP perspetive 
+digitalocean a comparison of NoSQL, a good summary 
+kv stores, column based, document based, graph
+why study bigtable implementation?
+gfs or hadoop, why need bigtable? 
+qeury the value of a specific attribute. scenario: search value for a key
+using file, binary search
+scenario 2: update the value for a key, using file is time consumuing
+for the fast writing, append to the end of file
+but what about reading? read all values for the key. 
+how to enable both binary search and appending to the end?
+sorted in each parition/chunk, the last parition is not sorted.  
+issues: there will be more and more partitions, search all partitions takes long time.
+solution: k ways merge sort once in a while. 
+
+write a key value pair to disk
+an efficient way: append and sorted in memory block, then serialize to disk once for all.  
+but problem: what if the machine would go down and lose the data in the memory? 
+solution: write ahead log
