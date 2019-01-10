@@ -19,3 +19,9 @@ write a key value pair to disk
 an efficient way: append and sorted in memory block, then serialize to disk once for all.  
 but problem: what if the machine would go down and lose the data in the memory? 
 solution: write ahead log
+
+how to find value for a key? 
+binary search
+build index in memory, use index to reduce the search space on disk
+find if a key is in a file, even faster? 
+solution: bloom filter
