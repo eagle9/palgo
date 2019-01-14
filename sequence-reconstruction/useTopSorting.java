@@ -1,13 +1,9 @@
-//jz Your submission beats 93.00% Submissions!
+//jz Your submission beats 74% Submissions! runtime 104ms
 /*
 create a directed graph according to seqs 
-
 for seq = [1, 2, 3], add vertex 1, 2, 3, and edges (1, 2), (2, 3)
-
 use indegree to store indegree of each vertex），use graph(sucset) to keep it succeeding vertex
-
 do topological sorting (bfs and q size ==1 to ensure unique),  compare org and the sorted list
-
 */
 public class Solution {
     /**
@@ -15,7 +11,7 @@ public class Solution {
      * @param seqs a list of sequences
      * @return true if it can be reconstructed only one or false
      */
-    public boolean sequenceReconstruction(int[] org, int[][] seqs) {
+    public boolean sequenceReconstruction(int[] org, List<List<Integer>> seqs) {
         // set of following numbers
         Map<Integer, Set<Integer>> graph = new HashMap<>();
         //Map<Integer, Integer> indegree = new HashMap<>();
@@ -29,18 +25,18 @@ public class Solution {
         int [] indegree = new int[n+1];
         
         int count = 0; //count all vertex in seqs
-        for (int[] seq : seqs) {
-            count += seq.length;
+        for (List<Integer> seq : seqs) {
+            count += seq.size();
             
-            for (int i = 0; i < seq.length; i++) {
-                if (seq[i] <= 0 || seq[i] > n) //number not in org
+            for (int i = 0; i < seq.size(); i++) {
+                if (seq.get(i) <= 0 || seq.get(i) > n) //number not in org
                     return false;
                 if (i==0) continue;
                 //seq[i-1] --> seq[i]
-                Set<Integer> set = graph.get(seq[i-1]);
-                if (set.add(seq[i])) {
+                Set<Integer> set = graph.get(seq.get(i-1));
+                if (set.add(seq.get(i))) {
                     //indegree.put(seq[i], indegree.get(seq[i]) + 1);
-                    indegree[seq[i]] +=1;
+                    indegree[seq.get(i)]++;
                 }
             }
         }
