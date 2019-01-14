@@ -1,4 +1,5 @@
 //jz dfs , Your submission beats 91.60% Submissions!
+//runtime 79ms, faster than 80%
 public class Solution {
     /**
      * @param words a set of words without duplicates
@@ -67,3 +68,4 @@ public class Solution {
         return ans;
     }
 }
+

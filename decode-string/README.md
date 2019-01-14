@@ -13,5 +13,10 @@ Examples:
 s = "3[a]2[bc]", return "aaabcbc".
 s = "3[a2[c]]", return "accaccacc".
 s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
+<<<<<<< HEAD
 Topic: stack, dfs
 Similar: number of atoms, encode string with shortest length
+=======
+
+topic: stack, dfs
+similar: encode string with shortest length, number of atoms
