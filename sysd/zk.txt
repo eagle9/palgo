@@ -1,0 +1,25 @@
+CAP thereom
+A distributed system can not satisfy the following three properties:  Consistency, Availability, Partition Tolerance. 
+different client gets the same value of a key
+service is always available.
+examples to trade off CAP. Partioned, TO keep A, give up consistency, makes senses; Or give up A, keep consistency.
+What is consistency?
+consistency model
+weak consistency
+  eventual consistency
+	DNS
+	Gossip (Cassandra)
+Strong consistency, widely used 
+Problems? 
+	fault tolerance.  achieve it with state machine replication concensus algorithm
+    paxos 
+Strong consistency -- master slave syncronizaiton
+master accept write request -> master copy log to slaves -> master wait for all slave completion
+problem found: any slave failure leads to master blocking and entire cluster becomes not available.
+
+Strong consistency -- majority wins
+	write to and read from more than N/2 nodes
+    problem?  concurrent update order 
+
+Strong consistency - Paxos
+  

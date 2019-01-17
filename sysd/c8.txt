@@ -5,7 +5,13 @@ digitalocean a comparison of NoSQL, a good summary
 kv stores, column based, document based, graph
 why study bigtable implementation?
 gfs or hadoop, why need bigtable? 
-qeury the value of a specific attribute. scenario: search value for a key
+qeury the value of a specific attribute. scenario: search value for a key. large number of key value pairs. 
+Imagine the ulr to web page snapshots of entire www. Not just store key value pairs, but support fast read and write. 
+Needs to scale to more than one machine, tolerant to machine and network failure.  
+Traditional dbms is not suitable. Better design such a bigtable system ourselves. Use it as building block for many other google systems.  
+how bigtable is used at google? 
+
+
 using file, binary search
 scenario 2: update the value for a key, using file is time consumuing
 for the fast writing, append to the end of file
@@ -13,10 +19,11 @@ but what about reading? read all values for the key.
 how to enable both binary search and appending to the end?
 sorted in each parition/chunk, the last parition is not sorted.  
 issues: there will be more and more partitions, search all partitions takes long time.
-solution: k ways merge sort once in a while. 
+solution: k ways merge sort once in a while.this is called compaction. there are minor and major compactions.  
 
 write a key value pair to disk
 an efficient way: append and sorted in memory block, then serialize to disk once for all.  
+The memory block is called memtable. 
 but problem: what if the machine would go down and lose the data in the memory? 
 solution: write ahead log
 
@@ -24,4 +31,5 @@ how to find value for a key?
 binary search
 build index in memory, use index to reduce the search space on disk
 find if a key is in a file, even faster? 
-solution: bloom filter
+solution: bloom filter, takes small amount of memory, quick O(k) to find if a key is in, with false positive errors. 
+where k is the number of hash functions. The memory is needed for the bit array, which is much smaller than the actual key value data size.  The false positive errors can be made very low, say under 5%.  No false negatives.  If a key is not in, then no need to look up it in bigtable. 
