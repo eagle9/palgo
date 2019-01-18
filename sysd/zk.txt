@@ -22,4 +22,11 @@ Strong consistency -- majority wins
     problem?  concurrent update order 
 
 Strong consistency - Paxos
+   basic paxos, multi paxos
+
+Strong consistency - Raft and zab. 
+   term by term, elect a leader. start with followers, no info from leader, a follower becomes a candidate, send vote to other followers, who cast the vote back to the leader, as long as majority( quorum) send vote back, the candidate becomes a leader.   client update the value of a key, leader write log first, then notify its followers to update and log, as long as majority followers done update and send confirmation back to leader, leader finish the update and log, and now concensus is reached in the distributed system. 
+
+
+
   
