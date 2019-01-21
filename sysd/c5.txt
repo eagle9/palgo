@@ -1,0 +1,14 @@
+check my blog for more
+https://www.agiliq.com/blog/2013/10/producer-consumer-problem-in-python/
+
+
+producer and consumer pattern
+use a queue
+if empty queue, consumer should wait with condition to be notified
+if queue is full, producer should wait with condition to be notified
+use lock, condition
+or use queue with concurrency control
+
+https://www.geeksforgeeks.org/producer-consumer-solution-using-threads-java/
+
+https://www.codeguru.com/cpp/sample_chapter/article.php/c13533/Why-Too-Many-Threads-Hurts-Performance-and-What-to-do-About-It.htm

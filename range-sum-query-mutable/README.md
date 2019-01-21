@@ -18,3 +18,9 @@ You may assume the number of calls to update and sumRange function is distribute
 Topic: Binary Indexed Tree, Segment Tree
 Similar: Range Sum Query - Immutable
 Range Sum Query 2D - Mutable
+
+classical use of Binary indexed tree
+parent child relationship:  index 0 is dummy node that does not store any array element, init as 0
+each node has an index,   dummpy node index 0 will be the parent.  node with index i, take it binary representation, flip the last 1 bit, you get another smaller index, which is the parent. 
+bi tree is used to store prefix sum of the array.  How ???
+

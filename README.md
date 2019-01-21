@@ -52,3 +52,11 @@ tree, graph representation and manipulation(traversal, etc.)
 
 ml tried kmeans, with sklearn iris data set and driver data set from datascienceinc, tried to visualize data and results, to understand kmeans more. driver data analysis centriods do not much the blog, why?  to study more
 
+Jan 21 2019
+range sum query mutable
+range sum query 2d mutable
+range sum query 2d immutable
+segment tree and binary index tree
+maximal square, maximal rectangle not yet understand
+robot room cleaner review one more, walls and gates
+design auto complete, implement trie, review not yet fully master
