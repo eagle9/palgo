@@ -1,18 +1,20 @@
-840. Range Sum Query - Mutable
-Description
+307. Range Sum Query - Mutable
+Medium
 Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
 
 The update(i, val) function modifies nums by updating the element at index i to val.
 
-1.The array is only modifiable by the update function.
-2.You may assume the number of calls to update and sumRange function is distributed evenly.
+Example:
 
-Example
 Given nums = [1, 3, 5]
-Related Problems
-range sum query immutable
 
 sumRange(0, 2) -> 9
 update(1, 2)
 sumRange(0, 2) -> 8
-Related Problems
+Note:
+
+The array is only modifiable by the update function.
+You may assume the number of calls to update and sumRange function is distributed evenly.
+Topic: Binary Indexed Tree, Segment Tree
+Similar: Range Sum Query - Immutable
+Range Sum Query 2D - Mutable
