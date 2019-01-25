@@ -79,6 +79,7 @@ public class Solution {
             modifySegmentTree(root.right, index, value);
         }
         //update
+		// remember propogate sum up to root
         root.sum = root.left.sum + root.right.sum;
     }
     /**

@@ -1,7 +1,6 @@
 /*
 linhuchong java code, binary index tree,  runtime 83ms, faster than 56%
 similar idea to grandyang
-grandyang c++ does not work
 
 http://www.cnblogs.com/grandyang/p/4985506.html
 tushar roy's youtube lecture explains well about this
