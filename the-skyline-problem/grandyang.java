@@ -6,7 +6,6 @@ class Solution {
         List<int[]> height = new ArrayList<>();
         List<int[]> res = new ArrayList<>();
         
-        
         for (int[] a : buildings) {
             //a0 a1 a2 --- left, right, height
             //这里为了区分左右边界，将左边界的高度存为负数，建立左边界和负高度的pair，再建立右边界和高度的pair，
