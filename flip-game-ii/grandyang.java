@@ -1,4 +1,5 @@
-//grandyang idea, shaun java code, beats 16%
+//grandyang idea, shaun java code, recursion is easy to give a solution. 
+//runtime 107ms, faster than 31%
 class Solution {
     public boolean canWin(String s) {
         char [] chars = s.toCharArray();
@@ -8,12 +9,12 @@ class Solution {
                 String flipped = s.substring(0,i-1) + "--" + s.substring(i+1);
                 //opponent can not win, then we can find a way to win
                 if (!canWin(flipped)) return true;
-                    
+
             }
         }
         //tried all flips and we can not win at all
         return false;
-        
+
     }
 }
 /*
