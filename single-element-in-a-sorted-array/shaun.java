@@ -1,19 +1,29 @@
 //grandyang idea 2, 0ms, faster than 100%
 //not fully understand
+//found https://www.jianshu.com/p/ded42b5418c7
+//runtime 0ms, faster than 100%, memory less than 21%
 class Solution {
     public int singleNonDuplicate(int[] nums) {
         int left = 0, right = nums.length - 1;
         while (left < right) {
             int mid = left + (right - left) / 2;
-            int buddy = (mid % 2 == 0)? mid+1: mid-1;
-            //int buddy = mid ^ 1;
-            // odd-1 == odd 
-            if (nums[mid] == nums[buddy]) left = mid + 1;
-            else right = mid;
+            if (nums[mid] != nums[mid-1] && nums[mid] != nums[mid+1])
+                return nums[mid];
+            
+            if ((mid % 2 ==0 && nums[mid] == nums[mid+1]) || 
+                (mid % 2 ==1 && nums[mid] == nums[mid-1]) ){
+                //even numbers befoe mid, single in right half, contract left
+                left = mid+1;
+            }else { //in left half, contract right
+                right = mid-1;
+            }
+            
         }
+        //left == right now
         return nums[left];
     }
 }
+//shaun's nervous first try, 
 //index out of bound, then wrong answer
 class Solution2 {
     public int singleNonDuplicate(int[] nums) {
