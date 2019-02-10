@@ -1,4 +1,4 @@
-# 127. Topological Sorting
+Lintcode # 127. Topological Sorting
 
 Difficulty: Medium
 
@@ -25,3 +25,5 @@ The topological order can be:
 [0, 1, 2, 3, 4, 5]
 [0, 2, 3, 1, 5, 4]
 ```
+Challenge: can you do it in both BFS and DFS
+Related: Course schedule IV, course schedule, course schedule ii, sequence reconstruction

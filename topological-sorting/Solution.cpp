@@ -6,8 +6,7 @@
  *     DirectedGraphNode(int x) : label(x) {};
  * };
  */
-
-//Your submission beats 52.20% Submissions!
+//beats 96%, jiadai
 class Solution {
 public:
     /**
@@ -17,38 +16,31 @@ public:
     vector<DirectedGraphNode*> topSort(vector<DirectedGraphNode*> graph) {
         // write your code here
         vector<DirectedGraphNode*> result;
-        unordered_map<DirectedGraphNode*, int> degrees;
-        for (DirectedGraphNode* node : graph)
-        {
-            if (degrees.find(node) == degrees.end())
-            {
-                degrees[node] = 0;
+        unordered_map<DirectedGraphNode*, int> indegree;
+        for (DirectedGraphNode* node : graph) {
+            if (indegree.find(node) == indegree.end()) {
+                indegree[node] = 0;
             }
-            for (DirectedGraphNode* neighbor : node->neighbors)
-            {
-                ++degrees[neighbor];
+            for (DirectedGraphNode* nb : node->neighbors) {
+                ++indegree[nb];
             }
         }
         
         queue<DirectedGraphNode*> Q;
-        for (auto it = degrees.begin(); it != degrees.end(); ++it)
-        {
-            if (it->second == 0)
-            {
+        for (auto it = indegree.begin(); it != indegree.end(); ++it) {
+            if (it->second == 0){
                 Q.push(it->first);
             }
         }
         
-        while (!Q.empty())
-        {
+        while (!Q.empty()) {
             DirectedGraphNode* node = Q.front();
-            result.push_back(node);
             Q.pop();
-            for (DirectedGraphNode* neighbor : node->neighbors)
-            {
-                if (--degrees[neighbor] == 0)
-                {
-                    Q.push(neighbor);
+            result.push_back(node);
+            
+            for (DirectedGraphNode* nb : node->neighbors) {
+                if (--indegree[nb] == 0) {
+                    Q.push(nb);
                 }
             }
         }

@@ -7,8 +7,8 @@
  * };
  */
 
-// use jdk 8 map.putIfAbsent, faster and clener code
-//Your submission beats 91.60% Submissions!
+//lintcode topological sorting
+//Your submission beats 78.60% Submissions!
 
 public class Solution {
     /**
@@ -20,22 +20,22 @@ public class Solution {
         HashMap<DirectedGraphNode, Integer> indegree = new HashMap();
         //node -> neighbors
         for (DirectedGraphNode node : graph) {
-            indegree.putIfAbsent(node,0);
-            for (DirectedGraphNode nb : node.neighbors) {
-                indegree.putIfAbsent(nb,0);
-                indegree.put(nb, indegree.get(nb)+1);
+            for (DirectedGraphNode neighbor : node.neighbors) {
+                if (indegree.containsKey(neighbor)) {
+                    indegree.put(neighbor, indegree.get(neighbor) + 1);
+                } else { //init
+                    indegree.put(neighbor, 1); 
+                }
             }
         }
+		//note: from the code above, some nodes might not be in indegree
 
-        // init sorted list
         ArrayList<DirectedGraphNode> result = new ArrayList<>();
 
         // put nodes whose indegree == 0 into queue
         Queue<DirectedGraphNode> q = new LinkedList<>();
         for (DirectedGraphNode node : graph) {
-            
-            //if (!indegree.containsKey(node)) { //indegree == 0
-            if (indegree.get(node) == 0) {
+            if (!indegree.containsKey(node)) { //indegree == 0
                 q.offer(node);
                 result.add(node);
             }
@@ -44,6 +44,7 @@ public class Solution {
         // poll one node from queue, -1 indegree for all its neighbors
         while (!q.isEmpty()) {
             DirectedGraphNode node = q.poll();
+			//node has been used in the top sort list, now all it neighbors' indegree --
             for (DirectedGraphNode nb : node.neighbors) {
                 indegree.put(nb, indegree.get(nb) - 1);
                 if (indegree.get(nb) == 0) {
