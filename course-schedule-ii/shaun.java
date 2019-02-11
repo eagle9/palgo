@@ -1,16 +1,8 @@
-//given courses from 0 to n-1, and prerequisites list such as [i,pre] pre ---> i
-//figure out if it is possible to finish all the courses
-//topogical sorted course list, does this list include all courses? 
-// or length of the sorted list == n???
-//represent the graph:
-//node list   0 to n-1, 
-// for each node, use edges to all followers from the node
 
-//Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1]
-
-//shaun's update, Your submission beats 92.80% Submissions! at lintcode, beats 65% at leetcode
-//
+/*shaun's update, Your submission beats 92.80% Submissions! at lintcode, Runtime: 12 ms, faster than 54.30% of Java online submissions for Course Schedule II.
+Memory Usage: 29.2 MB, less than 82.82% of Java online submissions for Course Schedule II.
 //slightly modified from course schedule solution
+*/
 public class Solution {
      
     /*
@@ -71,6 +63,7 @@ public class Solution {
             res[i] = sorted.get(i);
         }
         return res;
+        
     }
 
 }

@@ -1,0 +1,284 @@
+1	1	Two Sum    		40.20%	Easy
+2	20	Valid Parentheses    		35.70%	Easy
+3	929	Unique Email Addresses    		78.40%	Easy
+4	21	Merge Two Sorted Lists    		45.40%	Easy
+5	121	Best Time to Buy and Sell Stock    		45.90%	Easy
+6	53	Maximum Subarray    		42.60%	Easy
+7	206	Reverse Linked List    		52.20%	Easy
+8	7	Reverse Integer    		25.10%	Easy
+9	175	Combine Two Tables    		48.60%	Easy
+10	141	Linked List Cycle    		35.40%	Easy
+11	482	License Key Formatting    		40.00%	Easy
+12	9	Palindrome Number    		41.50%	Easy
+13	771	Jewels and Stones    		82.60%	Easy
+14	13	Roman to Integer    		51.30%	Easy
+15	88	Merge Sorted Array    		34.60%	Easy
+16	344	Reverse String    		62.60%	Easy
+17	412	Fizz Buzz    		58.70%	Easy
+18	67	Add Binary    		37.60%	Easy
+19	811	Subdomain Visit Count    		63.40%	Easy
+20	283	Move Zeroes    		53.40%	Easy
+21	176	Second Highest Salary    		25.90%	Easy
+22	844	Backspace String Compare    		44.90%	Easy
+23	155	Min Stack    		35.30%	Easy
+24	193	Valid Phone Numbers    		25.00%	Easy
+25	14	Longest Common Prefix    		32.90%	Easy
+26	716	Max Stack    		39.10%	Easy
+27	258	Add Digits    		53.40%	Easy
+28	203	Remove Linked List Elements    		35.10%	Easy
+29	543	Diameter of Binary Tree    		46.10%	Easy
+30	349	Intersection of Two Arrays    		52.50%	Easy
+31	387	First Unique Character in a String    		48.80%	Easy
+32	242	Valid Anagram    		50.60%	Easy
+33	70	Climbing Stairs    		43.10%	Easy
+34	195	Tenth Line    		34.00%	Easy
+35	38	Count and Say    		39.30%	Easy
+36	339	Nested List Weight Sum    		67.00%	Easy
+37	443	String Compression    		36.60%	Easy
+38	198	House Robber    		40.70%	Easy
+39	706	Design HashMap    		53.50%	Easy
+40	125	Valid Palindrome    		30.00%	Easy
+41	438	Find All Anagrams in a String    		36.00%	Easy
+42	415	Add Strings    		42.90%	Easy
+43	905	Sort Array By Parity    		72.00%	Easy
+44	268	Missing Number    		47.30%	Easy
+45	204	Count Primes    		28.00%	Easy
+46	122	Best Time to Buy and Sell Stock II    		50.70%	Easy
+47	234	Palindrome Linked List    		35.10%	Easy
+48	167	Two Sum II - Input array is sorted    		49.00%	Easy
+49	26	Remove Duplicates from Sorted Array    		39.30%	Easy
+50	205	Isomorphic Strings    		36.50%	Easy
+51	160	Intersection of Two Linked Lists    		31.90%	Easy
+52	973	K Closest Points to Origin    		66.60%	Easy
+53	709	To Lower Case    		76.00%	Easy
+54	202	Happy Number    		44.10%	Easy
+55	278	First Bad Version    		28.70%	Easy
+56	346	Moving Average from Data Stream    		64.70%	Easy
+57	69	Sqrt(x)    		30.50%	Easy
+58	697	Degree of an Array    		48.90%	Easy
+59	703	Kth Largest Element in a Stream    		43.90%	Easy
+60	136	Single Number    		58.70%	Easy
+61	35	Search Insert Position    		40.40%	Easy
+62	28	Implement strStr()    		31.10%	Easy
+63	350	Intersection of Two Arrays II    		46.50%	Easy
+64	232	Implement Queue using Stacks    		41.60%	Easy
+65	557	Reverse Words in a String III    		62.90%	Easy
+66	751	IP to CIDR    		57.40%	Easy
+67	226	Invert Binary Tree    		56.70%	Easy
+68	819	Most Common Word    		41.40%	Easy
+69	110	Balanced Binary Tree    		40.20%	Easy
+70	104	Maximum Depth of Binary Tree    		58.80%	Easy
+71	724	Find Pivot Index    		40.30%	Easy
+72	707	Design Linked List    		22.60%	Easy
+73	101	Symmetric Tree    		42.50%	Easy
+74	170	Two Sum III - Data structure design    		29.40%	Easy
+75	235	Lowest Common Ancestor of a Binary Search Tree    		43.10%	Easy
+76	66	Plus One    		40.60%	Easy
+77	83	Remove Duplicates from Sorted List    		41.80%	Easy
+78	680	Valid Palindrome II    		33.60%	Easy
+79	674	Longest Continuous Increasing Subsequence    		43.70%	Easy
+80	595	Big Countries    		72.90%	Easy
+81	108	Convert Sorted Array to Binary Search Tree    		48.90%	Easy
+82	766	Toeplitz Matrix    		60.90%	Easy
+83	257	Binary Tree Paths    		44.80%	Easy
+84	118	Pascal's Triangle    		44.10%	Easy
+85	371	Sum of Two Integers    		51.40%	Easy
+86	157	Read N Characters Given Read4    		28.10%	Easy
+87	169	Majority Element    		51.20%	Easy
+88	181	Employees Earning More Than Their Managers    		44.50%	Easy
+89	189	Rotate Array    		28.60%	Easy
+90	463	Island Perimeter    		60.10%	Easy
+91	836	Rectangle Overlap    		45.50%	Easy
+92	475	Heaters    		30.90%	Easy
+93	852	Peak Index in a Mountain Array    		68.90%	Easy
+94	532	K-diff Pairs in an Array    		29.10%	Easy
+95	168	Excel Sheet Column Title    		28.40%	Easy
+96	190	Reverse Bits    		29.90%	Easy
+97	359	Logger Rate Limiter    		63.80%	Easy
+98	876	Middle of the Linked List    		63.10%	Easy
+99	628	Maximum Product of Three Numbers    		45.40%	Easy
+100	743	Network Delay Time    		39.50%	Easy
+101	427	Construct Quad Tree    		54.10%	Easy
+102	496	Next Greater Element I    		58.40%	Easy
+103	617	Merge Two Binary Trees    		68.90%	Easy
+104	448	Find All Numbers Disappeared in an Array    		52.50%	Easy
+105	605	Can Place Flowers    		30.60%	Easy
+106	243	Shortest Word Distance    		56.10%	Easy
+107	733	Flood Fill    		49.60%	Easy
+108	453	Minimum Moves to Equal Array Elements    		49.00%	Easy
+109	266	Palindrome Permutation    		59.60%	Easy
+110	171	Excel Sheet Column Number    		50.70%	Easy
+111	270	Closest Binary Search Tree Value    		42.90%	Easy
+112	237	Delete Node in a Linked List    		51.60%	Easy
+113	100	Same Tree    		49.30%	Easy
+114	225	Implement Stack using Queues    		37.70%	Easy
+115	458	Poor Pigs    		44.70%	Easy
+116	572	Subtree of Another Tree    		41.10%	Easy
+117	246	Strobogrammatic Number    		41.70%	Easy
+118	734	Sentence Similarity    		40.00%	Easy
+119	849	Maximize Distance to Closest Person    		40.30%	Easy
+120	796	Rotate String    		48.80%	Easy
+121	437	Path Sum III    		41.70%	Easy
+122	917	Reverse Only Letters    		56.00%	Easy
+123	700	Search in a Binary Search Tree    		66.20%	Easy
+124	191	Number of 1 Bits    		41.70%	Easy
+125	728	Self Dividing Numbers    		68.70%	Easy
+126	874	Walking Robot Simulation    		30.40%	Easy
+127	119	Pascal's Triangle II    		41.60%	Easy
+128	441	Arranging Coins    		37.30%	Easy
+129	746	Min Cost Climbing Stairs    		45.70%	Easy
+130	717	1-bit and 2-bit Characters    		48.80%	Easy
+131	303	Range Sum Query - Immutable    		36.30%	Easy
+132	409	Longest Palindrome    		47.30%	Easy
+133	561	Array Partition I    		68.10%	Easy
+134	459	Repeated Substring Pattern    		39.30%	Easy
+135	953	Verifying an Alien Dictionary    		56.10%	Easy
+136	896	Monotonic Array    		54.40%	Easy
+137	824	Goat Latin    		56.70%	Easy
+138	461	Hamming Distance    		69.90%	Easy
+139	832	Flipping an Image    		71.10%	Easy
+140	686	Repeated String Match    		31.30%	Easy
+141	252	Meeting Rooms    		51.10%	Easy
+142	447	Number of Boomerangs    		48.90%	Easy
+143	509	Fibonacci Number    		66.40%	Easy
+144	690	Employee Importance    		53.00%	Easy
+145	559	Maximum Depth of N-ary Tree    		64.10%	Easy
+146	804	Unique Morse Code Words    		73.60%	Easy
+147	342	Power of Four    		39.90%	Easy
+148	276	Paint Fence    		36.00%	Easy
+149	107	Binary Tree Level Order Traversal II    		45.40%	Easy
+150	112	Path Sum    		36.80%	Easy
+151	367	Valid Perfect Square    		39.30%	Easy
+152	231	Power of Two    		41.50%	Easy
+153	400	Nth Digit    		30.00%	Easy
+154	183	Customers Who Never Order    		42.30%	Easy
+155	111	Minimum Depth of Binary Tree    		34.70%	Easy
+156	687	Longest Univalue Path    		33.20%	Easy
+157	897	Increasing Order Search Tree    		62.30%	Easy
+158	669	Trim a Binary Search Tree    		59.60%	Easy
+159	599	Minimum Index Sum of Two Lists    		47.00%	Easy
+160	665	Non-decreasing Array    		19.60%	Easy
+161	27	Remove Element    		43.30%	Easy
+162	933	Number of Recent Calls    		68.20%	Easy
+163	504	Base 7    		44.50%	Easy
+164	872	Leaf-Similar Trees    		62.00%	Easy
+165	256	Paint House    		48.00%	Easy
+166	389	Find the Difference    		52.60%	Easy
+167	401	Binary Watch    		45.00%	Easy
+168	884	Uncommon Words from Two Sentences    		60.50%	Easy
+169	657	Robot Return to Origin    		70.60%	Easy
+170	867	Transpose Matrix    		63.60%	Easy
+171	704	Binary Search    		44.70%	Easy
+172	182	Duplicate Emails    		51.90%	Easy
+173	405	Convert a Number to Hexadecimal    		41.60%	Easy
+174	671	Second Minimum Node In a Binary Tree    		43.20%	Easy
+175	290	Word Pattern    		34.40%	Easy
+176	788	Rotated Digits    		52.80%	Easy
+177	800	Similar RGB Color    		58.50%	Easy
+178	914	X of a Kind in a Deck of Cards    		34.30%	Easy
+179	172	Factorial Trailing Zeroes    		37.20%	Easy
+180	429	N-ary Tree Level Order Traversal    		58.00%	Easy
+181	404	Sum of Left Leaves    		48.60%	Easy
+182	653	Two Sum IV - Input is a BST    		51.60%	Easy
+183	414	Third Maximum Number    		28.60%	Easy
+184	383	Ransom Note    		49.10%	Easy
+185	597	Friend Requests I: Overall Acceptance Rate    		39.20%	Easy
+186	196	Delete Duplicate Emails    		30.20%	Easy
+187	888	Fair Candy Swap    		55.30%	Easy
+188	58	Length of Last Word    		32.10%	Easy
+189	521	Longest Uncommon Subsequence I     		56.00%	Easy
+190	485	Max Consecutive Ones    		54.40%	Easy
+191	558	Quad Tree Intersection    		39.30%	Easy
+192	783	Minimum Distance Between BST Nodes    		49.60%	Easy
+193	501	Find Mode in Binary Search Tree    		38.80%	Easy
+194	705	Design HashSet    		49.30%	Easy
+195	530	Minimum Absolute Difference in BST    		49.60%	Easy
+196	937	Reorder Log Files    		58.00%	Easy
+197	784	Letter Case Permutation    		55.00%	Easy
+198	606	Construct String from Binary Tree    		50.90%	Easy
+199	893	Groups of Special-Equivalent Strings    		61.70%	Easy
+200	908	Smallest Range I    		64.20%	Easy
+201	883	Projection Area of 3D Shapes    		65.10%	Easy
+202	859	Buddy Strings    		27.40%	Easy
+203	868	Binary Gap    		59.20%	Easy
+204	941	Valid Mountain Array    		34.90%	Easy
+205	563	Binary Tree Tilt    		46.80%	Easy
+206	596	Classes More Than 5 Students    		34.50%	Easy
+207	217	Contains Duplicate    		50.50%	Easy
+208	922	Sort Array By Parity II    		66.60%	Easy
+209	627	Swap Salary    		68.80%	Easy
+210	345	Reverse Vowels of a String    		40.70%	Easy
+211	633	Sum of Square Numbers    		32.80%	Easy
+212	942	DI String Match    		70.30%	Easy
+213	575	Distribute Candies    		59.00%	Easy
+214	326	Power of Three    		41.30%	Easy
+215	520	Detect Capital    		52.20%	Easy
+216	566	Reshape the Matrix    		58.30%	Easy
+217	812	Largest Triangle Area    		54.90%	Easy
+218	551	Student Attendance Record I    		45.10%	Easy
+219	197	Rising Temperature    		33.40%	Easy
+220	762	Prime Number of Set Bits in Binary Representation    		57.50%	Easy
+221	830	Positions of Large Groups    		47.30%	Easy
+222	590	N-ary Tree Postorder Traversal    		65.70%	Easy
+223	696	Count Binary Substrings    		52.20%	Easy
+224	455	Assign Cookies    		48.00%	Easy
+225	892	Surface Area of 3D Shapes    		55.30%	Easy
+226	925	Long Pressed Name    		44.40%	Easy
+227	806	Number of Lines To Write String    		62.40%	Easy
+228	492	Construct the Rectangle    		48.30%	Easy
+229	581	Shortest Unsorted Continuous Subarray    		29.60%	Easy
+230	292	Nim Game    		55.40%	Easy
+231	821	Shortest Distance to a Character    		62.60%	Easy
+232	500	Keyboard Row    		61.50%	Easy
+233	643	Maximum Average Subarray I    		38.80%	Easy
+234	682	Baseball Game    		60.10%	Easy
+235	961	N-Repeated Element in Size 2N Array    		73.50%	Easy
+236	374	Guess Number Higher or Lower    		38.50%	Easy
+237	476	Number Complement    		62.00%	Easy
+238	263	Ugly Number    		40.30%	Easy
+239	760	Find Anagram Mappings    		78.80%	Easy
+240	586	Customer Placing the Largest Number of Orders    		64.80%	Easy
+241	720	Longest Word in Dictionary    		43.60%	Easy
+242	613	Shortest Distance in a Line    		72.10%	Easy
+243	645	Set Mismatch    		40.30%	Easy
+244	977	Squares of a Sorted Array    		73.80%	Easy
+245	637	Average of Levels in Binary Tree    		57.80%	Easy
+246	589	N-ary Tree Preorder Traversal    		65.60%	Easy
+247	594	Longest Harmonious Subsequence    		42.80%	Easy
+248	506	Relative Ranks    		47.80%	Easy
+249	541	Reverse String II    		44.90%	Easy
+250	538	Convert BST to Greater Tree    		49.80%	Easy
+251	219	Contains Duplicate II    		34.50%	Easy
+252	408	Valid Word Abbreviation    		29.00%	Easy
+253	747	Largest Number At Least Twice of Others    		40.20%	Easy
+254	507	Perfect Number    		33.30%	Easy
+255	661	Image Smoother    		47.70%	Easy
+256	944	Delete Columns to Make Sorted    		69.90%	Easy
+257	860	Lemonade Change    		50.30%	Easy
+258	840	Magic Squares In Grid    		35.10%	Easy
+259	754	Reach a Number    		31.40%	Easy
+260	976	Largest Perimeter Triangle    		56.60%	Easy
+261	584	Find Customer Referee    		66.10%	Easy
+262	598	Range Addition II    		48.40%	Easy
+263	620	Not Boring Movies    		61.00%	Easy
+264	949	Largest Time for Given Digits    		33.20%	Easy
+265	693	Binary Number with Alternating Bits    		57.50%	Easy
+266	744	Find Smallest Letter Greater Than Target    		43.50%	Easy
+267	984	String Without AAA or BBB    		31.60%	Easy
+===================low frequency================
+268	965	Univalued Binary Tree    		68.30%	Easy
+269	989	Add to Array-Form of Integer    New		44.50%	Easy
+270	985	Sum of Even Numbers After Queries    		68.70%	Easy
+271	970	Powerful Integers    		39.00%	Easy
+272	758	Bold Words in String    		41.60%	Easy
+273	748	Shortest Completing Word    		53.30%	Easy
+274	624	Maximum Distance in Arrays    		36.70%	Easy
+275	619	Biggest Single Number    		38.00%	Easy
+276	610	Triangle Judgement    		60.70%	Easy
+277	607	Sales Person    		54.30%	Easy
+278	604	Design Compressed String Iterator    		34.30%	Easy
+279	603	Consecutive Available Seats    		56.90%	Easy
+280	577	Employee Bonus    		56.50%	Easy
+281	434	Number of Segments in a String    		36.60%	Easy
+282	422	Valid Word Square    		36.40%	Easy
+283	293	Flip Game    		58.40%	Easy
