@@ -14,3 +14,10 @@ Explanation: 13 = 4 + 9.
 
 Topic: Math, Dynamic Programming, Breadth-first search
 Similar: Count primes, ugly number ii
+
+idea: 
+given n, find the list of square numbers <=n
+to make sum n with these number with repetition 
+dp[i] the least number of perfect square number that adds to i. I came up the right dp on first try.
+how to figure out recurrence??? give me some hint??
+

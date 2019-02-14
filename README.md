@@ -1,11 +1,17 @@
 
 Algorithms in Java, C++, Python
 ===============================
-- Python rich builtin and terse syntax enables you to write concise code, which is easy to understand and remember, and you can focus more on algorithms themselves
-- Key python functions and collections
-- Algorithms and data structures
-- Machine learning, ml, nndl(neural network and deep learning) 
-
+Guide
+=====
+each type 10-20
+solve a batch of problem of similar type
+first round: 5 min thinking, no idea, learn
+second round: try to get accepted within 30min, otherwise learn
+third round: try to get accepted within 20min, otherwise learn
+prefer solution that is faster than 70% 
+read other people's code, c++ as well
+my own tip: speak your mind when thinking and coding
+habit: time space complexity study 
 TODO
 ====
 strstr ii, n-queens
@@ -15,6 +21,12 @@ get to 200, 300, 400, 500
 
 Top References
 ==============
+grandyang
+huahua
+lt solution, article
+cspiration
+jz
+
 fishercode github, good list or problem link and solution
 good for quick go through all
 https://github.com/fishercoder1534/Leetcode

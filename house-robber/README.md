@@ -18,3 +18,14 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
              Total amount you can rob = 2 + 9 + 1 = 12.
 
 Topic: dp
+Similar: 
+Maximum Product Subarray, Medium
+House Robber II, Medium
+Paint House, Easy
+Paint Fence, Easy
+House Robber III, Medium
+Non-negative Integers without Consecutive Ones Hard
+Coin Path, Hard
+Delete and Earn, Medium
+
+

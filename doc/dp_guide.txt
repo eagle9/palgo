@@ -1,0 +1,111 @@
+Huahua's DP Summary
+===================
+1.1
+====
+Input O(n)
+dp[i] optimal solution of smaller scale problem
+dp[i] only depends on a fixed constant number of smaller problems
+Time complexity: O(n)
+Space complexity: O(n), can be reduced to O(1)
+Examples:
+prefix sum
+climbing stairs, easy,shaun pass on first try
+house robber, pass on first try
+minimum swaps to make sequences increasing,medium, not much idea, wrong answer first try 
+fibonacci, pass on first try
+domino and tromino tiling, ??, not yet try
+longest moutain array, almost pass, use two left and right, pass 
+min cost climbing stairs, not yet try
+
+1.2 
+===
+Input O(n) 
+dp[i] optimal solution to a subproblem 0 -- i
+dp[i] depends on all smaller problems
+Time complexity O(n^2)
+Space complexity O(n)
+Examples:
+Lc 139. word break, medium
+Lc 818. race car, hard, not much idea
+
+1.3 
+===
+Input O(m) + O(n), two strings/arrays
+dp[i][j] optimal solution to subproblem A[0..i] and B[0..j]
+dp[i][j] depends on constant number of smaller problems dp[i-1][j], dp[i][j-1], dp[i-1][j-1]
+Time complexity: O(mn)
+Space complexity: O(mn)
+Examples: 
+Lc 72. Edit distance
+Lc 712. Minimum ASCII delete sum for two strings
+
+1.4
+===
+Input O(n)
+dp[i][j] optimal solution to subproblem A[i..j], a subarray of the input
+each subproblem depends on O(n) smaller problems
+Time complexity O(n^3)
+Space complexity O(n^2)
+Examples: 
+LC 312. Burst balloons
+LC 664. Strange printer
+Lc 673
+Template: 
+dp = new int[n][n]
+for (int z = 1; z <= n; z++)  //problem size
+	for (int i = 1; i <= z; i++) //subproblem start
+		j = i + z - 1; //subproblem end 
+		for (int k = i; k <= j; k++)  //try all break points
+			dp[i][j] = max(dp[i][j], func(dp[i][k], dp[k][j])) //merge
+return dp[1][n] 
+1.5 Input O(n)
+subproblems O(n^3)
+depends on O(n^3) 
+Time O(n^4)
+Space O(n^3)
+Examples: 
+Lc 546
+
+1.6 Input O(n),k
+Subproblems O(k)
+Depends on O(n)
+Time O(kn)
+Space O(k)
+Examples:
+lc 322
+lc 494
+
+1.7 Input O(n),k
+Subproblems O(kn)
+Depends on O(n)
+Time O(kn^2)
+Space O(kn)
+Examples:
+813
+
+2.1 Input O(mn)
+dp[i][j] solution to A[0..i][0..j]
+each subproblem depends on O(1) subproblems
+Time complexity: O(mn)
+Space complexity: O(mn)
+Examples: 
+Lc 62. Unique paths, shaun pass on first try
+Lc 64. Minimum Path Sum, to do 
+Lc 63
+Template:
+dp = new int[n][m]
+for (int i = 1; i <= n; i++) 
+	for (int j = 1; j <= m; j++) 
+		dp[i][j] = func(dp[i-1][j], dp[i][j-1])
+return dp[n][m] / max(dp[n])
+
+2.2 Input O(mn)
+dp[k][i][j] solution to A[0..i][0..j] after k steps
+each subproblem depends on O(1) subproblems
+Time complexity: O(kmn)
+Space complexity: O(kmn) -> O(mn)
+Examples: 
+Lc 576 out of boundary paths
+Lc 688 Knight probability in chessboard
+Lc 741
+Floyd-warshall
