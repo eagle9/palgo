@@ -1,17 +1,20 @@
-//grandyang greedy idea, shaun java code, beats 25%
+//grandyang greedy idea, shaun java code, beats 44% using TreeSet
+//18ms and faster than 68% using HashSet
 class Solution {
     public String longestWord(String[] words) {
         String res = "";
+        //Set<String> set = new TreeSet<>();
         Set<String> set = new TreeSet<>();
         Arrays.sort(words);
         
         for (int i = 0; i < words.length; i++) {
             String word = words[i];
+			//the loop ensures that all prefixes of word have been checked, so only need to check word-1
             String word1 = word.substring(0, word.length()-1);
             //either init case with single letter word
             //or minus 1 already in dict
             if (words[i].length() == 1 || set.contains(word1)) {
-                res = (word.length() > res.length())? word: res;
+                res = (word.length() > res.length())? word: res; //update only when word is longer
                 set.add(word);
             }
         }

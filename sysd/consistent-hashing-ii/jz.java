@@ -52,11 +52,12 @@ public class Solution {
             //int key = entry.getKey();
             //List<Integer> random_nums = entry.getValue();
             List<Integer> random_nums = machines.get(key);
+			//random_nums sorted
             for (Integer num : random_nums) {
                 int d = num - hashcode;
                 if (d < 0)  //num < hashcode
                     d += n;
-                if (d < distance) { //find min distance
+                if (d < distance) { //find min distance, hashcode <= num < n+1
                     distance = d;
                     machine_id = key;
                 }
