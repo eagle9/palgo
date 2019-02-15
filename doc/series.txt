@@ -1,0 +1,89 @@
+xy1267@CACDTL01XY1267:~/projects/palgo/doc$ grep II hard.txt
+21      158     Read N Characters Given Read4 II - Call multiple times                  24.70%  Hard
+33      45      Jump Game II                    27.20%  Hard
+38      212     Word Search II                  27.30%  Hard
+40      126     Word Ladder II                  16.80%  Hard
+48      140     Word Break II                   26.50%  Hard
+52      772     Basic Calculator III                    43.50%  Hard
+59      248     Strobogrammatic Number III              35.30%  Hard
+65      123     Best Time to Buy and Sell Stock III             32.70%  Hard
+85      928     Minimize Malware Spread II              38.20%  Hard
+88      305     Number of Islands II                    41.60%  Hard
+90      272     Closest Binary Search Tree Value II             43.50%  Hard
+100     52      N-Queens II             50.40%  Hard
+111     407     Trapping Rain Water II                  38.80%  Hard
+112     132     Palindrome Partitioning II              26.60%  Hard
+121     446     Arithmetic Slices II - Subsequence              29.50%  Hard
+123     291     Word Pattern II                 39.90%  Hard
+127     850     Rectangle Area II               43.40%  Hard
+130     265     Paint House II                  40.60%  Hard
+138     154     Find Minimum in Rotated Sorted Array II                 38.90%  Hard
+139     685     Redundant Connection II                 29.90%  Hard
+146     940     Distinct Subsequences II                37.00%  Hard
+147     639     Decode Ways II                  24.50%  Hard
+149     732     My Calendar III                 53.00%  Hard
+150     630     Course Schedule III             30.80%  Hard
+151     499     The Maze III                    36.30%  Hard
+157     552     Student Attendance Record II                    32.10%  Hard
+164     960     Delete Columns to Make Sorted III               51.50%  Hard
+178     980     Unique Paths III                72.20%  Hard
+189     768     Max Chunks To Make Sorted II                    44.80%  Hard
+193     711     Number of Distinct Islands II                   44.70%  Hard
+198     644     Maximum Average Subarray II             27.60%  Hard
+xy1267@CACDTL01XY1267:~/projects/palgo/doc$ grep II medium.txt
+9       253     Meeting Rooms II                41.90%  Medium
+51      364     Nested List Weight Sum II               56.40%  Medium
+58      92      Reverse Linked List II                  33.80%  Medium
+67      445     Add Two Numbers II              48.90%  Medium
+83      244     Shortest Word Distance II               45.60%  Medium
+94      240     Search a 2D Matrix II                   40.10%  Medium
+103     324     Wiggle Sort II                  27.40%  Medium
+107     227     Basic Calculator II             32.50%  Medium
+110     142     Linked List Cycle II                    30.60%  Medium
+113     210     Course Schedule II              33.40%  Medium
+116     63      Unique Paths II                 33.20%  Medium
+134     117     Populating Next Right Pointers in Each Node II                  33.30%  Medium
+150     59      Spiral Matrix II                45.00%  Medium
+158     229     Majority Element II             31.10%  Medium
+165     247     Strobogrammatic Number II               43.40%  Medium
+176     556     Next Greater Element III                29.60%  Medium
+180     95      Unique Binary Search Trees II                   34.60%  Medium
+196     213     House Robber II                 35.00%  Medium
+206     47      Permutations II                 38.80%  Medium
+211     113     Path Sum II             39.10%  Medium
+229     503     Next Greater Element II                 49.90%  Medium
+233     731     My Calendar II                  42.60%  Medium
+234     737     Sentence Similarity II                  42.50%  Medium
+239     260     Single Number III               55.90%  Medium
+240     220     Contains Duplicate III                  19.30%  Medium
+244     375     Guess Number Higher or Lower II                 37.10%  Medium
+247     81      Search in Rotated Sorted Array II               32.50%  Medium
+262     216     Combination Sum III             50.20%  Medium
+264     337     House Robber III                47.10%  Medium
+272     82      Remove Duplicates from Sorted List II                   32.00%  Medium
+273     137     Single Number II                44.90%  Medium
+277     505     The Maze II             42.00%  Medium
+285     264     Ugly Number II                  35.40%  Medium
+300     90      Subsets II              41.20%  Medium
+310     549     Binary Tree Longest Consecutive Sequence II             43.80%  Medium
+323     533     Lonely Pixel II                 45.90%  Medium
+326     712     Minimum ASCII Delete Sum for Two Strings                53.20%  Medium
+327     186     Reverse Words in a String II                    35.70%  Medium
+329     885     Spiral Matrix III               63.30%  Medium
+330     40      Combination Sum II              39.80%  Medium
+338     245     Shortest Word Distance III              52.60%  Medium
+369     454     4Sum II                 49.60%  Medium
+373     667     Beautiful Arrangement II                51.30%  Medium
+374     910     Smallest Range II               22.20%  Medium
+379     267     Palindrome Permutation II               33.10%  Medium
+396     522     Longest Uncommon Subsequence II                 32.70%  Medium
+402     80      Remove Duplicates from Sorted Array II                  39.30%  Medium
+415     275     H-Index II              35.10%  Medium
+424     510     Inorder Successor in BST II             59.70%  Medium
+427     462     Minimum Moves to Equal Array Elements II                52.30%  Medium
+430     294     Flip Game II                    47.70%  Medium
+431     963     Minimum Area Rectangle II               41.00%  Medium
+435     602     Friend Requests II: Who Has the Most Friends                    43.50%  Medium
+458     955     Delete Columns to Make Sorted II                30.20%  Medium
+473     672     Bulb Switcher II                49.30%  Medium
+489     487     Max Consecutive Ones II                 46.10%  Medium

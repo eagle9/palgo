@@ -1,7 +1,8 @@
 /*
 jz use trie
-Your submission beats 85.00% Submissions!
 
+Runtime: 33 ms, faster than 48.07% of Java online submissions for Word Search II.
+Memory Usage: 44.7 MB, less than 100.00% of Java online submissions for Word Search II.
 */
 class TrieNode {
     String word;
@@ -79,7 +80,7 @@ public class Solution {
         return board[x][y] != 0;
     }
     
-    public List<String> wordSearchII(char[][] board, List<String> words) {
+    public List<String> findWords(char[][] board, String [] words) {
         List<String> results = new ArrayList<String>();
         
         TrieTree tree = new TrieTree(new TrieNode());

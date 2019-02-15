@@ -25,10 +25,8 @@ public class Solution {
         if(start == word.length())
             return true;
         
-        if (i < 0 || i>= board.length || 
-     j < 0 || j >= board[0].length || board[i][j] != word.charAt(start)){
+        if (i < 0 || i>= board.length || j < 0 || j >= board[0].length || board[i][j] != word.charAt(start))
             return false;
-     }
         
         board[i][j] = '#'; // should remember to mark it
         boolean rst = find(board, i-1, j, word, start+1) 
