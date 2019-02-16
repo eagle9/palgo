@@ -1,10 +1,22 @@
-//jz bfs beats 88.00%
-//bfs is very natural solution to this problem
+
+/*
+jz bfs is very natural solution to this problem
+Runtime: 78 ms, faster than 64.42% of Java online submissions for Word Ladder.
+Memory Usage: 41.4 MB, less than 100.00% of Java online submissions for Word Ladder.
+shaun read and understood
+* /
 public class Solution {
-    public int ladderLength(String start, String end, Set<String> dict) {
+    public int ladderLength(String start, String end, List<String> dict) {
+        
         if (dict == null) {
             return 0;
         }
+        //adapt from lintcode to leetcode
+        //change list of words in dict into set to enable easy lookup
+        //cut branches
+        Set<String> dictSet = new HashSet<>();
+        dictSet.addAll(dict);
+        
         //if start equals end, return length =1
         if (start.equals(end)) {
             return 1;
@@ -25,7 +37,7 @@ public class Solution {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 String word = queue.poll();
-                for (String nextWord: getNextWords(word, dict)) {
+                for (String nextWord: getNextWords(word, dictSet)) {
                     if (visited.contains(nextWord)) {
                         continue;
                     }
@@ -72,3 +84,4 @@ public class Solution {
         return nextWords;
     }
 }
+
