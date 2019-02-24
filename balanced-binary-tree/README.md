@@ -1,18 +1,34 @@
-93. Balanced Binary Tree
-Description
+110. Balanced Binary Tree
+Easy
 Given a binary tree, determine if it is height-balanced.
 
-For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
+For this problem, a height-balanced binary tree is defined as:
 
-Example
-Given binary tree A = {3,9,20,#,#,15,7}, B = {3,#,20,15,7}
+a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
 
-A)  3            B)    3 
-   / \                  \
-  9  20                 20
-    /  \                / \
-   15   7              15  7
-The binary tree A is a height-balanced binary tree, but B is not.
+Example 1:
+Given the following tree [3,9,20,null,null,15,7]:
 
-Related Problems
-complete binary tree, validate binary search tree
+    3
+   / \
+  9  20
+    /  \
+   15   7
+Return true.
+
+Example 2:
+Given the following tree [1,2,2,3,3,null,null,4,4]:
+
+       1
+      / \
+     2   2
+    / \
+   3   3
+  / \
+ 4   4
+Return false.
+
+Companies: Google | 7 Microsoft | 5 Amazon | 2 Facebook | 2 Cisco | 2
+Similar: Maximum Depth of Binary Tree Easy
+
+Topic: Tree, Depth-first Search

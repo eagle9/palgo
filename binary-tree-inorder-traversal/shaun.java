@@ -1,26 +1,55 @@
 /**
- * Definition of TreeNode:
+ * Definition for a binary tree node.
  * public class TreeNode {
- *     public int val;
- *     public TreeNode left, right;
- *     public TreeNode(int val) {
- *         this.val = val;
- *         this.left = this.right = null;
- *     }
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
  * }
  */
 
-//shaun's own code, beats 69.80%
-//two correction:
-//  res.add(root) --> res.add(root.val)
-//  inorder means left, root, right
-// stay sharp and focused
-public class Solution {
+/*
+Runtime: 1 ms, faster than 55.50% of Java online submissions for Binary Tree Inorder Traversal.
+Memory Usage: 36.1 MB, less than 100.00% of Java online submissions for Binary Tree Inorder Traversal.
+without recursion
+*/
+class Solution1 {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer>  values = new ArrayList<>();
+        
+        Stack<TreeNode> stack = new Stack<>();
+        
+        TreeNode curt = root;
+        while (curt != null || !stack.isEmpty()) {
+            
+            while (curt != null) {
+                stack.push(curt);
+                curt = curt.left;
+            }
+            //curt == null
+            curt = stack.pop();
+            //check the node
+            values.add(curt.val);
+            
+            curt = curt.right;
+        }
+        return values;
+        
+    }
+}
+/*
+Runtime: 0 ms, faster than 100.00% of Java online submissions for Binary Tree Inorder Traversal.
+Memory Usage: 36.1 MB, less than 100.00% of Java online submissions for Binary Tree Inorder Traversal.
+use recursion
+*/
+
+class Solution {
+    
     /**
      * @param root: A Tree
      * @return: Inorder in ArrayList which contains node values.
      */
-    public List<Integer> inorderTraversal1(TreeNode root) {
+    public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null)
             return res;
@@ -35,30 +64,4 @@ public class Solution {
         res.add(root.val);
         helper(root.right, res);
     }
-    
-    
-    //jz without recursion, using stack, beats 69.80%
-    public List<Integer> inorderTraversal(TreeNode root) {
-        Stack<TreeNode> stack = new Stack<>();
-        List<Integer> res = new ArrayList<>();
-        if (root == null)
-            return res;
-        //stack.push(root);   ---> no need, wont pass
-        TreeNode curt = root;
-        //key to add curt != null, beacause when curt = curt.right
-        //going back to while test, stack is allowed to be empty, curt holds one, this is kind of hard to get it first time
-        while (curt != null || !stack.isEmpty()) {
-            while (curt != null) {
-                stack.push(curt);
-                curt = curt.left;
-            }
-            //curt == null now
-            curt = stack.pop();
-            res.add(curt.val);
-            curt = curt.right;
-        }
-        return res;
-    }
-    
-    
 }

@@ -1,25 +1,33 @@
-# 95. Validate Binary Search Tree
-
-Difficulty: Medium
-
-http://lintcode.com/en/problem/validate-binary-search-tree/
-
+98. Validate Binary Search Tree
+Medium
 Given a binary tree, determine if it is a valid binary search tree (BST).
 
 Assume a BST is defined as follows:
 
-* The left subtree of a node contains only nodes with keys less than the node's key.
-* The right subtree of a node contains only nodes with keys greater than the node's key.
-* Both the left and right subtrees must also be binary search trees.
-* A single node tree is a BST
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and right subtrees must also be binary search trees.
 
-**Example**  
-An example:
-```
-  2
- / \
-1   4
+Example 1:
+Input:
+    2
    / \
-  3   5
-```
-The above binary tree is serialized as {2,1,4,#,#,3,5} (in level order).
+  1   3
+Output: true
+
+Example 2:
+    5
+   / \
+  1   4
+     / \
+    3   6
+Output: false
+Explanation: The input is: [5,1,4,null,null,3,6]. The root node's value
+             is 5 but its right child's value is 4.
+Companies: Facebook | 31 Bloomberg | 17 Microsoft | 14 Amazon | 7 Google | 6 Capital One | 3 TripAdvisor | 3 Adobe | 3 Uber | 3 LinkedIn | 2 Walmart Labs | 2 VMware | 2 SAP | 2 Nvidia | 2 Goldman Sachs | 2
+
+Similar: 
+Binary Tree Inorder Traversal Medium
+Find Mode in Binary Search Tree Easy
+
+Topic: Tree, Depth-first Search

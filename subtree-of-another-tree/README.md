@@ -30,8 +30,21 @@ Given tree t:
   / \
  1   2
 Return false.
-Topic: tree
-similar: Count Univalue Subtrees 
-Most Frequent Subtree Sum
-Serialize and Deserialize Binary Tree
-Same Tree
+
+Companies: Google | 4 Amazon | 2 Bloomberg | 2 Microsoft | 2 Facebook | 2
+
+Similar: 
+Count Univalue Subtrees Medium
+Most Frequent Subtree Sum Medium
+
+Hint 1:
+Which approach is better here- recursive or iterative?
+
+Hint 2:
+If recursive approach is better, can you write recursive function with its parameters?
+
+Hint 3: 
+Two trees s and t are said to be identical if their root values are same and their left and right subtrees are identical. Can you write this in form of recursive formulae?
+
+Hint 4: 
+Recursive formulae can be: isIdentical(s,t)= s.val==t.val AND isIdentical(s.left,t.left) AND isIdentical(s.right,t.right)

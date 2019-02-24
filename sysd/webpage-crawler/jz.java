@@ -1,3 +1,4 @@
+//Jz ideas
 // Version 1, use sleep
 /**
  * public class HtmlHelper {

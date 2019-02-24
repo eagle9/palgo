@@ -11,6 +11,7 @@ Input:
       2   3
 Output: 2
 Explanation: The longest consecutive path is [1, 2] or [2, 1].
+
 Example 2:
 Input:
         2
@@ -21,3 +22,6 @@ Explanation: The longest consecutive path is [1, 2, 3] or [3, 2, 1].
 Note: All the values of tree nodes are in the range of [-1e7, 1e7].
 Topic: tree
 Similar: binary tree longest consecutive sequence
+
+Companies: Google | 3
+Topic: Tree

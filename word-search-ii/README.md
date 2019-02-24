@@ -16,7 +16,7 @@ words = ["oath","pea","eat","rain"] and board =
 Output: ["eat","oath"]
 Note:
 You may assume that all inputs are consist of lowercase letters a-z.
-Companies: A lot
+Companies: Amazon | 11 Google | 5 Microsoft | 4 Facebook | 3 Airbnb | 2 Houzz | 2
 Topic: Backtracking, Trie
 Similar: word search
 Hints: 
@@ -24,37 +24,3 @@ You would need to optimize your backtracking to pass the larger test. Could you 
 
 If the current candidate does not exist in all words' prefix, you could stop backtracking immediately. What kind of data structure could answer such query efficiently? Does a hash table work? Why or why not? How about a Trie? If you would like to learn how to implement a basic trie, please work on this problem: Implement Trie (Prefix Tree) first.
 
-lintcode 132. Word Search II
-Description
-Given a matrix of lower alphabets and a dictionary. Find all words in the dictionary that can be found in the matrix. A word can start from any position in the matrix and go left/right/up/down to the adjacent position. One character only be used once in one word.
-
-Example
-Given matrix:
-doaf
-agai
-dcan
-and dictionary: {"dog", "dad", "dgdg", "can", "again"}
-return {"dog", "dad", "can", "again"}
-
-dog:
-doaf
-agai
-dcan
-
-dad:
-doaf
-agai
-dcan
-
-can:
-doaf
-agai
-dcan
-
-again:
-doaf
-agai
-dcan
-
-Challenge
-Using trie to implement your algorithm.

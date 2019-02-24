@@ -10,19 +10,18 @@
  * }
  */
 
-public class Solution {
+/*
+Runtime: 1 ms, faster than 44.75% of Java online submissions for Validate Binary Search Tree.
+Memory Usage: 38 MB, less than 100.00% of Java online submissions for Validate Binary Search Tree.
+in order traversal, make sure it is ascending
+*/
+class Solution1 {
     /**
      * @param root: The root of binary tree.
      * @return: True if the binary tree is BST, or false
      */
-    public boolean isValidBST(TreeNode root) {
-        //return shaun1(root);
-        return shaun2(root);
-    }
     
-    //second try, in order traversal, make sure it is ascending
-    //beats 72.00%
-    public boolean shaun2(TreeNode root) {
+    public boolean isValidBST(TreeNode root) {
         inOrder(root);
         for (int i = 1; i < nodes.size(); i++) {
             if ( nodes.get(i-1) >= nodes.get(i) )
@@ -40,12 +39,19 @@ public class Solution {
         nodes.add(root.val);
         inOrder(root.right);
     }
+}
+/*
+Runtime: 0 ms, faster than 100.00% of Java online submissions for Validate Binary Search Tree.
+Memory Usage: 37.4 MB, less than 100.00% of Java online submissions for Validate Binary Search Tree.
+use inorder traveral and track last node
+tried to put lastNode as a recursion parameter does not work
+*/
+class Solution {
 	//shaun 3rd try, beats 85.00%
-    private TreeNode lastNode;
-    private boolean isValid;
-    private boolean shaun3(TreeNode root) {
-        lastNode = null;
-        isValid = true;
+    
+    private boolean isValid = true;
+    private TreeNode lastNode = null;
+    public boolean isValidBST(TreeNode root) {
         inOrderTraversal(root);
         return isValid;
     }
@@ -62,6 +68,9 @@ public class Solution {
         lastNode = root;
         inOrderTraversal(root.right);
     }
+}
+
+class Solution3 {
     
     
     //shaun first try, does not work
@@ -89,3 +98,4 @@ public class Solution {
         return Math.min(root.val,Math.min(left, right));
     }
 }
+

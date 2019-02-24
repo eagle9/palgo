@@ -19,7 +19,10 @@ Input:
           4   4   5
 Output: 2
 Note: The given binary tree has not more than 10000 nodes. The height of the tree is not more than 1000.
+Companies: Google | 7 Amazon | 2 Alibaba | 2
+
 Topic: Tree, Recursion
-Similar: Binary Tree Maximum Path Sum
-Count Univalue Subtrees
-Path Sum III
+Similar: 
+Binary Tree Maximum Path Sum hard
+Count Univalue Subtrees medium
+Path Sum III easy

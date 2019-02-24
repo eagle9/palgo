@@ -1,19 +1,24 @@
-155. Minimum Depth of Binary Tree
-Description
+111. Minimum Depth of Binary Tree
+Easy
 Given a binary tree, find its minimum depth.
 
 The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
-Have you met this question in a real interview?  
-Example
-Given a binary tree as follow:
+Note: A leaf is a node with no children.
 
-  1
- / \ 
-2   3
+Example:
+
+Given binary tree [3,9,20,null,null,15,7],
+
+    3
    / \
-  4   5  
-The minimum depth is 2.
+  9  20
+    /  \
+   15   7
+return its minimum depth = 2.
 
-Related Problems
-Find leaves of binary tree, maximum depth of binary tree
+Companies: Facebook | 4 Amazon | 2 Adobe | 2
+
+Similar: 
+Binary Tree Level Order Traversal Medium
+Maximum Depth of Binary Tree Easy

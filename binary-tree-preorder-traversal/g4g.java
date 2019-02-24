@@ -9,16 +9,19 @@
  *     }
  * }
  */
-//both iterative and recursive solutions are given
-//shaun based on g4g preorder with stack
-//draw a picture with simple preorder traveral
-//beats 80.20%
-public class Solution {
+/*
+both iterative and recursive solutions are given
+shaun based on g4g preorder with stack
+draw a picture with simple preorder traveral
+Runtime: 1 ms, faster than 55.01% of Java online submissions for Binary Tree Preorder Traversal.
+Memory Usage: 36.2 MB, less than 100.00% of Java online submissions for Binary Tree Preorder Traversal.
+*/
+class Solution1 {
     /**
      * @param root: A Tree
      * @return: Preorder in ArrayList which contains node values.
      */
-    public List<Integer> preorderTraversal1(TreeNode root) {
+    public List<Integer> preorderTraversal(TreeNode root) {
         // write your code here
         List<Integer> res = new ArrayList<Integer>();
         if (root == null)
@@ -38,8 +41,14 @@ public class Solution {
         return res;
         
     }
+}
+/*
+recursion is considered trial, 
+Runtime: 0 ms, faster than 100.00% of Java online submissions for Binary Tree Preorder Traversal.
+Memory Usage: 36.3 MB, less than 100.00% of Java online submissions for Binary Tree Preorder Traversal.
+*/
+class Solution {
     
-    //shaun's recursive preorderTraversal, beats 97.80%
     public List<Integer> preorderTraversal(TreeNode root) {
         // write your code here
         List<Integer> res = new ArrayList<Integer>();
@@ -55,3 +64,4 @@ public class Solution {
         helper(root.right,res);
     }
 }
+

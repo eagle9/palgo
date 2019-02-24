@@ -3,6 +3,7 @@ Algorithms in Java, C++, Python
 ===============================
 Guide
 =====
+
 each type 10-20
 solve a batch of problem of similar type
 first round: 5 min thinking, no idea, learn
@@ -14,6 +15,12 @@ my own tip: speak your mind when thinking and coding
 habit: time space complexity study 
 TODO
 ====
+huahua's summary
+https://bit.ly/2E8yBHq
+clafficiation 
+https://www.jianshu.com/p/5fbd07d557a3   ---- binary tree, studied
+check my lt_progress sheet
+
 strstr ii, n-queens
 reverse, permutation, combination, more dp
 dfs, bfs very bad 

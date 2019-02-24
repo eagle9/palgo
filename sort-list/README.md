@@ -9,15 +9,9 @@ Output: 1->2->3->4
 Example 2:
 Input: -1->5->3->4->0
 Output: -1->0->3->4->5
-
-Topic: Linked List, Sort
-
-Similar: 
-Merge two sorted lists(easy)
-Sort Colors (medium)
-Insertion Sort List(medium)
-
-Idea: data stored in a linked list making it hard to use quick sort. 
-but merge sort works. use two pointers to divide the list into two half lists. 
-The merge the two smaller list
-
+Companies: Facebook | 4 Microsoft | 2
+Similar:
+Merge Two Sorted Lists Easy
+Sort Colors Medium
+Insertion Sort List Medium
+Topic: Linked list, merge sort

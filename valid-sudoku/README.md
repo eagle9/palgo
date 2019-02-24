@@ -50,3 +50,5 @@ The given board contain only digits 1-9 and the character '.'.
 The given board size is always 9x9.
 Topic: Hashtable
 Similar: Sodoku solver(hard)
+Companies: Uber | 8 Microsoft | 6 Apple | 3 Facebook | 3 Amazon | 3 Google | 2
+
