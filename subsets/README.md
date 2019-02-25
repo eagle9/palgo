@@ -1,12 +1,13 @@
-17. Subsets, lintcode
-Description
-Given a set of distinct integers, return all possible subsets.
+78. Subsets
+Medium
+Given a set of distinct integers, nums, return all possible subsets (the power set).
 
-Elements in a subset must be in non-descending order.
-The solution set must not contain duplicate subsets.
-Example
-If S = [1,2,3], a solution is:
+Note: The solution set must not contain duplicate subsets.
 
+Example:
+
+Input: nums = [1,2,3]
+Output:
 [
   [3],
   [1],
@@ -18,9 +19,11 @@ If S = [1,2,3], a solution is:
   []
 ]
 
-Challenge
-Can you do it in both recursively and iteratively?
+Companies: Facebook | 8 Amazon | 5 Uber | 5 Goldman Sachs | 4 Yahoo | 3 Adobe | 2 Apple | 2 Google | 2 Lyft | 2 Bloomberg | 2 LinkedIn | 2 Walmart Labs | 2
 
-iterative way use 1-2^n binary number representation
-recursive way use dfs or bfs
-each subset requires that its elements in non-descending order, so the input array will be sorted
+Similar:
+Subsets II Medium
+Generalized Abbreviation Medium
+Letter Case Permutation Easy
+
+Topic: Array, Backtracking, Bit Manipulation

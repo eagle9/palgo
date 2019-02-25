@@ -15,5 +15,9 @@ Input: [2,1,5,6,2,3]
 O OOOO
 OOOOOO
 Output: 10
+
 Topic: Array, Stack
-Similar: Maximal rectangle
+
+Companies: Amazon | 5 Microsoft | 4 Google | 3
+Similar: 
+Maximal rectangle Hard

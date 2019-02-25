@@ -12,5 +12,10 @@ Input:
   ["1","0","0","1","0"]
 ]
 Output: 6
-Topic: Array, Hash Table, dp, Stack
-Similar: Maximal square, largest rectangle in histogram
+Topic: Array, Hash Table, Dynamic Programming, Stack
+
+Similar: 
+Maximal square medium, 
+largest rectangle in histogram hard
+
+Companies: Google | 7 Microsoft | 4 Indeed | 3 Adobe | 2

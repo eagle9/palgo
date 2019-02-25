@@ -13,6 +13,9 @@ Note:
 Because the range might be a large number, the low and high numbers are represented as string.
 
 Companies: Google | 8 Facebook | 3
+
+Similar:
 Strobogrammatic Number Easy
 Strobogrammatic Number II Medium
+
 Topic: Math, Recursion

@@ -16,5 +16,10 @@ The given list may contain duplicates, so ascending order means >= here.
 1 <= k <= 3500
 -105 <= value of elements <= 105.
 For Java users, please note that the input type has been changed to List<List<Integer>>. And after you reset the code template, you'll see this point.
+
 Topic: Hash Table, Two Pointers, String
-Similar: Minimum window substring
+
+Similar: 
+Minimum window substring hard
+
+Companies: Pinterest | 5 Facebook | 2

@@ -1,21 +1,34 @@
-360. Sliding Window Median
-Description
-Given an array of n integer, and a moving window(size k), move the window at each iteration from the start of the array, find the median of the element inside the window at each moving. (If there are even numbers in the array, return the N/2-th number after sorting the element in the window. )
+480. Sliding Window Median
+Hard
+Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
 
-Example
-For array [1,2,7,8,5], moving window size k = 3. return [2,7,7]
+Examples: 
+[2,3,4] , the median is 3
 
-At first the window is at the start of the array like this
+[2,3], the median is (2 + 3) / 2 = 2.5
 
-[ | 1,2,7 | ,8,5] , return the median 2;
+Given an array nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position. Your job is to output the median array for each window in the original array.
 
-then the window move one step forward.
+For example,
+Given nums = [1,3,-1,-3,5,3,6,7], and k = 3.
 
-[1, | 2,7,8 | ,5], return the median 7;
+Window position                Median
+---------------               -----
+[1  3  -1] -3  5  3  6  7       1
+ 1 [3  -1  -3] 5  3  6  7       -1
+ 1  3 [-1  -3  5] 3  6  7       -1
+ 1  3  -1 [-3  5  3] 6  7       3
+ 1  3  -1  -3 [5  3  6] 7       5
+ 1  3  -1  -3  5 [3  6  7]      6
+Therefore, return the median sliding window as [1,-1,-1,3,5,6].
 
-then the window move one step forward again.
+Note: 
+You may assume k is always valid, ie: k is always smaller than input array's size for non-empty array.
 
-[1,2, | 7,8,5 | ], return the median 7;
+Companies: Google | 2 Amazon | 2 
 
-Challenge
-O(nlog(n)) time
+Similar: 
+Find Median from Data Stream Hard
+
+Topic: Use BST
+

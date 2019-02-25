@@ -1,4 +1,5 @@
 305. Number of Islands II
+Hard
 A 2d grid map of m rows and n columns is initially filled with water. We may perform an addLand operation which turns the water at position (row, col) into a land. Given a list of positions to operate, count the number of islands after each addLand operation. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 
 Example:
@@ -36,8 +37,8 @@ Follow up:
 
 Can you do it in time complexity O(k log mn), where k is the length of the positions?
 
+Companies: Uber | 5 Google | 5 Amazon | 2 Snapchat | 2
 
-Company: google
+Similar: Number of Islands Medium
 
-tag topic: union find
-
+Topic: Union Find

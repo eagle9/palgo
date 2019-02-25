@@ -11,12 +11,15 @@ Output: 2
 Example2:
 Input: [2,4,3,5,1]
 Output: 3
-
 Note:
 The length of the given array will not exceed 50,000.
 All the numbers in the input array are in the range of 32-bit integer.
 
-Topic: divide and conquer, binary indexed tree, segment tree, binary search tree
-Similar: 
-Count of smaller numbers after self(hard)
-count of range sum(hard)
+
+Companies: Google | 4 Uber | 2
+
+Similar:
+Count of Smaller Numbers After Self Hard
+Count of Range Sum Hard
+
+Topic: Divide and Conquer, Binary Indexed Tree, Segment Tree, Binary Search Tree

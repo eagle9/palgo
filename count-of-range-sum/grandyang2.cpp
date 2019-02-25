@@ -1,10 +1,14 @@
-//grandyang beats 100%
-//not fully understand yet
+/*
+grandyang idea2
+Runtime: 40 ms, faster than 89.36% of C++ online submissions for Count of Range Sum.
+Memory Usage: 24.3 MB, less than 40.91% of C++ online submissions for Count of Range Sum.
+
+
+*/
 class Solution {
 public:
     int countRangeSum(vector<int>& nums, int lower, int upper) {
         vector<long> sums(nums.size() + 1, 0);
-        //prefix sum
         for (int i = 0; i < nums.size(); ++i) {
             sums[i + 1] = sums[i] + nums[i];
         }

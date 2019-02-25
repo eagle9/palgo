@@ -18,3 +18,4 @@ The given dict won't contain duplicates, and its length won't exceed 100.
 All the strings in input have length in range [1, 1000].
 Topic: String
 Similar: merge intervals, tag validator
+Companies: .....

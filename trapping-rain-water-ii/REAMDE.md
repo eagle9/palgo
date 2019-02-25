@@ -19,5 +19,11 @@ Return 4.
 The above image represents the elevation map [[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]] before the rain.
 
 After the rain, water is trapped between the blocks. The total volume of water trapped is 4.
-topic: heap, bfs
-similar: trapping rain water
+
+Companies: Google | 3 Microsoft | 2
+
+Similar: 
+Trapping Rain Water Hard
+
+Topic: Heap, Breadth-first Search 
+

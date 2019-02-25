@@ -36,11 +36,13 @@ Output: -1
 
 Explanation: There is no way for the ball to stop at the destination.
 
- 
-
 Note:
 
-There is only one ball and one destination in the maze.
-Both the ball and the destination exist on an empty space, and they will not be at the same position initially.
-The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.
-The maze contains at least 2 empty spaces, and both the width and height of the maze won't exceed 100.
+1. There is only one ball and one destination in the maze.
+2. Both the ball and the destination exist on an empty space, and they will not be at the same position initially.
+3. The given maze does not contain border (like the red rectangle in the example pictures), but you could assume the border of the maze are all walls.
+4. The maze contains at least 2 empty spaces, and both the width and height of the maze won't exceed 100.
+
+Companies: Amazon | 3
+
+Topic: Depth-first Search, Breadth-first Search
