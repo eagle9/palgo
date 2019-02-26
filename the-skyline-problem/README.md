@@ -20,4 +20,8 @@ There must be no consecutive horizontal lines of equal height in the output skyl
 
 Topic:
 divide and conquer, heap, binary index tree, segment tree
-Similar:  Failling squares
+
+Similar:  
+Failling squares hard
+
+Companies: Microsoft | 4 Uber | 4 Google | 3 Apple | 2 Goldman Sachs | 2
