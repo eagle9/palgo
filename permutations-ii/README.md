@@ -1,20 +1,26 @@
-16. Permutations II
-Description
-Given a list of numbers with duplicate number in it. Find all unique permutations.
+47. Permutations II
+Medium
 
-Example
-For numbers [1,2,2] the unique permutations are:
+Given a collection of numbers that might contain duplicates, return all possible unique permutations.
 
+Example:
+
+Input: [1,1,2]
+Output:
 [
-  [1,2,2],
-  [2,1,2],
-  [2,2,1]
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
 ]
-Challenge
-Using recursion to do it is acceptable. If you can do it without recursion, that would be great!
 
-Difficulty: medium
-Companies: MS, Linkedin
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Companies: LinkedIn | 6 VMware | 3 Amazon | 2 Bloomberg | 2 Adobe | 2
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 2 Tencent | 2 Microsoft |
 
-Related to Permutations, just with duplicate numbers
-both recursive and non recursive solution are provided
+Similar:
+Next Permutation Medium
+Permutations Medium
+Palindrome Permutation II Medium
+
+Topic: Backtracking

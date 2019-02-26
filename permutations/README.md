@@ -1,12 +1,12 @@
-15. Permutations
-Description
-Given a list of numbers, return all possible permutations.
+46. Permutations
+Medium
 
-You can assume that there is no duplicate numbers in the list.
+Given a collection of distinct integers, return all possible permutations.
 
-Example
-For nums = [1,2,3], the permutations are:
+Example:
 
+Input: [1,2,3]
+Output:
 [
   [1,2,3],
   [1,3,2],
@@ -15,14 +15,15 @@ For nums = [1,2,3], the permutations are:
   [3,1,2],
   [3,2,1]
 ]
-Challenge
-Do it without recursion.
 
-Difficulty: medium
-Com: MS, Linkedin
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 
-Idea similiar to string permutations ii 
-sort, then use next permutation to find all permutations
-this algorithm does not use recursion
+Companies: LinkedIn | 7 Facebook | 7 Amazon | 6 Yahoo | 5 Google | 4 Apple | 4 VMware | 3 Paypal | 2 Microsoft | 2 Bloomberg | 2 Adobe | 2 Cisco | 2 Oracle | 2 Uber | 2
 
-recursion is slower, check jiadai's, found that it is not easy to understand
+Similar:
+Next Permutation Medium
+Permutations II Medium
+Permutation Sequence Medium
+Combinations Medium
+
+Topic: Backtracking

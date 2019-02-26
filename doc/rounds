@@ -1,15 +1,24 @@
 word break ii, 1  
 design search auto complete,0.3 
-lru cache,0,5
+lru cache,0.5
 lfu cache,0
 3sum, .8 
 4sum, .7
 reverse pairs, 0
-number of islands,0
+number of islands,1
 number of islands ii,0
 making a large island, 0
 max area of island,0
-number of distinct islands,1
+number of distinct islands,0
 
-top-k-frequent-words, 0.2
-top
+top k frequent words, 1 
+top k frequent elements, 1
+median of two data streams,0
+
+next-permutation
+permutations
+permutations ii
+palindrome permutations
+palindrome permutations ii
+
+
