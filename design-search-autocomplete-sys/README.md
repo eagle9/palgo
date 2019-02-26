@@ -47,9 +47,12 @@ Explanation:
 The user finished the input, the sentence "i a" should be saved as a historical sentence in system. And the following input will be counted as a new search. 
 
 Note:
-The input sentence will always start with a letter and end with '#', and only one blank space will exist between two words.
-The number of complete sentences that to be searched won't exceed 100. The length of each sentence including those in the historical data won't exceed 100.
-Please use double-quote instead of single-quote when you write test cases even for a character input.
-Please remember to RESET your class variables declared in class AutocompleteSystem, as static/class variables are persisted across multiple test cases. Please see here for more details.
+1. The input sentence will always start with a letter and end with '#', and only one blank space will exist between two words.
+2. The number of complete sentences that to be searched won't exceed 100. The length of each sentence including those in the historical data won't exceed 100.
+3. Please use double-quote instead of single-quote when you write test cases even for a character input.
+4. Please remember to RESET your class variables declared in class AutocompleteSystem, as static/class variables are persisted across multiple test cases. Please see here for more details.
+
 Topic: Design, Trie
-Similar: Implement Trie
+Similar: Implement Trie Medium
+
+Companies: Google | 12 Amazon | 6 Lyft | 5 Indeed | 2

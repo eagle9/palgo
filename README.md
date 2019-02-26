@@ -20,6 +20,8 @@ https://bit.ly/2E8yBHq
 clafficiation 
 https://www.jianshu.com/p/5fbd07d557a3   ---- binary tree, studied
 check my lt_progress sheet
+word break ii done with dfs with memo
+design autocomplete ----
 
 strstr ii, n-queens
 reverse, permutation, combination, more dp

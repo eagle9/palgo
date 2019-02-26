@@ -40,14 +40,20 @@ Word Break Medium
 Concatenated Words Hard
 Topic: Dynamic programming, backtracking
 
-lintcode 582. Word Break II
-Description
-Given a string s and a dictionary of words dict, add spaces in s to construct a sentence where each word is a valid dictionary word.
+dp[i] all breaks for string S from 0 to i
+dp[1]  s.substring(0,1) in dict?  [s.substring(0,1)]
 
-Return all such possible sentences.
+dp[i] from 0 to i, from 0 ... j ... i 
+   if word = substring(j,i) in dict,  combine strings in dp[i]  and word 
 
-Example
-Gieve s = lintcode,
-dict = ["de", "ding", "co", "code", "lint"].
+linghuchong, grandyang, huahua, all use dfs with memo
+start with small problems
+look at s,   len,   s  = word (from 0 to i, i from 1 to len-2) + suffix, if word in dict,   then recur suffix get res, word + " " + e in res 
+catsanddog
+cats anddog
+cats and  dog
 
-A solution is ["lint code", "lint co de"].
+cat sanddog
+cat sand dog
+
+
