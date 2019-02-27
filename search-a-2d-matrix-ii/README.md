@@ -1,27 +1,30 @@
-38. Search a 2D Matrix II
-Description
-Write an efficient algorithm that searches for a value in an m x n matrix, return the occurrence of it.
+240. Search a 2D Matrix II
+Medium
 
-This matrix has the following properties:
+Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
 
-Integers in each row are sorted from left to right.
-Integers in each column are sorted from up to bottom.
-No duplicate integers in each row or column.
-Have you met this question in a real interview?  
-Example
+Integers in each row are sorted in ascending from left to right.
+Integers in each column are sorted in ascending from top to bottom.
+Example:
+
 Consider the following matrix:
 
 [
-  [1, 3, 5, 7],
-  [2, 4, 7, 8],
-  [3, 5, 9, 10]
+  [1,   4,  7, 11, 15],
+  [2,   5,  8, 12, 19],
+  [3,   6,  9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
 ]
-Given target = 3, return 2.
+Given target = 5, return true.
 
-Challenge
-O(m+n) time and O(1) extra space
+Given target = 20, return false.
 
-Related Problems
-count negative number, Kth smallest sum in two sorted arrays, 
-search a 2d matrix
-company: amazon, google, apple
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Companies: Microsoft | 7 Google | 4 Goldman Sachs | 3 Bloomberg | 2 Amazon | 2 Facebook | 2
+
+Similar:
+Search a 2D Matrix Medium
+
+
+Topic: Binary Search, Divide and conquer
