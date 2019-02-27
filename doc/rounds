@@ -1,7 +1,12 @@
+one edit distance, 0
+edit distance, 0
+word break, 0
 word break ii, 1  
 design search auto complete,0.3 
 lru cache,0.5
 lfu cache,0
+
+2sum, 0
 3sum, .8 
 4sum, .7
 reverse pairs, 0
@@ -15,10 +20,24 @@ top k frequent words, 1
 top k frequent elements, 1
 median of two data streams,0
 
-next-permutation
+next-permutation, very high freq
 permutations
 permutations ii
 palindrome permutations
 palindrome permutations ii
 
+top-k-frequent-words, 1 
+top-k-frequent-element, 1
 
+largest number,0.6
+
+spiral matrix,0
+spiral matrix ii, 0
+
+reorder list, 0
+minimum height trees, 0
+course schedule, 0
+course schedule ii, 0
+reconstruct itinerary, 0
+
+zigzag conversion,0

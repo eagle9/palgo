@@ -3,7 +3,7 @@ Algorithms in Java, C++, Python
 ===============================
 Guide
 =====
-
+grep -v ^$ doc/rounds
 each type 10-20
 solve a batch of problem of similar type
 first round: 5 min thinking, no idea, learn
