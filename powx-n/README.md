@@ -1,15 +1,29 @@
-428. Pow(x, n)
-Description
-Implement pow(x, n).
+50. Pow(x, n)
+Medium
 
-You don't need to care about the precision of your answer, it's acceptable if the expected answer and your answer 's difference is smaller than 1e-3.
+Implement pow(x, n), which calculates x raised to the power n (xn).
 
-Example
-Pow(2.1, 3) = 9.261
-Pow(0, 1) = 0
-Pow(1, 0) = 1
-Challenge
-O(logn) time
+Example 1:
+Input: 2.00000, 10
+Output: 1024.00000
 
-Related Problems
-super pow, fibonacci ii, sqrtx, fast power
+Example 2:
+Input: 2.10000, 3
+Output: 9.26100
+
+Example 3:
+Input: 2.00000, -2
+Output: 0.25000
+Explanation: 2-2 = 1/22 = 1/4 = 0.25
+
+Note:
+-100.0 < x < 100.0
+n is a 32-bit signed integer, within the range [−231, 231 − 1]
+
+Companies:
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Facebook | 17 LinkedIn | 7 Amazon | 5 Google | 5 Microsoft | 3 Apple | 3 Adobe | 3 Tencent | 2 Oracle | 2 Goldman Sachs | 2
+
+Similar:
+Sqrt(x) Easy
+Super Pow Medium

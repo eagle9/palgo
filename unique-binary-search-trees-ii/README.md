@@ -22,7 +22,11 @@ The above output corresponds to the 5 unique BST's shown below:
     /     /       \                 \
    2     1         2                 3
 
-Companies: Adobe | 2 
+Companies: 
+0 ~ 6 months
+Adobe | 2 
+1 year ~ 2 years
+Bloomberg | 2 Google | 2
 
 Similar: 
 Unique Binary Search Trees Medium
