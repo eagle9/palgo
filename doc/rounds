@@ -5,7 +5,6 @@ word break ii, 1
 design search auto complete,0.3 
 lru cache,0.5
 lfu cache,0
-
 2sum, 0
 3sum, .8 
 4sum, .7
@@ -15,42 +14,38 @@ number of islands ii,0
 making a large island, 0
 max area of island,0
 number of distinct islands,0
-
 top k frequent words, 1 
 top k frequent elements, 1
 median of two data streams,0
-
 next-permutation, very high freq
 permutations
 permutations ii
 palindrome permutations
 palindrome permutations ii
-
 top-k-frequent-words, 1 
 top-k-frequent-element, 1
-
 largest number,0.6
-
 spiral matrix,0
 spiral matrix ii, 0
-
 reorder list, 0
 minimum height trees, 0
 course schedule, 0
 course schedule ii, 0
 reconstruct itinerary, 0
-
 zigzag conversion,0
-
 longest substring, several problems
-
 partition to k equal sum subsets
-
 palindromic substrings, 0
 kth smallest element in a bst,0
-
 maximum depth of binary tree, 1, 1 
 swap nodes in pairs, 1
 pascal triangle, 1
 pascal triangle ii, 1
 powx n, 1
+unique binary search tree,1
+unique binary search tree ii, 0.7
+different ways to add parentheses, 0
+merge intervals, 1
+my calendar i, 1 
+my calendar ii, 0
+my calendar iii, 0
