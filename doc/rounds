@@ -6,8 +6,8 @@ design search auto complete,0.3
 lru cache,0.5
 lfu cache,0
 2sum, 0
-3sum, .8 
-4sum, .7
+3sum, 1, 20190301 
+4sum, 1, 20190301 
 reverse pairs, 0
 number of islands,1
 number of islands ii,0
@@ -38,14 +38,41 @@ partition to k equal sum subsets
 palindromic substrings, 0
 kth smallest element in a bst,0
 maximum depth of binary tree, 1, 1 
-swap nodes in pairs, 1
+swap nodes in pairs, 1, 20190226
 pascal triangle, 1
 pascal triangle ii, 1
-powx n, 1
+powx n, 1, 20190227
 unique binary search tree,1
 unique binary search tree ii, 0.7
 different ways to add parentheses, 0
 merge intervals, 1
-my calendar i, 1 
+insert invervals, 0
+my calendar i, 1, 20190228 
 my calendar ii, 0
 my calendar iii, 0
+simplify path, 0.5, 20190228 
+maximum product subarray, 1, 20190228
+next greater element i, 0
+next greater element ii, 0
+next greater element iii, 0
+majority element, 0
+majority element ii, 0
+basic Calculator,0
+basic calculator ii, 0
+basic calculator iii, 0
+basic calculator iv,0
+expression add operators,0
+alien dictionary, 0.6
+count complete tree nodes, 0
+asteroid collision,0
+find peak element, 0
+perfect squares, 0
+search a 2d matrix, 0
+search a 2d matrix ii, 0
+fruit into baskets, 0
+meeting rooms ii, 0
+meeting rooms, 0
+the maze, 0
+the maze ii, 0
+game of life,0
+flatten 2d vector,0

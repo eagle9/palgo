@@ -1,26 +1,33 @@
-75. Find Peak Element
-Description
-There is an integer array which has the following features:
+162. Find Peak Element
+Medium
 
-The numbers in adjacent positions are different.
-A[0] < A[1] && A[A.length - 2] > A[A.length - 1].
-this guanrantees that there is a peak element in the array. 
+A peak element is an element that is greater than its neighbors.
 
-We define a position P is a peak if:
+Given an input array nums, where nums[i] ≠ nums[i+1], find a peak element and return its index.
 
-A[P-1] < A[P] && A[P] > A[P+1]
-Find a peak element in this array. Return the index of the peak.
+The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.
 
-It's guaranteed the array has at least one peak.
-The array may contain multiple peeks, find any of them.
-The array has at least 3 numbers in it.
-Example
-Given [1, 2, 1, 3, 4, 5, 7, 6]
+You may imagine that nums[-1] = nums[n] = -∞.
 
-Return index 1 (which is number 2) or 6 (which is number 7)
+Example 1:
 
-Challenge
-Time complexity O(logN)
-Difficulty: medium
-Related: find peak element ii
-Company: microsoft, google
+Input: nums = [1,2,3,1]
+Output: 2
+Explanation: 3 is a peak element and your function should return the index number 2.
+Example 2:
+
+Input: nums = [1,2,1,3,5,6,4]
+Output: 1 or 5 
+Explanation: Your function can return either index number 1 where the peak element is 2, 
+             or index number 5 where the peak element is 6.
+Note:
+
+Your solution should be in logarithmic complexity.
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Facebook | 12 Google | 5 Microsoft | 5 Yahoo | 5 Quora | 3 Amazon | 2 IXL | 2
+
+Similar:
+Peak Index in a Mountain Array Easy
+
+Topic: Array, Binary Search
