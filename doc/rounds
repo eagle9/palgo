@@ -16,8 +16,8 @@ max area of island,0
 number of distinct islands,0
 top k frequent words, 1 
 top k frequent elements, 1
-median of two data streams,0
-next-permutation, very high freq
+find median of two data streams,1, 20190301
+next-permutation, 0, very high freq
 permutations
 permutations ii
 palindrome permutations
