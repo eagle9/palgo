@@ -16,7 +16,10 @@ public:
         if (it == m_.cend()) return -1;
  
         // Move this key to the front of the cache
+		// find return it ,iterator of key value pair 
+		// it->first = key, it->second = list<pair<int,int>>::iterator
         cache_.splice(cache_.begin(), cache_, it->second);
+		//m_ does not store value, only list<pair<int,int>>::iterator
         return it->second->second;
     }
     

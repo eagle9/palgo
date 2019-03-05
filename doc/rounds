@@ -2,11 +2,19 @@ one edit distance, 0
 edit distance, 0
 word break, 0
 word break ii, 1  
+word ladder, 0
+word ladder ii,0
+word search, 0
+word search ii, 0
+word pattern, 0
+word pattern ii,0 
 design search auto complete,0.3 
 lru cache,0.5
 lfu cache,0
 2sum, 0
 3sum, 1, 20190301 
+3sum with multiplicity,1, 20190301
+3sum closest, 0
 4sum, 1, 20190301 
 reverse pairs, 0
 number of islands,1
@@ -35,7 +43,21 @@ reconstruct itinerary, 0
 zigzag conversion,0
 longest substring, several problems
 partition to k equal sum subsets
-palindromic substrings, 0
+Palindromic Substrings, 0
+#DPDPDP
+62,	Unique Paths,	medium,	30%,first try accepted 2019, 1
+63	Unique Paths II,medium,	40%	4 y ago, 0, 
+980	Unique Paths III,	hard,	3% 0	
+279	perfect squares,medium,	40%	,11 days ago, 
+943	Find the shortest superstring,	hard,	10%,	google used
+354	Russian Doll Envelopes,	hard,	20%	
+87	Scamble String,	hard,	10%	
+847	Shortest Path visiting all nodes,	hard		
+935	Knight dialer,	medium		
+688	knight probability in chessboard,	medium,	40%	
+188	Best Time to Buy and Sell Stock IV,	hard,	20%	
+689	Maximum Sum of 3 Non-Overlapping Subarrays,	hard		
+871	Minimum Number of Refueling Stops	hard	20%	
 kth smallest element in a bst,0
 maximum depth of binary tree, 1, 1 
 swap nodes in pairs, 1, 20190226

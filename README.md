@@ -3,6 +3,11 @@ Algorithms in Java, C++, Python
 ===============================
 Guide
 =====
+java http://wiki.jikexueyuan.com/project/java-collection/
+c++ https://www.topcoder.com/community/competitive-programming/tutorials/power-up-c-with-the-standard-template-library-part-1/
+https://google.github.io/styleguide/cppguide.html
+https://repl.it/languages/cpp java python
+
 grep -v ^$ doc/rounds
 each type 10-20
 solve a batch of problem of similar type
