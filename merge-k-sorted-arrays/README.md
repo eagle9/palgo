@@ -1,8 +1,9 @@
+Lintcode 
 486. Merge K Sorted Arrays
-Description
+medium
+
 Given k sorted integer arrays, merge them into one sorted array.
 
-Have you met this question in a real interview?  
 Example
 Given 3 sorted arrays:
 
@@ -18,5 +19,7 @@ Do it in O(N log k).
 
 N is the total number of integers.
 k is the number of arrays.
+
 Related Problems: 839 merge two sorted interval lists, 104 merge k sorted lists 
+
 correlate with external merge sorting, which is used to sort a big array that is too big for a single machine's memory

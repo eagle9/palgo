@@ -70,8 +70,8 @@ different ways to add parentheses, 0
 merge intervals, 1
 insert invervals, 0
 my calendar i, 1, 20190228 
-my calendar ii, 0
-my calendar iii, 0
+my calendar ii, 1, 20190306, not quite extensible from i
+my calendar iii, 1, 20190306, very extensible from ii
 simplify path, 0.5, 20190228 
 maximum product subarray, 1, 20190228
 next greater element i, 0
@@ -79,7 +79,7 @@ next greater element ii, 0
 next greater element iii, 0
 majority element, 0
 majority element ii, 0
-basic Calculator,0
+basic calculator,0
 basic calculator ii, 0
 basic calculator iii, 0
 basic calculator iv,0
@@ -98,3 +98,6 @@ the maze, 0
 the maze ii, 0
 game of life,0
 flatten 2d vector,0
+merge k sorted lists, 1, 20190306
+merge k sorted arrays(lintcode), 1, 20190306
+
