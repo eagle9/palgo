@@ -9,9 +9,10 @@ word search ii, 0
 word pattern, 0
 word pattern ii,0 
 design search auto complete,0.3 
-lru cache,0.5
-lfu cache,0
-2sum, 0
+lru cache,0.7
+lfu cache,1 with balanced tree set and map, 20190308
+two sum, 1, 20190308 with 3 methods, easy it is, but you have to be careful and sharp
+two sum iii data structure design, 1, 20190309, easy it is, but tricky when numbers added repeats 
 3sum, 1, 20190301 
 3sum with multiplicity,1, 20190301
 3sum closest, 0

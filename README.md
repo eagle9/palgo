@@ -5,6 +5,8 @@ Guide
 =====
 java http://wiki.jikexueyuan.com/project/java-collection/
 c++ https://www.topcoder.com/community/competitive-programming/tutorials/power-up-c-with-the-standard-template-library-part-1/
+3 ways to define comparison in c++
+http://fusharblog.com/3-ways-to-define-comparison-functions-in-cpp/
 https://google.github.io/styleguide/cppguide.html
 https://repl.it/languages/cpp java python
 

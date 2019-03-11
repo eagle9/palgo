@@ -44,31 +44,39 @@ nice storage that allows repeated timestamps, huahua and grandyang idea
 kind of slow somehow
 Runtime: 244 ms, faster than 21.02% of C++ online submissions for My Calendar II.
 */
-class MyCalendarTwo3 {
-public:
-    MyCalendarTwo3() {
-        
+/*
+shaun first try accepted, luckily very natural extensible from ii solution with counting
+runtime 116ms, faster than 88%
+*/
+struct intCompare {
+    //bool operator()(int a, int b) const // works too, const int& a faster
+    bool operator()(const int& a, const int& b) const { //const is required
+        //order from small to large
+        return a < b;
     }
-    
-    bool book(int start, int end) {
+};
+class MyCalendarThree {
+public:
+    MyCalendarThree() {
+
+    }
+
+    int book(int start, int end) {
         freq[start]++;
         freq[end]--;
-        
         int count = 0;
-        for (const auto& kv: freq){
-            int k = kv.first;
-            count += kv.second;
-            if (count == 3) {
-                freq[start]--;
-                freq[end]++;
-                return false;
-            }
+        int mx = 0;
+        for (auto kv: freq) {
+            count+= kv.second;
+            if (count > mx) mx = count;
         }
-        return true;
+        return mx;
+
     }
-    
 private:
-    map<int,int> freq; //timestamp to count, start ++, end --
+    //map<int,int> freq; //sort key default order
+    map<int,int,intCompare> freq; //sorted key with Compare class
+    //map<int,int,less<int>> freq; //sorted key with std define Compare class
 };
 
 

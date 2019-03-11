@@ -49,9 +49,7 @@ borrow hua's idea and use lambda for comparison
 first 
 compile error, then MLE, strange, 
 cause: if (node->next != NULL) { //while ===> if typo
-prefer standalone compare struct
-check lfu cache with tree set
-
+would rather use Compare class
 */
 class Solution {
 public:
@@ -63,7 +61,7 @@ public:
         };
         //priority_queue<ListNode*, vector<ListNode*>,decltype(comp)> minHeap(comp);
         struct Compare {
-            bool operator()(ListNode* a, ListNode* b) {
+            bool operator()(ListNode* a, ListNode* b) const{
                 return a->val > b->val;
             }
         };
@@ -75,7 +73,8 @@ public:
         ListNode * dummy = new ListNode(-1);
         ListNode * prev = dummy;
         
-        while (minHeap.size() > 0) {
+        //while (minHeap.size() > 0) {
+        while (!minHeap.empty()){
             ListNode * node = minHeap.top();
             minHeap.pop();
             prev->next = node;
@@ -83,8 +82,7 @@ public:
             if (node->next != NULL) {
                 minHeap.push(node->next);
             }
-        }
+        };
         return dummy->next;
     }
 };
-

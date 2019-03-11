@@ -25,7 +25,7 @@ public:
         
     };
     
-    ListNode* helper(vector<ListNode*> lists, int start, int end) {
+    ListNode* helper(vector<ListNode*>& lists, int start, int end) {
         if (start == end) return lists[start];
         
         int mid = start + (end - start)/2;
