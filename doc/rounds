@@ -10,7 +10,7 @@ word pattern, 0
 word pattern ii,0 
 design search auto complete,0.3 
 lru cache,0.7
-lfu cache,1 with balanced tree set and map, 20190308
+lfu cache,1 with balanced tree set and map, 20190308, yet to try O(1) idea
 two sum, 1, 20190308 with 3 methods, easy it is, but you have to be careful and sharp
 two sum iii data structure design, 1, 20190309, easy it is, but tricky when numbers added repeats 
 3sum, 1, 20190301 
@@ -27,10 +27,10 @@ top k frequent words, 1
 top k frequent elements, 1
 find median of two data streams,1, 20190301
 next-permutation, 0, very high freq
-permutations
-permutations ii
-palindrome permutations
-palindrome permutations ii
+permutations,0
+permutations ii,0
+palindrome permutations,0
+palindrome permutations ii,0
 top-k-frequent-words, 1 
 top-k-frequent-element, 1
 largest number,0.6
@@ -46,19 +46,20 @@ longest substring, several problems
 partition to k equal sum subsets
 Palindromic Substrings, 0
 #DPDPDP
-62,	Unique Paths,	medium,	30%,first try accepted 2019, 1
-63	Unique Paths II,medium,	40%	4 y ago, 0, 
-980	Unique Paths III,	hard,	3% 0	
+62,	unique paths,	medium,	30%,first try accepted 2019, 1
+63	unique paths II,medium,	40%	4 y ago, 0, 
+980	unique paths III,	hard,	3% 0	
 279	perfect squares,medium,	40%	,11 days ago, 
-943	Find the shortest superstring,	hard,	10%,	google used
-354	Russian Doll Envelopes,	hard,	20%	
-87	Scamble String,	hard,	10%	
-847	Shortest Path visiting all nodes,	hard		
-935	Knight dialer,	medium		
+943	find the shortest superstring,	hard,	10%,	google used
+354	russian doll envelopes,	hard,	20%	
+87	scamble string,	hard,	10%	
+847	shortest path visiting all nodes,	hard		
+935	knight dialer,	medium		
 688	knight probability in chessboard,	medium,	40%	
-188	Best Time to Buy and Sell Stock IV,	hard,	20%	
-689	Maximum Sum of 3 Non-Overlapping Subarrays,	hard		
-871	Minimum Number of Refueling Stops	hard	20%	
+188	best time to buy and sell stock IV,	hard,	20%	
+689	maximum sum of 3 non-nverlapping subarrays,	hard		
+871	minimum number of refueling stops	hard	20%	
+jump game, 0.8 
 kth smallest element in a bst,0
 maximum depth of binary tree, 1, 1 
 swap nodes in pairs, 1, 20190226
@@ -74,7 +75,7 @@ my calendar i, 1, 20190228
 my calendar ii, 1, 20190306, not quite extensible from i
 my calendar iii, 1, 20190306, very extensible from ii
 simplify path, 0.5, 20190228 
-maximum product subarray, 1, 20190228
+maximum product subarray, 1, 20190228, 20190311
 next greater element i, 0
 next greater element ii, 0
 next greater element iii, 0
@@ -101,4 +102,6 @@ game of life,0
 flatten 2d vector,0
 merge k sorted lists, 1, 20190306
 merge k sorted arrays(lintcode), 1, 20190306
-
+coin change,0.7, yet to try search with greedy and pruning
+sudoku solver,0
+valid sudoku, 0
