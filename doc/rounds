@@ -54,11 +54,11 @@ Palindromic Substrings, 0
 354	Russian Doll Envelopes,	hard,	20%	
 87	Scamble String,	hard,	10%	
 847	Shortest Path visiting all nodes,	hard		
-935	Knight dialer,	medium		
+935	knight dialer,	medium		
 688	knight probability in chessboard,	medium,	40%	
-188	Best Time to Buy and Sell Stock IV,	hard,	20%	
-689	Maximum Sum of 3 Non-Overlapping Subarrays,	hard		
-871	Minimum Number of Refueling Stops	hard	20%	
+188	best Time to Buy and Sell Stock IV,	hard,	20%	
+689	maximum sum of 3 non-overlapping subarrays,	hard		
+871	minimum number of refueling stops	hard	20%	
 kth smallest element in a bst,0
 maximum depth of binary tree, 1, 1 
 swap nodes in pairs, 1, 20190226
