@@ -88,3 +88,9 @@ public int get(int k) {
 		return -1;
 	}
 }
+
+shaun idea after LRU-cache
+combine linked_list<pair<int,int>> , map<int,int>, map<int,list<>::iterator
+like hua's approach
+logn to O(1) with cacheNode
+it is indeed a very hard problem 
