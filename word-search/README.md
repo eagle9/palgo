@@ -21,4 +21,26 @@ Companies: Bloomberg | 8 Microsoft | 7 Amazon | 7 Facebook | 6 Uber | 4 Google |
 
 Topic: Array, Backtracking
 Similar: Word search ii, hard
+shaun idea:
+for each i,j start of the grid
+	vector visisted[i][j] boolean init false
+	if helper(grid,i,j, word, 0, visited)
+		return true
+return false
+
+bool helper(grid,i,j word, index) 
+	if index == word.length()
+		return true
+	res = false
+	if grid[i][j] == word[index]
+		for (dx, dy): dir
+			ni = i + dx;
+			nj = j + dy;
+			if ni nj outbound or  visited[ni][nj]
+				continue
+			visited[ni][nj] = true;
+			res= helper(grid,ni,nj,word,index+1);
+	return res			
+
+add bound check and boolean visited[i][j]
 

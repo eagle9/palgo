@@ -1,5 +1,6 @@
 127. Word Ladder
 Medium
+
 Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:
 
 Only one letter can be changed at a time.
@@ -11,8 +12,8 @@ All words have the same length.
 All words contain only lowercase alphabetic characters.
 You may assume no duplicates in the word list.
 You may assume beginWord and endWord are non-empty and are not the same.
-Example 1:
 
+Example 1:
 Input:
 beginWord = "hit",
 endWord = "cog",
@@ -26,10 +27,18 @@ Input:
 beginWord = "hit"
 endWord = "cog"
 wordList = ["hot","dot","dog","lot","log"]
-
 Output: 0
-
 Explanation: The endWord "cog" is not in wordList, therefore no possible transformation.
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Amazon | 15 Google | 10 LinkedIn | 6 Facebook | 4 Lyft | 4 Square | 4 Salesforce | 3 Oracle | 3 Bloomberg | 3 Uber | 3 Zillow | 3 Snapchat | 2 Apple | 2
+
+Similar:
+Word Ladder II Hard
+Minimum Genetic Mutation Medium
+
+Topic: Breadth-first search
+idea: 
 
 # lintcode 120. Word Ladder
 

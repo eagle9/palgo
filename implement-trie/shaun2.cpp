@@ -6,10 +6,12 @@ shaun coded the cpp from memory, based on grandyang idea
 class TrieNode {
 public:
     TrieNode * child[26];
+    //vector<TrieNode*> child(26);  //can i use vector?? no use of vector!!!! because we want fixed size for TrieNode object
     bool isWord;
     //shaun didn't come up with the following constructor on first try
     //shaun missed p=p->child[i] in search and startWith
     TrieNode(): isWord(false) {
+        //child.reserve(26);
         for (auto & a : child) a = NULL;
     }
 };
@@ -28,13 +30,16 @@ Choose auto const &x when you want to work with original items and will not modi
     */
     /** Inserts a word into the trie. */
     void insert(string word) {
+        //word from left to right, trie from root to leaf
         TrieNode * p = root;
         //for (auto c: word) works too, with value, you can not change c
         for (auto & c: word) {
             int i = c - 'a';
+            //letter to child node
             if (!p->child[i]) p->child[i] = new TrieNode();
             p = p->child[i];
         }
+        //done with all letters in the word
         p->isWord = true;
     }
     
@@ -57,6 +62,7 @@ Choose auto const &x when you want to work with original items and will not modi
             if (!p->child[i]) return false;
             p = p->child[i];
         }
+        //finish all letter in prefix, not met any NULL
         return true;
     }
 };

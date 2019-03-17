@@ -32,3 +32,18 @@ Example
 Given s = "lintcode", dict = ["lint", "code"].
 
 Return true because "lintcode" can be break as "lint code".
+
+idea: 
+str from 0 to i, break 0 to j, j+1 to i
+   	dp[0] = true
+    dp[1] = str.substr(0,1) in dict 
+	for (int i = 1; i <= n-1; ++i) {
+   		for (int j = 0; j < i; ++j) {
+			dp[i] = false;		
+   			if dp[j]  && str(j+1 to i ) in dict {
+				dp[i] = true;
+				break;
+			}
+		}
+	}
+	return dp[n-1]

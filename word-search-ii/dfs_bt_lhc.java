@@ -3,7 +3,7 @@ ling huchong
 use HashMap 
 Store all words' prefix into a HashMap. The HashMap's value = is it a prefix or a word
 if a prefix it is false, if it is a word it is true.
-Your submission beats 41.80% Submissions!
+Runtime: 47 ms, faster than 40.75% of Java online submissions for Word Search II.
 */
 public class Solution {
     public static int[] dx = {0, 1, -1, 0};
@@ -13,18 +13,21 @@ public class Solution {
      * @param words: A list of string
      * @return: A list of string
      */
-    public List<String> wordSearchII(char[][] board, List<String> words) {
+    public List<String> findWords(char[][] board, String[] words) {
         if (board == null || board.length == 0) {
             return new ArrayList<>();
         }
         if (board[0] == null || board[0].length == 0) {
             return new ArrayList<>();
         }
-        
+       	
+	    //grid visited 2d array, control dfs backtracking	
         boolean[][] visited = new boolean[board.length][board[0].length];
+		//all pref -> pure pref or word
         Map<String, Boolean> prefixIsWord = getPrefixSet(words);
+		//store result in set first, to prevent repeated word found, at last convert to list
         Set<String> wordSet = new HashSet<>();
-        
+		//idea start for each ij of the grid, start grid dfs using pref map
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
                 visited[i][j] = true;
@@ -35,8 +38,10 @@ public class Solution {
         
         return new ArrayList<String>(wordSet);
     }
-    
-    private Map<String, Boolean> getPrefixSet(List<String> words) {
+   	//for all words, get all possible pref 0 to wordlen-2, pref ->true
+	//  word->true 
+	//  iterate all words, for each word, iterate all its pref
+    private Map<String, Boolean> getPrefixSet(String[] words) {
         Map<String, Boolean> prefixIsWord = new HashMap<>();
         for (String word : words) {
             for (int i = 0; i < word.length() - 1; i++) {
@@ -58,12 +63,13 @@ public class Solution {
                      String word,
                      Map<String, Boolean> prefixIsWord,
                      Set<String> wordSet) {
+			//changing para: word longer and longer
         if (!prefixIsWord.containsKey(word)) {
             return;
         }
         
         if (prefixIsWord.get(word)) {
-            wordSet.add(word);
+            wordSet.add(word);//use set to prevent repeated found 
         }
         
         for (int i = 0; i < 4; i++) {
@@ -75,8 +81,9 @@ public class Solution {
             }
             
             visited[adjX][adjY] = true;
+			//recur word+1
             dfs(board, visited, adjX, adjY, word + board[adjX][adjY], prefixIsWord, wordSet);
-            visited[adjX][adjY] = false;
+            visited[adjX][adjY] = false; //backtrack
         }
     }
     
@@ -84,3 +91,4 @@ public class Solution {
         return x >= 0 && x < board.length && y >= 0 && y < board[0].length;
     }
 }
+

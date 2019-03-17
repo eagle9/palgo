@@ -1,13 +1,13 @@
-one edit distance, 0
-edit distance, 0
-word break, 0
-word break ii, 1  
-word ladder, 0
-word ladder ii,0
-word search, 0
-word search ii, 0
-word pattern, 0
-word pattern ii,0 
+one edit distance, 1, cleaner idea is to use string compare
+edit distance,0.7 
+word break, 1, 
+word break ii, 0.8, recur with memo, compared to dp, no order requirement  
+word ladder, 0.6 
+word ladder ii,0.5
+word search, 1
+word search ii,0.8 
+word pattern, 1
+word pattern ii,0.9 
 design search auto complete,0.3 
 lru cache,0.7
 lfu cache,1 with balanced tree set and map, 20190308, yet to try O(1) idea

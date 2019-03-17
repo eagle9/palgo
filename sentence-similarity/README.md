@@ -1,6 +1,6 @@
 734. Sentence Similarity
 Easy
-
+40%
 Given two sentences words1, words2 (each represented as an array of strings), and a list of similar word pairs pairs, determine if two sentences are similar.
 
 For example, "great acting skills" and "fine drama talent" are similar, if the similar word pairs are pairs = [["great", "fine"], ["acting","drama"], ["skills","talent"]].
@@ -19,3 +19,10 @@ The length of words1 and words2 will not exceed 1000.
 The length of pairs will not exceed 2000.
 The length of each pairs[i] will be 2.
 The length of each words[i] and pairs[i][j] will be in the range [1, 20].
+ 
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 7
+Friend Circles Medium
+Accounts Merge Medium
+Sentence Similarity II Medium
+

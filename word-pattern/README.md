@@ -23,7 +23,11 @@ Output: false
 Notes:
 You may assume pattern contains only lowercase letters, and str contains lowercase letters separated by a single space.
 
-Companies:Capital One | 4 Microsoft | 2
+Companies:Capital One | 4 Microsoft | 2 |Google |2
 Similar:
 Isomorphic Strings Easy
 Word Pattern II Hard
+Topic: Hashtable
+
+idea: 
+len1 == len2
