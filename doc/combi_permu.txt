@@ -1,0 +1,45 @@
+Combination:
+nums = []
+res  = []
+#C(m,n) take n out of m, no order
+//n: number to take
+//start:running index from 0 to nums.size()-1 
+dfs(int n,int start,vi& cur,vvi& res) {
+	if cur.size() == n {
+		res.push_back(cur);
+		return;
+	} 
+	//try all possible numbers from start
+	for (int i = start; i < nums.size(); i++) {
+		cur.push_back(nums[i]);
+		//decisions made for all idx <= i, use nums[i] 	
+		helper(n,i+1,cur,res); 
+		//not use nums[i]
+		cur.pop_back();
+	}
+}
+vector<vector<int>> res;
+vector<int> cur;
+dfs(n,0,cur,res);
+return res;
+		
+Permutation P(m,n):
+vi nums;
+vvi res;
+vb used(nums.size());
+void dfs(vi& nums, int n,vb& used, vi& cur, vvi& res) {
+	if (cur.size() == n) {
+		res.push_back(cur);
+		return;
+	}	
+	for (int i = 0; i < nums.size(); ++i) {
+		if (used[i]) continue;
+		used[i] = true;
+		cur.push_back(nums[i]);
+		dfs(nums,n,used,cur,res);
+		cur.pop_back();
+		used[i] = false;
+	}	
+}
+
+}

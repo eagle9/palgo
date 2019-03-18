@@ -19,7 +19,6 @@ int main() {
 	temp[0] = 'W';
 	cout << temp << endl;
 
-
 	vector< MyStruct > values;
 	values.push_back(MyStruct(4, "test"));
 	values.push_back(MyStruct(3, "a"));
