@@ -32,11 +32,11 @@ number of distinct islands,0
 top k frequent words, 1 
 top k frequent elements, 1
 find median of two data streams,1, 20190301
-next-permutation, 0, very high freq
+next-permutation, 1, very high freq
 permutations,1,50% 
 permutations ii,1, 20%
-palindrome permutations,0
-palindrome permutations ii,0
+palindrome permutations,1, 20% 
+palindrome permutations ii,1, 8%
 top-k-frequent-words, 1 
 top-k-frequent-element, 1
 largest number,0.6
@@ -58,12 +58,37 @@ minimum path sum,0
 longest increasing continuous subsequence,0
 decode ways,0
 paint house,0
+paint house ii, 0
+house robber,0
+house robber ii, 0
+best time to buy and sell stock,0
+best time to buy and sell stock ii,0
+best time to buy and sell stock iii,0
+best time to buy and sell stock iv,0
+longest increasing subsequence,0
+354	russian doll envelopes,	hard,	20%	
+279 perfect squares,0, medium, 40%, 17 days ago
+palindrome partitioning ii, 0
+copy books lintcode, 0
+coins in a line,0
+lintcode backpack
+lintcode backpack v
+lintcode backpack vi
+lintcode backpack ii,
+lintcode backpack iii,
+longest palindromic subsequence
+lintcode coins in a line iii, 
+scramble string
+burst balloon
+longest common subsequence
+interleaving string
+distinct subsequences
+lintcode ones and zeros
+1000,minimum cost to merge stones, 0
 62,	unique paths,	medium,	30%,first try accepted 2019, 1
 63	unique paths ii,medium,	40%	4 y ago, 0, 
 980	unique paths iii,	hard,	3% 0	
-279	perfect squares,medium,	40%	,11 days ago, 
 943	find the shortest superstring,	hard,	10%,	google used
-354	russian doll envelopes,	hard,	20%	
 87	scamble string,	hard,	10%	
 847	shortest path visiting all nodes,	hard		
 935	knight dialer,	medium		

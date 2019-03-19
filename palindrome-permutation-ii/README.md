@@ -26,3 +26,9 @@ Hint 2:
 To generate all distinct permutations of a (half of) string, use a similar approach from: Permutations II or Next Permutation.
 
 Topic: Backtracking
+
+idea:
+generate P(n,n), check if each permu string palindrome or not
+optimize, if palindrome permutation exists, then do permu with dfs
+if is_palindrome(str) res.push_back()
+optimize take half of str, do full permu

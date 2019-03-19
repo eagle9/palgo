@@ -116,8 +116,7 @@ int main(int argc, char ** argv) {
 	cout << "pq pop order:" << endl;
 	while (!pq.empty()) {
 		//If default comparison function is used, the returned element is also the greatest among the elements in the queue.
-		auto e = pq.top();
-		pq.pop();
+		auto e = pq.top(); pq.pop();
 		cout << e.key << "," << e.value << endl;
 	}
 	return 0;
