@@ -1,5 +1,5 @@
 300. Longest Increasing Subsequence
-Medium
+Medium, 40%
 
 Given an unsorted array of integers, find the length of longest increasing subsequence.
 
