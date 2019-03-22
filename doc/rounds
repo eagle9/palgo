@@ -52,13 +52,14 @@ longest substring, several problems
 partition to k equal sum subsets
 palindromic substrings, 0
 #dynamic programming
-counting bits, 0
-bomb enemy, 0
-minimum path sum,0
-longest increasing continuous subsequence,0
+unique paths ii',  jzdp 2 --------------
+paint house,1, shaun own accepted
 decode ways,0
-paint house,0
-paint house ii, 0
+longest increasing continuous subsequence,0
+minimum path sum,0
+bomb enemy, 0
+counting bits, 0
+paint house ii, 0, jzdp3 ------------
 house robber,0
 house robber ii, 0
 best time to buy and sell stock,0
@@ -67,23 +68,29 @@ best time to buy and sell stock iii,0
 best time to buy and sell stock iv,0
 longest increasing subsequence,1
 354	russian doll envelopes,	hard,1	20%	
-279 perfect squares,0, medium, 40%, 17 days ago
+279 perfect squares,0, medium, 40%, 17 days ago, jzdp4 ------------
 palindrome partitioning ii, 0
 copy books lintcode, 0
 coins in a line,0
 lintcode backpack
 lintcode backpack v
 lintcode backpack vi
-lintcode backpack ii,
+lintcode backpack ii, jzdp5 -----------------------
 lintcode backpack iii,
 longest palindromic subsequence
 lintcode coins in a line iii, 
 scramble string
 burst balloon
-longest common subsequence
-interleaving string
+longest common subsequence,0, jzdp 6 ----------------
+interleaving string,edit distance', regular expression matching', wildcard matching', 
 distinct subsequences
 lintcode ones and zeros
+minimum adjustment cost, jzdp 7 ------------------
+k-sum, longest increasing subsequence', 
+k edit distance
+frog jump
+decode ways ii
+maximal square
 1000,minimum cost to merge stones, 0
 62,	unique paths,	medium,	30%,first try accepted 2019, 1
 63	unique paths ii,medium,	40%	4 y ago, 0, 
