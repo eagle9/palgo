@@ -22,7 +22,21 @@ Maximum Length of Pair Chain Medium
 Number of Longest Increasing Subsequence Medium
 Minimum ASCII Delete Sum for Two Strings Medium
 
-hf problem with many similar problems, must do well
-
+high freq problem with many similar problems, must do well
+dp
 
 Topic: Binary Search, Dynamic Programming
+idea: 
+find first element in dp that is >= cur
+[]
+[10], cur = 10
+[9], cur = 9
+
+update makes sure following action correct
+input: [0, 8, 4, 12, 2]
+dp: []
+dp: [0], cur = 0
+dp: [0, 8], cur = 8, not found >=, push_back
+dp: [0, 4], cur=4, found 8, update
+dp: [0, 4, 12], cur=12, not found, push_back
+dp: [0,2,12], cur=2, found 4, update 4

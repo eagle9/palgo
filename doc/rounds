@@ -62,28 +62,42 @@ paint house ii,hard, 1,very close, incorrect with min1 and min2 dealing
 house robber,1, original idea, a little fix and accepted
 house robber ii, medium, 1, shaun's original idea, forming and advancing, accepted
 best time to buy and sell stock,easy, 1, accepted first sub
-best time to buy and sell stock ii,easy, 0, ....
+best time to buy and sell stock ii,easy, 1,original idea close, code not accepted 
+unique paths ii',  jzdp 2 --------------
+paint house,1, shaun own accepted
+decode ways,0
+longest increasing continuous subsequence,0
+minimum path sum,1, first sub accepted, reduced dp dimension with rolling array, with help
+bomb enemy, 1, original idea accepted, 
+paint house ii, 1, jzdp3 ------------
+best time to buy and sell stock,1
 best time to buy and sell stock iii,0
 best time to buy and sell stock iv,0
 longest increasing subsequence,1
 354	russian doll envelopes,	hard,1	20%	
-279 perfect squares,0, medium, 40%, 17 days ago
+279 perfect squares,0, medium, 40%, 17 days ago, jzdp4 ------------
 palindrome partitioning ii, 0
 copy books lintcode, 0
 coins in a line,0
 lintcode backpack
 lintcode backpack v
 lintcode backpack vi
-lintcode backpack ii,
+lintcode backpack ii, jzdp5 -----------------------
 lintcode backpack iii,
 longest palindromic subsequence
 lintcode coins in a line iii, 
 scramble string
 burst balloon
-longest common subsequence
-interleaving string
+longest common subsequence,0, jzdp 6 ----------------
+interleaving string,edit distance', regular expression matching', wildcard matching', 
 distinct subsequences
 lintcode ones and zeros
+minimum adjustment cost, jzdp 7 ------------------
+k-sum, longest increasing subsequence', 
+k edit distance
+frog jump
+decode ways ii
+maximal square
 1000,minimum cost to merge stones, 0
 62,	unique paths,	medium,	30%,first try accepted 2019, 1
 63	unique paths ii,medium,	40%	4 y ago, 0, 
