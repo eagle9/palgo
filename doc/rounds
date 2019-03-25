@@ -53,16 +53,16 @@ partition to k equal sum subsets
 palindromic substrings, 0
 #dynamic programming
 counting bits, 0
-bomb enemy, 0
-minimum path sum,0
-longest increasing continuous subsequence,0
-decode ways,0
-paint house,0
-paint house ii, 0
-house robber,0
-house robber ii, 0
-best time to buy and sell stock,0
-best time to buy and sell stock ii,0
+bomb enemy, medium, 30%, 1
+minimum path sum,medium, 40%, 1, shaun's original idea, accepted first submission
+longest increasing continuous subsequence,easy, 1, shaun original idea, added code to deal with small i cases, accepted, reduced dimension
+decode ways,medium, 1, shaun original idea, add code based on error with test cases, accepted 
+paint house,easy, 1, accepted first try
+paint house ii,hard, 1,very close, incorrect with min1 and min2 dealing 
+house robber,1, original idea, a little fix and accepted
+house robber ii, medium, 1, shaun's original idea, forming and advancing, accepted
+best time to buy and sell stock,easy, 1, accepted first sub
+best time to buy and sell stock ii,easy, 0, ....
 best time to buy and sell stock iii,0
 best time to buy and sell stock iv,0
 longest increasing subsequence,1

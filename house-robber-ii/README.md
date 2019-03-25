@@ -19,3 +19,16 @@ Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
              Total amount you can rob = 1 + 3 = 4.
 
 Topic: DP
+
+idea 
+dp[0] =  nums[0], clarify 
+dp[1] = max(nums[0], nums[1]) 
+dp[2] = max(n0, n1, n2)
+       dp[i] = max(nums[i] + dp[i-2], 0 + dp[i-1]) 
+       if i == n-1
+			if nums[0] taken, not take nums[i] 
+			else nums[0] not taken, taken nums[i]
+	   but how we know nums[0] take or not???
+
+      i-2  i-1   i
+                 
