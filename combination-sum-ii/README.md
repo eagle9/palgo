@@ -1,25 +1,6 @@
-Description
-Given a collection of candidate numbers (C) and a target number (T), find all unique combinations in C where the candidate numbers sums to T.
+40. Combination Sum II
+Medium, 10%
 
-Each number in C may only be used once in the combination.
-
-All numbers (including target) will be positive integers.
-Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).
-The solution set must not contain duplicate combinations.
-Example
-Given candidate set [10,1,6,7,2,1,5] and target 8,
-
-A solution set is:
-
-[
-  [1,7],
-  [1,2,5],
-  [2,6],
-  [1,1,6]
-]
-
-leetcode 40. Combination Sum II
-Medium
 Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
 
 Each number in candidates may only be used once in the combination.
@@ -46,4 +27,10 @@ A solution set is:
   [1,2,2],
   [5]
 ]
-topic: array, backtracking
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Microsoft | 3 Uber | 2 LinkedIn | 2 Amazon | 2 Combination Sum Medium
+
+Similar: Combination Sum, medium
+
+Topics: Array, Backtracking

@@ -16,3 +16,7 @@ Input: k = 3, n = 9
 Output: [[1,2,6], [1,3,5], [2,3,4]]
 Topic: Array Backtracking
 Similar: Combination Sum
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Microsoft | 2
+
