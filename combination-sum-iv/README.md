@@ -1,4 +1,4 @@
-leetcode 377. Combination Sum IV
+377. Combination Sum IV
 Medium
 Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target.
 
@@ -28,3 +28,8 @@ Credits:
 Special thanks to @pbrother for adding this problem and creating all test cases.
 Topic: dynamic programming
 Similar: combination sum
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Visa|2
+Amazon | 2 Facebook | 2
+Uber | 2 LinkedIn | 2 Google | Snapchat
