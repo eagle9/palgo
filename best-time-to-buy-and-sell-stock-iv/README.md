@@ -28,3 +28,15 @@ Best Time to Buy and Sell Stock III Hard
 
 
 Topic: Dynamic Programming
+idea:
+dp[i][j]
+  no bought1  sold1  bought2 sold2
+   0   1        2       3      4  
+3  0   0
+3  0   0 
+5 
+0
+0 
+3
+1
+4
