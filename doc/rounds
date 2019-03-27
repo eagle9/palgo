@@ -166,4 +166,7 @@ evaluate division,
 #dfs
 subsets,40%, 1, classic, smaller problem or use combination  
 subsets ii,8%,1, use subsets 1 idea with adjustment 
-combination sum, 0
+combination sum, 1
+combination sum ii, 1
+combination sum iii, 1
+combination sum iv, 0
