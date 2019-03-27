@@ -33,3 +33,10 @@ Similar: combination sum
 Visa|2
 Amazon | 2 Facebook | 2
 Uber | 2 LinkedIn | 2 Google | Snapchat
+
+Topic: Dynamic programming
+
+idea: 
+backtracking, TLE
+how to transition to DP?
+

@@ -62,13 +62,13 @@ paint house ii,hard, 1,very close, incorrect with min1 and min2 dealing
 house robber,1, original idea, a little fix and accepted
 house robber ii, medium, 1, shaun's original idea, forming and advancing, accepted
 best time to buy and sell stock,easy, 1, accepted first sub
-best time to buy and sell stock ii,easy, 1,original idea close, code not accepted 
+best time to buy and sell stock ii,easy, 1,original idea close, code not accepted, checked lt sol
 unique paths ii',  jzdp 2 --------------
 paint house,1, shaun own accepted
 decode ways,0
 longest increasing continuous subsequence,0
 minimum path sum,1, first sub accepted, reduced dp dimension with rolling array, with help
-bomb enemy, 1, original idea accepted, 
+bomb enemy, 1, original idea accepted with fixes
 paint house ii, 1, jzdp3 ------------
 best time to buy and sell stock,1
 best time to buy and sell stock iii,0
@@ -166,4 +166,7 @@ evaluate division,
 #dfs
 subsets,40%, 1, classic, smaller problem or use combination  
 subsets ii,8%,1, use subsets 1 idea with adjustment 
-combination sum, 0
+combination sum, 1
+combination sum ii, 1
+combination sum iii, 1
+combination sum iv, 1
