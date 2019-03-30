@@ -1,0 +1,5 @@
+binary search, 1, 
+search in a sorted array of unknown size,1
+heaters easy, 1, use donglin bs template
+find first and last position, 1
+smallest rectangle enclosing black pixels,1
