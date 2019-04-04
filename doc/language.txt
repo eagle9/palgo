@@ -1,0 +1,54 @@
+Data Structure  			C++							Java									Python
+=========================================================================================================
+array				T a[5];						T [] a = new T[5];  					[0] * 5
+dynamic array		vector<T> v(n,val);			List<T> list = new ArrayList<>();		[]
+2d array			vector<vector<T>> v2d(		List<List<T>> list2d =					 
+						m,vector<T>(n,val));		new ArrayList<>();	
+list				list<T> list1;				List<T> list2 = new LinkedList<T>();	N/A,define yourself
+OrderedSet			set<T> s;					TreeSet<T> s = new TreeSet<>();			N/A
+OrderedMap			map<T1,T2> m;				TreeMap<T1,T2> m = new TreeMap<>();		N/A
+					m[k] = v;					m.put(k,v);
+
+HashSet				unordered_set<T> s;			HashSet<T> s = new HashSet<>();			s = set()
+					s.insert(t);s.erase();		s.add(t);s.remove(t);
+					int n = s.size();			int n = s.size();
+					if (s.count(t)) {};			if (s.contains(t)) {};
+					bool flag = s.empty();		boolean flag = s.isEmpty();
+
+HashMap				unordered_map m;			HashMap<T1,T2> m = new HashMap<>();		m = dict()
+					m[k] = v;					m.put(k,v);								m[k] = v
+
+heap/priority q		priority_queue<T> heap;		PriorityQueue<T> heap 					[] via heapq api	
+					heap.push(t);					= new PriorityQueue<>();
+					top=heap.peek();heap.pop(); heap.offer(t);		
+												top = heap.poll();
+					if (!heap.empty()) {};		if (heap.size()>0) {};
+
+queue				queue<T> q;					Queue<T> q = new LinkedList<>();		q = deque()	
+					q.push(last);				q.offer(last);
+					T first = q.pop();			T first = q.poll();		
+					if (!q.empty()) {};			if(!q.isEmpty()) {};
+
+deque				deque<T> dek;				Deque<T> dek = new ArrayDeque<>();		from collections import deque
+																						dek = deque()
+
+stack				stack<T> st;				Stack<T> st = new Stack<>();			st = [];st.append();st.pop()
+					st.push(t);
+					st.pop();
+
+pair				pair<T1,T2> p;				import javafx.util.Pair;				p = (first,second)
+												Pair<K,V> p = new Pair<>();
+tuple				tuple<T1,T2,T3> t;			N/A										t = (first,second,third)
+customized			struct/class my {};			class my {};							class/tuple									
+string				string s = "abc";			String s = "abc";						s = "abc"
+					bool flag = s.empty();		int len = s.length(); 					l = len(len)
+					int len = s.size();			char c = s.charAt(0);					c = s[0]	
+					char c = s[0]
+============================================================================================================
+Functions
+min					min(a,b);					Math.min(a,b);							
+max					max(a,b);					Math.max(a,b);
+abs					abs(a);						Math.abs(a)
+container			int n = c.size();			int n = C.size();
+					if (!c.empty()) {};			if (!c.isEmpty()) {};
+					c.
