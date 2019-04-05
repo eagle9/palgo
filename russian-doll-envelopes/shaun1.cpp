@@ -29,15 +29,15 @@ public:
     }
 };
 
-//shaun idea with check with grandyang
-class Solution {
+//shaun idea with check with grandyang, accepted, faster than 44%
+class Solution2 {
 public:
     int maxEnvelopes(vector<pair<int, int>>& envelopes) {
         sort(envelopes.begin(), envelopes.end());
         int n = envelopes.size();
         if (n == 0) return 0;
         
-        
+        //dp[i] russian doll ending at i
         vector<int> dp(n,1);
         int res = 1;
         
@@ -50,14 +50,49 @@ public:
                 }
             }
             //dp[i]
-            res = max(res,dp[i]);
+            //res = max(res,dp[i]);
         }
         //return dp[n-1]; ---> wrong answer, how come!
-        return res;
+        return *max_element(dp.begin(), dp.end());
     }
 };
-//grandyang dp code for reference
+
+//shaun recur, wrong answer
 class Solution3 {
+public:
+    int maxEnvelopes(vector<pair<int, int>>& envelopes) {
+        int n = envelopes.size();
+        if (n == 0) return 0;
+        if (n == 1) return 1;
+        //now n >= 2
+        sort(envelopes.begin(), envelopes.end());
+        helper(envelopes,0);
+        return res_;
+    }
+private: 
+    int res_ = 1;
+    int helper(vector<pair<int, int>>& envelopes,int start) {
+        if (start == envelopes.size()) return 1;
+        int dp = 1;
+        if (envelopes[start].first < envelopes.back().first &&
+            envelopes[start].first < envelopes.back().second) {
+            dp = 1+ helper(envelopes, start+1);
+            
+            
+        }
+        /*
+        else  {
+            dp = helper(envelopes, start+1);
+            
+        }*/
+        res_ = max(res_,dp);
+        return dp;
+    }
+};
+
+
+//grandyang dp code for reference, runtime 524ms, faster than 24%, mem less than 95%
+class Solution {
 public:
     int maxEnvelopes(vector<pair<int, int>>& envelopes) {
         int res = 0, n = envelopes.size();

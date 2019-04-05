@@ -1,22 +1,27 @@
-480. Binary Tree Paths
-Description
+257. Binary Tree Paths
+Easy
+
 Given a binary tree, return all root-to-leaf paths.
 
-Example
-Given the following binary tree:
+Note: A leaf is a node with no children.
+
+Example:
+
+Input:
 
    1
  /   \
 2     3
  \
   5
-All root-to-leaf paths are:
 
-[
-  "1->2->5",
-  "1->3"
-]
-Related Problems
-717. tree longest path with same value
-company
-apple, google, facebook
+Output: ["1->2->5", "1->3"]
+
+Explanation: All root-to-leaf paths are: 1->2->5, 1->3
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Facebook | 13
+
+Similar:
+Path Sum II Medium
+Smallest String Starting From Leaf Medium

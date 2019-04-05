@@ -7,3 +7,5 @@ search in rotated sorted array, 1
 search in rotated sorted array ii, 1
 find minimum in rotated sorted array,1
 find minimum in rotated sorted array ii,1
+longest increasing subsequence,1
+russian doll envelopes,1
