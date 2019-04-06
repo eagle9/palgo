@@ -18,5 +18,9 @@ K will be an integer in range [1, 10^6].
 Answers within 10^-6 of the true value will be accepted as correct.
 
 Topic: Binary search
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 3
+
 Similar: Koko eating bananas
 Hint 1: Use a binary search. We'll binary search the monotone function "possible(D) = can we use K or less gas stations to ensure each adjacent distance between gas stations is at most D?"

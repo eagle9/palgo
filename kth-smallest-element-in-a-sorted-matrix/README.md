@@ -22,3 +22,6 @@ Find K Pairs with Smallest Sums Medium
 Kth Smallest Number in Multiplication Table Hard
 Find K-th Smallest Pair Distance Hard
 K-th Smallest Prime Fraction Hard
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 4 Facebook | 3 Amazon | 3 Adobe | 2 Uber | 2

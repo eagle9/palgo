@@ -16,16 +16,16 @@
 			}
 			return left;
 		}
-		//find number of elements that <= target
+		//find number of elements that <= target, O(m+n)
 		int searchLessEqual(int [][] matrix, int target) {
 			int n = matrix.length; //n x n matrix
-			//start from last row
+			//start from last row, first col
 			int i = n - 1, j = 0, cnt = 0;
 			while ( i >= 0 && j < n) {
 				if (matrix[i][j] <= target) {
-					cnt += i + 1;  // above the number
+					cnt += i + 1;  // i numbers <= above the number
 					++j;  //move to right, to find more
-				}else { //matrix i,j > target, move to beginning
+				}else { //matrix i,j > target, move up one row 
 					--i;
 				}
 			}

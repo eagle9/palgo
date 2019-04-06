@@ -1,3 +1,5 @@
+http://www.cnblogs.com/grandyang/p/6854825.html
+
 binary search, 1, 
 search in a sorted array of unknown size,1
 heaters easy, 1, use donglin bs template
@@ -9,3 +11,6 @@ find minimum in rotated sorted array,1
 find minimum in rotated sorted array ii,1
 longest increasing subsequence,1
 russian doll envelopes,1
+minimum distance to gas station, 0.5
+kth smallest element in a sorted matrix, 0.5
+sqrt(x), 0
