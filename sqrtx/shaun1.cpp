@@ -1,5 +1,5 @@
 //shaun's original idea, mid*mid > x overflow issue, after avoiding this issue, accepted, runtime 8ms, faster than 94%, mem less than 99%
-class Solution {
+class Solution1 {
 public:
     //x >= 0
     int mySqrt(int x) {
@@ -7,7 +7,7 @@ public:
         int left  = 1, right = x;
         while (left +1 < right) {
             int mid = left + (right - left)/2;
-            if (mid  > x/mid)   //push to left , key: mid*mid > x won't work
+            if (mid  > x/mid)   //push to left
                 right = mid;
             else // mid * mid <= x
                 left = mid;
@@ -17,3 +17,22 @@ public:
         else return left;
     }
 };
+
+//grandyang & hua template, check hua binary search SP
+class Solution {
+public:
+    //x >= 0
+    int mySqrt(int x) {
+        if (x == 0 || x == 1) return x;
+        int left  = 1, right = x;
+        while (left < right) {
+            int mid = left + (right - left)/2;
+            if (mid  > x/mid)   //push to left
+                right = mid;
+            else // mid * mid <= x
+                left = mid+1;
+        }
+        return right-1; // right * right >x 
+    }
+};
+

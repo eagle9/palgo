@@ -11,6 +11,14 @@ find minimum in rotated sorted array,1
 find minimum in rotated sorted array ii,1
 longest increasing subsequence,1
 russian doll envelopes,1
-minimum distance to gas station, 0.5
 kth smallest element in a sorted matrix, 0.5
 sqrt(x), 0
+
+split array largest sum, 0.7, 
+guess number higher or lower,0.8
+Find K Closest Elements,0.5
+Find K-th Smallest Pair Distance
+Kth Smallest Number in Multiplication Table
+Maximum Average Subarray II
+Minimize Max Distance to Gas Station
+Swim in Rising Water
