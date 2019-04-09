@@ -1,0 +1,29 @@
+divide and conquer, recursion traversal style and divide conquer style
+====================
+preorder traversal, 0.7
+inorder traversal,0.7
+postorder traversal, 0.7
+maximum depth of binary tree, 1
+minimum subtree, 0.8
+balanced binary tree, 0.7
+subtree with maximum average,1 
+flatten binary tree to linked list, 0.8
+lowest common ancestor of binary tree, 0.9
+lowest common ancestor ii, 1
+lowest common ancestor iii,0.9 
+binary tree longest consecutive sequence,1
+binary tree longest consecutive sequence ii,0
+binary tree path sum
+binary tree path sum ii
+binary tree path sum iii
+validate binary search tree
+convert binary search tree to doubly linked list
+
+related
+=======
+binary search tree iterator
+inorder successor in binary search tree
+search range in binary search tree
+insert node in a binary search tree
+remove node in a binary search tree
+
