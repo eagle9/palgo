@@ -17,8 +17,20 @@ sqrt(x), 0
 split array largest sum, 0.7, 
 guess number higher or lower,0.8
 Find K Closest Elements,0.5
-Find K-th Smallest Pair Distance
-Kth Smallest Number in Multiplication Table
-Maximum Average Subarray II
-Minimize Max Distance to Gas Station
-Swim in Rising Water
+Find K-th Smallest Pair Distance, 0.5
+Kth Smallest Number in Multiplication Table, 0.5
+Maximum Average Subarray II,0
+Minimize Max Distance to Gas Station,0
+Swim in Rising Water,0
+
+
+divide and conquer
+===================
+preorder traversal
+inorder traversal
+postorder traversal
+maximum depth of binary tree, 1
+mininum subtree,1
+balanced binary tree, 0.9 
+subtree with maximum average, 0
+
