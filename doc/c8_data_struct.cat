@@ -1,0 +1,30 @@
+expression expand
+implement queue by two stacks
+implement stack by two queues
+flatten nested list iterator
+binary search tree iterator
+zigzag iterator
+zigzag iterator ii
+flatten 2d vector 
+min stack
+largest rectangle in histogram
+maximal rectangle
+max tree
+rehashing
+LRU cache
+subarray sum
+copy list with random pointer
+anagrams
+longest consecutive sequence
+heapify
+ugly number ii
+top k largest number ii
+high five
+k closest points
+merge k sorted lists
+merge k sorted arrays
+data stream median
+top k largest numbers
+kth smallest number in sorted matrix
+building outline
+top k frequent words
