@@ -13,5 +13,19 @@ int main () {
     iss >> val; //val << iss not working
     cout << val << '\n';
   }
+  //what if we don't know the number of splits? 
+  istringstream is2(stringvalues);
+  int number;
+  cout << "split string with space with while loop:" << endl;
+  while ( is2 >> number) {
+	cout << number << endl;
+  }
+  string input = "abc,def,ghi";
+  istringstream ss(input);
+  string token;
+  cout << "split with comma:" << endl;
+  while(getline(ss, token, ',')) {
+    cout << token << '\n';
+  }
   return 0;
 }
