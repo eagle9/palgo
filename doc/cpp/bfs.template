@@ -1,0 +1,33 @@
+// T stands for the storage type you want 
+//neighbor stands for the nodes at next level reachable from head
+//set stores nodes that have been visited
+//queue stores nodes that are ready to be expanded to next level
+//set and queue are good friends, any time you put a node into queue, you put it into set at the same time
+Queue<T> queue = new LinkedList<>();
+Set<T> set = new HashSet<>();
+
+set.add(start);
+queue.offer(start);
+while (!queue.isEmpty()) {
+    T head = queue.poll();
+    for (T neighbor : head.neighbors) {
+        if (!set.contains(neighbor)) {
+            set.add(neighbor);
+            queue.offer(neighbor);
+        }
+    }
+}
+
+typedef unordered_map<int,unordered_set<int>> graph;
+graph g = init_graph();
+queue<int> q;
+unordered_set<int> visited; //for graph that there might exist cycle, visit set is used to prevent looping with the cycle; for tree, such a set is not needed
+while (!q.empty()) {
+	int node = q.front(); q.pop();
+	for (int nb: g[node]) { 
+		if (!visited.count(nb)) {
+			visited.insert(nb);
+			q.push(nb);
+		}
+	}
+} 
