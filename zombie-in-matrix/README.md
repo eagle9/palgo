@@ -14,3 +14,31 @@ Given a matrix:
 0 1 0 0 0
 ```
 return 2
+
+idea: 1 day a zombie(1) turns its neighbors into zombies, new zombies do the same thing to expand
+bfs expanding
+vector<vector<int>> dirs = {{0,1},{0,-1},{1,0},{-1,0}};
+pair<int,int> into queue
+put all zombies grid[i][j] == 1 into queue
+count_people =  ?
+count_days = 0;
+while (!q.empty()) {
+	int n = q.size();
+	//one day for all zombies in q
+	count_days++;
+	for (int i = 0; i < n; ++i) {
+			auto p = q.front(); q.pop();
+			for (auto d: dirs) {
+				int i = p.first + d[0], j = p.second + d[1];
+				if (i outbound || j outbound) continue;
+				if (grid[i][j] == 0) {
+					grid[i][j] = 1; //people to zombie 
+					count_people--;
+					//if (count_people == 0) return count_days;
+					queue.push(make_pair(i,j)); //push new zombie into queue
+				}
+			}
+	}
+}
+if (count_people == 0) return count_days;
+else return -1;
