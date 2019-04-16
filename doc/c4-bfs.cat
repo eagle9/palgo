@@ -8,10 +8,9 @@ course schedule ii,1
 sequence reconstruction,0.8
 alien dictionary,0.3
 number of islands,
-zombie in matrix,
+zombie in matrix,1
 knight shortest path, lintcode
-build post office ii
+build post office ii, 0.9, lint, 
 connected component in undirected graph
 smallest rectangle enclosing black pixels
 word ladder,0.3
-

@@ -15,6 +15,7 @@ public:
         int n = grid[0].size();
         int people = 0;
         queue<pair<int, int>> Q;
+		//count people and push all zombies into queue
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
                 if (grid[i][j] == 0) {
@@ -34,7 +35,7 @@ public:
         vector<int> deltaX = {-1, 1, 0, 0};
         vector<int> deltaY = {0, 0, -1, 1};
         while (!Q.empty()) {
-            int qs = Q.size();
+            int qs = Q.size(); //level by level, day by day
             ++count;
             for (int i = 0; i < qs; ++i) {
                 int x = Q.front().first;
@@ -47,8 +48,8 @@ public:
                         if (--people == 0) {
                             return count;
                         }
-                        Q.push({r, c});
-                        grid[r][c] = 1;
+                        Q.push({r, c}); //push new zombie into queue
+                        grid[r][c] = 1; //people to zombie
                     }
                 }
             }
