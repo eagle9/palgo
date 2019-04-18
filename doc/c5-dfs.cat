@@ -1,7 +1,8 @@
 subsets,1
+subsets ii,1
 combinations,1
 combination sum,1
-combination sum ii
+combination sum ii, 1
 palindrome partitioning, 
 permutations,1
 permutations ii
