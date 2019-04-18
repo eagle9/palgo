@@ -3,9 +3,10 @@ subsets ii,1
 combinations,1
 combination sum,1
 combination sum ii, 1
-palindrome partitioning, 
+palindrome partitioning, 1
+palindrome partitioning ii, 
 permutations,1
-permutations ii
+permutations ii,
 n queens
 word ladder
 word ladder ii

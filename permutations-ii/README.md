@@ -24,3 +24,5 @@ Permutations Medium
 Palindrome Permutation II Medium
 
 Topic: Backtracking
+idea: idea for 1, how to extend to solve ii? 
+
