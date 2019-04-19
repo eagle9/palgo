@@ -6,10 +6,10 @@ combination sum ii, 1
 palindrome partitioning, 1
 palindrome partitioning ii, 
 permutations,1
-permutations ii,
-n queens
-word ladder
-word ladder ii
+permutations ii,1
+n queens, 1
+word ladder,1
+word ladder ii,0.2
 flatten nested list iterator
 stack
 implement queue with two stacks

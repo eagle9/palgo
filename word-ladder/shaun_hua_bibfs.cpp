@@ -24,7 +24,7 @@ public:
                 swap(q1, q2);
                         
             unordered_set<string> q;
-            //for all words in q1
+            //for all words in q1, q1 is the smaller set
             for (string w : q1) {
                 //for each letter in word
                 for (int i = 0; i < l; i++) {

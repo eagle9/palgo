@@ -4,11 +4,11 @@
 class Solution {
 public:
     vector<vector<string>> findLadders(string beginWord, string endWord, vector<string>& wordList) {
-        
         unordered_set<string> dict(wordList.begin(), wordList.end());//list to set for quick membership check     
         if (!dict.count(endWord)) return {};//problem statement
+
         dict.erase(beginWord); //why?
-        dict.erase(endWord);
+        dict.erase(endWord); //why??
         
         //steps store word -> steps from beginWord
         unordered_map<string, int> steps{{beginWord, 1}}; //double }}
@@ -16,9 +16,6 @@ public:
         queue<string> q{{beginWord}};
         //q.push(beginWord);
         
-        vector<vector<string>> ans;
-        
-        const int l = beginWord.length();
         int step = 0;        
         bool found = false;
         //found endWord at shortest level/step
@@ -28,7 +25,7 @@ public:
             for (int size = q.size(); size > 0; size--) {
                 const string p = q.front(); q.pop();
                 string w = p; //copy p to w, w to change, p will be parent
-                for (int i = 0; i < l; i++) { //for each letter position
+                for (int i = 0; i < w.size(); i++) { //for each letter position
                     const char ch = w[i];
                     for (char j = 'a'; j <= 'z'; j++) {
                         if (j == ch) continue;
@@ -46,23 +43,23 @@ public:
                                 parents[w].push_back(p);
                         }
                         
-                        if (dict.count(w) == 0) continue;
-                        dict.erase(w);
+                        if (dict.count(w) == 0) continue; // can not go to w 
+                        dict.erase(w); //to visit w, won't visit it again
                         q.push(w);
                         steps[w] = steps[p] + 1;
                         parents[w].push_back(p);
                     }
-                    w[i] = ch;
+                    w[i] = ch; //restore w
                 }
             }
         }
         
+        vector<vector<string>> res;
         if (found) {
             vector<string> curr{endWord};
-            getPaths(endWord, beginWord, parents, curr, ans);
+            getPaths(endWord, beginWord, parents, curr, res);
         }
-    
-        return ans;
+        return res;
     }
 private:
     //find paths from word to beginWord with parents
