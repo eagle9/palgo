@@ -70,6 +70,9 @@ if new word == endWord , //return step+1
 newWord !== endWord
 dict.erase(newWord)
 q.push(newWord)
+
+it is pretty hard do get all details right on this one
+more work to be done to understand better and write from idea more naturally
 	
 		
 		
