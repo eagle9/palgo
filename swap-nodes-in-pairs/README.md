@@ -17,3 +17,7 @@ Alibaba | 2 Google | 2 Uber
 
 Similar:
 Reverse Nodes in k-Group Hard
+
+idea:
+draw picture is very helpful to get the details right
+clear and sharp thinking, experience helps too

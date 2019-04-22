@@ -1,11 +1,15 @@
-reverse nodes in k-groups,0
+linkedlist is my weak link for sure, 
+===========================
+reverse nodes in k-groups,0.9
 partition list
 merge two sorted list
-reverse linked list
-swap two nodes in linked list
+reverse linked list,1
+reverse linked list ii,1
+swap two nodes in linked list,lintcode
+swap nodes in pairs, 1
 reorder list
 rotate list
-copy list with random pointer
+copy list with random pointer, 1
 linked list cycle, intersection of two linked lists
 sort list
 convert sorted list to balanced bst 

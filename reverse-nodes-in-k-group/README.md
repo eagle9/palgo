@@ -21,3 +21,4 @@ Companies: facebook, microsoft
 Topic: linked list
 Similar: swap nodes in pairs
 
+idea: linhuchong has the best understanable idea and code

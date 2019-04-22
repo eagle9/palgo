@@ -9,8 +9,10 @@ permutations,1
 permutations ii,1
 n queens, 1
 word ladder,1
-word ladder ii,0.2
-flatten nested list iterator
+word ladder ii,0.8
+flatten nested list iterator,1
+binary search tree iterator,0.9
+zigzag iterator
 stack
 implement queue with two stacks
 min stack
