@@ -1,18 +1,23 @@
 linkedlist is my weak link for sure, 
 ===========================
 reverse nodes in k-groups,0.9
-partition list
-merge two sorted list
+partition list,1
+merge two sorted list,1
+merge k sorted lists,1
+
 reverse linked list,1
 reverse linked list ii,1
 swap two nodes in linked list,lintcode
 swap nodes in pairs, 1
-reorder list
+reorder list,0.8
 rotate list
 copy list with random pointer, 1
-linked list cycle, intersection of two linked lists
-sort list
+linked list cycle,1
+linked list cycle ii,0.8
+intersection of two linked lists
+sort list,0.9
 convert sorted list to balanced bst 
+
 delete node in the middle of singly linked list
 convert binary search tree to doubly linked list
 LRU cache and LFU cache
