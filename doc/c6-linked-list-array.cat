@@ -20,7 +20,9 @@ convert sorted list to balanced bst
 
 delete node in the middle of singly linked list
 convert binary search tree to doubly linked list
-LRU cache and LFU cache
+
+LRU cache
+LFU cache
 
 maximum subarray
 window sum

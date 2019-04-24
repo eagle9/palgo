@@ -1,10 +1,11 @@
 quick select
 quick sort
 two sum
-move zeros
-remove duplicate number in arrays
-valid palindrome
-partition array
+move zeros,1
+remove duplicate number in arrays, lintcode, -----------1
+valid palindrome, --------1
+valid palindrome ii,---------1
+partition array,----------1
 kth smallest number in unsorted array
 kth largest element
 partition array by odd and even
