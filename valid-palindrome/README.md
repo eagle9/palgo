@@ -1,17 +1,25 @@
-Description
+125. Valid Palindrome
+Easy
+
 Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
 
-Have you consider that the string might be empty? This is a good question to ask during an interview.
+Note: For the purpose of this problem, we define empty string as valid palindrome.
 
-For the purpose of this problem, we define empty string as valid palindrome.
+Example 1:
 
-Example
-"A man, a plan, a canal: Panama" is a palindrome.
+Input: "A man, a plan, a canal: Panama"
+Output: true
+Example 2:
 
-"race a car" is not a palindrome.
+Input: "race a car"
+Output: false
 
-Challenge
-O(n) time without extra memory.
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Facebook | 33 Google | 4 Amazon | 4 Microsoft | 4 Apple | 2 
 
-define palindrome
-Palindrome: In genetics, a DNA or RNA sequence that reads the same in both directions. ... In general usage, a palindrome is a word (such as the name "Eve"), phrase, sentence (such as "Madam I'm Adam"), or number (such as 2002) that reads the same in both directions, backward or forward.
+Similar:
+Palindrome Linked List Easy Valid Palindrome II Easy
+
+Topic: Two pointers, String
+
+Idea: simple, but beware of bugs, read problem statement and capture all details

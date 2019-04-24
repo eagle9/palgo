@@ -2,10 +2,11 @@ quick select
 sort integers ii, lintcode----- 1, quick sort
 sort an array, leetcode ---- 1, quick sort, same same lint sort integers ii
 two sum
-move zeros
-remove duplicate number in arrays
-valid palindrome
-partition array
+move zeros,1
+remove duplicate number in arrays, lintcode, -----------1
+valid palindrome, --------1
+valid palindrome ii,---------1
+partition array,----------1
 kth smallest number in unsorted array
 kth largest element
 partition array by odd and even
