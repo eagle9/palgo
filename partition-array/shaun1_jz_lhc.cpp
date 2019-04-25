@@ -28,11 +28,12 @@ public:
         if (nums[left] < k) return left+1;
         else return left;
     }
-    int partition(vector<int> &nums, int left, int right, int k) {
+    int partition(vector<int> &nums, int left, int right, int pivot) {
+		if (left >= right) return left;
         
         while (left < right) {
-            while (nums[left] < k && left < right) left++; 
-            while (nums[right] >= k && left < right) right--;
+            while (nums[left] < pivot && left < right) left++; 
+            while (nums[right] >= pivot && left < right) right--;
             if (left < right) {
                 swap(nums[left], nums[right]);
                 left++;
@@ -40,20 +41,37 @@ public:
             }
         }
         // right == left now, linhuchong treatment, pretty smart
-        if (nums[left] < k) return left+1;
+        if (nums[left] < pivot) return left+1;
         else return left;
+    }
+	//return index of first e >= pivot, used in leetcode sort an array
+    int partition2(vector<int> &A, int i, int j, int pivot){
+        while (i < j) {
+            while (A[i] < pivot && i < j ) i++;
+            while (A[j] >= pivot && i < j) j--;
+            if (i < j) {
+                swap(A[i], A[j]);
+                i++;
+                j--;
+            }
+        }
+        //i == j now
+        if (A[i] < pivot) return i+1;
+        else return i; //Ai >= pivot
     }
 };
 int main() {
-	vector<int> a = { 1, 2,4,3, 10, 11, 14,12};
+	vector<int> a = {1 ,4,3, 10, 14,12};
 	for (int x: a) cout << x << " ";
 	cout << endl;
 	Solution s;
-	int pivot = 7;
+	int pivot = 10;
 	cout << "pivot=" << pivot << endl;
-	int res = s.partition(a,0,a.size(),7);
-	for (int i = 0; i < res; ++i) {
+	//return index of the first e >= pivot
+	int res = s.partition2(a,0,a.size(),pivot);
+	for (int i = 0; i < a.size(); ++i) {
 		cout << a[i] << " ";
 	}
 	cout << endl;
+	cout << "first index >= pivot is " << res << endl;
 }
