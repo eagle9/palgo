@@ -1,5 +1,5 @@
 # 587. Two Sum - Unique pairs
-
+lint
 Difficulty: Medium
 
 http://www.lintcode.com/en/problem/two-sum-unique-pairs/
