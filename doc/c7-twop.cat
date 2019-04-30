@@ -1,25 +1,26 @@
-kth largest element in an array, quick select, -----------1
-kth smallest number in unsorted array
-sort an array, leet, sort integers ii, lintcode----- 1, quick sort, merge sort,  two pointers and recursive divide and conquer
-two sum
-move zeros,-------------1
+kth largest element in an array, quick select, ------- 0.7
+kth smallest number in unsorted array,-----------0.7 
+sort an array, leetcode ---- 1, quick sort, same same lint sort integers ii, merge sort, two pointers and recursive divide and conquer
+two sum input is an sorted array, ----- 1
+two sum, ----------1
+two sum data structure design, ---------0.8
+two sum unique pairs, lint, very useful to extend to 3sum and 4sum, -----------
+3sum, ---------------0.99
+maximum subarray, ------------, 0.8
+move zeros,1
 remove duplicate number in arrays, lintcode, -----------1
 valid palindrome, --------1
 valid palindrome ii,---------1
 partition array,lintcode, ----------1
-partition array by odd and even
-interleaving positive and negative numbers
-sort letter by case
-sort colors
-sort colors ii
+partition array by odd and even, lint, -------------1
+interleaving positive and negative numbers, lint, ----- 1
+sort letter by case,lint, -------------------1 
+sort colors, ----------0.8
+sort colors ii, -----, 0.5
 pancake sorting
-two sum data structure design
-two sum input array is sorted
-two sum unique pairs
-3sum 
-two sum less than or equal to target
-two sum greater than target
-two sum closest to garget
-3sum closest
-4sum
-two sum difference equals to target
+two sum less than or equal to target, lint ------------1
+two sum greater than target, lint, --------------1
+two sum difference equals to target, lint, -------------1
+two sum closest to target, lint, ---------------0.8
+3sum closest, ---------1
+4sum, --------------1
