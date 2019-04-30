@@ -1,6 +1,6 @@
 kth largest element in an array, quick select, ------- 0.7
 kth smallest number in unsorted array,-----------0.7 
-sort an array, leetcode ---- 1, quick sort, same same lint sort integers ii
+sort an array, leetcode ---- 1, quick sort, same same lint sort integers ii, merge sort, two pointers and recursive divide and conquer
 two sum input is an sorted array, ----- 1
 two sum, ----------1
 two sum data structure design, ---------0.8
@@ -12,15 +12,15 @@ remove duplicate number in arrays, lintcode, -----------1
 valid palindrome, --------1
 valid palindrome ii,---------1
 partition array,lintcode, ----------1
-partition array by odd and even, lint, ---------------
-interleaving positive and negative numbers
-sort letter by case
+partition array by odd and even, lint, -------------1
+interleaving positive and negative numbers, lint, ----- 1
+sort letter by case,lint, -------------------1 
 sort colors, ----------0.8
 sort colors ii, -----, 0.5
 pancake sorting
 two sum less than or equal to target, lint ------------1
 two sum greater than target, lint, --------------1
-two sum closest to garget, lint, ---------------0.8
 two sum difference equals to target, lint, -------------1
+two sum closest to target, lint, ---------------0.8
 3sum closest, ---------1
 4sum, --------------1
