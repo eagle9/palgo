@@ -1,27 +1,26 @@
-716. Max Stack
+155. Min Stack
 Easy
-Design a max stack that supports push, pop, top, peekMax and popMax.
+
+Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 push(x) -- Push element x onto stack.
-pop() -- Remove the element on top of the stack and return it.
-top() -- Get the element on the top.
-peekMax() -- Retrieve the maximum element in the stack.
-popMax() -- Retrieve the maximum element in the stack, and remove it. If you find more than one maximum elements, only remove the top-most one.
-Example 1:
-MaxStack stack = new MaxStack();
-stack.push(5); 
-stack.push(1);
-stack.push(5);
-stack.top(); -> 5
-stack.popMax(); -> 5
-stack.top(); -> 1
-stack.peekMax(); -> 5
-stack.pop(); -> 1
-stack.top(); -> 5
-Note:
--1e7 <= x <= 1e7
-Number of operations won't exceed 10000.
-The last four operations won't be called when stack is empty.
+pop() -- Removes the element on top of the stack.
+top() -- Get the top element.
+getMin() -- Retrieve the minimum element in the stack.
+Example:
+MinStack minStack = new MinStack();
+minStack.push(-2);
+minStack.push(0);
+minStack.push(-3);
+minStack.getMin();   --> Returns -3.
+minStack.pop();
+minStack.top();      --> Returns 0.
+minStack.getMin();   --> Returns -2.
 
-Topic: design
-Similar: min stack
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+
+Amazon | 19 Google | 9 Microsoft | 6 Adobe | 4 Apple | 4 Bloomberg | 2 Uber | 2 Facebook | 2 Goldman Sachs | 2 Wish | 2
+
+Sliding Window Maximum Hard
+Max Stack Easy
+Consider each node in the stack having a minimum value. (Credits to @aakarshmadhavan)
