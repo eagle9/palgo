@@ -1,12 +1,12 @@
 decode string,expression expand, --------------1
 implement queue by two stacks, -------------1
 implement stack by two queues, ----------------1
-flatten nested list iterator
+flatten nested list iterator, --------------1
 binary search tree iterator
 zigzag iterator
 zigzag iterator ii
 flatten 2d vector 
-min stack
+min stack, --------------, 1
 largest rectangle in histogram
 maximal rectangle
 max tree
