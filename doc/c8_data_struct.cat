@@ -2,8 +2,8 @@ decode string,expression expand, --------------1
 implement queue by two stacks, -------------1
 implement stack by two queues, ----------------1
 flatten nested list iterator, --------------1
-binary search tree iterator,----------1
-zigzag iterator,-------------1
+binary search tree iterator, ---------------1
+zigzag iterator, ----------------,1
 zigzag iterator ii
 flatten 2d vector 
 min stack, --------------, 1
