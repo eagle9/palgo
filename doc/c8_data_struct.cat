@@ -12,19 +12,19 @@ maximal rectangle
 max tree
 rehashing, --------------1
 LRU cache
-subarray sum
-copy list with random pointer
-anagrams
+subarray sum, --------------0.5
+copy list with random pointer, ---------------1
+anagrams, lint, --------------1
 longest consecutive sequence
 heapify
 ugly number ii
-top k largest number ii
+top k largest numbers, --------------1
+top k largest number ii, lint, ----------1
 high five
 k closest points
-merge k sorted lists
-merge k sorted arrays
-data stream median
-top k largest numbers
+merge k sorted lists, ------------------1
+merge k sorted arrays, -------------0.8
+data stream median, -------------0.5
 kth smallest number in sorted matrix
 building outline
-top k frequent words
+top k frequent words, ------------1

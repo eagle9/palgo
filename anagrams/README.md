@@ -1,5 +1,5 @@
 171. Anagrams
-Description
+lint medium
 Given an array of strings, return all groups of strings that are anagrams.
 
 All inputs will be in lower-case
