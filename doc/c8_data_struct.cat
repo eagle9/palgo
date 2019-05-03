@@ -12,7 +12,7 @@ maximal rectangle
 max tree
 rehashing, --------------1
 LRU cache
-subarray sum, --------------0.5
+subarray sum, --------------1
 copy list with random pointer, ---------------1
 anagrams, lint, --------------1
 longest consecutive sequence
@@ -23,7 +23,8 @@ top k largest number ii, lint, ----------1
 high five
 k closest points
 merge k sorted lists, ------------------1
-merge k sorted arrays, -------------0.8
+merge k sorted arrays, lint, -------------0.8
+merge sorted arrays, 2 arrays, ------------1
 data stream median, -------------0.5
 kth smallest number in sorted matrix
 building outline
