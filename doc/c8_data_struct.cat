@@ -1,26 +1,26 @@
-decode string,expression expand, --------------1
+decode string,expression expand, --------------1, use stack 
 implement queue by two stacks, -------------1
 implement stack by two queues, ----------------1
 flatten nested list iterator, --------------1
-binary search tree iterator, ---------------1
+binary search tree iterator, ---------------1, use stack
 zigzag iterator, ----------------,1
 zigzag iterator ii
 flatten 2d vector 
 min stack, --------------, 1
-largest rectangle in histogram
+largest rectangle in histogram, ------1, monotonic stack, 
 maximal rectangle
 max tree
-rehashing, --------------1
+rehashing, --------------1, (key+capacipty)% capacity
 LRU cache
-subarray sum, --------------1
+subarray sum, --------------, 0.9, get details right 
 copy list with random pointer, ---------------1
 anagrams, lint, --------------1
-longest consecutive sequence
-heapify
-ugly number ii
+longest consecutive sequence, -----------------???????
+heapify, ---------------0.9, read and understand, to redo with memory of idea
+ugly number ii, -------------0.9, upon hint and debugging
 top k largest numbers, --------------1
 top k largest number ii, lint, ----------1
-high five
+high five, lint, ------------1
 k closest points
 merge k sorted lists, ------------------1
 merge k sorted arrays, lint, -------------0.8
