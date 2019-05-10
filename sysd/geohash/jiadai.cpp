@@ -6,7 +6,6 @@ public:
      * @return a base32 string
      */
     string encode(double latitude, double longitude, int precision) {
-        // Write your code here
         int count1 = (precision * 5 + 1) / 2;
         int count2 = (precision * 5) / 2;
         string num(precision * 5, ' ');
@@ -17,8 +16,7 @@ public:
     }
     
 private:
-    void encode(double val, double start, double end, int count, string& num, int head)
-    {
+    void encode(double val, double start, double end, int count, string& num, int head) {
         while (count--) {
             double mid = (start + end) / 2;
             if (val > mid) {

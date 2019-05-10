@@ -6,12 +6,12 @@
  * }
  */
  
- //jz sysd, beats 87%
+ //jz sysd, beats 87%, shaun read and understand
 public class Anagram {
 
     public static class Map {
+        //key not used, map each word to it sorted char word
         public void map(String key, String value, OutputCollector<String, String> output) {
-            // Write your code here
             // Output the results into output buffer.
             // Ps. output.collect(String key, String value);
             StringTokenizer tokenizer = new StringTokenizer(value);
@@ -27,8 +27,8 @@ public class Anagram {
     }
 
     public static class Reduce {
+        //merge list
         public void reduce(String key, Iterator<String> values, OutputCollector<String, List<String>> output) {
-            // Write your code here
             // Output the results into output buffer.
             // Ps. output.collect(String key, List<String> value);
             List<String> results = new ArrayList<String>();
