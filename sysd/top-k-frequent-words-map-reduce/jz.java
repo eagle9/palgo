@@ -11,10 +11,12 @@
  * }
  */
  
- //jz beats 92.20%
+//jz beats 92.20%, shaun red and understand
+//top k, natural to use priorityQueue. minHeap or maxHeap?
+//get familiar with mapper and reducer api 
 class Pair {
-    String key;
-    int value;
+    String key; //store word
+    int value; //store word count
     
     Pair(String key, int value) {
         this.key = key;
@@ -23,7 +25,9 @@ class Pair {
 }
 
 public class TopKFrequentWords {
-
+    //define both Map and Reduce class
+    //Mapper input key value, output collector
+    //Reducer input key, Iterator<Value>, output collector
     public static class Map {
         public void map(String _, Document value,
                         OutputCollector<String, Integer> output) {
@@ -71,6 +75,7 @@ public class TopKFrequentWords {
                 Q.add(pair);
             } else {
                 Pair peak = Q.peek();
+                //minHeap, min at the top, smaller removed, larger enter
                 if (pairComparator.compare(pair, peak) > 0) {
                     Q.poll();
                     Q.add(pair);
@@ -95,3 +100,4 @@ public class TopKFrequentWords {
         }
     }
 }
+

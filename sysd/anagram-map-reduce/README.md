@@ -1,5 +1,6 @@
 lint 503. Anagram (Map Reduce)
-Description
+difficulty: medium
+
 Use Map Reduce to find anagrams in a given list of words.
 
 Example
@@ -14,3 +15,6 @@ Input: "ab ba cab"
 Output:
   ["ab", "ba"]
   ["cab"]
+
+Related:
+772. Group Anagrams, 554. Sort Integers(Map Reduce), 171. Anagrams, 158. Valid anagram
