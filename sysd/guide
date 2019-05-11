@@ -1,0 +1,44 @@
+Computer_Networ_top_down.pdf
+Computer_networking_top_down_QA.pdf
+MOS4e_sol_man.pdf
+Modern_OS.pdf
+Wiley - os concepts 9e.pdf
+computer-network-tanebaum-5e.pdf
+
+mini-twitter, ---------------------- 0.2,c1, news feed
+
+mini-cassandra, ---------------------1, c2, user system
+binary-tree-serialization, --------0.6, c2, 
+
+consistent-hashing,----------------   1, c3, consistent hashing and tiny url
+consistent-hashing-ii, ---------------1, c3
+tiny-url, ---------------------------0.5,c3
+tiny-url-ii, ------------------------0.1,c3
+
+anagram-map-reduce, ------------------1, c6, map reduce
+google-suggestion-map-reduce, --------1, c6
+inverted-index, ----------------------1, c6
+inverted-index-map-reduce, -----------1, c6
+n-gram-map-reduce,  ------------------1, c6
+top-k-frequent-words-map-reduce, -----1, c6
+sort-integers-map-reduce, ------------1, c6
+word-count-map-reduce,  --------------1, c6
+
+index
+
+mini-yelp, --------------------------0.3, c7, location based service 
+geohash, ----------------------------0.1, c7
+geohash-ii, -------------------------0.1, c7
+mini-uber,  ------------------------- 1,  c7
+
+os-t.txt
+os_proc.txt
+progress.txt
+search_engine.txt
+tinyurl.txt
+trie-serialization
+typeahead
+typehead
+url-parser
+webpage-crawler
+zk.txt
