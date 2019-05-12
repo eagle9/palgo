@@ -19,7 +19,7 @@ public:
             return "";
         string data;
         for (map<char, TrieNode*>::iterator it = root->children.begin();
-             it != root->children.end(); ++it) {
+            it != root->children.end(); ++it) {
             data += it->first;
             data += serialize(it->second);
         }
