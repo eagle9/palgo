@@ -9,6 +9,8 @@ mini-twitter, ---------------------0.2,c1, news feed
 
 mini-cassandra, ---------------------1, c2, user system
 binary-tree-serialization, --------0.6, c2, 
+LRU cache, --------                0.7, c2
+LFU cache, -----------             0.1, c2
 
 url-parser,  ------------------------0.5,c3
 implement-trie, ---------------------0.7,c3
@@ -51,8 +53,6 @@ load-balancer, -------------------
 standard-bloom-filter, -----------
 counting-bloom-filter, ------------
 memcache, -------------------
-LRU cache, --------
-LFU cache, -----------
 
 os-t.txt
 os_proc.txt
