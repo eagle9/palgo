@@ -13,12 +13,17 @@ class Solution {
     public int oddEvenJumps(int[] A) {
         int N = A.length;
         if (N <= 1) return N;
+		//odd[i] --can reach end starting from i up
         boolean[] odd = new boolean[N];
+		//even[i] --can reach end starting from i down
         boolean[] even = new boolean[N];
-        odd[N-1] = even[N-1] = true;
 
+		//tabulate from tail
+        odd[N-1] = even[N-1] = true;
+		//vals --- map from value to min index of such value so far
         TreeMap<Integer, Integer> vals = new TreeMap();
         vals.put(A[N-1], N-1);
+
         for (int i = N-2; i >= 0; --i) {
             int v = A[i];
             if (vals.containsKey(v)) {
