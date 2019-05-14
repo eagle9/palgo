@@ -17,3 +17,9 @@ Given [2, 5, 6, 0, 3, 1], the max tree constructed by this array is:
   5   3
  /   / \
 2   0   1
+
+idea
+use monotonic stack
+jz, jiadai, 
+https://www.cnblogs.com/lishiblog/p/4187936.html
+any guide to more general use of monotonic stack???
