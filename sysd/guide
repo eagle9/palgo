@@ -18,13 +18,14 @@ trie-serialization, -------------------1,c3, crawler and typeahead
 typeahead, --------------------------0.1,c3
 webpage-crawler, --------------------0.2,c3
 
+gfs-client, ------------------------0.3, c4, distributed file system
+heart-beat, -------------------------0,  c4
+
+consistent-hashing and tiny url,---- 0.8,c5
 tiny-url, ---------------------------0.5,c5
 tiny-url-ii, ------------------------0.1,c5
 consistent-hashing,----------------   1, c5, consistent hashing and tiny url
 consistent-hashing-ii, ---------------1, c5
-
-gfs-client, ------------------------0.3, c4, distributed file system
-heart-beat, -------------------------0,  c4
 
 anagram-map-reduce, ------------------1, c6, map reduce
 google-suggestion-map-reduce, --------1, c6

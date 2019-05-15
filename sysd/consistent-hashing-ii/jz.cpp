@@ -54,7 +54,7 @@ public:
 		//hashcode as lower bound 
         map<int, int>::iterator it = shards.lower_bound(hashcode); //first it that >= hashcode
 		
-        if (it == shards.end()) //all before hashcode, hashcode can not be lowerbound, go to begin
+        if (it == shards.end()) //all before hashcode, hashcode can not be lowerbound, go to begin with the ring
             return shards.begin()->second;
         else
             return it->second; //it >= hashcode, first such 
