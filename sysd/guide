@@ -1,34 +1,40 @@
 Computer_Networ_top_down.pdf
 Computer_networking_top_down_QA.pdf
+computer-network-tanebaum-5e.pdf
 MOS4e_sol_man.pdf
 Modern_OS.pdf
 Wiley - os concepts 9e.pdf
-computer-network-tanebaum-5e.pdf
 
-mini-twitter, ---------------------0.2,c1, news feed
+c1 news feed system design,--------0.3, c1
+mini-twitter, ---------------------0.2, c1
 
-c2 user system read and understand, ---------1
-mini-cassandra, ---------------------1, c2, user system
-binary-tree-serialization, --------0.6, c2, 
+c2 user system,               ---------1
+mini-cassandra, ---------------------1, c2
+binary-tree-serialization, --------0.6, c2
 LRU cache, --------                0.7, c2
 LFU cache, -----------             0.1, c2
 
+c3 crawler and typeahead, -----------0.2,c3
 url-parser,  ------------------------0.5,c3
 implement-trie, ---------------------0.7,c3
-trie-serialization, -------------------1,c3, crawler and typeahead 
+trie-serialization, -------------------1,c3
 typeahead, --------------------------0.1,c3
 webpage-crawler, --------------------0.2,c3
 
-gfs-client, ------------------------0.3, c4, distributed file system
-heart-beat, -------------------------0,  c4
+distributed file system design,-----,0.7,c4
+BitTiger Google File System, -------,0.8 c4
+gfs-client, ----------------------- 0.9, c4
+heart-beat, -------------------------1,  c4
+read only lookup service, ---------1,  c4
 
-consistent-hashing and tiny url,---- 0.8,c5
-tiny-url, ---------------------------0.5,c5
-tiny-url-ii, ------------------------0.1,c5
-consistent-hashing,----------------   1, c5, consistent hashing and tiny url
+c5 consistent-hashing and tiny url,- 0.8,c5
+tiny-url, ---------------------------1, c5
+tiny-url-ii, ------------------------1, c5
+consistent-hashing,----------------   1, c5
 consistent-hashing-ii, ---------------1, c5
 
-anagram-map-reduce, ------------------1, c6, map reduce
+c6 map reduce    ------------------- 0.7,c6
+anagram-map-reduce, ------------------1, c6
 google-suggestion-map-reduce, --------1, c6
 inverted-index, ----------------------1, c6
 inverted-index-map-reduce, -----------1, c6
@@ -37,18 +43,21 @@ top-k-frequent-words-map-reduce, -----1, c6
 sort-integers-map-reduce, ------------1, c6
 word-count-map-reduce,  --------------1, c6
 
-mini-yelp, --------------------------0.3, c7, location based service 
+c7 location based service, ----------0.2, c7
+mini-yelp, --------------------------0.3, c7
 geohash, ----------------------------0.1, c7
 geohash-ii, -------------------------0.1, c7
 mini-uber,  ------------------------- 1,  c7
 
-read only lookup service, -----------0.4, c8, big table
+big table,  -------------------------0.3, c8
+read only lookup service, -----------0.4, c8
 merge k sorted arrays,  ------------0.5,  c8
 binary tree serialization, ----------0.5, c8
 intersection of two arrays, ---------0.1, c8
 bloom filter, -----------------------0.2, c8
 
-web logger, -------------------------0.1, c9, message system and rate limiter
+message system and rate limiter,-----0.3, c9
+web logger, -------------------------0.1, c9
 rate limiter, -----------------------0.1, c9, 
 
 load-balancer, -------------------

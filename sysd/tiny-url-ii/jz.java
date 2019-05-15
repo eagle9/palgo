@@ -1,8 +1,13 @@
 //jz java
+/*
+同短网址一样, 我们可以用两个哈希表处理长网址和短网址之间的相互映射关系.
+我们需要额外处理的便是用户设定的网址与已有的冲突时, 需要返回 "error".
+但是注意这个细节: 如果用户设定的和已有的恰好相同, 那么同样应该返回短网址.
+*/
 public class TinyUrl2 {
     private HashMap<String,String> s2l = new HashMap<String,String>();
     private HashMap<String,String> l2s = new HashMap<String,String>();
-    private int cnt = 0;
+    private int cnt = 0; //global id, increment for each new short url created
     private final StringBuffer tinyUrl = new StringBuffer("http://tiny.url/");
     private final String charset = "qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM";
     

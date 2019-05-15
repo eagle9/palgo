@@ -23,7 +23,3 @@ shortToLong("http://tiny.url/1Ab38c")
 >> http://www.lintcode.com/problem/
 shortToLong("http://tiny.url/1Ab38d")
 >> null
-
-同短网址一样, 我们可以用两个哈希表处理长网址和短网址之间的相互映射关系.
-我们需要额外处理的便是用户设定的网址与已有的冲突时, 需要返回 "error".
-但是注意这个细节: 如果用户设定的和已有的恰好相同, 那么同样应该返回短网址.
