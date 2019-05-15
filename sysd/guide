@@ -7,6 +7,7 @@ computer-network-tanebaum-5e.pdf
 
 mini-twitter, ---------------------0.2,c1, news feed
 
+c2 user system read and understand, ---------1
 mini-cassandra, ---------------------1, c2, user system
 binary-tree-serialization, --------0.6, c2, 
 LRU cache, --------                0.7, c2
