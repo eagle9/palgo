@@ -17,8 +17,8 @@ public:
     //dp[i][0] --- can jump to end starting from i up
     //dp[i][1] --- can jump to end starting from i down
     dp[n - 1][0] = dp[n - 1][1] = 1;
-    m[A[n - 1]] = n - 1;
-    int ans = 1;
+    m[A[n - 1]] = n - 1; 
+    int ans = 1; //jump from n-1 included 
     for (int i = n - 2; i >= 0; --i) {
       auto o = m.lower_bound(A[i]); //first >= Ai, so Ai to Aj jump up
       if (o != m.end()) {
