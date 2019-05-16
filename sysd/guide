@@ -43,11 +43,11 @@ top-k-frequent-words-map-reduce, -----1, c6
 sort-integers-map-reduce, ------------1, c6
 word-count-map-reduce,  --------------1, c6
 
-c7 location based service, ----------0.2, c7
+c7 location based service, ----------0.7, c7, slids and video
 mini-yelp, --------------------------0.3, c7
 geohash, ----------------------------0.1, c7
 geohash-ii, -------------------------0.1, c7
-mini-uber,  ------------------------- 1,  c7
+mini-uber,  -------------------------0.1, c7
 
 big table,  -------------------------0.3, c8
 read only lookup service, -----------0.4, c8
