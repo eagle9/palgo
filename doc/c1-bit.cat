@@ -7,8 +7,8 @@
 137	Single Number II	45.8%	Medium,    -------------------------1
 338	Counting Bits	64.6%	Medium	
 268	Missing Number	48.3%	Easy	
-260	Single Number III	56.9%	Medium	
-78	Subsets	52.6%	Medium	
+260	Single Number III	56.9%	Medium, ----------------------------1
+78	Subsets	52.6%	Medium,                         ---------------0.8	
 421	Maximum XOR of Two Numbers in an Array	51.0%	Medium	
 187	Repeated DNA Sequences	35.9%	Medium	
 476	Number Complement	62.3%	Easy	
