@@ -1,7 +1,8 @@
 linkedlist is my weak link for sure, 
 ===========================
-reverse nodes in k-groups,0.9
-partition list,1
+add two numbers,    -----------1
+reverse nodes in k-groups,----0.9
+partition list,    ------------1
 merge two sorted list,1
 merge k sorted lists,1
 
@@ -21,8 +22,8 @@ convert sorted list to balanced bst
 delete node in the middle of singly linked list
 convert binary search tree to doubly linked list
 
-LRU cache
-LFU cache
+LRU cache ,   --------------------0.8
+LFU cache,   ---------------------0.7
 
 maximum subarray,1
 window sum,1

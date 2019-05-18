@@ -1,14 +1,14 @@
 ===== rank by freq ======
 136	Single Number	60.0%	Easy, ----------------------------------1	
-461	Hamming Distance	70.3%	Easy	
-371	Sum of Two Integers	51.0%	Easy	
-169	Majority Element	52.5%	Easy	
-191	Number of 1 Bits	43.0%	Easy	
+461	Hamming Distance	70.3%	Easy	,   ------------------------1
+371	Sum of Two Integers	51.0%	Easy,    ---------------------------1	
+169	Majority Element	52.5%	Easy,    ---------------------------1	
+191	Number of 1 Bits	43.0%	Easy	 ---------------------------1
 137	Single Number II	45.8%	Medium,    -------------------------1
-338	Counting Bits	64.6%	Medium	
-268	Missing Number	48.3%	Easy	
-260	Single Number III	56.9%	Medium, ----------------------------1
-78	Subsets	52.6%	Medium,                         ---------------0.8	
+338	Counting Bits	64.6%	Medium	       -------------------------1
+78	Subsets	52.6%	Medium,                         --------------0.8	
+268	Missing Number	48.3%	Easy                --------------------1	
+260	Single Number III	56.9%	Medium,     ------------------------1	
 421	Maximum XOR of Two Numbers in an Array	51.0%	Medium	
 187	Repeated DNA Sequences	35.9%	Medium	
 476	Number Complement	62.3%	Easy	
