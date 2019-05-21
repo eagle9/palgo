@@ -1,12 +1,16 @@
-//grandyang, Runtime: 104 ms, faster than 100.00% of C++ online submissions for Add and Search Word - Data structure design.
+/*
+Runtime: 96 ms, faster than 94.13% of C++ online submissions for Add and Search Word - Data structure design.
+Memory Usage: 44.5 MB, less than 70.44% of C++ online submissions for Add and Search Word - Data structure design.
+grandyang idea of trie use and dfs, shaun has read and understood
+*/
 class WordDictionary {
 public:
     struct TrieNode {
     public:
-        TrieNode *child[26];
-        bool isWord;
+        TrieNode *child[26]; //pointer to all 26 children
+        bool isWord; 
         TrieNode() : isWord(false) {
-            for (auto &a : child) a = NULL;
+            for (auto &a : child) a = NULL; //set all child pointers to NULL
         }
     };
     
@@ -14,7 +18,7 @@ public:
         root = new TrieNode();
     }
     
-    // Adds a word into the data structure.
+    // Adds a word into the data structure. start from root and for each char
     void addWord(string word) {
         TrieNode *p = root;
         for (auto &a : word) {
@@ -22,6 +26,7 @@ public:
             if (!p->child[i]) p->child[i] = new TrieNode();
             p = p->child[i];
         }
+        //done with all chars, end char's trienode isWord = true
         p->isWord = true;
     }
 
@@ -31,15 +36,18 @@ public:
         return searchWord(word, root, 0);
     }
     
+    //因为这道题里面'.'可以代替任意字符，所以一旦有了'.'，就需要查找所有的子树，只要有一个返回true，整个search函数就返回true，典型的DFS的问题
     bool searchWord(string &word, TrieNode *p, int i) {
-        if (i == word.size()) return p->isWord;
+        if (i == word.size()) return p->isWord; //dfs recur exit
         if (word[i] == '.') {
+            //. matches any char
             for (auto &a : p->child) {
                 if (a && searchWord(word, a, i + 1)) return true;
             }
             return false;
         } else {
-            return p->child[word[i] - 'a'] && searchWord(word, p->child[word[i] - 'a'], i + 1);
+            TrieNode* child = p->child[word[i] - 'a'];
+            return child  && searchWord(word, child, i + 1);
         }
     }
     
