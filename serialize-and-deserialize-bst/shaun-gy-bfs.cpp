@@ -21,6 +21,7 @@
  */
 /* 
 grandyang idea, shaun understood
+sames as serialize and deserialize binary tree
 serialize bt to 1 2 3 # # 4 5, use space as delimitor, convenient for c++ stringstream parsing, no {} used, use stream begin end instead
 draw a picture to much easier to figure out the details: 
 queue:  1 2 3 null null 4 5 null null null null
@@ -75,3 +76,4 @@ public:
         return res;
     }
 };
+

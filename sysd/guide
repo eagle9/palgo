@@ -49,11 +49,11 @@ geohash, ----------------------------0.1, c7
 geohash-ii, -------------------------0.1, c7
 mini-uber,  -------------------------0.1, c7
 
-big table,  -------------------------0.3, c8
-read only lookup service, -----------0.4, c8
-merge k sorted arrays,  ------------0.5,  c8
-binary tree serialization, ----------0.5, c8
-intersection of two arrays, ---------0.1, c8
+big table,  -------------------------0.5, c8, -----
+read only lookup service, -----------0.1, c8
+merge k sorted arrays,  ------------1,  c8
+binary tree serialization, ----------1, c8
+intersection of two arrays, ---------1, c8
 bloom filter, -----------------------0.2, c8
 
 message system and rate limiter,-----0.3, c9
