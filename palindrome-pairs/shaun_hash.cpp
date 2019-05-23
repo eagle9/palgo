@@ -1,5 +1,6 @@
 //http://fisherlei.blogspot.com/2017/07/leetcode-palindrome-pairs-solution.html
 //fisherlei idea, clean evalutation of the problem and clean idea
+//key of the idea is the split the word
 //shaun has read and understand
 //runtime 212ms, faster than 89%, mem less than 52%
 class Solution {

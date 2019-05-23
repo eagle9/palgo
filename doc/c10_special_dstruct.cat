@@ -1,9 +1,9 @@
 
 =======trie==================
 208	Implement Trie (Prefix Tree)	38.2%	Medium	    ---------------1
-211	Add and Search Word - Data structure design	30.1%	Medium	
-212	Word Search II	28.4%	Hard	
-336	Palindrome Pairs	30.8%	Hard	
+211	Add and Search Word - Data structure design	30.1%	Medium  -------1	
+212	Word Search II	28.4%	Hard                                -------1	
+336	Palindrome Pairs	30.8%	Hard                           --------1	
 421	Maximum XOR of Two Numbers in an Array	50.9%	Medium	
 425	Word Squares 44.0%	Hard
 472	Concatenated Words	34.4%	Hard	

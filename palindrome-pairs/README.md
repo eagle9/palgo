@@ -35,4 +35,7 @@ but for word lls, not only looking for sll, but s. so word is almost a palindrom
 don't feel like hashtable along will solve this. 
 how about using Trie? prefix tree
 no idea
+
+fisherlei    split the word into left|right, if right is palindrome, then look left reverse
+  if left is palindrome, then look for right reverse
  
