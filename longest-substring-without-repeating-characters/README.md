@@ -24,5 +24,7 @@ Companies: Google | 26 Facebook | 17 Bloomberg | 15 Amazon | 13 Adobe | 11 Micro
 
 Similar:
 Longest Substring with At Most Two Distinct Characters Hard
+Longest Substring with At Most K Distinct Characters Hard
+Subarrays with K Different Integers Hard
 
-Topic: Hash Table, Two Pointers, String
+Topic: Hash Table, Two Pointers, String, Sliding window

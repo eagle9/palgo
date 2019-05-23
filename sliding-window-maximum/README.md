@@ -21,19 +21,18 @@ You may assume k is always valid, 1 ≤ k ≤ input array's size for non-empty a
 
 Follow up:
 Could you solve it in linear time?
-Heap, deque
+
+Topic: Heap, deque
+
 Hint 1:
 How about using a data structure such as deque (double-ended queue)?
 Hint 2:
 The queue size need not be the same as the window’s size.
 Hint 3:
 Remove redundant elements and the queue should store only elements that need to be considered.
+
 Similar: 
-Minimum Window Substring
-Hard
-Min Stack
-Easy
-Longest Substring with At Most Two Distinct Characters
-Hard
-Paint House II
-Hard
+Minimum Window Substring Hard
+Min Stack Easy
+Longest Substring with At Most Two Distinct Characters Hard
+Paint House II Hard
