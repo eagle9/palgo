@@ -1,5 +1,8 @@
 #include<bitset>
-//jiadai
+#include <vector>
+#include <iostream>
+using namespace std;
+//jiadai, similar to jz
 class HashFunction {
 private:
     int cap, seed;
@@ -23,7 +26,6 @@ public:
 class StandardBloomFilter {
 public:
     StandardBloomFilter(int k) {
-        // initialize your data structure here
         this->k = k;
         for (int i = 0; i < k; ++i) {
             hashFunc.push_back(new HashFunction(100000 + i, 2 * i + 3));
@@ -31,7 +33,6 @@ public:
     }
 
     void add(string& word) {
-        // Write your code here
         for (int i = 0; i < k; ++i) {
             int position = hashFunc[i]->hash(word);
             bits.set(position);
@@ -39,7 +40,6 @@ public:
     }
 
     bool contains(string& word) {
-        // Write your code here
         for (int i = 0; i < k; ++i) {
             int position = hashFunc[i]->hash(word);
             if (!bits[position]) {
@@ -54,3 +54,14 @@ private:
     vector<HashFunction*> hashFunc;
     bitset<200000> bits;
 };
+int main() {
+
+	StandardBloomFilter bf(3);
+	//bf.add("lint");
+	//bf.add("code")
+	string word1 = "lint";bf.add(word1);
+	string word2 = "code";bf.add(word2);
+	string word3 = "world";
+	cout << bf.contains(word1) << "<---true"<<endl; // return true
+	cout << bf.contains(word3) << "<---false"<<endl;// return false
+}

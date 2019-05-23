@@ -1,0 +1,37 @@
+jd.cpp: In function ‘int main()’:
+jd.cpp:60:15: error: cannot bind non-const lvalue reference of type ‘std::__cxx11::string& {aka std::__cxx11::basic_string<char>&}’ to an rvalue of type ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+  bf.add("lint");
+               ^
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bitset:47,
+                 from jd.cpp:1:
+/usr/include/c++/7/bits/basic_string.h:509:7: note:   after user-defined conversion: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+       ^~~~~~~~~~~~
+jd.cpp:35:10: note:   initializing argument 1 of ‘void StandardBloomFilter::add(std::__cxx11::string&)’
+     void add(string& word) {
+          ^~~
+jd.cpp:61:15: error: cannot bind non-const lvalue reference of type ‘std::__cxx11::string& {aka std::__cxx11::basic_string<char>&}’ to an rvalue of type ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+  bf.add("code")
+               ^
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bitset:47,
+                 from jd.cpp:1:
+/usr/include/c++/7/bits/basic_string.h:509:7: note:   after user-defined conversion: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+       ^~~~~~~~~~~~
+jd.cpp:35:10: note:   initializing argument 1 of ‘void StandardBloomFilter::add(std::__cxx11::string&)’
+     void add(string& word) {
+          ^~~
+jd.cpp:63:29: error: cannot bind non-const lvalue reference of type ‘std::__cxx11::string& {aka std::__cxx11::basic_string<char>&}’ to an rvalue of type ‘std::__cxx11::string {aka std::__cxx11::basic_string<char>}’
+  cout << bf.contains("world") << endl;// return false
+                             ^
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bitset:47,
+                 from jd.cpp:1:
+/usr/include/c++/7/bits/basic_string.h:509:7: note:   after user-defined conversion: std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::basic_string(const _CharT*, const _Alloc&) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>]
+       basic_string(const _CharT* __s, const _Alloc& __a = _Alloc())
+       ^~~~~~~~~~~~
+jd.cpp:42:10: note:   initializing argument 1 of ‘bool StandardBloomFilter::contains(std::__cxx11::string&)’
+     bool contains(string& word) {
+          ^~~~~~~~
