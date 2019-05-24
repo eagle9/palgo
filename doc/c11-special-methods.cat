@@ -8,11 +8,11 @@
 478	Generate Random Point in a Circle	36.4%	Medium	
 
 ====sliding window ====
-3	Longest Substring Without Repeating Characters	28.3%	Medium	
-76	Minimum Window Substring	30.6%	Hard	
-159	Longest Substring with At Most Two Distinct Characters 46.9%	Hard	
-239	Sliding Window Maximum	38.0%	Hard	
-340	Longest Substring with At Most K Distinct Characters 39.5%	Hard	
+3	Longest Substring Without Repeating Characters	28.3%	Medium	     -------------1
+159	Longest Substring with At Most Two Distinct Characters 46.9%	Hard    ----------1	
+340	Longest Substring with At Most K Distinct Characters 39.5%	Hard       -----------1	
+76	Minimum Window Substring	30.6%	Hard                               -----------0.1	
+239	Sliding Window Maximum	38.0%	Hard                                 -------------	
 424	Longest Repeating Character Replacement	44.0%	Medium	
 480	Sliding Window Median	32.2%	Hard	
 567	Permutation in String	38.3%	Medium	
