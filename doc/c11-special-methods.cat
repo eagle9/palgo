@@ -14,7 +14,7 @@
 76	Minimum Window Substring	30.6%	Hard                               -----------0.5, know the idea,laioffer	
 239	Sliding Window Maximum	38.0%	Hard                                 -------------0.5	
 424	Longest Repeating Character Replacement	44.0%	Medium	             --------------1
-480	Sliding Window Median	32.2%	Hard                                ---------------0.2	
+480	Sliding Window Median	32.2%	Hard                                ---------------0.8	
 567	Permutation in String	38.3%	Medium                              ---------------	
 727	Minimum Window Subsequence 36.9%	Hard                             --------------0.1	
 978	Longest Turbulent Subarray	45.6%	Medium                           --------------	

@@ -39,3 +39,7 @@ L----------------- R , this is the contracted window. We found a smaller window 
 
 When the window is no longer valid, start expanding again using the right pointer. 
 
+
+idea
+laioffer idea and code implementation is pretty 
+https://www.youtube.com/watch?v=9qFR2WQGqkU
