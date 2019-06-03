@@ -1,31 +1,31 @@
 518 coin change ii
-124 binary tree maximum path sum
-75 sort colors
+124 binary tree maximum path sum                  -----------0.5
+75 sort colors                                    -----------0.3
 76 minimum window substring
-224 basic calculator
+224 basic calculator                          -----------------0.1
 694 top k frequent words 
 332 reconstruct itinerary                  ----------1
 516 longest palindromic subsequence
 309 best time to buy and sell stock with cooldown
 560 subarray sum equals K
-200 number of islands
+200 number of islands                  --------------------0.7
 243/244/245 shortest word distance
 33 search in rotated sorted array
-322 coin change
+322 coin change                                --------------
 496 next greater elements                 ----------------1, brute force done, stack?
-632 smallest range
+632 smallest range                        ----------------1, shaun own idea with some debugging
 277 find the celebrity
-91 decode ways
+91 decode ways                            -----------------1
 199 binary tree right side view
 503 next greater element ii               -----------------0.7
-219 contains duplicate ii
+219 contains duplicate ii                 ------------------1, shaun own idea
 652 find duplicate subtrees
 450 delete node in a bst
 481 count univalue subtrees
 423 sparse matrix multiplication
 17 letter combinations of a phone number
-56 merge intervals
-23 merge k sorted lists
-220 contains duplicate iii
-138 copy list with random pointer
-161 one edit distance
+56 merge intervals                                --------------0.4
+23 merge k sorted lists                       -------------------0.7
+220 contains duplicate iii                  ---------------------0.6, naive, bst sliding w, bucket???
+138 copy list with random pointer              ----------------  0.2
+161 one edit distance                           -----------------0.3

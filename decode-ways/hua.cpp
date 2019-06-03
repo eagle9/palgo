@@ -2,7 +2,7 @@
 Time complexity: O(n)
 Space complexity: O(1)
 
-huahua
+huahua dp
 Runtime: 4 ms, faster than 100.00% of C++ online submissions for Decode Ways.
 Memory Usage: 8.3 MB, less than 94.00% of C++ online submissions for Decode Ways.
 */
@@ -20,6 +20,7 @@ public:
             if (!isValid(s[i]) && !isValid(s[i - 1], s[i])) return 0;
             if (isValid(s[i])) w = w1;
             if (isValid(s[i - 1], s[i])) w += w2;
+			//now roll array
             w2 = w1;
             w1 = w;
         }
