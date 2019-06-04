@@ -5,7 +5,7 @@
 224 basic calculator                          ----------------- hard....
 694 top k frequent words                              ---------- should be able to do it
 332 reconstruct itinerary                             ---------- learned idea, can i recode????
-516 longest palindromic subsequence                 ------------
+516 longest palindromic subsequence                 ------------ 1,typical 2d dp, 
 309 best time to buy and sell stock with cooldown        ---------
 560 subarray sum equals K                                ----------
 200 number of islands                  --------------------0.7
@@ -16,9 +16,9 @@
 632 smallest range                        ----------------1, shaun own idea with some debugging,  one of the hards that i can solve  with own idea
 277 find the celebrity                        --------------
 91 decode ways                            -----------------1, understand,  dp suitable, better than recur with memo
-199 binary tree right side view              ---------------, 0
+199 binary tree right side view              ---------------1,  own idea and accepted
 503 next greater element ii               -----------------0.7
-219 contains duplicate ii                 ------------------1, shaun own idea
+219 contains duplicate ii                 ------------------1, shaun own idea and accepted
 652 find duplicate subtrees                   -----------------1, shaun came up idea, lt code simpler, helper return while iterate and update
 450 delete node in a bst                     ------------------
 481 count univalue subtrees                   ------------------1, i came up idea, but long time to fix bug, ans = ans&& helper(node->left)
