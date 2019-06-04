@@ -1,11 +1,11 @@
 250. Count Univalue Subtrees
 Medium
+
 Given a binary tree, count the number of uni-value subtrees.
 
 A Uni-value subtree means all nodes of the subtree have the same value.
 
 Example :
-
 Input:  root = [5,1,5,5,5,null,5]
 
               5
@@ -15,5 +15,11 @@ Input:  root = [5,1,5,5,5,null,5]
           5   5   5
 
 Output: 4
-Topic: Tree
-Similar: subtree of another tree, longest univalue path
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+
+Box | 15 Google | 4 Amazon | 3
+
+Similar:
+Subtree of Another Tree Easy
+Longest Univalue Path Easy

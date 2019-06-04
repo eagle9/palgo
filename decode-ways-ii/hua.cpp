@@ -1,17 +1,13 @@
 /*
-
 hua dp, similar dp idea as 1, shaun read and understand, cutting angle to see recurrence  
 dp's advantage, when rolling dp array possible, dp saves a lot of space
-
 key points: to figure out all the details
-
-Runtime: 52 ms, faster than 87.14% of C++ online submissions for Decode Ways II.
-Memory Usage: 15 MB, less than 72.92% of C++ online submissions for Decode Ways II.
-
+Runtime: 48 ms, faster than 96% of C++ online submissions for Decode Ways II.
+Memory Usage: 15 MB, less than 91% of C++ online submissions for Decode Ways II.
 */
 class Solution {
 public:
-    int numDecodings(string s) {
+    int numDecodings000(string s) {
         if (s.empty()) return 0;        
         //           dp[-1]  dp[0], dpi depends on dpi-1 and dpi-2
         long dp[2] = {1, ways(s[0])};  
@@ -22,6 +18,21 @@ public:
             dp[1] = dp_i;
         }
         return dp[1];
+    }
+    //if you don't understand dp[-1]=1, try shaun's version
+    int numDecodings(string s) {
+        if (s.empty()) return 0;        
+        //           dp[-1]  dp[0], dpi depends on dpi-1 and dpi-2
+        long a = ways(s[0]);
+        if (s.size() == 1) return a;
+        long b = a*ways(s[1])+ ways(s[0],s[1]);
+        for (int i = 2; i < s.length(); ++i) {
+            long dpi = ways(s[i]) * b + ways(s[i - 1], s[i]) * a;
+            dpi %= kMod;
+            a = b;
+            b = dpi;
+        }
+        return b;
     }
 private:
     static constexpr int kMod = 1000000007;    
