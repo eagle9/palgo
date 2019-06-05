@@ -24,7 +24,7 @@
 481 count univalue subtrees                   ------------------1, i came up idea, but long time to fix bug, ans = ans&& helper(node->left)
 423 sparse matrix multiplication                 ---------------
 17 letter combinations of a phone number           ----------------
-56 merge intervals                                --------------0.4
+56 merge intervals                                -------------- 1,  sort 
 23 merge k sorted lists                       -------------------0.7
 220 contains duplicate iii                  ---------------------0.6, naive, bst sliding w, bucket???
 138 copy list with random pointer              ----------------  0.2
