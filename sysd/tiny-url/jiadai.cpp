@@ -6,8 +6,7 @@ public:
      */
     string longToShort(string& url) {
         // Write your code here
-        if (url2id.find(url) != url2id.end())
-        {
+        if (url2id.find(url) != url2id.end()) {
             return tiny_url + id2ShortUrl(url2id[url]);
         }
 
@@ -24,8 +23,7 @@ public:
     string shortToLong(string& url) {
         // Write your code here
         int id = 0;
-        for (int i = url.size() - 6; i <= url.size() - 1; ++i)
-        {
+        for (int i = url.size() - 6; i <= url.size() - 1; ++i) {
             id = id * 62 + seed.find(url[i]);
         }
 
@@ -38,16 +36,13 @@ private:
     static int currId;
     static string seed;
     static string tiny_url;
-    string id2ShortUrl(int id)
-    {
+    string id2ShortUrl(int id) {
         string s;
-        while (id)
-        {
+        while (id) {
             s = seed[id % 62] + s;
             id /= 62;
         }
-        while (s.size() < 6)
-        {
+        while (s.size() < 6) {
             s = '0' + s;
         }
         return s;
