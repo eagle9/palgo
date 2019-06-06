@@ -31,3 +31,28 @@ Path Sum IV Medium
 Longest Univalue Path Easy
 
 Topic: Tree, Depth-first Search
+
+idea forming:
+path: parth child relation 
+enumerate all paths, for each node of the tree, consider all paths that go through the node
+for each node, path left of the node,max sum,  path right of the node, max sum, combine
+int leftSum (TreeNode root) {
+	//return max sum from the root going down from its left,   max sum from the root going down from its right
+	if (root == NULL) return 0;
+ 	int sum = leftSum(root->left);
+	return max(sum + root-val, root->val); 	
+int rightSum (TreeNode root) {
+	//return max sum from the root going down from its right
+
+max path sum via node  =  leftSum +  rightSum - node.val   
+use a global variable to track the maxPathSum
+
+}
+far from the a good solution. 
+
+wrong answer
+
+hua ---> cutting angle
+int helper(TreeNode * root)
+//return max path sum from root, going down from left, or right
+//root must be included

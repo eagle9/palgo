@@ -1,5 +1,7 @@
 549. Top K Frequent Words (Map Reduce)
-Description
+difficulty: medium
+http://www.lintcode.com/en/problem/top-k-frequent-words-map-reduce/
+
 Find top k frequent words with map reduce framework.
 
 The mapper's key is the document id, value is the content of the document, words in a document are split by spaces.

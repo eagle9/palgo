@@ -1,5 +1,6 @@
-496. Next Greater Element I
+496 Next Greater Element I
 Easy
+
 You are given two arrays (without duplicates) nums1 and nums2 where nums1’s elements are subset of nums2. Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
 
 The Next Greater Number of a number x in nums1 is the first greater number to its right in nums2. If it does not exist, output -1 for this number.
@@ -20,3 +21,15 @@ Explanation:
 Note:
 All elements in nums1 and nums2 are unique.
 The length of both nums1 and nums2 would not exceed 1000.
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+
+Amazon | 6 Bloomberg | 2 
+Google |2
+
+Similar
+Next Greater Element II Medium
+Next Greater Element III Medium
+Daily Temperatures Medium
+
+Topic:Stack

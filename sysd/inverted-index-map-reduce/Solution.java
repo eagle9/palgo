@@ -1,14 +1,25 @@
 //shaun, jz idea and code, beats 37.80%
+/*
+class OutputCollector<K, V> {
+     public void collect(K key, V value);
+         // Adds a key/value pair to the output buffer
+}
+ //Definition of Document:
+class Document {
+      public int id;
+      public String content;
+}
+*/
 public class InvertedIndex {
-
+    
     public static class Map {
-        public void map(String _, Document value,
+        //key -- not used, value/doc
+        public void map(String key, Document doc,
                         OutputCollector<String, Integer> output) {
-            // Write your code here
             // Output the results into output buffer.
-            // Ps. output.collect(String key, int value);
-            int id = value.id;
-            StringTokenizer tokenizer = new StringTokenizer(value.content);
+            // Ps. output.collect(String key, int value);  word to its document id
+            int id = doc.id;
+            StringTokenizer tokenizer = new StringTokenizer(doc.content);
             while (tokenizer.hasMoreTokens()) {
                 String word = tokenizer.nextToken();
                 output.collect(word, id);
@@ -18,6 +29,8 @@ public class InvertedIndex {
     }
 
     public static class Reduce {
+        //input key(word), Iterator<Integer> values( doc ids that word occurred)
+        //output -- words to bigger list of doc ids
         public void reduce(String key, Iterator<Integer> values,
                            OutputCollector<String, List<Integer>> output) {
             // Write your code here

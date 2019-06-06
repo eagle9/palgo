@@ -1,7 +1,7 @@
 //huahua dfs with memo, break like this: s = left + right, for j = 1 to len
 //right = substr(j), check entire if s in dict, res.push_back(s)
 //huahua dfs with memo easier convert to dp
-//Runtime: 28 ms, faster than 48.26% of C++ online submissions for Word Break II.
+//Runtime: 28 ms, faster than 100%, mem less than 43.8%
 class Solution {
 public:
     vector<string> wordBreak(string s, vector<string>& wordDict) {
@@ -28,7 +28,7 @@ private:
         // s in dict, add it to the answer array
         if(dict.count(s)) 
             ans.push_back(s);
-        
+        //try all possible breaks
         for(int j=1;j<s.length();++j) {
             // Check whether right part is a word
             const string& right = s.substr(j);
@@ -45,9 +45,12 @@ private:
         }
         
         // memorize and return
-        mem_[s].swap(ans);
-        return mem_[s];
+        //mem_[s].swap(ans);
+        //return mem_[s];
+        return mem_[s]= ans;
+        
     }
 private:
     unordered_map<string, vector<string>> mem_;
 };
+

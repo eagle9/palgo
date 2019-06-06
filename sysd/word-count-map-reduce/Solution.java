@@ -9,8 +9,10 @@
 public class WordCount {
 
     public static class Map {
+        //key not used
+        //value sentences
+        //output word: count
         public void map(String key, String value, OutputCollector<String, Integer> output) {
-            // Write your code here
             // Output the results into output buffer.
             // Ps. output.collect(String key, int value);
             StringTokenizer tokenizer = new StringTokenizer(value);
@@ -22,9 +24,10 @@ public class WordCount {
     }
 
     public static class Reduce {
+        //key --- word
+        //values --- list of count
         public void reduce(String key, Iterator<Integer> values,
                            OutputCollector<String, Integer> output) {
-            // Write your code here
             // Output the results into output buffer.
             // Ps. output.collect(String key, int value);
             int sum = 0;
@@ -35,3 +38,4 @@ public class WordCount {
         }
     }
 }
+

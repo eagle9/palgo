@@ -21,7 +21,6 @@ getMachineIdByHashCode(int hashcode) // return machine id
 但是为了方便测试您程序的正确性，n 在数据中可能会比较小，所以你必须保证你生成的 k 个随机数不会出现重复。
 LintCode并不会判断你addMachine的返回结果的正确性（因为是随机数），只会根据您返回的addMachine的结果判断你getMachineIdByHashCode结果的正确性。
 
-Have you met this question in a real interview?  
 Example
 create(100, 3)
 addMachine(1)
@@ -34,5 +33,6 @@ getMachineIdByHashCode(61)
 >> 2
 getMachineIdByHashCode(91)
 >> 1
+
 Related Problems
 519. Consistent Hashing

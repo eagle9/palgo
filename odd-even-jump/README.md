@@ -55,4 +55,8 @@ Note:
 
 1 <= A.length <= 20000
 0 <= A[i] < 100000
-Topic: Dynamic programming, stack
+Topic: Dynamic programming, stack, ordered map
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 53
+

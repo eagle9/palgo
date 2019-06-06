@@ -50,7 +50,7 @@ public:
     }
     // Decodes your encoded data to tree.  read token from stream, create node with the token, store node into queue
     TreeNode* deserialize(string data) {
-        if (data.empty()) return nullptr;
+        if (data.empty()) return nullptr; //NULL okay too
         istringstream in(data);
         queue<TreeNode*> q;
         string val;

@@ -1,0 +1,35 @@
+====line sweep=====
+218	The Skyline Problem	31.5%	Hard	
+391	Perfect Rectangle	28.1%	Hard	
+850	Rectangle Area II	44.8%	Hard	
+
+====rejection sampling=====
+470	Implement Rand10() Using Rand7()	44.7%	Medium	
+478	Generate Random Point in a Circle	36.4%	Medium	
+
+====sliding window ====
+3	Longest Substring Without Repeating Characters	28.3%	Medium	     -------------1
+159	Longest Substring with At Most Two Distinct Characters 46.9%	Hard    ----------1	
+340	Longest Substring with At Most K Distinct Characters 39.5%	Hard       -----------1	
+76	Minimum Window Substring	30.6%	Hard                               -----------0.5, know the idea,laioffer	
+239	Sliding Window Maximum	38.0%	Hard                                 -------------0.5	
+424	Longest Repeating Character Replacement	44.0%	Medium	             --------------1
+480	Sliding Window Median	32.2%	Hard                                ---------------0.8	
+567	Permutation in String	38.3%	Medium                              ---------------	1
+727	Minimum Window Subsequence 36.9%	Hard                             --------------0.1	
+978	Longest Turbulent Subarray	45.6%	Medium                           --------------	
+992	Subarrays with K Different Integers	45.1%	Hard                    amazon --- ignore, understand the problem	
+995	Minimum Number of K Consecutive Bit Flips	49.2%	Hard	    ----ignore no google tested
+1004	Max Consecutive Ones III	52.8%	Medium                   ----fb -------	
+1040	Moving Stones Until Consecutive II	44.8%	Medium	
+
+=====minmax=========
+292	Nim Game	55.6%	Easy	
+294	Flip Game II 48.2%	Medium	
+375	Guess Number Higher or Lower II	37.6%	Medium	
+464	Can I Win	27.1%	Medium	
+486	Predict the Winner	46.8%	Medium	
+843	Guess the Word	43.2%	Hard	
+877	Stone Game	61.2%	Medium	
+913	Cat and Mouse	28.9%	Hard	
+

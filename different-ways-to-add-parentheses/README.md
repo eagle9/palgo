@@ -29,3 +29,7 @@ Basic Calculator Hard
 Expression Add Operators Hard
 
 Topic: Divide and Conquer
+
+idea forming, cutting angle
+hua, split the string at every operator, not easy to come up with. 
+

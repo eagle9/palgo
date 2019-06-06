@@ -1,13 +1,34 @@
-Power of Three
-Description
+326. Power of Three
+Easy
+
 Given an integer, write a function to determine if it is a power of three.
 
-Challenge
+Example 1:
+
+Input: 27
+Output: true
+Example 2:
+
+Input: 0
+Output: false
+Example 3:
+
+Input: 9
+Output: true
+Example 4:
+
+Input: 45
+Output: false
+Follow up:
 Could you do it without using any loop / recursion?
 
-Related Problems
-Tag: math
-Company: Google
-Difficulty: easy
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 
+Apple | 2
 
+Similar:
+Power of Two Easy
+Power of Four Easy
+
+Topic:
+Math

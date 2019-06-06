@@ -19,7 +19,11 @@ Note:
 All the strings in the input will only contain lowercase letters.
 The length of S will be in the range [1, 20000].
 The length of T will be in the range [1, 100].
-Topic: Dynamic programming
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 5
+
+Topic: Dynamic programming, sliding window
 Similar:  Minimum window substring(hard), longest continuous increasing subsequence(easy)
 
 Hint 1:

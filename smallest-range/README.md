@@ -22,4 +22,4 @@ Topic: Hash Table, Two Pointers, String
 Similar: 
 Minimum window substring hard
 
-Companies: Pinterest | 5 Facebook | 2
+Companies: Pinterest | 5 Facebook | 2  Google 

@@ -3,6 +3,7 @@ Runtime: 116 ms, faster than 99.79% of C++ online submissions for LRU Cache.
 Memory Usage: 38.2 MB, less than 57.39% of C++ online submissions for LRU Cache.
 both grandyang and huahua use this approach
 easier to remember
+shaun read 2nd round
 */
 class LRUCache {
 public:
@@ -44,8 +45,8 @@ public:
 			//auto for auto reflection
             const auto& node = cache_.back();
 			//node (key,value) pair
-            m_.erase(node.first); //remove the key 
-            cache_.pop_back(); //remove last element
+            m_.erase(node.first); //remove the key from the map of key to list node
+            cache_.pop_back(); //remove last element from doubly linked list
         }
         
         // Insert the entry to the front of the cache and update mapping.

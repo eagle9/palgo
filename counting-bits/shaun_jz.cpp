@@ -1,4 +1,6 @@
 //jz dp class idea number of 1 bits f(i) = f(i>>1) + i % 2
+// break i into lowest bit and 2-32 bits, or i%2 and i>>1
+// it is easy to see f(i) = f(i >> 1) + i%2
 //runtime 52ms, faster than 100%, memory less than 73%
 class Solution {
 public:

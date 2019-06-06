@@ -1,5 +1,6 @@
 //shaun learned idea(first time know two storing indexes, but not quite getting the point)
 //second round first sub wrong answer, quickly fixed and accepted. remember use a 1 test case to figure out the details
+//check shaun3.cpp, easier to understand
 //runtime 4ms, faster than 100%, mem less than 22%
 class Solution {
 public:

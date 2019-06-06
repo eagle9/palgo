@@ -9,11 +9,14 @@ flatten 2d vector
 min stack, --------------, 1
 https://zhanghuimeng.github.io/tags/alg-Monotonic-Stack/   ---- monotonic stack
 largest rectangle in histogram, ------0.5, no deep understanding, monotonic stack, 
-trapping rain water, ----------, 1, monotonic stack use, 1
 maximal rectangle, -------------0.5, basketwang idea with stack, got idea, leet84 maxmimal rect in histogram follow up
-max tree
+trapping rain water, ----------, 1, monotonic stack use, 1
+daily temperatures,             ---------------0.9, monotonic stack
+online stock pan,           -------------------0.9, monotonic stack
+max tree, lint,    ------------------
 rehashing, --------------1, (key+capacipty)% capacity
-LRU cache
+LRU cache, --------------0.9, use both hash and doubly linked list
+LFU cache, --------------0.8, CacheNode, hash, list
 subarray sum, --------------, 0.9, get details right 
 copy list with random pointer, ---------------1
 anagrams, lint, --------------1
