@@ -7,7 +7,6 @@ public:
      * @return: the number of index triplets satisfy the condition nums[i] + nums[j] + nums[k] < target
      */
     int threeSumSmaller(vector<int> &nums, int target) {
-        // Write your code here
         int n = nums.size();
         if (n < 2) return 0;
         sort(nums.begin(), nums.end());
@@ -18,7 +17,7 @@ public:
                 if (nums[i] + nums[start] + nums[end] >= target) {
                     --end;
                 }
-                else {
+                else { // i start end < target
                     count += end - start;
                     ++start;
                 }
