@@ -22,7 +22,7 @@
 652 find duplicate subtrees                   -----------------1, shaun came up idea, lt code simpler, helper return while iterate and update
 450 delete node in a bst                     ------------------
 481 count univalue subtrees                   ------------------1, i came up idea, but long time to fix bug, ans = ans&& helper(node->left)
-423 sparse matrix multiplication                 ---------------0.6, understood both direct and space reduction???  
+423 sparse matrix multiplication                 ---------------1, understood both direct and space reduction, yes, ikj cut k's space  
 17 letter combinations of a phone number           ----------------1, done with own idea
 56 merge intervals                                -------------- 1,  sort 
 23 merge k sorted lists                       -------------------0.7
