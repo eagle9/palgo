@@ -28,4 +28,4 @@
 23 merge k sorted lists                       -------------------0.8
 220 contains duplicate iii                  ---------------------0.6, naive, bst sliding w, bucket???
 138 copy list with random pointer              ---------------- 0.7 
-161 one edit distance                           -----------------0.3
+161 one edit distance                           -----------------1, but without good cutting angle, could fall for buggy code

@@ -1,4 +1,5 @@
 //use jz template
+//runtime 8ms, faster than 95%, mem less than 52%
 class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
@@ -9,7 +10,7 @@ public:
         int left = 0, right = nums.size()-1;
         while (left +1 < right) {
             int mid = left + (right - left)/2;
-            if (target <= nums[mid]) { //== squeeze to the left
+            if (target <= nums[mid]) { //when == squeeze to the left
                 right = mid;
             }else { // nums[mid] < target, sqeeze to the right
                 left = mid+1;
@@ -39,7 +40,8 @@ public:
 };
 
 //use donglin's template
-class Solution1 {
+//runtime 4ms, faster than 99.9%, mem less than 66%
+class Solution2 {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
         
