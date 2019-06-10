@@ -2,8 +2,6 @@
  Runtime: 52 ms, faster than 63.01% of C++ online submissions for Subarray Sum Equals K.
 Memory Usage: 18.1 MB, less than 100.00% of C++ online submissions for Subarray Sum Equals K.
 Running Prefix sum
-
-
 */
 class Solution {
 public:
