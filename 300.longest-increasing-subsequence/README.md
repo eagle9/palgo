@@ -27,6 +27,12 @@ dp
 
 Topic: Binary Search, Dynamic Programming
 idea: 
+dp angle: dp[i] LIS from 0 to i, for d[i+1],  dp[i+1] = max (dp[k]+1), k = 0...i, if nums[i+1] > nums[k]
+time O(n^2)
+
+binary search angle: 
+
+
 find first element in dp that is >= cur
 []
 [10], cur = 10
