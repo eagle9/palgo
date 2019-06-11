@@ -66,8 +66,7 @@ void Graph::shortestPath(int src) {
 } 
 
 // Driver program to test methods of graph class 
-int main() 
-{ 
+int main() { 
 	// create the graph given in above fugure 
 	int V = 9; 
 	Graph g(V); 
