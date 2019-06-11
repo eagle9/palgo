@@ -44,13 +44,15 @@ struct kv {
     int key;
     std::string value;
     kv(int k, const std::string& s) : key(k), value(s) {};
-	bool operator<(kv other) const { //kv& other not working
+	//bool operator<(kv& other) const { //kv& other -->not working, compiler error
+	bool operator<(kv other) const { //kv& other
 		return key < other.key; // if true, key is ahead of other.key
 	}
 };
 
 struct kvCompare {
-    inline bool operator() (const kv& struct1, const kv& struct2) {
+    //inline bool operator() (const kv& struct1, const kv& struct2) {  //----> working
+    inline bool operator() (kv struct1, kv struct2) const { //---> working too
         return (struct1.key < struct2.key);
     }
 };
