@@ -28,9 +28,15 @@ Every integer represented in the 2D-array will be between 1 and N, where N is th
 
 Update (2017-09-26):
 We have overhauled the problem description + test cases and specified clearly the graph is an undirected graph. For the directed graph follow up please see Redundant Connection II). We apologize for any inconvenience caused.
+
 Topic: Tree, Union Find, Graph
-Similar: Redundant Connection II(hard), Accounts Merge(medium)
+Similar: 
+Redundant Connection II,hard 
+Accounts Merge,medium
 Graph Valid  Tree
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 4
 
 idea: 
 tree no cycle, redundant edge results in cycle. 

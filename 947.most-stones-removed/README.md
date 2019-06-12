@@ -22,4 +22,7 @@ Note:
 1 <= stones.length <= 1000
 0 <= stones[i][j] < 10000
 
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 21
+
 Topic: depth-first search, union find
