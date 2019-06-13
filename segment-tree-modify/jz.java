@@ -36,7 +36,7 @@ public class Solution {
         if(mid < index && index <= root.end) {
             modify(root.right, index, value);
         }
-        //更新
+        //更新 --- don't forget this
         root.max = Math.max(root.left.max, root.right.max);
     }
 }
