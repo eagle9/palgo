@@ -28,6 +28,9 @@ Note:
 
 The number of calls to MyCalendar.book per test case will be at most 1000.
 In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
-COmpany: Google
-Topic tag: Array Binary tree
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 10 Amazon | 2
+
+Topic:Ordered Map 
 SImilar: my calendar i, my calendar iii

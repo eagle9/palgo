@@ -26,6 +26,10 @@ The number of calls to MyCalendar.book per test case will be at most 1000.
 In calls to MyCalendar.book(start, end), start and end are integers in the range [0, 10^9].
 Topic: Array
 Similar: my calendar ii, my calendar ii
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 4 Amazon | 2 Microsoft | 2
+
 Hint: Store the events as a sorted list of intervals. If none of the events conflict, then the new event can be added.
 
 lintcode 1065. My Calendar I

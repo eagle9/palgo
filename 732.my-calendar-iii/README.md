@@ -30,6 +30,10 @@ Note:
 
 The number of calls to MyCalendarThree.book per test case will be at most 400.
 In calls to MyCalendarThree.book(start, end), start and end are integers in the range [0, 10^9].
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 2
+Similar:  My calendar i, my calendar ii
+
 Topic: Segment Tree, Binary Search Tree
 Hint: Treat each interval [start, end) as two events "start" and "end", and process them in sorted order.
-Similar:  My calendar i, my calendar ii
