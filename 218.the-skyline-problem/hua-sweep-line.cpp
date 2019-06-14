@@ -1,4 +1,4 @@
-//hua sweep line algo, with balanced binary tree set
+//hua sweep line algo, with balanced binary tree set, Event represented by pair<int,int>
 //care needs to be taken to deal with two building adjacent to each other
 
 // Time Complexity: O(nlogn)
