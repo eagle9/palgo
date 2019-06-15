@@ -48,7 +48,9 @@ public:
 
             // Calculate query, merge intervals
             long query = 0;
-            int cur = -1;
+
+            //int cur = -1;
+			int cur = INT_MIN;
             for (auto intv: active) {
                 //intv.first intv.second contributes to the area???
                 cur = max(cur, intv.first); //cur is prev interval's end, if its greater, take cur

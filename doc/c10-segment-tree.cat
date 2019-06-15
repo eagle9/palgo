@@ -6,5 +6,9 @@
 493	Reverse Pairs	23.0%	Hard	
 699	Falling Squares	39.9%	Hard	
 715	Range Module	35.2%	Hard	
-732	My Calendar III	54.4%	Hard	
-850	Rectangle Area II	44.8%	Hard	
+732	My Calendar III	54.4%	Hard            	
+850	Rectangle Area II	44.8%	Hard              -------------------0.5, segment tree not required	
+
+references:
+1)huahua 
+2)http://hehejun.blogspot.com/2017/04/data-structuresegment-tree.html
