@@ -23,3 +23,8 @@ Count of Smaller Numbers After Self Hard
 Count of Range Sum Hard
 
 Topic: Divide and Conquer, Binary Indexed Tree, Segment Tree, Binary Search Tree
+
+idea: naive/brute idea is easy, O(n^2)
+  follow up, can you do better than O(n^2)
+  nlogn challenges you think more and come up better idea
+
