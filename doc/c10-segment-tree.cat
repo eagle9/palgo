@@ -1,9 +1,9 @@
-218	The Skyline Problem	31.5%	Hard	
-307	Range Sum Query - Mutable	28.4%	Medium	    --------------1
+218	The Skyline Problem	31.5%	Hard                ------------- sweep line	
+307	Range Sum Query - Mutable	28.4%	Medium	    --------------1, very natural use of segment tree or bit
 308	Range Sum Query 2D - Mutable 31.8%	Hard
-315	Count of Smaller Numbers After Self	38.0%	Hard	
-327	Count of Range Sum	32.6%	Hard	
-493	Reverse Pairs	23.0%	Hard	
+315	Count of Smaller Numbers After Self	38.0%	Hard   ------------ divide and conquer	
+327	Count of Range Sum	32.6%	Hard              ----------------, divide and conquer	
+493	Reverse Pairs	23.0%	Hard                  ----------------, divide and conquer better, bit	
 699	Falling Squares	39.9%	Hard	
 715	Range Module	35.2%	Hard	
 732	My Calendar III	54.4%	Hard            	
