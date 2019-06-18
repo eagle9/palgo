@@ -3,6 +3,6 @@ review huahua and tushar roy lecture
 218	The Skyline Problem	31.5%	Hard	                --------sweep line better, bit not so much
 307	Range Sum Query - Mutable	28.4%	Medium          --------1, tried idea hint and accepted after fixinb bugs	
 308	Range Sum Query 2D - Mutable 31.8%	Hard	
-315	Count of Smaller Numbers After Self	38.0%	Hard	
+315	Count of Smaller Numbers After Self	38.0%	Hard	---------1, both dq merge sort, and transform number to rank array and apply binary index tree
 327	Count of Range Sum	32.6%	Hard	          ---------------1, divide and conquer better
 493	Reverse Pairs	23.0%	Hard	  --------------------------0.7, not 100% understand

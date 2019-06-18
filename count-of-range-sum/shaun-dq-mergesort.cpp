@@ -8,15 +8,18 @@ public:
     int mergeSort(vector<long>& sum, int lower, int upper, int left, int right){
         if(right-left <= 1) return 0;
         int mid = left + (right-left)/2;
-        int m = mid, n = mid;
         int count = mergeSort(sum,lower,upper,left,mid) + mergeSort(sum,lower,upper,mid,right);
         
-        //m first >= lower
-        //n last <= upper
+        //start from mid, find first m such that sum[m] - sum[i]>= lower
+		//start from mid, find last n such that sum[n] - sum[i] <= upper
+        int m = mid, n = mid;
+		//note sum[left, mid) and sum[mid,right) are sorted now, use this property!
         for(int i =left; i< mid; i++){
+			//for each sum[i], in the range of [mid,right), find first m such that sum[m] - sum[i] >= lower
             while(m < right && sum[m] - sum[i] < lower) m++;
+			//for each sum[i], in the range of [mid,right), find last n such that sum[m] - sum[i] <= upper 
             while(n < right && sum[n] - sum[i] <= upper) n++;
-            count += n - m;
+            count += n - m; //found n-m range sums in [lower,upper] for the particular sum[i]
         }
         //inplace_merge(sum.begin()+left, sum.begin()+mid, sum.begin()+right);
         //merge(sum, left, mid, right);
@@ -32,7 +35,7 @@ public:
         temp =vector<long>(sum.size());
         return mergeSort(sum, lower, upper, 0, sum.size());
     }
-    //my own implementation of inplace_merge
+    //my own implementation of inplace_merge, use local buffer temp
     // a index range [left,right)
     void merge(vector<long>& a, int left, int mid, int right) {
         vector<long> temp (right-left);
@@ -46,6 +49,7 @@ public:
         while (j < right) temp[k++] = a[j++];
         for (k = 0; k < right-left; ++k) a[k+left] = temp[k];
     }
+	//my own implementation of inplace_merge, use private member buffer temp, more efficient
     void merge2(vector<long>& a, int left, int mid, int right) {
         
         int k = left; //index for temp as private member

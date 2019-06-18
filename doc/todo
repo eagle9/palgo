@@ -2,4 +2,10 @@ subarray with k different integers     ----------- hash table, two pointers, sli
 interval list intersection   --------------------- two pointers
 design tic tac toe            --------------------design
 Insert into a Cyclic Sorted List -----------------linked list
-
+https://kennyzhuang.gitbooks.io/algorithms-collection/content/count_of_smaller_numbers_after_self.html
+find the shortest superstring  -------------------dp, search , goog6 
+Partition Equal Subset Sum ----------------------- dp, goog 6m - 1y
+pour water ---------------------------------------array
+sort character by freq ---------------------------hash table, heap
+binary tree cameras   ---------------------------- goog2, dp tree, dfs 
+cloest leaf in a binary tree ----------------------
