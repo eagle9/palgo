@@ -1,59 +1,59 @@
-1	146	LRU Cache    		23.60%	Hard
-2	4	Median of Two Sorted Arrays    		25.30%	Hard
-3	42	Trapping Rain Water    		41.50%	Hard
-4	273	Integer to English Words    		23.70%	Hard
-5	301	Remove Invalid Parentheses    		38.10%	Hard
-6	23	Merge k Sorted Lists    		32.50%	Hard
-7	297	Serialize and Deserialize Binary Tree    		39.00%	Hard
-8	269	Alien Dictionary    		29.70%	Hard
-9	10	Regular Expression Matching    		24.90%	Hard
-10	76	Minimum Window Substring    		29.60%	Hard
-11	829	Consecutive Numbers Sum    		31.80%	Hard
-12	924	Minimize Malware Spread    		38.30%	Hard
-13	159	Longest Substring with At Most Two Distinct Characters    		45.90%	Hard
-14	224	Basic Calculator    		31.50%	Hard
-15	41	First Missing Positive    		28.00%	Hard
-16	642	Design Search Autocomplete System    		35.60%	Hard
-17	85	Maximal Rectangle    		32.20%	Hard
-18	295	Find Median from Data Stream    		34.40%	Hard
-19	25	Reverse Nodes in k-Group    		35.00%	Hard
-20	124	Binary Tree Maximum Path Sum    		29.10%	Hard
-21	158	Read N Characters Given Read4 II - Call multiple times    		24.70%	Hard
-22	770	Basic Calculator IV    		44.30%	Hard
-23	72	Edit Distance    		36.10%	Hard
-24	239	Sliding Window Maximum    		36.80%	Hard
-25	68	Text Justification    		22.30%	Hard
-26	857	Minimum Cost to Hire K Workers    		46.80%	Hard
-27	336	Palindrome Pairs    		29.80%	Hard
-28	282	Expression Add Operators    		32.00%	Hard
-29	843	Guess the Word    		41.70%	Hard
-30	32	Longest Valid Parentheses    		24.80%	Hard
-31	564	Find the Closest Palindrome    		18.00%	Hard
-32	460	LFU Cache    		27.80%	Hard
-33	45	Jump Game II    		27.20%	Hard
-34	432	All O`one Data Structure    		28.80%	Hard
-35	65	Valid Number    		13.70%	Hard
-36	51	N-Queens    		37.30%	Hard
-37	312	Burst Balloons    		46.00%	Hard
-38	212	Word Search II    		27.30%	Hard
-39	128	Longest Consecutive Sequence    		40.70%	Hard
-40	126	Word Ladder II    		16.80%	Hard
-41	149	Max Points on a Line    		15.50%	Hard
-42	489	Robot Room Cleaner    		61.80%	Hard
-43	887	Super Egg Drop    		24.50%	Hard
-44	403	Frog Jump    		35.10%	Hard
-45	233	Number of Digit One    		29.80%	Hard
-46	84	Largest Rectangle in Histogram    		30.00%	Hard
-47	37	Sudoku Solver    		35.30%	Hard
-48	140	Word Break II    		26.50%	Hard
-49	683	K Empty Slots    		34.00%	Hard
-50	135	Candy    		27.50%	Hard
-51	97	Interleaving String    		27.10%	Hard
-52	772	Basic Calculator III    		43.50%	Hard
-53	315	Count of Smaller Numbers After Self    		37.00%	Hard
-54	329	Longest Increasing Path in a Matrix    		39.00%	Hard
-55	679	24 Game    		41.20%	Hard
-56	761	Special Binary String    		49.00%	Hard
+1	146	LRU Cache,----------- combine map(key to list pointer) and list of key val pairs
+2	4	Median of Two Sorted Arrays---- , binary search cut1, derive cut2, 4 boundary numbers
+3	42	Trapping Rain Water ----------, stack with index
+4	273	Integer to English Words,-------- analysis and derive rules, hundrends thousand-million-billion
+5	301	Remove Invalid Parentheses,--------, pretty hard, first figure out how many to remove, then dfs, growing candidate, how?
+6	23	Merge k Sorted Lists  --------------- min heap
+7	297	Serialize and Deserialize Binary Tree, -------,deser is harder 
+8	269	Alien Dictionary ------------, 0.8 , derive pair order, then total order from topological sorting
+9	10	Regular Expression Matching,
+10	76	Minimum Window Substring, ------- sliding window, how many chars int T matched, a single char needed how many times
+11	829	Consecutive Numbers Sum    	
+12	924	Minimize Malware Spread    
+13	159	Longest Substring with At Most Two Distinct Characters 
+14	224	Basic Calculator
+15	41	First Missing Positive, -------1, bucket sort
+16	642	Design Search Autocomplete System 
+17	85	Maximal Rectangle, ------ 1d max 1 seq len okay? then such seq for each row, then enumerate rectangles
+18	295	Find Median from Data Stream -------1,  max heap for left, min heap for right half , add to left or right, balance their size
+19	25	Reverse Nodes in k-Group   
+20	124	Binary Tree Maximum Path Sum 
+21	158	Read N Characters Given Read4 II - Call multiple times
+22	770	Basic Calculator IV
+23	72	Edit Distance 
+24	239	Sliding Window Maximum    
+25	68	Text Justification    	
+26	857	Minimum Cost to Hire K Workers
+27	336	Palindrome Pairs
+28	282	Expression Add Operators    
+29	843	Guess the Word 
+30	32	Longest Valid Parentheses, -------------- stack with index
+31	564	Find the Closest Palindrome ,  -----
+32	460	LFU Cache---------problem,cacheNode, map key to cacheNode, map freq to list of keys, capacity, minFreq
+33	45	Jump Game II
+34	432	All O`one Data Structure
+35	65	Valid Number
+36	51	N-Queens ------------------2, growing candidate backtracking dfs
+37	312	Burst Balloons    
+38	212	Word Search II   
+39	128	Longest Consecutive Sequence, -------own idea and code upon uf hint, accepted after 2 bug fixes
+40	126	Word Ladder II    
+41	149	Max Points on a Line
+42	489	Robot Room Cleaner
+43	887	Super Egg Drop 
+44	403	Frog Jump    	
+45	233	Number of Digit One
+46	84	Largest Rectangle in Histogram, ----------------
+47	37	Sudoku Solver
+48	140	Word Break II
+49	683	K Empty Slots
+50	135	Candy    	
+51	97	Interleaving String, ----- dp 2d, some details
+52	772	Basic Calculator III
+53	315	Count of Smaller Numbers After Self,  -----either merge sort dq, or bit
+54	329	Longest Increasing Path in a Matrix 
+55	679	24 Game
+56	761	Special Binary String
 57	218	The Skyline Problem    		30.90%	Hard
 58	862	Shortest Subarray with Sum at Least K    		21.50%	Hard
 59	248	Strobogrammatic Number III    		35.30%	Hard

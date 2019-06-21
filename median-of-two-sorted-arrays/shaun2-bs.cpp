@@ -1,5 +1,7 @@
 //https://blog.csdn.net/chen_xinjia/article/details/69258706 
-//idea from xinjia chen, binary search, cutting angle, O(log(min(m,n))) means binary search
+//idea from xinjia chen, binary search, cutting angle, O(log(min(m,n))) means binary search of the smaller array
+// cut the smaller array derive the cut of the larger array
+//now we see 4 boundary numbers
 //shaun read and understand
 //runtime 16ms, faster than 98%, mem less than 72%
 class Solution {
