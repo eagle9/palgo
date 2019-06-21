@@ -19,6 +19,7 @@ class Solution1 {
     }
 }
 
+//problem understanding, kind of bucket sort, number to be stored according to its value. tips from edward
 //grandyang idea2, if nums[i] in range from 1 to n,  great idea!!!! tricky to have a while loop inside for loop, but it is so powerful
 //nums[i] = v, find nums[ v - 1] == nums[i]??? 
 //  1 to 0
@@ -26,7 +27,7 @@ class Solution1 {
 // how about nums[i] that are out of range 1 to n? don't care
 
 //go through the array nums, if we can not find nums[i] = i +1, return nums
-//runtime 5ms, faster than 99%, memory less than 13%, Feb 8 2019
+//runtime 5ms, faster than 99%, memory less than 99.66%, Feb 8 2019
 class Solution {
     public int firstMissingPositive(int [] nums) {
         if (nums.length == 0) return 1;

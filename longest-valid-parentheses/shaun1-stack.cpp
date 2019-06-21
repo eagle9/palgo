@@ -1,30 +1,37 @@
 //https://www.youtube.com/watch?v=r0-zx5ejdq0&t=992s 
-//idea as above, shaun has understood
+//this is stack to reduce valid parenthesis, store index into stack to figure out valid substring length
+
+//idea as above, shaun has understood, and reread again after 3 weeks
+
 //less error prone that lt stack idea
+//
 //runtime 8ms, faster than 93%, mem less than 63%
 class Solution {
 public:
     int longestValidParentheses(string s) {
-        vector<int> st;
+        vector<int> st; //stack to store char index in s
         for (int i = 0; i < s.size(); ++i) {
             if (s[i] == '(') st.push_back(i);
-            else {
+            else { //  ==)
                 if (st.empty()) st.push_back(i); //no match
                 else {
-                    if (s[st.back()] == '(') st.pop_back(); //matched and reduced
+                    //() matched, pop stack, no enter i into stack
+                    if (s[st.back()] == '(') st.pop_back(); 
                     else { // no match and pushed to stack
                         st.push_back(i);
                     }
                 }
             }
         }
+        //why ??? 
         st.push_back(s.size());
         //for (auto x: st) cout << x << endl;
         
         int start = -1, longest = 0;
         for (int i = 0; i < st.size(); ++i) {
+            //start ... st[i],    1 23 4 . 4-1-1
             longest = max(st[i] - start-1, longest);
-            start = st[i];
+            start = st[i];//update start
         }
         
         return longest; 
