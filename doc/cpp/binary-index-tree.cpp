@@ -10,7 +10,8 @@ public:
         //sum[0]  = 0;
         //sum[1] = a[0]
     }
-	//update i += lowbit(i), why? 
+	//update i += lowbit(i), why? , just remember update first, query second, 
+	//update from from left to right +=, query right to left -=
     void update(int i, int delta) {
         //i from 1 to sum.size()
         while (i < sum.size()) { //i < n+1, last i = n

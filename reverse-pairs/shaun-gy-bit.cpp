@@ -1,26 +1,34 @@
 //grandyang use of bit and sorting
-//not understand, read more, have to move on 
+//understand some , compare to hua's <<count of smaller numbers after self>>
+// how about rank1???
 //runtime 252, faster than 70%, mem less than 53%
 class Solution {
 public:
     int reversePairs(vector<int>& nums) {
-        int res = 0, n = nums.size();
-        vector<int> v = nums, bit(n + 1);
-        sort(v.begin(), v.end());
-        unordered_map<int, int> m; //store number to its sorted index
-        for (int i = 0; i < n; ++i) m[v[i]] = i + 1;
+        int n = nums.size();
+        vector<int> sorted(nums);
+       
+        sort(sorted.begin(), sorted.end());
         
-        for (int j = n - 1; j >= 0; --j) {
+        vector<int> bit(n + 1);
+        
+        unordered_map<int, int> m; //store number to its sorted index
+        //for (int i = 0; i < n; ++i) m[v[i]] = i + 1;
+        
+        int res = 0;
+        for (int i = n - 1; i >= 0; --i) {
             // i < j, but nums[i] > 2*nums[j]
-            //first nums[i] >= nums[j]/2.0
+            //find first nums[i] >= nums[j]/2.0
             
-            int i = lower_bound(v.begin(), v.end(), nums[j] / 2.0) - v.begin();
-            res += getSum(i, bit);
-            update(m[nums[j]], bit);
+            int rank1 = lower_bound(sorted.begin(), sorted.end(), nums[i] / 2.0) - sorted.begin();
+            res += query(rank1, bit);
+            
+            int rank2 = lower_bound(sorted.begin(), sorted.end(), nums[i]) - sorted.begin()+1;
+            update(rank2, bit);
         }
         return res;
     }
-    int getSum(int i, vector<int>& bit) {
+    int query(int i, vector<int>& bit) {
         int sum = 0;
         while (i > 0) {
             sum += bit[i];
