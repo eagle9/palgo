@@ -20,16 +20,16 @@
 20	124	Binary Tree Maximum Path Sum 
 21	158	Read N Characters Given Read4 II - Call multiple times
 22	770	Basic Calculator IV
-23	72	Edit Distance 
+23	72	Edit Distance ------1,  2 words, length of each word, ending char, all cases for w1 to w2
 24	239	Sliding Window Maximum    
 25	68	Text Justification    	
 26	857	Minimum Cost to Hire K Workers
 27	336	Palindrome Pairs
 28	282	Expression Add Operators    
 29	843	Guess the Word 
-30	32	Longest Valid Parentheses, -------------- stack with index
+30	32	Longest Valid Parentheses, --------------1 stack with index
 31	564	Find the Closest Palindrome ,  -----
-32	460	LFU Cache---------problem,cacheNode, map key to cacheNode, map freq to list of keys, capacity, minFreq
+32	460	LFU Cache-------1,problem,cacheNode, map key to cacheNode, map freq to list of keys, capacity, minFreq
 33	45	Jump Game II
 34	432	All O`one Data Structure
 35	65	Valid Number
