@@ -27,9 +27,9 @@
 27	336	Palindrome Pairs    		29.80%	Hard
 28	282	Expression Add Operators    		32.00%	Hard
 29	843	Guess the Word    		41.70%	Hard
-30	32	Longest Valid Parentheses    		24.80%	Hard
+30	32	Longest Valid Parentheses    		24.80%	Hard                 --------- stack with index
 31	564	Find the Closest Palindrome    		18.00%	Hard
-32	460	LFU Cache    		27.80%	Hard
+32	460	LFU Cache    		27.80%	Hard                                 ---------- kind of vague now
 33	45	Jump Game II    		27.20%	Hard
 34	432	All O`one Data Structure    		28.80%	Hard
 35	65	Valid Number    		13.70%	Hard
@@ -48,20 +48,20 @@
 48	140	Word Break II    		26.50%	Hard
 49	683	K Empty Slots    		34.00%	Hard
 50	135	Candy    		27.50%	Hard
-51	97	Interleaving String    		27.10%	Hard
+51	97	Interleaving String    		27.10%	Hard                      ------- know the problem, 2d dp
 52	772	Basic Calculator III    		43.50%	Hard
-53	315	Count of Smaller Numbers After Self    		37.00%	Hard
-54	329	Longest Increasing Path in a Matrix    		39.00%	Hard
-55	679	24 Game    		41.20%	Hard
+53	315	Count of Smaller Numbers After Self    		37.00%	Hard     ----------know, merge sort dq, bit
+54	329	Longest Increasing Path in a Matrix    		39.00%	Hard     ----------
+55	679	24 Game    		41.20%	Hard           
 56	761	Special Binary String    		49.00%	Hard
-57	218	The Skyline Problem    		30.90%	Hard
+57	218	The Skyline Problem    		30.90%	Hard                        --------know, 
 58	862	Shortest Subarray with Sum at Least K    		21.50%	Hard
 59	248	Strobogrammatic Number III    		35.30%	Hard
 60	759	Employee Free Time    		60.00%	Hard
 61	44	Wildcard Matching    		22.30%	Hard
 62	736	Parse Lisp Expression    		43.10%	Hard
 63	780	Reaching Points    		26.80%	Hard
-64	57	Insert Interval    		30.60%	Hard
+64	57	Insert Interval    		30.60%	Hard                            ------------
 65	123	Best Time to Buy and Sell Stock III    		32.70%	Hard
 66	316	Remove Duplicate Letters    		31.80%	Hard
 67	741	Cherry Pickup    		27.50%	Hard
