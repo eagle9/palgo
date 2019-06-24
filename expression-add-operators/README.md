@@ -22,6 +22,8 @@ Example 5:
 Input: num = "3456237490", target = 9191
 Companies: Facebook | 19 Google | 3 Apple | 2
 
+Topic: Divide and conquer
+
 Similar: 
 Evaluate Reverse Polish Notation Medium
 Basic Calculator Hard

@@ -3,179 +3,179 @@
 3	42	Trapping Rain Water ----------, stack with index
 4	273	Integer to English Words,-------- analysis and derive rules, hundrends thousand-million-billion
 5	301	Remove Invalid Parentheses,--------, pretty hard, first figure out how many to remove, then dfs, growing candidate, how?
-6	23	Merge k Sorted Lists  --------------- min heap
-7	297	Serialize and Deserialize Binary Tree, -------,deser is harder 
-8	269	Alien Dictionary ------------, 0.8 , derive pair order, then total order from topological sorting
-9	10	Regular Expression Matching,
-10	76	Minimum Window Substring, ------- sliding window, how many chars int T matched, a single char needed how many times
-11	829	Consecutive Numbers Sum    	
+6	23	Merge k Sorted Lists  ---------------1, min heap
+7	297	Serialize and Deserialize Binary Tree, -------,0.7, deser is harder 
+8	269	Alien Dictionary ------------, 1 , derive pair order, then total order from topological sorting
+9	10	Regular Expression Matching, ---, 0.7, two string dp, deal with * 
+10	76	Minimum Window Substring, -------, 1 sliding window, how many chars int T matched, a single char needed how many times
+11	829	Consecutive Numbers Sum, ----, 1, use math, try every start, add x start
 12	924	Minimize Malware Spread    
 13	159	Longest Substring with At Most Two Distinct Characters 
-14	224	Basic Calculator
+14	224	Basic Calculator,  --------------,1 tokenizer, 2 stack, level of ops
 15	41	First Missing Positive, -------1, bucket sort
 16	642	Design Search Autocomplete System 
 17	85	Maximal Rectangle, ------ 1d max 1 seq len okay? then such seq for each row, then enumerate rectangles
 18	295	Find Median from Data Stream -------1,  max heap for left, min heap for right half , add to left or right, balance their size
-19	25	Reverse Nodes in k-Group   
-20	124	Binary Tree Maximum Path Sum 
+19	25	Reverse Nodes in k-Group, ----,1, lhc cutting angle, reduced to reverse list, subfunction return head for next sub
+20	124	Binary Tree Maximum Path Sum -----1 , cutting angle, every node, max path sum from this node, max path sum thru the node, binary tree recursion 
 21	158	Read N Characters Given Read4 II - Call multiple times
 22	770	Basic Calculator IV
 23	72	Edit Distance ------1,  2 words, length of each word, ending char, all cases for w1 to w2
-24	239	Sliding Window Maximum    
-25	68	Text Justification    	
+24	239	Sliding Window Maximum ----------1,   sliding window, monotoic queue    
+25	68	Text Justification, -------1, pure string, implemenation details    	
 26	857	Minimum Cost to Hire K Workers
 27	336	Palindrome Pairs
-28	282	Expression Add Operators    
+28	282	Expression Add Operators  ----------, 0.1  
 29	843	Guess the Word 
 30	32	Longest Valid Parentheses, --------------1 stack with index
-31	564	Find the Closest Palindrome ,  -----
+31	564	Find the Closest Palindrome ,  -----, 0.1
 32	460	LFU Cache-------1,problem,cacheNode, map key to cacheNode, map freq to list of keys, capacity, minFreq
-33	45	Jump Game II
-34	432	All O`one Data Structure
-35	65	Valid Number
+33	45	Jump Game II, ----- 0.6, greedy 2p, not very clear 
+34	432	All O`one Data Structure, ----0.1
+35	65	Valid Number,  -----, many cases string manipulation, read it, i won't ask myself code it
 36	51	N-Queens ------------------2, growing candidate backtracking dfs
-37	312	Burst Balloons    
-38	212	Word Search II   
+37	312	Burst Balloons, ----0.1
+38	212	Word Search II  --------- 0.3, 
 39	128	Longest Consecutive Sequence, -------own idea and code upon uf hint, accepted after 2 bug fixes
-40	126	Word Ladder II    
-41	149	Max Points on a Line
+40	126	Word Ladder II   --------- bfs then dfs, not quite apply template easily, one more video   
+41	149	Max Points on a Line, ---- first try get very close 
 42	489	Robot Room Cleaner
 43	887	Super Egg Drop 
-44	403	Frog Jump    	
+44	403	Frog Jump, -----1, dp with hashmap, how to reach this stone,  
 45	233	Number of Digit One
 46	84	Largest Rectangle in Histogram, ----------------
-47	37	Sudoku Solver
-48	140	Word Break II
+47	37	Sudoku Solver, -------
+48	140	Word Break II, --------0.6
 49	683	K Empty Slots
-50	135	Candy    	
+50	135	Candy
 51	97	Interleaving String, ----- dp 2d, some details
-52	772	Basic Calculator III
+52	772	Basic Calculator III, ------0.2, 
 53	315	Count of Smaller Numbers After Self,  -----either merge sort dq, or bit
-54	329	Longest Increasing Path in a Matrix 
-55	679	24 Game
+54	329	Longest Increasing Path in a Matrix, ----- dfs with memo or dp,cutting -- neighbors longest inc path transition 
+55	679	24 Game, ----------------
 56	761	Special Binary String
-57	218	The Skyline Problem    		30.90%	Hard
-58	862	Shortest Subarray with Sum at Least K    		21.50%	Hard
-59	248	Strobogrammatic Number III    		35.30%	Hard
-60	759	Employee Free Time    		60.00%	Hard
-61	44	Wildcard Matching    		22.30%	Hard
-62	736	Parse Lisp Expression    		43.10%	Hard
-63	780	Reaching Points    		26.80%	Hard
-64	57	Insert Interval    		30.60%	Hard                            ------------
-65	123	Best Time to Buy and Sell Stock III    		32.70%	Hard
-66	316	Remove Duplicate Letters    		31.80%	Hard
-67	741	Cherry Pickup    		27.50%	Hard
-68	920	Number of Music Playlists    		42.50%	Hard
-69	381	Insert Delete GetRandom O(1) - Duplicates allowed    		31.20%	Hard
-70	185	Department Top Three Salaries    		23.40%	Hard
-71	410	Split Array Largest Sum    		41.50%	Hard
-72	727	Minimum Window Subsequence    		35.70%	Hard
-73	428	Serialize and Deserialize N-ary Tree    		52.10%	Hard
-74	479	Largest Palindrome Product    		27.00%	Hard
-75	689	Maximum Sum of 3 Non-Overlapping Subarrays    		43.40%	Hard
-76	773	Sliding Puzzle    		49.90%	Hard
-77	308	Range Sum Query 2D - Mutable    		30.70%	Hard
-78	753	Cracking the Safe    		44.50%	Hard
-79	317	Shortest Distance from All Buildings    		36.70%	Hard
-80	480	Sliding Window Median    		31.30%	Hard
-81	730	Count Different Palindromic Subsequences    		37.40%	Hard
-82	803	Bricks Falling When Hit    		27.30%	Hard
-83	340	Longest Substring with At Most K Distinct Characters    		38.90%	Hard
-84	30	Substring with Concatenation of All Words    		23.00%	Hard
-85	928	Minimize Malware Spread II    		38.20%	Hard
-86	726	Number of Atoms    		43.90%	Hard
-87	471	Encode String with Shortest Length    		44.40%	Hard
-88	305	Number of Islands II    		41.60%	Hard
-89	975	Odd Even Jump    		51.40%	Hard
-90	272	Closest Binary Search Tree Value II    		43.50%	Hard
-91	465	Optimal Account Balancing    		41.70%	Hard
-92	632	Smallest Range    		45.80%	Hard
-93	493	Reverse Pairs    		22.30%	Hard
-94	296	Best Meeting Point    		53.90%	Hard
-95	99	Recover Binary Search Tree    		33.70%	Hard
-96	891	Sum of Subsequence Widths    		27.70%	Hard
-97	420	Strong Password Checker    		18.20%	Hard
-98	834	Sum of Distances in Tree    		37.80%	Hard
-99	847	Shortest Path Visiting All Nodes    		45.00%	Hard
-100	52	N-Queens II    		50.40%	Hard
-101	188	Best Time to Buy and Sell Stock IV    		25.80%	Hard
-102	913	Cat and Mouse    		26.50%	Hard
-103	87	Scramble String    		31.00%	Hard
-104	527	Word Abbreviation    		47.50%	Hard
-105	871	Minimum Number of Refueling Stops    		27.90%	Hard
-106	321	Create Maximum Number    		25.10%	Hard
-107	864	Shortest Path to Get All Keys    		35.00%	Hard
-108	354	Russian Doll Envelopes    		33.40%	Hard
-109	675	Cut Off Trees for Golf Event    		29.20%	Hard
-110	956	Tallest Billboard    		36.60%	Hard
-111	407	Trapping Rain Water II    		38.80%	Hard
-112	132	Palindrome Partitioning II    		26.60%	Hard
-113	546	Remove Boxes    		37.30%	Hard
-114	302	Smallest Rectangle Enclosing Black Pixels    		48.50%	Hard
-115	174	Dungeon Game    		26.30%	Hard
-116	899	Orderly Queue    		45.80%	Hard
-117	214	Shortest Palindrome    		26.80%	Hard
-118	710	Random Pick with Blacklist    		30.60%	Hard
-119	895	Maximum Frequency Stack    		51.30%	Hard
-120	879	Profitable Schemes    		35.20%	Hard
-121	446	Arithmetic Slices II - Subsequence    		29.50%	Hard
-122	815	Bus Routes    		38.60%	Hard
-123	291	Word Pattern II    		39.90%	Hard
-124	591	Tag Validator    		31.60%	Hard
-125	943	Find the Shortest Superstring    		33.80%	Hard
-126	164	Maximum Gap    		31.70%	Hard
-127	850	Rectangle Area II    		43.40%	Hard
-128	363	Max Sum of Rectangle No Larger Than K    		34.70%	Hard
-129	115	Distinct Subsequences    		34.40%	Hard
-130	265	Paint House II    		40.60%	Hard
-131	352	Data Stream as Disjoint Intervals    		42.80%	Hard
-132	715	Range Module    		34.00%	Hard
-133	719	Find K-th Smallest Pair Distance    		28.50%	Hard
-134	145	Binary Tree Postorder Traversal    		46.50%	Hard
-135	818	Race Car    		33.70%	Hard
-136	488	Zuma Game    		37.40%	Hard
-137	568	Maximum Vacation Days    		37.50%	Hard
-138	154	Find Minimum in Rotated Sorted Array II    		38.90%	Hard
-139	685	Redundant Connection II    		29.90%	Hard
-140	903	Valid Permutations for DI Sequence    		41.40%	Hard
-141	774	Minimize Max Distance to Gas Station    		39.60%	Hard
-142	878	Nth Magical Number    		24.50%	Hard
-143	964	Least Operators to Express Number    		39.80%	Hard
-144	765	Couples Holding Hands    		50.60%	Hard
-145	827	Making A Large Island    		42.00%	Hard
-146	940	Distinct Subsequences II    		37.00%	Hard
-147	639	Decode Ways II    		24.50%	Hard
-148	588	Design In-Memory File System    		37.70%	Hard
-149	732	My Calendar III    		53.00%	Hard
-150	630	Course Schedule III    		30.80%	Hard
-151	499	The Maze III    		36.30%	Hard
-152	968	Binary Tree Cameras    		33.30%	Hard
-153	936	Stamping The Sequence    		34.70%	Hard
-154	358	Rearrange String k Distance Apart    		32.40%	Hard
-155	828	Unique Letter String    		38.00%	Hard
-156	699	Falling Squares    		39.20%	Hard
-157	552	Student Attendance Record II    		32.10%	Hard
-158	786	K-th Smallest Prime Fraction    		37.90%	Hard
-159	798	Smallest Rotation with Highest Score    		38.40%	Hard
-160	629	K Inverse Pairs Array    		28.50%	Hard
-161	327	Count of Range Sum    		31.80%	Hard
-162	668	Kth Smallest Number in Multiplication Table    		40.70%	Hard
-163	745	Prefix and Suffix Search    		29.00%	Hard
-164	960	Delete Columns to Make Sorted III    		51.50%	Hard
-165	335	Self Crossing    		26.80%	Hard
-166	472	Concatenated Words    		33.00%	Hard
-167	440	K-th Smallest in Lexicographical Order    		26.10%	Hard
-168	902	Numbers At Most N Given Digit Set    		27.40%	Hard
-169	927	Three Equal Parts    		29.40%	Hard
-170	262	Trips and Users    		23.00%	Hard
-171	425	Word Squares    		43.50%	Hard
-172	579	Find Cumulative Salary of an Employee    		33.80%	Hard
-173	391	Perfect Rectangle    		27.90%	Hard
-174	601	Human Traffic of Stadium    		35.20%	Hard
-175	839	Similar String Groups    		33.30%	Hard
-176	805	Split Array With Same Average    		23.50%	Hard
-177	972	Equal Rational Numbers    		39.90%	Hard
-178	980	Unique Paths III    		72.20%	Hard
+57	218	The Skyline Problem, -----0.8,  sweep line 	
+58	862	Shortest Subarray with Sum at Least K, ----0.1, no goog
+59	248	Strobogrammatic Number III,  -----0.2
+60	759	Employee Free Time    	
+61	44	Wildcard Matching, -------1, two string, a' len i substr, b's len j substr, dealing with * 
+62	736	Parse Lisp Expression
+63	780	Reaching Points    	
+64	57	Insert Interval    -------,1 cutting  before newI after, pos
+65	123	Best Time to Buy and Sell Stock III
+66	316	Remove Duplicate Letters    	
+67	741	Cherry Pickup    		
+68	920	Number of Music Playlists
+69	381	Insert Delete GetRandom O(1) - Duplicates allowed
+70	185	Department Top Three Salaries 
+71	410	Split Array Largest Sum    	
+72	727	Minimum Window Subsequence, ----- 0.1
+73	428	Serialize and Deserialize N-ary Tree, -----0.1
+74	479	Largest Palindrome Product    	
+75	689	Maximum Sum of 3 Non-Overlapping Subarrays
+76	773	Sliding Puzzle 
+77	308	Range Sum Query 2D - Mutable, ----0.1
+78	753	Cracking the Safe    	
+79	317	Shortest Distance from All Buildings, ----0.1
+80	480	Sliding Window Median, --------    
+81	730	Count Different Palindromic Subsequences 
+82	803	Bricks Falling When Hit 
+83	340	Longest Substring with At Most K Distinct Characters, -------
+84	30	Substring with Concatenation of All Words 
+85	928	Minimize Malware Spread II    	
+86	726	Number of Atoms 
+87	471	Encode String with Shortest Length
+88	305	Number of Islands II, -----0.3    
+89	975	Odd Even Jump, ----0.3 
+90	272	Closest Binary Search Tree Value II
+91	465	Optimal Account Balancing    	
+92	632	Smallest Range, ---------    
+93	493	Reverse Pairs, --------, 1, merge sort dq   	
+94	296	Best Meeting Point, --------, 0.3, 
+95	99	Recover Binary Search Tree 
+96	891	Sum of Subsequence Widths 
+97	420	Strong Password Checker  
+98	834	Sum of Distances in Tree 
+99	847	Shortest Path Visiting All Nodes
+100	52	N-Queens II , ----------------
+101	188	Best Time to Buy and Sell Stock IV
+102	913	Cat and Mouse   
+103	87	Scramble String 
+104	527	Word Abbreviation , -----------
+105	871	Minimum Number of Refueling Stops
+106	321	Create Maximum Number 
+107	864	Shortest Path to Get All Keys  
+108	354	Russian Doll Envelopes, --------    	
+109	675	Cut Off Trees for Golf Event   
+110	956	Tallest Billboard 
+111	407	Trapping Rain Water II, ------0.1 
+112	132	Palindrome Partitioning II, -------- 
+113	546	Remove Boxes
+114	302	Smallest Rectangle Enclosing Black Pixels, -----0.5
+115	174	Dungeon Game, -----0.1 
+116	899	Orderly Queue 
+117	214	Shortest Palindrome  
+118	710	Random Pick with Blacklist
+119	895	Maximum Frequency Stack, ----------, bucket for each freq, bucket is a stack  
+120	879	Profitable Schemes
+121	446	Arithmetic Slices II - Subsequence
+122	815	Bus Routes
+123	291	Word Pattern II, ---------------
+124	591	Tag Validator    
+125	943	Find the Shortest Superstring 
+126	164	Maximum Gap
+127	850	Rectangle Area II,  ----------
+128	363	Max Sum of Rectangle No Larger Than K 
+129	115	Distinct Subsequences 
+130	265	Paint House II , -----------------   	
+131	352	Data Stream as Disjoint Intervals
+132	715	Range Module, -----0.1
+133	719	Find K-th Smallest Pair Distance
+134	145	Binary Tree Postorder Traversal, -----
+135	818	Race Car   ------ 
+136	488	Zuma Game ----- hua video 
+137	568	Maximum Vacation Days
+138	154	Find Minimum in Rotated Sorted Array II
+139	685	Redundant Connection II, -----0.1 
+140	903	Valid Permutations for DI Sequence 
+141	774	Minimize Max Distance to Gas Station  
+142	878	Nth Magical Number   
+143	964	Least Operators to Express Number,  
+144	765	Couples Holding Hands    
+145	827	Making A Large Island 
+146	940	Distinct Subsequences II
+147	639	Decode Ways II,  -----------    	
+148	588	Design In-Memory File System
+149	732	My Calendar III    -------------	
+150	630	Course Schedule III   ------- 
+151	499	The Maze III  
+152	968	Binary Tree Cameras 
+153	936	Stamping The Sequence
+154	358	Rearrange String k Distance Apart, ----------
+155	828	Unique Letter String   
+156	699	Falling Squares    	
+157	552	Student Attendance Record II  
+158	786	K-th Smallest Prime Fraction 
+159	798	Smallest Rotation with Highest Score 
+160	629	K Inverse Pairs Array    	
+161	327	Count of Range Sum -----------------   	
+162	668	Kth Smallest Number in Multiplication Table, -------- 
+163	745	Prefix and Suffix Search , -----   
+164	960	Delete Columns to Make Sorted III 
+165	335	Self Crossing 
+166	472	Concatenated Words    
+167	440	K-th Smallest in Lexicographical Order, -----
+168	902	Numbers At Most N Given Digit Set  
+169	927	Three Equal Parts  
+170	262	Trips and Users   
+171	425	Word Squares, ----- 
+172	579	Find Cumulative Salary of an Employee
+173	391	Perfect Rectangle , -----
+174	601	Human Traffic of Stadium 
+175	839	Similar String Groups   
+176	805	Split Array With Same Average
+177	972	Equal Rational Numbers    	
+178	980	Unique Paths III, ------ 
 =======================very low frequency below================
 179	992	Subarrays with K Different Integers    New		36.50%	Hard
 180	982	Triples with Bitwise AND Equal To Zero    		53.20%	Hard

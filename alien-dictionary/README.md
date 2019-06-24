@@ -1,5 +1,6 @@
 269. Alien Dictionary
 Hard
+
 There is a new alien language which uses the latin alphabet. However, the order among letters are unknown to you. You receive a list of non-empty words from the dictionary, where words are sorted lexicographically by the rules of this new language. Derive the order of letters in this language.
 
 Example 1:
@@ -35,13 +36,17 @@ Input:
 Output: "" 
 
 Explanation: The order is invalid, so return "".
-Note:
 
+Note:
 You may assume all letters are in lowercase.
 You may assume that if a is a prefix of b, then a must appear before b in the given dictionary.
 If the order is invalid, return an empty string.
 There may be multiple valid order of letters, return any one of them is fine.
 
-Topic: 
-Similar: Graph, Topological sort
-Similar: Course schedule ii
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Facebook | 18 Amazon | 12 Airbnb | 11 Google | 5 Pinterest | 4 Microsoft | 4 Bloomberg | 3 Uber | 2
+
+Similar
+Course Schedule II Medium
+
+Topic: Graph, Topological Sorting

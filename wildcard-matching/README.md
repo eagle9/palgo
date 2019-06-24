@@ -1,5 +1,6 @@
 44. Wildcard Matching
 Hard
+
 Given an input string (s) and a pattern (p), implement wildcard pattern matching with support for '?' and '*'.
 
 '?' Matches any single character.
@@ -33,6 +34,7 @@ Output: false
 Explanation: '?' matches 'c', but the second letter is 'a', which does not match 'b'.
 
 Example 4:
+
 Input:
 s = "adceb"
 p = "*a*b"
@@ -45,7 +47,11 @@ s = "acdcb"
 p = "a*c?b"
 Output: false
 
-Companies: Microsoft | 4 Facebook | 3 Two Sigma | 3
-Similar: Regular Expression Matching Hard
-Topic: String, Dynamic programming, backtracking, greedy
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 
+Facebook | 4 Microsoft | 3 Google | 3 Amazon | 3 Coursera | 2 Two Sigma | 2
+
+Similar:
+Regular Expression Matching Hard
+
+Topic: String Dynamic Programming Backtracking, Greedy
