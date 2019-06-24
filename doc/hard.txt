@@ -9,11 +9,11 @@
 9	10	Regular Expression Matching, ---, 0.7, two string dp, deal with * 
 10	76	Minimum Window Substring, -------, 1 sliding window, how many chars int T matched, a single char needed how many times
 11	829	Consecutive Numbers Sum, ----, 1, use math, try every start, add x start
-12	924	Minimize Malware Spread    
-13	159	Longest Substring with At Most Two Distinct Characters 
+12	924	Minimize Malware Spread, ------ , only dropbox ama, dfs  
+13	159	Longest Substring with At Most Two Distinct Characters, ---------
 14	224	Basic Calculator,  --------------,1 tokenizer, 2 stack, level of ops
 15	41	First Missing Positive, -------1, bucket sort
-16	642	Design Search Autocomplete System 
+16	642	Design Search Autocomplete System, ------ 
 17	85	Maximal Rectangle, ------ 1d max 1 seq len okay? then such seq for each row, then enumerate rectangles
 18	295	Find Median from Data Stream -------1,  max heap for left, min heap for right half , add to left or right, balance their size
 19	25	Reverse Nodes in k-Group, ----,1, lhc cutting angle, reduced to reverse list, subfunction return head for next sub
@@ -23,10 +23,10 @@
 23	72	Edit Distance ------1,  2 words, length of each word, ending char, all cases for w1 to w2
 24	239	Sliding Window Maximum ----------1,   sliding window, monotoic queue    
 25	68	Text Justification, -------1, pure string, implemenation details    	
-26	857	Minimum Cost to Hire K Workers
-27	336	Palindrome Pairs
+26	857	Minimum Cost to Hire K Workers, -----
+27	336	Palindrome Pairs, ------, 1, fisher lei cutting, split word=left|right, hashmap
 28	282	Expression Add Operators  ----------, 0.1  
-29	843	Guess the Word 
+29	843	Guess the Word, -------
 30	32	Longest Valid Parentheses, --------------1 stack with index
 31	564	Find the Closest Palindrome ,  -----, 0.1
 32	460	LFU Cache-------1,problem,cacheNode, map key to cacheNode, map freq to list of keys, capacity, minFreq
@@ -46,24 +46,24 @@
 46	84	Largest Rectangle in Histogram, ----------------
 47	37	Sudoku Solver, -------
 48	140	Word Break II, --------0.6
-49	683	K Empty Slots
-50	135	Candy
+49	683	K Empty Slots, ------
+50	135	Candy ------
 51	97	Interleaving String, ----- dp 2d, some details
 52	772	Basic Calculator III, ------0.2, 
 53	315	Count of Smaller Numbers After Self,  -----either merge sort dq, or bit
 54	329	Longest Increasing Path in a Matrix, ----- dfs with memo or dp,cutting -- neighbors longest inc path transition 
 55	679	24 Game, ----------------
-56	761	Special Binary String
+56	761	Special Binary String, ------
 57	218	The Skyline Problem, -----0.8,  sweep line 	
 58	862	Shortest Subarray with Sum at Least K, ----0.1, no goog
 59	248	Strobogrammatic Number III,  -----0.2
 60	759	Employee Free Time    	
 61	44	Wildcard Matching, -------1, two string, a' len i substr, b's len j substr, dealing with * 
-62	736	Parse Lisp Expression
+62	736	Parse Lisp Expression, --------
 63	780	Reaching Points    	
 64	57	Insert Interval    -------,1 cutting  before newI after, pos
 65	123	Best Time to Buy and Sell Stock III
-66	316	Remove Duplicate Letters    	
+66	316	Remove Duplicate Letters, ----------   	
 67	741	Cherry Pickup    		
 68	920	Number of Music Playlists
 69	381	Insert Delete GetRandom O(1) - Duplicates allowed
@@ -75,63 +75,63 @@
 75	689	Maximum Sum of 3 Non-Overlapping Subarrays
 76	773	Sliding Puzzle 
 77	308	Range Sum Query 2D - Mutable, ----0.1
-78	753	Cracking the Safe    	
+78	753	Cracking the Safe 
 79	317	Shortest Distance from All Buildings, ----0.1
 80	480	Sliding Window Median, --------    
-81	730	Count Different Palindromic Subsequences 
-82	803	Bricks Falling When Hit 
+81	730	Count Different Palindromic Subsequences, ------ 
+82	803	Bricks Falling When Hit, ------ 
 83	340	Longest Substring with At Most K Distinct Characters, -------
-84	30	Substring with Concatenation of All Words 
+84	30	Substring with Concatenation of All Words, ------ 
 85	928	Minimize Malware Spread II    	
 86	726	Number of Atoms 
-87	471	Encode String with Shortest Length
+87	471	Encode String with Shortest Length, ------
 88	305	Number of Islands II, -----0.3    
 89	975	Odd Even Jump, ----0.3 
-90	272	Closest Binary Search Tree Value II
+90	272	Closest Binary Search Tree Value II, ------
 91	465	Optimal Account Balancing    	
 92	632	Smallest Range, ---------    
 93	493	Reverse Pairs, --------, 1, merge sort dq   	
 94	296	Best Meeting Point, --------, 0.3, 
-95	99	Recover Binary Search Tree 
-96	891	Sum of Subsequence Widths 
+95	99	Recover Binary Search Tree, ------ 
+96	891	Sum of Subsequence Widths, ------ 
 97	420	Strong Password Checker  
 98	834	Sum of Distances in Tree 
-99	847	Shortest Path Visiting All Nodes
+99	847	Shortest Path Visiting All Nodes, ---- hard even to understand the prob
 100	52	N-Queens II , ----------------
 101	188	Best Time to Buy and Sell Stock IV
-102	913	Cat and Mouse   
+102	913	Cat and Mouse, ----, goog4, bfs and minmax,hard, game 
 103	87	Scramble String 
 104	527	Word Abbreviation , -----------
 105	871	Minimum Number of Refueling Stops
 106	321	Create Maximum Number 
-107	864	Shortest Path to Get All Keys  
+107	864	Shortest Path to Get All Keys, ----- hard even to understand the problem, hua video 
 108	354	Russian Doll Envelopes, --------    	
 109	675	Cut Off Trees for Golf Event   
 110	956	Tallest Billboard 
-111	407	Trapping Rain Water II, ------0.1 
+111	407	Trapping Rain Water II, ------0.5 , 2d,  
 112	132	Palindrome Partitioning II, -------- 
 113	546	Remove Boxes
-114	302	Smallest Rectangle Enclosing Black Pixels, -----0.5
+114	302	Smallest Rectangle Enclosing Black Pixels, -----, binary search to extend
 115	174	Dungeon Game, -----0.1 
-116	899	Orderly Queue 
-117	214	Shortest Palindrome  
+116	899	Orderly Queue, -----, ama 2y ago, not worth 
+117	214	Shortest Palindrome, ------ 0.3, worth figure, add chars to the front to make palindrome,   
 118	710	Random Pick with Blacklist
 119	895	Maximum Frequency Stack, ----------, bucket for each freq, bucket is a stack  
 120	879	Profitable Schemes
-121	446	Arithmetic Slices II - Subsequence
+121	446	Arithmetic Slices II - Subsequence, fb and ali, dp, understand the problem now
 122	815	Bus Routes
 123	291	Word Pattern II, ---------------
 124	591	Tag Validator    
-125	943	Find the Shortest Superstring 
-126	164	Maximum Gap
+125	943	Find the Shortest Superstring, -----, g6 within 6mon,worth,dp   
+126	164	Maximum Gap, -----, sort, brute force easy, test O(n), hua, bucket sort, min max in each bucket
 127	850	Rectangle Area II,  ----------
-128	363	Max Sum of Rectangle No Larger Than K 
-129	115	Distinct Subsequences 
-130	265	Paint House II , -----------------   	
+128	363	Max Sum of Rectangle No Larger Than K, ----- 
+129	115	Distinct Subsequences, -----, goog2, 2 str dp,cutting angle ==?  
+130	265	Paint House II , ------------
 131	352	Data Stream as Disjoint Intervals
 132	715	Range Module, -----0.1
 133	719	Find K-th Smallest Pair Distance
-134	145	Binary Tree Postorder Traversal, -----
+134	145	Binary Tree Postorder Traversal, ----
 135	818	Race Car   ------ 
 136	488	Zuma Game ----- hua video 
 137	568	Maximum Vacation Days

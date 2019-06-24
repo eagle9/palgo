@@ -28,14 +28,15 @@ of course the time complexity will be O(n^2 * wordLen)
 why it is hard? have to come up with O(n) algorithm???
 
 with hash table, 
-for each word, for example bat, in order to for it to contribute to palindrome pair, is tab in the list? that is battab.  tabbat 
+for each word, for example for a word "bat", in order to make a palindrome pair, is "tab" in the given word list? that is "battab".  tabbat 
 the ij and ji will be palindrome pairs
 
 but for word lls, not only looking for sll, but s. so word is almost a palindrome, we look for a few more chars in another word to complete it to be a palindrome 
 don't feel like hashtable along will solve this. 
+
 how about using Trie? prefix tree
 no idea
 
-fisherlei    split the word into left|right, if right is palindrome, then look left reverse
+fisherlei's cutting angle,   split the word into left|right, if right is palindrome, then look left reverse
   if left is palindrome, then look for right reverse
  

@@ -22,26 +22,29 @@ public:
         for (pair<char, int> count : counts) {
             pq.push(make_pair(count.second, count.first));
         }
-        int alltime = 0;
-        int cycle = n + 1;
+        int ans = 0; //number of intervals
+        //problem statement ---> n intervals between two same tasks
+        //why cycle =n+1????
+        int cycle = n+1; // a cycle has n tasks, [0 1 .. n-1 n] [0' ...] ---> a cycle length is n+1
         while (!pq.empty()) {
-            int time = 0;
-            vector<pair<int, char>> tmp;
+            int count = 0; // count of tasks assigned
+            vector<pair<int, char>> block; // block of tasks for this cycle
             for (int i = 0; i < cycle; i++) {
                 if (!pq.empty()) {
-                    tmp.push_back(pq.top());
-                    pq.pop();
-                    time++;
+                    block.push_back(pq.top());pq.pop();
+                    count++;
                 }
             }
-            //update tasks and their count in pq
-            for (auto p : tmp) {
+            //for each task in the assigned block, -- its count, push back into heap
+            for (auto p : block) {
                 if (--p.first > 0) {
                     pq.push(p);
                 }
             }
-            alltime += !pq.empty() ? cycle : time;
+            //ans += count;  ---- won't work, why???
+            //pq heap stores the tasks to be scheduled, if there still are tasks to be scheduled, apparently, we need maintain the block size ==  cycle, otherwise, just count of tasks assigned for this cycle
+            ans += !pq.empty() ? cycle : count;
         }
-        return alltime;
+        return ans;
     }
 };
