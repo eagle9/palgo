@@ -59,15 +59,15 @@
 59	248	Strobogrammatic Number III,  -----0.2
 60	759	Employee Free Time    	
 61	44	Wildcard Matching, -------1, two string, a' len i substr, b's len j substr, dealing with * 
-62	736	Parse Lisp Expression, --------
-63	780	Reaching Points    	
+62	736	Parse Lisp Expression, ------,0.1, very hard
+63	780	Reaching Points, --- not worth  	
 64	57	Insert Interval    -------,1 cutting  before newI after, pos
 65	123	Best Time to Buy and Sell Stock III
-66	316	Remove Duplicate Letters, ----------   	
-67	741	Cherry Pickup    		
+66	316	Remove Duplicate Letters, -------- , 0.3, g3, worth,stack& greedy, cutting=?  	
+67	741	Cherry Pickup  
 68	920	Number of Music Playlists
 69	381	Insert Delete GetRandom O(1) - Duplicates allowed
-70	185	Department Top Three Salaries 
+70	185	Department Top Three Salaries,---1, sql, cutting distinct sal < 3, sub query 
 71	410	Split Array Largest Sum    	
 72	727	Minimum Window Subsequence, ----- 0.1
 73	428	Serialize and Deserialize N-ary Tree, -----0.1
@@ -92,14 +92,14 @@
 92	632	Smallest Range, ---------    
 93	493	Reverse Pairs, --------, 1, merge sort dq   	
 94	296	Best Meeting Point, --------, 0.3, 
-95	99	Recover Binary Search Tree, ------ 
-96	891	Sum of Subsequence Widths, ------ 
-97	420	Strong Password Checker  
-98	834	Sum of Distances in Tree 
+95	99	Recover Binary Search Tree, -----0.2, g2 recent, worth,   
+96	891	Sum of Subsequence Widths, ------0.1, not worth 
+97	420	Strong Password Checker, ----- 0.1, not worth, string, many cases  
+98	834	Sum of Distances in Tree, ----,0.2, g2 worth, bfs, 
 99	847	Shortest Path Visiting All Nodes, ---- hard even to understand the prob
-100	52	N-Queens II , ----------------
+100	52	N-Queens II , ----------0.4, classic, dfs backtracking
 101	188	Best Time to Buy and Sell Stock IV
-102	913	Cat and Mouse, ----, goog4, bfs and minmax,hard, game 
+102	913	Cat and Mouse, ----, g4, bfs and minmax,hard, game 
 103	87	Scramble String 
 104	527	Word Abbreviation , -----------
 105	871	Minimum Number of Refueling Stops
@@ -143,7 +143,7 @@
 143	964	Least Operators to Express Number,  
 144	765	Couples Holding Hands    
 145	827	Making A Large Island 
-146	940	Distinct Subsequences II
+146	940	Distinct Subsequences II, -------------, cutting angle endwith dp, or dp with many states, change direction of idea forming
 147	639	Decode Ways II,  -----------    	
 148	588	Design In-Memory File System
 149	732	My Calendar III    -------------	

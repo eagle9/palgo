@@ -3,7 +3,8 @@ https://leetcode.com/problems/strong-password-checker/discuss/91003/on-java-solu
 Runtime: 2 ms, faster than 100.00% of Java online submissions for Strong Password Checker.
 Memory Usage: 36.6 MB, less than 28.57% of Java online submissions for Strong Password Checker.
 
-grandyang cpp does not work
+by fun4leetcode
+pure string problem with many cases and problem understanding
 */
 class Solution {
     public int strongPasswordChecker(String s) {
