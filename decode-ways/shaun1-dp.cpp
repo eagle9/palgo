@@ -8,7 +8,7 @@ public:
         int n = s.size();
         if (n == 0) return 0;
         
-        vector<int> dp(n); //dp[i] number of decode ways s[0 .. i]
+        vector<int> dp(n); //dp[i] number of decode ways s[0 .. i-1]
         if (s[0] != '0') {
             dp[0] ++;
         }

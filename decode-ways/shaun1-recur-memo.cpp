@@ -12,7 +12,7 @@ public:
         if (s[0] == '0') return 0; //start with 0, no decode
         if (s.size() ==1) return 1;
         
-        // s[0]  s[1..] split
+        // s[0]  s[1..] split and decode
         int res = numDecodings(s.substr(1));
         
         //s[0..1]  s[2..] split, s[0] s[1] must combine, decode s[0] s[1] separate will result repetitions

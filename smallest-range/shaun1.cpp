@@ -1,7 +1,9 @@
-//shaun's own idea and accepted after debugging
+//shaun's own idea and accepted after debugging, kinda forget after 2 weeks
 //1)  record needs to have 3 fields
 //2)  operator< parameter no reference, otherwise compile error
 //3) curMax as b, not the new element
+
+//cutting stack 3 lists, use a heap to keep 3 active numbers from each list
 //runtime 52ms, faster than 97%, mem less than 76%
 //to debug, it is key to run a simple example and be clear with details
 struct record {

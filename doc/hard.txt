@@ -1,16 +1,16 @@
-1	146	LRU Cache,----------- combine map(key to list pointer) and list of key val pairs
-2	4	Median of Two Sorted Arrays---- , binary search cut1, derive cut2, 4 boundary numbers
-3	42	Trapping Rain Water ----------, stack with index
-4	273	Integer to English Words,-------- analysis and derive rules, hundrends thousand-million-billion
-5	301	Remove Invalid Parentheses,--------, pretty hard, first figure out how many to remove, then dfs, growing candidate, how?
+1	146	LRU Cache,--------, cut,  combine map(key to list pointer) and list of key val pairs
+2	4	Median of Two Sorted Arrays----,0.8, binary search cut1, derive cut2, 4 boundary numbers
+3	42	Trapping Rain Water -------0.8, stack with index
+4	273	Integer to English Words,------,0.3,analysis and derive rules, hundrends thousand-million-billion
+5	301	Remove Invalid Parentheses,------,0.5 pretty hard, first figure out how many to remove, then dfs, growing candidate, how?
 6	23	Merge k Sorted Lists  ---------------1, min heap
 7	297	Serialize and Deserialize Binary Tree, -------,0.7, deser is harder 
 8	269	Alien Dictionary ------------, 1 , derive pair order, then total order from topological sorting
 9	10	Regular Expression Matching, ---, 0.7, two string dp, deal with * 
-10	76	Minimum Window Substring, -------, 1 sliding window, how many chars int T matched, a single char needed how many times
+10	76	Minimum Window Substring, -------, 1, sliding window, how many chars int T matched, a single char needed how many times
 11	829	Consecutive Numbers Sum, ----, 1, use math, try every start, add x start
-12	924	Minimize Malware Spread, ------ , only dropbox ama, dfs  
-13	159	Longest Substring with At Most Two Distinct Characters, ---------
+12	924	Minimize Malware Spread, ------,0.2, not worth, only dropbox ama, dfs  
+13	159	Longest Substring with At Most Two Distinct Characters, -----, 
 14	224	Basic Calculator,  --------------,1 tokenizer, 2 stack, level of ops
 15	41	First Missing Positive, -------1, bucket sort
 16	642	Design Search Autocomplete System, ------ 
@@ -22,11 +22,11 @@
 22	770	Basic Calculator IV
 23	72	Edit Distance ------1,  2 words, length of each word, ending char, all cases for w1 to w2
 24	239	Sliding Window Maximum ----------1,   sliding window, monotoic queue    
-25	68	Text Justification, -------1, pure string, implemenation details    	
+25	68	Text Justification, -------1, not much wor, quick read okay, pure string, implemenation details    	
 26	857	Minimum Cost to Hire K Workers, -----
 27	336	Palindrome Pairs, ------, 1, fisher lei cutting, split word=left|right, hashmap
 28	282	Expression Add Operators  ----------, 0.1  
-29	843	Guess the Word, -------
+29	843	Guess the Word, ---, 
 30	32	Longest Valid Parentheses, --------------1 stack with index
 31	564	Find the Closest Palindrome ,  -----, 0.1
 32	460	LFU Cache-------1,problem,cacheNode, map key to cacheNode, map freq to list of keys, capacity, minFreq
@@ -81,15 +81,15 @@
 81	730	Count Different Palindromic Subsequences, ------ 
 82	803	Bricks Falling When Hit, ------ 
 83	340	Longest Substring with At Most K Distinct Characters, -------
-84	30	Substring with Concatenation of All Words, ------ 
-85	928	Minimize Malware Spread II    	
-86	726	Number of Atoms 
+84	30	Substring with Concatenation of All Words, ------, 0.1,g3,hash, 2p,   
+85	928	Minimize Malware Spread II, ----, 
+86	726	Number of Atoms, ----
 87	471	Encode String with Shortest Length, ------
 88	305	Number of Islands II, -----0.3    
 89	975	Odd Even Jump, ----0.3 
 90	272	Closest Binary Search Tree Value II, ------
 91	465	Optimal Account Balancing    	
-92	632	Smallest Range, ---------    
+92	632	Smallest Range, -----,1, own idea after debug,  but kind of forget, cutting stack lists, and use a pq to store active numbers for each list, keep feeding all numbers into the pq and update the best    
 93	493	Reverse Pairs, --------, 1, merge sort dq   	
 94	296	Best Meeting Point, --------, 0.3, 
 95	99	Recover Binary Search Tree, -----0.2, g2 recent, worth,   
@@ -101,7 +101,7 @@
 101	188	Best Time to Buy and Sell Stock IV
 102	913	Cat and Mouse, ----, g4, bfs and minmax,hard, game 
 103	87	Scramble String 
-104	527	Word Abbreviation , -----------
+104	527	Word Abbreviation , ------,0.1 
 105	871	Minimum Number of Refueling Stops
 106	321	Create Maximum Number 
 107	864	Shortest Path to Get All Keys, ----- hard even to understand the problem, hua video 
@@ -117,24 +117,24 @@
 117	214	Shortest Palindrome, ------ 0.3, worth figure, add chars to the front to make palindrome,   
 118	710	Random Pick with Blacklist
 119	895	Maximum Frequency Stack, ----------, bucket for each freq, bucket is a stack  
-120	879	Profitable Schemes
-121	446	Arithmetic Slices II - Subsequence, fb and ali, dp, understand the problem now
-122	815	Bus Routes
-123	291	Word Pattern II, ---------------
-124	591	Tag Validator    
+120	879	Profitable Schemes, ----0.1, l2g1y, kinda worth,dp
+121	446	Arithmetic Slices II - Subsequence, ---0.2,  fb and ali, dp, understand the problem now
+122	815	Bus Routes, -----0.1,  g6, bfs,worth,  
+123	291	Word Pattern II, -------, 0.3,
+124	591	Tag Validator, ----,0.1,  g2u2, worth, string stack,     
 125	943	Find the Shortest Superstring, -----, g6 within 6mon,worth,dp   
 126	164	Maximum Gap, -----, sort, brute force easy, test O(n), hua, bucket sort, min max in each bucket
 127	850	Rectangle Area II,  ----------
 128	363	Max Sum of Rectangle No Larger Than K, ----- 
-129	115	Distinct Subsequences, -----, goog2, 2 str dp,cutting angle ==?  
-130	265	Paint House II , ------------
+129	115	Distinct Subsequences, -----, g2, 2 str dp,cutting angle ==?  
+130	265	Paint House II , ------, 0.1, 
 131	352	Data Stream as Disjoint Intervals
-132	715	Range Module, -----0.1
+132	715	Range Module, -----0.1, 
 133	719	Find K-th Smallest Pair Distance
 134	145	Binary Tree Postorder Traversal, ----
-135	818	Race Car   ------ 
-136	488	Zuma Game ----- hua video 
-137	568	Maximum Vacation Days
+135	818	Race Car   ------, 0.1,  
+136	488	Zuma Game -----, 0, hua video 
+137	568	Maximum Vacation Days, ----0.1,g4f2,worth, dp, 
 138	154	Find Minimum in Rotated Sorted Array II
 139	685	Redundant Connection II, -----0.1 
 140	903	Valid Permutations for DI Sequence 
@@ -142,28 +142,28 @@
 142	878	Nth Magical Number   
 143	964	Least Operators to Express Number,  
 144	765	Couples Holding Hands    
-145	827	Making A Large Island 
-146	940	Distinct Subsequences II, -------------, cutting angle endwith dp, or dp with many states, change direction of idea forming
-147	639	Decode Ways II,  -----------    	
-148	588	Design In-Memory File System
-149	732	My Calendar III    -------------	
-150	630	Course Schedule III   ------- 
+145	827	Making A Large Island,---,0.1,  g2 dfs, worth,  
+146	940	Distinct Subsequences II, -------,1, cutting angle endwith dp, or dp with many states, change direction of idea forming
+147	639	Decode Ways II,  -------,1, very worth, cutting last1/2 char, dp    	
+148	588	Design In-Memory File System, -----, 0.1
+149	732	My Calendar III, ----, 	
+150	630	Course Schedule III, ---- 
 151	499	The Maze III  
 152	968	Binary Tree Cameras 
 153	936	Stamping The Sequence
-154	358	Rearrange String k Distance Apart, ----------
+154	358	Rearrange String k Distance Apart, -----, 0.1, 
 155	828	Unique Letter String   
 156	699	Falling Squares    	
 157	552	Student Attendance Record II  
 158	786	K-th Smallest Prime Fraction 
 159	798	Smallest Rotation with Highest Score 
 160	629	K Inverse Pairs Array    	
-161	327	Count of Range Sum -----------------   	
+161	327	Count of Range Sum -------, 1, dq, merge,    	
 162	668	Kth Smallest Number in Multiplication Table, -------- 
-163	745	Prefix and Suffix Search , -----   
+163	745	Prefix and Suffix Search , ---   
 164	960	Delete Columns to Make Sorted III 
-165	335	Self Crossing 
-166	472	Concatenated Words    
+165	335	Self Crossing
+166	472	Concatenated Words
 167	440	K-th Smallest in Lexicographical Order, -----
 168	902	Numbers At Most N Given Digit Set  
 169	927	Three Equal Parts  
@@ -173,7 +173,7 @@
 173	391	Perfect Rectangle , -----
 174	601	Human Traffic of Stadium 
 175	839	Similar String Groups   
-176	805	Split Array With Same Average
+176	805	Split Array With Same Average, ----,0.1, math, 
 177	972	Equal Rational Numbers    	
 178	980	Unique Paths III, ------ 
 =======================very low frequency below================
