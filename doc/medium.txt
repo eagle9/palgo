@@ -1,59 +1,59 @@
 1	2	Add Two Numbers    		30.40%	Medium
-2	200	Number of Islands    		39.90%	Medium
-3	904	Fruit Into Baskets    		40.90%	Medium
+2	200	Number of Islands, ---,0.9 
+3	904	Fruit Into Baskets    	
 4	3	Longest Substring Without Repeating Characters    		26.10%	Medium
 5	5	Longest Palindromic Substring    		26.30%	Medium
 6	138	Copy List with Random Pointer    		25.60%	Medium
-7	56	Merge Intervals    		34.60%	Medium
-8	15	3Sum    		23.10%	Medium
-9	253	Meeting Rooms II    		41.90%	Medium
-10	238	Product of Array Except Self    		53.50%	Medium
-11	11	Container With Most Water    		42.10%	Medium
-12	33	Search in Rotated Sorted Array    		32.60%	Medium
-13	322	Coin Change    		28.70%	Medium
-14	22	Generate Parentheses    		52.70%	Medium
-15	17	Letter Combinations of a Phone Number    		40.00%	Medium
-16	31	Next Permutation    		29.90%	Medium
-17	393	UTF-8 Validation    		35.40%	Medium
-18	399	Evaluate Division    		46.30%	Medium
-19	54	Spiral Matrix    		29.40%	Medium
-20	139	Word Break    		34.10%	Medium
-21	681	Next Closest Time    		42.10%	Medium
-22	289	Game of Life    		42.80%	Medium
-23	560	Subarray Sum Equals K    		41.40%	Medium
-24	98	Validate Binary Search Tree    		25.10%	Medium
-25	621	Task Scheduler    		44.10%	Medium
-26	91	Decode Ways    		21.70%	Medium
-27	236	Lowest Common Ancestor of a Binary Tree    		34.90%	Medium
-28	49	Group Anagrams    		44.30%	Medium
-29	380	Insert Delete GetRandom O(1)    		41.80%	Medium
-30	8	String to Integer (atoi)    		14.40%	Medium
-31	46	Permutations    		52.90%	Medium
-32	151	Reverse Words in a String    		15.80%	Medium
-33	695	Max Area of Island    		55.50%	Medium
-34	127	Word Ladder    		22.60%	Medium
-35	547	Friend Circles    		52.30%	Medium
-36	173	Binary Search Tree Iterator    		46.70%	Medium
-37	79	Word Search    		30.10%	Medium
-38	192	Word Frequency    		26.50%	Medium
-39	215	Kth Largest Element in an Array    		45.50%	Medium
-40	528	Random Pick with Weight    		42.50%	Medium
-41	609	Find Duplicate File in System    		53.90%	Medium
-42	50	Pow(x, n)    		27.40%	Medium
-43	103	Binary Tree Zigzag Level Order Traversal    		40.10%	Medium
-44	923	3Sum With Multiplicity    		31.40%	Medium
-45	16	3Sum Closest    		33.90%	Medium
-46	43	Multiply Strings    		29.80%	Medium
-47	93	Restore IP Addresses    		30.50%	Medium
-48	341	Flatten Nested List Iterator    		46.50%	Medium
-49	394	Decode String    		43.60%	Medium
-50	48	Rotate Image    		46.40%	Medium
-51	364	Nested List Weight Sum II    		56.40%	Medium
-52	362	Design Hit Counter    		57.70%	Medium
-53	636	Exclusive Time of Functions    		47.70%	Medium
-54	143	Reorder List    		29.50%	Medium
-55	347	Top K Frequent Elements    		53.00%	Medium
-56	755	Pour Water    		38.60%	Medium
+7	56	Merge Intervals, ---, 0.8
+8	15	3Sum, ----, 0.8
+9	253	Meeting Rooms II, ----, 
+10	238	Product of Array Except Self, ---
+11	11	Container With Most Water
+12	33	Search in Rotated Sorted Array, ----, 
+13	322	Coin Change, ----, recur, dp, 
+14	22	Generate Parentheses, ----
+15	17	Letter Combinations of a Phone Number, ----
+16	31	Next Permutation, ----
+17	393	UTF-8 Validation, ---
+18	399	Evaluate Division, --- uf, 
+19	54	Spiral Matrix, 
+20	139	Word Break, ----
+21	681	Next Closest Time  
+22	289	Game of Life    	
+23	560	Subarray Sum Equals K
+24	98	Validate Binary Search Tree
+25	621	Task Scheduler, ----
+26	91	Decode Ways, ----, 
+27	236	Lowest Common Ancestor of a Binary Tree, ---
+28	49	Group Anagrams, ---
+29	380	Insert Delete GetRandom O(1), ---
+30	8	String to Integer (atoi)
+31	46	Permutations    	
+32	151	Reverse Words in a String
+33	695	Max Area of Island
+34	127	Word Ladder
+35	547	Friend Circles
+36	173	Binary Search Tree Iterator
+37	79	Word Search
+38	192	Word Frequency
+39	215	Kth Largest Element in an Array
+40	528	Random Pick with Weight
+41	609	Find Duplicate File in System
+42	50	Pow(x, n)
+43	103	Binary Tree Zigzag Level Order Traversal
+44	923	3Sum With Multiplicity
+45	16	3Sum Closest
+46	43	Multiply Strings
+47	93	Restore IP Addresses
+48	341	Flatten Nested List Iterator
+49	394	Decode String
+50	48	Rotate Image
+51	364	Nested List Weight Sum II
+52	362	Design Hit Counter
+53	636	Exclusive Time of Functions
+54	143	Reorder List
+55	347	Top K Frequent Elements
+56	755	Pour Water
 57	12	Integer to Roman    		49.50%	Medium
 58	92	Reverse Linked List II    		33.80%	Medium
 59	300	Longest Increasing Subsequence    		40.10%	Medium

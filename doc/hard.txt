@@ -34,11 +34,11 @@
 34	432	All O`one Data Structure, ----0.1
 35	65	Valid Number,  -----, many cases string manipulation, read it, i won't ask myself code it
 36	51	N-Queens ------------------2, growing candidate backtracking dfs
-37	312	Burst Balloons, ----0.1
+37	312	Burst Balloons, ----1, g2, dq dp, cutting break the sequence, computer order by ? len, pad the sequence to ensure transition func inboud
 38	212	Word Search II  --------- 0.3, 
 39	128	Longest Consecutive Sequence, -------own idea and code upon uf hint, accepted after 2 bug fixes
 40	126	Word Ladder II   --------- bfs then dfs, not quite apply template easily, one more video   
-41	149	Max Points on a Line, ---- first try get very close 
+41	149	Max Points on a Line, ----, 0.7, math,  first try get very close 
 42	489	Robot Room Cleaner
 43	887	Super Egg Drop 
 44	403	Frog Jump, -----1, dp with hashmap, how to reach this stone,  
@@ -81,7 +81,7 @@
 81	730	Count Different Palindromic Subsequences, ------ 
 82	803	Bricks Falling When Hit, ------ 
 83	340	Longest Substring with At Most K Distinct Characters, -------
-84	30	Substring with Concatenation of All Words, ------, 0.1,g3,hash, 2p,   
+84	30	Substring with Concatenation of All Words, ------,1,g3,hash,2p, cutting, sliding substring of len n*len_word, then try to match segment by segment with hash   
 85	928	Minimize Malware Spread II, ----, 
 86	726	Number of Atoms, ----
 87	471	Encode String with Shortest Length, ------
