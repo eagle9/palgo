@@ -85,7 +85,7 @@
 85	928	Minimize Malware Spread II, ----, 
 86	726	Number of Atoms, ----
 87	471	Encode String with Shortest Length, ------
-88	305	Number of Islands II, -----0.3    
+88	305	Number of Islands II, -----, 1, cutting uf init&find on the fly   
 89	975	Odd Even Jump, ----0.3 
 90	272	Closest Binary Search Tree Value II, ------
 91	465	Optimal Account Balancing    	
