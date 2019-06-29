@@ -88,7 +88,7 @@
 88	305	Number of Islands II, -----0.3    
 89	975	Odd Even Jump, ----0.3 
 90	272	Closest Binary Search Tree Value II, ------
-91	465	Optimal Account Balancing    	
+91	465	Optimal Account Balancing, -----   	
 92	632	Smallest Range, -----,1, own idea after debug,  but kind of forget, cutting stack lists, and use a pq to store active numbers for each list, keep feeding all numbers into the pq and update the best    
 93	493	Reverse Pairs, --------, 1, merge sort dq   	
 94	296	Best Meeting Point, --------, 0.3, 
@@ -97,7 +97,7 @@
 97	420	Strong Password Checker, ----- 0.1, not worth, string, many cases  
 98	834	Sum of Distances in Tree, ----,0.2, g2 worth, bfs, 
 99	847	Shortest Path Visiting All Nodes, ---- hard even to understand the prob
-100	52	N-Queens II , ----------0.4, classic, dfs backtracking
+100	52	N-Queens II , ----------0.4, classic, quick read, not much worth, dfs backtracking
 101	188	Best Time to Buy and Sell Stock IV
 102	913	Cat and Mouse, ----, g4, bfs and minmax,hard, game 
 103	87	Scramble String 
