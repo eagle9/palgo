@@ -16,7 +16,7 @@
 16	642	Design Search Autocomplete System, ------ 
 17	85	Maximal Rectangle, ------ 1d max 1 seq len okay? then such seq for each row, then enumerate rectangles
 18	295	Find Median from Data Stream -------1,  max heap for left, min heap for right half , add to left or right, balance their size
-19	25	Reverse Nodes in k-Group, ----,1, lhc cutting angle, reduced to reverse list, subfunction return head for next sub
+19	25	Reverse Nodes in k-Group, ----1, lhc cutting angle, reduced to reverse list, subfunction return head for next sub
 20	124	Binary Tree Maximum Path Sum -----1 , cutting angle, every node, max path sum from this node, max path sum thru the node, binary tree recursion 
 21	158	Read N Characters Given Read4 II - Call multiple times
 22	770	Basic Calculator IV
@@ -24,8 +24,8 @@
 24	239	Sliding Window Maximum ----------1,   sliding window, monotoic queue    
 25	68	Text Justification, -------1, not much wor, quick read okay, pure string, implemenation details    	
 26	857	Minimum Cost to Hire K Workers, -----
-27	336	Palindrome Pairs, ------, 1, fisher lei cutting, split word=left|right, hashmap
-28	282	Expression Add Operators  ----------, 0.1  
+27	336	Palindrome Pairs, ------1, fisher lei cutting, split word=left|right, hashmap
+28	282	Expression Add Operators  ----------,1, dfs, cutting, cursor recur with string break, growing candidate exp, use prev to track tail exp to deal with * precedence over +/- 
 29	843	Guess the Word, ---, 
 30	32	Longest Valid Parentheses, --------------1 stack with index
 31	564	Find the Closest Palindrome ,  -----, 0.1
