@@ -47,9 +47,9 @@
 47	37	Sudoku Solver, -------
 48	140	Word Break II, --------0.6
 49	683	K Empty Slots, ------
-50	135	Candy ------
-51	97	Interleaving String, ----- dp 2d, some details
-52	772	Basic Calculator III, ------0.2, 
+50	135	Candy ------1, greedy, enforce the rule for both left and right neighbor
+51	97	Interleaving String, -----0.9, dp 2d, some details
+52	772	Basic Calculator III, ------0.2, hard,  
 53	315	Count of Smaller Numbers After Self,  -----either merge sort dq, or bit
 54	329	Longest Increasing Path in a Matrix, ----- dfs with memo or dp,cutting -- neighbors longest inc path transition 
 55	679	24 Game, ----------------
@@ -100,7 +100,7 @@
 100	52	N-Queens II , ----------0.4, classic, quick read, not much worth, dfs backtracking
 101	188	Best Time to Buy and Sell Stock IV
 102	913	Cat and Mouse, ----, g4, bfs and minmax,hard, game 
-103	87	Scramble String 
+103	87	Scramble String, ---1, g2, recur with pruning done, dp 3d yet to do
 104	527	Word Abbreviation , ------,0.1 
 105	871	Minimum Number of Refueling Stops
 106	321	Create Maximum Number 

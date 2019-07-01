@@ -17,3 +17,7 @@ Output: 4
 Explanation: You can allocate to the first, second and third child with 1, 2, 1 candies respectively.The third child gets 1 candy because it satisfies the above two conditions.
 
 Topic: Greedy
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+
+Google | 4 Amazon | 3 ByteDance | 2
