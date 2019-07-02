@@ -1,4 +1,7 @@
 //lt sliding window with two pointers hash table, shaun read and understand, code from idea
+//cutting, substring with a condition, naturally sliding window
+// distinct chars in the window, naturally hashmap
+// in order to contract left, we need index, so char to index hashmap
 //runtime 12ms, faster than 78.60%, mem less than 21%
 class Solution {
 public:
