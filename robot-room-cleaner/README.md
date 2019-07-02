@@ -1,11 +1,9 @@
 489. Robot Room Cleaner
-Hard
+Hard 520 29 Favorite Share
+
 Given a robot cleaner in a room modeled as a grid.
-
 Each cell in the grid can be empty or blocked.
-
 The robot cleaner with 4 given APIs can move forward, turn left or turn right. Each turn it made is 90 degrees.
-
 When it tries to move into a blocked cell, its bumper sensor detects the obstacle and it stays on the current cell.
 
 Design an algorithm to clean the entire room using only the 4 given APIs shown below.
@@ -49,4 +47,11 @@ The initial direction of the robot will be facing up.
 All accessible cells are connected, which means the all cells marked as 1 will be accessible by the robot.
 Assume all four edges of the grid are all surrounded by wall.
 
-Topic: depth-first search, walls and gates
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+
+Google | 16 Facebook | 4 Amazon | 4
+
+Similar:
+Walls and Gates Medium
+
+Topic: Depth-first Search

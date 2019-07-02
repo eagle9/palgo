@@ -1,4 +1,7 @@
 //hua dfs idea, shaun has understood
+//cutting angle:  first figure out how left and right parenthesis need to be removed. 
+// then dfs cursor recursion, from left to right of the string, try all possible removals
+//   to avoid repetition
 //runtime 4ms, faster than 97%, mem less than 77%
 class Solution {
 public:
@@ -20,11 +23,14 @@ public:
   }
 private:
   bool isValid(const string& s) {
-    int count = 0;
+    int count = 0; //count of ( to be matched by )
     for (const char ch : s) {
       if (ch == '(') ++count;
-      if (ch == ')') --count;
-      if (count < 0) return false;
+      if (ch == ')') {
+          if (count == 0) return false;
+          --count; //matched one (
+      }
+      //if (count < 0) return false;
     }
     return count == 0;
   }

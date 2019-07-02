@@ -2,7 +2,7 @@
 2	4	Median of Two Sorted Arrays----,0.8, binary search cut1, derive cut2, 4 boundary numbers
 3	42	Trapping Rain Water -------0.8, stack with index
 4	273	Integer to English Words,------,0.3,analysis and derive rules, hundrends thousand-million-billion
-5	301	Remove Invalid Parentheses,------,0.5 pretty hard, first figure out how many to remove, then dfs, growing candidate, how?
+5	301	Remove Invalid Parentheses,------,0.9 pretty hard, first figure out how many ( and ) to remove, then dfs, growing candidate, avoid repeating char 
 6	23	Merge k Sorted Lists  ---------------1, min heap
 7	297	Serialize and Deserialize Binary Tree, -------,0.7, deser is harder 
 8	269	Alien Dictionary ------------, 1 , derive pair order, then total order from topological sorting
@@ -18,8 +18,8 @@
 18	295	Find Median from Data Stream -------1,  max heap for left, min heap for right half , add to left or right, balance their size
 19	25	Reverse Nodes in k-Group, ----1, lhc cutting angle, reduced to reverse list, subfunction return head for next sub
 20	124	Binary Tree Maximum Path Sum -----1 , cutting angle, every node, max path sum from this node, max path sum thru the node, binary tree recursion 
-21	158	Read N Characters Given Read4 II - Call multiple times
-22	770	Basic Calculator IV
+21	158	Read N Characters Given Read4 II - Call multiple times, ----0.2
+22	770	Basic Calculator IV-----, 0.2
 23	72	Edit Distance ------1,  2 words, length of each word, ending char, all cases for w1 to w2
 24	239	Sliding Window Maximum ----------1,   sliding window, monotoic queue    
 25	68	Text Justification, -------1, not much wor, quick read okay, pure string, implemenation details    	
@@ -32,17 +32,17 @@
 32	460	LFU Cache-------1,problem,cacheNode, map key to cacheNode, map freq to list of keys, capacity, minFreq
 33	45	Jump Game II, ----- 0.6, greedy 2p, not very clear 
 34	432	All O`one Data Structure, ----0.1
-35	65	Valid Number,  -----, many cases string manipulation, read it, i won't ask myself code it
-36	51	N-Queens ------------------2, growing candidate backtracking dfs
+35	65	Valid Number,  -----, not much worth, many cases string manipulation, read it, i won't ask myself code it
+36	51	N-Queens -----2, classic, quick read okay, growing candidate backtracking dfs
 37	312	Burst Balloons, ----1, g2, dq dp, cutting break the sequence, computer order by ? len, pad the sequence to ensure transition func inboud
 38	212	Word Search II  --------- 0.3, 
 39	128	Longest Consecutive Sequence, -------own idea and code upon uf hint, accepted after 2 bug fixes
-40	126	Word Ladder II   --------- bfs then dfs, not quite apply template easily, one more video   
+40	126	Word Ladder II   -------0.6, pretty hard,  bfs then dfs, not quite apply template easily, one more video   
 41	149	Max Points on a Line, ----, 0.7, math,  first try get very close 
-42	489	Robot Room Cleaner
-43	887	Super Egg Drop 
+42	489	Robot Room Cleaner,----1, g16, so worth, dfs natural, key is to consider direction sync
+43	887	Super Egg Drop, -----0.1,  
 44	403	Frog Jump, -----1, dp with hashmap, how to reach this stone,  
-45	233	Number of Digit One
+45	233	Number of Digit One, ----, math, amz and appl, not much worth
 46	84	Largest Rectangle in Histogram, ----------------
 47	37	Sudoku Solver, -------
 48	140	Word Break II, --------0.6
@@ -51,35 +51,35 @@
 51	97	Interleaving String, -----0.9, dp 2d, some details
 52	772	Basic Calculator III, ------0.2, hard,  
 53	315	Count of Smaller Numbers After Self,  -----either merge sort dq, or bit
-54	329	Longest Increasing Path in a Matrix, ----- dfs with memo or dp,cutting -- neighbors longest inc path transition 
-55	679	24 Game, ------0.5, 
+54	329	Longest Increasing Path in a Matrix, -----0.5,  dfs with memo or dp,cutting -- neighbors longest inc path transition 
+55	679	24 Game, -----, 0.4, 
 56	761	Special Binary String, ------
-57	218	The Skyline Problem, -----0.8,  cutting sweep line  with bst	
+57	218	The Skyline Problem, -----0.8,  sweep line 	
 58	862	Shortest Subarray with Sum at Least K, ----0.1, no goog
 59	248	Strobogrammatic Number III,  -----0.2
 60	759	Employee Free Time    	
 61	44	Wildcard Matching, -------1, two string, a' len i substr, b's len j substr, dealing with * 
 62	736	Parse Lisp Expression, ------,0.1, very hard
 63	780	Reaching Points, --- not worth  	
-64	57	Insert Interval    -------,1 cutting  before newI after, pos
+64	57	Insert Interval  ------,1 cutting  before newI after, pos
 65	123	Best Time to Buy and Sell Stock III
 66	316	Remove Duplicate Letters, -------- , 0.3, g3, worth,stack& greedy, cutting=?  	
 67	741	Cherry Pickup  
 68	920	Number of Music Playlists
 69	381	Insert Delete GetRandom O(1) - Duplicates allowed
 70	185	Department Top Three Salaries,---1, sql, cutting distinct sal < 3, sub query 
-71	410	Split Array Largest Sum    	
+71	410	Split Array Largest Sum, ----0.3, g35, very worth, bs and dp    	
 72	727	Minimum Window Subsequence, ----- 0.1
 73	428	Serialize and Deserialize N-ary Tree, -----0.1
 74	479	Largest Palindrome Product    	
 75	689	Maximum Sum of 3 Non-Overlapping Subarrays
-76	773	Sliding Puzzle 
+76	773	Sliding Puzzle, ----0.2, understand the problem, yet to figure out solution 
 77	308	Range Sum Query 2D - Mutable, ----0.1
-78	753	Cracking the Safe 
+78	753	Cracking the Safe, -----0.1 
 79	317	Shortest Distance from All Buildings, ----0.1
-80	480	Sliding Window Median, --------    
+80	480	Sliding Window Median, --------0.1, hua video    
 81	730	Count Different Palindromic Subsequences, ------ 
-82	803	Bricks Falling When Hit, ------ 
+82	803	Bricks Falling When Hit, ------0.3, union find 
 83	340	Longest Substring with At Most K Distinct Characters, -------
 84	30	Substring with Concatenation of All Words, ------,1,g3,hash,2p, cutting, sliding substring of len n*len_word, then try to match segment by segment with hash   
 85	928	Minimize Malware Spread II, ----, 
@@ -98,6 +98,7 @@
 98	834	Sum of Distances in Tree, ----,0.2, g2 worth, bfs, 
 99	847	Shortest Path Visiting All Nodes, ---- hard even to understand the prob
 100	52	N-Queens II , ----------0.4, classic, quick read, not much worth, dfs backtracking
+================================================================================================
 101	188	Best Time to Buy and Sell Stock IV
 102	913	Cat and Mouse, ----, g4, bfs and minmax,hard, game 
 103	87	Scramble String, ---1, g2, recur with pruning done, dp 3d yet to do
