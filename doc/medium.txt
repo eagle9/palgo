@@ -54,130 +54,130 @@
 54	143	Reorder List
 55	347	Top K Frequent Elements
 56	755	Pour Water
-57	12	Integer to Roman    		49.50%	Medium
-58	92	Reverse Linked List II    		33.80%	Medium
-59	300	Longest Increasing Subsequence    		40.10%	Medium
-60	177	Nth Highest Salary    		24.50%	Medium
-61	39	Combination Sum    		46.20%	Medium
-62	133	Clone Graph    		25.10%	Medium
-63	277	Find the Celebrity    		35.20%	Medium
-64	449	Serialize and Deserialize BST    		45.40%	Medium
-65	426	Convert Binary Search Tree to Sorted Doubly Linked List    		48.90%	Medium
-66	722	Remove Comments    		30.30%	Medium
-67	445	Add Two Numbers II    		48.90%	Medium
-68	713	Subarray Product Less Than K    		35.50%	Medium
-69	348	Design Tic-Tac-Toe    		48.30%	Medium
-70	735	Asteroid Collision    		37.60%	Medium
-71	457	Circular Array Loop    		27.20%	Medium
-72	332	Reconstruct Itinerary    		30.40%	Medium
-73	199	Binary Tree Right Side View    		46.30%	Medium
-74	402	Remove K Digits    		26.10%	Medium
-75	692	Top K Frequent Words    		44.60%	Medium
-76	29	Divide Two Integers    		16.00%	Medium
-77	6	ZigZag Conversion    		30.40%	Medium
-78	207	Course Schedule    		36.40%	Medium
-79	228	Summary Ranges    		35.00%	Medium
-80	102	Binary Tree Level Order Traversal    		46.60%	Medium
-81	314	Binary Tree Vertical Order Traversal    		39.90%	Medium
-82	535	Encode and Decode TinyURL    		75.60%	Medium
-83	244	Shortest Word Distance II    		45.60%	Medium
-84	152	Maximum Product Subarray    		28.40%	Medium
-85	78	Subsets    		50.50%	Medium
-86	166	Fraction to Recurring Decimal    		19.10%	Medium
-87	947	Most Stones Removed with Same Row or Column    		53.10%	Medium
-88	19	Remove Nth Node From End of List    		33.90%	Medium
-89	162	Find Peak Element    		40.60%	Medium
-90	114	Flatten Binary Tree to Linked List    		40.80%	Medium
-91	34	Find First and Last Position of Element in Sorted Array    		32.80%	Medium
-92	647	Palindromic Substrings    		55.50%	Medium
-93	55	Jump Game    		31.10%	Medium
-94	240	Search a 2D Matrix II    		40.10%	Medium
-95	222	Count Complete Tree Nodes    		30.90%	Medium
-96	221	Maximal Square    		32.10%	Medium
+57	12	Integer to Roman    
+58	92	Reverse Linked List II
+59	300	Longest Increasing Subsequence 
+60	177	Nth Highest Salary    		24
+61	39	Combination Sum    		46
+62	133	Clone Graph    		25
+63	277	Find the Celebrity   
+64	449	Serialize and Deserialize BST 
+65	426	Convert Binary Search Tree to Sorted Doubly Linked List    
+66	722	Remove Comments
+67	445	Add Two Numbers II
+68	713	Subarray Product Less Than K
+69	348	Design Tic-Tac-Toe    	
+70	735	Asteroid Collision    
+71	457	Circular Array Loop  
+72	332	Reconstruct Itinerary
+73	199	Binary Tree Right Side View, ----1, own idea, 
+74	402	Remove K Digits 
+75	692	Top K Frequent Words, -----, pq
+76	29	Divide Two Integers
+77	6	ZigZag Conversion 
+78	207	Course Schedule 
+79	228	Summary Ranges 
+80	102	Binary Tree Level Order Traversal, -----1, bfs 
+81	314	Binary Tree Vertical Order Traversal, -----0.6
+82	535	Encode and Decode TinyURL
+83	244	Shortest Word Distance II, ---- 1, own  accepted
+84	152	Maximum Product Subarray
+85	78	Subsets, ---1, for each size, combination
+86	166	Fraction to Recurring Decimal
+87	947	Most Stones Removed with Same Row or Column, ----1, union find
+88	19	Remove Nth Node From End of List, ----1
+89	162	Find Peak Element    		40.
+90	114	Flatten Binary Tree to Linked List
+91	34	Find First and Last Position of Element in Sorted Array, ----1, binary search
+92	647	Palindromic Substrings
+93	55	Jump Game 
+94	240	Search a 2D Matrix II
+95	222	Count Complete Tree Nodes 
+96	221	Maximal Square 
 97	116	Populating Next Right Pointers in Each Node    		36.50%	Medium
 98	211	Add and Search Word - Data structure design    		28.80%	Medium
-99	18	4Sum    		29.50%	Medium
-100	71	Simplify Path    		28.00%	Medium
-101	279	Perfect Squares    		40.40%	Medium
-102	468	Validate IP Address    		21.00%	Medium
+99	18	4Sum 
+100	71	Simplify Path, -------0.7, 
+101	279	Perfect Squares
+102	468	Validate IP Address
 103	324	Wiggle Sort II    		27.40%	Medium
 104	939	Minimum Area Rectangle    		48.30%	Medium
-105	105	Construct Binary Tree from Preorder and Inorder Traversal    		39.00%	Medium
-106	208	Implement Trie (Prefix Tree)    		36.30%	Medium
-107	227	Basic Calculator II    		32.50%	Medium
-108	287	Find the Duplicate Number    		48.00%	Medium
-109	24	Swap Nodes in Pairs    		42.80%	Medium
-110	142	Linked List Cycle II    		30.60%	Medium
-111	285	Inorder Successor in BST    		32.90%	Medium
-112	178	Rank Scores    		34.20%	Medium
-113	210	Course Schedule II    		33.40%	Medium
-114	94	Binary Tree Inorder Traversal    		54.60%	Medium
-115	75	Sort Colors    		41.10%	Medium
-116	63	Unique Paths II    		33.20%	Medium
-117	304	Range Sum Query 2D - Immutable    		30.90%	Medium
-118	523	Continuous Subarray Sum    		24.10%	Medium
-119	153	Find Minimum in Rotated Sorted Array    		42.40%	Medium
-120	150	Evaluate Reverse Polish Notation    		31.10%	Medium
-121	785	Is Graph Bipartite?    		42.00%	Medium
-122	251	Flatten 2D Vector    		43.30%	Medium
-123	64	Minimum Path Sum    		45.20%	Medium
-124	567	Permutation in String    		37.50%	Medium
-125	187	Repeated DNA Sequences    		35.20%	Medium
-126	165	Compare Version Numbers    		22.50%	Medium
-127	539	Minimum Time Difference    		47.10%	Medium
-128	723	Candy Crush    		61.20%	Medium
-129	739	Daily Temperatures    		58.40%	Medium
-130	378	Kth Smallest Element in a Sorted Matrix    		48.10%	Medium
-131	787	Cheapest Flights Within K Stops    		33.70%	Medium
-132	120	Triangle    		38.10%	Medium
-133	311	Sparse Matrix Multiplication    		55.20%	Medium
-134	117	Populating Next Right Pointers in Each Node II    		33.30%	Medium
-135	909	Snakes and Ladders    		29.20%	Medium
-136	406	Queue Reconstruction by Height    		58.70%	Medium
-137	62	Unique Paths    		46.00%	Medium
-138	36	Valid Sudoku    		41.50%	Medium
-139	807	Max Increase to Keep City Skyline    		80.90%	Medium
-140	250	Count Univalue Subtrees    		47.50%	Medium
-141	698	Partition to K Equal Sum Subsets    		40.80%	Medium
-142	518	Coin Change 2    		41.00%	Medium
-143	430	Flatten a Multilevel Doubly Linked List    		39.80%	Medium
-144	918	Maximum Sum Circular Subarray    		28.80%	Medium
-145	280	Wiggle Sort    		60.40%	Medium
-146	299	Bulls and Cows    		38.40%	Medium
-147	767	Reorganize String    		40.80%	Medium
-148	148	Sort List    		33.60%	Medium
-149	450	Delete Node in a BST    		39.10%	Medium
-150	59	Spiral Matrix II    		45.00%	Medium
-151	451	Sort Characters By Frequency    		54.60%	Medium
-152	855	Exam Room    		36.70%	Medium
-153	209	Minimum Size Subarray Sum    		34.10%	Medium
-154	73	Set Matrix Zeroes    		38.80%	Medium
-155	889	Construct Binary Tree from Preorder and Postorder Traversal    		57.50%	Medium
-156	419	Battleships in a Board    		65.00%	Medium
-157	688	Knight Probability in Chessboard    		42.60%	Medium
-158	229	Majority Element II    		31.10%	Medium
-159	284	Peeking Iterator    		39.00%	Medium
-160	74	Search a 2D Matrix    		34.60%	Medium
-161	694	Number of Distinct Islands    		49.50%	Medium
-162	907	Sum of Subarray Minimums    		24.70%	Medium
-163	935	Knight Dialer    		37.40%	Medium
-164	658	Find K Closest Elements    		36.80%	Medium
-165	247	Strobogrammatic Number II    		43.40%	Medium
-166	593	Valid Square    		40.10%	Medium
-167	384	Shuffle an Array    		49.30%	Medium
-168	230	Kth Smallest Element in a BST    		49.50%	Medium
-169	442	Find All Duplicates in an Array    		59.60%	Medium
-170	863	All Nodes Distance K in Binary Tree    		45.20%	Medium
-171	635	Design Log Storage System    		52.60%	Medium
-172	373	Find K Pairs with Smallest Sums    		32.90%	Medium
-173	271	Encode and Decode Strings    		25.70%	Medium
-174	417	Pacific Atlantic Water Flow    		36.40%	Medium
-175	498	Diagonal Traverse    		44.80%	Medium
-176	556	Next Greater Element III    		29.60%	Medium
-177	721	Accounts Merge    		38.50%	Medium
-178	678	Valid Parenthesis String    		31.70%	Medium
-179	833	Find And Replace in String    		44.30%	Medium
-180	95	Unique Binary Search Trees II    		34.60%	Medium
+105	105	Construct Binary Tree from Preorder and Inorder Traversal
+106	208	Implement Trie (Prefix Tree)
+107	227	Basic Calculator II
+108	287	Find the Duplicate Number
+109	24	Swap Nodes in Pairs, ------0.5, 
+110	142	Linked List Cycle II
+111	285	Inorder Successor in BST
+112	178	Rank Scores 
+113	210	Course Schedule II
+114	94	Binary Tree Inorder Traversal
+115	75	Sort Colors, -----1, 2p
+116	63	Unique Paths II, ----? 
+117	304	Range Sum Query 2D - Immutable
+118	523	Continuous Subarray Sum
+119	153	Find Minimum in Rotated Sorted Array, ----
+120	150	Evaluate Reverse Polish Notation
+121	785	Is Graph Bipartite?
+122	251	Flatten 2D Vector 
+123	64	Minimum Path Sum 
+124	567	Permutation in String 
+125	187	Repeated DNA Sequences
+126	165	Compare Version Numbers 
+127	539	Minimum Time Difference
+128	723	Candy Crush    		6
+129	739	Daily Temperatures  
+130	378	Kth Smallest Element in a Sorted Matrix
+131	787	Cheapest Flights Within K Stops 
+132	120	Triangle
+133	311	Sparse Matrix Multiplication, -----0.6
+134	117	Populating Next Right Pointers in Each Node II
+135	909	Snakes and Ladders    		
+136	406	Queue Reconstruction by Height
+137	62	Unique Paths, -----    		4
+138	36	Valid Sudoku
+139	807	Max Increase to Keep City Skyline
+140	250	Count Univalue Subtrees , -----   		
+141	698	Partition to K Equal Sum Subsets
+142	518	Coin Change 2, -----
+143	430	Flatten a Multilevel Doubly Linked List
+144	918	Maximum Sum Circular Subarray 
+145	280	Wiggle Sort
+146	299	Bulls and Cows
+147	767	Reorganize String
+148	148	Sort List 
+149	450	Delete Node in a BST, -----
+150	59	Spiral Matrix II  
+151	451	Sort Characters By Frequency
+152	855	Exam Room 
+153	209	Minimum Size Subarray Sum 
+154	73	Set Matrix Zeroes  
+155	889	Construct Binary Tree from Preorder and Postorder Traversal 
+156	419	Battleships in a Board 
+157	688	Knight Probability in Chessboard
+158	229	Majority Element II  
+159	284	Peeking Iterator    
+160	74	Search a 2D Matrix 
+161	694	Number of Distinct Islands 
+162	907	Sum of Subarray Minimums 
+163	935	Knight Dialer    		
+164	658	Find K Closest Elements
+165	247	Strobogrammatic Number II
+166	593	Valid Square  
+167	384	Shuffle an Array
+168	230	Kth Smallest Element in a BST
+169	442	Find All Duplicates in an Array
+170	863	All Nodes Distance K in Binary Tree 
+171	635	Design Log Storage System  
+172	373	Find K Pairs with Smallest Sums
+173	271	Encode and Decode Strings  
+174	417	Pacific Atlantic Water Flow 
+175	498	Diagonal Traverse  
+176	556	Next Greater Element III
+177	721	Accounts Merge  
+178	678	Valid Parenthesis String
+179	833	Find And Replace in String
+180	95	Unique Binary Search Trees II 
 181	286	Walls and Gates    		48.10%	Medium
 182	392	Is Subsequence    		46.00%	Medium
 183	490	The Maze    		46.10%	Medium
@@ -198,6 +198,7 @@
 198	545	Boundary of Binary Tree    		34.10%	Medium
 199	529	Minesweeper    		51.60%	Medium
 200	652	Find Duplicate Subtrees    		43.70%	Medium
+===========================================================================
 201	911	Online Election    		43.50%	Medium
 202	718	Maximum Length of Repeated Subarray    		44.50%	Medium
 203	777	Swap Adjacent in LR String    		32.60%	Medium
@@ -266,7 +267,7 @@
 266	418	Sentence Screen Fitting    		30.20%	Medium
 267	319	Bulb Switcher    		43.60%	Medium
 268	464	Can I Win    		26.70%	Medium
-269	494	Target Sum    		44.80%	Medium
+269	494	Target Sum, -------
 270	799	Champagne Tower    		33.10%	Medium
 271	873	Length of Longest Fibonacci Subsequence    		44.70%	Medium
 272	82	Remove Duplicates from Sorted List II    		32.00%	Medium
@@ -291,43 +292,43 @@
 291	714	Best Time to Buy and Sell Stock with Transaction Fee    		49.30%	Medium
 292	355	Design Twitter    		26.70%	Medium
 293	298	Binary Tree Longest Consecutive Sequence    		43.40%	Medium
-294	307	Range Sum Query - Mutable    		27.10%	Medium
-295	421	Maximum XOR of Two Numbers in an Array    		50.10%	Medium
-296	763	Partition Labels    		68.00%	Medium
-297	845	Longest Mountain in Array    		33.70%	Medium
-298	281	Zigzag Iterator    		55.30%	Medium
-299	673	Number of Longest Increasing Subsequence    		33.00%	Medium
-300	90	Subsets II    		41.20%	Medium
-301	259	3Sum Smaller    		44.20%	Medium
-302	865	Smallest Subtree with all the Deepest Nodes    		54.30%	Medium
-303	659	Split Array into Consecutive Subsequences    		39.50%	Medium
-304	255	Verify Preorder Sequence in Binary Search Tree    		42.60%	Medium
-305	934	Shortest Bridge    		43.10%	Medium
-306	452	Minimum Number of Arrows to Burst Balloons    		45.50%	Medium
-307	966	Vowel Spellchecker    		38.70%	Medium
-308	61	Rotate List    		26.30%	Medium
-309	540	Single Element in a Sorted Array    		56.80%	Medium
-310	549	Binary Tree Longest Consecutive Sequence II    		43.80%	Medium
-311	826	Most Profit Assigning Work    		34.50%	Medium
-312	382	Linked List Random Node    		48.70%	Medium
-313	921	Minimum Add to Make Parentheses Valid    		69.60%	Medium
-314	388	Longest Absolute File Path    		38.60%	Medium
-315	742	Closest Leaf in a Binary Tree    		37.70%	Medium
-316	491	Increasing Subsequences    		41.30%	Medium
-317	369	Plus One Linked List    		55.50%	Medium
-318	776	Split BST    		51.80%	Medium
-319	470	Implement Rand10() Using Rand7()    		44.10%	Medium
-320	156	Binary Tree Upside Down    		49.30%	Medium
-321	513	Find Bottom Left Tree Value    		57.80%	Medium
-322	702	Search in a Sorted Array of Unknown Size    		53.60%	Medium
-323	533	Lonely Pixel II    		45.90%	Medium
-324	368	Largest Divisible Subset    		34.40%	Medium
-325	478	Generate Random Point in a Circle    		36.00%	Medium
+294	307	Range Sum Query - Mutable, -----
+295	421	Maximum XOR of Two Numbers in an Array, ----
+296	763	Partition Labels  
+297	845	Longest Mountain in Array 
+298	281	Zigzag Iterator    		5
+299	673	Number of Longest Increasing Subsequence 
+300	90	Subsets II   
+301	259	3Sum Smaller
+302	865	Smallest Subtree with all the Deepest Nodes  
+303	659	Split Array into Consecutive Subsequences   
+304	255	Verify Preorder Sequence in Binary Search Tree 
+305	934	Shortest Bridge  
+306	452	Minimum Number of Arrows to Burst Balloons
+307	966	Vowel Spellchecker
+308	61	Rotate List    	
+309	540	Single Element in a Sorted Array 
+310	549	Binary Tree Longest Consecutive Sequence II 
+311	826	Most Profit Assigning Work 
+312	382	Linked List Random Node   
+313	921	Minimum Add to Make Parentheses Valid 
+314	388	Longest Absolute File Path 
+315	742	Closest Leaf in a Binary Tree 
+316	491	Increasing Subsequences  
+317	369	Plus One Linked List 
+318	776	Split BST    		
+319	470	Implement Rand10() Using Rand7()
+320	156	Binary Tree Upside Down  
+321	513	Find Bottom Left Tree Value 
+322	702	Search in a Sorted Array of Unknown Size 
+323	533	Lonely Pixel II
+324	368	Largest Divisible Subset
+325	478	Generate Random Point in a Circle 
 326	712	Minimum ASCII Delete Sum for Two Strings    		53.20%	Medium
 327	186	Reverse Words in a String II    		35.70%	Medium
 328	554	Brick Wall    		47.20%	Medium
 329	885	Spiral Matrix III    		63.30%	Medium
-330	40	Combination Sum II    		39.80%	Medium
+330	40	Combination Sum II 
 331	334	Increasing Triplet Subsequence    		39.40%	Medium
 332	866	Prime Palindrome    		18.90%	Medium
 333	801	Minimum Swaps To Make Sequences Increasing    		33.90%	Medium
@@ -335,27 +336,27 @@
 335	129	Sum Root to Leaf Numbers    		41.10%	Medium
 336	769	Max Chunks To Make Sorted    		50.80%	Medium
 337	385	Mini Parser    		31.50%	Medium
-338	245	Shortest Word Distance III    		52.60%	Medium
+338	245	Shortest Word Distance III
 339	886	Possible Bipartition    		40.00%	Medium
 340	646	Maximum Length of Pair Chain    		47.80%	Medium
-341	77	Combinations    		45.60%	Medium
-342	898	Bitwise ORs of Subarrays    		32.70%	Medium
+341	77	Combinations, ------
+342	898	Bitwise ORs of Subarrays 
 343	974	Subarray Sums Divisible by K    		39.70%	Medium
-344	254	Factor Combinations    		43.90%	Medium
-345	320	Generalized Abbreviation    		48.10%	Medium
+344	254	Factor Combinations
+345	320	Generalized Abbreviation
 346	951	Flip Equivalent Binary Trees    		65.00%	Medium
-347	608	Tree Node    		57.30%	Medium
+347	608	Tree Node
 348	752	Open the Lock    		43.90%	Medium
 349	548	Split Array with Equal Sum    		41.70%	Medium
 350	515	Find Largest Value in Each Tree Row    		57.10%	Medium
 351	813	Largest Sum of Averages    		43.50%	Medium
 352	916	Word Subsets    		43.80%	Medium
 353	542	01 Matrix    		34.40%	Medium
-354	309	Best Time to Buy and Sell Stock with Cooldown    		43.40%	Medium
-355	950	Reveal Cards In Increasing Order    		71.10%	Medium
-356	477	Total Hamming Distance    		48.40%	Medium
-357	638	Shopping Offers    		47.70%	Medium
-358	938	Range Sum of BST    		80.50%	Medium
+354	309	Best Time to Buy and Sell Stock with Cooldown, ----
+355	950	Reveal Cards In Increasing Order
+356	477	Total Hamming Distance 
+357	638	Shopping Offers 
+358	938	Range Sum of BST
 359	544	Output Contest Matches    		72.70%	Medium
 360	814	Binary Tree Pruning    		69.70%	Medium
 361	525	Contiguous Array    		42.30%	Medium
@@ -408,7 +409,7 @@
 408	676	Implement Magic Dictionary    		50.90%	Medium
 409	484	Find Permutation    		56.70%	Medium
 410	808	Soup Servings    		35.70%	Medium
-411	444	Sequence Reconstruction    		20.10%	Medium
+411	444	Sequence Reconstruction
 412	481	Magical String    		45.70%	Medium
 413	456	132 Pattern    		27.40%	Medium
 414	583	Delete Operation for Two Strings    		44.10%	Medium

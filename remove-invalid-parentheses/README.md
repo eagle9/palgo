@@ -1,5 +1,6 @@
 301. Remove Invalid Parentheses
-Hard
+Hard 1452 64 Favorite Share
+
 Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
 
 Note: The input string may contain letters other than the parentheses ( and ).
@@ -39,3 +40,8 @@ We have 2 misplaced left and 2 misplaced right parentheses.
 We found out that the exact number of left and right parenthesis that has to be removed to get a valid expression. So, e.g. in a 1000 parentheses string, if there are 2 misplaced left and 2 misplaced right parentheses, after we are done discarding 2 left and 2 right parentheses, we will have only one option per remaining character in the expression i.e. to consider them. We can't discard them.
 
 Topic: Depth-first search, breadth-first search
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Facebook | 78 Amazon | 4 Bloomberg | 3 Postmates | 2
+6 months ~ 1 year1 year ~ 2 years 
+Uber | 5 Google | 3 Pony.ai | 2
