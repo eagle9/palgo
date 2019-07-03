@@ -1,5 +1,6 @@
 759. Employee Free Time
-Hard
+Hard 221 17 Favorite Share
+
 We are given a list schedule of employees, which represents the working time for each employee.
 
 Each employee has a list of non-overlapping Intervals, and these intervals are in sorted order.
@@ -29,6 +30,7 @@ Companies:
 Airbnb | 3 Google | 2 Microsoft | 2 Intuit | 2 Uber | 2 
 Similar: 
 Merge Intervals Medium
+
 Hint: 
 Take all the intervals and do an "events" (or "line sweep") approach - an event of (x, OPEN) increases the number of active intervals, while (x, CLOSE) decreases it. Processing in sorted order from left to right, if the number of active intervals is zero, then you crossed a region of common free time.
 

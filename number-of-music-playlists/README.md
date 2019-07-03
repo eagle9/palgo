@@ -1,5 +1,5 @@
 920. Number of Music Playlists
-Hard
+Hard 215 28 Favorite Share
 
 Your music player contains N different songs and she wants to listen to L (not necessarily different) songs during your trip.  You create a playlist so that:
 
