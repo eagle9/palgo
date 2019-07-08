@@ -3,7 +3,7 @@ int read4(char *buf);
 
 //jz idea and shaun code
 //runtime 4ms, faster than 74%, mem less than 63%
-class Solution1 {
+class Solution {
 public:
     /**
      * @param buf Destination buffer
@@ -39,30 +39,4 @@ public:
     }
 };
 
-
-//jiadai idea, shaun modified, beats 100%
-//directly use char *buf
-class Solution {
-public:
-    /**
-     * @param buf Destination buffer
-     * @param n   Maximum number of characters to read
-     * @return    The number of characters read
-     */
-    int read(char *buf, int n) {
-        int count = 0;
-        for (;;) {
-            //read cur chars and store them at buf+res
-            int size = read4(buf);
-
-            count += size;
-            buf += size;
-            if (size < 4) break;//works too
-            //if (size == 0) break;
-            if (count >= n) break;
-        }
-        return min(count,n);
-        //return offset;
-    }
-};
 

@@ -1,5 +1,6 @@
 158. Read N Characters Given Read4 II - Call multiple times
-Hard
+Hard 286 789 Favorite Share
+
 Given a file and assume that you can only read the file using a given method read4, implement a method read to read n characters. Your method read may be called multiple times.
 
 Method read4:
@@ -24,6 +25,7 @@ read4(buf); // read4 returns 4. Now buf = "abcd", fp points to 'e'
 read4(buf); // read4 returns 4. Now buf = "efgh", fp points to 'i'
 read4(buf); // read4 returns 3. Now buf = "ijk", fp points to end of file
  
+
 Method read:
 
 By using the read4 method, implement the method read that reads n characters from the file and store it in the buffer array buf. Consider that you cannot manipulate the file directly.
@@ -36,6 +38,7 @@ Definition of read:
     Returns:	int
 
 Note: buf[] is destination not source, you will need to write the results to buf[]
+ 
 
 Example 1:
 
@@ -51,6 +54,7 @@ File file("abc");
 Solution sol;
 sol.read(buf, 4); // After calling your read method, buf should contain "abc". We read a total of 3 characters from the file, so return 3.
 sol.read(buf, 1); // We have reached the end of file, no more characters can be read. So return 0.
+ 
 
 Note:
 
@@ -59,5 +63,13 @@ The read function may be called multiple times.
 Please remember to RESET your class variables declared in Solution, as static/class variables are persisted across multiple test cases. Please see here for more details.
 You may assume the destination buffer array, buf, is guaranteed to have enough space for storing n characters.
 It is guaranteed that in a given test case the same buffer buf is called by read.
-Similar: Read N characters given read4
+
+LeetCode
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+
+Google | 16 Facebook | 13 Lyft | 4 Uber | 2
+
+Similar:
+Read N Characters Given Read4 Easy
+
 Topic: String

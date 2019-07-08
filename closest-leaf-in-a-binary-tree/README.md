@@ -1,7 +1,5 @@
 742. Closest Leaf in a Binary Tree
-Medium
-
-242 72 
+Medium 244 72 Favorite Share
 
 Given a binary tree where every node has a unique value, and a target key k, find the value of the nearest leaf node to target k in the tree.
 
@@ -22,14 +20,12 @@ Output: 2 (or 3)
 
 Explanation: Either 2 or 3 is the nearest leaf node to the target of 1.
 Example 2:
-
 Input:
 root = [1], k = 1
 Output: 1
-
 Explanation: The nearest leaf node is the root node itself.
-Example 3:
 
+Example 3:
 Input:
 root = [1,2,3,4,null,null,null,5,null,6], k = 2
 Diagram of binary tree:
@@ -55,3 +51,4 @@ There exists some node in the given binary tree for which node.val == k.
 Databricks | 4 Google | 3 Amazon | 2
 
 Convert the tree to a general graph, and do a breadth-first search. Alternatively, find the closest leaf for every node on the path from root to target.
+

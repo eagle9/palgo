@@ -1,15 +1,17 @@
 381. Insert Delete GetRandom O(1) - Duplicates allowed
-Hard
+Hard 434 45 Favorite Share
+
 Design a data structure that supports all following operations in average O(1) time.
 
 Note: Duplicate elements are allowed.
 insert(val): Inserts an item val to the collection.
 remove(val): Removes an item val from the collection if present.
 getRandom: Returns a random element from current collection of elements. The probability of each element being returned is linearly related to the number of same value the collection contains.
-
 Example:
+
 // Init an empty collection.
 RandomizedCollection collection = new RandomizedCollection();
+
 // Inserts 1 to the collection. Returns true as the collection did not contain 1.
 collection.insert(1);
 
@@ -27,8 +29,14 @@ collection.remove(1);
 
 // getRandom should return 1 and 2 both equally likely.
 collection.getRandom();
-Companies: Uber | 4 Google | 4 Affirm | 3 LinkedIn | 2 Amazon | 2
-Similar: 
+
+0 ~ 6 months
+Facebook |3 
+6 months ~ 1 year1 year ~ 2 years
+Uber | 4 Google | 4 LinkedIn | 4 Affirm | 3 Amazon | 2
+
+Similar:
 Insert Delete GetRandom O(1) Medium
-Topic: Array, hash table, design
-both huahua and grandyang has good solutions
+
+Topic: Array, Hash Table, Design
+

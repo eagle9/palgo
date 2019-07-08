@@ -1,5 +1,5 @@
 31. Next Permutation
-Medium, fscore = 70%
+Medium 1877 588 Favorite Share
 
 Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
 
