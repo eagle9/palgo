@@ -1,7 +1,8 @@
 /*
 给定我们一个数组，让我们返回一个新数组，对于每一个位置上的数是其他位置上数的乘积，并且限定了时间复杂度O(n)，并且不让我们用除法。如果让用除法的话，那这道题就应该属于Easy，因为可以先遍历一遍数组求出所有数字之积，然后除以对应位置的上的数字。但是这道题禁止我们使用除法，那么我们只能另辟蹊径。我们想，对于某一个数字，如果我们知道其前面所有数字的乘积，同时也知道后面所有的数乘积，那么二者相乘就是我们要的结果，所以我们只要分别创建出这两个数组即可，分别从数组的两个方向遍历就可以分别创建出乘积累积数组。
 
-grandyang idea1, 2ms, faster than 97%
+grandyang idea1,shaun absorbed, cutting angle prefix sum --> prefix product for array
+2ms, faster than 97%
 */
 class Solution1 {
     public int[] productExceptSelf(int[] a) {
@@ -20,6 +21,7 @@ class Solution1 {
             bwd[i - 1] = bwd[i] * a[i];
         }
         for (int i = 0; i < n; ++i) {
+			//      n0..n[i-1]   n[i+1] ... n[n-1]
             res[i] = fwd[i] * bwd[i];
         }
         return res;

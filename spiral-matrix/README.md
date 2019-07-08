@@ -1,5 +1,5 @@
 54. Spiral Matrix
-Medium
+Medium 1161 421 Favorite Share
 
 Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.
 
@@ -20,9 +20,20 @@ Input:
   [9,10,11,12]
 ]
 Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+Accepted
+243.4K
+Submissions
+791.6K
+Seen this question in a real interview before?
+Yes
+No
+Contributor
+LeetCode
 
+Companies:
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
-Companies: Microsoft | 11 Google | 10 Bloomberg | 6 Apple | 4 Walmart Labs | 4 Paypal | 4 Adobe | 3 Amazon | 3 Uber | 3 Zillow | 2 Hulu | 2
+
+Microsoft | 12 Amazon | 6 Apple | 5 Google | 4 Facebook | 4 Robinhood | 3 Bloomberg | 3 Walmart Labs | 3 ByteDance | 3 Drawbridge | 2 Uber | 2 Yahoo | 2 LinkedIn | 2 Paypal | 2 Snapchat | 2
 
 Similar:
 Spiral Matrix II Medium

@@ -1,5 +1,6 @@
 393. UTF-8 Validation
-Medium
+Medium 145 687 Favorite Share
+
 A character in UTF8 can be from 1 to 4 bytes long, subjected to the following rules:
 
 For 1-byte character, the first bit is a 0, followed by its unicode code.
@@ -30,6 +31,11 @@ Return false.
 The first 3 bits are all one's and the 4th bit is 0 means it is a 3-bytes character.
 The next byte is a continuation byte which starts with 10 and that's correct.
 But the second continuation byte does not start with 10, so it is invalid.
+
+Company:
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+
+Palantir Technologies | 21 Google | 4 Facebook | 2
 
 Topic: Bit manipulation
 Hint:

@@ -1,5 +1,6 @@
 98. Validate Binary Search Tree
-Medium
+Medium 2066 303 Favorite Share
+
 Given a binary tree, determine if it is a valid binary search tree (BST).
 
 Assume a BST is defined as follows:

@@ -1,6 +1,8 @@
 380. Insert Delete GetRandom O(1)
-Medium
+Medium 1165 90 Favorite Share
+
 Design a data structure that supports all following operations in average O(1) time.
+
 insert(val): Inserts an item val to the set if not already present.
 remove(val): Removes an item val from the set if present.
 getRandom: Returns a random element from current set of elements. Each element must have the same probability of being returned.
@@ -18,17 +20,16 @@ randomSet.insert(2);
 randomSet.getRandom();
 // Removes 1 from the set, returns true. Set now contains [2].
 randomSet.remove(1);
-
 // 2 was already in the set, so return false.
 randomSet.insert(2);
-
 // Since 2 is the only number in the set, getRandom always return 2.
 randomSet.getRandom();
 
-Companies: Google | 13 Bloomberg | 8 Amazon | 6 LinkedIn | 5 Facebook | 5 Two Sigma | 5 Uber | 3 Microsoft | 3 Walmart Labs | 3 Yelp | 2 Quora | 2
-Similar: 
-Insert Delete GetRandom O(1) - Duplicates allowed, Hard
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 
-Such a high frequency problem 
-Topic: 
-Array, hash table, design
+Amazon | 13 Google | 10 LinkedIn | 8 Uber | 5 Facebook | 4 Apple | 4 Databricks | 4 Indeed | 4 Bloomberg | 2 Two Sigma | 2 Microsoft | 2 Twitter | 2 Quora | 2 Oracle | 2 VMware | 2 Wish | 2 Yandex | 2
+
+Similar:
+Insert Delete GetRandom O(1) - Duplicates allowed Hard
+
+Topic: Array, Hash Table, Design
