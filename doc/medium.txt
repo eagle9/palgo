@@ -19,30 +19,33 @@
 19	54	Spiral Matrix,----1, loop array, butting a loop with loops with updates
 20	139	Word Break, ----, 1, break into left and right, right in dict, break left smaller, recur memo or dp
 21	681	Next Closest Time---1,string loop naive enumerate and check   
+================july 8
 22	289	Game of Life----- 1,cutting in place computing, no extra variable, but different bits,  
 23	560	Subarray Sum Equals K,------1, cutting prefixsum and hashtable,  
-24	98	Validate Binary Search Tree, -----, 1, 
+24	98	Validate Binary Search Tree, -----, 1, cutting inorder dfs
 25	621	Task Scheduler, ----1, 
-26	91	Decode Ways, ----, 
-27	236	Lowest Common Ancestor of a Binary Tree, ---0.3
-28	49	Group Anagrams, ---
+26	91	Decode Ways, ----, 1, string dp from shorter to longer, 1c or 2c
+27	236	Lowest Common Ancestor of a Binary Tree, ---,1 helper function choice, return ancestor of either p or q
+28	49	Group Anagrams, ---1, use sort to find rep, then put into rep's bucket
 29	380	Insert Delete GetRandom O(1), ---1, design, cutting combine hashmap and array, remove swap tail
-30	8	String to Integer (atoi)
-31	46	Permutations, ------0.7 
-32	151	Reverse Words in a String
-33	695	Max Area of Island
-34	127	Word Ladder
-35	547	Friend Circles, -----0.7, uf
-36	173	Binary Search Tree Iterator, -----0.7
-37	79	Word Search
-38	192	Word Frequency
-39	215	Kth Largest Element in an Array
-40	528	Random Pick with Weight
-41	609	Find Duplicate File in System
-42	50	Pow(x, n)
-43	103	Binary Tree Zigzag Level Order Traversal, -----
-44	923	3Sum With Multiplicity, -----
-45	16	3Sum Closest, ----
+30	8	String to Integer (atoi), ----1, string and math, cutting, 
+31	46	Permutations, ------1, classic, use template, nums[i] used or not 
+32	151	Reverse Words in a String,----1, cutting, tokonize with stream getline
+33	695	Max Area of Island, -----,1, cutting dfs dep is island area,  
+34	127	Word Ladder, -----, 1, cutting, graph model, bfs, with some detail tweaks
+35	547	Friend Circles, -----1, cutting, direct and natural apply of uf
+36	173	Binary Search Tree Iterator, -----,1, cutting inorder with stack, 
+37	79	Word Search, -----, 1, cutting, dfs path sync with word, try all starts
+38	192	Word Frequency, -----, 1, bash, not worth 
+39	215	Kth Largest Element in an Array, -----, 0.7, still not fully
+        Sort an Array, ----1, divide and conquer, details, quick sort, not fully
+40	528	Random Pick with Weight, ----??-
+41	609	Find Duplicate File in System, -----??
+42	50	Pow(x, n), ----??
+43	103	Binary Tree Zigzag Level Order Traversal, -----??
+44	923	3Sum With Multiplicity, -----??
+45	16	3Sum Closest, ----??
+======================== July 8
 46	43	Multiply Strings
 47	93	Restore IP Addresses
 48	341	Flatten Nested List Iterator, ----

@@ -1,5 +1,6 @@
 /*
 grandyang dfs with backtracking
+cutting try all starting cell, dfs path along the word string, reach end?
 shaun deep read and modified according to shaun's first time idea
 
 Runtime: 320 ms, faster than 36.08% of C++ online submissions for Word Search.

@@ -1,10 +1,9 @@
 46. Permutations
-Medium
+Medium 2145 64 Favorite Share
 
 Given a collection of distinct integers, return all possible permutations.
 
 Example:
-
 Input: [1,2,3]
 Output:
 [
@@ -15,15 +14,16 @@ Output:
   [3,1,2],
   [3,2,1]
 ]
+Accepted 396,925
+Submissions 709,715
 
+Companies:
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 
-Companies: LinkedIn | 7 Facebook | 7 Amazon | 6 Yahoo | 5 Google | 4 Apple | 4 VMware | 3 Paypal | 2 Microsoft | 2 Bloomberg | 2 Adobe | 2 Cisco | 2 Oracle | 2 Uber | 2
+Amazon | 7 Microsoft | 7 Adobe | 7 VMware | 5 Facebook | 4 Apple | 4 Epic Systems | 3 Yahoo | 3 Google | 2 LinkedIn | 2 Uber | 2 SAP | 2
 
 Similar:
 Next Permutation Medium
 Permutations II Medium
 Permutation Sequence Medium
 Combinations Medium
-
-Topic: Backtracking

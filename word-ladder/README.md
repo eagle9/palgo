@@ -1,5 +1,5 @@
 127. Word Ladder
-Medium
+Medium 1522 822 Favorite Share
 
 Given two words (beginWord and endWord), and a dictionary's word list, find the length of shortest transformation sequence from beginWord to endWord, such that:
 

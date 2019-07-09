@@ -1,5 +1,6 @@
 79. Word Search
-Medium
+Medium 1863 94 Favorite Share, very worth
+
 Given a 2D board and a word, find if the word exists in the grid.
 
 The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.

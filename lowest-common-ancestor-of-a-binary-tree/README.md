@@ -1,23 +1,34 @@
-88. Lowest Common Ancestor of a Binary Tree
-Given the root and two nodes in a Binary Tree. Find the lowest common ancestor(LCA) of the two nodes.
+236. Lowest Common Ancestor of a Binary Tree
+Medium 2045 138 Favorite Share
 
-The lowest common ancestor is the node with largest depth which is the ancestor of both nodes.
+Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
 
-Example
-For the following binary tree:
+According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
 
-  4
- / \
-3   7
-   / \
-  5   6
-LCA(3, 5) = 4
+Given the following binary tree:  root = [3,5,1,6,2,0,8,null,null,7,4]
 
-LCA(5, 6) = 7
+Example 1:
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
+Output: 3
+Explanation: The LCA of nodes 5 and 1 is 3.
 
-LCA(6, 7) = 7
+Example 2:
+Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
+Output: 5
+Explanation: The LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
+ 
+Note:
 
-Notice
-Assume two nodes are exist in tree.
-Related Problems
-Lowest common ancestor iii, lowest common ancestor ii
+All of the nodes' values will be unique.
+p and q are different and both values will exist in the binary tree.
+Accepted 292,404
+Submissions 768,386
+
+Contributor LeetCode
+Companies:
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+
+Amazon | 13 Facebook | 9 Microsoft | 8 LinkedIn | 6 Apple | 3 Google | 2 Visa | 2 Uber | 2 Paypal | 2 Zillow | 2 Airbnb | 2 
+
+Similar:
+Lowest Common Ancestor of a Binary Search Tree Easy
