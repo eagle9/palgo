@@ -1,5 +1,5 @@
 528. Random Pick with Weight
-Medium
+Medium 272 516 Favorite Share 
 
 Given an array w of positive integers, where w[i] describes the weight of index i, write a function pickIndex which randomly picks an index in proportion to its weight.
 

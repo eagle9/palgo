@@ -1,5 +1,5 @@
 50. Pow(x, n)
-Medium
+Medium 883 2162 Favorite Share
 
 Implement pow(x, n), which calculates x raised to the power n (xn).
 
@@ -23,6 +23,8 @@ n is a 32-bit signed integer, within the range [−231, 231 − 1]
 Companies:
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 Facebook | 17 LinkedIn | 7 Amazon | 5 Google | 5 Microsoft | 3 Apple | 3 Adobe | 3 Tencent | 2 Oracle | 2 Goldman Sachs | 2
+
+Topic: Math, Binary Search
 
 Similar:
 Sqrt(x) Easy

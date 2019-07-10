@@ -1,5 +1,5 @@
 33. Search in Rotated Sorted Array
-Medium, 70%
+Medium 2580 321 Favorite Share
 
 Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
 

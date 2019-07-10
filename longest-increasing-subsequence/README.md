@@ -1,5 +1,5 @@
 300. Longest Increasing Subsequence
-Medium, 40%
+Medium 2648 60 Favorite Share 
 
 Given an unsorted array of integers, find the length of longest increasing subsequence.
 
@@ -12,8 +12,9 @@ There may be more than one LIS combination, it is only necessary for you to retu
 Your algorithm should run in O(n2) complexity.
 Follow up: Could you improve it to O(n log n) time complexity?
 
+Companies:
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
-Companies: Facebook | 10 Microsoft | 5 Amazon | 4 Adobe | 3 Google | 3 Apple | 3 VMware | 2 Airbnb | 2 
+Amazon | 9 Google | 6 Microsoft | 6 Facebook | 3
 
 Similar: 
 Increasing Triplet Subsequence Medium
@@ -31,7 +32,6 @@ dp angle: dp[i] LIS from 0 to i, for d[i+1],  dp[i+1] = max (dp[k]+1), k = 0...i
 time O(n^2)
 
 binary search angle: 
-
 
 find first element in dp that is >= cur
 []

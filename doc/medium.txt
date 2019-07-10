@@ -5,11 +5,11 @@
 5	5	Longest Palindromic Substring 
 6	138	Copy List with Random Pointer, -----0.8
 7	56	Merge Intervals, ---,1 
-8	15	3Sum, ----, 0.8
+8	15	3Sum, ----, 1, ---, cutting sort and  2p
 9	253	Meeting Rooms II, ----,1, my own idea with sorting ans sweeping, after bug fix  
 10	238	Product of Array Except Self, ---, 1, prefix sum approach
 11	11	Container With Most Water, ---1, 
-12	33	Search in Rotated Sorted Array, ----, 
+12	33	Search in Rotated Sorted Array, ----,1, cutting, binary search cases 
 13	322	Coin Change, ----,1, recur, dp, 
 14	22	Generate Parentheses, ----1, backtracking growing candidate, with left and right to add 
 15	17	Letter Combinations of a Phone Number, ----, 1, own idea and accepted,
@@ -39,12 +39,12 @@
 38	192	Word Frequency, -----, 1, bash, not worth 
 39	215	Kth Largest Element in an Array, -----, 0.7, still not fully
         Sort an Array, ----1, divide and conquer, details, quick sort, not fully
-40	528	Random Pick with Weight, ----??-
-41	609	Find Duplicate File in System, -----??
-42	50	Pow(x, n), ----??
-43	103	Binary Tree Zigzag Level Order Traversal, -----??
-44	923	3Sum With Multiplicity, -----??
-45	16	3Sum Closest, ----??
+40	528	Random Pick with Weight, -----, 1, g12, not quite understand the prob
+41	609	Find Duplicate File in System, -----,1, g2, not quite understand
+42	50	Pow(x, n), ----1, math binary search, 
+43	103	Binary Tree Zigzag Level Order Traversal, -----, 1, bfs, level with q
+44	923	3Sum With Multiplicity, -----1, counting combination
+45	16	3Sum Closest, ----,1, cutting, sort and 2p, update
 ======================== July 8
 46	43	Multiply Strings
 47	93	Restore IP Addresses
@@ -71,6 +71,7 @@
 68	713	Subarray Product Less Than K
 69	348	Design Tic-Tac-Toe
 70	735	Asteroid Collision    
+========July 10
 71	457	Circular Array Loop  
 72	332	Reconstruct Itinerary, -----, 0.4
 73	199	Binary Tree Right Side View, ----1, own idea, 

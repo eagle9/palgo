@@ -11,6 +11,7 @@
  * }
  */
 /*jiadai c++, understood
+level by level, alternate direction
 Runtime: 12 ms, faster than 96.82% of C++ online submissions for Binary Tree Zigzag Level Order Traversal.
 Memory Usage: 13.6 MB, less than 28.86% of C++ online submissions for Binary Tree Zigzag Level Order Traversal.
 */
