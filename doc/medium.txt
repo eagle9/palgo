@@ -61,7 +61,7 @@
 58	92	Reverse Linked List II, -----
 59	300	Longest Increasing Subsequence ----1, 
 60	177	Nth Highest Salary
-61	39	Combination Sum, ----
+61	39	Combination Sum, ----1, cutting, take ith number 0 or more times, 
 62	133	Clone Graph, ---,1, cutting: copy and map nodes first, then neighbors
 63	277	Find the Celebrity , ----, 0.3  
 64	449	Serialize and Deserialize BST, ----
