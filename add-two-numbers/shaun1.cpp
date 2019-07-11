@@ -7,6 +7,10 @@
  * };
  */
 //shaun's own idea and accepted second sub
+//cutting --- a new list will be created, hence dummy declaration
+//    how to deal carry, use a var for carry
+// remember to terminate the new list
+
 //runtime 20ms, faster than 99%, mem less than 63%
 class Solution {
 public:
@@ -15,6 +19,7 @@ public:
         
         ListNode* cur1 = l1;
         ListNode* cur2 = l2;
+        //a new list will be created, hence dummy node
         ListNode* dummy = new ListNode(0);
         ListNode* prev = dummy;
         int carry = 0;
