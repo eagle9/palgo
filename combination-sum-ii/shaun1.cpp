@@ -1,6 +1,8 @@
 //shaun's own idea, runtime 12ms, faster than 85%, memory less than 25%
 //accepted after adding i++ after nums[i] = p.first; count[i] = p.second;
-
+// my thinking is similar to combination sum 1, where you can use a number 0 or more times
+// here in 2, can only take a number as its copies allow
+//so i did the processing get a unique number array and count of each number
 typedef vector<vector<int>> vvi;
 typedef vector<int> vi;
 class Solution {
@@ -68,3 +70,4 @@ A solution set is:
   [5]
 ]
 */
+
