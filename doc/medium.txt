@@ -19,7 +19,7 @@
 19	54	Spiral Matrix,----1, loop array, butting a loop with loops with updates
 20	139	Word Break, ----, 1, break into left and right, right in dict, break left smaller, recur memo or dp
 21	681	Next Closest Time---1,string loop naive enumerate and check   
-================july 8
+================July 8
 22	289	Game of Life----- 1,cutting in place computing, no extra variable, but different bits,  
 23	560	Subarray Sum Equals K,------1, cutting prefixsum and hashtable,  
 24	98	Validate Binary Search Tree, -----, 1, cutting inorder dfs
@@ -46,10 +46,10 @@
 44	923	3Sum With Multiplicity, -----1, counting combination
 45	16	3Sum Closest, ----,1, cutting, sort and 2p, update
 ======================== July 8
-46	43	Multiply Strings
-47	93	Restore IP Addresses
+46	43	Multiply Strings, ----1,cutting: array to store big int,m*n single digit mulitplications, use example to figure details  
+47	93	Restore IP Addresses, ----1, cutting: split string according to ip address rule, try all possibilities
 48	341	Flatten Nested List Iterator, ----
-49	394	Decode String
+49	394	Decode String, -----
 50	48	Rotate Image, -----
 51	364	Nested List Weight Sum II
 52	362	Design Hit Counter
