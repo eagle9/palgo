@@ -332,7 +332,7 @@
 327	186	Reverse Words in a String II    	
 328	554	Brick Wall
 329	885	Spiral Matrix III
-330	40	Combination Sum II 
+330	40	Combination Sum II, ----1, cutting similar to 1, get unique number and its count, then dfs take ith number 0 to count times,  
 331	334	Increasing Triplet Subsequence
 332	866	Prime Palindrome
 333	801	Minimum Swaps To Make Sequences Increasing
