@@ -24,7 +24,7 @@ class Solution1 {
         if (idx == word.size()) return true;
         
         bool res = false;
-        //in bound, not visited, grid[i][j] == word[idx]
+        //go to neighbor such that 1)in bound, 2)not visited, 3)grid[i][j] == word[idx]
         if (i >= 0 && j >= 0 && i < m_ && j < n_ && !visited[i][j] && board[i][j] == word[idx]) {
             visited[i][j] = true;
             for (auto v: dir_) {
@@ -32,6 +32,8 @@ class Solution1 {
                 int ni = i + v.first, nj = j + v.second;
                 if (helper(board, word, idx + 1, ni, nj, visited)) {
                     res = true;
+					//do not return, why? since we have try all direction 
+					//once find a good direction
                     break;
                 }
             }

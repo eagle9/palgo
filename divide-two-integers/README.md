@@ -1,17 +1,32 @@
-414. Divide Two Integers
-Description
-Divide two integers without using multiplication, division and mod operator.
+29. Divide Two Integers
+Medium 701 3371 Favorite Share
 
-If it is overflow, return 2147483647
+Given two integers dividend and divisor, divide two integers without using multiplication, division and mod operator.
 
-Have you met this question in a real interview?  
-Example
-Given dividend = 100 and divisor = 9, return 11.
+Return the quotient after dividing dividend by divisor.
 
-Related Problems
-plus one, add binary
+The integer division should truncate toward zero.
 
-Idea:
-algo 1: continue to subtract divisor from dividend until less than divisor, can get result, but might lead to TLE
-Algo 2: similar to binary division
+Example 1:
+Input: dividend = 10, divisor = 3
+Output: 3
+
+Example 2:
+Input: dividend = 7, divisor = -3
+Output: -2
+
+Note:
+Both dividend and divisor will be 32-bit signed integers.
+The divisor will never be 0.
+Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1]. For the purpose of this problem, assume that your function returns 231 − 1 when the division result overflows.
+
+Accepted 203.4K
+Submissions 1.3M
+
+Contributor LeetCode
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Facebook | 7 Visa | 3 Google | 2 Microsoft | 2 Adobe | 2
+
+Topic: Math, Binary Search
+
 

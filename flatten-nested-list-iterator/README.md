@@ -1,5 +1,5 @@
 341. Flatten Nested List Iterator
-Medium, 50%
+Medium 998 418 Favorite Share
 
 Given a nested list of integers, implement an iterator to flatten it.
 
@@ -31,6 +31,12 @@ Array Nesting Medium
 
 
 idea
+Input: [[1,1],2,[1,1]]
+Output: [1,1,2,1,1]
+Input: [1,[4,[6]]]
+Output: [1,4,6]
+
+
 vector<NestInteger>& nestedList
 use stack??? i feel like we need to use queue!!!!
 stack first in, last out, last in, first out

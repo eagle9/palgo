@@ -1,5 +1,5 @@
 735. Asteroid Collision
-Medium
+Medium 461 58 Favorite Share
 
 We are given an array asteroids of integers representing asteroids in a row.
 
@@ -13,21 +13,18 @@ asteroids = [5, 10, -5]
 Output: [5, 10]
 Explanation: 
 The 10 and -5 collide resulting in 10.  The 5 and 10 never collide.
-
 Example 2:
 Input: 
 asteroids = [8, -8]
 Output: []
 Explanation: 
 The 8 and -8 collide exploding each other.
-
 Example 3:
 Input: 
 asteroids = [10, 2, -5]
 Output: [10]
 Explanation: 
 The 2 and -5 collide resulting in -5.  The 10 and -5 collide resulting in 10.
-
 Example 4:
 Input: 
 asteroids = [-2, -1, 1, 2]
@@ -39,15 +36,16 @@ Note:
 
 The length of asteroids will be at most 10000.
 Each asteroid will be a non-zero integer in the range [-1000, 1000]..
+Accepted 26,957
+Submissions 69,797
+
+Contributor awice
+
+Companies:
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
-
-Lyft | 26 eBay | 2 Microsoft | 2
-
-Similar:
-Can Place Flowers Easy
-
-Hint 1:
-Say a row of asteroids is stable. What happens when a new asteroid is added on the right?
-
+Lyft | 20 Visa | 2
 
 Topic: Stack
+Similar:
+Can Place Flowers Easy
+Say a row of asteroids is stable. What happens when a new asteroid is added on the right?

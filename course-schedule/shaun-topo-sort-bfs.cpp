@@ -1,4 +1,6 @@
 //shaun idea and code, runtime 20ms, faster than 96%, mem less than 75%
+//cutting --- graph topological sorting, from order between pairs, to order of all nodes
+//  track indegree and use bfs
 //accept first sub after changing nb from vector<int,vector<int>> to unordered_map<int, vector<int>>
 class Solution {
 public:

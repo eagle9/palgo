@@ -10,7 +10,7 @@ public:
         int candidate = 0;
         //
         for (int i = 1; i < n; ++i) {
-            //if candidate knows i, then candidate is no longer a candidate
+            //if candidate knows i, then candidate is no longer a candidate, update candidate and continue check
             if (knows(candidate,i)) {
                 candidate = i;
             }

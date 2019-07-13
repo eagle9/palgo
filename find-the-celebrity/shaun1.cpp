@@ -15,7 +15,7 @@ public:
                 if (knows(i,j)) count2++;
                 if (count2 > 1) break; //early break since count2 should remain 1
                 if (knows(j,i)) count++;
-         }
+         	}
             
             //all knows i,  and i does not knows others except self
             if (count2 == 1 && count == n) return i;

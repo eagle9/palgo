@@ -1,3 +1,4 @@
+
 /**
  * // This is the interface that allows for creating nested lists.
  * // You should not implement it, or speculate about its implementation
@@ -15,8 +16,19 @@
  *     const vector<NestedInteger> &getList() const;
  * };
  */
-//shaun 2nd round, own idea, thinking and code, knowing stack will be helpful and used. what if no such hint???
+/*shaun 2nd round, own idea with 2 stacks, thinking and code, knowing stack will be helpful and used. what if no such hint???
+1 stack s1<NestedInteger>,  another stack s2<int>
+use stack1 to peel the nestedinteger list, if integer, push to stack2
+now stack2 has all integers in the original order
+*/
 //use example to figure out the details
+//Input: [1,[4,[6]]]
+// st1:(1, [4..]) , top = [4..]
+// st1:(1, 4,[6])    top=[6]
+// st1:(1, 4, 6)
+//st2: 6 4 1 
+//Output: [1,4,6]
+//
 //accepted first sub, runtime 24ms, faster than 78%, mem less than 12%
 class NestedIterator {
 public:
@@ -55,3 +67,4 @@ private:
  * NestedIterator i(nestedList);
  * while (i.hasNext()) cout << i.next();
  */
+

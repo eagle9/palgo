@@ -1,6 +1,7 @@
 394. Decode String
-Medium
-Given an encoded string, return it's decoded string.
+Medium 1579 90 Favorite Share
+
+Given an encoded string, return its decoded string.
 
 The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. Note that k is guaranteed to be a positive integer.
 
@@ -13,10 +14,10 @@ Examples:
 s = "3[a]2[bc]", return "aaabcbc".
 s = "3[a2[c]]", return "accaccacc".
 s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
-<<<<<<< HEAD
-Topic: stack, dfs
-Similar: number of atoms, encode string with shortest length
-=======
+ 
 
-topic: stack, dfs
-similar: encode string with shortest length, number of atoms
+Accepted 111,208
+Submissions 245,070
+
+Contributor LeetCode
+

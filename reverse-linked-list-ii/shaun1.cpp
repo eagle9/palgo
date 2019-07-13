@@ -9,6 +9,16 @@
 //shaun's own idea, accepted after fixing typo p.next ==> p->next
 //fixing access p->next when p is NULL
 //runtime 4ms, faster than 100%, mem less than 100%
+//               m          n
+/*        prev1 tail1     head1 after1 
+ *         ---------------->
+ *    1 -> 2 ->  3 -> 4 ->  5 ->  6   -> 7
+ *            <- 3 <-4 <- 5
+ *               ----------------->
+ *            prev  cur temp      
+ *
+ *
+ */
 class Solution {
 public:
     ListNode* reverseBetween(ListNode* head, int m, int n) {
