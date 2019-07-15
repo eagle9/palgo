@@ -1,5 +1,5 @@
 152. Maximum Product Subarray
-Medium, 50%
+Medium 2227 106 Favorite Share
 
 Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product.
 

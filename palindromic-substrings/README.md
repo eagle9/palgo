@@ -1,5 +1,5 @@
 647. Palindromic Substrings
-Medium
+Medium 1454 75 Favorite Share
 
 Given a string, your task is to count how many palindromic substrings in this string.
 

@@ -1,5 +1,5 @@
 206. Reverse Linked List
-Easy
+Easy 2485 65 Favorite Share
 
 Reverse a singly linked list.
 
@@ -12,6 +12,8 @@ A linked list can be reversed either iteratively or recursively. Could you imple
 
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 Amazon | 18 Microsoft | 14 Apple | 10 Yandex | 8 Adobe | 7 Facebook | 6 Google | 6 Mathworks | 6 Yahoo | 5 Bloomberg | 4 VMware | 4 Cisco | 4 Baidu | 3 Alibaba | 3 Goldman Sachs | 3 eBay | 2 Uber | 2 TripAdvisor | 2 Oracle | 2
+
+Topic: Linked List
 
 Similar:
 Reverse Linked List II Medium

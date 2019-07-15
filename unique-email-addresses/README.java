@@ -1,5 +1,5 @@
 929. Unique Email Addresses
-Easy
+Easy 498 140 Favorite Share
 
 Every email consists of a local name and a domain name, separated by the @ sign.
 
@@ -15,19 +15,23 @@ It is possible to use both of these rules at the same time.
 
 Given a list of emails, we send one email to each address in the list.  How many different addresses actually receive mails? 
 
- 
-
 Example 1:
-
 Input: ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
 Output: 2
 Explanation: "testemail@leetcode.com" and "testemail@lee.tcode.com" actually receive mails
- 
 
 Note:
 
 1 <= emails[i].length <= 100
 1 <= emails.length <= 100
 Each emails[i] contains exactly one '@' character.
+All local and domain names are non-empty.
+Local names do not start with a '+' character.
+Accepted 128.6K
+Submissions 183.4K
 
-tag: String
+Contributor LeetCode
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+
+Google | 59 Amazon | 9 Adobe | 5 Yahoo | 2 
+

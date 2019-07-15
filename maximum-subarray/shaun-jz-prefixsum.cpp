@@ -1,5 +1,7 @@
 //jz linhuchong o(n) idea, shaun coded from memory
 //runtime 8ms, faster than 99%, mem less than 100%
+//cutting prefixsum trick, which computing prefixSum, track the minimum prefix sum seen so far, their difference is the subarray with max sum
+
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
@@ -9,6 +11,7 @@ public:
         
         for (int x: nums) {
             sum += x;
+            //minSum = min(minSum, sum); //bug 1, minSum should 1 step slower
             res = max(res, sum - minSum);
             minSum = min(minSum, sum);
         }

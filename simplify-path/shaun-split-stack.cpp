@@ -1,4 +1,5 @@
 //shaun with split and stack
+//cutting, split with /, tokenizer from string stream, use example, you will find once a token is .., pop the stack.  end up with simplifed folder-names stored in stack, then pop all out, last insert at front
 //runtime 8ms, faster than 88.70%, mem less than 9%
 #include <sstream>
 class Solution {
@@ -45,7 +46,7 @@ private:
     //use string::find_first_of(delim, start) to implement java style string split
     //runtime 8ms, faster than 88.40%, mem less than 9%
     vector<string> split(string& s, string delim)  { 
-    //vector<string> split(string& s, string& delim)  {  //bug if you call with literal delim, reference not working 
+    //vector<string> split(string& s, string& delim)  {  
         size_t prev = 0; //prev index of delim
         size_t index=s.find_first_of(delim,prev); //current index of delim
         vector<string> res;
@@ -60,4 +61,5 @@ private:
         return res;
     }
 };
+
 

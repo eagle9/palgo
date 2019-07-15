@@ -7,6 +7,7 @@
  * };
  */
 //shaun's own idea and implementation, accepted first sub
+//cutting: two moving pointers from head, one slow and one fast(2 steps a time), see if they meet
 //runtime 12ms, faster than 99%, mem less than 77%
 class Solution {
 public:

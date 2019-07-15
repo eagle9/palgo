@@ -1,5 +1,5 @@
 162. Find Peak Element
-Medium, 50%
+Medium 892 1367 Favorite Share
 
 A peak element is an element that is greater than its neighbors.
 

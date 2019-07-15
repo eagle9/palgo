@@ -32,6 +32,8 @@ Output: true
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 Amazon | 29 Facebook | 22 Microsoft | 13 Google | 9 Apple | 9 Twitter | 7 Bloomberg | 6 LinkedIn | 4 Blizzard | 3 Adobe | 3 VMware | 3 Uber | 3 Walmart Labs | 3 Spotify | 3 Atlassian | 2 Tencent | 2 Yahoo | 2 GoDaddy | 2 Oracle | 2 Cisco | 2 More
 
+Topic: String, Stack
+
 Similar:
 Generate Parentheses Medium
 Longest Valid Parentheses Hard

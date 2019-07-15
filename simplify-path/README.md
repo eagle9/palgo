@@ -1,5 +1,5 @@
 71. Simplify Path
-Medium
+Medium 447 1237 Favorite Share
 
 Given an absolute path for a file (Unix-style), simplify it. Or in other words, convert it to the canonical path.
 

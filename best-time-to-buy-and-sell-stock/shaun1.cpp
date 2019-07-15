@@ -1,5 +1,6 @@
 //shaun original idea, first sub accepted
 //runtime 8ms, faster than 99%, memory less than 64%
+//cutting at ith day, what's the low price from 0 to i-1? 
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {

@@ -1,5 +1,5 @@
 141. Linked List Cycle
-Easy
+Easy 1646 191 Favorite Share
 
 Given a linked list, determine if it has a cycle in it.
 

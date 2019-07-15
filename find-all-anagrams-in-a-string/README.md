@@ -1,5 +1,6 @@
 438. Find All Anagrams in a String
-Easy
+Easy 1683 131 Favorite Share
+
 Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
 
 Strings consists of lowercase English letters only and the length of both strings s and p will not be larger than 20,100.
@@ -30,4 +31,15 @@ The substring with start index = 0 is "ab", which is an anagram of "ab".
 The substring with start index = 1 is "ba", which is an anagram of "ab".
 The substring with start index = 2 is "ab", which is an anagram of "ab".
 
-topic: hash table
+Accepted 132,403
+Submissions 351,681
+
+Contributor Stomach_ache
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Facebook | 20 Amazon | 5 Google | 4
+
+Topic: Hash Table
+
+Similar:
+Valid Anagram Easy
+Permutation in String Medium

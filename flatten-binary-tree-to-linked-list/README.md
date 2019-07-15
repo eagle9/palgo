@@ -1,24 +1,38 @@
-453. Flatten Binary Tree to Linked List
-Flatten a binary tree to a fake "linked list" in pre-order traversal.
+114. Flatten Binary Tree to Linked List
+Medium 1575 205 Favorite Share
 
-Here we use the right pointer in TreeNode as the next pointer in ListNode.
+Given a binary tree, flatten it to a linked list in-place.
 
-Example
-              1
-               \
-     1          2
-    / \          \
-   2   5    =>    3
-  / \   \          \
- 3   4   6          4
-                     \
-                      5
-                       \
-                        6
-Challenge
-Do it in-place without any extra memory.
+For example, given the following tree:
+    1
+   / \
+  2   5
+ / \   \
+3   4   6
 
-Notice
-Don't forget to mark the left child of each node to null. Or you will get Time Limit Exceeded or Memory Limit Exceeded.
+The flattened tree should look like:
+1
+ \
+  2
+   \
+    3
+     \
+      4
+       \
+        5
+         \
+          6
+Accepted 246,978
+Submissions 573,534
 
+Contributor LeetCode
+0 ~ 6 months
+Facebook | 9 Microsoft | 6 Bloomberg | 3 Amazon | 3
+6 months ~ 1 year
+Google | 3 Adobe | 2
 
+Topic: Tree, Depth-first Search
+
+Similar:
+Flatten a Multilevel Doubly Linked List Medium
+If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal.

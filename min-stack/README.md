@@ -1,5 +1,5 @@
-155. Min Stack
-Easy
+155. Min Stack Easy 
+1903 200 Favorite Share
 
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
