@@ -1,4 +1,5 @@
-//grandyang c++, beats 99%
+//grandyang idea, cutting,can we map si ti to the same value, say its index+1?
+//runtime 8ms, faster than 89%, mem less than 57%
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
@@ -14,3 +15,4 @@ public:
         return true;
     }
 };
+

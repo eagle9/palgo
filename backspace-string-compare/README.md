@@ -1,5 +1,6 @@
 844. Backspace String Compare
-Easy
+Easy 678 46 Favorite Share
+
 Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
 
 Example 1:
@@ -30,3 +31,14 @@ S and T only contain lowercase letters and '#' characters.
 Follow up:
 
 Can you solve it in O(N) time and O(1) space?
+
+Accepted 63,009
+Submissions 136,041
+
+Contributor terranblake
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 18 Facebook | 2
+
+Topic: Two Pointers, Stack
+

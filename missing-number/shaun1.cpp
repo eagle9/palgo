@@ -1,4 +1,4 @@
-//shaun's own idea, similar to lt idea4
+//shaun's own idea, similar to lt idea4, using gauss formula
 class Solution1 {
 public:
     int missingNumber(vector<int>& nums) {
@@ -12,10 +12,14 @@ public:
     }
 };
 
-//lt bit manipulation idea, shaun coded from the idea
+//lt bit manipulation idea,accumulate i^nums[i].  shaun coded from the idea
+//not easy to come up the idea
 //draw a picture of xor reduction
 // index: 0 1 2  (3) 
 //        3 0 1
+// index: from 0 to n-1 n        
+//   nums:1     n-1 n, consider index and nums, all numbers are paired except the missing number
+//   so ^ all or XOR all numbers and index from 0 to n will get the missing number
 //accepted first sub
 //runtime 24ms, faster than 96%, mem less than 10%
 class Solution {

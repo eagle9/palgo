@@ -1,5 +1,5 @@
 14. Longest Common Prefix
-Easy
+Easy 1452 1380 Favorite Share
 
 Write a function to find the longest common prefix string amongst an array of strings.
 

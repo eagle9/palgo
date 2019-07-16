@@ -1,5 +1,5 @@
 75. Sort Colors
-Medium
+Medium 1752 161 Favorite Share
 
 Given an array with n objects colored red, white or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white and blue.
 
@@ -18,7 +18,7 @@ First, iterate the array counting number of 0's, 1's, and 2's, then overwrite ar
 Could you come up with a one-pass algorithm using only constant space?
 
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
-Microsoft | 8 Facebook | 7 Uber | 3 Apple | 3 Amazon | 2 Tencent | 2 Walmart Labs | 2
+Microsoft | 9 Amazon | 5 Facebook | 4 Apple | 3 Uber | 2 Google | 2
 
 Similar:
 Sort List Medium

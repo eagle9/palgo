@@ -1,8 +1,11 @@
+/*shaun's idea, only use map1, wrong answer, was not to the point of 1on1 mapping
+user map1 and map2, beats 16%
+key is 1 to 1 mapping, using 1 map won't cut it
+key point2, key are chars, you can use array rather than full blown hashmap
+runtime 14ms, faster than 33%, mem less than 99.9%
+*/
 class Solution {
-    //shaun's idea, only use map1, wrong answer, was not to the point of 1on1 mapping
-    //user map1 and map2, beats 16%
-	//key is 1 to 1 mapping, using 1 map won't cut it
-	//key point2, key are chars, you can use array rather than full blown hashmap
+    
     public boolean isIsomorphic(String s, String t) {
         Map<Character,Character> map1 = new HashMap<>();
         Map<Character,Character> map2 = new HashMap<>();

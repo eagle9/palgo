@@ -51,7 +51,7 @@
 48	341	Flatten Nested List Iterator, ----1, cutting, use 1 stack, pop if nested peel and push back to stack1, else(integer) push to stack2, keep processing stack1 until all integers pushed to stack2 
 49	394	Decode String, -----1, g16, very worth, cutting: use stack to process nested structure, tricky detail parse number from chars, pop, process and push back
 50	48	Rotate Image, -----1, g8, very worth,cutting ---? 
-51	364	Nested List Weight Sum II, ----1, dfs, cutting ---
+51	364	Nested List Weight Sum II, ----1, dfs, cutting: find maxDepth first, then dfs(list, weight) to find the sum, shaun own idea and code accepted first sub, with example testing
 52	362	Design Hit Counter
 53	636	Exclusive Time of Functions
 54	143	Reorder List, -----1, cutting == ? 

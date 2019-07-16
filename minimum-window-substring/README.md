@@ -1,5 +1,5 @@
 76. Minimum Window Substring
-Hard
+Hard 2439 163 Favorite Share
 
 Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n).
 

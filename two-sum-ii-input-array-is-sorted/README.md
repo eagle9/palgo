@@ -1,5 +1,5 @@
 167. Two Sum II - Input array is sorted
-Easy
+Easy 952 399 Favorite Share
 
 Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
 
@@ -16,7 +16,9 @@ Output: [1,2]
 Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
-Amazon | 5 Facebook | 4 Microsoft | 3 Apple | 3 Google | 2
+Amazon | 15 Google | 5 Facebook | 2 Apple | 2
+
+Topic: Array, Two Pointers, Binary Search
 
 Two Sum Easy
 Two Sum IV - Input is a BST Easy
