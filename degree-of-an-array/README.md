@@ -28,7 +28,13 @@ Submissions 104,258
 Contributor fishercoder
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 VMware | 2
+6 months ~ 1 year1 year ~ 2 years
+Mathworks | 5 IXL | 3 Walmart Labs | 3 Visa | 2 Robinhood | 2
 
+Topic: Array
+
+Similar:
 Maximum Subarray Easy
 
+Hint 1:
 Say 5 is the only element that occurs the most number of times - for example, nums = [1, 5, 2, 3, 5, 4, 5, 6]. What is the answer?

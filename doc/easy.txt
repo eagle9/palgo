@@ -5,203 +5,205 @@
 5	121	Best Time to Buy and Sell Stock, ----1, cutting: low price so far from 0 to i
 6	53	Maximum Subarray ---1, cutting prefixsum, track the minimum prefexSum 
 7	206	Reverse Linked List ---1, cutting: two pointers prev cur moving to right 
-8	7	Reverse Integer ---- 1,cutting: math digit from number with mod and division, then res*10 + digit 
+8	7	Reverse Integer ----1,cutting: math digit from number with mod and division, then res*10 + digit 
 9	175	Combine Two Tables ---1, sql, cutting left join
 10	141	Linked List Cycle ---1, cutting: two moving pointers from head 
 11	482	License Key Formatting ---,1, g26, high worth,cutting, loop string and imple details
 12	9	Palindrome Number ----1, math, cutting get left and right at the same time, use xample
 13	771	Jewels and Stones, ----1, own idea and code accepted first sub
-14	13	Roman to Integer, ----,1, math, cutting, from left roman to right, +val or -val, map roman to its val 
-15	88	Merge Sorted Array, ----, 1, cutting, resize nums1, from tail
+14	13	Roman to Integer, ----1, math, cutting, from left roman to right, +val or -val, map roman to its val 
+15	88	Merge Sorted Array, ----1, cutting, resize nums1, from tail
 16	344	Reverse String -----1, own idea accepted, 2p left and right towards each other
 17	412	Fizz Buzz, -----1, own idea and code accepted after 1 bug fix, beware of index bound check
 18	67	Add Binary -----1, own idea accepted after fixing 2 bugs, from end to begin, set carry to 0 once used
-19	811	Subdomain Visit Count ----, 1, cutting, straightforward with details, shaun own idea and code accepted after several bug fixes
+19	811	Subdomain Visit Count ----1, cutting, straightforward with details, shaun own idea and code accepted after several bug fixes
 20	283	Move Zeroes -----1, cutting put non zero elements into storeindex
 ========================================
 21	176	Second Highest Salary, ---1, select distinct limit 1 offset 1  
 22	844	Backspace String Compare,-----1,cutting stack, or 2p from end to begin, backspace count  
 23	155	Min Stack, ----1, cutting: use 2 stacks  
 24	193	Valid Phone Numbers , ----1, bash (a | b) -\d{3} - \d{4}
-25	14	Longest Common Prefix, ----, cutting, prefix for all -> prefix for 2,own idea accepted after 1 bug fix 
+25	14	Longest Common Prefix, ----1, cutting, prefix for all -> prefix for 2,own idea accepted after 1 bug fix 
 26	716	Max Stack, -----1, 3stacks, cutting, use stack2 to store max, use temp stack to remove max from stack1 
 27	258	Add Digits, ------1, cutting: observe math with simple problem,  
 28	203	Remove Linked List Elements , -----1, cutting dummy for head change, cur cur-Next(=t) t->next, delete t
 29	543	Diameter of Binary Tree, -----1, cutting, diameter path = left height + right height, boils down to height of binary tree   
 30	349	Intersection of Two Arrays, ----1, cutting set, 2p with sorting,binary search 
 31	387	First Unique Character in a String, ----1, own idea/code accepted first sub
-32	242	Valid Anagram  ----1,cutting, hash especially when char set is small O1 sp
-ace, m++ and --, check < 0 
+32	242	Valid Anagram  ----1,cutting, hash especially when char set is small O1 space, m++ and --, check < 0 
 33	70	Climbing Stairs ----1, dp, cutting from dp[n-2] with 2 steps, or from dp[n-1] with 1 step 
 34	195	Tenth Line,---1, bash, not worth    	
-35	38	Count and Say---,1, cutting: study example, a loop from 1 to n, sub loop from begin to end of string, sub sub loop count repeated digits, push_back(cnt+'0'), push_back(digit)     	
+35	38	Count and Say---1, cutting: study example, a loop from 1 to n, sub loop from begin to end of string, sub sub loop count repeated digits, push_back(cnt+'0'), push_back(digit)     	
 36	339	Nested List Weight Sum ----1, shaun own dfs idea and code accepted after 1 bug fix, similar to lt's idea
 37	443	String Compression -----1, high worth, a loop from 0 to len-1, a sub loop and pointer to go through repeated chars, update with changeIndex/storeIndex(slower), no interferences
 38	198	House Robber   -----1, cutting, dp with 2 states 
 39	706	Design HashMap    ----
 40	125	Valid Palindrome  ----1, cutting: with mix case and non alphanum char, beware of details 
 41	438	Find All Anagrams in a String ---1, worth, actually hard, cutting: naive hash and sliding window
-42	415	Add Strings    	-----
-43	905	Sort Array By Parity ----1, cutting: storeIndex
+42	415	Add String	-----1, cutting: from end to begin, consider carry, contribute if proper,  
+43	905	Sort Array By Parity ----1, cutting: storeIndex, inplace, 
 44	268	Missing Number ----1, cutting: index and number paired except missing number, or using gauss sum formula
 45	204	Count Primes -----1, shaun still remember sieve idea, if prime(i) ans++ and cross off multiples
 46	122	Best Time to Buy and Sell Stock II  ----
-47	234	Palindrome Linked List  ----  		
+47	234	Palindrome Linked List  ----1, cutting, reverse 2nd half if no stack used, use slow and fast pointer to get mid point  		
 48	167	Two Sum II - Input array is sorted ----1, left and right 2p or binary search
 49	26	Remove Duplicates from Sorted Array -----1, shaun own idea and code accepted after 2 bug fixes, cutting: loop with sub loop to check repeated, make sure index in bound all the time!
 50	205	Isomorphic Strings    -----1, cutting: 1 on 1 mapping or si ti mapped the same value	
 =======================================
-51	160	Intersection of Two Linked Lists
+51	160	Intersection of Two Linked Lists ----1, get len1 and len2, head start diff steps on the onger list, then move together and check ==
 52	973	K Closest Points to Origin 
-53	709	To Lower Case    
+53	709	To Lower Case,----1, own idea accepted first sub    
 54	202	Happy Number    	
-55	278	First Bad Version, ----    
+55	278	First Bad Version, ----1, cutting binary search, when bad, go left    
 56	346	Moving Average from Data Stream
-57	69	Sqrt(x)    	
-58	697	Degree of an Array  
+57	69	Sqrt(x), ----1, cutting: binary search from 1 to x, first >    	
+58	697	Degree of an Array, ------1, cutting, number with max count, its start and end
 59	703	Kth Largest Element in a Stream  
-60	136	Single Number    		
-61	35	Search Insert Position    
-62	28	Implement strStr()    		
-63	350	Intersection of Two Arrays II
-64	232	Implement Queue using Stacks
-65	557	Reverse Words in a String III
-66	751	IP to CIDR  
-67	226	Invert Binary Tree
-68	819	Most Common Word 
-69	110	Balanced Binary Tree
-70	104	Maximum Depth of Binary Tree
-71	724	Find Pivot Index    	
-72	707	Design Linked List    
-73	101	Symmetric Tree    	
+60	136	Single Number ---- 
+61	35	Search Insert Position, ----1, cutting: observe from examples, insert pos is first >= target element index, binary search, guess nums[mid] >= target, go to left side for first >=
+62	28	Implement strStr() ---    		
+63	350	Intersection of Two Arrays II ---
+64	232	Implement Queue using Stacks, -----
+65	557	Reverse Words in a String III, ----
+66	751	IP to CIDR  -----
+67	226	Invert Binary Tree-----1, cutting, recur divide and conquer, or bfs for each swap left and right
+68	819	Most Common Word,-----1, cutting: get familiar with string replace char, tokenize,  
+69	110	Balanced Binary Tree, ----1, shaun own idea&code accepted first sub(naive dfs with 2 dfs), how to 1 pass dfs? <-- dfs return result type or pair<int,bool>
+70	104	Maximum Depth of Binary Tree, ----1, own idea accepted first sub, both dfs and bfs level version
+71	724	Find Pivot Index ---1
+72	707	Design Linked List ---1  
+73	101	Symmetric Tree --- 1   	
 74	170	Two Sum III - Data structure design
-75	235	Lowest Common Ancestor of a Binary Search Tree
-76	66	Plus One 
-77	83	Remove Duplicates from Sorted List
-78	680	Valid Palindrome II 
-79	674	Longest Continuous Increasing Subsequence
+75	235	Lowest Common Ancestor of a Binary Search Tree ---
+76	66	Plus One --- 
+77	83	Remove Duplicates from Sorted List ----
+78	680	Valid Palindrome II --- 
+79	674	Longest Continuous Increasing Subsequence ---
 80	595	Big Countries  
-81	108	Convert Sorted Array to Binary Search Tree
-82	766	Toeplitz Matrix
-83	257	Binary Tree Paths
-84	118	Pascal's Triangle 
-85	371	Sum of Two Integers 
-86	157	Read N Characters Given Read4
-87	169	Majority Element
-88	181	Employees Earning More Than Their Managers
-89	189	Rotate Array  
-90	463	Island Perimeter 
-91	836	Rectangle Overlap 
-92	475	Heaters   
-93	852	Peak Index in a Mountain Array
+81	108	Convert Sorted Array to Binary Search Tree ---
+82	766	Toeplitz Matrix ----
+83	257	Binary Tree Paths ----
+84	118	Pascal's Triangle ----
+85	371	Sum of Two Integers --- 
+86	157	Read N Characters Given Read4 ---
+87	169	Majority Element ---
+88	181	Employees Earning More Than Their Managers ---
+89	189	Rotate Array ---- 
+90	463	Island Perimeter  ---
+91	836	Rectangle Overlap ---- 
+92	475	Heaters  ---- 
+93	852	Peak Index in a Mountain Array ---
 94	532	K-diff Pairs in an Array    
 95	168	Excel Sheet Column Title   
-96	190	Reverse Bits  
-97	359	Logger Rate Limiter
-98	876	Middle of the Linked List 
-99	628	Maximum Product of Three Numbers 
-100	743	Network Delay Time   
+96	190	Reverse Bits ---- 
+97	359	Logger Rate Limiter ---
+98	876	Middle of the Linked List ---
+99	628	Maximum Product of Three Numbers ---
+100	743	Network Delay Time  ---- 
 ============================================
 101	427	Construct Quad Tree 
 102	496	Next Greater Element I
 103	617	Merge Two Binary Trees
 104	448	Find All Numbers Disappeared in an Array 
 105	605	Can Place Flowers 
-106	243	Shortest Word Distance ------, own accepted
+106	243	Shortest Word Distance ------1, own accepted
 107	733	Flood Fill 
 108	453	Minimum Moves to Equal Array Elements    		49.00%	Easy
-109	266	Palindrome Permutation    		59.60%	Easy
-110	171	Excel Sheet Column Number    		50.70%	Easy
-111	270	Closest Binary Search Tree Value    		42.90%	Easy
-112	237	Delete Node in a Linked List    		51.60%	Easy
-113	100	Same Tree    		49.30%	Easy
-114	225	Implement Stack using Queues    		37.70%	Easy
-115	458	Poor Pigs    		44.70%	Easy
-116	572	Subtree of Another Tree    		41.10%	Easy
-117	246	Strobogrammatic Number    		41.70%	Easy
-118	734	Sentence Similarity    		40.00%	Easy
-119	849	Maximize Distance to Closest Person    		40.30%	Easy
-120	796	Rotate String    		48.80%	Easy
-121	437	Path Sum III    		41.70%	Easy
-122	917	Reverse Only Letters    		56.00%	Easy
-123	700	Search in a Binary Search Tree    		66.20%	Easy
-124	191	Number of 1 Bits    		41.70%	Easy
-125	728	Self Dividing Numbers    		68.70%	Easy
-126	874	Walking Robot Simulation    		30.40%	Easy
-127	119	Pascal's Triangle II    		41.60%	Easy
-128	441	Arranging Coins    		37.30%	Easy
-129	746	Min Cost Climbing Stairs    		45.70%	Easy
-130	717	1-bit and 2-bit Characters    		48.80%	Easy
-131	303	Range Sum Query - Immutable    		36.30%	Easy
-132	409	Longest Palindrome    		47.30%	Easy
-133	561	Array Partition I    		68.10%	Easy
-134	459	Repeated Substring Pattern    		39.30%	Easy
-135	953	Verifying an Alien Dictionary    		56.10%	Easy
-136	896	Monotonic Array    		54.40%	Easy
-137	824	Goat Latin    		56.70%	Easy
-138	461	Hamming Distance    		69.90%	Easy
-139	832	Flipping an Image    		71.10%	Easy
-140	686	Repeated String Match    		31.30%	Easy
-141	252	Meeting Rooms    		51.10%	Easy
-142	447	Number of Boomerangs    		48.90%	Easy
-143	509	Fibonacci Number    		66.40%	Easy
-144	690	Employee Importance    		53.00%	Easy
-145	559	Maximum Depth of N-ary Tree    		64.10%	Easy
-146	804	Unique Morse Code Words    		73.60%	Easy
-147	342	Power of Four    		39.90%	Easy
-148	276	Paint Fence    		36.00%	Easy
-149	107	Binary Tree Level Order Traversal II    		45.40%	Easy
-150	112	Path Sum    		36.80%	Easy
-151	367	Valid Perfect Square    		39.30%	Easy
-152	231	Power of Two    		41.50%	Easy
-153	400	Nth Digit    		30.00%	Easy
+109	266	Palindrome Permutation
+110	171	Excel Sheet Column Number
+111	270	Closest Binary Search Tree Value
+112	237	Delete Node in a Linked List
+113	100	Same Tree, ----
+114	225	Implement Stack using Queues ----
+115	458	Poor Pigs
+116	572	Subtree of Another Tree, ----
+117	246	Strobogrammatic Number ----
+118	734	Sentence Similarity
+119	849	Maximize Distance to Closest Person
+120	796	Rotate String, ----
+121	437	Path Sum III, ----
+122	917	Reverse Only Letters ----
+123	700	Search in a Binary Search Tree ----
+124	191	Number of 1 Bits ----
+125	728	Self Dividing Numbers ----
+126	874	Walking Robot Simulation ----
+127	119	Pascal's Triangle II ----
+128	441	Arranging Coins ----
+129	746	Min Cost Climbing Stairs ---
+130	717	1-bit and 2-bit Characters ---
+131	303	Range Sum Query - Immutable, ----
+132	409	Longest Palindrome ----
+133	561	Array Partition I -----
+134	459	Repeated Substring Pattern ----
+135	953	Verifying an Alien Dictionary ---
+136	896	Monotonic Array ---
+137	824	Goat Latin
+138	461	Hamming Distance, ----
+139	832	Flipping an Image ,----
+140	686	Repeated String Match, ----
+141	252	Meeting Rooms ---
+142	447	Number of Boomerangs
+143	509	Fibonacci Number ----
+144	690	Employee Importance
+145	559	Maximum Depth of N-ary Tree ---1, own idea accepted, similar to binary tree version, dfs and bfs level version
+146	804	Unique Morse Code Words ----
+147	342	Power of Four ----
+148	276	Paint Fence ---
+149	107	Binary Tree Level Order Traversal II ---
+150	112	Path Sum ---
+=======================
+151	367	Valid Perfect Square ---
+152	231	Power of Two ---
+153	400	Nth Digit 
 154	183	Customers Who Never Order    		42.30%	Easy
-155	111	Minimum Depth of Binary Tree    		34.70%	Easy
-156	687	Longest Univalue Path    		33.20%	Easy
-157	897	Increasing Order Search Tree    		62.30%	Easy
-158	669	Trim a Binary Search Tree    		59.60%	Easy
+155	111	Minimum Depth of Binary Tree ----
+156	687	Longest Univalue Path -----
+157	897	Increasing Order Search Tree ---
+158	669	Trim a Binary Search Tree ---
 159	599	Minimum Index Sum of Two Lists    		47.00%	Easy
 160	665	Non-decreasing Array    		19.60%	Easy
-161	27	Remove Element    		43.30%	Easy
-162	933	Number of Recent Calls    		68.20%	Easy
-163	504	Base 7    		44.50%	Easy
-164	872	Leaf-Similar Trees    		62.00%	Easy
-165	256	Paint House    		48.00%	Easy
+161	27	Remove Element
+162	933	Number of Recent Calls
+163	504	Base 7 ---
+164	872	Leaf-Similar Trees ---
+165	256	Paint House, ----
 166	389	Find the Difference    		52.60%	Easy
 167	401	Binary Watch    		45.00%	Easy
 168	884	Uncommon Words from Two Sentences    		60.50%	Easy
 169	657	Robot Return to Origin    		70.60%	Easy
 170	867	Transpose Matrix    		63.60%	Easy
-171	704	Binary Search    		44.70%	Easy
-172	182	Duplicate Emails    		51.90%	Easy
-173	405	Convert a Number to Hexadecimal    		41.60%	Easy
-174	671	Second Minimum Node In a Binary Tree    		43.20%	Easy
-175	290	Word Pattern    		34.40%	Easy
-176	788	Rotated Digits    		52.80%	Easy
-177	800	Similar RGB Color    		58.50%	Easy
-178	914	X of a Kind in a Deck of Cards    		34.30%	Easy
-179	172	Factorial Trailing Zeroes    		37.20%	Easy
-180	429	N-ary Tree Level Order Traversal    		58.00%	Easy
-181	404	Sum of Left Leaves    		48.60%	Easy
-182	653	Two Sum IV - Input is a BST    		51.60%	Easy
-183	414	Third Maximum Number    		28.60%	Easy
-184	383	Ransom Note    		49.10%	Easy
+171	704	Binary Search ----
+172	182	Duplicate Emails ----
+173	405	Convert a Number to Hexadecimal ---
+174	671	Second Minimum Node In a Binary Tree ---
+175	290	Word Pattern ----
+===================
+176	788	Rotated Digits ----
+177	800	Similar RGB Color ----
+178	914	X of a Kind in a Deck of Cards ----
+179	172	Factorial Trailing Zeroes ----
+180	429	N-ary Tree Level Order Traversal ---
+181	404	Sum of Left Leaves ----
+182	653	Two Sum IV - Input is a BST ----
+183	414	Third Maximum Number ----
+184	383	Ransom Note ----
 185	597	Friend Requests I: Overall Acceptance Rate    		39.20%	Easy
-186	196	Delete Duplicate Emails    		30.20%	Easy
+186	196	Delete Duplicate Emails ----
 187	888	Fair Candy Swap    		55.30%	Easy
-188	58	Length of Last Word    		32.10%	Easy
-189	521	Longest Uncommon Subsequence I     		56.00%	Easy
+188	58	Length of Last Word ----
+189	521	Longest Uncommon Subsequence I,----
 190	485	Max Consecutive Ones    		54.40%	Easy
-191	558	Quad Tree Intersection    		39.30%	Easy
-192	783	Minimum Distance Between BST Nodes    		49.60%	Easy
-193	501	Find Mode in Binary Search Tree    		38.80%	Easy
-194	705	Design HashSet    		49.30%	Easy
-195	530	Minimum Absolute Difference in BST    		49.60%	Easy
-196	937	Reorder Log Files    		58.00%	Easy
-197	784	Letter Case Permutation    		55.00%	Easy
-198	606	Construct String from Binary Tree    		50.90%	Easy
+191	558	Quad Tree Intersection ---
+192	783	Minimum Distance Between BST Nodes ---
+193	501	Find Mode in Binary Search Tree ---
+194	705	Design HashSet ---
+195	530	Minimum Absolute Difference in BST ---
+196	937	Reorder Log Files ----
+197	784	Letter Case Permutation ---
+198	606	Construct String from Binary Tree ---
 199	893	Groups of Special-Equivalent Strings    		61.70%	Easy
-200	908	Smallest Range I    		64.20%	Easy
+200	908	Smallest Range I ---
+========
 201	883	Projection Area of 3D Shapes    		65.10%	Easy
 202	859	Buddy Strings    		27.40%	Easy
 203	868	Binary Gap    		59.20%	Easy
@@ -215,45 +217,46 @@ ace, m++ and --, check < 0
 211	633	Sum of Square Numbers    		32.80%	Easy
 212	942	DI String Match    		70.30%	Easy
 213	575	Distribute Candies    		59.00%	Easy
-214	326	Power of Three    		41.30%	Easy
+214	326	Power of Three -----
 215	520	Detect Capital    		52.20%	Easy
 216	566	Reshape the Matrix    		58.30%	Easy
 217	812	Largest Triangle Area    		54.90%	Easy
 218	551	Student Attendance Record I    		45.10%	Easy
-219	197	Rising Temperature    		33.40%	Easy
+219	197	Rising Temperature ----
 220	762	Prime Number of Set Bits in Binary Representation    		57.50%	Easy
 221	830	Positions of Large Groups    		47.30%	Easy
 222	590	N-ary Tree Postorder Traversal    		65.70%	Easy
 223	696	Count Binary Substrings    		52.20%	Easy
 224	455	Assign Cookies    		48.00%	Easy
 225	892	Surface Area of 3D Shapes    		55.30%	Easy
+=============================
 226	925	Long Pressed Name    		44.40%	Easy
 227	806	Number of Lines To Write String    		62.40%	Easy
 228	492	Construct the Rectangle    		48.30%	Easy
 229	581	Shortest Unsorted Continuous Subarray    		29.60%	Easy
-230	292	Nim Game    		55.40%	Easy
+230	292	Nim Game ----
 231	821	Shortest Distance to a Character    		62.60%	Easy
 232	500	Keyboard Row    		61.50%	Easy
-233	643	Maximum Average Subarray I    		38.80%	Easy
+233	643	Maximum Average Subarray I ----
 234	682	Baseball Game    		60.10%	Easy
 235	961	N-Repeated Element in Size 2N Array    		73.50%	Easy
-236	374	Guess Number Higher or Lower    		38.50%	Easy
+236	374	Guess Number Higher or Lower ---
 237	476	Number Complement    		62.00%	Easy
 238	263	Ugly Number    		40.30%	Easy
 239	760	Find Anagram Mappings    		78.80%	Easy
 240	586	Customer Placing the Largest Number of Orders    		64.80%	Easy
-241	720	Longest Word in Dictionary    		43.60%	Easy
+241	720	Longest Word in Dictionary ----
 242	613	Shortest Distance in a Line    		72.10%	Easy
-243	645	Set Mismatch    		40.30%	Easy
+243	645	Set Mismatch ----
 244	977	Squares of a Sorted Array    		73.80%	Easy
-245	637	Average of Levels in Binary Tree    		57.80%	Easy
-246	589	N-ary Tree Preorder Traversal    		65.60%	Easy
+245	637	Average of Levels in Binary Tree ----
+246	589	N-ary Tree Preorder Traversal ----
 247	594	Longest Harmonious Subsequence    		42.80%	Easy
 248	506	Relative Ranks    		47.80%	Easy
-249	541	Reverse String II    		44.90%	Easy
+249	541	Reverse String II ----
 250	538	Convert BST to Greater Tree    		49.80%	Easy
-251	219	Contains Duplicate II    		34.50%	Easy
-252	408	Valid Word Abbreviation    		29.00%	Easy
+251	219	Contains Duplicate II ----
+252	408	Valid Word Abbreviation ----
 253	747	Largest Number At Least Twice of Others    		40.20%	Easy
 254	507	Perfect Number    		33.30%	Easy
 255	661	Image Smoother    		47.70%	Easy
@@ -268,7 +271,7 @@ ace, m++ and --, check < 0
 264	949	Largest Time for Given Digits    		33.20%	Easy
 265	693	Binary Number with Alternating Bits    		57.50%	Easy
 266	744	Find Smallest Letter Greater Than Target    		43.50%	Easy
-267	984	String Without AAA or BBB    		31.60%	Easy
+267	984	String Without AAA or BBB ----
 ===================low frequency================
 268	965	Univalued Binary Tree    		68.30%	Easy
 269	989	Add to Array-Form of Integer    New		44.50%	Easy

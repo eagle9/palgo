@@ -19,6 +19,7 @@ public:
 };
 
 //grandyang & hua template, check hua binary search SP
+//0ms, faster than 100%, mem less than 64%
 class Solution {
 public:
     //x >= 0
@@ -32,6 +33,7 @@ public:
             else // mid * mid <= x
                 left = mid+1;
         }
+        //left(mid) right: left = mid+1 == right
         return right-1; // right * right >x 
     }
 };
