@@ -37,7 +37,7 @@
 36	339	Nested List Weight Sum ----1, shaun own dfs idea and code accepted after 1 bug fix, similar to lt's idea
 37	443	String Compression -----1, high worth, a loop from 0 to len-1, a sub loop and pointer to go through repeated chars, update with changeIndex/storeIndex(slower), no interferences
 38	198	House Robber   -----1, cutting, dp with 2 states 
-39	706	Design HashMap    ----
+39	706	Design HashMap    ----1, cutting: use 2d array (row and col), or combine use of array and linked list
 40	125	Valid Palindrome  ----1, cutting: with mix case and non alphanum char, beware of details 
 41	438	Find All Anagrams in a String ---1, worth, actually hard, cutting: naive hash and sliding window
 42	415	Add String	-----1, cutting: from end to begin, consider carry, contribute if proper,  
@@ -55,11 +55,11 @@
 53	709	To Lower Case,----1, own idea accepted first sub    
 54	202	Happy Number    	
 55	278	First Bad Version, ----1, cutting binary search, when bad, go left    
-56	346	Moving Average from Data Stream
+56	346	Moving Average from Data Stream----1, cutting, use queue to track the numbers in the window, sum, q.size() will give you info for the moving average
 57	69	Sqrt(x), ----1, cutting: binary search from 1 to x, first >    	
 58	697	Degree of an Array, ------1, cutting, number with max count, its start and end
-59	703	Kth Largest Element in a Stream  
-60	136	Single Number ---- 
+59	703	Kth Largest Element in a Stream ----1, turned out to be very tricky, cutting: make sure you understand the problem correctly, otherwise nightmare even for easy problem. minHeap to store topk elements, min at the top, control the heap size  
+60	136	Single Number ----1, cutting, xor ^ to cancel a number with its repeatition 
 61	35	Search Insert Position, ----1, cutting: observe from examples, insert pos is first >= target element index, binary search, guess nums[mid] >= target, go to left side for first >=
 62	28	Implement strStr() ---    		
 63	350	Intersection of Two Arrays II ---
@@ -70,11 +70,11 @@
 68	819	Most Common Word,-----1, cutting: get familiar with string replace char, tokenize,  
 69	110	Balanced Binary Tree, ----1, shaun own idea&code accepted first sub(naive dfs with 2 dfs), how to 1 pass dfs? <-- dfs return result type or pair<int,bool>
 70	104	Maximum Depth of Binary Tree, ----1, own idea accepted first sub, both dfs and bfs level version
-71	724	Find Pivot Index ---1
+71	724	Find Pivot Index ---1, cutting prefixSum ans sumAll = nums[i] + 2*sum
 72	707	Design Linked List ---1  
-73	101	Symmetric Tree --- 1   	
+73	101	Symmetric Tree --- 1, helper(node1, node2), travere 2 tree in sync , bfs the same idea  	
 74	170	Two Sum III - Data structure design
-75	235	Lowest Common Ancestor of a Binary Search Tree ---
+75	235	Lowest Common Ancestor of a Binary Search Tree ---1,cutting: think about a recur function that returns the ancestor of either p or q 
 76	66	Plus One --- 
 77	83	Remove Duplicates from Sorted List ----
 78	680	Valid Palindrome II --- 
@@ -82,7 +82,7 @@
 80	595	Big Countries  
 81	108	Convert Sorted Array to Binary Search Tree ---
 82	766	Toeplitz Matrix ----
-83	257	Binary Tree Paths ----
+83	257	Binary Tree Paths ----1, cutting: recur, both divide and conquer, or cursor type recur
 84	118	Pascal's Triangle ----
 85	371	Sum of Two Integers --- 
 86	157	Read N Characters Given Read4 ---
@@ -103,25 +103,25 @@
 ============================================
 101	427	Construct Quad Tree 
 102	496	Next Greater Element I
-103	617	Merge Two Binary Trees
+103	617	Merge Two Binary Trees ----
 104	448	Find All Numbers Disappeared in an Array 
 105	605	Can Place Flowers 
 106	243	Shortest Word Distance ------1, own accepted
 107	733	Flood Fill 
-108	453	Minimum Moves to Equal Array Elements    		49.00%	Easy
+108	453	Minimum Moves to Equal Array Elements
 109	266	Palindrome Permutation
 110	171	Excel Sheet Column Number
-111	270	Closest Binary Search Tree Value
-112	237	Delete Node in a Linked List
+111	270	Closest Binary Search Tree Value----
+112	237	Delete Node in a Linked List---
 113	100	Same Tree, ----
 114	225	Implement Stack using Queues ----
 115	458	Poor Pigs
 116	572	Subtree of Another Tree, ----
 117	246	Strobogrammatic Number ----
-118	734	Sentence Similarity
+118	734	Sentence Similarity---
 119	849	Maximize Distance to Closest Person
-120	796	Rotate String, ----
-121	437	Path Sum III, ----
+120	796	Rotate String ----
+121	437	Path Sum III ----
 122	917	Reverse Only Letters ----
 123	700	Search in a Binary Search Tree ----
 124	191	Number of 1 Bits ----
@@ -155,7 +155,7 @@
 151	367	Valid Perfect Square ---
 152	231	Power of Two ---
 153	400	Nth Digit 
-154	183	Customers Who Never Order    		42.30%	Easy
+154	183	Customers Who Never Order 
 155	111	Minimum Depth of Binary Tree ----
 156	687	Longest Univalue Path -----
 157	897	Increasing Order Search Tree ---

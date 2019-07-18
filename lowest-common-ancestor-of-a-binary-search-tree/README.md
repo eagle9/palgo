@@ -1,5 +1,6 @@
 235. Lowest Common Ancestor of a Binary Search Tree
-Easy
+Easy 1137 86 Favorite Share
+
 Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
 
 According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
@@ -22,6 +23,8 @@ All of the nodes' values will be unique.
 p and q are different and both values will exist in the BST.
 
 Companies: LinkedIn | 8 Microsoft | 4 Facebook | 3 Amazon | 3 Expedia | 3 Google | 2 Bloomberg | 2 Adobe | 2 Uber | 2 Cisco | 2 
+
+Topic: Tree
 
 Similar:
 Lowest Common Ancestor of a Binary Tree Medium

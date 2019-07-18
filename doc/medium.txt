@@ -242,7 +242,7 @@
 236	261	Graph Valid Tree, ----    
 237	856	Score of Parentheses, ----
 238	424	Longest Repeating Character Replacement 
-239	260	Single Number III
+239	260	Single Number III, ----1,cutting, still do xor, but find first set bit and break the numbers into 2 groups, get xor for set bit group, xor is one of the single number
 240	220	Contains Duplicate III
 241	372	Super Pow
 242	890	Find and Replace Pattern, -----
@@ -276,7 +276,7 @@
 270	799	Champagne Tower
 271	873	Length of Longest Fibonacci Subsequence
 272	82	Remove Duplicates from Sorted List II
-273	137	Single Number II
+273	137	Single Number II, ----1, cutting: count bits, 3 set bit to 0,will left with single number's set bit, still remember the idea after 2 month, own imple accepted 
 274	846	Hand of Straights
 275	825	Friends Of Appropriate Ages
 276	817	Linked List Components
