@@ -62,9 +62,9 @@
 60	136	Single Number ----1, cutting, xor ^ to cancel a number with its repeatition 
 61	35	Search Insert Position, ----1, cutting: observe from examples, insert pos is first >= target element index, binary search, guess nums[mid] >= target, go to left side for first >=
 62	28	Implement strStr() ---    		
-63	350	Intersection of Two Arrays II ---
-64	232	Implement Queue using Stacks, -----
-65	557	Reverse Words in a String III, ----
+63	350	Intersection of Two Arrays II ---1, cutting, hash for smaller array, 2p to allow the smaller to catch up
+64	232	Implement Queue using Stacks, -----1, q1=[1 2 3 4], to get 4, q2 = [1 2 3], q1=[4]
+65	557	Reverse Words in a String III, ----1, 
 66	751	IP to CIDR  -----
 67	226	Invert Binary Tree-----1, cutting, recur divide and conquer, or bfs for each swap left and right
 68	819	Most Common Word,-----1, cutting: get familiar with string replace char, tokenize,  
