@@ -1,5 +1,5 @@
 161. One Edit Distance
-Medium
+Medium 391 82 Favorite Sha
 
 Given two strings s and t, determine if they are both one edit distance apart.
 

@@ -75,20 +75,20 @@
 73	101	Symmetric Tree --- 1, helper(node1, node2), travere 2 tree in sync , bfs the same idea  	
 74	170	Two Sum III - Data structure design
 75	235	Lowest Common Ancestor of a Binary Search Tree ---1,cutting: think about a recur function that returns the ancestor of either p or q 
-76	66	Plus One --- 
-77	83	Remove Duplicates from Sorted List ----
-78	680	Valid Palindrome II --- 
+76	66	Plus One --- 1, cutting: own idea, with carry, not forget carry after loop
+77	83	Remove Duplicates from Sorted List ----1, shaun own idea and code accepted
+78	680	Valid Palindrome II ---1, cutting: delete left or right, use sub function is_valid(s, left, right) 
 79	674	Longest Continuous Increasing Subsequence ---
 80	595	Big Countries  
-81	108	Convert Sorted Array to Binary Search Tree ---
-82	766	Toeplitz Matrix ----
+81	108	Convert Sorted Array to Binary Search Tree ---1, cutting, find the mid index, recur, how to prove it is balanced? 
+82	766	Toeplitz Matrix ----1, cutting: ij i+1 j+1
 83	257	Binary Tree Paths ----1, cutting: recur, both divide and conquer, or cursor type recur
 84	118	Pascal's Triangle ----
 85	371	Sum of Two Integers --- 
 86	157	Read N Characters Given Read4 ---
 87	169	Majority Element ---
 88	181	Employees Earning More Than Their Managers ---
-89	189	Rotate Array ---- 
+89	189	Rotate Array ---- 1, cutting, use vector push and erase okay, but what if use fixed size array?  many assisting variables, yet to master
 90	463	Island Perimeter  ---
 91	836	Rectangle Overlap ---- 
 92	475	Heaters  ---- 
@@ -113,7 +113,7 @@
 110	171	Excel Sheet Column Number
 111	270	Closest Binary Search Tree Value----
 112	237	Delete Node in a Linked List---
-113	100	Same Tree, ----
+113	100	Same Tree, ----1
 114	225	Implement Stack using Queues ----
 115	458	Poor Pigs
 116	572	Subtree of Another Tree, ----

@@ -1,16 +1,32 @@
-407. Plus One
-Description
-Given a non-negative number represented as an array of digits, plus one to the number.
+66. Plus One
+Easy 924 1637 Favorite Share
 
-The digits are stored such that the most significant digit is at the head of the list.
+Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
 
-Have you met this question in a real interview?  
-Example
-Given [1,2,3] which represents 123, return [1,2,4].
+The digits are stored such that the most significant digit is at the head of the list, and each element in the array contain a single digit.
 
-Given [9,9,9] which represents 999, return [1,0,0,0].
+You may assume the integer does not contain any leading zero, except the number 0 itself.
 
-Related Problems
-Plus one linked list, Divide two integers, add binary
-Difficulty: easy
-Company: Google
+Example 1:
+Input: [1,2,3]
+Output: [1,2,4]
+Explanation: The array represents the integer 123.
+
+Example 2:
+Input: [4,3,2,1]
+Output: [4,3,2,2]
+Explanation: The array represents the integer 4321.
+
+Accepted 415K
+Submissions 1M
+
+Contributor LeetCode
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 6 Amazon | 4 Facebook | 3
+
+Topic: Array
+
+Multiply Strings Medium
+Add Binary Easy
+Plus One Linked List Medium
+Add to Array-Form of Integer Easy

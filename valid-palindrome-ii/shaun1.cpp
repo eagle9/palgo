@@ -15,7 +15,6 @@ public:
         int left = 0, right = s.size()-1;
         bool del1c = false;
         while (left < right) {
-            
             if (s[left]!= s[right]) {
                 if (!del1c) {
                     del1c = true;

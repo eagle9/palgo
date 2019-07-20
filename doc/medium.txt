@@ -235,7 +235,7 @@
 229	503	Next Greater Element II ----
 230	435	Non-overlapping Intervals, -----
 231	740	Delete and Earn    		
-232	161	One Edit Distance, -----    	
+232	161	One Edit Distance, -----1, cutting: consider len1 and len2, find the ith char that differ, the boils down several simpler problems, tricy cases, not easy to get details right, many cases   	
 233	731	My Calendar II, ----
 234	737	Sentence Similarity II, ---- 
 235	310	Minimum Height Trees  , ----
