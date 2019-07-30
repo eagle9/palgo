@@ -1,17 +1,15 @@
 272. Closest Binary Search Tree Value II
-Hard
+Hard 380 17 Favorite Share
 
 Given a non-empty binary search tree and a target value, find k values in the BST that are closest to the target.
 
 Note:
-
 Given target value is a floating point.
 You may assume k is always valid, that is: k ≤ total nodes.
 You are guaranteed to have only one unique set of k values in the BST that are closest to the target.
+
 Example:
-
 Input: root = [4,2,5,1,3], target = 3.714286, and k = 2
-
     4
    / \
   2   5
@@ -21,5 +19,25 @@ Input: root = [4,2,5,1,3], target = 3.714286, and k = 2
 Output: [4,3]
 Follow up:
 Assume that the BST is balanced, could you solve it in less than O(n) runtime (where n = total nodes)?
-Similar: Binary tree inorder traversal, cloest binary search tree value
-Company: google
+
+Accepted 39,152
+Submissions 85,759
+
+Contributor LeetCode
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+LinkedIn | 13 Amazon | 2
+1 year ~ 2 years
+Google
+
+Binary Tree Inorder Traversal Medium
+Closest Binary Search Tree Value Easy
+Hint 1:
+Consider implement these two helper functions:
+getPredecessor(N), which returns the next smaller node to N.
+getSuccessor(N), which returns the next larger node to N.
+Hint 2:
+Try to assume that each node has a parent pointer, it makes the problem much easier.
+Hint 3:
+Without parent pointer we just need to keep track of the path from the root to the current node using a stack.
+Hint 4:
+You would need two stacks to track the path in finding predecessor and successor node separately.

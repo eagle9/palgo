@@ -8,7 +8,10 @@
  * };
  */
 
-//dp, shaun own idea started, checked with huahua, runtime 16ms, faster than 100%
+//dp, shaun own idea started, checked with huahua,
+//similar idea to Unique Binary Search Trees, given 1 to i, try each number j(1 to i) as the root, left (1 to j-1), right (j+1 to i)
+
+//runtime 12ms, faster than 98%, mem less than 95%
 class Solution {
 public:
     vector<TreeNode*> generateTrees(int n) {
@@ -42,8 +45,12 @@ private:
     TreeNode* clone(TreeNode* root, int delta) {
         if (root == NULL) return root;
         TreeNode* node = new TreeNode(root->val + delta);
+        //root->val += delta;
         node->left = clone(root->left, delta);
+        //clone(root->left, delta);
         node->right = clone(root->right, delta);
+        //clone(root->right, delta);
         return node;
+        //return root;
     }
 };

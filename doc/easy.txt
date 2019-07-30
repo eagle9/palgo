@@ -64,7 +64,7 @@
 62	28	Implement strStr() ---    		
 63	350	Intersection of Two Arrays II ---1, cutting, hash for smaller array, 2p to allow the smaller to catch up
 64	232	Implement Queue using Stacks, -----1, q1=[1 2 3 4], to get 4, q2 = [1 2 3], q1=[4]
-65	557	Reverse Words in a String III, ----1, 
+65	557	Reverse Words in a String III, ----1,cutting: 2 reverse 
 66	751	IP to CIDR  -----
 67	226	Invert Binary Tree-----1, cutting, recur divide and conquer, or bfs for each swap left and right
 68	819	Most Common Word,-----1, cutting: get familiar with string replace char, tokenize,  
@@ -72,58 +72,58 @@
 70	104	Maximum Depth of Binary Tree, ----1, own idea accepted first sub, both dfs and bfs level version
 71	724	Find Pivot Index ---1, cutting prefixSum ans sumAll = nums[i] + 2*sum
 72	707	Design Linked List ---1  
-73	101	Symmetric Tree --- 1, helper(node1, node2), travere 2 tree in sync , bfs the same idea  	
-74	170	Two Sum III - Data structure design
+73	101	Symmetric Tree ---1, helper(node1, node2), travere 2 tree in sync , bfs the same idea  	
+74	170	Two Sum III - Data structure design, ----1, cutting: multiset bst, a==val-a, count>=2
 75	235	Lowest Common Ancestor of a Binary Search Tree ---1,cutting: think about a recur function that returns the ancestor of either p or q 
-76	66	Plus One --- 1, cutting: own idea, with carry, not forget carry after loop
+76	66	Plus One ---1, cutting: own idea, with carry, not forget carry after loop
 77	83	Remove Duplicates from Sorted List ----1, shaun own idea and code accepted
 78	680	Valid Palindrome II ---1, cutting: delete left or right, use sub function is_valid(s, left, right) 
-79	674	Longest Continuous Increasing Subsequence ---
+79	674	Longest Continuous Increasing Subsequence ---1, cutting, dp(lcis end at i) or loop
 80	595	Big Countries  
 81	108	Convert Sorted Array to Binary Search Tree ---1, cutting, find the mid index, recur, how to prove it is balanced? 
 82	766	Toeplitz Matrix ----1, cutting: ij i+1 j+1
 83	257	Binary Tree Paths ----1, cutting: recur, both divide and conquer, or cursor type recur
 84	118	Pascal's Triangle ----
-85	371	Sum of Two Integers --- 
-86	157	Read N Characters Given Read4 ---
-87	169	Majority Element ---
+85	371	Sum of Two Integers ---1, cutting ^ for sum, & and <<1 for carray,  
+86	157	Read N Characters Given Read4 ---1, cutting: keep doing read4, 
+87	169	Majority Element ---1, cutting: find majorirty element's set bits
 88	181	Employees Earning More Than Their Managers ---
-89	189	Rotate Array ---- 1, cutting, use vector push and erase okay, but what if use fixed size array?  many assisting variables, yet to master
-90	463	Island Perimeter  ---
-91	836	Rectangle Overlap ---- 
-92	475	Heaters  ---- 
-93	852	Peak Index in a Mountain Array ---
-94	532	K-diff Pairs in an Array    
-95	168	Excel Sheet Column Title   
-96	190	Reverse Bits ---- 
+89	189	Rotate Array ----1, cutting, use vector push and erase okay, but what if use fixed size array?  many assisting variables, yet to master
+90	463	Island Perimeter  ---1, shaun own naive enumerage and accumu each island cell's contribution to perimeter
+91	836	Rectangle Overlap ----1, cutting, max(start12) compare to max(end12)
+92	475	Heaters  ----1, sort the heaters(positions),for each house, find its left and right heater, take the heater that is closer as the min radius to cover this house, then find the max of such radius, use binary search to find heater index first >= house  
+93	852	Peak Index in a Mountain Array ---1, cutting: binary search
+94	532	K-diff Pairs in an Array ----1, cutting: hash or 2pt, to avoid duplciates
+95	168	Excel Sheet Column Title,---1, tricky and error prone, cutting: list all cases and really test with the cases  
+96	190	Reverse Bits ----1, get ith bit to lowest bit position, check it set or not, then res |= b<<(31-i) 
 97	359	Logger Rate Limiter ---
-98	876	Middle of the Linked List ---
-99	628	Maximum Product of Three Numbers ---
-100	743	Network Delay Time  ---- 
+98	876	Middle of the Linked List ---1, cutting slow and fast pointer
+99	628	Maximum Product of Three Numbers ---1, sort and postive and negative analysis of cases
+100	743	Network Delay Time  ----1, cutting dijkstra algo, with Q level or minHeap, template, just have to remember solid
 ============================================
 101	427	Construct Quad Tree 
-102	496	Next Greater Element I
-103	617	Merge Two Binary Trees ----
-104	448	Find All Numbers Disappeared in an Array 
+102	496	Next Greater Element I, ----1, cutting: hash for n2, or monotonic stack 
+103	617	Merge Two Binary Trees ----1, cutting: shaun own divide and conquer idea accepted first sub
+104	448	Find All Numbers Disappeared in an Array, ---1, cutting: use input array, key observation, value and index the same range, so reorg numbers according to its value, put it to nums[value-1], then go over the array check value != i+1 
 105	605	Can Place Flowers 
 106	243	Shortest Word Distance ------1, own accepted
 107	733	Flood Fill 
-108	453	Minimum Moves to Equal Array Elements
+108	453	Minimum Moves to Equal Array Elements---, low worth, skip
 109	266	Palindrome Permutation
-110	171	Excel Sheet Column Number
-111	270	Closest Binary Search Tree Value----
-112	237	Delete Node in a Linked List---
-113	100	Same Tree, ----1
-114	225	Implement Stack using Queues ----
+110	171	Excel Sheet Column Number ---1, much easier than AA to int, cutting: still always test
+111	270	Closest Binary Search Tree Value----1, high worth, cutting angle is key to find O(logn), while (root) binary search, compare with current node
+112	237	Delete Node in a Linked List---1, challenge: no head is given, only node to be deleted. clever, cutting: node temp temp->next, copy temp(val, next) to node, delete temp 
+113	100	Same Tree, ----1, similar to symetric tree, 
+114	225	Implement Stack using Queues ----1, cutting, with 2 q, [1 2 3 4], to get 4, [4], [1 2 3] to q2
 115	458	Poor Pigs
-116	572	Subtree of Another Tree, ----
+116	572	Subtree of Another Tree, ----1, cutting: same tree, try all nodes of s, check isSame node and t, don't assume they are BST
 117	246	Strobogrammatic Number ----
 118	734	Sentence Similarity---
 119	849	Maximize Distance to Closest Person
 120	796	Rotate String ----
-121	437	Path Sum III ----
+121	437	Path Sum III ----1, cutting: cursor style dfs recur with backstracking, at each node, check each starting point 
 122	917	Reverse Only Letters ----
-123	700	Search in a Binary Search Tree ----
+123	700	Search in a Binary Search Tree ----1, straightforward recur, shaun own idea accepted first sub
 124	191	Number of 1 Bits ----
 125	728	Self Dividing Numbers ----
 126	874	Walking Robot Simulation ----
@@ -141,7 +141,7 @@
 138	461	Hamming Distance, ----
 139	832	Flipping an Image ,----
 140	686	Repeated String Match, ----
-141	252	Meeting Rooms ---
+141	252	Meeting Rooms ---1, cutting: sort and check overlap of intervals
 142	447	Number of Boomerangs
 143	509	Fibonacci Number ----
 144	690	Employee Importance
@@ -150,24 +150,24 @@
 147	342	Power of Four ----
 148	276	Paint Fence ---
 149	107	Binary Tree Level Order Traversal II ---
-150	112	Path Sum ---
+150	112	Path Sum ---1,cutting: path from root to leaf, cursor style recur, grow sum  
 =======================
 151	367	Valid Perfect Square ---
 152	231	Power of Two ---
 153	400	Nth Digit 
 154	183	Customers Who Never Order 
-155	111	Minimum Depth of Binary Tree ----
-156	687	Longest Univalue Path -----
+155	111	Minimum Depth of Binary Tree ----1,cutting: bfs level or divide and conquer, remember testing with examples to get details and corner cases right 
+156	687	Longest Univalue Path -----1,actually medium or hard level, cutting: helper return longest uni path from root down, update gobal with path through the root, similar to binary tree maximum path sum(hard) 
 157	897	Increasing Order Search Tree ---
-158	669	Trim a Binary Search Tree ---
+158	669	Trim a Binary Search Tree ---1, todo
 159	599	Minimum Index Sum of Two Lists    		47.00%	Easy
 160	665	Non-decreasing Array    		19.60%	Easy
 161	27	Remove Element
 162	933	Number of Recent Calls
 163	504	Base 7 ---
-164	872	Leaf-Similar Trees ---
+164	872	Leaf-Similar Trees ---1, todo
 165	256	Paint House, ----
-166	389	Find the Difference    		52.60%	Easy
+166	389	Find the Difference
 167	401	Binary Watch    		45.00%	Easy
 168	884	Uncommon Words from Two Sentences    		60.50%	Easy
 169	657	Robot Return to Origin    		70.60%	Easy

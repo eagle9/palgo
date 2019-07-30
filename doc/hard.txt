@@ -1,6 +1,6 @@
 1	146	LRU Cache,--------1, cut,  combine map(key to list pointer) and list of key val pairs
 2	4	Median of Two Sorted Arrays----1, binary search cut1, derive cut2, 4 boundary numbers
-3	42	Trapping Rain Water -------1, stack with index
+3	42	Trapping Rain Water -------1, cutting: down and up with stack with index(good to get width, down and up similar to parentheses, details with example
 4	273	Integer to English Words,------0.3,cutting: analysis and derive rules, hundrends thousand-million-billion
 5	301	Remove Invalid Parentheses,------1, cutting: pretty hard, first figure out how many ( and ) to remove, then dfs, growing candidate, avoid repeating char 
 6	23	Merge k Sorted Lists  -----1, cutting: min heap
@@ -32,10 +32,10 @@
 32	460	LFU Cache-------1,cutting: problem,cacheNode, map key to cacheNode, map freq to list of keys, capacity, minFreq
 33	45	Jump Game II, ----- 0.6, greedy 2p,  
 34	432	All O`one Data Structure, ----0.1
-35	65	Valid Number,  -----, not much worth, many cases string manipulation, read it, i won't ask myself code it
+35	65	Valid Number,  -----1, not much worth, many cases string manipulation, read it, i won't ask myself code it
 36	51	N-Queens -----1, cuttingclassic, quick read okay, growing candidate backtracking dfs
 37	312	Burst Balloons, ----1, g2, dq dp, cutting break the sequence, computer order by ? len, pad the sequence to ensure transition func inboud
-38	212	Word Search II  --------- 0.3, 
+38	212	Word Search II  ---------1, cutting:given word list to trie, for each ij, dfs , backtracking, branch pruning   
 39	128	Longest Consecutive Sequence, ------1,own idea and code upon uf hint, accepted after 2 bug fixes
 40	126	Word Ladder II   -------0.6, pretty hard,  bfs then dfs, not quite apply template easily, one more video   
 41	149	Max Points on a Line, ----, 0.7, math,  first try get very close 
@@ -112,7 +112,7 @@
 108	354	Russian Doll Envelopes, --------    	
 109	675	Cut Off Trees for Golf Event   
 110	956	Tallest Billboard 
-111	407	Trapping Rain Water II, ------0.5 , 2d,  
+111	407	Trapping Rain Water II, ------1, 2d,cutting: from border, bfs with minHeap, mx = max(mx,h), not 100% get though  
 112	132	Palindrome Partitioning II, -------- 
 113	546	Remove Boxes
 114	302	Smallest Rectangle Enclosing Black Pixels, -----, binary search to extend
@@ -120,7 +120,7 @@
 116	899	Orderly Queue, -----, ama 2y ago, not worth 
 117	214	Shortest Palindrome, ------ 0.3, worth figure, add chars to the front to make palindrome,   
 118	710	Random Pick with Blacklist
-119	895	Maximum Frequency Stack, ----------, bucket for each freq, bucket is a stack  
+119	895	Maximum Frequency Stack, ----------1, bucket for each freq, bucket is a stack  
 120	879	Profitable Schemes, ----0.1, l2g1y, kinda worth,dp
 121	446	Arithmetic Slices II - Subsequence, ---0.2,  fb and ali, dp, understand the problem now
 122	815	Bus Routes, -----0.1,  g6, bfs,worth,  

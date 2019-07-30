@@ -1,5 +1,5 @@
-496 Next Greater Element I
-Easy
+496. Next Greater Element I
+Easy 843 1366 Favorite Share
 
 You are given two arrays (without duplicates) nums1 and nums2 where nums1’s elements are subset of nums2. Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
 
@@ -23,7 +23,6 @@ All elements in nums1 and nums2 are unique.
 The length of both nums1 and nums2 would not exceed 1000.
 
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
-
 Amazon | 6 Bloomberg | 2 
 Google |2
 

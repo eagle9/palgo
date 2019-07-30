@@ -1,17 +1,33 @@
-900. Closest Binary Search Tree Value
-Description
+270. Closest Binary Search Tree Value
+Easy 421 32 Favorite Share
+
 Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
+
+Note:
 
 Given target value is a floating point.
 You are guaranteed to have only one unique value in the BST that is closest to the target.
-Example
-Given root = {1}, target = 4.428571, return 1.
+Example:
+Input: root = [4,2,5,1,3], target = 3.714286
+    4
+   / \
+  2   5
+ / \
+1   3
+Output: 4
 
-Related Problems
-closest binary search tree value
+Accepted 90,668
+Submissions 205,354
 
-idea:
-traverse the bst inorder, if target is <= node.val, then return the node.val
-   if target > node.val, keep going until 
-  1) last node of the bst, return node.val
-  2) target <= node.val, immediately return node.val
+Contributor LeetCode
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Facebook | 5 Amazon | 2 Bloomberg | 2
+6 months ~ 1 year1 year ~ 2 years
+Microsoft | 2 LinkedIn | 2 Google | 2
+
+Topic: Binary Search, Tree
+
+Similar:
+Count Complete Tree Nodes Medium
+Closest Binary Search Tree Value II Hard
+Search in a Binary Search Tree Easy

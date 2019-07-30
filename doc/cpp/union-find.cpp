@@ -36,6 +36,11 @@ public:
             parents_[u] = Find(parents_[u]);        
         return parents_[u];
     }
+	int Find(int u) {
+		//keep going up till root
+		while (u != parents_[u]) u = parents_[u];
+		return u;
+	}
 private:
     vector<int> parents_;
     vector<int> ranks_; //what's rank???

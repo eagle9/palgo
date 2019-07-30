@@ -1,5 +1,6 @@
 437. Path Sum III
-Easy
+Easy 1989 97 Favorite Share
+
 You are given a binary tree in which each node contains an integer value.
 
 Find the number of paths that sum to a given value.
@@ -25,6 +26,18 @@ Return 3. The paths that sum to 8 are:
 1.  5 -> 3
 2.  5 -> 2 -> 1
 3. -3 -> 11
+Accepted 113,695
+Submissions 262,974
 
-Topic: Tree 
-Similar: Path Sum, Path Sum ii, Path Sum iv 
+Contributor Stomach_ache
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Amazon | 2 
+1 year ~ 2 years
+Alibaba | 3 Microsoft | 2 Google | 2
+
+Topic: Tree
+
+Path Sum Easy Path Sum II Medium
+Path Sum IV Medium
+Longest Univalue Path Easy

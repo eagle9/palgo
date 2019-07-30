@@ -6,7 +6,7 @@
 6	138	Copy List with Random Pointer, -----1, similar to clone graph, copy and map nodes first, then edges/links
 7	56	Merge Intervals, ---1 
 8	15	3Sum, ----1, ---, cutting: sort then left and right pointers  
-9	253	Meeting Rooms II, ----1, my own idea with sorting ans sweeping, after bug fix  
+9	253	Meeting Rooms II, ----1, cutting: my own idea with sorting timestamp with event type(1 for start, 0 for end),  sweeping, after bug fix  
 10	238	Product of Array Except Self, ---1, prefix sum approach
 11	11	Container With Most Water, ---1, 
 12	33	Search in Rotated Sorted Array, ----1, cutting, binary search cases 
@@ -82,7 +82,7 @@
 78	207	Course Schedule , -----1, cutting, classic apply of topo sorting
 79	228	Summary Ranges, ----1, cutting, 1 loop with a smaller loop to deal with consecutive subarray
 80	102	Binary Tree Level Order Traversal, -----1, bfs, cutting bfs's level order version 
-81	314	Binary Tree Vertical Order Traversal, -----, 
+81	314	Binary Tree Vertical Order Traversal, -----,1, cutting: shaun own up with x, then bfs, go left x-1, go right x+1, ordered by x, sorted map naturally for storage 
 82	535	Encode and Decode TinyURL ----
 83	244	Shortest Word Distance II, ----1, not hard, own  accepted
 84	152	Maximum Product Subarray, ----1, cutting, dp with 2 arrays, ending
@@ -103,30 +103,30 @@
 99	18	4Sum, ----1, cutting, 2pointer with sort 
 100	71	Simplify Path, -------1, cutting: tokenize with split /, use example, find out .. pop folder-name, then unwind stack 
 ==================================July 13
-101	279	Perfect Squares, ----
-102	468	Validate IP Address ------, 
+101	279	Perfect Squares, ----1, cutting: second round own idea accepted with 2 bug fixes, reduce to smaller value problem
+102	468	Validate IP Address ------1, cutting, find . ipv4, find : ipv6, details
 103	324	Wiggle Sort II    	
-104	939	Minimum Area Rectangle,  -----
+104	939	Minimum Area Rectangle,  -----1, for each pair x1y1 and x2y2 as two diagonal corners of rectangle, check other two corners are in the given points, if so,compare area and update the min
 105	105	Construct Binary Tree from Preorder and Inorder Traversal, ----
-106	208	Implement Trie (Prefix Tree), ----, accepted with memory, but forgot quickly
+106	208	Implement Trie (Prefix Tree), ----1, accepted with memory, but forgot quickly
 107	227	Basic Calculator II, -----, to review 
 108	287	Find the Duplicate Number, ----
-109	24	Swap Nodes in Pairs, ------0.5, 
+109	24	Swap Nodes in Pairs, ------1,cutting: draw picture, move 2 pt at the same time 
 110	142	Linked List Cycle II, ----- 
-111	285	Inorder Successor in BST, -----
+111	285	Inorder Successor in BST, -----1, divide and conquer or in order with stack loop, test with examples, 
 112	178	Rank Scores 
-113	210	Course Schedule II, -----
-114	94	Binary Tree Inorder Traversal, -----1,both recur or stack 
-115	75	Sort Colors, -----1, 2p
-116	63	Unique Paths II, ----1, dp, straightforward to me
+113	210	Course Schedule II, -----1, cutting: topo sort, bfs, indegree, update and 
+114	94	Binary Tree Inorder Traversal, -----1,both recur or stack(while cur!=NULL or !st.empty() 
+115	75	Sort Colors, -----1, cutting: 2pt, start for r, end for b
+116	63	Unique Paths II, ----1, dp, straightforward to me, accepted first sub
 117	304	Range Sum Query 2D - Immutable, ----
 118	523	Continuous Subarray Sum, ----
 119	153	Find Minimum in Rotated Sorted Array, ----
-120	150	Evaluate Reverse Polish Notation, ---- worth
+120	150	Evaluate Reverse Polish Notation, ----1,high worth, cutting: straightforward obvious stack application
 121	785	Is Graph Bipartite?, -----
-122	251	Flatten 2D Vector , ----
-123	64	Minimum Path Sum , -----
-124	567	Permutation in String , ----
+122	251	Flatten 2D Vector , ----1, cutting: iterator, moving inside data storage
+123	64	Minimum Path Sum , -----1, cutting: ij from left or up
+124	567	Permutation in String , ----1, cutting: sliding window, valid if has all chars and correct count
 125	187	Repeated DNA Sequences, ----
 126	165	Compare Version Numbers , ----
 127	539	Minimum Time Difference, ----
@@ -139,10 +139,10 @@
 134	117	Populating Next Right Pointers in Each Node II, ----1, cutting use upper level link info to get current level link , both dfs recur or iteration
 135	909	Snakes and Ladders    		
 136	406	Queue Reconstruction by Height
-137	62	Unique Paths, -----1, own idea and accepted,
-138	36	Valid Sudoku, ----
-139	807	Max Increase to Keep City Skyline
-140	250	Count Univalue Subtrees , -----   		
+137	62	Unique Paths, -----1, cutting: dp, own idea and accepted,
+138	36	Valid Sudoku, ----1, cutting: hash to check unique inside a row, colum or cell
+139	807	Max Increase to Keep City Skyline,----
+140	250	Count Univalue Subtrees , -----1, cutting,dfs helper return current node related value, thinking left and right contribution, thinking violation, update global ans, similar to binary tree maximum path sum and longest univalue path  		
 141	698	Partition to K Equal Sum Subsets
 142	518	Coin Change 2, -----
 143	430	Flatten a Multilevel Doubly Linked List
@@ -171,23 +171,23 @@
 166	593	Valid Square  
 167	384	Shuffle an Array
 168	230	Kth Smallest Element in a BST, ----
-169	442	Find All Duplicates in an Array, ----
+169	442	Find All Duplicates in an Array, ----1, cutting: number reorg by its val, to index val-1
 170	863	All Nodes Distance K in Binary Tree, ---- 
 171	635	Design Log Storage System  
 172	373	Find K Pairs with Smallest Sums
 173	271	Encode and Decode Strings, -----  
 174	417	Pacific Atlantic Water Flow 
 175	498	Diagonal Traverse  
-176	556	Next Greater Element III, ----
+176	556	Next Greater Element III, ----1, cutting: similar to next permutation, check my comment at github
 177	721	Accounts Merge  
 178	678	Valid Parenthesis String, ----
 179	833	Find And Replace in String, ----
-180	95	Unique Binary Search Trees II , ----
+180	95	Unique Binary Search Trees II , ----1,cutting: same as I, recur works too 
 181	286	Walls and Gates, ----
-182	392	Is Subsequence, ----
+182	392	Is Subsequence, ----1, cutting: haixin
 183	490	The Maze, -----
 184	163	Missing Ranges, -----1, cutting prev is end of previous range (present and missing)
-185	109	Convert Sorted List to Binary Search Tree, ----
+185	109	Convert Sorted List to Binary Search Tree, ----1, cutting: divide and conquer, find the mid point of the list
 186	194	Transpose File
 187	130	Surrounded Regions, ----
 188	365	Water and Jug Problem
@@ -196,7 +196,7 @@
 191	582	Kill Process
 192	86	Partition List, -----
 193	328	Odd Even Linked List, ----
-194	96	Unique Binary Search Trees, ----1, serialize bst and use hash table
+194	96	Unique Binary Search Trees, ----1,cutting: given 1 to i, try each number j as root, to make it bst, left tree will be 1 to j-1, right tree will be j+1 to i(1 to i-j), bingo 
 195	932	Beautiful Array
 196	213	House Robber II, ------
 197	797	All Paths From Source to Target, ---
@@ -214,7 +214,7 @@
 208	395	Longest Substring with At Least K Repeating Characters, ----
 209	662	Maximum Width of Binary Tree ----1,cutting: bfs level, x -> 2*x, 2*x+1, reset x when q.size == 1
 210	524	Longest Word in Dictionary through Deleting
-211	113	Path Sum II   -----
+211	113	Path Sum II   -----1, cutting: cursor style recur, growing candidate
 212	611	Valid Triangle Number    
 213	516	Longest Palindromic Subsequence, ---  
 214	416	Partition Equal Subset Sum
@@ -227,19 +227,19 @@
 221	323	Number of Connected Components in an Undirected Graph, ----
 222	353	Design Snake Game
 223	931	Minimum Falling Path Sum  
-224	366	Find Leaves of Binary Tree, ------ 
+224	366	Find Leaves of Binary Tree, ------1, high wroth, not easy to get right, simple code, cutting: clever, TreeNode* helper(node,leaves), return NULL when node is leave, otherwise node->left = helper(node->left,leaves)
 225	131	Palindrome Partitioning, ---- 
 226	184	Department Highest Salary
 227	274	H-Index, ----		
 228	338	Counting Bits, -----    	
-229	503	Next Greater Element II ----
+229	503	Next Greater Element II ----1, cutting: naive from i+1 to i+n-1, >n %n, O(n) with stack, why? not fully
 230	435	Non-overlapping Intervals, -----
 231	740	Delete and Earn    		
 232	161	One Edit Distance, -----1, cutting: consider len1 and len2, find the ith char that differ, the boils down several simpler problems, tricy cases, not easy to get details right, many cases   	
 233	731	My Calendar II, ----
 234	737	Sentence Similarity II, ---- 
 235	310	Minimum Height Trees  , ----
-236	261	Graph Valid Tree, ----    
+236	261	Graph Valid Tree, ----1, high worth, cutting: bfs, dfs, union all works, bfs and dfs check cycle and if we can visit all n nodes, n-1 = edges.size()    
 237	856	Score of Parentheses, ----
 238	424	Longest Repeating Character Replacement 
 239	260	Single Number III, ----1,cutting, still do xor, but find first set bit and break the numbers into 2 groups, get xor for set bit group, xor is one of the single number
@@ -421,7 +421,7 @@
 414	583	Delete Operation for Two Strings    		44.10%	Medium
 415	275	H-Index II    		35.10%	Medium
 416	318	Maximum Product of Word Lengths    		47.60%	Medium
-417	986	Interval List Intersections, ---- 1, worth to do, 2p
+417	986	Interval List Intersections, ----1, worth to do, 2p
 418	957	Prison Cells After N Days    		36.90%	Medium
 419	875	Koko Eating Bananas    		44.10%	Medium
 420	648	Replace Words    		50.30%	Medium
@@ -456,7 +456,7 @@
 449	241	Different Ways to Add Parentheses
 450	971	Flip Binary Tree To Match Preorder Traversal
 451	969	Pancake Sorting
-452	987	Vertical Order Traversal of a Binary Tree
+452	987	Vertical Order Traversal of a Binary Tree, ---1, cutting: shaun own idea accepted after 2-3 bug fixes, struct comp opeator <, unordered_map<int, set<entry>>
 ==============low frequency below=============
 453	978	Longest Turbulent Subarray    		45.40%	Medium
 454	991	Broken Calculator    New		32.40%	Medium

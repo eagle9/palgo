@@ -1,5 +1,6 @@
 279. Perfect Squares
-Medium
+Medium 1559 126 Favorite Share
+
 Given a positive integer n, find the least number of perfect square numbers (for example, 1, 4, 9, 16, ...) which sum to n.
 
 Example 1:

@@ -1,4 +1,6 @@
 //shaun's own idea, accepted 3rd sub
+//cutting:  sliding window, expand right, contract left, valid window has all the chars in s1 and correct count
+// 
 //runtime 4ms, faster than 100%, mem less than 73%
 class Solution {
 public:
@@ -6,16 +8,15 @@ public:
         int len = s1.size(), len2 = s2.size();
         if (len > len2) return false;
         
-        vector<int> m(26), wind(26);
+        vector<int> m(26); //char in s1 and its count
+        vector<int> wind(26); //sliding window, store char and its count
         for (char ch: s1) m[ch - 'a']++;
         
-        
-        for (int i = 0; i < len; ++i) wind[s2[i] - 'a']++;
-        if (isEqual(m, wind)) return true;
-        for (int i = len; i < len2; ++i) {
-            wind[s2[i-len]- 'a']--;
-            wind[s2[i] - 'a']++;
-            if (isEqual(m, wind)) return true;
+        for (int i = 0; i < len2; ++i) {
+            if (i -len >=0) wind[s2[i-len]- 'a']--; //contract left
+            wind[s2[i] - 'a']++; //expand right
+            //if (isEqual(m, wind)) return true;
+            if (m == wind) return true;
         }
         //no found
         return false;
@@ -29,3 +30,4 @@ private:
         return true;
     }
 };
+

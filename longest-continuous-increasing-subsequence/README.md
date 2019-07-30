@@ -1,5 +1,6 @@
 674. Longest Continuous Increasing Subsequence
-Easy
+Easy 463 95 Favorite Share
+
 Given an unsorted array of integers, find the length of longest continuous increasing subsequence (subarray).
 
 Example 1:
@@ -12,7 +13,18 @@ Input: [2,2,2,2,2]
 Output: 1
 Explanation: The longest continuous increasing subsequence is [2], its length is 1. 
 Note: Length of the array will not exceed 10,000.
+
+Accepted 71K
+Submissions 159.5K
+
+Contributor just_not_over_12
+0 ~ 6 months
+Facebook | 3
+6 months ~ 1 year1 year ~ 2 years
+Google |2
+
 Topic: Array
+
 Similar:
-number of longest increasing subsequence(medium)
-minimum window subsequence(hard)
+Number of Longest Increasing Subsequence Medium
+Minimum Window Subsequence Hard

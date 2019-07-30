@@ -1,5 +1,6 @@
 392. Is Subsequence
-Medium
+Medium 589 132 Favorite Share
+
 Given a string s and a string t, check if s is subsequence of t.
 
 You may assume that there is only lower case English letters in both s and t. t is potentially a very long (length ~= 500,000) string, and s is a short string (<=100).
@@ -15,10 +16,21 @@ Example 2:
 s = "axc", t = "ahbgdc"
 
 Return false.
+
 Follow up:
 If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B, and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?
 
 Credits:
 Special thanks to @pbrother for adding this problem and creating all test cases.
+
+Accepted 93,507
+Submissions 198,322
+Contributor LeetCode
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 5
+
 Topic: Binary Search, Dynamic Programming, Greedy
-Similar: number of matching subsequences(medium)
+
+Similar:
+Number of Matching Subsequences Medium
+Shortest Way to Form String Medium

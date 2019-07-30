@@ -1,5 +1,5 @@
 366. Find Leaves of Binary Tree
-Medium
+Medium 615 10 Favorite Share
 
 Given a binary tree, collect a tree's nodes as if you were doing this: Collect and remove all leaves, repeat until the tree is empty.
 
@@ -23,7 +23,7 @@ Explanation:
           []         
 
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
-
 LinkedIn | 12 Google | 4 Amazon | 2
 
+Topic: Tree, Depth-first Search
 

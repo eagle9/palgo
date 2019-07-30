@@ -1,14 +1,22 @@
+//start with a large radiuis, [0=left, large=right], if all houses can be warmed, (left, mid), some houses not warmed, [mid, right] 
+//how to check all houses can be warmed, given a radius and heater positions? 
+//for each house pos, can we find h, such that   h-r <=pos <= h+r, this going to be O(mn)
+
 //shaun jz template, runtime 76ms, faster than 93%
+//jz idea --- cutting: sort header, for each house, find first heater index >= house, then the radius to cover this house is     heater[index-1] house heater[index], take the min from these two heaters
+// then take the max of such a radius
 class Solution {
 public:
     int findRadius(vector<int>& houses, vector<int>& heaters) {
         sort(heaters.begin(), heaters.end());
         int n = heaters.size();
+        
         int r = INT_MIN;
         //for each house, find its left and right heaters
         //   or find first heater >= house
         for (const int house: houses) {
             int left = 0, right = n-1;
+			//find first header >= house
             while (left+1< right) {
                 int mid = left + (right - left)/2;
                 //if == target, try go left, go get first n >= target
@@ -100,3 +108,4 @@ public:
         return r;
     }
 };
+

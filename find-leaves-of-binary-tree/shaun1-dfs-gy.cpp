@@ -10,8 +10,10 @@
 
 //check grandyang's similar idea,  kind of hard to come up with the helper
 //runtime 0ms, faster than 100%, mem less than 79%
-//to get deeper understand
-class Solution {
+//to get deeper understand --- understand now:
+//both left and right subtree will be changed each round, any leaf node found will be set to NULL. so we let the helper return root, but root->left and root->right will be updated. 
+//my init thought it to add parent parameter in the helper
+class Solution1 {
 public:
     vector<vector<int>> findLeaves(TreeNode* root) {
         vector<vector<int>> ans;
@@ -43,6 +45,43 @@ private:
     }
 };
 
+//shaun tried his own parent in helper idea, MLE
+class Solution {
+public:
+    vector<vector<int>> findLeaves(TreeNode* root) {
+        vector<vector<int>> ans;
+        TreeNode* cur = root;
+        while (cur) {
+            vector<int> vi;
+            helper(cur, NULL,true,vi);
+            ans.push_back(vi);
+        }
+        return ans;
+    }
+private:
+    
+    //find all leave values of the binary tree, and set each leaf to NULL
+    void helper(TreeNode* node, TreeNode* parent, bool left, vector<int>& leaves) {
+        if (node == NULL) return;
+        
+        if (node->left == NULL && node->right == NULL) {
+            leaves.push_back(node->val);
+            if (parent) {
+                if (left)  parent->left = NULL;
+                else parent->right = NULL;
+                delete node;
+            }
+            return;
+        }
+        
+        helper(node->left,node, true, leaves);
+       
+        helper(node->right,node, false, leaves);
+        
+        
+        
+    }
+};
 
 //shaun's first try, wrong answer
 class Solution000 {

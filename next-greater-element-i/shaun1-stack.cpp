@@ -1,5 +1,14 @@
-//shaun's original idea, accepted first sub
+//shaun's original idea, naive,  accepted first sub
+//
 //runtime 20ms, faster than 16%, mem less than 17%
+/*
+    unique numbers in both array, 1 is a subset of 2
+    output next greater of 1
+    focus on nums2, hash: number to its next greater, for each i, then from j= i+1 to end, if nums2[j] > nums2[i],  nums2[i] --> nums2[j]
+    time O(n^2)
+    why stack? --- O(n)
+    // 1 3 4 2 ---- 1 3 4, monotonic stack
+*/
 class Solution1 {
 public:
     vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {

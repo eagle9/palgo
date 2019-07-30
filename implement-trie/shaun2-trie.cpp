@@ -1,7 +1,11 @@
 /*
-Runtime: 88 ms, faster than 100.00% of C++ online submissions for Implement Trie (Prefix Tree).
-Memory Usage: 45 MB, less than 100.00% of C++ online submissions for Implement Trie (Prefix Tree).
+Trie (Prefix Tree).
 shaun coded the cpp from memory, based on grandyang idea
+runtime 72ms, faster than 80%, mem less than 73%
+
+cutting: TrieNode, 26 children with array, index = char - 'a'. you can store some other info, such as bool isWord, depends on problem requirement
+Trie is a class with a root
+insert a word, go down from root while go through word from 1st to last char, contruct the trie
 */
 class TrieNode {
 public:

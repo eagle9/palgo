@@ -1,5 +1,5 @@
 251. Flatten 2D Vector
-Medium
+Medium 255 134 Favorite Share
 
 Design and implement an iterator to flatten a 2d vector. It should support the following operations: next and hasNext.
 

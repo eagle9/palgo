@@ -8,7 +8,9 @@
  * };
  */
 //divide and conquer idea, runtime 20ms, faster than 95%
-//2019 0313, donglin idea, enumerate with different root 1 to n, use helper
+//2019 0313, donglin idea, 
+//cutting: given 1 to n, try each (i = 1..n) as the root, then
+//left tree (1 to i-1), right tree( i+1 to n) smaller problem, recur or dp
 class Solution {
 public:
     vector<TreeNode*> generateTrees(int n) {
@@ -53,4 +55,5 @@ private:
     }
     
 };
+
 

@@ -1,5 +1,6 @@
 95. Unique Binary Search Trees II
-Medium
+Medium 1332 118 Favorite Share
+
 Given an integer n, generate all structurally unique BST's (binary search trees) that store values 1 ... n.
 
 Example:
