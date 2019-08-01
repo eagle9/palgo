@@ -110,11 +110,11 @@
 105	105	Construct Binary Tree from Preorder and Inorder Traversal, ----
 106	208	Implement Trie (Prefix Tree), ----1, accepted with memory, but forgot quickly
 107	227	Basic Calculator II, -----, to review 
-108	287	Find the Duplicate Number, ----
+108	287	Find the Duplicate Number, ----1, shaun own, store val at val-1 index
 109	24	Swap Nodes in Pairs, ------1,cutting: draw picture, move 2 pt at the same time 
-110	142	Linked List Cycle II, ----- 
+110	142	Linked List Cycle II, -----1, cutting: slow and faster pointers, draw a pic and use math to find out segment length relationship 
 111	285	Inorder Successor in BST, -----1, divide and conquer or in order with stack loop, test with examples, 
-112	178	Rank Scores 
+112	178	Rank Scores----1, cutting: sql distinct scores, rank = count >= score 
 113	210	Course Schedule II, -----1, cutting: topo sort, bfs, indegree, update and 
 114	94	Binary Tree Inorder Traversal, -----1,both recur or stack(while cur!=NULL or !st.empty() 
 115	75	Sort Colors, -----1, cutting: 2pt, start for r, end for b
@@ -123,14 +123,14 @@
 118	523	Continuous Subarray Sum, ----
 119	153	Find Minimum in Rotated Sorted Array, ----
 120	150	Evaluate Reverse Polish Notation, ----1,high worth, cutting: straightforward obvious stack application
-121	785	Is Graph Bipartite?, -----
+121	785	Is Graph Bipartite?, -----1, cutting bfs 2 colors, or union find
 122	251	Flatten 2D Vector , ----1, cutting: iterator, moving inside data storage
 123	64	Minimum Path Sum , -----1, cutting: ij from left or up
 124	567	Permutation in String , ----1, cutting: sliding window, valid if has all chars and correct count
 125	187	Repeated DNA Sequences, ----
-126	165	Compare Version Numbers , ----
-127	539	Minimum Time Difference, ----
-128	723	Candy Crush, -----
+126	165	Compare Version Numbers , ----1, cutting: stringstream left to right
+127	539	Minimum Time Difference, ----1, cutting: sort time in min, and deal with circular
+128	723	Candy Crush, -----, worth, 
 129	739	Daily Temperatures, -----  
 130	378	Kth Smallest Element in a Sorted Matrix, -----
 131	787	Cheapest Flights Within K Stops 
@@ -138,7 +138,7 @@
 133	311	Sparse Matrix Multiplication, -----0.6, 
 134	117	Populating Next Right Pointers in Each Node II, ----1, cutting use upper level link info to get current level link , both dfs recur or iteration
 135	909	Snakes and Ladders    		
-136	406	Queue Reconstruction by Height
+136	406	Queue Reconstruction by Height, ------, high worth, greedy
 137	62	Unique Paths, -----1, cutting: dp, own idea and accepted,
 138	36	Valid Sudoku, ----1, cutting: hash to check unique inside a row, colum or cell
 139	807	Max Increase to Keep City Skyline,----
