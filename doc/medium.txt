@@ -19,7 +19,6 @@
 19	54	Spiral Matrix,----1, loop array, butting a loop with loops with updates
 20	139	Word Break, ----1, break into left and right, right in dict, break left smaller, recur memo or dp
 21	681	Next Closest Time---1,cutting: string loop naive enumerate and check   
-================July 8
 22	289	Game of Life-----1,cutting in place computing, no extra variable, but different bits,  
 23	560	Subarray Sum Equals K,------1, cutting prefixsum and hashtable,  
 24	98	Validate Binary Search Tree, -----1, cutting inorder dfs
@@ -45,7 +44,6 @@
 43	103	Binary Tree Zigzag Level Order Traversal, -----1, cutting:bfs, level with q, alternate direction
 44	923	3Sum With Multiplicity, -----1, cutting: counting and combination
 45	16	3Sum Closest, ----1, cutting, sort and 2p, keep update
-======================== July 8
 46	43	Multiply Strings, ----1,cutting: array to store big int,m*n single digit mulitplications, use example to figure details  
 47	93	Restore IP Addresses, ----1, cutting: take 1-3 char substr from given input string, if valid, 1 less part needed, shorter remaining string,growing candidate 
 48	341	Flatten Nested List Iterator, ----1, cutting, use 1 stack, pop if nested peel and push back to stack1, else(integer) push to stack2, keep processing stack1 until all integers pushed to stack2 
@@ -57,7 +55,7 @@
 54	143	Reorder List, -----1, cutting == ? 
 55	347	Top K Frequent Elements, -----1, cutting, minheap with greater in front
 56	755	Pour Water, ---1, pure array , cutting = ?? first timer
-57	12	Integer to Roman    
+57	12	Integer to Roman, ----    
 58	92	Reverse Linked List II, -----1, linked list,cutting --draw a pic, figure out all the variables, prev cur temp moving togheter  
 59	300	Longest Increasing Subsequence ----1, cutting find natural solution
 60	177	Nth Highest Salary
@@ -71,7 +69,6 @@
 68	713	Subarray Product Less Than K, -----1, sliding window, valid window to contribute to ans count
 69	348	Design Tic-Tac-Toe, -----1, design cat,cutting ===?, lengthy prob
 70	735	Asteroid Collision, -----1, cutting=? find a clean idea to handle all cases    
-========July 11
 71	457	Circular Array Loop, g10, ---, very worth, first time, todo  
 72	332	Reconstruct Itinerary, -----1, cutting, graph:src->vector of dests, sort, dfs growing path to required len with backtracking, g6, worth, tricky
 73	199	Binary Tree Right Side View, ----1, own idea,related to level order bfs 
@@ -84,7 +81,7 @@
 80	102	Binary Tree Level Order Traversal, -----1, bfs, cutting bfs's level order version 
 81	314	Binary Tree Vertical Order Traversal, -----,1, cutting: shaun own up with x, then bfs, go left x-1, go right x+1, ordered by x, sorted map naturally for storage 
 82	535	Encode and Decode TinyURL ----
-83	244	Shortest Word Distance II, ----1, not hard, own  accepted
+83	244	Shortest Word Distance II, ----1, cutting: not hard, own  accepted
 84	152	Maximum Product Subarray, ----1, cutting, dp with 2 arrays, ending
 85	78	Subsets, ---1, cutting: for each size, combination
 86	166	Fraction to Recurring Decimal, ----
@@ -102,7 +99,6 @@
 98	211	Add and Search Word - Data structure design, -----
 99	18	4Sum, ----1, cutting, 2pointer with sort 
 100	71	Simplify Path, -------1, cutting: tokenize with split /, use example, find out .. pop folder-name, then unwind stack 
-==================================July 13
 101	279	Perfect Squares, ----1, cutting: second round own idea accepted with 2 bug fixes, reduce to smaller value problem
 102	468	Validate IP Address ------1, cutting, find . ipv4, find : ipv6, details
 103	324	Wiggle Sort II    	
@@ -119,9 +115,9 @@
 114	94	Binary Tree Inorder Traversal, -----1,both recur or stack(while cur!=NULL or !st.empty() 
 115	75	Sort Colors, -----1, cutting: 2pt, start for r, end for b
 116	63	Unique Paths II, ----1, dp, straightforward to me, accepted first sub
-117	304	Range Sum Query 2D - Immutable, ----
+117	304	Range Sum Query 2D - Immutable, ----1, cutting, prefix sum 1d to 2d, rectangles
 118	523	Continuous Subarray Sum, ----
-119	153	Find Minimum in Rotated Sorted Array, ----
+119	153	Find Minimum in Rotated Sorted Array, ----1, cutting: binary search use a loop or recur
 120	150	Evaluate Reverse Polish Notation, ----1,high worth, cutting: straightforward obvious stack application
 121	785	Is Graph Bipartite?, -----1, cutting bfs 2 colors, or union find
 122	251	Flatten 2D Vector , ----1, cutting: iterator, moving inside data storage
@@ -131,44 +127,44 @@
 126	165	Compare Version Numbers , ----1, cutting: stringstream left to right
 127	539	Minimum Time Difference, ----1, cutting: sort time in min, and deal with circular
 128	723	Candy Crush, -----, worth, 
-129	739	Daily Temperatures, -----  
-130	378	Kth Smallest Element in a Sorted Matrix, -----
+129	739	Daily Temperatures, -----1, cutting: naive to mono stack
+130	378	Kth Smallest Element in a Sorted Matrix, -----1,cutting: binary search value space, or heap
 131	787	Cheapest Flights Within K Stops 
-132	120	Triangle, 
-133	311	Sparse Matrix Multiplication, -----0.6, 
+132	120	Triangle, ----1, dp, cutting: from prev row to current row, reuse input array 
+133	311	Sparse Matrix Multiplication, -----1,cutting: store A's non zero elements only, for each row, non zero only 
 134	117	Populating Next Right Pointers in Each Node II, ----1, cutting use upper level link info to get current level link , both dfs recur or iteration
 135	909	Snakes and Ladders    		
-136	406	Queue Reconstruction by Height, ------, high worth, greedy
+136	406	Queue Reconstruction by Height, ------1, high worth, cutting: greedy heuristics, sort by height and k, insert at index, use example to figure out details and test for correctness
 137	62	Unique Paths, -----1, cutting: dp, own idea and accepted,
 138	36	Valid Sudoku, ----1, cutting: hash to check unique inside a row, colum or cell
 139	807	Max Increase to Keep City Skyline,----
 140	250	Count Univalue Subtrees , -----1, cutting,dfs helper return current node related value, thinking left and right contribution, thinking violation, update global ans, similar to binary tree maximum path sum and longest univalue path  		
 141	698	Partition to K Equal Sum Subsets
-142	518	Coin Change 2, -----
+142	518	Coin Change 2, -----1, cutting: 2d dp (coin 0 to n-1, amount 0 to amount),dfs TLE
 143	430	Flatten a Multilevel Doubly Linked List
 144	918	Maximum Sum Circular Subarray 
 145	280	Wiggle Sort, ----
 146	299	Bulls and Cows
-147	767	Reorganize String, -----
+147	767	Reorganize String, -----1,cutting: max freq char first, block size 2, related to k distance part, task scheduler
 148	148	Sort List, -----1, cutting merge, partition with slow fast pointers
-149	450	Delete Node in a BST, -----
+149	450	Delete Node in a BST, -----1, cutting: 5 cases, recur, bt divide and conquer
 150	59	Spiral Matrix II, -----  
-151	451	Sort Characters By Frequency, ----
+151	451	Sort Characters By Frequency, ----1,cutting: own with hash and heap, 
 152	855	Exam Room 
 153	209	Minimum Size Subarray Sum, ---- 
-154	73	Set Matrix Zeroes, -----  
+154	73	Set Matrix Zeroes, -----1, use row0 and col0 to store 0 info, use 2 extra variables to store row0 and col0 0 info.  
 155	889	Construct Binary Tree from Preorder and Postorder Traversal , ----
 156	419	Battleships in a Board 
 157	688	Knight Probability in Chessboard
-158	229	Majority Element II  
-159	284	Peeking Iterator, ----    
+158	229	Majority Element II, ----  
+159	284	Peeking Iterator, ----1, cutting: use flag and value copy    
 160	74	Search a 2D Matrix , ----1,cutting: two binary search, 1st binary search the 1st colum for target row, then binary search the row from left to right  
-161	694	Number of Distinct Islands, ---- 
+161	694	Number of Distinct Islands, ----1, cutting, encoding, signature of island 
 162	907	Sum of Subarray Minimums 
 163	935	Knight Dialer    		
-164	658	Find K Closest Elements
+164	658	Find K Closest Elements, ----1, cutting: with left = 0, right = n-k, mid, check dist1 and dist2, binary search
 165	247	Strobogrammatic Number II
-166	593	Valid Square  
+166	593	Valid Square, ---- not high worth 
 167	384	Shuffle an Array
 168	230	Kth Smallest Element in a BST, ----
 169	442	Find All Duplicates in an Array, ----1, cutting: number reorg by its val, to index val-1

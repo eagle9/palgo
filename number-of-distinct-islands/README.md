@@ -1,5 +1,5 @@
 694. Number of Distinct Islands
-Medium
+Medium 432 26 Favorite Share
 
 Given a non-empty 2D array grid of 0's and 1's, an island is a group of 1's (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water.
 
@@ -11,7 +11,6 @@ Example 1:
 00011
 00011
 Given the above grid map, return 1.
-
 Example 2:
 11011
 10000
@@ -28,9 +27,14 @@ and
 are considered different island shapes, because we do not consider reflection / rotation.
 Note: The length of each dimension in the given grid does not exceed 50.
 
-Companies: Google | 6 Facebook | 4 Amazon | 3 Microsoft | 2
+Accepted 29,859
+Submissions 57,445
 
-Similar: 
+Contributor 1337c0d3r
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Amazon | 5 Facebook | 2 Apple | 2
+
+Similar
 Number of Islands Medium
 Number of Distinct Islands II Hard
 
