@@ -1,35 +1,35 @@
-1	146	LRU Cache,--------1, cut,  combine map(key to list pointer) and list of key val pairs
+1	146	LRU Cache,--------11, cut,  combine map(key to list pointer) and list of key val pairs, once used, move key val pair to the front of list, if capacity, remove from the back of the list
 2	4	Median of Two Sorted Arrays----1, binary search cut1, derive cut2, 4 boundary numbers
-3	42	Trapping Rain Water -------1, cutting: down and up with stack with index(good to get width, down and up similar to parentheses, details with example
+3	42	Trapping Rain Water -------11, cutting: down and up with stack with index(good to get width, down and up similar to parentheses, details with example
 4	273	Integer to English Words,------0.3,cutting: analysis and derive rules, hundrends thousand-million-billion
-5	301	Remove Invalid Parentheses,------1, cutting: pretty hard, first figure out how many ( and ) to remove, then dfs, growing candidate, avoid repeating char 
+5	301	Remove Invalid Parentheses,------11, cutting: pretty hard, first figure out how many ( and ) to remove, then dfs, growing candidate, avoid repeating char 
 6	23	Merge k Sorted Lists  -----1, cutting: min heap
 7	297	Serialize and Deserialize Binary Tree, -------1, cutting: deser is harder, sync token and node creation 
-8	269	Alien Dictionary ------------1, cutting: derive pair order, then total order from topological sorting
-9	10	Regular Expression Matching, ---1, cuttin: two string dp, deal with * 
+8	269	Alien Dictionary ------------11, cutting: derive pair order, then total order from topological sorting
+9	10	Regular Expression Matching, ---11, cuttin: two string dp, deal with * 
 10	76	Minimum Window Substring, -------1, sliding window, how many chars int T matched, a single char needed how many times
 11	829	Consecutive Numbers Sum, ----1, cutting: use math, try every start, add x start
 12	924	Minimize Malware Spread, ------1, cutting: not worth, only dropbox ama, dfs  
-13	159	Longest Substring with At Most Two Distinct Characters, -----, 
-14	224	Basic Calculator,  --------------1, cutting: tokenizer, 2 stack, level of ops
+13	159	Longest Substring with At Most Two Distinct Characters, -----1, sliding window, with hashmap char to its rightmost index, simplified version of at most k distinct
+14	224	Basic Calculator,  --------------11, cutting: tokenizer(digit, +-(), 2 stack, stack of int, stack of op(+-) with level
 15	41	First Missing Positive, -------1, cutting: bucket sort
-16	642	Design Search Autocomplete System, ------ 
+16	642	Design Search Autocomplete System, ------1, high worth, design with trie and heap, key to get direction right
 17	85	Maximal Rectangle, ------ 1d max 1 seq len okay? then such seq for each row, then enumerate rectangles
 18	295	Find Median from Data Stream -------1,  max heap for left, min heap for right half , add to left or right, balance their size
-19	25	Reverse Nodes in k-Group, ----1, lhc cutting angle, reduced to reverse list, subfunction return head for next sub
-20	124	Binary Tree Maximum Path Sum -----1 , cutting angle, every node, max path sum from this node, max path sum thru the node, binary tree recursion 
+19	25	Reverse Nodes in k-Group, ----11, lhc cutting angle, reduced to reverse list, subfunction return head for next sub
+20	124	Binary Tree Maximum Path Sum -----1 , cutting angle, for every node find max path sum from this node to leaf, max path sum thru the node can be left_path_sum + node.val + right_path_sum, binary tree recursion 
 21	158	Read N Characters Given Read4 II - Call multiple times, ----1, high freq, not much worth, a little tricky
 22	770	Basic Calculator IV-----, 0.2
-23	72	Edit Distance ------1,  cutting: 2 words, length of each word, ending char, all cases for w1 to w2
+23	72	Edit Distance ------11,  cutting: 2 words, length of each word, look at ending char of each string, study all 3 cases for w1 to w2 to figure out transition function
 24	239	Sliding Window Maximum ------1,  cutting: sliding window, monotoic queue    
 25	68	Text Justification, -------1, cutting:not much worth, quick read okay, pure string, implemenation details    	
 26	857	Minimum Cost to Hire K Workers, -----1, g4, worth, cutting ratio order, then consider them, use max heap to store qualities, when heap size = K, get 1 satisfying hiring, and update the min cost
 27	336	Palindrome Pairs, ------1, fisher lei cutting, split word=left|right, hashmap
-28	282	Expression Add Operators  ----------1, cutting: dfs, cursor recur with string break, growing candidate exp, use prev to track tail exp to deal with * precedence over +/- 
+28	282	Expression Add Operators  -------11, cutting: dfs, break num, value prev and curr, try pos with all possilbe lens, prev value, curr value, growing candidate exp, use prev to track tail exp to deal with * precedence over +/- 
 29	843	Guess the Word, ---1, g14, very worth, minmax, cutting: use feedback to shink list 
 30	32	Longest Valid Parentheses ------1, cutting stack with index
 31	564	Find the Closest Palindrome -----,cutting string and math details, worth not high, quik over
-32	460	LFU Cache-------1,cutting: problem,cacheNode, map key to cacheNode, map freq to list of keys, capacity, minFreq
+32	460	LFU Cache-------111,cutting: problem,cacheNode, map key to cacheNode, map freq to list of keys, capacity, minFreq
 33	45	Jump Game II, ----- 0.6, greedy 2p,  
 34	432	All O`one Data Structure, ----0.1
 35	65	Valid Number,  -----1, not much worth, many cases string manipulation, read it, i won't ask myself code it
@@ -45,10 +45,10 @@
 45	233	Number of Digit One, ----, math, amz and appl, not much worth
 46	84	Largest Rectangle in Histogram, ----------------
 47	37	Sudoku Solver, -------  0.2
-48	140	Word Break II, --------0.6
+48	140	Word Break II, --------1, cutting, dfs recur with memo, s = left+right, if right in dict, then recur to smaller left
 49	683	K Empty Slots, ------ 0.1, hard to understand
 50	135	Candy ------1, greedy, cutting: enforce the rule for both left and right neighbor
-51	97	Interleaving String, -----0.9, dp 2d, some details
+51	97	Interleaving String, -----1, dp 2d,cutting: s1 len i, s2 len j, to interleave to s3 of len1+len2
 52	772	Basic Calculator III, ------0.2, hard,  
 53	315	Count of Smaller Numbers After Self,  ----0.9 either merge sort dq, or bit
 54	329	Longest Increasing Path in a Matrix, -----0.5,  dfs with memo or dp,cutting -- neighbors longest inc path transition 
@@ -72,7 +72,7 @@
 70	185	Department Top Three Salaries,---1, sql, cutting distinct sal < 3, sub query 
 71	410	Split Array Largest Sum, ----0.3, g35, very worth, bs and dp    	
 72	727	Minimum Window Subsequence, -----0.1
-73	428	Serialize and Deserialize N-ary Tree, -----0.1, high worth, do it
+73	428	Serialize and Deserialize N-ary Tree, -----0.5, high worth, do it
 74	479	Largest Palindrome Product    	
 75	689	Maximum Sum of 3 Non-Overlapping Subarrays
 =================
@@ -82,9 +82,9 @@
 79	317	Shortest Distance from All Buildings, ----0.1
 80	480	Sliding Window Median, --------0.1, hua video    
 81	730	Count Different Palindromic Subsequences, ------ 
-82	803	Bricks Falling When Hit, ------0.3, union find 
-83	340	Longest Substring with At Most K Distinct Characters, ------1, cutting sliding window
-84	30	Substring with Concatenation of All Words, ------,1,g3,hash,2p, cutting, sliding substring of len n*len_word, then try to match segment by segment with hash   
+82	803	Bricks Falling When Hit, ------1, union find 
+83	340	Longest Substring with At Most K Distinct Characters, ------11, cutting sliding window with hash table char to right most index
+84	30	Substring with Concatenation of All Words, ------1,g3,hash,2p, cutting, sliding substring of len n*len_word, then try to match segment by segment with hash   
 85	928	Minimize Malware Spread II, ----, 
 86	726	Number of Atoms, ----
 87	471	Encode String with Shortest Length, ------
@@ -93,7 +93,7 @@
 90	272	Closest Binary Search Tree Value II, ------
 91	465	Optimal Account Balancing, -----   	
 92	632	Smallest Range, -----,1, own idea after debug,  but kind of forget, cutting stack lists, and use a pq to store active numbers for each list, keep feeding all numbers into the pq and update the best    
-93	493	Reverse Pairs, --------, 1, merge sort dq   	
+93	493	Reverse Pairs, --------1, divide and conquer, break array into left-mid and mid-right, merge sort, count each and add ..., read and think more to be more clear   	
 94	296	Best Meeting Point, --------, 0.3, 
 95	99	Recover Binary Search Tree, -----0.2, g2 recent, worth,   
 96	891	Sum of Subsequence Widths, ------0.1, not worth 

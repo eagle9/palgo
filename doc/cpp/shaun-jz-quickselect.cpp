@@ -15,7 +15,6 @@ private:
     int quickSelect(vector<int>& nums, int left, int right, int k) {
         if (left <= right) {
             int p = partition1(nums, left, right);
-            //int p = partition1(nums, left, right);
             if (p ==  k-1)
                 return nums[p];
             

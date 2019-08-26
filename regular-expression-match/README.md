@@ -1,5 +1,6 @@
 10. Regular Expression Matching
-Hard
+Hard 2904 552 Favorite Share
+
 Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
 
 '.' Matches any single character.

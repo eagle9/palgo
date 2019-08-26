@@ -1,0 +1,20 @@
+tech stack for software architect
+https://juejin.im/post/5d5375baf265da03b2152f3d
+1. message queue, kafka
+2. cache, redis or memecached
+3. sharding
+4. database sync 
+5. communications, netty, common-httpclient,rpc
+6. Microservice
+7. distributed coordination, zookeeper
+8. Monitoring, zabbix or nagios
+9. task scheduling,  crontab or xxl-job(distributed)
+10. load balancer for TCP/http, HAProxy
+为了统一用户的访问路口，一般会使用一些入口工具进行支持。
+其中，haproxy、lvs、keepalived等，使用非常广泛。
+服务器一般采用稳定性较好的centos，并配备ansible工具进行支持，那叫一个爽。
+
+11. OLTP OLAP
+ apache druid,
+12. 
+

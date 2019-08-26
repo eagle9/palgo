@@ -22,9 +22,11 @@ public:
                 //case a -- replace ending char
                 int cost = (word1[i-1] == word2[j-1])? 0 : 1;
                 dp[i][j] = dp[i-1][j-1] + cost;
-                //case b -- append 1 char to word1
+                
+                //case b: delete 1 char from word1 len i-1 ---> word2 len j,  
                 dp[i][j] = min(dp[i][j], dp[i-1][j]+1);
-                //case c -- delete 1 char from word1
+                
+                //transform word1 len i to word2 len j-1, then append 1 char word2[j]
                 dp[i][j] = min(dp[i][j], dp[i][j-1]+1);
                 
             }
@@ -35,3 +37,4 @@ public:
         
     }
 };
+

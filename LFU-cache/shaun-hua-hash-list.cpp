@@ -5,7 +5,7 @@ struct CacheNode {
     int key;
     int value;
     int freq;
-    // pointer to the node in the list
+    // pointer to the node in the list of freq bucket, many keys sharing freq
     list<int>::iterator it;
     //list<int>::const_iterator it; //okay too, remember init with list1.cbegin()
 };

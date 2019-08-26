@@ -1,4 +1,4 @@
-//grandyang cutting angle, how to deal with difference, use substr
+//grandyang cutting angle, first the difference, how to deal with difference, use substr
 //runtime 4ms, faster than 94%, mem less than 8%
 class Solution {
 public:

@@ -20,8 +20,8 @@ private:
         int cost = (word1[i-1] == word2[j-1])? 0: 1;
         //ans = min(ans, helper(word1, i-1, word2, j-1)); //bug 1, should +cost
         ans = min(ans, helper(word1, i-1, word2, j-1)+cost);
-        ans = min(ans, helper(word1, i-1, word2, j) + 1);
-        ans = min(ans, helper(word1, i,   word2, j-1)+1);
+        ans = min(ans, helper(word1, i-1, word2, j) + 1); //append 1 char to word1
+        ans = min(ans, helper(word1, i,   word2, j-1)+1); //delete 1 char from word1
         return memo[i][j] = ans; //bug fix 2, store the ans into memo
     }
 };

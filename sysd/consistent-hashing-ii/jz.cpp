@@ -6,9 +6,9 @@
 using namespace std;
 class Solution {
 public:
-    int n, k;
-    map<int, int> shards; //map shard index to machine id
-    set<int> ids; //set of shards id used, shard index is randomly generated
+    int n, k; //n is the max shard index, each machine has at most k shards
+    map<int, int> shards; //sorted map shard index to machine id
+    set<int> ids; //set of shards index used, shard index is randomly generated
     // @param n a positive integer --- total number of shards along the ring
     // @param k a positive integer --- number of shards for a single machine
     // @return a Solution object
@@ -54,10 +54,10 @@ public:
 		//hashcode as lower bound 
         map<int, int>::iterator it = shards.lower_bound(hashcode); //first it that >= hashcode
 		
-        if (it == shards.end()) //all before hashcode, hashcode can not be lowerbound, go to begin with the ring
+        if (it == shards.end()) //all existing shards are before hashcode, no shard >= hashcode, go to begin with the ring of shards, return fist shard's machine id
             return shards.begin()->second;
         else
-            return it->second; //it >= hashcode, first such 
+            return it->second; //it >= hashcode found, return the shard's machine id 
     }
 };
 /* 
