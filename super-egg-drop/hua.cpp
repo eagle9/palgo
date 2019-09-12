@@ -1,8 +1,6 @@
 /* Author: Huahua
-Runtime: 72 ms, faster than 51.35% of C++ online submissions for Super Egg Drop.
-Memory Usage: 32.8 MB, less than 100.00% of C++ online submissions for Super Egg Drop.
-
-binary search
+Runtime: 72 ms, faster than 51.35%,mem less than 100%
+2d dp with binary search to find the min
 
 */
 class Solution {
@@ -30,14 +28,14 @@ private:
     int r = n + 1;
     while (l < r) {
       int m = l + (r - l) / 2;
-      int broken = dp(k - 1, m - 1);
-      int unbroken = dp(k, n - m);
+      int broken = dp(k - 1, m - 1); //drop at m, egg broken, boils down to k-1 eggs and m-1 floors
+      int unbroken = dp(k, n - m); // drop at m, egg not broken, boils down to k eggs, 
       if (broken >= unbroken)
         r = m;
       else
         l = m + 1;
     }
-    
+	//l == r
     return m_[k][n] = 1 + dp(k - 1, l - 1);
   }
 };

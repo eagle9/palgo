@@ -107,7 +107,7 @@
 104	448	Find All Numbers Disappeared in an Array, ---1, cutting: use input array, key observation, value and index the same range, so reorg numbers according to its value, put it to nums[value-1], then go over the array check value != i+1 
 105	605	Can Place Flowers 
 106	243	Shortest Word Distance ------1, own accepted
-107	733	Flood Fill 
+107	733	Flood Fill  -----1, cutting dfs same color then fill, beware of bugs, 
 108	453	Minimum Moves to Equal Array Elements---, low worth, skip
 109	266	Palindrome Permutation
 110	171	Excel Sheet Column Number ---1, much easier than AA to int, cutting: still always test

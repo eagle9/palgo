@@ -1,5 +1,6 @@
 149. Max Points on a Line
-Hard
+Hard 540 1442 Favorite Share
+
 Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
 
 Example 1:
@@ -27,7 +28,8 @@ Explanation:
 +------------------->
 0  1  2  3  4  5  6
 
-Topic: hash table, math
+Topic: Hash table, Math
 Similar: line reflection, medium
-Companies: Google, linkedin, amazon, microsoft
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Amazon | 5 LinkedIn | 4 Google | 4 Apple | 2 TripAdvisor | 2 Facebook | 2 Yahoo | 2
 

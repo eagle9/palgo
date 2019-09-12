@@ -16,3 +16,5 @@ Jz OOD problems, read ccup 6ed also
 748. Kindle OO Design, medium
 1785. Bank System, medium
 
+design patterns in JDK
+https://stackoverflow.com/questions/1673841/examples-of-gof-design-patterns-in-javas-core-libraries

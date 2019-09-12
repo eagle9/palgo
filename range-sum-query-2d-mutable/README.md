@@ -1,5 +1,6 @@
 308. Range Sum Query 2D - Mutable
-Hard
+Hard 313 48 Favorite Share
+
 Given a 2D matrix matrix, find the sum of the elements inside the rectangle defined by its upper left corner (row1, col1) and lower right corner (row2, col2).
  3 0 1 4 2
  5 6 3 2 1 
@@ -25,4 +26,9 @@ You may assume the number of calls to update and sumRegion function is distribut
 You may assume that row1 ≤ row2 and col1 ≤ col2.
 
 Topic: Binary Indexed Tree, Segment Tree
-Similar: Range Sum Query 2D - Immutable, Range Sum Query - Mutable
+Similar: 
+Range Sum Query 2D - Immutable Medium
+Range Sum Query - Mutable Medium
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 3 |Facebook | 2

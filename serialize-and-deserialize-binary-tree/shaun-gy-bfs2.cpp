@@ -29,6 +29,17 @@ out:    1 2 3 #     #   4 5
 Runtime: 40 ms, faster than 97.80% of C++ online submissions for Serialize and Deserialize Binary Tree.
 Memory Usage: 24.5 MB, less than 98.49% of C++ online submissions for Serialize and Deserialize Binary Tree.
 */
+#include <string>
+#include <queue>
+#include <sstream>
+#include <iostream>
+using namespace std;
+struct TreeNode {
+      int val;
+      TreeNode *left;
+      TreeNode *right;
+      TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ };
 class Codec {
 public:
     // Encodes a tree to a single string.
@@ -75,3 +86,11 @@ public:
         return res;
     }
 };
+int main() {
+    Codec s;
+    string input = "1 2 3 4 5 # 7";
+    TreeNode* root = s.deserialize(input);
+    string res = s.serialize(root);
+    cout << "serialized:" << endl;
+    cout << res << endl;
+}

@@ -1,5 +1,6 @@
 887. Super Egg Drop
-Hard
+Hard 428 44 Favorite Share
+
 You are given K eggs, and you have access to a building with N floors from 1 to N. 
 
 Each egg is identical in function, and if an egg breaks, you cannot drop it again.
@@ -33,6 +34,7 @@ Note:
 1 <= K <= 100
 1 <= N <= 10000
 
-Companies: Google | 
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Goldman Sachs | 2 Google |2
 Topic:
-Math, binary search, dynamic programming
+Math, Binary search, Dynamic programming

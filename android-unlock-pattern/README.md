@@ -1,5 +1,6 @@
 351. Android Unlock Patterns
-Medium
+Medium 285 328 Favorite Share
+
 Given an Android 3x3 key lock screen and two integers m and n, where 1 ≤ m ≤ n ≤ 9, count the total number of unlock patterns of the Android lock screen, which consist of minimum of m keys and maximum n keys.
 
 Rules for a valid pattern:
@@ -27,9 +28,10 @@ Valid move: 6 - 5 - 4 - 1 - 9 - 2
 Line 1 - 9 is valid because it passes through key 5, which had been selected in the pattern.
 
 Example:
-
 Input: m = 1, n = 1
 Output: 9
 
-Topic: Dynamic programming, backtracking
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 2 Apple | 2
 
+Topic: Dynamic programming, backtracking

@@ -1,5 +1,6 @@
 37. Sudoku Solver
-Hard
+Hard 1028 68 Favorite Share
+
 Write a program to solve a Sudoku puzzle by filling the empty cells.
 
 A sudoku solution must satisfy all of the following rules:
@@ -20,7 +21,12 @@ Note:
 The given board contain only digits 1-9 and the character '.'.
 You may assume that the given Sudoku puzzle will have a single unique solution.
 The given board size is always 9x9.
+Accepted 141,637
+Submissions 368,492
+Contributor LeetCode
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Facebook | 3 Amazon | 3 Microsoft | 2 Google | 2
 
-Topic: Hash Table, Backtracking
-Similar: valid sudoku (medium), n queens(medium)
-Companies: VMware | 6 Google | 4 Arista Networks | 3 Uber | 2 Riot Games | 2
+Similar:
+Valid Sudoku Medium
+Unique Paths III Hard

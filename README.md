@@ -74,6 +74,11 @@ https://www.quora.com/Is-practicing-500-programming-questions-on-LeetCode-Hacker
 - https://lefttree.gitbooks.io/leetcode-categories/content/
 - http://bookshadow.com/weblog/categories/leetcode/
 - https://www.cnblogs.com/lz87/
+walker xiaozhu, design pattern, system design, c++, and so on
+- https://blog.csdn.net/u012050154/article/details/52312124
+
+ryanfehr hackerRank code
+https://github.com/RyanFehr/HackerRank/blob/master/Algorithms/Strings/Caesar%20Cipher%20Encryption/Solution.java
 
 recursion, sorting, dp bag of tricks
 tree, graph representation and manipulation(traversal, etc.)
