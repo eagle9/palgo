@@ -15,12 +15,14 @@ public:
      */
     string serialize(TrieNode* root) {
         // Write your code here
-        if (root == nullptr) {
+        if (root == nullptr)
+        {
             return "";
         }
         
         string result = "<";
-        for (auto child : root->children) {
+        for (auto child : root->children)
+        {
             result += child.first;
             result += serialize(child.second);
         }
@@ -37,20 +39,25 @@ public:
      */
     TrieNode* deserialize(string data) {
         // Write your code here
-        if (data.size() == 0) {
+        if (data.size() == 0)
+        {
             return nullptr;
         }
         TrieNode* root = new TrieNode();
         stack<TrieNode*> St;
         TrieNode* node = root;
-        for (char c : data) {
-            if (c == '<') {
+        for (char c : data)
+        {
+            if (c == '<')
+            {
                 St.push(node);
             }
-            else if (c == '>') {
+            else if (c == '>')
+            {
                 St.pop();
             }
-            else {
+            else
+            {
                 node = new TrieNode();
                 St.top()->children[c] = node;
             }

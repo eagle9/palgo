@@ -1,5 +1,9 @@
-//grandyang use an array of array, hash key to row(key%1000) and col(key/1000)
-//runtime 144ms, faster than 74%, mem less than 36%
+/*
+grandyang use of 2d array
+array value =-1 means init status or no value for the key
+runtime 136ms, faster than 45%, mem less than 18%
+
+*/
 class MyHashMap {
 public:
     /** Initialize your data structure here. */
@@ -9,34 +13,33 @@ public:
     
     /** value will always be non-negative. */
     void put(int key, int value) {
-        int row = key % 1000;
-        if (data[row].empty()) {
-            data[row].resize(1000, -1);
+        int hashKey = key % 1000;
+        if (data[hashKey].empty()) {
+            data[hashKey].resize(1000, -1);
         } 
-        data[row][key / 1000] = value;
+        data[hashKey][key / 1000] = value;
     }
     
     /** Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key */
     int get(int key) {
-        int row = key % 1000;
-        if (!data[row].empty()) {
-            return data[row][key / 1000];
+        int hashKey = key % 1000;
+        if (!data[hashKey].empty()) {
+            return data[hashKey][key / 1000];
         } 
         return -1;
     }
     
     /** Removes the mapping of the specified value key if this map contains a mapping for the key */
     void remove(int key) {
-        int row = key % 1000;
-        if (!data[row].empty()) {
-            data[row][key / 1000] = -1;
+        int hashKey = key % 1000;
+        if (!data[hashKey].empty()) {
+            data[hashKey][key / 1000] = -1;
         } 
     }
 
 private:
     vector<vector<int>> data;
 };
-
 
 /**
  * Your MyHashMap object will be instantiated and called as such:

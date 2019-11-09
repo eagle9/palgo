@@ -1,20 +1,25 @@
 //grandyang dijkstra algo template with queue bfs level traversal
 //runtime 84ms, faster than 96%, mem less than 50%
-class Solution1 {
+class Solution {
 public:
     int networkDelayTime(vector<vector<int>>& times, int N, int K) {
         int res = 0;
+        //adjacent matrix, N+1 x N+1, connection between all node lables 1 to N
+        //when no connection, the value is set to -1
         vector<vector<int>> edges(N+1, vector<int>(N+1, -1));
         queue<int> q{{K}};
+        //distance from source K to node label 1 to N, initially INT_MAX
         vector<int> dist(N + 1, INT_MAX);
         dist[K] = 0;
         for (auto e : times) edges[e[0]][e[1]] = e[2];
         
+        
         while (!q.empty()) {
-            unordered_set<int> visited;
+            unordered_set<int> visited; //why here???
             for (int i = q.size(); i > 0; --i) {
                 int u = q.front(); q.pop();
                 for (int v = 1; v <= N; ++v) {
+                    //check u v connection 
                     if (edges[u][v] != -1 && dist[u] + edges[u][v] < dist[v]) {
                         if (!visited.count(v)) {
                             visited.insert(v);
@@ -25,13 +30,17 @@ public:
                 }
             }
         }
+        //now dist stores distance from K to i(1--N)
         for (int i = 1; i <= N; ++i) {
             res = max(res, dist[i]);
         }
+        //according to problem statement, not reach all will be -1
         return res == INT_MAX ? -1 : res;
     }
 };
 
+//runtime 100ms, faster than 66%, mem less than 67%
+//represent graph with adjacent matrix, but use priority queue, easier to master
 typedef pair<int,int> iPair;
 class Solution2 {
 public:
@@ -46,6 +55,7 @@ public:
         
         while (!minHeap.empty()) {
             int u = minHeap.top().second; minHeap.pop();
+            //update all u's neighbors when we can
             for (int v = 1; v <= N; ++v) {
                 if (edges[u][v] != -1 && dist[u] + edges[u][v] < dist[v]) {
                     dist[v] = dist[u] + edges[u][v];
@@ -69,15 +79,18 @@ input:
         
 output: 4
 expected: -1, ---- really? 
-i see this problem asks that all nodes from 1 and N can be reached. 
+i see! this problem asks that all nodes from 1 and N can be reached. 
  node 4 is not in the graph, so node 4 can not be reached. 
  you just have to assume all nodes from 1 to N
  runtime 108ms, faster than 61%, mem less than 32%
+ 
+ int this solution, the graph is represented with map<int, vector<pair<int,int>>>
+ that stores each node's neighbors
 */
 
 typedef pair<int,int> iPair;
 typedef unordered_map<int,vector<pair<int,int>>> Graph;
-class Solution {
+class Solution3 {
 public:
     int networkDelayTime(vector<vector<int>>& times, int N, int K) {
         Graph graph;
@@ -89,7 +102,7 @@ public:
             //nodes.insert(v);
             graph[u].push_back(make_pair(v,w));
         }
-        for (const auto& u: nodes) dist[u] = INT_MAX;
+        //for (const auto& u: nodes) dist[u] = INT_MAX;
         for (int u = 1; u <= N; ++u) dist[u] = INT_MAX;
         dist[K] = 0;
         

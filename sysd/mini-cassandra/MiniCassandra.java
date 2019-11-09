@@ -1,14 +1,12 @@
-/**
- * Definition of Column:
-*/
- public class Column {
+import java.util.*;
+class Column {
 		 public int key;
 		 public String value;
 		 public Column(int key, String value) {
 				 this.key = key;
 				 this.value = value;
 		 }
- }
+}
 //https://blog.csdn.net/jmspan/article/details/51749526 
 //shaun read and understand?  yes
 //java TreeMap has implemented subMap() which Returns a view of the portion of this map whose keys range from fromKey to toKey.
@@ -53,4 +51,14 @@ public class MiniCassandra {
         }
         return results;
     }
+	public static void main(String [] args) {
+		MiniCassandra db = new MiniCassandra();
+		db.insert("google", 1, "haha1111");
+		db.insert("google", 2, "fofo2222");
+		db.insert("google", 3, "tutu3333");
+		List<Column> res = db.query("google", 1, 2);
+		for (Column x: res) {
+			System.out.println(x.key + "," + x.value);
+		}
+	}
 }

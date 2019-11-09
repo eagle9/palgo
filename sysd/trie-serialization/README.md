@@ -1,5 +1,4 @@
 527. Trie Serialization
-similar to leetcode 428 serialize and deserialize N-ary tree
 Difficulty: Hard
 
 http://lintcode.com/en/problem/trie-serialization/

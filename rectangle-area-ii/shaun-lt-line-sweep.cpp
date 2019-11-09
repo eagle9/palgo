@@ -2,7 +2,10 @@
 https://leetcode.com/articles/rectangle-area-ii/
 lt Approach #3: Line Sweep
 shaun modified and understood
+compare to shaun-lt-line-sweep2.cpp, 
+this one use struct Event with ordering operator defined, much faster
 runtime 4ms, faster than 99.77%, mem less than 86%
+for detailed idea understood, check shaun-lt-line-sweep2.cpp
 
 Intuition
 Imagine we pass a horizontal line from bottom to top over the shape. We have some active intervals on this horizontal line, which gets updated twice for each rectangle. In total, there are 2 * N events, and we can update our (up to NN) active horizontal intervals for each update.
@@ -50,7 +53,7 @@ public:
             long query = 0;
 
             //int cur = -1;
-			int cur = INT_MIN;
+            int cur = INT_MIN;
             for (auto intv: active) {
                 //intv.first intv.second contributes to the area???
                 cur = max(cur, intv.first); //cur is prev interval's end, if its greater, take cur

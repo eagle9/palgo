@@ -30,12 +30,15 @@ public:
             fast = fast->next->next;
             if (slow == fast) break;
         }
+        //two ways to exit the loop
         if (!fast || !fast->next) return NULL;
+        //if (slow != fast) return NULL; //not working
         slow = head;
         while (slow != fast) {
             slow = slow->next;
             fast = fast->next;
         }
-        return fast;
+        return slow;
+        //return fast; //okay too
     }
 };

@@ -1,5 +1,6 @@
 913. Cat and Mouse
-Hard
+Hard 201 45 Favorite Share
+
 A game on an undirected graph is played by two players, Mouse and Cat, who alternate turns.
 
 The graph is given as follows: graph[a] is a list of all nodes b such that ab is an edge of the graph.
@@ -37,7 +38,7 @@ Note:
 It is guaranteed that graph[1] is non-empty.
 It is guaranteed that graph[2] contains a non-zero element. 
 
-Companies: Google | 2
+Companies: Google | 3
 Topic: breadth-first search, minimax
 
 

@@ -1,5 +1,6 @@
 591. Tag Validator
-Hard
+Hard 62 320 Favorite Share
+
 Given a string representing a code snippet, you need to implement a tag validator to parse the code and return whether it is valid. A code snippet is valid if all the following rules hold:
 
 The code must be wrapped in a valid closed tag. Otherwise, the code is invalid.
@@ -74,3 +75,4 @@ For simplicity, you could assume the input code (including the any characters me
 Companies: Google | 2 
 
 Similar: Add Bold Tag in String Medium
+Topic: String, Stack

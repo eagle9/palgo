@@ -14,6 +14,7 @@ class Solution {
 public:
     string shortestSuperstring(vector<string>& A) {    
         const int n = A.size();
+		//cost[i][j] == wordi + wordj, end of i and start of j overlap as much as possible, addded chars to wordi 
         cost = vector<vector<int>>(n, vector<int>(n));
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < n; ++j) {
@@ -26,6 +27,7 @@ public:
                 }
             }
         }
+		//now we have cost of each pair of word ij, boils down --> for each permutation of word 0 to i-1, what's the total chars
 
         vector<int> path(n);
         //vector<bool> used(n);
@@ -53,6 +55,7 @@ private:
     //used vector<bool>& will result TLE
     void dfs(const vector<string>& A, int depth, int& used, int cur_len, vector<int>& path) {
         if (cur_len >= best_len) return; //pruning
+		//cur_len < best_len, update and recur
         if (depth == A.size()) { //dfs recursion exit
             best_len = cur_len;
             best_path = path; //copy vector, backtracking not needed
@@ -63,6 +66,7 @@ private:
         for (int i = 0; i < A.size(); ++i) {
             //if (used & (1 << i)) continue; //ith bit from right is set
             if (used & (1 << i)) continue;
+			//i is not used yet
             path[depth] = i;
             //used[i] = true;
             used = used | (1 << i);

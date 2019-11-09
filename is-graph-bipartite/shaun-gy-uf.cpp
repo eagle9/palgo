@@ -5,22 +5,27 @@ class Solution {
 public:
     bool isBipartite(vector<vector<int>>& graph) {
         int n = graph.size();
-        parent = vector<int>(n);
+        //parent = vector<int>(n); //or parent.resize(n);
+        parent.resize(n,0);
         for (int i = 0; i < n; ++i) parent[i] = i;
         
         for (int i = 0; i < n; ++i) {
             if (graph[i].empty()) continue;
-            int x = find(i), y = find(graph[i][0]);
-            if (x == y) return false;
+            int x = find(i);
+            int y = find(graph[i][0]); //first neighbor
             
+            if (x == y) return false; //neighbors can not be in the same set
+            
+            //check other neighbors
             for (int j = 1; j < graph[i].size(); ++j) {
                 int v = graph[i][j];
                 int pv = find(v);
-                if (pv == x) return false;
-                //union
+                if (pv == x) return false; //neighbors can not be in the same set
+                //union --- i's neighbors should be in the same set
                 parent[pv] = y;
             }
         }
+        //at this point, no violation found, return true
         return true;
     }
 private:
@@ -30,3 +35,4 @@ private:
         return i;
     }
 };
+

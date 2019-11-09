@@ -1,5 +1,6 @@
 943. Find the Shortest Superstring
-Hard
+Hard 197 56 Favorite Share
+
 Given an array A of strings, find any smallest string that contains each string in A as a substring.
 
 We may assume that no string in A is substring of another string in A.

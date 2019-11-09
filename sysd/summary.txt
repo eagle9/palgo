@@ -1,0 +1,51 @@
+design twitter ---1, or design a news feed system
+
+user system --1, keep session, scale for big number of users, and large number of writes
+consistent hashing ---1, horizontal sharding 
+
+big table -----0.7, or design a distributed key value store, look up service 
+cutting: from file system, sorted string table, memtable with skip list, always appendto speed up write for update or delete, compaction merge sorted tables 
+memtable skip list with write ahead log to avoid power failure so that we can recover data from logs
+binary search to find key in sstable, even during write, write to skip list keep key value pair in order, 
+use bloom filter to speed up search key that not in 
+row key, column key, cell value
+  bloom filter ---- 1
+  mini cassandra ---- 1,  use treemap.subMap(from,include true, to, inclusive true)
+read only key value look up service ---1, cutting: memory store sorted key -> disk offset, 10B*0.1k = 1TBytes, /32GB = 32 pc, 
+  https://www.jiuzhang.com/qa/627/
+tiny url service ----- 0.7
+
+gfs  ----0.3, distributed file system
+c9 message service whatsapp ---- 0.7, 
+gmail ----0.2, similar to message service, later i realized
+
+crawler ----0.3
+  jz chapter slides
+  lintcode webpage crawler ---1, simple multi thread design, using queue
+
+typeahead/search suggestion -----0.4, both leet and jz sysd
+  leet design search auto suggestion, store freq map inside trie node, use minheap to get top k, very data structure intensive
+  lintcode typehead
+  implement trie
+  serialize and deserialize trie, n-ary tree, binary tree, bst 
+
+map reduce ---- 0.3
+location based service ---- 
+rate limiter ----1, cutting: last time, store event's all timestamps in a vector
+hit counter ---
+
+google doc --- 
+google calendar ---- 
+google map ----
+google drive ---
+google photo ---
+youtube ----
+page ranck ----
+
+photo sharing service, for example, instagram --- 
+http://blog.gainlo.co/index.php/2016/03/01/system-design-interview-question-create-a-photo-sharing-app/
+
+distributed cache ----
+
+design a recommendation system ---
+http://blog.gainlo.co/index.php/2016/05/24/design-a-recommendation-system/

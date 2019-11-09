@@ -96,7 +96,7 @@
 94	532	K-diff Pairs in an Array ----1, cutting: hash or 2pt, to avoid duplciates
 95	168	Excel Sheet Column Title,---1, tricky and error prone, cutting: list all cases and really test with the cases  
 96	190	Reverse Bits ----1, get ith bit to lowest bit position, check it set or not, then res |= b<<(31-i) 
-97	359	Logger Rate Limiter ---
+97	359	Logger Rate Limiter ---1, cutting, easy, use map
 98	876	Middle of the Linked List ---1, cutting slow and fast pointer
 99	628	Maximum Product of Three Numbers ---1, sort and postive and negative analysis of cases
 100	743	Network Delay Time  ----1, cutting dijkstra algo, with Q level or minHeap, template, just have to remember solid
@@ -166,7 +166,7 @@
 162	933	Number of Recent Calls
 163	504	Base 7 ---
 164	872	Leaf-Similar Trees ---1, todo
-165	256	Paint House, ----
+165	256	Paint House, ----1, cutting: think the min cost of painting to house i, 3 cases house i in 3 different colors, how to derive from painting to house i-1
 166	389	Find the Difference
 167	401	Binary Watch    		45.00%	Easy
 168	884	Uncommon Words from Two Sentences    		60.50%	Easy
@@ -196,7 +196,7 @@
 191	558	Quad Tree Intersection ---
 192	783	Minimum Distance Between BST Nodes ---
 193	501	Find Mode in Binary Search Tree ---
-194	705	Design HashSet ---
+194	705	Design HashSet ---1, cutting: according to problem statement, number range 0 to 1M, naturally use array, 2d array save more space if the numbers are clustered in a small number of buckets
 195	530	Minimum Absolute Difference in BST ---
 196	937	Reorder Log Files ----
 197	784	Letter Case Permutation ---

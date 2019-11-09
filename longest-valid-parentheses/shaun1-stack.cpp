@@ -1,11 +1,16 @@
 //https://www.youtube.com/watch?v=r0-zx5ejdq0&t=992s 
 //this is stack to reduce valid parenthesis, store index into stack to figure out valid substring length
 
-//idea as above, shaun has understood, and reread again after 3 weeks
+/*idea as above, shaun has understood, and reread again after 3 weeks
+0123456789 10 11
+()(()))()) (  )
+valid () will be cancelled out each other, unmatched ( stays in the stack with index
+[6, 9 ] , add 12 [6,9,12], the valid () string will be before 6, between 69, and 9 and end
 
 //less error prone that lt stack idea
 //
 //runtime 8ms, faster than 93%, mem less than 63%
+*/
 class Solution {
 public:
     int longestValidParentheses(string s) {

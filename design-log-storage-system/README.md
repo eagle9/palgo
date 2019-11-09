@@ -1,5 +1,5 @@
 635. Design Log Storage System
-Medium
+Medium 193 93 Favorite Share
 
 You are given several logs that each log contains a unique id and timestamp. Timestamp is a string that has the following format: Year:Month:Day:Hour:Minute:Second, for example, 2017:01:01:23:59:59. All domains are zero-padded decimal numbers.
 
@@ -25,3 +25,11 @@ Twitter | 6 Google | 2
 
 Similar:
 Design In-Memory File System Hard
+
+Topic: String, Design
+
+Idea forming:
+retrive all log ids given start, end, granularity
+data storage???? key value, key is not fixed
+ordered map, key is timestamp full string, given start, end, granularity
+start prefix, end prefix

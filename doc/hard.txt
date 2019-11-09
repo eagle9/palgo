@@ -13,7 +13,7 @@
 13	159	Longest Substring with At Most Two Distinct Characters, -----1, sliding window, with hashmap char to its rightmost index, simplified version of at most k distinct
 14	224	Basic Calculator,  --------------11, cutting: tokenizer(digit, +-(), 2 stack, stack of int, stack of op(+-) with level
 15	41	First Missing Positive, -------1, cutting: bucket sort
-16	642	Design Search Autocomplete System, ------0.6, high worth, design with trie and heap, key to get direction right, understand some
+16	642	Design Search Autocomplete System, ------1, high worth, cutting: what's the data? sentences/times given, and input string(sentence a-z and space char sequence). to find topK hot sentences. naturally use trie to store the sentences and their count. given a input sentence, find top k sentences that start with the input sentence. tried code in both java and c++. lots of details
 17	85	Maximal Rectangle, ------1, cutting: from row0 to n-1, rectangle in histogram, construct height for each row, then use mono increase stack to update max rectangle 
 18	295	Find Median from Data Stream -------1,  max heap for left, min heap for right half , add to left or right, balance their size
 19	25	Reverse Nodes in k-Group, ----11, lhc cutting angle, reduced to reverse list, subfunction return head for next sub
@@ -27,15 +27,15 @@
 27	336	Palindrome Pairs, ------1, fisher lei cutting, split word=left|right, hashmap
 28	282	Expression Add Operators  -------11, cutting: dfs, break num, value prev and curr, try pos with all possilbe lens, prev value, curr value, growing candidate exp, use prev to track tail exp to deal with * precedence over +/- 
 29	843	Guess the Word, ---1, g14, very worth, minmax, cutting: use feedback to shink list 
-30	32	Longest Valid Parentheses ------1, cutting  stack with index
+30	32	Longest Valid Parentheses ------11, cutting  stack with index, let valid () cancelled out each other, unmatched () stay in the stack with their index
 31	564	Find the Closest Palindrome -----,cutting string and math details, worth not high, quik over
-32	460	LFU Cache-------111,cutting: problem,cacheNode, map key to cacheNode, map freq to list of keys, capacity, minFreq
+32	460	LFU Cache-------111,cutting: cacheNode(key,value,freq, list<int>::iterator),  map key to cacheNode, map freq to list of keys, capacity, minFreq
 33	45	Jump Game II, -----1,cutting: greedy curMax = max(curMax, nums[i] + i) from i < lastMax, while curMax < n-1  
-34	432	All O`one Data Structure, ----0.1
+34	432	All O`one Data Structure, ----1, cutting: Node(value, keys set), list<Node> ordered by Node.value, hash key -> list<Node>::iterator
 35	65	Valid Number,  -----1, not much worth, many cases string manipulation, read it, i won't ask myself code it
 36	51	N-Queens -----1, cutting classic, quick read okay, growing candidate backtracking dfs
 37	312	Burst Balloons, ----1, g2, dq dp, cutting break the sequence, computer order by ? len, pad the sequence to ensure transition func inboud
-38	212	Word Search II  ---------1, cutting:given word list to trie, for each ij, dfs , backtracking, branch pruning   
+38	212	Word Search II  -----1, cutting:given word list to trie, for each ij, dfs , backtracking, branch pruning   
 39	128	Longest Consecutive Sequence, ------1,own idea and code upon uf hint, accepted after 2 bug fixes
 40	126	Word Ladder II   -------0.6, pretty hard,  bfs then dfs, not quite apply template easily, one more video   
 41	149	Max Points on a Line, ----1, math, cutting: my first try Feb 2019, get very close, just details about gcd, remember as a template, for each pair of point i and j, find how many points are on line ij, consider duplicates of point i 
@@ -101,7 +101,7 @@
 100	52	N-Queens II , ----------1, classic, quick read, not much worth, dfs backtracking
 ======================================================================================
 101	188	Best Time to Buy and Sell Stock IV, ---
-102	913	Cat and Mouse, ----0.2, g4, bfs and minmax,hard, game 
+102	913	Cat and Mouse, ----1, g4, cutting: state graph bfs coloring, state is (m,c,turn), its win status is color, init some of the states with know color, bfs and color all the states, see if we can color (1,2,1),  minmax,hard, game 
 103	87	Scramble String, ---10.6, g2, recur with pruning done, dp 3d yet to do
 104	527	Word Abbreviation , ------0.1 
 105	871	Minimum Number of Refueling Stops
@@ -112,7 +112,7 @@
 110	956	Tallest Billboard 
 111	407	Trapping Rain Water II, ------10.6, 2d,cutting: from border, bfs with minHeap, mx = max(mx,h), not 100% get though  
 112	132	Palindrome Partitioning II, -------- 
-113	546	Remove Boxes
+113	546	Remove Boxes, ----, tencent 2y, not worth
 114	302	Smallest Rectangle Enclosing Black Pixels, -----10.6, binary search to extend
 115	174	Dungeon Game, -----0.1 
 116	899	Orderly Queue, -----, ama 2y ago, not worth 
@@ -121,15 +121,15 @@
 119	895	Maximum Frequency Stack, ----------1, high worth, bucket for each freq, bucket is a stack  
 120	879	Profitable Schemes, ----0.1, linkedin2 g1y, kinda worth,dp
 121	446	Arithmetic Slices II - Subsequence, ---0.2,  fb and ali, dp, understand the problem now
-122	815	Bus Routes, -----0.1,  g6, bfs,worth,  
-123	291	Word Pattern II, -------0.3,
-124	591	Tag Validator, ----0.1,  g2u2, worth, string stack,     
-125	943	Find the Shortest Superstring, -----0.3, g6 within 6mon,worth,dp   
-126	164	Maximum Gap, -----, sort, brute force easy, test O(n), hua, bucket sort, min max in each bucket
-127	850	Rectangle Area II,  ----------
+122	815	Bus Routes, -----1,  g6, cutting: routes is bus to stops, create stop2bus mapping.  expand with bfs,worth,  
+123	291	Word Pattern II, -------1, cutting: backtracking, two maps, recur and backtrack
+124	591	Tag Validator, ----1,  g2u2, worth, cutting: use stack naturally to check tag open and close, challenge to read the lengthy problem description and get all the details, about cdata, tag name rules, and so on, the algorithm itself is not hard     
+125	943	Find the Shortest Superstring, -----1, g6 within 6mon,worth,cutting: conider cost of wordi and wordj with overlap, only 12 words, permuate all words, and explore all superstring, take the shortest. how about dp?    
+126	164	Maximum Gap, -----1, a4 6m, kind of worth, cutting: sort, brute force easy, ask for O(n) time, cutting:  bucket sort, min max in each bucket, binsize = range/n + 1, why +1, range=0, of course +1
+127	850	Rectangle Area II,  ----------1, cutting: line sweep from 0 to high, each rectangle contributes 2 events: Event(y1, OPEN, x1, x2), Event(y1,CLOSE, x1,x2), sort events, go from y = 0 to higest, compute area with active intervals at y, for OPEN Event, add to active intervals, CLOSE EVENT, erase from active intervals
 128	363	Max Sum of Rectangle No Larger Than K, ----- 
-129	115	Distinct Subsequences, -----0.6, g2, 2 str dp,cutting angle ==?  
-130	265	Paint House II , ------0.1, 
+129	115	Distinct Subsequences, -----1, g2,worth, cutting: 2 string dp[i][j]  to represent number of distinct subseqs that uses s0 to j-1 to construct t0 to i-1, depends on s[j-1] == t[j-1], use last s char or not, derive dp[i][j] from smaller ij 
+130	265	Paint House II , ------1, cutting: paint to house i <-- paint to house i-1, which color min1, which color min2?  return dp[n-1][j]  min for color j=0, ..., k-1
 131	352	Data Stream as Disjoint Intervals
 132	715	Range Module, -----0.1, 
 133	719	Find K-th Smallest Pair Distance
@@ -146,8 +146,8 @@
 144	765	Couples Holding Hands, ----0.3, union find    
 145	827	Making A Large Island,---0.1,  g2 dfs, worth,  
 146	940	Distinct Subsequences II, -------1, cutting angle endwith dp, or dp with many states, change direction of idea forming
-147	639	Decode Ways II,  -------1, very worth, cutting last1/2 char, dp    	
-148	588	Design In-Memory File System, -----0.1
+147	639	Decode Ways II,  -------11, very worth, cutting last1/2 char, dp    	
+148	588	Design In-Memory File System, -----1,cutting: system design, data storage, files -- file full path string to its content string, unordered_map<string,string>, dirs -- dir full path string to the ordered list of file_name/dir_name, in lexigraphical order, so naturally use unordered_map<string,unordered_set<string>>, then consider services (ls, mkdir,etc.) 
 149	732	My Calendar III, ----, 	
 150	630	Course Schedule III, ---- 
 ==================================================

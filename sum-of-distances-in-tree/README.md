@@ -1,5 +1,6 @@
 834. Sum of Distances in Tree
-Hard
+Hard 519 26 Favorite Share
+
 An undirected, connected tree with N nodes labelled 0...N-1 and N-1 edges are given.
 
 The ith edge connects nodes edges[i][0] and edges[i][1] together.
@@ -21,6 +22,12 @@ We can see that dist(0,1) + dist(0,2) + dist(0,3) + dist(0,4) + dist(0,5)
 equals 1 + 1 + 2 + 2 + 2 = 8.  Hence, answer[0] = 8, and so on.
 Note: 1 <= N <= 10000
 
-Companies: Google | 2 
+Accepted 9,160
+Submissions 22,499
 
-Topic: Tree, Depth-first Search
+Contributor lee215
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Google | 2
+
+Similiar:
+Distribute Coins in Binary Tree Medium

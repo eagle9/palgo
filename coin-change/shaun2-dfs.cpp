@@ -2,7 +2,7 @@
 //key thoughts: 1) may not have answer how to deal it, special value for no solution, INT_MAX
 //2) min of the all branches
 //3) know to use memo to speed up, repetitive smaller problems
-//runtime 428ms, faster than 74%, mem less than 8%
+//runtime 428ms, faster than 7%, mem less than 8%
 //wrong answer, then TLE, finally accepted
 class Solution000 {
 public:

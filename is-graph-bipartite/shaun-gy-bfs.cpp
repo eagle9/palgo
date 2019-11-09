@@ -17,10 +17,11 @@ public:
                 int u = q.front(); q.pop();
                 //for each neighbor of node
                 for (int v: graph[u]) {
-                    if (color[v] ==0) {
+                    if (color[v] ==0) { //not yet colored
                         color[v] = flip(color[u]);
                         q.push(v);
                     }else {
+						//already colored, same color, violation, return false
                         if (color[v] == color[u]) return false;
                         else continue;
                     }

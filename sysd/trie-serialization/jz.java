@@ -43,10 +43,13 @@ class Solution {
         // Write your code here
         if (data == null || data.length() == 0)
             return null;
-
+		//<a<b<e<>>c<>d<f<>>>>	
+		//    a 
+		//  b c d
+		//  e   f
         TrieNode root = new TrieNode();
         TrieNode current = root;
-        Stack<TrieNode> path = new Stack<TrieNode>();
+        Stack<TrieNode> path = new Stack<TrieNode>(); //use stack to store parent
         for (Character c : data.toCharArray()) {
             switch (c) {
             case '<':
@@ -57,7 +60,7 @@ class Solution {
                 break;
             default:
                 current = new TrieNode();
-                path.peek().children.put(c, current);
+                path.peek().children.put(c, current); //stack top's child c == current
             }
         }
         return root;

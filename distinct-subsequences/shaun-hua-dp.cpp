@@ -36,7 +36,8 @@ public:
               //case1, we can use last char in the subseq
               //use s[j-1] for t[i-1], or not use it
               if (s[j - 1] == t[i-1]) {
-                  //dp[i][j] = dp[i - 1][j - 1]  bug 1-- can use, but you can also not use it, so two cases, both cases contribute
+                  //dp[i][j] = dp[i-1][j-1], s 0 to j-2 -->t 0 - j-2, then s[j-1] for t[j-1], s[j-1] used     
+				  //s[j-1] not used, only s char 0 to j-2 to generate t 0 to i-1, dp[i][j-1]
                   dp[i][j] = dp[i - 1][j - 1] + dp[i][j-1];
               }
               else //case2: can not use s[j-1], boils down 0.. s[j-2] --> t[0-j-1]

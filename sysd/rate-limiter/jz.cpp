@@ -13,15 +13,17 @@ public:
     bool isRatelimited(int timestamp, string& event, string& rate, bool increment) {
         // Write your code here
         int start = rate.find("/");
-        int total_time = atoi(rate.substr(0, start).c_str());
-        string type = rate.substr(start + 1, rate.size() - start -1);
+        //int total_time = atoi(rate.substr(0, start).c_str());
+        int total_time = stoi(rate.substr(0, start));
+
+        string unit = rate.substr(start + 1, rate.size() - start -1);
 
         int time = 1;
-        if (type == "m")
+        if (unit == "m")
             time = time * 60;
-        else if (type == "h")
+        else if (unit == "h")
             time = time * 60 * 60;
-        else if (type == "d")
+        else if (unit == "d")
             time = time * 60 * 60 * 24;
         int last_time = timestamp - time + 1;
         

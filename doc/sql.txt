@@ -1,0 +1,41 @@
+175	Combine Two Tables    		54.2%	Easy	
+176	Second Highest Salary    		28.3%	Easy	
+177	Nth Highest Salary    		27.7%	Medium	
+178	Rank Scores    		38.6%	Medium	
+185	Department Top Three Salaries    		28.1%	Hard	
+181	Employees Earning More Than Their Managers    		50.4%	Easy, ---1, cutting, join with itself	
+595	Big Countries,Easy, ---1, 	
+196	Delete Duplicate Emails    		35.0%	Easy, ----1, cutting, delete from p as p1, p as p2 where p1.email == p2.email and p1.id > p2.id	
+262	Trips and Users    		26.6%	Hard	
+180	Consecutive Numbers    		35.1%	Medium	
+197	Rising Temperature    		35.8%	Easy	
+183	Customers Who Never Order    		46.8%	Easy	
+626	Exchange Seats    		55.9%	Medium	
+614	Second Degree Follower    		23.0%	Medium	
+1084	Sales Analysis III    		52.6%	Easy	
+182	Duplicate Emails    		56.7%	Easy, ---1, group by having, sub query
+1068	Product Sales Analysis I    		80.8%	Easy, ---1, cutting: join	
+Product Sales Analysis II, --1, cutting: group by sum, first try accepted
+1070	Product Sales Analysis III, ---1, cutting subquery group by get product_id,year, then use this condition 	
+1142	User Activity for the Past 30 Days II, Easy	
+1148	Article Views I    		69.6%	Easy	
+620	Not Boring Movies    		63.0%	Easy	
+1050	Actors and Directors Who Cooperated At Least Three Times    		71.7%	Easy	
+574	Winning Candidate    		37.6%	Medium	
+1112	Highest Grade For Each Student    		60.9%	Medium	
+1075	Project Employees I    		56.9%	Easy	
+1082	Sales Analysis I    		70.4%	Easy, ---1, cutting, use join
+1158	Market Analysis I    		51.2%	Medium	
+569	Median Employee Salary    		49.9%	Hard	
+1164	Product Price at a Given Date    		59.0%	Medium	
+1077	Project Employees III    		70.6%	Medium	
+1127	User Purchase Platform    		45.4%	Hard	
+1098	Unpopular Books    		42.2%	Medium	
+1174	Immediate Food Delivery II    		51.0%	Medium	
+1045	Customers Who Bought All Products    		67.0%	Medium	
+619	Biggest Single Number    		39.6%	Easy	
+570	Managers with at Least 5 Direct Reports    		63.6%	Medium	
+579	Find Cumulative Salary of an Employee    		34.8%	Hard	
+511	Game Play Analysis I    		75.9%	Easy	
+1076	Project Employees II    		52.6%	Easy	
+1193	Monthly Transactions I    New 64.5%	Medium
