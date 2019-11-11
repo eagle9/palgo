@@ -1,0 +1,80 @@
+1007	Minimum Domino Rotations For Equal Row	51.4%	Medium	 ---1
+410	Split Array Largest Sum	43.3%	Hard, ---1, cutting, binary search with sum	
+1057	Campus Bikes 58.2%	Medium  ----1	
+222	Count Complete Tree Nodes	38.5%	Medium ---1	
+1	Two Sum	44.7%	Easy --1	
+843	Guess the Word	45.2%	Hard, ---1, use feedback to shrink the list 	
+482	License Key Formatting	42.0%	Easy, ---1, 	
+1170	Compare Strings by Frequency of the Smallest Character	58.8%	Easy	
+1055	Shortest Way to Form String 57.6%	Medium, ----1	
+1096	Brace Expansion II	60.2%	Hard	
+359	Logger Rate Limiter 67.3%	Easy, ----1	
+15	Count of Smaller Numbers After Self	39.9%	Hard, ----0.7
+809	Expressive Words	45.4%	Medium, ----1	
+727	Minimum Window Subsequence 39.2%	Hard	
+1110	Delete Nodes And Return Forest	64.7%	Medium, ----1, dfs	
+1032	Stream of Characters	45.6%	Hard, ----1, trie 
+753	Cracking the Safe	48.7%	Hard, ---1, overlapping passwords, dfs	
+552	Student Attendance Record II	34.5%	Hard	
+642	Design Search Autocomplete System 40.9%	Hard, ----0.8	
+1088	Confusing Number II 38.1%	Hard, ---1	
+939	Minimum Area Rectangle	51.6%	Medium, ----1, hash table	
+1066	Campus Bikes II 52.6%	Medium, -----1, dfs	
+981	Time Based Key-Value Store	51.9%	Medium ----1, unordered_map of map 
+947	Most Stones Removed with Same Row or Column	54.8%	Medium, ----1, uf or dfs either way	
+299	Bulls and Cows	40.8%	Easy, ---1	
+943	Find the Shortest Superstring	40.6%	Hard, ----1	
+844	Backspace String Compare	46.7%	Easy, ----1, use stack easier to understand and cleaner to code	
+465	Optimal Account Balancing 44.7%	Hard	
+1087	Brace Expansion 60.7%	Medium, ----1, dfs with string details	
+679	24 Game	44.2%	Hard, ----1, dfs, shrink the numbers	
+551	Student Attendance Record I	46.0%	Easy	
+837	New 21 Game	32.9%	Medium, -----????	
+271	Encode and Decode Strings 28.7%	Medium, ----1, len/foobar	
+818	Race Car	37.1%	Hard	
+743	Network Delay Time	44.7%	Medium, -----0.7	
+889	Construct Binary Tree from Preorder and Postorder Traversal	62.7%	Medium, ----0.7	
+659	Split Array into Consecutive Subsequences	42.1%	Medium	
+200	Number of Islands	43.5%	Medium, ----1, dfs, with or without visited 2d array 	
+205	Isomorphic Strings	38.6%	Easy ----1, hash table mapping	
+1168	Optimize Water Distribution in a Village 56.8%	Hard	
+1231	Divide Chocolate 50.0%	Hard	
+489	Robot Room Cleaner 66.9%	Hard, ----1, dfs and use Robot class	
+1011	Capacity To Ship Packages Within D Days	55.5%	Medium	
+524	Longest Word in Dictionary through Deleting	47.0%	Medium	
+334	Increasing Triplet Subsequence	39.7%	Medium	
+208	Implement Trie (Prefix Tree)	41.8%	Medium, ----1, 	
+158	Read N Characters Given Read4 II - Call multiple times 29.1%	Hard	
+1153	String Transforms Into Another String 33.1%	Hard	
+1145	Binary Tree Coloring Game	49.2%	Medium,--1, recur  	
+221	Maximal Square	34.5%	Medium, ----1, 2d dp, natural 	
+247	Strobogrammatic Number II 45.8%	Medium	
+430	Flatten a Multilevel Doubly Linked List	45.5%	Medium	
+163	Missing Ranges 23.6%	Medium	
+4	Median of Two Sorted Arrays	27.7%	Hard, ----0.7	
+833	Find And Replace in String	48.2%	Medium	
+951	Flip Equivalent Binary Trees	65.2%	Medium	
+1219	Path with Maximum Gold	61.1%	Medium	
+1074	Number of Submatrices That Sum to Target	59.2%	Hard	
+42	Trapping Rain Water	45.5%	Hard, -----0.7, 	
+329	Longest Increasing Path in a Matrix	41.4%	Hard	
+1036	Escape a Large Maze	35.0%	Hard	
+241	Different Ways to Add Parentheses	52.2%	Medium	
+632	Smallest Range Covering Elements from K Lists	49.7%	Hard	
+1188	Design Bounded Blocking Queue 60.3%	Medium	
+85	Maximal Rectangle	35.1%	Hard, ----1, extend from max rectange in histogram	
+1197	Minimum Knight Moves 30.3%	Medium	
+354	Russian Doll Envelopes	34.6%	Hard, -----0.8	
+802	Find Eventual Safe States	46.0%	Medium	
+963	Minimum Area Rectangle II	47.5%	Medium	
+685	Redundant Connection II	31.6%	Hard	
+253	Meeting Rooms II 44.0%	Medium, ---0.7, 	
+737	Sentence Similarity II 44.5%	Medium	
+792	Number of Matching Subsequences	45.6%	Medium	
+304	Range Sum Query 2D - Immutable	34.9%	Medium, ----1, 2d bit, update i go up, query i go to 0	
+776	Split BST 53.6%	Medium	
+56	Merge Intervals	37.1%	Medium, ----0.8, 	
+288	Unique Word Abbreviation 20.8%	Medium	
+1056	Confusing Number 50.7%	Easy	
+528	Random Pick with Weight	43.3%	Medium, ---1, w[i] is the weight of index i, random number in range 0 -- sum all, then based on the range number, the first index >= random number, return the index	
+729	My Calendar I	49.1%	Medium

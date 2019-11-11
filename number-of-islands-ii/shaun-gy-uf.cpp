@@ -7,12 +7,15 @@ public:
     vector<int> numIslands2(int m, int n, vector<vector<int>>& positions) {
         vector<int> res;
         int cnt = 0;
-        parent = vector<int>(m * n, -1);
-        rank = vector<int>(m*n);
+        parent.resize(m * n, -1);
+        rank.resize(m*n);
         
         vector<vector<int>> dirs{{0, -1}, {-1, 0}, {0, 1}, {1, 0}};
+        
+        //add land step by step 
         for (auto v : positions) {
             int id = n * v[0] + v[1];
+            
             if (parent[id] == -1) {
                 parent[id] = id;
                 ++cnt;
@@ -30,12 +33,23 @@ public:
 private:
     vector<int> parent, rank;
     int find(int u) {
+        while (u != parent[u]) u = parent[u];
+        //now u == parent[u]
+        return u;
+    }
+    bool Union(int u, int v) {
+        int pu = find(u), pv = find(v);
+        if (pu == pv) return false;
+        parent[pu] = pv;
+        return true;
+    }
+    int find1(int u) {
         if (u != parent[u]) {
             parent[u] = find(parent[u]); //bug 2 =find(u) ---> find(parent[u])
         }
         return parent[u];
     }
-    bool Union(int u, int v) {
+    bool Union1(int u, int v) {
         int pu = find(u), pv = find(v);
         if (pu == pv) return false;
         if (rank[pu] <= rank[pv]) { //bug 1, < ---> <=

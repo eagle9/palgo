@@ -13,7 +13,7 @@ public:
         //parent.resize(NN);   //bug1  ----MLE
         //rank.resize(NN);
         for (auto vi: stones) {
-        	int xy = vi[0]*N + vi[1];
+        	int xy = vi[0]*N + vi[1]; //xy is cordinate id
         	parent[xy] = xy;
         	rank[xy] = 1;
         }
@@ -27,7 +27,7 @@ public:
         		if (isConnected(p1,p2)) Union(p1,p2);
         	}
         }*/
-        unordered_map<int,vector<int>> mr, mc;
+        unordered_map<int,vector<int>> mr, mc; //row index to stone ids
         for (int i = 0; i < n; ++i) {
             int x = stones[i][0], y = stones[i][1];
             int p = x*N + y;

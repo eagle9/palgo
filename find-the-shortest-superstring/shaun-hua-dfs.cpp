@@ -14,10 +14,10 @@ class Solution {
 public:
     string shortestSuperstring(vector<string>& A) {    
         const int n = A.size();
-		//cost[i][j] == wordi + wordj, end of i and start of j overlap as much as possible, addded chars to wordi 
         cost = vector<vector<int>>(n, vector<int>(n));
         for (int i = 0; i < n; ++i) {
             for (int j = 0; j < n; ++j) {
+                //cost is appending Aj to Ai, after overlapping, len increase
                 cost[i][j] = A[j].length(); //init cost with A[j] length
                 // find the overlapping substr, Aj  from start
                 // Ai  len - 1 - start+1 = k, start = len -k
@@ -27,14 +27,15 @@ public:
                 }
             }
         }
-		//now we have cost of each pair of word ij, boils down --> for each permutation of word 0 to i-1, what's the total chars
 
         vector<int> path(n);
         //vector<bool> used(n);
         best_len = INT_MAX;
         //dfs(A, 0, used, 0, path);
-        int used = 0;
+        int used = 0; //bit mask to indicate work index is used or not
+        //word length <=12, critical hint that you can use brutal force dfs
         dfs(A, 0, used, 0, path);
+        //path and best_path store the word indexes used in order
         string ans = A[best_path[0]];
         for (int k = 1; k < best_path.size(); ++k) {
             int i = best_path[k - 1];
@@ -47,16 +48,15 @@ private:
     vector<vector<int>> cost; //cost[i][j]: adding wordj to wordi without overlapping, number of chars 
     vector<int> best_path; //permutation of word index that yields the shortest superstring
     int best_len; //goog coding style prefer _ inside variable name
-    //depth is also the number of words used so far, growing the permutation
+    //cur is also the index of word to be used so far, growing the permutation
     //int used bitmask to indicate word[i] is used or not
     //void dfs(const vector<string>& A, int depth, vector<bool>& used, int cur_len, vector<int>& path) {
     
     //int& used or int used both are fine
     //used vector<bool>& will result TLE
-    void dfs(const vector<string>& A, int depth, int& used, int cur_len, vector<int>& path) {
+    void dfs(const vector<string>& A, int cur, int& used, int cur_len, vector<int>& path) {
         if (cur_len >= best_len) return; //pruning
-		//cur_len < best_len, update and recur
-        if (depth == A.size()) { //dfs recursion exit
+        if (cur == A.size()) { //dfs recursion exit
             best_len = cur_len;
             best_path = path; //copy vector, backtracking not needed
             return;
@@ -66,8 +66,7 @@ private:
         for (int i = 0; i < A.size(); ++i) {
             //if (used & (1 << i)) continue; //ith bit from right is set
             if (used & (1 << i)) continue;
-			//i is not used yet
-            path[depth] = i;
+            path[cur] = i;
             //used[i] = true;
             used = used | (1 << i);
             //used &= 1 << i; //bug 1, should be | to set 1 bit and not mess with other bits
@@ -76,11 +75,11 @@ private:
             //used[i] = true; //TLE
             //add word[i] to grow the permutation
             dfs(A,
-                depth + 1, 
+                cur + 1, 
                 used, 
                 //used | (1 << i),
                 //cur_len + cost[path[d - 1]][i], //you will start like this, then found d-1 could <0
-                depth == 0 ? A[i].length() : cur_len + cost[path[depth - 1]][i], //d-1 index derive the corner case
+                cur == 0 ? A[i].length() : cur_len + cost[path[cur - 1]][i], //d-1 index derive the corner case
                 path);
             
             //backtracking

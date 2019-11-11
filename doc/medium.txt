@@ -87,13 +87,13 @@
 86	166	Fraction to Recurring Decimal, ----
 87	947	Most Stones Removed with Same Row or Column, ----1, cutting: union find
 88	19	Remove Nth Node From End of List, ----1
-89	162	Find Peak Element, ----1, cutting: shaun own binary search, cutting draw cases
+89	162	Find Peak Element, ----11, cutting: shaun own binary search, cutting draw cases
 90	114	Flatten Binary Tree to Linked List, ----1, cutting recur divide and conquer
 91	34	Find First and Last Position of Element in Sorted Array, ----1, cutting binary search, how to push to left or right
 92	647	Palindromic Substrings, ----1, cutting, loop all center index, expand and count, or dpij, compute in the order of len
 93	55	Jump Game ----
 94	240	Search a 2D Matrix II, ----1, space reduction O(m+n), or naive binary search each row and col
-95	222	Count Complete Tree Nodes , -----1, g34, high worth,cutting:use math 2^h-1 when possible,  
+95	222	Count Complete Tree Nodes , -----11, g34, high worth,cutting:use math 2^h-1 when possible, hleft == hright use pow(2,h)-1, com
 96	221	Maximal Square-----1, cutting 2d dp, expand square when cell at ij is 1,along with 3 squares overlapping i-1&j, i&j-1 and i-1&j-1 
 97	116	Populating Next Right Pointers in Each Node, ----1, cutting:bfs level
 98	211	Add and Search Word - Data structure design, -----1, cuttting: use trie, searchWord recursion, be careful with null and recur exit
