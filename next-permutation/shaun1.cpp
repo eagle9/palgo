@@ -6,8 +6,8 @@
 // 2 1 3  reverse 31 to 13
 
 // 1 2 7 4 3 2 1
-// 1 3 7 4 2 2 1  find 2, find 3, swap them
-// 1 3 1 2 2 4 7  reverse 7 to 1
+// 1 3 7 4 2 2 1  from right, go up and 2 first go down, find 2, find 3, swap them
+// 1 3 1 2 2 4 7  reverse 7 to 1, after 3, descending, reverse it 
 // idea, from left, find the max sub permu, go up then find down, say i, i is the candidate to make bigger
 // want to replace i with a number j > i, of course from left again, swap  ij,
 // since (j to tail] is max, j>i, now make (j to tail) min, makes sense
@@ -30,7 +30,7 @@ public:
         //go from right to left, up slope, keep going, find first down slope number, candiate to ++
         int i = n-2;
         while (i >= 0 && nums[i] >= nums[i+1]) --i;
-        //now i < 0 or nums[i] < nums[i+1]
+        //now i < 0 or nums[i] < nums[i+1], find first down at i
         if (i >=0) {
             //go from right to left, find the first number nums[j] > nums[i]
             int j = n-1;

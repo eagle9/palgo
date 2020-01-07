@@ -16,6 +16,7 @@ private:
         if (left <= right) {
             int p = partition1(nums, left, right);
             //int p = partition1(nums, left, right);
+			//   0 -- k-2 p ... ---> k-1 numbers > nums[p]
             if (p ==  k-1)
                 return nums[p];
             
@@ -29,6 +30,8 @@ private:
     
     //not very clear about this partition scheme
     //works, runtime 32ms, faster than 26%, mem less than 6%
+	//dec 22 2019 dodge ridge understood - return pivot index such that
+	//   >pivot pivot <= pivot
     int partition(vector<int>& nums, int left, int right) {
         //take left as pivot index
         int i = left + 1, j = right;

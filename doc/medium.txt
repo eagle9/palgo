@@ -13,7 +13,7 @@
 13	322	Coin Change, ----1, recur, dp, 
 14	22	Generate Parentheses, ----1, cutting:backtracking growing candidate, with left and right to add 
 15	17	Letter Combinations of a Phone Number ----1, cutting:own idea and accepted,dfs backtracking
-16	31	Next Permutation, ----1, array, cutting:, use example to derive rule
+16	31	Next Permutation, ----11, array, cutting:, use example to derive rule
 17	393	UTF-8 Validation, ---1, cutting: bit mani, bit mask, loop inside loop
 18	399	Evaluate Division, ---1, cutting: graph model, find path, path AB = AC * CB recur, uf idea????
 19	54	Spiral Matrix,----1, loop array, butting a loop with loops with updates
@@ -30,7 +30,7 @@
 30	8	String to Integer (atoi), ----1, cutting: string and math, cutting, 
 31	46	Permutations, ------1, cutting: classic, use template, nums[i] used or not 
 32	151	Reverse Words in a String,----1, cutting, tokonize with stream getline
-33	695	Max Area of Island, -----1, cutting dfs dep is island area,  
+33	695	Max Area of Island, -----11, cutting dfs grow the island, start from each ij, change grid[i][j] to -1 to marked visited, recur depth is local island area, track the max  
 34	127	Word Ladder, -----1, cutting, graph model, bfs, with some detail tweaks
 35	547	Friend Circles, -----1, cutting, direct and natural apply of uf
 36	173	Binary Search Tree Iterator, -----1, cutting inorder with stack, 

@@ -1,6 +1,6 @@
 //grandyang dijkstra algo template with queue bfs level traversal
 //runtime 84ms, faster than 96%, mem less than 50%
-class Solution {
+class Solution1 {
 public:
     int networkDelayTime(vector<vector<int>>& times, int N, int K) {
         int res = 0;
@@ -42,7 +42,7 @@ public:
 //runtime 100ms, faster than 66%, mem less than 67%
 //represent graph with adjacent matrix, but use priority queue, easier to master
 typedef pair<int,int> iPair;
-class Solution2 {
+class Solution {
 public:
     int networkDelayTime(vector<vector<int>>& times, int N, int K) {
         
@@ -59,7 +59,8 @@ public:
             for (int v = 1; v <= N; ++v) {
                 if (edges[u][v] != -1 && dist[u] + edges[u][v] < dist[v]) {
                     dist[v] = dist[u] + edges[u][v];
-                    minHeap.push(make_pair(dist[v], v));
+                    //minHeap.push(make_pair(dist[v], v));
+                    minHeap.push({dist[v], v});
                 }
             }
         

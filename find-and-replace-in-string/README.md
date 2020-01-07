@@ -1,5 +1,6 @@
 833. Find And Replace in String
-Medium
+Medium 214 288 Favorite Share
+
 To some string S, we will perform some replacement operations that replace groups of letters with new ones (not necessarily the same size).
 
 Each replacement operation has 3 parameters: a starting index i, a source word x and a target word y.  The rule is that if x starts at position i in the original string S, then we will replace that occurrence of x with y.  If not, we do nothing.
@@ -27,5 +28,10 @@ Notes:
 0 <= indexes.length = sources.length = targets.length <= 100
 0 < indexes[i] < S.length <= 1000
 All characters in given inputs are lowercase letters.
-Topic: String
 
+Accepted 26.2K
+Submissions 54.5K
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+
+Google | 4

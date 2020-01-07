@@ -1,3 +1,8 @@
+design doc --- collaborative editing, outline a feature to design, a problem to solve
+, approaches with alternate, contentious issues. elicit reviews comments even arguments, 1 page, or 3-12 pages. the goal is to let other engineers (chip in reviews and understand the feature design many years later)
+
+how to lauch new feature/iteration, testing, and deploy. if problems, roll back. 
+ 
 design twitter ---1, or design a news feed system
 
 user system --1, keep session, scale for big number of users, and large number of writes
@@ -35,6 +40,9 @@ rate limiter ----1, cutting: last time, store event's all timestamps in a vector
 hit counter ---
 
 google doc --- 
+  collaborative editing or image editing, ask about how many users and some of the requirements (such as latency, consistency requirements)
+  ideas: operational transformation, google aus tech lead david wang google wave, use OT, but with a server coordinate, kind of single source of truth, karendar L same idea with a queue of operations at the server. me similar thing.  should explain more about thought process, sync up with IO along the way. 
+
 google calendar ---- 
 google map ----
 google drive ---
@@ -60,3 +68,52 @@ pro and cons for each algorithm
 distributed rate limiter for global rate limiting 
 race condition, inconsistency, latency overhead
 some rate limiting can be relaxed, 100 or 105, does not matter much
+
+
+design a dhcp
+  many devices, each device has an unique mac address
+  dhcp holds a pool of ip addresses
+  device request server for ip, here is my mac address, please assign me an ip address, with a lease duration, say 24 hours. 
+  the server get one ip from the address pool (queue? ), repond the device request with ip
+  clients and many servers, servers share a common address pool, along with gateway and time server info
+  a client starts with a discover message to servers,
+  servers respond with offer ip address for the request mac address
+  the client decides to accept an offer from a particular server
+  the server acknowlege the offer is accepted, allocate the ip address to the mac
+    the ip assignment to the mac is offerred as lease, say default term is 24 hours
+   when half of the lease term passed, the client trys to renew the lease, renew request message. server receives the renew request, start another lease for the mac with the assign ip
+  server also offer reserve an ip for a mac
+to read dhcp one more time about the design principles, practice on white board at home
+
+
+
+design JVM garbage collector and understand its design principles
+how to write a linux program that acts as daemon 
+it is deamon process, mark unreferenced objects, classify them into different generations, can reclaim the memory occupied by these objects.  when garbabe collection is on going, the program will stop running, it is called garbage collection pause, the goal is to collect garbage fast, but keep the program responsive.   gc pause can be tuned. the most task of gc is to reduce heap size by getting memory back from unreferenced objects in the heap.
+there are several different kind of gc, g1 is the most recent, parallel gc is pretty fast to getting memory back, but pause is relative longer than other gc.  concurrent mark sweep, serial, how about these two?  
+
+
+
+
+rg eco collect real time data analytics system
+14,000,000 RG SNs, each RG(identified by rg sn) has about 7 home devices(identified by mac addresses), 
+so the total number of devices is about 100,000,000
+for each device, 
+key(sn,or mac)
+ts //time of last stats
+dnb reading, upb reading
+dnDelta, upDelta //accumulative for the day
+set of devices //
+
+within 15min, have to finish update for 100,000,000
+QPS is 100,000,000/(15*60) = 111,111
+set up a key value store 
+
+100M*1024B = 100GB memory to store the key value store
+
+
+
+
+
+
+
