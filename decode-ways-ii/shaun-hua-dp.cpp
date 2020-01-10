@@ -52,20 +52,20 @@ private:
         if (c1 == '*' && c2 == '*') 
             return 15; 
 
-		//*d   [1/2 d]   1d    2d
+	//*d   [1/2 d]   1d    2d
         if (c1 == '*') { //first*, 
           return (c2 >= '0' && c2 <= '6') ? 2 : 1;
         } 
-		// d*
-		else if (c2 == '*') {
+	// d*
+	else if (c2 == '*') {
             switch (c1) {
                 case '1': return 9;
                 case '2': return 6;
                 default: return 0;
             }
         } 
-		//dd
-		else {
+	//dd
+	else {
             int prefix = (c1 - '0') * 10 + (c2 - '0');
             return prefix >= 10 && prefix <= 26?1:0;
         }        

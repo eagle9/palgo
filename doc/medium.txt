@@ -1,13 +1,13 @@
 1	2	Add Two Numbers, ----1, cutting, numbers list, dummy for new list, use carry 
 2	200	Number of Islands, ---1, cutting, dfs
-3	904	Fruit Into Baskets , ----1, cutting, model the problem, sliding window   	
+3	904	Fruit Into Baskets , ----11, cutting, model the problem, sliding window   	
 4	3	Longest Substring Without Repeating Characters, ----1, sliding window, hash table stores char's right index
 5	5	Longest Palindromic Substring, ---1,2p, cutting, try center point, 2 cases, expand to left and right with 2pointers  
 6	138	Copy List with Random Pointer, -----1, similar to clone graph, copy and map nodes first, then edges/links
 7	56	Merge Intervals, ---1 
 8	15	3Sum, ----1, ---, cutting: sort then left and right pointers  
 9	253	Meeting Rooms II, ----1, cutting: my own idea with sorting timestamp with event type(1 for start, 0 for end),  sweeping, after bug fix  
-10	238	Product of Array Except Self, ---1, prefix sum approach
+10	238	Product of Array Except Self, ---11, prefix sum/product approach from both ends
 11	11	Container With Most Water, ---1, 
 12	33	Search in Rotated Sorted Array, ----1, cutting, binary search cases 
 13	322	Coin Change, ----1, recur, dp, 
