@@ -1,0 +1,25 @@
+Java Performance: The Definite Guide
+
+C3. Java performance tool box
+
+c4. Working with the JIT compiler
+
+c5. Introduction to garbage collection
+ read this chapter first pass. It makes sense, good read. 4 GC, all for heap. 
+serial, throughput, cms, g1
+cms and g1 are parallel, g1 partition heap and works better with larger heap size.
+heap divided into generations
+permgen jdk7 metaspace jdk8 store class metadata
+-XX:Xms -XX:Xmx, initial size and max size. GC will find the proper heap size
+max usually 1/4 of the physical RAM size
+start your program and run to its full capacity (all data and max connections), use jconsole and run a full GC
+
+GC pause (stop the world), application threads will be paused
+permance penalty, with simplified memory management
+GC pause can be tunned
+minor GC cyle, finding and marking unused memory inside the heap
+full GC cyle, heap unused memory removal and compaction
+
+c6. Garbage collection algorithms
+
+
