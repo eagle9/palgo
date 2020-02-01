@@ -21,5 +21,44 @@ minor GC cyle, finding and marking unused memory inside the heap
 full GC cyle, heap unused memory removal and compaction
 
 c6. Garbage collection algorithms
+c7. Heap memory best practice
+ you can get heap histogram of all objects, count objects by class. 
+ kind of take memory management into your own hands rather than let GC do the best work
+ strike a balance, reuse some objects, keep the size of this purpose small
+ trade off how many objects to create
+ reuse objects when creation of such an object is expensive
+ object constant pool,  thread pool, String interning
+ threadlocal variable
+ weak, soft, phanton references
+ After reading this chapter, I got some new learning about Java, which makes valueable sense. Some items are not fully understood yet, but it is good for first pass. 
 
+C8. Native memory best practices
+  Just summary fist
+  use large page when heap size is large
+  track JVM's entire memory footprint(including heap as a big part)
+  IO buffer, thread stacks, code cache, etc. 
+  turn on JVM native memory tracking and display native memory usage 
+  oop (ordinary object pointer) compressed, not quite understood, get a little bit first pass
+C9. Threading and Synchronization Performanc
+  Relative high priority
+
+C10. Java Enterprise Edition Performance
+
+C11. Database Performance Best Practices
+   Relative high priority
+  
+C12. Java SE API Tips
+  High priority
+  Buffered is good for IO, by block rather than a single byte
+  Random, SecureRandom with entropy(good and bad), ThreadLocalRandom
+  JNI, calls from Java to C is slow, from C to Java is okay. Now Java is as fast as C. No need to cross JNI boundary for performance gains. But sometimes functions already implemented in C and you don't want to re-invent the wheel. Pin object will block GC.  What is pin. Passing string and array parameters. 
+  String, concatenation in one line, compiler convert to StringBuilder. append toString
+  String encoding and decoding are slow.  Use buffer. 
+  Logging --- 3 principles,  enable logging for a small set of classes. 
+  Java Collections API
+  AggressiveOpts
+  Lambdas and Anonymous Classes
+  Stream and Filter Performance
+ 
+  
 
