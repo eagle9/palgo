@@ -1,0 +1,47 @@
+Spark: the definite guide 2018
+
+C2. Gentel Introduction to Spark
+
+  spark sql and dataframe
+
+C3. Tour of Spark's Toolset
+
+C4. Structured API Overview
+
+C5. Basic Structured Operations
+
+C6. Working with different Types of Data
+
+C7. Aggregations
+
+C8. Joins
+
+C9. Data Sources
+
+C10. Spark SQL
+
+C11. Datasets
+
+C15. How spark runs on a cluster
+
+C16. Developing Spark applications
+
+C17. Deploying spark
+
+C18. Monitoring and debugging
+
+C19. Performance tuning
+
+C20. Stream processing fundamentals
+
+C21. Structured streaming basics
+ read a little, makes some sense, 
+  my question, spark stream source?  can only be kafka? 
+kafka message order?  (key, value,timestamp)
+  eco example,  message order by producer?  or by some field? 
+
+C22. Event-time and stateful processing
+C23. Structured streaming in production
+
+c24. Advanced analytics
+ 
