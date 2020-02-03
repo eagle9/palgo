@@ -1,0 +1,25 @@
+Kafka: The definite Guide, Real Time data and stream processing at scale
+
+C3. Kafka Producers: Writing messages to Kafka
+init with configurations, bootstrap servers, key class seriliazer, value class serilizer, buffer, ack, synchronous and asynchronous sending. 
+avro
+
+Partition. use threads or more producers. 
+
+C4. Kafka Consumers: Reading data from Kafka
+
+C5. Kafka Internals
+
+C6. Reliable Data Delivery
+
+C7. Building Data Pipelines
+
+C8. Cross-Cluster Data Mirroring
+
+C9. Administering Kafka
+
+C10. Monitoring Kafka
+
+C11. Stream Processing
+
+
