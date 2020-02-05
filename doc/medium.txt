@@ -51,7 +51,7 @@
 50	48	Rotate Image, -----1, g8, very worth,cutting: rules for rotating, how to avoid repeated 
 51	364	Nested List Weight Sum II, ----1, dfs, cutting: find maxDepth first, then dfs(list, weight) to find the sum, shaun own idea and code accepted first sub, with example testing
 52	362	Design Hit Counter ----1, 
-53	636	Exclusive Time of Functions
+53	636	Exclusive Time of Functions, ----1, cutting, store id to a stack, pay attention of start and end of each time unit, good problem
 54	143	Reorder List, -----1, cutting == merge sort 
 55	347	Top K Frequent Elements, -----1, cutting, minheap with greater in front
 56	755	Pour Water, ---1, pure array , cutting = ?? first timer
