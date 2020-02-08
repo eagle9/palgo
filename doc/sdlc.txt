@@ -1,0 +1,12 @@
+https://www.tutorialspoint.com/sdlc/sdlc_bigbang_model.htm
+
+sdlc: planning, requirements, design, development, testing, deployment, maintenance
+
+waterfall model: 
+iterative model:
+agile model: iterative and incremental
+  each iteration is a cycle from planning to deployment&maintenance
+
+
+kanban model: 
+

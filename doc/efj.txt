@@ -38,18 +38,27 @@ stored in the out cells.
 16. In public classes, use accessor methods, not public fields
 
 17. Minimize mutability
+   understand some
 
 18. Favor composition over inheritance
 
 19. Design and document for inheritance or else prohibit it
 
 20. Prefer interfaces to abstract classes
-
-21. Design interfaces for posterity
-  What is posterity 
+   read first pass. not quite get it.  skeleton class? why? the only case that abstract class needed. understand that java promotes interface rather than multiple inheritance (which is bad with bloaded classes).  default method of interface?  yes, default method since Jdk8 is allowed. still not quite understand abstract class for skeleton implemenation, what is skeleton impl? 
+not easy read.  
+ 
+21. Design interfaces for posterity What is posterity 
 
 22. Use interfaces only to define types
 
 23. Prefer class hierachies to tagged classes
 
 24. Limit source file to a single top-level class
+
+
+
+C8. Methods
+Item 49 --- check parameters for validity.  @return ... @throws ...Exception
+   mod 
+  null check?   
