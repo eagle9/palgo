@@ -1,0 +1,21 @@
+Agile Scrum vs. Kanban
+scrum feature and functions are clear
+less change
+scrum master -> scrum team
+planning meeting -> daily stand up -> retrospective meeting(good and area for improvement)
+backlog of work items
+from planning, to design, testing, release
+a sprint is a short software development cycle 1-4 weeks
+once in requirments, no change until next sprint
+
+
+kanban -- feature not clear, frequent change, release more frequent
+kanban board:
+to do, in progress, done
+requirement can be changed, so more flexible
+https://www.youtube.com/watch?v=z5USpC5ZKHY
+
+a hybrid is available now, called scrumban
+
+
+
