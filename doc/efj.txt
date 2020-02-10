@@ -1,5 +1,7 @@
 Any int question regarding this book? 
 must read java books: head first java, effective java, java performance by scott
+
+C1. Creating and destroying objects
 1. Consider static factory methods instead of constructors
 
 2. Consider a builder when faced with many constructor parameters
@@ -23,6 +25,8 @@ stored in the out cells.
 9. Prefer try-with-resources to try-finally
   I got this new syntax, pretty neat. I used to use try-finally a lot.
 
+C3. Methods common to all objects
+==============================
 10. Obey the general contract when overriding equals
 
 11. Always override hashCode when you override equals
@@ -33,6 +37,9 @@ stored in the out cells.
 
 14. Consider implementing Comparable
 
+
+C4. Classes and interfaces
+===========
 15. Minimize the accessibility of classes and members
 
 16. In public classes, use accessor methods, not public fields
@@ -56,9 +63,87 @@ not easy read.
 
 24. Limit source file to a single top-level class
 
+C5. Generics
+Item 26. Don't use raw types
+
+C6. Enums and Annotations
+Item 34. Use enums instead of int constants
+Item 41. Use marker interfaces to define types
+
+C7. Lambdas and streams
+Item 42. Prefer lambdas to anonymous classes
+Item 43. Prefer method references to lambdas
+Item 44. Favor the use of standard function interfaces
+Item 45. Use streams judicously
+Item 46. Prefer side-effect-free functions in streams
+Item 47. Prefer collection to stream as a return type
+Item 48. Use caution when making streams parallel
 
 
 C8. Methods
 Item 49 --- check parameters for validity.  @return ... @throws ...Exception
    mod 
   null check?   
+
+Item 54: Return empty collections or arrays, not nulls
+Item 55: Return optionals judiciously. Optional, wow
+Item 56: Write doc comments for all exposed API elemets
+
+C9 General Programming
+Item 57: Minimize the scope of local variables
+Item 58: Prefer for-each loops to traditional for loops
+   for (E i: A) 
+	for (D j: B) 
+	  i + "," + j
+
+Item 59: Know and use the libraries
+As of Java 7, you should no longer use Random. For most uses, the random
+number generator of choice is now ThreadLocalRandom. It produces
+higher quality random numbers, and it’s very fast. On my machine, it is 3.6 times
+faster than Random. For fork join pools and parallel streams, use
+SplittableRandom.
+java.util java.lang java.io
+
+Item 60: Avoid float and double if exact answers are required
+
+Item 61: prefer primitive types to boxed primitives
+  boxing and unboxing is slow, O1 == O2 is identity check, not value equal check for objects
+
+Item 62: Avoid strings where other types are more appropriate
+
+Item 63: Beware the performance of string concatenation
+
+Item 64: refer to objects by their interfaces
+
+Item 65: Prefer interfaces to reflection
+
+Item 66: Use native methods judiciously
+Item 67: Optimize judiciously
+Item 68: Adhere to generally accepted naming conventions
+
+C10. Exceptions
+Item 69. Use exceptions only for exceptional conditions
+Item 70. Use checked exceptions for recoverable conditions and runtime exceptions
+Item 71. Avoid unnecessary use of checked exceptions
+Item 72. Favor the use of standard exceptions
+Item 73. Throw exceptions appropriate to the abstraction
+Item 74. Document all exceptions thrown by each method
+Item 75. Include failure-capture information in detail messages
+Item 76. Strive for failure atomicity
+Item 77. Dont' ignore exceptions
+
+C11. Concurrency
+Item 78. Synchronize access to shared mutable data
+Item 79. Avoid excessive synchronization
+Item 80. Prefer executors, tasks and streams to threads
+Item 81. Prefer concurrency utilities to wait and notify
+Item 82. Document thread safety
+Item 83. Use lazy initialization judiciously
+Item 84. Dont' depend on the thread scheduler
+
+C12. Serialization
+
+
+
+Item 60. Aovid float and double if exact answers are required
+
