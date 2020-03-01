@@ -1,7 +1,7 @@
  #	Title	Acceptance	Difficulty	Frequency
 593	Valid Square	41.5%	Medium	 ----1, own but with debugging, sort
 647	Palindromic Substrings	59.0%	Medium	
-203	Remove Linked List Elements	37.0%	Easy	
+203	Remove Linked List Elements	37.0%	Easy, ----1, own and gy way, cutting dummy node, thinking cur and cur->next
 730	Count Different Palindromic Subsequences	41.1%	Hard	
 661	Image Smoother	50.3%	Easy	
 75	Sort Colors	44.5%	Medium	

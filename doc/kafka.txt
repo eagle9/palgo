@@ -23,3 +23,6 @@ C10. Monitoring Kafka
 C11. Stream Processing
 
 
+https://data-flair.training/blogs/kafka-interview-questions/
+
+also doc at kafka official site

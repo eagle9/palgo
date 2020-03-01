@@ -8,11 +8,18 @@ Inheritance : The ability of creating a new class from an existing class. Inheri
 
 Polymorphism: Polymorphism is derived from 2 Greek words: poly and morphs. The word "poly" means many and "morphs" means forms. So polymorphism means "many forms". A subclass can define its own unique behavior and still share the same functionalities or behavior of its parent/base class. A subclass can have their own behavior and share some of its behavior from its parent class not the other way around. A parent class cannot have the behavior of its subclass.
 
+polymorphism:
+allow us to perform a single action in different ways
+Compile time polymorphism, through method overloading
+  typical use case of overload,  int add(int a, int b), double add(double a, double b)
+Runtime polymorphism, through method overriding
+  derived class redefines a method. In contrast to overloading, redefine the method with the same parameter&return signature
+
+
 association
 composition vs. aggregation 
   both object A is part of object B.  Composition the part can not exist without the whole. Aggregation no such requirements
   heart and body -- composition, book with lib tag and library --- composition,   employee and company, aggregation
-
 
 polymorphism
   overloading --- function share name but different signatures(parameter and return types)
@@ -23,7 +30,6 @@ inheritance
 multiple level
 multiple inheritance
 interface inheritance
-
 
 encapsulation 
   data and methods together
