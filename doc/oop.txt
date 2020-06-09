@@ -34,3 +34,36 @@ interface inheritance
 encapsulation 
   data and methods together
   access control, private, protect, public,
+
+
+in python I found OOP helps with encapsulation, program with few number of global variables 
+put related functions together and organize code better
+constructor with many parameters,  builder 
+how to shape a class, what functions and features to put into a class
+
+dependence  injection
+
+design pattern
+
+help developers create and maintain a codebase that is strong but flexible to grow and change with minimal difficulty.
+
+The five principles are as follows:
+
+S – Single Responsibility Principle (SRP)
+O – Open Closed Principle (OCP)
+L – Liskov Substitution Principle (LSP)
+I – Interface Segregation Principle (ISP)
+D – Dependency Inversion Principle (DIP)
+
+S -- a class does 1 single thing
+
+O -- open for extention, close for modification.  add new features buy extending a class, implement interface
+  for instance get area of all shapes,  new shape extend shape base class, implement its own getArea method
+
+L --  base class can be replaced with derived class
+
+I -- lean interface, not interface that contracts many methods
+
+D ---
+
+

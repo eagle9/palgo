@@ -1,5 +1,12 @@
 Kafka: The definite Guide, Real Time data and stream processing at scale
 
+change zookeeper port number 2181 and kafka broker port 9092
+use zookeeper-server-stop.sh and kafka-server-stop.sh
+kill -9 might result inconsistent state and distributed system might fail to start successfully
+always check logs for ERROR Exceptions
+I found the ERROR in nohup.out, and google the error and find the fix is to cleanup /tmp/zookeeper
+
+
 C3. Kafka Producers: Writing messages to Kafka
 init with configurations, bootstrap servers, key class seriliazer, value class serilizer, buffer, ack, synchronous and asynchronous sending. 
 avro
@@ -26,3 +33,24 @@ C11. Stream Processing
 https://data-flair.training/blogs/kafka-interview-questions/
 
 also doc at kafka official site
+
+
+
+udemy stephane marrek course
+
+https://engineering.salesforce.com/mirrormaker-performance-tuning-63afaed12c21
+https://docs.confluent.io/current/multi-dc-deployments/replicator/replicator-tuning.html
+https://community.cloudera.com/t5/Community-Articles/Kafka-Mirror-Maker-Best-Practices/ta-p/249269
+
+streaming
+https://medium.com/@chandanbaranwal/spark-streaming-vs-flink-vs-storm-vs-kafka-streams-vs-samza-choose-your-stream-processing-91ea3f04675b
+
+jay kreps on streaming
+https://www.oreilly.com/radar/questioning-the-lambda-architecture/
+
+tyler 
+https://www.oreilly.com/radar/the-world-beyond-batch-streaming-101/
+
+rest api performance tunning
+https://medium.com/rpdstartup/rest-api-performance-tuning-getting-started-7a6efefa9e20
+

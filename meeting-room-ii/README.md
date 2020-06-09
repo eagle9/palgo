@@ -14,7 +14,7 @@ Output: 1
 NOTE: input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.
 
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
-Facebook | 49 Google | 30 Amazon | 20 Uber | 10 Microsoft | 9 Quora | 5 Bloomberg | 3 Atlassian | 3 Drawbridge | 2
+Amazon | 20 Bloomberg | 16 Facebook | 14 Microsoft | 7 Google | 7 Oracle | 5 Uber | 4 Apple | 4 Nutanix | 3 GoDaddy | 2 Goldman Sachs | 2
 
 Similar:
 Merge Intervals Medium

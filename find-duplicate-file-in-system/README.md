@@ -35,7 +35,7 @@ Follow-up beyond contest:
 5. How to make sure the duplicated files you find are not false positive?
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 
-Twitter | 2  Google | 2  Dropbox |35
+Dropbox | 27 VMware | 2 Apple | 2
 
 Topic: Hash Table, String
 

@@ -34,7 +34,7 @@ Contributor LeetCode
 Companies:
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 
-Microsoft | 17 Facebook | 6 Salesforce | 3 Amazon | 3 Yandex | 2 Google | 2 Cisco | 2
+Microsoft | 12 Apple | 5 Amazon | 3 Facebook | 2
 
 Topic: String
 

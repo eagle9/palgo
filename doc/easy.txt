@@ -1,7 +1,7 @@
-1	1	Two Sum,----1, high worth, hash or 2p, cutting: hash number to its index, 2p pair number with it index
-2	20	Valid Parentheses,---1, cutting, use stack, right must have left at top to match and pop, right no match, return false, end up with empty stack is valid 
-3	929	Unique Email Addresses,----1, cutting: string manipulation with details, familiarize yourself with c++ api
-4	21	Merge Two Sorted Lists, ----1, cutting: new head with dummy
+1	1	Two Sum,----2, high worth, hash or 2p, cutting: hash number to its index, 2p pair number with it index
+2	20	Valid Parentheses,---2, cutting, use stack, right must have left at top to match and pop, right no match, return false, end up with empty stack is valid 
+3	929	Unique Email Addresses,----2, cutting: string manipulation with details, familiarize yourself with c++ api
+4	21	Merge Two Sorted Lists, ----2, cutting: new head with dummy
 5	121	Best Time to Buy and Sell Stock, ----1, cutting: low price so far from 0 to i
 6	53	Maximum Subarray ---1, cutting prefixsum, track the minimum prefexSum 
 7	206	Reverse Linked List ---1, cutting: two pointers prev cur moving to right 
@@ -27,7 +27,7 @@
 26	716	Max Stack, -----1, 3stacks, cutting, use stack2 to store max, use temp stack to remove max from stack1 
 27	258	Add Digits, ------1, cutting: observe math with simple problem,  
 28	203	Remove Linked List Elements , -----1, cutting dummy for head change, cur cur-Next(=t) t->next, delete t
-29	543	Diameter of Binary Tree, -----1, cutting, diameter path = left height + right height, boils down to height of binary tree   
+29	543	Diameter of Binary Tree, -----2, cutting, diameter path = left height + right height, boils down to height of binary tree   
 30	349	Intersection of Two Arrays, ----1, cutting set, 2p with sorting,binary search 
 31	387	First Unique Character in a String, ----1, own idea/code accepted first sub
 32	242	Valid Anagram  ----1,cutting, hash especially when char set is small O1 space, m++ and --, check < 0 

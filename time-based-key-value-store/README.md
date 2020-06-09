@@ -1,5 +1,6 @@
 981. Time Based Key-Value Store
-Medium
+Medium 611 71 Add to List Share
+
 Create a timebased key-value store class TimeMap, that supports two operations.
 
 1. set(string key, string value, int timestamp)
@@ -10,8 +11,10 @@ Stores the key and value, along with the given timestamp.
 Returns a value such that set(key, value, timestamp_prev) was called previously, with timestamp_prev <= timestamp.
 If there are multiple such values, it returns the one with the largest timestamp_prev.
 If there are no values, it returns the empty string ("").
+ 
 
 Example 1:
+
 Input: inputs = ["TimeMap","set","get","get","set","get","get"], inputs = [[],["foo","bar",1],["foo",1],["foo",3],["foo","bar2",4],["foo",4],["foo",5]]
 Output: [null,null,"bar","bar",null,"bar2","bar2"]
 Explanation:   
@@ -24,6 +27,7 @@ kv.get("foo", 4); // output "bar2"
 kv.get("foo", 5); //output "bar2"   
 
 Example 2:
+
 Input: inputs = ["TimeMap","set","set","get","get","get","get","get"], inputs = [[],["love","high",10],["love","low",20],["love",5],["love",10],["love",15],["love",20],["love",25]]
 Output: [null,null,null,"","high","high","low","low"]
  
@@ -35,8 +39,57 @@ All key/value strings have length in the range [1, 100]
 The timestamps for all TimeMap.set operations are strictly increasing.
 1 <= timestamp <= 10^7
 TimeMap.set and TimeMap.get functions will be called a total of 120000 times (combined) per test case.
+Accepted
+54,310
+Submissions
+103,742
+Seen this question in a real interview before?
 
+Yes
 
-Companies: Sumologic | 4 Zillow | 2 Lyft | 2 Google | 2
+No
+Contributor
+LeetCode
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 
-Topic: Hash Table, Binary Search
+Lyft
+|
+6
+
+Amazon
+|
+6
+
+Apple
+|
+5
+
+Atlassian
+|
+3
+
+Netflix
+|
+3
+
+Zillow
+|
+2
+
+Google
+|
+2
+
+Microsoft
+|
+2
+
+Uber
+|
+2
+
+VMware
+|
+2
+
+Topics: Hash Table, Binary Search

@@ -5,6 +5,20 @@
  *     ListNode *next;
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
+
+may 17 practice:
+go left to right
+ if <x keep it
+ else >= x, remove it and append to a new list
+ ends with 2 list
+ head  tail
+ head2
+ 
+ if tail != null
+ tail -> head2 
+ 
+ improve don't mutate original list
+ create two lists, head1 prev1, head2, prev2
  */
 //shaun's original idea and code, first sub wrong answer, failling corner case?
 //yes, found the failling case, each node->val < x, head1 == NULL, you should return head2 instead

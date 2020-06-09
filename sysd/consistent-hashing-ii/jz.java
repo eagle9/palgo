@@ -62,13 +62,14 @@ public class Solution {
                 int d = num - hashcode;
                 if (d < 0)  //num < hashcode
                     d += n;
-                if (d < distance) { //find min distance, hashcode <= num < n+1
+                if (d < distance) { //find min distance=shard_id - hashcode, hashcode <= num < n+1
+				//or find the min shard id >= given key's hash code
                     distance = d;
                     machine_id = key;
                 }
             }
         }
-        //machine_id has a shard > hashcode and closest to hashcode
+        //machine_id has the min shard >= hashcode of the given key
         return machine_id;
     }
 }

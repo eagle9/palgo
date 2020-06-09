@@ -24,8 +24,8 @@ class Solution {
             List<Integer> subset = new ArrayList<Integer>();
             for (int j = 0; j < n; j++) {
                 // check whether the jth digit in i's binary representation is 1
-                int mask = 1 << j;
-                if ((i & mask) != 0) {  //==1 okay? NO!, 2's power
+                int mask = 1 << j; //jth digit from right
+                if ((i & mask) != 0) {  //i's jth digit ==1 , choose jth number in nums
                     subset.add(nums[j]);
                 }
             }

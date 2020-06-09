@@ -1,0 +1,168 @@
+order	#	Title	Acceptance
+1	284	Peeking Iterator	44.10%,   ---1, cutting --register and flag
+2	1	Two Sum	45.30% ----1,cut 
+3	1095	Find in Mountain Array	35.60%, ---1, cutting, binary search
+4	341	Flatten Nested List Iterator	51.80%, ----1, 2 stacks, broken nested
+5	1278	Palindrome Partitioning III	59.00%
+6	42	Trapping Rain Water	47.50%, ---- 1,  stack, sweeping and figure out trigger calculation
+7	391	Perfect Rectangle	29.90%, ----1, cutting, derive rules
+8	981	Time Based Key-Value Store	52.30%  --- 1, Map<String,TreeMap<Integer,String>>
+9	4	Median of Two Sorted Arrays	28.80%, ----1, binary search, a1 use take m1 numbers, a2 take m2 numbers, n1+n2+1
+10	1221	Split a String in Balanced Strings	82.10%, ----1, easy, gready
+11	295	Find Median from Data Stream	42.30%, ----1, 2 heap chain from left to right, 1+ or == size
+12	393	UTF-8 Validation	37.10%, ----1, bit
+13	193	Valid Phone Numbers	25.40% --1, bash
+14	53	Maximum Subarray	45.90% ----1
+15	1229	Meeting Scheduler	48.80%, ----1, sort, sweep line, 
+16	741	Cherry Pickup	33.30%, -----1, dp or dfs with memo
+17	733	Flood Fill	53.50%, ---1, 2d array dfs, use oldCOlor and newColor to prevent go back
+18	348	Design Tic-Tac-Toe	53.20%
+19	2	Add Two Numbers	33.10%, -----1, linked list
+20	609	Find Duplicate File in System	58.50%, ----1, map<String,List<String>> Map.values(), keySet(), entrySet()
+21	210	Course Schedule II	38.60% ----1, topo sorting,
+22	269	Alien Dictionary	33.50%, ----1, graph and topo sort bfs 
+23	56	Merge Intervals	38.40%, ----1, sorting and check derive rules
+24	206	Reverse Linked List	60.70%, -----1, 2p with cur and prev, 
+25	128	Longest Consecutive Sequence	44.20%, ----1, O(n), try each possible starting point, use a set to quick check +1 in 
+26	140	Word Break II	30.30%, ----1, recur with memo
+27	895	Maximum Frequency Stack	60.20%, ---1, Map<Integer,Stack<integer>>
+28	594	Longest Harmonious Subsequence	45.80%, ----1, shaun own hashmap idea accepted first sub
+29	86	Partition List	40.30%, ----1, create two new lists head1 prev1, head2 prev2
+30	3	Longest Substring Without Repeating Characters	29.80%, ----1, cutting shaun own sliding window, careful with loops and ifs, corner cases
+31	688	Knight Probability in Chessboard	47.90%, ----today
+32	509	Fibonacci Number	66.90% , ----1, dp,  
+33	304	Range Sum Query 2D - Immutable	36.90%
+34	24	Swap Nodes in Pairs	49.00%, -----1, n1 and n2 each iteration
+35	34	Find First and Last Position of Element in Sorted Array	35.40%, ----1, bs, tricky details,when == try to push to left or right
+36	739	Daily Temperatures	62.30%
+37	151	Reverse Words in a String	20.00%, ----1, shaun own idea with java String.split and StringBuilder
+38	46	Permutations	61.40%, ----1,  dfs with used array, cursor like dfs
+39	909	Snakes and Ladders	37.40%, ----1, bfs, square i to reach multiple squares, shortest distance
+40	821	Shortest Distance to a Character	66.10%, -----1, 2 pass left to right and right to left, own idea, test more
+41	48	Rotate Image	54.50%, ----1, obersve and 4 elements chaining swap
+42	227	Basic Calculator II	36.10%, -----------1, oprand and op stack, level
+43	445	Add Two Numbers II	53.30%, ----1
+44	133	Clone Graph	32.60%, ----1, dfs, bfs, visited to prevent goback 
+45	16	3Sum Closest	45.70%, ----1, 2p, track min
+46	1146	Snapshot Array	36.20%, ---------------------1, treemap floor and ceiling
+47	417	Pacific Atlantic Water Flow	40.00% ------------1, dfs, think more before coding, make it clean
+48	62	Unique Paths	52.00%, ----1, easy 2d dp
+49	15	3Sum	26.00%, -----1, sort and 2pointers 
+50	545	Boundary of Binary Tree	38.30%, ----1, recur and understand the problem
+51	266	Palindrome Permutation	61.40%
+52	5	Longest Palindromic Substring	29.00%, ---1, cutting, own with deep understand, try all start and expand left and right
+53	12	Integer to Roman	54.10%
+54	36	Valid Sudoku	47.40%
+55	218	The Skyline Problem	33.70% ---- 0.9, sweep line and heap
+56	146	LRU Cache	31.60%, ------1, combine hash and doubly linkedin list Map<Integer,DLinkedNode> cache 
+57	232	Implement Queue using Stacks	47.90%, -----1
+58	273	Integer to English Words	26.30%
+59	212	Word Search II	32.70%, ----1
+60	647	Palindromic Substrings	59.70%
+61	297	Serialize and Deserialize Binary Tree	45.90%, ---1,  bfs, java is easier, iterator of tokens
+62	687	Longest Univalue Path	35.50%, ----1,  dfs btree recur, accepted with 2 bug fixes
+63	220	Contains Duplicate III	20.60%, ----1, naive and use treeset as window
+64	75	Sort Colors	45.20%
+65	394	Decode String	48.60%, -----1, use stack to deal with the deepest [] just seen
+66	528	Random Pick with Weight	43.60%, ----1, accumu sum of weight, random number of the largest sum, binary search find index, first >
+67	188	Best Time to Buy and Sell Stock IV	27.60%, ----today
+68	97	Interleaving String	30.60%, -----today, 
+69	7	Reverse Integer	25.70%, ----1, pretty tricky, when loop be accurate with condition
+70	443	String Compression	40.20% -------1, 2p with storeIndex,
+71	311	Sparse Matrix Multiplication	60.20%
+72	125	Valid Palindrome	34.80%
+73	238	Product of Array Except Self	59.10%
+74	1197	Minimum Knight Moves	34.60% ---------1, bfs, shortest distance
+75	362	Design Hit Counter	62.60%
+76	1060	Missing Element in Sorted Array	54.50%
+77	21	Merge Two Sorted Lists	52.10%
+78	332	Reconstruct Itinerary	34.40% ------1, ---- dfs with backtracking
+79	20	Valid Parentheses	38.30%, ----1, 
+80	518	Coin Change 2	47.00%, ----1, 2d dp, dp[i][j] ways of using coin 0 to i to make amount j
+81	253	Meeting Rooms II	45.00%, -----1, sorting, 
+82	95	Unique Binary Search Trees II	39.20% ----------1, dp of i, each i as root 
+83	51	N-Queens	44.70%
+84	230	Kth Smallest Element in a BST	56.80% ----1, 
+85	692	Top K Frequent Words	50.00%, ----today
+86	49	Group Anagrams	55.20%
+87	102	Binary Tree Level Order Traversal	53.00%, ---today
+88	384	Shuffle an Array	52.10%, -----today
+89	442	Find All Duplicates in an Array	64.70% ---today
+90	658	Find K Closest Elements	39.90%, ----1, binary search with diff mid x mid+k, find the start of the subarray directly
+91	141	Linked List Cycle	40.10%   --------1, 2p 
+92	300	Longest Increasing Subsequence	42.10%, ----1, nlogn hint, use binary search to build lis
+93	200	Number of Islands	45.70%, ----1, dfs visited
+94	54	Spiral Matrix	33.20%, ----today
+95	771	Jewels and Stones	84.90%
+96	120	Triangle	42.90%  -----today
+97	703	Kth Largest Element in a Stream	48.80%, ---1, natural apply of heap
+98	79	Word Search	34.10%, ----1, dfs with back tracking
+99	124	Binary Tree Maximum Path Sum	32.70%, ---1, recur helper return and track different path sum 
+100	76	Minimum Window Substring	33.80%, ---1, ??? yet to fully undrsand
+101	108	Convert Sorted Array to Binary Search Tree	56.10%
+102	18	4Sum	32.90%, ---1,2p 
+103	155	Min Stack	43.20%, ---1, use two stack, 1 stack special for min, intuin to count the min, expand with a stack
+104	88	Merge Sorted Array	38.60%, ---today
+105	234	Palindrome Linked List	38.40%, ----today
+106	221	Maximal Square	35.80%, ----1, overlap 3 rectagle, take min and +1
+107	1108	Defanging an IP Address	86.50%
+108	819	Most Common Word	44.10%, ----1, 
+109	236	Lowest Common Ancestor of a Binary Tree	43.60%, -----1, recur, tricky
+110	209	Minimum Size Subarray Sum	37.10%
+111	17	Letter Combinations of a Phone Number	45.50%, ----1
+112	190	Reverse Bits	35.90%, ----1
+113	32	Longest Valid Parentheses	27.60%, ----1, reduce the latest (), store only () that can not be reduced, store their index, then figure out inbtween
+114	242	Valid Anagram	55.80%
+115	121	Best Time to Buy and Sell Stock	49.80%
+116	63	Unique Paths II	34.00%, ----1,   2d dp
+117	202	Happy Number	49.90%
+118	239	Sliding Window Maximum	41.60%, ----today
+119	8	String to Integer (atoi)	15.10%, ----1, 
+120	114	Flatten Binary Tree to Linked List	47.30%, ---1
+121	43	Multiply Strings	33.10%, ----today
+122	6	ZigZag Conversion	35.30% , ----1
+123	74	Search a 2D Matrix	36.10%, ----1, bina search
+124	116	Populating Next Right Pointers in Each Node	43.00%
+125	10	Regular Expression Matching	26.40%
+126	38	Count and Say	43.60%
+127	13	Roman to Integer	55.00%
+128	203	Remove Linked List Elements	37.30%, ----1, 
+129	11	Container With Most Water	49.60%, ---1, 2p
+130	14	Longest Common Prefix	34.90%, ----1,  
+131	176	Second Highest Salary	30.60%
+132	29	Divide Two Integers	16.20%, ---1, substract divs from divd, add shifting double, keep doing it, beware overflow, cast to long,
+133	977	Squares of a Sorted Array	72.50%
+134	83	Remove Duplicates from Sorted List	44.70%, ---1
+135	287	Find the Duplicate Number	53.20% ---1, swap number to index of value-1 
+136	344	Reverse String	66.30%
+137	448	Find All Numbers Disappeared in an Array	55.40%
+138	938	Range Sum of BST	80.00%
+139	41	First Missing Positive	31.10%, ---1,tricky, bucket swap careful, in bound, 
+140	283	Move Zeroes	57.20%, ----1, storeIndex for non zero
+141	127	Word Ladder	28.20%, ----1, natural application of bfs
+142	162	Find Peak Element	42.80%, ----1, find the condition isPeak function, then binary search
+143	207	Course Schedule	41.30%, ---1
+144	153	Find Minimum in Rotated Sorted Array	44.40%, ---today
+145	91	Decode Ways	24.00%, ---1, dp dp dp
+146	138	Copy List with Random Pointer	33.90%, ---1, 
+147	347	Top K Frequent Elements	59.70%, ---1
+148	167	Two Sum II - Input array is sorted	53.00% ,  ----1
+149	973	K Closest Points to Origin	62.00%
+150	122	Best Time to Buy and Sell Stock II	55.80%
+151	268	Missing Number	50.70%, ---today
+152	22	Generate Parentheses	60.80%, ---1, recur helper with cursor res style, how many left and right to add
+153	322	Coin Change	34.20%  ----1, cutting dp of i, i is the amount 
+154	215	Kth Largest Element in an Array	53.30%, ---1
+155	387	First Unique Character in a String	51.80%, ---1, hash
+156	198	House Robber	41.70%
+157	28	Implement strStr()	34.00%, ---1, tricky loop inside loop
+158	217	Contains Duplicate	55.30%, ---1
+159	94	Binary Tree Inorder Traversal	61.60%
+160	136	Single Number	64.70%
+161	9	Palindrome Number	47.30%
+162	876	Middle of the Linked List	68.10%, ---1, two pointer
+163	543	Diameter of Binary Tree	48.00%, --1, dfs return a value nd track  a value
+164	98	Validate Binary Search Tree	27.30%, --1
+165	64	Minimum Path Sum	53.10%, --1, easy dp, shaun own accepted
+166	33	Search in Rotated Sorted Array	34.20%, ---1, draw pic 2*2 cases
+167	560	Subarray Sum Equals K	43.90%, ---1, prefix sum and hash on the fly

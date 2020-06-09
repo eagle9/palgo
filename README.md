@@ -1,3 +1,4 @@
+http://lixinchengdu.github.io/algorithmbook/leetcode/minimum-knight-moves.html
 christ jereza
 start coding interview with:
 1 think about the question

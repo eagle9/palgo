@@ -1,0 +1,138 @@
+https://www.youtube.com/watch?v=-nOfY0HFpWg&list=PLb_wM4EB5req0vQBzrxGKQ-nNaNZMr88t
+
+java class design, avoid reference escaping out of class, reduce unexpected mutation
+
+jvisualvm is a tool to visualize jvm memory usage,garbage collection process
+System.gc() only indicate gc, not determine when gc actually started
+dump heap, and visualize with memory analyzer to find out which class use the most memory
+
+how gc eligibility is determined?   jvm stack and heap, all objects allocated in heap
+if a object in heap is not referenced by a variable in stack, then it is gc eligible
+
+heap memory divided into generations
+  permgen(class meta data, string internalization before jvm6, after 7, string intern no longer in permgen), 
+    tomcat web app deploy, the class meta data in permgen, grows after each deployment, 
+    you might want to restart tomcat after certain time period
+
+
+  jvm 7 and 8: 
+    metaspace is separate from heap, no longer creatable class, will be removed.
+    but 8 production is not yet fully tested 
+  young and old
+
+
+mark sweep algorithm
+
+virtual program 
+
+
+java 8 best practice
+lambda to replace comparator
+Collections.sort(PList, (p1,p2) -> p1.getSarary().compareTo(p2.getSalary()))
+
+str -> str.toUpperCase(), 
+
+lambda, function interface, option, stream (and its debugger plugin)
+
+access modifier(default, private, protected, public)
+
+interface and abstract class
+   interface: all fields are public static final,   all methods no function body
+       implements multiple interfaces
+       since java 8, interface can have public default methods which have body, override is optional for default methods
+           the reason behind is to allow interface changes after many classes have already implemented it
+   abstract class: some function no body, some function can have body, single inheritance
+          why use abstract class in java?
+
+final field, method, class)
+
+votalie  (visibility), component operation still need more complexy thread synchronization
+
+define your own class, override equals and hashcode ---> map, set
+
+Collections
+
+int sum(int... numbers) variable args
+
+Reference, weak, strong
+
+Exception handling:  
+   Error: OutofMemory, stackoverflow, Run
+   Excpetion: RuntimeException (unchecked), CheckedException: IOException, ....
+   try resource (autoclosable)
+   catch (E1 | E2 e ) 
+
+OOP (inheritance, encapsulation, polymorphism,abstraction)
+  no reference escaping
+  overload function with difference parameters types
+  override -- redefine function defined in parent class, same signature
+design pattern
+  creation:
+    singleton(Runtime, 1 for 1 jvm)
+    builder to avoid constructo with many parameters
+    factory LoggerFactory
+  strategy(COmparator, lambda for sort priorityQueue)
+  proxy
+  adapter
+
+TODO:
+kafka connect
+kafka schema registory
+grpc 
+avro, parquet, protocol buffer
+self intro, 2-3 recent projects, both platform and analytics development
+english speaking, avoid mono tone, speak slow and fast, strong and soft
+key pronouanciation: th vs s, long short sound
+
+
+binary literal 0b 0B 0x 0X
+byte, short, int, long from 1 byte to 8 bytes
+   |   &     ^(XOR)   ~ (not)
+
+java with all cs basics:
+    https://introcs.cs.princeton.edu/java/11cheatsheet/
+
+<? extends Comparable> is an example of a bounded wildcard. The ? stands for an unknown type, just like the wildcards we saw earlier. However, in this case, we know that this unknown type is in fact a subtype of Comparable.
+
+
+4 ways to create objects in java: 
+    constructor with new operator, static compile time, prefered way to create most objects
+    implements clonable interface clone method, obj.clone()
+    YourClass.class.newInstance()
+        dynamic, slower runtime creation, used by frameworks more, only use constructor with no arguments, otherwise exception
+        access permission check by framework
+    deserialization: ObjectInputStream ois = new ObjectInputStream(new FileInputStream(fileName));
+        Student student = ois.readObject()
+
+
+
+concurrent java interview questions 
+https://www.jianshu.com/p/ca98ca34b47e
+udemy class super helpful
+good site as follows:
+https://www.codejava.net/java-core/concurrency/java-concurrent-collection-concurrenthashmap-examples
+synchronized method --> synchronize (obj) -> reentrantlock ->ReadWriteReentrantLock
+  inter threads communictions: semaphore, condition variable, 
+     object wait, notify, notifyAll
+
+Read ConcurrentHashMap source code
+
+go lang vs java
+https://www.quora.com/What-is-the-advantage-of-Googles-Golang-over-Java-and-Scala
+go does not share variables/memory, share by communications(channel, queue)
+   does not allow you to write bad concurrent code
+  go routine ----- java threads (os threads)
+  go script like start up quicker, but harder to maintian large code base
+  go's primery products --- docker, mongodb, etc. 
+  go quicker than java but platform dependent
+  
+Optional is a better way to deal with return null
+Optional<String> output = stream....flatMap().filter(x -> x.equals("925xxxxxxx").findAny()
+output.ifPresent(System.println);
+
+Optional<String> optionalRes = Optional.empty()
+if (found) optionalRes = Opitonal.of("Boogo")
+return optionalRes;
+
+
+

@@ -6,6 +6,10 @@ instead of build a graph as a list of nodes(with its directed neighbors), the pr
 
 the 2 char ordering can be represented with HashSet<char []>, but not TreeSet<char[]> since char[] does not implemented comparable interface. 
 however TreeSet is slower than HashSet, i don't think TreeSet is needed to store 2 letter ordering rules
+
+4/26/2020 added a test case fix
+Runtime: 32 ms, faster than 5.05% of Java online submissions for Alien Dictionary.
+Memory Usage: 40.5 MB, less than 5.41% of Java online submissions for Alien Dictionary.
 */
 
 public class Solution {
@@ -22,7 +26,12 @@ public class Solution {
             for (char c: word.toCharArray()) ch.add(c);
         //go through words, check i and i+1 word pair to gather 2 char order rule
         for (int i = 0; i <= words.length-2; i++) {
-            int minLen = Math.min(words[i].length(), words[i+1].length());
+            String word1 = words[i], word2 = words[i+1];
+            // Check that word2 is not a prefix of word1.
+            if (word1.length() > word2.length() && word1.startsWith(word2)) {
+                return "";
+            }
+            int minLen = Math.min(word1.length(), word2.length());
             int j = 0;
             for ( ; j < minLen; ++j) {
                 char c1 = words[i].charAt(j), c2 = words[i+1].charAt(j);
@@ -63,3 +72,4 @@ public class Solution {
         return res.length() == ch.size()? res : "";
     }
 }
+

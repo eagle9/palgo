@@ -4,23 +4,22 @@
  *     int val;
  *     TreeNode *left;
  *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
+ Runtime: 4 ms, faster than 98.13% of C++ online submissions for Flatten Binary Tree to Linked List.
+Memory Usage: 12.1 MB, less than 8.33% of C++ online submissions for Flatten Binary Tree to Linked List.
+ divide and conquer with recur
+ draw a picture with the example, get the details about how to chain root, left  and right
  */
-// grandyang Recursion, divide and conquer
-//runtime 0ms, faster than 100%, mem less than 86%
-/*
-  1
-2- 3 - 4
-5 - 6
-*/
 class Solution {
 public:
-    void flatten(TreeNode *root) {
-        if (root == nullptr) return;
+    void flatten(TreeNode* root) {
+         if (root == nullptr) return;
         if (root->left) flatten(root->left);
         if (root->right) flatten(root->right);
-        
+
         TreeNode *tmp = root->right;
         root->right = root->left;
         root->left = NULL;
@@ -28,6 +27,6 @@ public:
         while (root->right) root = root->right;
         //root->right == nullptr now
         root->right = tmp;
+
     }
 };
-

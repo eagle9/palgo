@@ -1,0 +1,17 @@
+team size
+all se, or ML e, ds, tech lead
+project coming from ? EM or PM
+  scrum master, agile coach, assign tasks
+  using jira?  to track project
+
+
+how much freedom you have? 
+  proactive, company goal, team goal, propose
+  break down large problems and collaborate
+  
+collaboration
+  fork
+  pull requests
+  branch merge
+  code review
+  cross functional team

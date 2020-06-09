@@ -1,0 +1,432 @@
+Rank #     title 								acceptance
+1	1192	Critical Connections in a Network	48.60%
+2	994	Rotting Oranges	47.00%
+3	200	Number of Islands	45.70%
+4	937	Reorder Data in Log Files	53.80%
+5	138	Copy List with Random Pointer	34.00%
+6	819	Most Common Word	44.10%
+7	1	Two Sum	45.30%
+8	572	Subtree of Another Tree	43.90%
+9	240	Search a 2D Matrix II	42.60%
+10	692	Top K Frequent Words	50.10%
+11	5	Longest Palindromic Substring	29.00%
+12	1268	Search Suggestions System	61.70%
+13	21	Merge Two Sorted Lists	52.10%
+14	295	Find Median from Data Stream	42.30%
+15	472	Concatenated Words	41.60%
+16	957	Prison Cells After N Days	39.50%
+17	1152	Analyze User Website Visit Pattern	43.10%
+18	23	Merge k Sorted Lists	39.00%
+19	694	Number of Distinct Islands	54.70%
+20	973	K Closest Points to Origin	62.00%
+21	42	Trapping Rain Water	47.50%
+22	126	Word Ladder II	21.10%
+23	642	Design Search Autocomplete System	43.40%
+24	140	Word Break II	30.40%
+25	127	Word Ladder	28.30%
+26	588	Design In-Memory File System	43.90%
+27	763	Partition Labels	74.10%
+28	1167	Minimum Cost to Connect Sticks	61.80%
+29	273	Integer to English Words	26.30%
+30	460	LFU Cache	33.00%
+31	212	Word Search II	32.70%
+32	297	Serialize and Deserialize Binary Tree	45.90%
+33	1102	Path With Maximum Minimum Value	49.20%
+34	99	Recover Binary Search Tree	38.30%
+35	380	Insert Delete GetRandom O(1)	45.90%
+36	121	Best Time to Buy and Sell Stock	49.80%
+37	20	Valid Parentheses	38.40%
+38	253	Meeting Rooms II	45.10%
+39	909	Snakes and Ladders	37.50%
+40	139	Word Break	38.90%
+41	348	Design Tic-Tac-Toe	53.20%
+42	54	Spiral Matrix	33.20%
+43	347	Top K Frequent Elements	59.70%
+44	79	Word Search	34.10%
+45	15	3Sum	26.00%
+46	239	Sliding Window Maximum	41.70%
+47	210	Course Schedule II	38.70%
+48	733	Flood Fill	53.50%
+49	146	LRU Cache	31.70%
+50	2	Add Two Numbers	33.20%
+51	173	Binary Search Tree Iterator	54.40%
+52	103	Binary Tree Zigzag Level Order Traversal	46.00%
+53	49	Group Anagrams	55.20%
+54	987	Vertical Order Traversal of a Binary Tree	34.50%
+55	545	Boundary of Binary Tree	38.30%
+56	97	Interleaving String	30.60%
+57	155	Min Stack	43.20%
+58	490	The Maze	50.60%
+59	1214	Two Sum BSTs	66.90%
+60	12	Integer to Roman	54.10%
+61	1099	Two Sum Less Than K	60.50%
+62	269	Alien Dictionary	33.50%
+63	535	Encode and Decode TinyURL	79.10%
+64	706	Design HashMap	59.90%
+65	3	Longest Substring Without Repeating Characters	29.90%
+66	227	Basic Calculator II	36.10%
+67	480	Sliding Window Median	36.00%
+68	863	All Nodes Distance K in Binary Tree	53.60%
+69	17	Letter Combinations of a Phone Number	45.50%
+70	978	Longest Turbulent Subarray	46.10%
+71	143	Reorder List	35.40%
+72	236	Lowest Common Ancestor of a Binary Tree	43.60%
+73	91	Decode Ways	24.00%
+74	74	Search a 2D Matrix	36.10%
+75	1360	Number of Days Between Two Dates	48.70%
+76	11	Container With Most Water	49.60%
+77	772	Basic Calculator III	40.70%
+78	224	Basic Calculator	35.90%
+79	116	Populating Next Right Pointers in Each Node	43.00%
+80	1031	Maximum Sum of Two Non-Overlapping Subarrays	56.80%
+81	1219	Path with Maximum Gold	64.00%
+82	1044	Longest Duplicate Substring	25.40%
+83	277	Find the Celebrity	40.80%
+84	1011	Capacity To Ship Packages Within D Days	56.80%
+85	767	Reorganize String	47.20%
+86	208	Implement Trie (Prefix Tree)	45.00%
+87	238	Product of Array Except Self	59.10%
+88	384	Shuffle an Array	52.10%
+89	332	Reconstruct Itinerary	34.50%
+90	322	Coin Change	34.20%
+91	53	Maximum Subarray	45.90%
+92	739	Daily Temperatures	62.40%
+93	1236	Web Crawler	64.10%
+94	36	Valid Sudoku	47.40%
+95	215	Kth Largest Element in an Array	53.40%
+96	165	Compare Version Numbers	26.30%
+97	1188	Design Bounded Blocking Queue	69.50%
+98	211	Add and Search Word - Data structure design	35.10%
+99	1155	Number of Dice Rolls With Target Sum	49.50%
+100	56	Merge Intervals	38.40%
+101	1032	Stream of Characters	47.10%
+102	218	The Skyline Problem	33.70%
+103	98	Validate Binary Search Tree	27.30%
+104	206	Reverse Linked List	60.70%
+105	64	Minimum Path Sum	53.10%
+106	1100	Find K-Length Substrings With No Repeated Characters	71.80%
+107	76	Minimum Window Substring	33.80%
+108	449	Serialize and Deserialize BST	51.00%
+109	261	Graph Valid Tree	41.50%
+110	96	Unique Binary Search Trees	50.30%
+111	314	Binary Tree Vertical Order Traversal	43.80%
+112	135	Candy	30.70%
+113	105	Construct Binary Tree from Preorder and Inorder Traversal	46.80%
+114	33	Search in Rotated Sorted Array	34.20%
+115	1172	Dinner Plate Stacks	39.10%
+116	133	Clone Graph	32.60%
+117	489	Robot Room Cleaner	68.30%
+118	556	Next Greater Element III	31.20%
+119	805	Split Array With Same Average	26.20%
+120	93	Restore IP Addresses	34.30%
+121	881	Boats to Save People	45.80%
+122	289	Game of Life	52.50%
+123	981	Time Based Key-Value Store	52.40%
+124	387	First Unique Character in a String	51.80%
+125	72	Edit Distance	42.10%
+126	312	Burst Balloons	50.60%
+127	187	Repeated DNA Sequences	38.20%
+128	362	Design Hit Counter	62.70%
+129	153	Find Minimum in Rotated Sorted Array	44.40%
+130	445	Add Two Numbers II	53.30%
+131	1279	Traffic Light Controlled Intersection	75.30%
+132	41	First Missing Positive	31.20%
+133	628	Maximum Product of Three Numbers	46.90%
+134	543	Diameter of Binary Tree	48.00%
+135	995	Minimum Number of K Consecutive Bit Flips	46.10%
+136	403	Frog Jump	38.80%
+137	84	Largest Rectangle in Histogram	33.90%
+138	895	Maximum Frequency Stack	60.20%
+139	4	Median of Two Sorted Arrays	28.80%
+140	352	Data Stream as Disjoint Intervals	46.00%
+141	759	Employee Free Time	64.90%
+142	1197	Minimum Knight Moves	34.60%
+143	378	Kth Smallest Element in a Sorted Matrix	52.90%
+144	437	Path Sum III	45.30%
+145	394	Decode String	48.60%
+146	19	Remove Nth Node From End of List	34.90%
+147	640	Solve the Equation	41.40%
+148	207	Course Schedule	41.40%
+149	815	Bus Routes	41.90%
+150	109	Convert Sorted List to Binary Search Tree	45.90%
+151	25	Reverse Nodes in k-Group	40.40%
+152	48	Rotate Image	54.60%
+153	307	Range Sum Query - Mutable	33.00%
+154	675	Cut Off Trees for Golf Event	34.00%
+155	1130	Minimum Cost Tree From Leaf Values	65.10%
+156	547	Friend Circles	57.30%
+157	442	Find All Duplicates in an Array	64.70%
+158	564	Find the Closest Palindrome	19.30%
+159	120	Triangle	42.90%
+160	388	Longest Absolute File Path	41.20%
+161	1229	Meeting Scheduler	49.20%
+162	622	Design Circular Queue	42.70%
+163	836	Rectangle Overlap	48.80%
+164	373	Find K Pairs with Smallest Sums	35.80%
+165	1275	Find Winner on a Tic Tac Toe Game	52.90%
+166	496	Next Greater Element I	62.70%
+167	787	Cheapest Flights Within K Stops	37.40%
+168	1344	Angle Between Hands of a Clock	60.60%
+169	690	Employee Importance	56.20%
+170	997	Find the Town Judge	50.10%
+171	221	Maximal Square	36.90%
+172	199	Binary Tree Right Side View	52.50%
+173	22	Generate Parentheses	60.80%
+174	503	Next Greater Element II	54.80%
+175	323	Number of Connected Components in an Undirected Graph	54.80%
+176	117	Populating Next Right Pointers in Each Node II	37.70%
+177	39	Combination Sum	54.30%
+178	1038	Binary Search Tree to Greater Sum Tree	79.70%
+179	102	Binary Tree Level Order Traversal	53.00%
+180	1094	Car Pooling	56.70%
+181	70	Climbing Stairs	46.50%
+182	695	Max Area of Island	61.20%
+183	775	Global and Local Inversions	41.40%
+184	101	Symmetric Tree	46.00%
+185	939	Minimum Area Rectangle	52.10%
+186	78	Subsets	59.00%
+187	509	Fibonacci Number	67.00%
+188	1375	Bulb Switcher III	59.90%
+189	50	Pow(x, n)	29.30%
+190	75	Sort Colors	45.20%
+191	353	Design Snake Game	33.20%
+192	192	Word Frequency	26.20%
+193	234	Palindrome Linked List	38.40%
+194	726	Number of Atoms	47.40%
+195	410	Split Array Largest Sum	43.90%
+196	721	Accounts Merge	46.80%
+197	1233	Remove Sub-Folders from the Filesystem	56.80%
+198	134	Gas Station	37.20%
+199	46	Permutations	61.50%
+200	31	Next Permutation	32.00%
+201	579	Find Cumulative Salary of an Employee	36.30%
+202	963	Minimum Area Rectangle II	49.70%
+203	716	Max Stack	42.20%
+204	333	Largest BST Subtree	34.90%
+205	1247	Minimum Swaps to Make Strings Equal	58.70%
+206	419	Battleships in a Board	68.80%
+207	688	Knight Probability in Chessboard	47.90%
+208	63	Unique Paths II	34.00%
+209	969	Pancake Sorting	66.20%
+210	287	Find the Duplicate Number	53.20%
+211	351	Android Unlock Patterns	47.70%
+212	100	Same Tree	52.20%
+213	128	Longest Consecutive Sequence	44.20%
+214	130	Surrounded Regions	25.90%
+215	71	Simplify Path	31.60%
+216	32	Longest Valid Parentheses	27.70%
+217	124	Binary Tree Maximum Path Sum	32.70%
+218	529	Minesweeper	57.80%
+219	432	All O`one Data Structure	31.60%
+220	1060	Missing Element in Sorted Array	54.50%
+221	1202	Smallest String With Swaps	44.90%
+222	341	Flatten Nested List Iterator	51.80%
+223	122	Best Time to Buy and Sell Stock II	55.80%
+224	92	Reverse Linked List II	37.80%
+225	785	Is Graph Bipartite?	46.30%
+226	177	Nth Highest Salary	30.30%
+227	1120	Maximum Average Subtree	61.80%
+228	317	Shortest Distance from All Buildings	40.70%
+229	161	One Edit Distance	32.20%
+230	653	Two Sum IV - Input is a BST	54.70%
+231	179	Largest Number	27.80%
+232	415	Add Strings	46.60%
+233	465	Optimal Account Balancing	45.80%
+234	451	Sort Characters By Frequency	59.60%
+235	228	Summary Ranges	38.70%
+236	85	Maximal Rectangle	36.50%
+237	735	Asteroid Collision	40.30%
+238	272	Closest Binary Search Tree Value II	49.40%
+239	1083	Sales Analysis II	51.20%
+240	82	Remove Duplicates from Sorted List II	35.80%
+241	13	Roman to Integer	55.00%
+242	701	Insert into a Binary Search Tree	79.30%
+243	152	Maximum Product Subarray	31.10%
+244	150	Evaluate Reverse Polish Notation	35.30%
+245	538	Convert BST to Greater Tree	54.20%
+246	980	Unique Paths III	72.60%
+247	540	Single Element in a Sorted Array	57.60%
+248	586	Customer Placing the Largest Number of Orders	71.40%
+249	737	Sentence Similarity II	45.30%
+250	407	Trapping Rain Water II	41.10%
+251	44	Wildcard Matching	24.30%
+252	662	Maximum Width of Binary Tree	39.80%
+253	349	Intersection of Two Arrays	60.60%
+254	1002	Find Common Characters	67.10%
+255	73	Set Matrix Zeroes	42.40%
+256	698	Partition to K Equal Sum Subsets	44.80%
+257	285	Inorder Successor in BST	38.90%
+258	232	Implement Queue using Stacks	47.90%
+259	235	Lowest Common Ancestor of a Binary Search Tree	48.70%
+260	1249	Minimum Remove to Make Valid Parentheses	60.90%
+261	542	01 Matrix	38.90%
+262	539	Minimum Time Difference	50.90%
+263	1267	Count Servers that Communicate	57.90%
+264	270	Closest Binary Search Tree Value	46.80%
+265	205	Isomorphic Strings	39.30%
+266	16	3Sum Closest	45.80%
+267	176	Second Highest Salary	30.70%
+268	81	Search in Rotated Sorted Array II	33.00%
+269	148	Sort List	40.40%
+270	37	Sudoku Solver	41.80%
+271	399	Evaluate Division	50.50%
+272	169	Majority Element	56.50%
+273	230	Kth Smallest Element in a BST	56.90%
+274	141	Linked List Cycle	40.20%
+275	88	Merge Sorted Array	38.60%
+276	647	Palindromic Substrings	59.70%
+277	113	Path Sum II	45.10%
+278	636	Exclusive Time of Functions	51.10%
+279	366	Find Leaves of Binary Tree	69.70%
+280	325	Maximum Size Subarray Sum Equals k	46.50%
+281	1007	Minimum Domino Rotations For Equal Row	49.70%
+282	337	House Robber III	50.00%
+283	354	Russian Doll Envelopes	35.10%
+284	1248	Count Number of Nice Subarrays	55.00%
+285	286	Walls and Gates	53.10%
+286	621	Task Scheduler	47.90%
+287	154	Find Minimum in Rotated Sorted Array II	40.40%
+288	242	Valid Anagram	55.80%
+289	611	Valid Triangle Number	47.80%
+290	1049	Last Stone Weight II	43.30%
+291	729	My Calendar I	50.70%
+292	336	Palindrome Pairs	33.10%
+293	708	Insert into a Sorted Circular Linked List	31.20%
+294	189	Rotate Array	33.60%
+295	315	Count of Smaller Numbers After Self	41.00%
+296	456	132 Pattern	28.90%
+297	209	Minimum Size Subarray Sum	37.20%
+298	884	Uncommon Words from Two Sentences	62.30%
+299	167	Two Sum II - Input array is sorted	53.00%
+300	652	Find Duplicate Subtrees	49.40%
+301	8	String to Integer (atoi)	15.10%
+302	637	Average of Levels in Binary Tree	62.00%
+303	1010	Pairs of Songs With Total Durations Divisible by 60	47.40%
+304	1057	Campus Bikes	58.20%
+305	1153	String Transforms Into Another String	35.80%
+306	67	Add Binary	43.10%
+307	6	ZigZag Conversion	35.30%
+308	329	Longest Increasing Path in a Matrix	42.60%
+309	801	Minimum Swaps To Make Sequences Increasing	38.40%
+310	59	Spiral Matrix II	52.20%
+311	115	Distinct Subsequences	37.30%
+312	266	Palindrome Permutation	61.40%
+313	129	Sum Root to Leaf Numbers	46.20%
+314	160	Intersection of Two Linked Lists	38.80%
+315	284	Peeking Iterator	44.10%
+316	671	Second Minimum Node In a Binary Tree	42.90%
+317	132	Palindrome Partitioning II	29.60%
+318	110	Balanced Binary Tree	42.90%
+319	250	Count Univalue Subtrees	51.30%
+320	268	Missing Number	50.80%
+321	45	Jump Game II	30.00%
+322	14	Longest Common Prefix	34.90%
+323	463	Island Perimeter	63.20%
+324	1161	Maximum Level Sum of a Binary Tree	71.80%
+325	94	Binary Tree Inorder Traversal	61.70%
+326	703	Kth Largest Element in a Stream	48.80%
+327	516	Longest Palindromic Subsequence	51.40%
+328	10	Regular Expression Matching	26.40%
+329	849	Maximize Distance to Closest Person	42.40%
+330	938	Range Sum of BST	80.00%
+331	310	Minimum Height Trees	31.70%
+332	34	Find First and Last Position of Element in Sorted Array	35.40%
+333	395	Longest Substring with At Least K Repeating Characters	40.60%
+334	1299	Replace Elements with Greatest Element on Right Side	77.80%
+335	29	Divide Two Integers	16.20%
+336	18	4Sum	32.90%
+337	301	Remove Invalid Parentheses	42.30%
+338	339	Nested List Weight Sum	72.40%
+339	183	Customers Who Never Order	51.30%
+340	163	Missing Ranges	24.00%
+341	560	Subarray Sum Equals K	43.80%
+342	528	Random Pick with Weight	43.60%
+343	162	Find Peak Element	42.80%
+344	862	Shortest Subarray with Sum at Least K	23.70%
+345	1160	Find Words That Can Be Formed by Characters	67.30%
+346	841	Keys and Rooms	63.20%
+347	409	Longest Palindrome	49.80%
+348	417	Pacific Atlantic Water Flow	40.00%
+349	47	Permutations II	45.00%
+350	300	Longest Increasing Subsequence	42.20%
+351	852	Peak Index in a Mountain Array	71.10%
+352	180	Consecutive Numbers	38.30%
+353	184	Department Highest Salary	34.80%
+354	151	Reverse Words in a String	20.00%
+355	188	Best Time to Buy and Sell Stock IV	27.60%
+356	65	Valid Number	14.90%
+357	350	Intersection of Two Arrays II	50.70%
+358	68	Text Justification	26.70%
+359	1315	Sum of Nodes with Even-Valued Grandparent	83.40%
+360	69	Sqrt(x)	33.20%
+361	264	Ugly Number II	39.20%
+362	1122	Relative Sort Array	67.40%
+363	459	Repeated Substring Pattern	41.80%
+364	257	Binary Tree Paths	49.90%
+365	62	Unique Paths	52.00%
+366	1027	Longest Arithmetic Sequence	53.70%
+367	114	Flatten Binary Tree to Linked List	47.40%
+368	1048	Longest String Chain	53.80%
+369	1110	Delete Nodes And Return Forest	65.90%
+370	304	Range Sum Query 2D - Immutable	37.00%
+371	450	Delete Node in a BST	42.20%
+372	590	N-ary Tree Postorder Traversal	71.00%
+373	51	N-Queens	44.70%
+374	1004	Max Consecutive Ones III	57.30%
+375	438	Find All Anagrams in a String	41.30%
+376	86	Partition List	40.30%
+377	145	Binary Tree Postorder Traversal	53.30%
+378	83	Remove Duplicates from Sorted List	44.70%
+379	518	Coin Change 2	47.00%
+380	657	Robot Return to Origin	73.00%
+381	55	Jump Game	34.10%
+382	1046	Last Stone Weight	62.30%
+383	283	Move Zeroes	57.20%
+384	28	Implement strStr()	34.00%
+385	217	Contains Duplicate	55.30%
+386	131	Palindrome Partitioning	45.60%
+387	137	Single Number II	49.20%
+388	204	Count Primes	31.00%
+389	557	Reverse Words in a String III	68.50%
+390	724	Find Pivot Index	43.30%
+391	181	Employees Earning More Than Their Managers	54.90%
+392	123	Best Time to Buy and Sell Stock III	36.50%
+393	581	Shortest Unsorted Continuous Subarray	30.80%
+394	515	Find Largest Value in Each Tree Row	60.10%
+395	9	Palindrome Number	47.30%
+396	226	Invert Binary Tree	62.50%
+397	443	String Compression	40.30%
+398	90	Subsets II	45.90%
+399	678	Valid Parenthesis String	30.80%
+400	977	Squares of a Sorted Array	72.50%
+401	77	Combinations	53.00%
+402	344	Reverse String	66.40%
+403	57	Insert Interval	32.90%
+404	340	Longest Substring with At Most K Distinct Characters	43.20%
+405	222	Count Complete Tree Nodes	42.10%
+406	106	Construct Binary Tree from Inorder and Postorder Traversal	44.00%
+407	112	Path Sum	40.30%
+408	743	Network Delay Time	45.40%
+409	40	Combination Sum II	46.40%
+410	498	Diagonal Traverse	47.10%
+411	986	Interval List Intersections	66.00%
+412	104	Maximum Depth of Binary Tree	64.80%
+413	1108	Defanging an IP Address	86.50%
+414	61	Rotate List	29.20%
+415	202	Happy Number	49.90%
+416	279	Perfect Squares	45.20%
+417	136	Single Number	64.70%
+418	523	Continuous Subarray Sum	24.40%
+419	392	Is Subsequence	48.00%
+420	43	Multiply Strings	33.10%
+421	617	Merge Two Binary Trees	73.30%
+422	525	Contiguous Array	40.10%
+423	844	Backspace String Compare	46.30%
+424	876	Middle of the Linked List	68.10%
+425	118	Pascal's Triangle	50.90%
+426	412	Fizz Buzz	61.60%
+427	24	Swap Nodes in Pairs	49.10%
+428	108	Convert Sorted Array to Binary Search Tree	56.10%
+429	7	Reverse Integer	25.70%
+430	198	House Robber	41.70%
+431	1143	Longest Common Subsequence	58.80%

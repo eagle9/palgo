@@ -1,5 +1,5 @@
 230. Kth Smallest Element in a BST
-Medium
+Medium 2041 55 Add to List Share
 
 Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
 
@@ -28,10 +28,9 @@ Input: root = [5,3,6,2,4,null,null,1], k = 3
 Output: 3
 Follow up:
 What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?
-
 0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+Oracle | 6 Amazon | 5 Facebook | 4 Apple | 3 TripleByte | 2
 
-Companies:Facebook | 6 Microsoft | 3 Bloomberg | 3 Google | 3 TripleByte | 2 Affirm | 2
 
 Similar:
 Binary Tree Inorder Traversal Medium

@@ -1,6 +1,6 @@
 78. Subsets
-Medium
-40%
+Medium 3237 75 Add to List Share
+
 Given a set of distinct integers, nums, return all possible subsets (the power set).
 
 Note: The solution set must not contain duplicate subsets.
@@ -19,15 +19,17 @@ Output:
   [1,2],
   []
 ]
+Accepted 522,015 Submissions 881,433
 
-Companies: Facebook | 8 Amazon | 5 Uber | 5 Goldman Sachs | 4 Yahoo | 3 Adobe | 2 Apple | 2 Google | 2 Lyft | 2 Bloomberg | 2 LinkedIn | 2 Walmart Labs | 2
+LeetCode
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
 
-Similar:
-Subsets II Medium
+Facebook | 10 Amazon | 8 Google | 4 Bloomberg | 3 Microsoft | 2 Goldman Sachs | 2 Atlassian | 2
+
+Subsets II Medium 
 Generalized Abbreviation Medium
-Letter Case Permutation Easy
-
-Topic: Array, Backtracking, Bit Manipulation
+Letter Case Permutation
+Easy
 
 idea: 
 input: nums vector<int>
