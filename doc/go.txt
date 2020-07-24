@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=rFejpH_tAHM
+Rob pike - Simplicity is complicated
+   algo his talk about go lang design and assembler
+
+right set of features, not jam lots of features and think it is good
+   a lot of other languages are converging by adding more and more similar features
+
+orthogonal features, not diagonal
+1 way to create app or system, not multiple ways
+readability, easy to work on, easy to fix, wide use
+
+channel, goroutine, select(coordination)
+interface and package
+gc (not in golang spec)
+be simple is complicated
+
+pick up key features from java apparently

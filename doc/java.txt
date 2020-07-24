@@ -1,3 +1,10 @@
+https://www.youtube.com/watch?v=f2aNWtt0QRo&list=PLPIzp-E1msrZz20RUlLIGchq48tQZUjpL&index=4&t=43s
+
+java string intern
+https://tech.meituan.com/2014/03/06/in-depth-understanding-string-intern.html
+java interview, number of threads? 
+https://www.jianshu.com/p/f30ee2346f9f
+
 https://www.youtube.com/watch?v=-nOfY0HFpWg&list=PLb_wM4EB5req0vQBzrxGKQ-nNaNZMr88t
 
 java class design, avoid reference escaping out of class, reduce unexpected mutation
