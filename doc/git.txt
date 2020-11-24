@@ -39,3 +39,8 @@ git status -s //-s for short
 git log -h
 git log --oneline
 git restore --source=HEAD~1 file1.js //restore to previous version
+
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
