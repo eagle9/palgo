@@ -1,0 +1,41 @@
+init
+  git init
+  git status
+
+commits:
+  git add .
+  git commit -m ""
+  git log
+  git checkout feature 
+  git checkout -- .
+  git reset --hard  hash-tag 
+
+branches:
+  git branch, list branch 
+  git checkout feature, switch to branch
+  git checkout -b feature, create a new branch
+  git merge feature,  merge branch feature to current branch
+  git rebase feature,  
+  git branch -D feature1, delete a branch
+
+git remote -r //show remote branch
+git pull //merge remote to local
+git push 
+git remote -v
+git remote rm remote-tracking-branch
+
+say feature branch off master at commit m2
+in feature branch, new commits f1, 
+in master branch, new commit m3
+git rebase master ===> feature branch now based on m3, newer base
+
+
+https://www.youtube.com/watch?v=8JJ101D3knE
+git commit message should be meaningful, a commit should not be too small or too big
+git staging area concept,  git rm file1.js //remove file1 from both staging and directory
+
+git status -s //-s for short
+
+git log -h
+git log --oneline
+git restore --source=HEAD~1 file1.js //restore to previous version
