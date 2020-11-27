@@ -44,3 +44,18 @@ git config --global alias.co checkout
 git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
+
+
+replace master with a new branch
+878  git br -m master master2
+  880  git br -m syi-add-selfservice master
+  882  git switch master
+  886  git push origin --delete  master //won't be working, refused
+
+  git switch syi-add-selfservice
+  905  git co placeholder
+  916  git br -m placeholder master
+  go to github.com, set placeholder as the default branch
+  918  git push -f origin master
+  920  git branch -D old-master
+  git br -m master2 old-master
