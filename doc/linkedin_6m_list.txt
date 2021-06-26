@@ -1,0 +1,68 @@
+rank	#	Title	Acceptance
+1	364	Nested List Weight Sum II	61.90%
+2	244	Shortest Word Distance II	51.60%
+3	254	Factor Combinations	46.30%
+4	272	Closest Binary Search Tree Value II	49.40%
+5	716	Max Stack	42.20%
+6	366	Find Leaves of Binary Tree	69.70%
+7	339	Nested List Weight Sum	72.40%
+8	156	Binary Tree Upside Down	54.40%
+9	432	All O`one Data Structure	31.60%
+10	243	Shortest Word Distance	60.30%
+11	605	Can Place Flowers	31.60%
+12	380	Insert Delete GetRandom O(1)	45.90%
+13	671	Second Minimum Node In a Binary Tree	42.90%
+14	698	Partition to K Equal Sum Subsets	44.80%
+15	1117	Building H2O	52.00%
+16	256	Paint House	51.50%
+17	373	Find K Pairs with Smallest Sums	35.80%
+18	150	Evaluate Reverse Polish Notation	35.30%
+19	470	Implement Rand10() Using Rand7()	46.10%
+20	730	Count Different Palindromic Subsequences	41.20%
+21	68	Text Justification	26.70%
+22	149	Max Points on a Line	16.70%
+23	1042	Flower Planting With No Adjacent	48.20%
+24	297	Serialize and Deserialize Binary Tree	45.90%
+25	1188	Design Bounded Blocking Queue	69.50%
+26	381	Insert Delete GetRandom O(1) - Duplicates allowed	33.60%
+27	739	Daily Temperatures	62.40%
+28	57	Insert Interval	32.90%
+29	261	Graph Valid Tree	41.50%
+30	127	Word Ladder	28.30%
+31	449	Serialize and Deserialize BST	51.00%
+32	215	Kth Largest Element in an Array	53.40%
+33	12	Integer to Roman	54.10%
+34	56	Merge Intervals	38.40%
+35	65	Valid Number	14.90%
+36	13	Roman to Integer	55.00%
+37	101	Symmetric Tree	46.00%
+38	636	Exclusive Time of Functions	51.10%
+39	61	Rotate List	29.20%
+40	75	Sort Colors	45.20%
+41	611	Valid Triangle Number	47.80%
+42	721	Accounts Merge	46.80%
+43	235	Lowest Common Ancestor of a Binary Search Tree	48.70%
+44	102	Binary Tree Level Order Traversal	53.00%
+45	796	Rotate String	49.60%
+46	34	Find First and Last Position of Element in Sorted Array	35.40%
+47	152	Maximum Product Subarray	31.10%
+48	277	Find the Celebrity	40.80%
+49	53	Maximum Subarray	45.90%
+50	33	Search in Rotated Sorted Array	34.20%
+51	76	Minimum Window Substring	33.80%
+52	460	LFU Cache	33.00%
+53	50	Pow(x, n)	29.30%
+54	341	Flatten Nested List Iterator	51.80%
+55	88	Merge Sorted Array	38.60%
+56	46	Permutations	61.50%
+57	20	Valid Parentheses	38.40%
+58	706	Design HashMap	59.90%
+59	349	Intersection of Two Arrays	60.60%
+60	103	Binary Tree Zigzag Level Order Traversal	46.00%
+61	207	Course Schedule	41.40%
+62	350	Intersection of Two Arrays II	50.70%
+63	69	Sqrt(x)	33.20%
+64	21	Merge Two Sorted Lists	52.10%
+65	236	Lowest Common Ancestor of a Binary Tree	43.60%
+66	70	Climbing Stairs	46.50%
+67	146	LRU Cache	31.70%

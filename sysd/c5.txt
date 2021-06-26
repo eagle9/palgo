@@ -1,0 +1,24 @@
+check my blog for more
+https://www.agiliq.com/blog/2013/10/producer-consumer-problem-in-python/
+
+
+producer and consumer pattern
+use a queue
+if empty queue, consumer should wait with condition to be notified
+if queue is full, producer should wait with condition to be notified
+use lock, condition
+or use queue with concurrency control
+
+https://www.geeksforgeeks.org/producer-consumer-solution-using-threads-java/
+
+https://www.codeguru.com/cpp/sample_chapter/article.php/c13533/Why-Too-Many-Threads-Hurts-Performance-and-What-to-do-About-It.htm
+
+list of urls is 1 trillion, what's the problem with url queue? 
+in memory queue is not large enough, 40TB
+queue does not support other attributes associated with url to crawl, such as priority, state, available time, and so on. 
+so url queue ---> task table
+
+how to handle dead cycle of url links? 
+
+
+schedule grab urls from task table, same site prefix(from yahoo.com) urls should be less than a quota(say 10%)

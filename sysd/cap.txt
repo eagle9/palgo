@@ -1,0 +1,7 @@
+CAP theorem
+partition happened, server1 has copy1, server2 has copy2, server1 can not communicating with server2 now. what we should do with copy1 and copy2 for key? 
+a user update key with difference value, if we allow server1 to respond, then copy1 and copy2 is different now.  not consistent.   how about 
+
+
+CAP design principle changed, eric brewer's new idea
+https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed/

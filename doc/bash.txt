@@ -1,0 +1,11 @@
+grep -v -e '^$' foo.txt |tr "\n" ","
+-e to use regex expression
+
+jars=`ls -d -1 libs/*.jar|paste -sd ',' -`
+#paste -- merge corresponding or subsequent lines of files
+# -s concatenate
+# -d list   -- to replace
+# -d  directory as plain file
+# -1 one entry per line
+
+ps -ef |grep syi|grep weblog|awk "{print $1}" |kill -9

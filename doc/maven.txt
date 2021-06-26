@@ -1,0 +1,31 @@
+mvn clean package
+mvn clean install
+mvn clean package -DskipTests
+mvn dependency:tree
+
+pom.xml
+module
+properties
+dependencies
+  dependency
+    group, artifact, version, scope
+    exclusion
+plugin
+  resource
+  compiler
+  shade
+  checkstyle
+  surefire
+https://bryantsai.com/how-to-resolve-dependency-conflict-out-of-your-control-e75ace79e54f
+
+run test with maven
+==================
+mvn -Dtest=org.voyiger.TestCircle test
+The value for the test parameter is the name of the test class (without the extension; we'll strip off the extension if you accidentally provide one).
+
+You may also use patterns to run a number of tests:
+
+mvn -Dtest=TestCi*le test
+And you may use multiple names/patterns, separated by commas:
+
+mvn -Dtest=TestSquare,TestCi*le test

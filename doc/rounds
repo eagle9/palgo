@@ -1,0 +1,172 @@
+#dfs backtracking, bfs, dynamic programming, union find, segment tree
+#binary index tree, priority_queue, customize class with comparison
+#trie
+one edit distance, 1, cleaner idea is to use string compare
+edit distance,0.7 
+word break, 1, 
+word break ii, 0.8, recur with memo, compared to dp, no order requirement  
+word ladder, 0.6 
+word ladder ii,0.5
+word search, 1
+word search ii,0.8 
+word pattern, 1
+word pattern ii,0.9 
+44,wildcard matching,0, 50%
+regular expression matching,0, 50%
+#design
+design search auto complete,0.3 
+lru cache,0.7
+lfu cache,0.7, with balanced tree set and map, 20190308, yet to try O(1) idea
+two sum, 1, 20190308 with 3 methods, easy it is, but you have to be careful and sharp
+two sum iii data structure design, 1, 20190309, easy it is, but tricky when numbers added repeats 
+3sum, 1, 20190301 
+3sum with multiplicity,1, 20190301
+3sum closest, 0
+4sum, 1, 20190301 
+reverse pairs, 0
+number of islands,1
+number of islands ii,0.8
+making a large island, 0
+max area of island,0
+number of distinct islands,0
+top k frequent words, 1 
+top k frequent elements, 1
+find median of two data streams,1, 20190301
+next-permutation, 1, very high freq
+permutations,1,50% 
+permutations ii,1, 20%
+palindrome permutations,1, 20% 
+palindrome permutations ii,1, 8%
+top-k-frequent-words, 1 
+top-k-frequent-element, 1
+largest number,0.6
+spiral matrix,0
+spiral matrix ii, 0
+reorder list, 0
+minimum height trees, 0
+course schedule, 0
+course schedule ii, 0
+reconstruct itinerary, 0
+zigzag conversion,0
+longest substring, several problems
+partition to k equal sum subsets
+palindromic substrings, 0
+#dynamic programming
+counting bits, 0
+bomb enemy, medium, 30%, 1
+minimum path sum,medium, 40%, 1, shaun's original idea, accepted first submission
+longest increasing continuous subsequence,easy, 1, shaun original idea, added code to deal with small i cases, accepted, reduced dimension
+decode ways,medium, 1, shaun original idea, add code based on error with test cases, accepted 
+paint house,easy, 1, accepted first try
+paint house ii,hard, 1,very close, incorrect with min1 and min2 dealing 
+house robber,1, original idea, a little fix and accepted
+house robber ii, medium, 1, shaun's original idea, forming and advancing, accepted
+best time to buy and sell stock,easy, 1, accepted first sub
+best time to buy and sell stock ii,easy, 1,original idea close, code not accepted, checked lt sol
+unique paths ii',  jzdp 2 --------------
+paint house,1, shaun own accepted
+decode ways,0
+longest increasing continuous subsequence,0
+minimum path sum,1, first sub accepted, reduced dp dimension with rolling array, with help
+bomb enemy, 1, original idea accepted with fixes
+paint house ii, 1, jzdp3 ------------
+best time to buy and sell stock,1
+best time to buy and sell stock iii,0
+best time to buy and sell stock iv,0
+longest increasing subsequence,1
+354	russian doll envelopes,	hard,1	20%	
+279 perfect squares,0, medium, 40%, 17 days ago, jzdp4 ------------
+palindrome partitioning ii, 0
+copy books lintcode, 0
+coins in a line,0
+lintcode backpack
+lintcode backpack v
+lintcode backpack vi
+lintcode backpack ii, jzdp5 -----------------------
+lintcode backpack iii,
+longest palindromic subsequence
+lintcode coins in a line iii, 
+scramble string
+burst balloon
+longest common subsequence,0, jzdp 6 ----------------
+interleaving string,edit distance', regular expression matching', wildcard matching', 
+distinct subsequences
+lintcode ones and zeros
+minimum adjustment cost, jzdp 7 ------------------
+k-sum, longest increasing subsequence', 
+k edit distance
+frog jump
+decode ways ii
+maximal square
+1000,minimum cost to merge stones, 0
+62,	unique paths,	medium,	30%,first try accepted 2019, 1
+63	unique paths ii,medium,	40%	4 y ago, 0, 
+980	unique paths iii,	hard,	3% 0	
+943	find the shortest superstring,	hard,	10%,	google used
+87	scamble string,	hard,	10%	
+847	shortest path visiting all nodes,	hard		
+935	knight dialer,	medium		
+688	knight probability in chessboard,	medium,	40%	
+188	best Time to Buy and Sell Stock IV,	hard,	20%	
+689	maximum sum of 3 non-overlapping subarrays,	hard		
+871	minimum number of refueling stops	hard	20%	
+jump game, 0.8 
+kth smallest element in a bst,0
+maximum depth of binary tree, 1, 1 
+swap nodes in pairs, 1, 20190226
+pascal triangle, 1
+pascal triangle ii, 1
+powx n, 1, 20190227
+unique binary search tree,1
+unique binary search tree ii, 0.7
+different ways to add parentheses, 0
+merge intervals, 1
+insert invervals, 0
+my calendar i, 1, 20190228 
+my calendar ii, 1, 20190306, not quite extensible from i
+my calendar iii, 1, 20190306, very extensible from ii
+simplify path, 0.5, 20190228 
+maximum product subarray, 1, 20190228, 20190311
+next greater element i, 0
+next greater element ii, 0
+next greater element iii, 0
+majority element, 0
+majority element ii, 0
+basic calculator,0
+basic calculator ii, 0
+basic calculator iii, 0
+basic calculator iv,0
+expression add operators,0
+alien dictionary, 0.6
+count complete tree nodes, 0
+asteroid collision,0
+find peak element, 0
+perfect squares, 0
+search a 2d matrix, 0
+search a 2d matrix ii, 0
+fruit into baskets, 0
+meeting rooms ii, 0
+meeting rooms, 0
+the maze, 0
+the maze ii, 0
+game of life,0
+flatten 2d vector,0
+merge k sorted lists, 1, 20190306
+merge k sorted arrays(lintcode), 1, 20190306
+coin change,1, tried both dp and dfs, 20190312
+sudoku solver,0
+valid sudoku, 0
+#union find
+redundant connection, 0.8
+redundant connection ii, 0.8
+sentence similarity,1
+sentence similarity ii, 0.8
+friend circles, 0.8
+evaluate division,
+#dfs
+subsets,40%, 1, classic, smaller problem or use combination  
+subsets ii,8%,1, use subsets 1 idea with adjustment 
+combination sum, 1
+combination sum ii, 1
+combination sum iii, 1
+combination sum iv, 1

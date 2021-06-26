@@ -1,0 +1,31 @@
+Book list
+Read each book quickly, write notes, QA, track progress and true absorption
+
+
+1.effective java by josh bloch, 3rd edition
+good book, good read, lengthy, select and read and continue
+yes prioritizes items to read and get them
+
+2.java performance: definite guide, by scott oaks
+  read several chapter already. Great book. 
+  1 and 2 deep read, but some chapters/items first, other later
+
+3.network top down --- quick read
+
+4. os concepts 10e
+ quick read
+
+5. kafka: definite guide
+  overview and deep on some
+
+6. spark: definite guide
+  overview and deep on some optics
+
+7. effective debugging: 66 ways, by diomidis spinellis
+ --- good book by a great computer scientist, 
+logging framework, ide or gdb step through, static analysis, dynamic analysis
+one variable possible issue, search all lines containing the variable and fix them all
+suspect code  
+
+
+8. data intensive system ****

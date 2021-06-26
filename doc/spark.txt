@@ -1,0 +1,112 @@
+jupyter toree scala, pyspark (environment varialbes)
+RDD, dataset dataframe, spark sql
+RDD is the fundamental building block and suitable for basic unstructured data
+streaming demo:  twitter sentiment analysis,  word count, moving average, accumulative word count? 
+
+Spark: the definite guide 2018
+
+C2. Gentel Introduction to Spark
+
+  spark sql and dataframe
+
+C3. Tour of Spark's Toolset
+
+C4. Structured API Overview
+
+C5. Basic Structured Operations
+
+C6. Working with different Types of Data
+
+C7. Aggregations
+
+C8. Joins
+
+C9. Data Sources
+
+C10. Spark SQL
+
+C11. Datasets
+
+C15. How spark runs on a cluster
+
+C16. Developing Spark applications
+
+C17. Deploying spark
+
+C18. Monitoring and debugging
+
+C19. Performance tuning
+
+C20. Stream processing fundamentals
+
+C21. Structured streaming basics
+ read a little, makes some sense, 
+  my question, spark stream source?  can only be kafka? 
+kafka message order?  (key, value,timestamp)
+  eco example,  message order by producer?  or by some field? 
+
+C22. Event-time and stateful processing
+C23. Structured streaming in production
+
+c24. Advanced analytics
+
+code in driver
+  collect, show, first, reduce
+code in executor
+  map, filter, mapPartition, forEachRDD 
+  -->thread safety, use other lib inside spark, be careful with lib api thread safety
+  -->task serializable, object serializable
+spark tuning
+  -->too mask tasks failed, solution ->increase cassandra connection timeout (increase it)
+  -->memoryOverHead for each overhead --> increase  
+  -->dynamicAllocation enabled, min executors, init executors, max executors
+  for example
+    --executor-cores 4
+    --executor-memory 4G
+    --driver-memory 8G
+    --conf spark.dynamicAllocation.enabled=true
+    --conf spark.shuffle.service.enabled=true
+    --conf spark.dynamicAllocation.minExecutors=64
+    --conf spark.dynamicAllocation.initialExecutors=64
+    --conf spark.yarn.executor.memoryOverhead=6144
+
+stages
+  - within 1 stage, no communication needed, work on a single partition
+  - shuffle happens and complete, start another stage, groupby, sort
+
+streaming
+  direct streaming, set batch time or data size, low level RDD level, multiple schema
+  structure streaming, water mark, state 
+  from kafka --- offset out of range due to retention
+      data error handling 
+      2TB 200 partitions
+      message order with many partition
+      cut batch with streaming with multiple partitions
+  to cassandra
+     spark cassandra integration
+        customize cassandra read and write for ML lookup feature store, low latency limit column width
+        batch flush
+        mapPartition  rows connection initialization serializable
+        transform data to key value pair, ttl, 
+  to solr
+     index
+     collection
+     schema
+
+batch
+  manage state yourself, batch size control yourself
+
+task -- the smallest individual unit of execution that corresponds to a RDD partition
+Jobs are divided into "stages" based on the shuffle boundary. This can help you understand. Each stage is further divided into tasks based on the number of partitions in the RDD. So tasks are the smallest units of work for Spark
+
+When the shuffle service is enabled, Spark executors fetch shuffle files from the service instead of from each other. Thus, any shuffle state that is written by an executor continues to be served beyond the executor's lifetime.
+
+netty and spark
+Netty-based RpcEnv
+Read RPC Environment (RpcEnv) about the concept of RPC Environment in Spark.
+The class org.apache.spark.rpc.netty.NettyRpcEnv is the implementation of RpcEnv using Netty - "an asynchronous event-driven network application framework for rapid development of maintainable high performance protocol servers & clients".
+Netty-based RPC Environment is created by NettyRpcEnvFactory when spark.rpc is netty or org.apache.spark.rpc.netty.NettyRpcEnvFactory.
+It uses Java’s built-in serialization (the implementation of JavaSerializerInstance)
+
+spark book
+https://mallikarjuna_g.gitbooks.io/spark/content/spark-sql-Encoder.html

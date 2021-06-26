@@ -1,0 +1,5 @@
+distributed lock
+zookeeper curator
+types of nodes
+  seq no under a node and watcher
+  https://juejin.cn/post/6844903729406148622

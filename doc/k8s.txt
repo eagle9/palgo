@@ -1,0 +1,2 @@
+learn k8s with example
+https://dev.to/chuck_ha/understand-kubernetes-through-a-concrete-example-7d9

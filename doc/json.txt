@@ -1,0 +1,5 @@
+jackson
+core, anotation, databind
+https://juejin.cn/post/6844904166809157639
+databind --> https://www.baeldung.com/jackson-object-mapper-tutorial
+

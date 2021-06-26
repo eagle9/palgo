@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>CS 261 Notes on Bigtable</title>
+</head>
+<body>
+<h1 id="notesonbigtable:adistributedstoragesystemforstructureddata">Notes on Bigtable: A Distributed Storage System for Structured Data</h1>
+
+<p>The most influential systems publications of the 2000s may be the two first
+papers on Google’s internal cluster storage, GFS <a class="citation" href="#fn:1" title="Jump to citation">[1]<span class="citekey" style="display:none">gfs</span></a> and Bigtable
+<a class="citation" href="#fn:2" title="Jump to citation">[2]<span class="citekey" style="display:none">bt</span></a>. GFS offers a file system-like interface, Bigtable a database-like
+interface; that is, GFS stores unstructured files (byte streams), and
+Bigtable stores structured data (rows, columns). But neither system uses a
+conventional interface. You read and write GFS files using a GFS API, and
+read and write Bigtable using a Bigtable API, not SQL.</p>
+
+<p>Bigtable in particular is a delicious smorgasbord of data storage
+techniques, with a lot to teach us about building storage systems. On the
+other hand, several aspects of its design are sensitive to its deployment
+at Google, on top of GFS. To explain the design, we&#8217;ll pretend to build it
+up from first principles.</p>
+
+<h2 id="reliablestorage:durabilityandreplication">Reliable storage: durability and replication</h2>
+
+<p>Most any storage system aims to store data <em>reliably</em>, so that if a
+computer fails, the data can be recovered. We worry about both <em>temporary</em>
+failures, where a computer goes offline for a while but will come back, and
+<em>permanent</em> failures, where a computer dies. Network partitions, power
+blips, and program crashes generally cause temporary failures; hardware
+failure, fires, and sabotage generally cause permanent failures. We assume
+(with good reason) that temporary failures are more common and
+unpredictable than permanent ones.</p>
+
+<p>To guard against power blips and program crashes, a system must store data
+on <em>durable</em> media, such as disks and flash memory. Only data stored on
+durable media will survive reboot. (Reboot is a magic solution for many
+temporary failures.)</p>
+
+<p>But durable media cannot guard against permanent failures. That requires
+<em>replication</em>, where the system keeps multiple copies of the data: backups,
+basically. If the data is stored several times, on several geographically
+distributed computers, then only a major catastrophe will cause data loss.</p>
+
+<p>Most (but, interestingly, not all) distributed systems use <em>both</em>
+durability <em>and</em> replication to store data reliably. For instance, each
+data modification might be written to at least three disks. If one disk
+fails, the data is proactively copied onto a new disk, so that at least
+three copies are usually available. That way, only three simultaneous
+permanent failures cause data loss. (Non-durable replication has not been
+considered sufficient since temporary failures—which are more common, and
+so might happen simultaneously—lose non-durable data.)</p>
+
+<p>Most GFS files are replicated to three computers, which write them durably
+onto disks and flash.</p>
+
+<h2 id="sequentialstorage">Sequential storage</h2>
+
+<p>GFS was designed to store very large files that are generally accessed
+sequentially: starting from the first byte and proceeding in
+order. Sequential access is almost always the fastest way to access files
+on any storage system. Why?</p>
+
+<ul>
+<li>Because hard disks are mechanical objects that spin. Reading data in a
+ random order asks a disk’s mechanical “head” to jump around, a process
+ called <em>seeking</em>. The head estimates the place to jump to and then must
+ settle to get it right. A disk can do at most a couple <em>hundred</em> seeks a
+ second. Sequential access (on sequentially-laid-out files) avoids
+ seeking. Although in flash memory the seek penalty is much, much smaller,
+ it still exists.</li>
+<li>Because sequential access is predictable, all system caches have an
+ easier job. The operating system can prefetch future data, dramatically
+ speeding up future reads, simply by reading the next couple blocks of the
+ file. The disk/flash itself can do the same thing with on-drive caches.</li>
+</ul>
+
+<h2 id="structuredstorage">Structured storage</h2>
+
+<p>Bigtable, however, stores structured data, including large items (like web
+pages) and small items (like the text of a link). A typical Bigtable
+transaction might involve only a couple small data items, but many, many
+clients may access a Bigtable at a time. This offers both performance and
+correctness challenges. How can such a system scale?</p>
+
+<p>Bigtable makes a couple data model choices relevant for our understanding.</p>
+
+<ul>
+<li><strong>Sparse hashtable.</strong> A Bigtable is essentially a sparse 3D hash table,
+ where the dimensions are row names, column names, and versions
+ (timestamps).</li>
+<li><strong>Strings.</strong> All Bigtable row names, column names, and data items are
+ strings (sequences of characters). Bigtable has no true schema:
+ everything&#8217;s a string.</li>
+<li><strong>Put, get, scan.</strong> Bigtable supports four fundamental operations: <em>put</em>
+ (store a value in a row/column entry), <em>get</em> (return the value in a
+ row/column entry), <em>delete</em> (delete a row/column entry), and <em>scan</em>
+ (return many values from many row/column entries, in sorted order).</li>
+</ul>
+
+<h2 id="buildingupbigtable">Building up Bigtable</h2>
+
+<p>We now describe roughly how Bigtable could have been designed, starting
+with the basics.</p>
+
+<p>However, to make the issues clear, we&#8217;ll start a data model <em>even simpler</em>
+than Bigtable&#8217;s. Specifically, we&#8217;ll pretend that Bigtable started as a
+<strong>hash table</strong>, or <strong>key/value store</strong>, that maps string keys to string
+values. Here, a key combines the real Bigtable&#8217;s row and column names.
+Think of a key as the concatenation of those names (like
+&#8220;<code>rowname|columnname</code>&#8221;). We&#8217;ll see later why rows and columns
+are important to differentiate at the system level. But notice how far we
+can get without explicit columns: it may surprise you!</p>
+
+<h3 id="basicreadsandwrites">Basic reads and writes</h3>
+
+<ul>
+<li>Challenge: Efficiently yet reliably storing updates
+
+<ul>
+<li>Explanation: In disk storage efficient means sequential, so efficiently
+ storing updates requires writing those updates sequentially. But
+ updates arrive in random order, and must be stored as quickly as they
+ arrive, since clients are waiting.</li>
+<li>Solution: The only way to store updates
+ sequentially is to order them sequentially: updates must be stored in
+ a <em>commit log</em>, chronologically, as they arrive. This technique is
+ ubiquitous in structured storage.</li>
+<li>GFS note: GFS only provides reliable semantics for sequential log
+ storage, which it supports via an “record append” operation.</li>
+</ul></li>
+<li>Challenge: Efficiently supporting reads
+
+<ul>
+<li>Explanation: Logs are great for writing efficiently, but make no
+ sense for reading (to read an item, a reader would have to scan the
+ whole log to find the most recently written version). Most systems
+ with log storage also maintain another data structure optimized for
+ reads.</li>
+<li>Solution: Bigtable servers store recent updates in memory, in a data
+ structure called the <em>memtable</em>. Reads are quickly served out of the
+ memtable. If a server crashes, its memtable can be reconstructed from
+ the commit log.</li>
+</ul></li>
+<li>Challenge: Data too big for memory
+
+<ul>
+<li><p>Explanation: Memtables work only as long as all data fits in memory,
+ and servers rarely crash (restoring from log is slow). We
+ need another durable data structure optimized for reads.</p></li>
+<li><p>Solution: When a memtable gets too big or too old, Bigtable converts
+ it into a durable structure called an <em>SSTable</em>. SSTables are
+ optimized for reading. They store information about rows (keys) in
+ lexicographic (dictionary) order, so scanning a table uses
+ sequential access (fast). They are divided into 64KB segments, and a
+ compact initial header specifies the initial key in each segment; thus a
+ reader can seek to a key without reading the whole SSTable into
+ memory.</p>
+
+<p>The memtable-to-SSTable process is called a <em>minor compaction</em>. It can
+ happen in parallel with updates: Bigtable first starts a new
+ memtable, then compacts the previous, frozen memtable in the
+ background.</p></li>
+</ul></li>
+<li>Challenge: Updates after minor compaction
+
+<ul>
+<li><p>Explanation: Converting to an SSTable does not stop the flow of
+ updates. What should be done with them once the SSTable is on disk?</p></li>
+<li><p>Conventional solution: Most databases solve this problem by maintaining a
+ durable read/write data structure, usually a <a href="http://en.wikipedia.org/wiki/B-tree">B-tree</a> or variant
+ (B+tree, B-link tree). Updates are first written to the log, which as
+ in Bigtable is the primary commit point, and then lazily applied to
+ the durable read/write structure. This works, but has some serious
+ performance consequences. It is very hard to modify a read/write
+ structure safely, and as the structure is modified, it inevitably
+ drifts away from sequential layout.</p></li>
+<li><p>Context: Bigtable&#8217;s storage layer, namely GFS, is ill
+ suited for read/write structures. Not only was it designed for
+ append—so in-place writes might be slow—but it doesn’t even provide
+ consistency for in-place writes!</p></li>
+<li><p>Solution: A particular Bigtable is implemented as an <em>overlay stack</em>
+ of multiple tables. The memtable is on top, with the most recent
+ updates; any value stored in the memtable has precedence over all
+ other values. Underneath it are zero or more <em>immutable</em>
+ SSTables: Bigtable never modifies an SSTable after it is created.</p>
+
+<p>To find a particular key, Bigtable checks these tables in reverse
+ chronological order, using the first value it finds. Thus, each
+ table acts as an overlay on top of older tables. To scan the
+ database, Bigtable scans each of the tables in parallel,
+ merge-sort-style; this is easy since each table is in sorted
+ order. (If the same key appears in more than one table, Bigtable uses
+ the value in the most recent table.) To update a key, Bigtable writes
+ to the memtable. To delete a key, Bigtable must explicitly store a
+ deletion record, or tombstone, that hides any lower occurrences of
+ the key. (This resembles the use of tombstones in
+ <a href="http://en.wikipedia.org/wiki/Hash_table#Open_addressing">open-addressed hash tables</a>.)</p>
+
+<p>(The overlay stack idea relates to log-structured merge trees <a class="citation" href="#fn:3" title="Jump to citation">[3]<span class="citekey" style="display:none">lsmtree</span></a> and
+ read-optimized stores <a class="citation" href="#fn:4" title="Jump to citation">[4]<span class="citekey" style="display:none">readopt</span></a><a class="citation" href="#fn:5" title="Jump to citation">[5]<span class="citekey" style="display:none">rose</span></a>.)</p></li>
+</ul></li>
+<li>Challenge: Garbage collection
+
+<ul>
+<li><p>Explanation: As updates and deletes collect, the stack of SSTables
+ will get taller. This causes two problems. First, the lookup process
+ takes O(<em>t</em>) time for a <em>t</em>-high stack. Second, past versions of updated
+ data still take up space in the stack.</p></li>
+<li><p>Solution: This is a garbage collection problem, and is solved garbage
+ collection style. Periodically, Bigtable merges together several
+ SSTables into one. In a <em>merging compaction</em>, the memtable and
+ several recent SSTables are combined into a single SSTable. In a
+ <em>major compaction</em>, <em>all</em> SSTables are combined into a single
+ SSTable.</p>
+
+<p>Why two types? A merging compaction might perturb updates a bit (since it
+ consumes the memtable), whereas a major compaction need not (it does
+ not appear to involve the memtable). A merging compaction will
+ involve relatively less data (in SSTable stacks we expect the lower
+ SSTables to contain more data), and is therefore faster to run. A
+ merging compaction often needs to preserve tombstones to hide keys in
+ lower, uncompacted SSTables, whereas a major compaction eliminates
+ all deleted data.</p>
+
+<p>Note that many of these compaction operations can occur in the
+ background as updates and lookups proceed in parallel. Whereas
+ parallel databases often worry a lot about locking disciplines and
+ scalability, Bigtable&#8217;s operations are naturally parallel: SSTables
+ are immutable, and there is no need to obtain a lock before accessing
+ an immutable object!</p></li>
+</ul></li>
+</ul>
+
+<h3 id="scalability">Scalability</h3>
+
+<ul>
+<li>Challenge: Data too large for a single computer
+
+<ul>
+<li>Context: The mechanisms we&#8217;ve described so far are really important
+ to get right for <em>any</em> size database. But Bigtable is meant to scale
+ to databases and client loads far too large for any single computer
+ to handle, even if we assume that Bigtable&#8217;s underlying file system, GFS,
+ scales perfectly.</li>
+<li>Solution: <em>Partition</em> the Bigtable database among many servers. If
+ there are <em>n</em> servers, give each server 1/<i>n</i> of the database.
+ If we assume that each query touches just one key, then each server
+ handles 1/<i>n</i> of the total query load. Linear scalability!</li>
+</ul></li>
+<li>Challenge: Partitioning the key space
+
+<ul>
+<li><p>Context: How to split arbitrary string keys?</p></li>
+<li><p>Solution: Divide key space into lexicographic ranges. If there are
+ <em>n</em> servers, define pivot points <i>x</i><sub>0</sub> &leq; … &leq;
+ <i>x</i><sub><i>n</i></sub>, where <i>x</i><sub>0</sub> is the
+ smallest possible string (the empty string) and
+ <i>x</i><sub><i>n</i></sub> is the largest possible string
+ (∞). Then server <i>i</i>&nbsp;∈&nbsp;[0,&nbsp;<i>n</i>) handles all keys in the range
+ [<i>x</i><sub><i>i</i></sub>, <i>x</i><sub><i>i</i>+1</sub>).</p>
+
+<p>The portion of data stored on a particular server is called a <em>tablet</em>, and the server is
+called a <em>tablet server</em>. So a tablet consists of a commit log, a memtable, and zero or more SSTables.
+A tablet server can serve multiple tablets.</p></li>
+</ul></li>
+<li>Challenge: Locating servers
+
+<ul>
+<li>Context: How can clients find the server responsible for a key?</li>
+<li>Solution: Store this information in Bigtable itself! A set of METADATA tablets, arranged B-tree-style, list the locations of all other tablet servers in the system. These are indexed by table name and key range. The location of the topmost METADATA tablet is stored in Chubby, a reliable component outside of GFS. So a client can find a tablet by contacting Chubby and walking through METADATA tablets. In practice, the client caches METADATA tablet data.</li>
+</ul></li>
+<li>Challenge: Compensating for failures
+
+<ul>
+<li>Context: What happens if a tablet server dies? The data is safe, since it&#8217;s stored reliably in GFS according to the procedures above, but we need a Bigtable server to coordinate the pieces and actually serve data.</li>
+<li>Solution: A distinguished <em>master</em> component monitors failed tablet servers and reassigns their tablets as necessary. Tablet servers register themselves as available for tablets; the master then assigns tablets to servers, recording its choices in the METADATA tablets so clients can find them. This master is a centralized component, but note that it&#8217;s not on the critical path for client requests—clients can read METADATA tablets independent of the master. However, a working master is required to assign tablets to servers. A separate system component, the “cluster management system,” restarts the master as necessary.</li>
+</ul></li>
+<li>Challenge: Updating the partitioning
+
+<ul>
+<li>Context: Data isn&#8217;t uniformly distributed. A stream of updates and deletes may make some tablets (partitions) grow too large to be effective, or get so small that they&#8217;re not worthwhile. Partition points should be updated based on the characteristics of the data.</li>
+<li>Solution: Tablet servers split themselves, entering new split points in the METADATA tablets. All other changes (tablet merges, new tables, schema changes) are managed by the master.</li>
+</ul></li>
+</ul>
+
+<h3 id="transactionsupport">Transaction support</h3>
+
+<ul>
+<li>Challenge: Applications want atomic, consistent updates and transactions
+
+<ul>
+<li><p>Context: Everyone loves ACID (Atomic, Consistent, Isolated, Durable) transactions. Can Bigtable provide this notion of consistency? And if not, can it provide <em>any</em> notion of consistency?</p></li>
+<li><p>Solution: Bigtable already provides durability and atomicity through the commit log. But conventional databases provide arbitrary-sized transactions: a single transaction can modify <em>the entire database</em> in one atomic step. In Bigtable&#8217;s distributed context, however, arbitrary transactions would require coordination among many tablet servers. This coordination—basically, locking—would compromise scalability. So Bigtable punts. Bigtable <em>does not support</em> arbitrary transactions.</p>
+
+<p>Coordination is easy within a <em>single</em> tablet server, though. So Bigtable <em>does</em> support limited “read-modify-write”/“compare-and-swap” type transactions that touch one tablet server at a time. However, Bigtable would need to worry about splits and other concurrent updates during a transaction. So Bigtable ensures that the data relevant to one transaction will never be split across two tablets. An easy way to do that would be to limit transactions to support <em>exactly one key</em>: basically, compare-and-swap on a single key/value pair.</p></li>
+</ul></li>
+<li>Challenge: Single-key transactions are too limiting
+
+<ul>
+<li><p>Context: Single-key transactions are easy to implement, but are too limiting for most clients. There&#8217;s a tremendous flexibility difference between “atomic integers” and “atomic <em>structure</em> operations” on arbitrary structures.</p></li>
+<li><p>Solution: Split the key into two parts, a <em>row</em> and a <em>column</em>. Partition data based on <em>row</em> key, so that each tablet handles a contiguous range of rows. Then we know that any split will keep all of a row&#8217;s data together, and Bigtable can support transactions that operate on a single <em>row</em> at a time without too much work. This is much better than single-key transactions, because a row can have arbitrarily many columns.</p>
+
+<p>(Of course, it&#8217;s very likely that Bigtable had rows and columns from the start, but they weren&#8217;t exactly <em>necessary</em> until now.)</p>
+
+<p>Unlike conventional databases, Bigtable rows can have arbitrarily many columns, and different rows can have different sets of columns. This shows how close the Bigtable column idea is to general string keys. It also makes some cool programming tricks possible; for instance, consider Figure 1 <a class="citation" href="#fn:2" title="Jump to citation">[2]<span class="citekey" style="display:none">bt</span></a>.
+A single row has &#8220;anchor:cnnsi.com&#8221; and &#8220;anchor:my.look.ca&#8221;
+columns, which a conventional database
+would store in a separate table (a &#8220;page_anchor&#8221; table with a two-column unique key, “page_url + “anchor_url”). Bigtable general columns are especially useful
+since Bigtable transactions are limited. Many updates that, in a
+conventional database, would require cross-table coordination,
+Bigtable can handle with atomic row updates.</p></li>
+</ul></li>
+<li><p>Challenge: Support transactions in the future</p>
+
+<ul>
+<li><p>Context: Many applications don&#8217;t need full transaction support, so
+ maybe it&#8217;s fine that Bigtable doesn&#8217;t provide it. But it would rock
+ to build some sort of system <em>on top of Bigtable</em> that supported
+ transactions. Is there anything that Bigtable might need to support
+ now that would simplify transaction implementation later?</p></li>
+<li><p>Solution: Multiple versions of data. Bigtable is willing to store
+ many versions of a value for a given row/column pair. These versions
+ are indexed by timestamp. Given both timestamps and read-modify-write
+ operations, Bigtable can support both locks and multi-version
+ concurrency control like
+ <a href="http://en.wikipedia.org/wiki/Snapshot_isolation">snapshot isolation</a>.</p>
+
+<p>Of course, timestamps are useful for other, related
+purposes. Clients can roll their own &#8220;transactions&#8221; by examining
+only information from a specific timestamp range, or check recent
+changes by scanning for updates after a given timestamp. Bigtable
+supports configurable garbage collection of old data: compactions
+can throw out old versions.</p></li>
+</ul></li>
+</ul>
+
+<h3 id="optimizations">Optimizations</h3>
+
+<p>We only describe a limited set; see the paper for more.</p>
+
+<ul>
+<li><p>Challenge: Handle more data per server</p>
+
+<ul>
+<li><p>Context: Reading from disk is slow and proportional to the amount of
+ data read. Memory is also a bottleneck.</p></li>
+<li><p>Solution: Compress SSTables, using new, speed-optimized compression
+ algorithms. Compression is done block by block, so a tablet server can
+ scan to a given SSTable block without uncompressing all prior blocks.</p></li>
+</ul></li>
+<li><p>Challenge: Skip irrelevant data</p>
+
+<ul>
+<li><p>Context: The Bigtable representation encourages application designers
+ to combine different classes of information into single rows, where
+ conventional databases would split those information classes into
+ different tables. (Consider Figure 1, which stores both multiple
+ versions of a crawled web page and many small text snippets.) As a
+ result, rows are very large and can combine big data items with
+ small ones. An application might be interested in scanning over just
+ the small
+ data items (e.g., the text snippets), but the SSTable representation
+ described so far would require tablet servers to read <em>all</em> data
+ items into memory for each row.</p></li>
+<li><p>Solution: Divide columns into subsets, and store column subsets
+ separately. Specifically, split each column into two parts, the
+ <em>column family</em> and the <em>column qualifier</em>. Multiple column families
+ can be grouped together into <em>locality groups</em>. All columns in the
+ same locality group are stored in the same SSTable stack, but columns in
+ different families are stored in different SSTable stacks. Then, we can
+ group the Figure 1&#8217;s small text snippets together, and scan them all
+ without reading web page data into memory.</p>
+
+<p>This design means that a single tablet can comprise <em>multiple</em>
+SSTable stacks. (It appears that the memtable is shared among
+locality groups, and a minor compaction can split a single memtable
+into several SSTables, at most one per stack.) But this doesn&#8217;t
+affect atomic update consistency. Since all the SSTables for a given row are always stored by the same
+tablet server, the tablet server can still easily update rows
+atomically.</p></li>
+</ul></li>
+<li><p>Challenge: A <i>t</i>-high SSTable stack takes O(<i>t</i>) SSTable reads to test for a key</p>
+
+<ul>
+<li>Solution: Bigtable can associate a
+ <a href="http://en.wikipedia.org/wiki/Bloom_filter">Bloom filter</a> with each
+ SSTable. The Bloom filter is a conservative set representation that
+ takes very little memory. It can confirm that a particular key is
+ <em>definitely not</em> in an SSTable, but it can&#8217;t say for sure whether a
+ key is actually present. That is, it can give false positives but
+ never false negatives, which is why it&#8217;s conservative. If a tablet
+ server keeps all SSTables&#8217; Bloom filters into memory, it can often
+ avoid failed key lookups in SSTables. This can reduce the number of
+ SSTable reads to below O(<i>t</i>), although obviously the number of
+ Bloom filter reads is still O(<i>t</i>).</li>
+</ul></li>
+</ul>
+
+<h2 id="bigtableasawhole">Bigtable as a whole</h2>
+
+<p>Here&#8217;s an overview of the whole Bigtable system as we&#8217;ve described it.</p>
+
+<h3 id="clusterlevel">Cluster level</h3>
+
+<ul>
+<li>A <em>Bigtable cluster</em> has exactly one <em>Chubby instance</em>.</li>
+<li>A <em>Bigtable cluster</em> has at most one <em>Bigtable master</em>. (If the master
+ fails, it is restarted by other system components.)</li>
+<li>A <em>Bigtable cluster</em> has one <em>tablet hierarchy</em>.</li>
+<li>The <em>tablet hierarchy</em> is rooted at a single <em>root tablet</em>.</li>
+<li>A <em>tablet hierarchy</em> has many <em>METADATA tablets</em>, which store location
+ information for other <em>user tablets</em>.</li>
+<li>Each <em>user tablet</em> belongs to exactly one <em>Bigtable</em>.</li>
+<li>All of a <em>Bigtable</em>&#8217;s <em>tablets</em> are part of the same <em>cluster</em> and in the
+ same <em>hierarchy</em>.</li>
+</ul>
+
+<h3 id="tabletlevel">Tablet level</h3>
+
+<ul>
+<li>Each <em>tablet</em> is served by at most one <em>tablet server</em>.</li>
+<li>A <em>tablet server</em> can serve many <em>tablets</em>. (The master assigns tablets
+ to servers.)</li>
+<li>Each <em>tablet</em> comprises one or more <em>SSTable stacks</em>, one per <em>locality
+ group</em>, as well as a <em>memtable</em> and a portion of a <em>commit log</em>.</li>
+<li><em>Commit logs</em> and <em>tablet servers</em> correspond one-to-one (except during failures).</li>
+<li>Each <em>commit log</em> contains data from one or more <em>tablets</em> (see “Commit
+ log implementation” in &sect;6).</li>
+<li>Each <em>memtable</em> contains data from exactly one <em>tablet</em>.</li>
+<li>Each <em>SSTable stack</em> comprises zero or more <em>SSTables</em>.</li>
+<li>Each <em>SSTable</em> comprises one or more 64KB <em>blocks</em>, plus an optional
+ <em>Bloom filter</em>. The blocks can be compressed; each block is compressed separately.</li>
+<li><em>Minor compactions</em> change a single <em>memtable</em> into a set of <em>new SSTables</em>, at
+ most one per stack. Minor compactions increase SSTable stack height.</li>
+<li><em>Merging compactions</em> are minor compactions that also combine some of the
+ upper SSTables on the previous stacks with the new SSTables. Merging
+ compactions can reduce SSTable stack height.</li>
+<li><em>Major compactions</em> combine all existing SSTables together. Major
+ compactions cut SSTable stack height down to one.</li>
+</ul>
+
+<h3 id="rowlevel">Row level</h3>
+
+<ul>
+<li>Each <em>tablet</em> contains data for a contiguous range of <em>rows</em>.</li>
+<li>Each <em>column family</em> belongs to one <em>locality group</em>.</li>
+<li>Each <em>locality group</em> contains one or more <em>column families</em>.</li>
+<li>Each <em>column</em> belongs to a single <em>column family</em>.</li>
+<li>A <em>transaction</em> accesses data in at most one <em>row</em>.</li>
+<li>Each <em>row</em> can contain data in many <em>columns</em>. Different rows can contain
+ different columns.</li>
+</ul>
+
+<h3 id="clientlevel">Client level</h3>
+
+<ul>
+<li>A <em>client</em> accesses many <em>tablet servers</em>. A client will practically
+ never contact the master, or Chubby.</li>
+<li>A <em>client</em> can create arbitrary <em>rows</em> and arbitrary <em>columns</em> in
+ pre-existing <em>column families</em>. Only a Bigtable&#8217;s administrator can
+ change its column families.</li>
+<li>Access control decisions are made at the <em>column family</em> level.</li>
+</ul>
+
+<h3 id="comparisonwithconventionaldatabases">Comparison with conventional databases</h3>
+
+<ul>
+<li>Database ~ Bigtable</li>
+<li>Table ~ Column family</li>
+<li>Primary key ~ Row
+
+<ul>
+<li>In Bigtable, all “tables” (column families) always have the same
+ primary key.</li>
+</ul></li>
+<li>B-tree node ~ Tablet
+
+<ul>
+<li>In a conventional database a B-tree node stores a row range from a
+ single table, whereas a tablet contains row ranges for many
+ column families.</li>
+</ul></li>
+<li>Transaction ~ Atomic row update</li>
+<li>Schema ~ Column family schema</li>
+</ul>
+
+<h2 id="contributions">Contributions</h2>
+
+<p>Bigtable not only introduced an interesting data model (rows, columns,
+column families, timestamps, atomic row updates), it also combined a large
+number of interesting and useful data representation techniques (mutable
+stacks of immutable SSTables, Bloom filters, compressed tablets), some of
+them new. The paper offers a deep set of systems techniques and obviously
+good engineering. The Chubby/master/tablet-server interactions (which we
+didn&#8217;t particularly focus on above) show that single-master systems can
+avoid bottlenecks and scale tremendously.</p>
+
+<div class="footnotes">
+<hr />
+<ol>
+
+<li id="fn:1" class="citation"><span class="citekey" style="display:none">gfs</span><p>“The Google file system,” Sanjay Ghemawat, Howard Gobioff, and Shun-Tak Leung, in <em>Proc. 19th SOSP</em>, 2003 (<a href="http://dl.acm.org/citation.cfm?id=945450">ACM Digital Library</a>, <a href="http://research.google.com/archive/gfs.html">Google Research Publications</a>)</p>
+</li>
+
+<li id="fn:2" class="citation"><span class="citekey" style="display:none">bt</span><p>“Bigtable: A distributed storage system for structured data,” Fay Chang, Jeffrey Dean, Sanjay Ghemawat, Wilson C. Hsieh, Deborah A. Wallach, Mike Burrows, Tushar Chandra, Andrew Fikes, and Robert E. Gruber, in <em>Proc. 7th OSDI</em>, Nov. 2006 (<a href="https://db.usenix.org/events/osdi06/tech/chang/chang_html/">Via USENIX</a>, <a href="http://dl.acm.org/citation.cfm?id=1365816">ACM Digital Library</a>, <a href="http://research.google.com/archive/bigtable.html">Google Research Publications</a>)</p>
+</li>
+
+<li id="fn:3" class="citation"><span class="citekey" style="display:none">lsmtree</span><p>“The log-structured merge-tree (LSM-tree),” Patrick O’Neil,
+Edward Cheng, Dieter Gawlick, and Elizabeth O’Neil, <em>Acta Informatica</em> <strong>33</strong>(4):351–385,
+1996.</p>
+</li>
+
+<li id="fn:4" class="citation"><span class="citekey" style="display:none">readopt</span><p>“Performance tradeoffs in read-optimized databases,” Stavros
+Harizopoulos, Velen Liang, Daniel J. Abadi, and Samuel Madden, in <em>Proc. VLDB ’06</em>, pages 487–498, 2006.</p>
+</li>
+
+<li id="fn:5" class="citation"><span class="citekey" style="display:none">rose</span><p>“Rose: Compressed, log-structured replication,” Russell Sears,
+Mark Callaghan, and Eric Brewer, in <em>Proc. VLDB ’08</em>, August 2008.</p>
+</li>
+
+</ol>
+</div>
+
+</body>
+</html>

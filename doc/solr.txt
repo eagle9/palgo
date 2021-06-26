@@ -1,0 +1,6 @@
+jmeter stress test, send large number of queries
+
+opitimize p95 solr call time to 40-50ms 
+make sure we have high cache hit rate
+support range query
+ml container talks to solr

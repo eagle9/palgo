@@ -1,0 +1,135 @@
+intro 
+me work 
+then let him to intro, most challenging project what's the approach
+
+coding test
+
+system design
+  ml platform
+  scale serialization error
+     code in driver and executor 
+    
+
+/*
+ * Click `Run` to execute the snippet below!
+ */
+
+import java.io.*;
+import java.util.*;
+
+          /*11
+            \
+            22
+           / \
+           33  34 
+           int [] a = {11, 0, 22, 0, 0, 33, 34}
+           */
+           
+class Solution {
+  Node root;
+  
+    static class Node{
+        int val;
+        Node left;
+        Node right;   
+        public Node(int i) {
+            val = i;
+        }
+    
+    }
+  
+    public Node insertArray(int[] array, Node root, int i){
+          if(i<array.length){
+              if(array[i]==0){
+                root = null;
+              }else{
+                Node temp = new Node(array[i]);
+                root = temp;
+            
+                root.left = insertArray(array, root.left, 2*i+1);
+                root.right = insertArray(array, root.right, 2*i+2);
+              }
+          }
+        return root;
+        
+    }
+  
+    public void inOrder(Node root){
+        if(root!=null){
+          inOrder(root.left);
+          System.out.println(root.val);
+          inOrder(root.right);
+        }
+    }
+    public static void leaves(Node root) {
+      if(root == null)
+        return;
+      leaves(root.left);
+      if(root.left == null && root.right == null){
+        System.out.println(root.val);
+      }
+      leaves(root.right);
+    }
+      public static void main(String[] args){
+    
+        Solution t2 = new Solution();
+        int array[] = {11, 0, 22, 0, 0, 33, 34};
+        t2.root = t2.insertArray(array, t2.root, 0);
+        t2.inOrder(t2.root);
+        t2.leaves(t2.root);
+    }
+  
+  //maven
+  //noSuchMethod
+  /* a guava 15 --->> 
+     b.guava 22
+     */
+  }
+
+mvn dependency analyze
+    mvn dependency tree
+
+//      Node root = youFunc(a)
+//     AsserTrue(root.left == null)
+Elastic Search
+
+100 Boxes : 20 GB Ram per box
+
+8 GB max index - 5 shards / 3 Default
+
+smaller index : 200 mb - 2 shards / Default
+
+Replicas : Fault Tolerance
+Shards : Help Reads
+
+200 mb collection: ~ 1-2 shards x 3 replicas - 10000 request seconds
+
+30,000 theory 
+
+30 Replicas 
+
+1 Box : 
+Writes are at less frequency
+
+
+Shard Size should be around a 1GB
+
+If aggregation is needed. 
+
+How would we Querying : 
+- Depends on queries. 
+
+
+- Redefine heart beat mechanism every x seconds
+- Least busiest nodes
+
+
+Disaster Recovery
+
+- Backups
+- Replicas
+- If you have kafka 
+- Rigourous Auditing Mechanisms
+- Metrics
+-   90 percent busy
+- 

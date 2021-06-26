@@ -1,0 +1,36 @@
+decode string,expression expand, --------------1, use stack 
+implement queue by two stacks, -------------1
+implement stack by two queues, ----------------1
+flatten nested list iterator, --------------1
+binary search tree iterator, ---------------1, use stack
+zigzag iterator, ----------------,1
+zigzag iterator ii
+flatten 2d vector 
+min stack, --------------, 1
+https://zhanghuimeng.github.io/tags/alg-Monotonic-Stack/   ---- monotonic stack
+largest rectangle in histogram, ------0.5, no deep understanding, monotonic stack, 
+maximal rectangle, -------------0.5, basketwang idea with stack, got idea, leet84 maxmimal rect in histogram follow up
+trapping rain water, ----------, 1, monotonic stack use, 1
+daily temperatures,             ---------------0.9, monotonic stack
+online stock pan,           -------------------0.9, monotonic stack
+max tree, lint,    ------------------
+rehashing, --------------1, (key+capacipty)% capacity
+LRU cache, --------------0.9, use both hash and doubly linked list
+LFU cache, --------------0.8, CacheNode, hash, list
+subarray sum, --------------, 0.9, get details right 
+copy list with random pointer, ---------------1
+anagrams, lint, --------------1
+longest consecutive sequence, -----------------???????
+heapify, ---------------0.9, read and understand, to redo with memory of idea
+ugly number ii, -------------0.9, upon hint and debugging
+top k largest numbers, --------------1
+top k largest number ii, lint, ----------1
+high five, lint, ------------1
+k closest points, -------------1, sorting done, heap??
+merge k sorted lists, ------------------1
+merge k sorted arrays, lint, -------------0.8
+merge sorted arrays, 2 arrays, ------------1
+data stream median, -------------0.5
+kth smallest number in sorted matrix
+building outline
+top k frequent words, ------------1

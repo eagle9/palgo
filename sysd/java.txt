@@ -1,0 +1,36 @@
+
+from workday web site
+  core java effective
+  design patterns, 
+  OOP
+  high throughput, real time
+  unit test, mockito, selenium for web app auto testing
+  distributed concurrent system, lock free algorithm, high availability
+  cap threrum, low memory footprint, 
+  java logging
+    stackify has a blog on java logging, apache log4j(earliest framework, discontinued, still used in legacy), logback, log4j2(new and most advanced, performance)
+    logging vs println: loggin message in levels, how much logging can be controlled at runtime via properties file, println only to console or redirect, compile and deploytime
+  scrum, water fall, extreme programming, continuious delivery
+  how to roll back deploy, lauch
+  how to debug, step over, step into, logging
+  k8s, docker, restful api, api gateway
+  experience with AWS
+  security
+  dev lifecyle and agile
+  linux server side softwar dev, daemon
+=================
+nohup command, nohup java ...... 
+/etc/init.d/my_daemon.sh
+configure to start on boot or restart upon crashes
+
+  REST api, gRPC, graphQL
+  stability and performance troubleshooting
+=================
+  aws ec2 you can ssh to it, so just a linux in the cloud
+    create free account,  download pem file 
+
+  GO lang, concurrent
+  automation tools ansile, puppet, chef
+  kafka, rabbitmq
+  web ui, js, react, css, typescript
+  java app server: tomcat(popular support most java EE features), jetty(small footprint), wildfly(jboss) 

@@ -1,0 +1,91 @@
+process is a program in execution 
+it has it program counters, registers, stack , heap, data etc. 
+process has different states, created, waiting, terminated, ready, idle 
+context switch? what it is. the cpu moving a  process from ready to active
+
+
+fork 
+for new child process, the return is 0
+for the parent, the return is the pid of the child process. 
+after fork, one proces typically uses the exec system call to replace the process's memory space with a new program. 
+the parent cann issue a wait() system call to move itself off the ready queue until termination of the child. 
+
+the process creation of linux
+init  bash, sshd, kthread, etc. 
+
+interprocess communication
+IPC two models: shared memory and message passing
+message passing for smaller amounts of data
+example --- chrome web browser
+3 types of processes: browser, renderers, and plug-ins. 
+browser process only one
+renderer processes --- rendering web pagesa new renderer process is created for each website opened in a new tab. serveral renderer processes may be active at the same time
+plug-in flash or quicktime, these processes enables the plugin to communicate with renderer processes and browser process. 
+
+   the adv of multiprocess design of chrome that enables browsing multiple websites in isolation from one another. if one website crashes, only its renderer process is affacted. all other processes remain unhardmed. renderer processes run in sandbox, which restricts access to disk and network, minimizing the effects of any security threats. 
+
+shared memory is faster 
+systems with several processing cores ---> message passing provides better performance that shared memory.shared memory suffers from cache coherency issues. shared data migrate among the several caches. 
+
+normally, os prevent one process from accessing another process's memory. the processes are responsbile for the shared access of the memory. 
+
+message passing
+send and receive primitive
+two types: 
+  blocking or nonblocking, wait
+  synchronous asynchronous, no wait
+
+buffering
+zero capcity -- sender bloack until recipient rec the message
+bounded capacity -- sender block when the buffer is full. 
+
+socket TCP and UDP
+pipe
+
+    
+
+thread -- basic unit of cpu utilization. it comprises a thread id, program counter, register set, and a stack. it shares with other threads inside a process code section, data section and other os resource. 
+
+proces-creation was time consuming and resource intensive. it is more efficient to use one process that contains multiple threads. 
+example web server
+a thread that listens for client requests
+a new thread to service the request 
+
+another example, most os kernels are now multithreaded, each thread performs a specific task, such as managing devices, manageing memory, or interrupt handling
+
+benefits of multithreading
+-responsiveness
+-resource sharing: processes sharing resource through shared memory and msg passing.these methods are explicitly arranged by the programmer. however, threas share memory and resource of the process by default. the benefit of sharing code and data is that we can develop app that has different threads of activity within the same address space. 
+-economy: create and context switch threads is more efficient. numbers: creating a process is about 30 times more slower, context-switching is about 5 times slower
+-scalability: threads run in parallel on different processing cores. 
+
+multicore programming
+single core ---> interleaved
+multi core --> assign a separate thread to each core
+recent cpu core, single core can support multiple threads
+parallelism -- more than one task simultaneouslyj
+challenges 
+===
+pthread_create(tid, attr, runner, agv)
+pthread_join(tid,NULL)
+void *runner(void *param) {
+  int i, upper = atoi(param);
+  sum = 0;
+  for (i=1; i <= upper, i++) 
+    sum += i;
+  pthread_exit(0);
+}
+java thread
+public interface Runnable {
+  public abstract void run();
+}
+java no notion of global data. 
+pass a reference from one class to another class
+thread pools in web server design
+create a number of threads at process startup and place them into a pool, where they sit and wait for work. 
+when the server receives a req, it awakens a thread from the pool, and passes it the request. once the thread completes its service, it returns to the pool and awaits for more work. if the the pool contains no available thread, the server waits until one becomes free. 
+
+advantage
+-- servicing a request with existing thread is faster
+--separating the task to be performed from the mechanics of creating the task allows us to tuse different strategies for running the task
+

@@ -1,0 +1,22 @@
+59. Spiral Matrix II
+Medium
+
+Given a positive integer n, generate a square matrix filled with elements from 1 to n^2 in spiral order.
+
+Example:
+Input: 3
+Output:
+[
+ [ 1, 2, 3 ],
+ [ 8, 9, 4 ],
+ [ 7, 6, 5 ]
+]
+
+0 ~ 6 months6 months ~ 1 year1 year ~ 2 years
+
+Companies: Apple | 2 Google | 2
+
+Similar:
+Spiral Matrix Medium
+
+Topic: Array

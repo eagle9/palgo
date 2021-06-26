@@ -1,0 +1,9 @@
+=====minmax=========
+292	Nim Game,Easy   ----------------1, dp, recur, and derive simple pattern	
+294	Flip Game II,Medium ----------------1, dp, cost with longer array to shorter array	
+375	Guess Number Higher or Lower,easy -----------1, 
+464	Can I Win, Medium   ---------0.5,  recur minimax, cutting = ?? 
+486	Predict the Winner,  --------,1, g4, worth, cutting angle think of netscore 	
+843	Guess the Word, hard,  ----1, cutting, use feedback and shrink the list
+877	Stone Game, Medium , ----0.3, never yet,  goog2, to do, hua vid
+913	Cat and Mouse, Hard , -----0.1, 4mon ago,very hard,  bfs and minmax, goog4	

@@ -1,0 +1,10 @@
+predict problem lines from reactive quality check tool based on rg eco collect data stream
+
+long short term memory model
+https://towardsdatascience.com/the-fall-of-rnn-lstm-2d1594c74ce0
+
+
+
+congestion detection and throughput guidance
+https://www.cs.umd.edu/users/suman/docs/711s97/node1.html
+

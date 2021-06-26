@@ -1,0 +1,11 @@
+hyperloglog
+https://www.cnblogs.com/54chensongxia/p/13803465.html
+approximate distinct count, based on bernouli process, bucket and bits 
+https://databricks.com/blog/2015/10/13/interactive-audience-analytics-with-apache-spark-and-hyperloglog.html
+small space precision conifurable 2%, use clever math and hash 
+
+bloom filter
+  use multiple hash function to test if a key is NOT a member,  if is a member, it's approximate
+
+
+

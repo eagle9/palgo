@@ -1,0 +1,29 @@
+Common components in an ML platform
+----
+Data management, in dev and at scoring time
+  data transformation, quality monitering, data versioning
+  feature stores
+     delta lake, hive, feast, cstar lookup, aggregates, etc. 
+  
+Model management
+  packaging, review, quality assurance, versioning
+    mlflow, pytorch hub, tensorflow hub, modelDb
+  
+Code and deployment management
+  reproducibility, deployment, monitoring, experimentation
+   mlflow, sagemaker
+
+put model into production
+https://stackoverflow.blog/2020/10/12/how-to-put-machine-learning-models-into-production/
+
+sagemaker feature store 
+https://aws.amazon.com/blogs/machine-learning/using-streaming-ingestion-with-amazon-sagemaker-feature-store-to-make-ml-backed-decisions-in-near-real-time/
+  feature group, online and offline, aggregates, 
+
+https://www.kdnuggets.com/2020/12/feature-store-vs-data-warehouse.html
+feature store for ML, low latency feature vector
+
+end to end, summary of many industrial ML platforms
+https://www.kdnuggets.com/2020/07/tour-end-to-end-machine-learning-platforms.html
+
+

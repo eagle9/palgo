@@ -1,0 +1,20 @@
+/*
+
+May 17 2020
+takes a little time to understand the problem details
+also details to get neighbors function, but you can implement it later
+idea forming:
+
+i =1 to N*N
+each step at row, col and seq no x
+for x, get next row col pairs
+can reach:  b[row][col] == -1? reach square x+i
+            !=-1,  reach square b[][]
+            
+            
+think of square as the node
+each squre can reach a bunch of other squares,  total N*N squares
+now find the shortest distance from square 1 to N*N
+bfs natural solution 
+
+*/

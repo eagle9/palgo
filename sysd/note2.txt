@@ -1,0 +1,27 @@
+data intensive  book
+data model, relational, document, graph 
+storage and retrieval
+index helps queries, but you can do more when write 
+column oriented
+row oriented, store all values in a row together, fast read for each row
+similarly, column oriented, store all values in each column together(a single file), fast read for a column for all rows. 
+column: row1 value, row2 value, row3 value, ...
+column compression makes loading columns from disk more efficient
+
+replication
+leader and follower, clients to leader only, client no access to followers
+synchronous, all follower synchronous, once one fails, entire system halts, leader waiting for message
+
+leader-based replication is configured to be completely asynchronous. if leader fails and not recoverable,
+any writes that have not yet been replicated to followers are lost.  con: fully asynchronous conf --> leader can continue processing writes, even all of its followers fallen behind
+
+weaken durability, but allow followers to fail, so asynchronous replication is widely used. trade off here. 
+synchronous, only one follower is synchronous with leader, other followers asynchronous
+
+chapter 9
+=======
+trade off --->
+stronger consistency models don’t come for free: systems with stronger guarantees may
+have worse performance or be less fault-tolerant than systems with weaker guarantees.
+stonger guarantees --> easier to use correctly
+distributed consistency is about coordinating the state of replicas in the face of delays and faults

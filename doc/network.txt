@@ -1,0 +1,7 @@
+http 1.1 and 2, 2 header compressed
+method:
+  get post put delete options patch ...
+header and message body
+response header status code
+   1xx --- informational response, 2xxx -- success, 3xx -- redirection, 4xx-- client errors,  5xx- server errors
+use header to debug, a/b testing etc.

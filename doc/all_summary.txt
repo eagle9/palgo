@@ -1,0 +1,10 @@
+network
+ds algo
+os
+compiler
+design pattern
+git
+backend, db
+
+quick overview and cover many points
+ihttps://hit-alibaba.github.io/interview/

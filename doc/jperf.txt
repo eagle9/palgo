@@ -1,0 +1,64 @@
+Java Performance: The Definite Guide
+
+C3. Java performance tool box
+
+c4. Working with the JIT compiler
+
+c5. Introduction to garbage collection
+ read this chapter first pass. It makes sense, good read. 4 GC, all for heap. 
+serial, throughput, cms, g1
+cms and g1 are parallel, g1 partition heap and works better with larger heap size.
+heap divided into generations
+permgen jdk7 metaspace jdk8 store class metadata
+-XX:Xms -XX:Xmx, initial size and max size. GC will find the proper heap size
+max usually 1/4 of the physical RAM size
+start your program and run to its full capacity (all data and max connections), use jconsole and run a full GC
+
+GC pause (stop the world), application threads will be paused
+permance penalty, with simplified memory management
+GC pause can be tunned
+minor GC cyle, finding and marking unused memory inside the heap
+full GC cyle, heap unused memory removal and compaction
+
+c6. Garbage collection algorithms
+c7. Heap memory best practice
+ you can get heap histogram of all objects, count objects by class. 
+ kind of take memory management into your own hands rather than let GC do the best work
+ strike a balance, reuse some objects, keep the size of this purpose small
+ trade off how many objects to create
+ reuse objects when creation of such an object is expensive
+ object constant pool,  thread pool, String interning
+ threadlocal variable
+ weak, soft, phanton references
+ After reading this chapter, I got some new learning about Java, which makes valueable sense. Some items are not fully understood yet, but it is good for first pass. 
+
+C8. Native memory best practices
+  Just summary fist
+  use large page when heap size is large
+  track JVM's entire memory footprint(including heap as a big part)
+  IO buffer, thread stacks, code cache, etc. 
+  turn on JVM native memory tracking and display native memory usage 
+  oop (ordinary object pointer) compressed, not quite understood, get a little bit first pass
+C9. Threading and Synchronization Performanc
+  Relative high priority
+
+C10. Java Enterprise Edition Performance
+
+C11. Database Performance Best Practices
+   Relative high priority
+  
+C12. Java SE API Tips
+  High priority
+  Buffered is good for IO, by block rather than a single byte
+  Random, SecureRandom with entropy(good and bad), ThreadLocalRandom
+  JNI, calls from Java to C is slow, from C to Java is okay. Now Java is as fast as C. No need to cross JNI boundary for performance gains. But sometimes functions already implemented in C and you don't want to re-invent the wheel. Pin object will block GC.  What is pin. Passing string and array parameters. 
+  String, concatenation in one line, compiler convert to StringBuilder. append toString
+  String encoding and decoding are slow.  Use buffer. 
+  Logging --- 3 principles,  enable logging for a small set of classes. 
+  Java Collections API
+  AggressiveOpts
+  Lambdas and Anonymous Classes
+  Stream and Filter Performance
+ 
+  
+
