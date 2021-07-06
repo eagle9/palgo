@@ -65,5 +65,11 @@ L --  base class can be replaced with derived class
 I -- lean interface, not interface that contracts many methods
 
 D ---
+  A. High-level modules should not depend upon low-level modules. Both should depend upon abstractions.
+       instead define an interface what you(higher) need
+  B. Abstractions should not depend upon details. Details should depend upon abstractions.
+    http://aspiringcraftsman.com/2008/12/28/examining-dependency-inversion/
+
+https://www.jianshu.com/p/59be7f9fe486
 
 

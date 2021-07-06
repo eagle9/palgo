@@ -1,24 +1,24 @@
 rank	#	Title	Acceptance
 1	1249	Minimum Remove to Make Valid Parentheses	60.90% ----------------0.7,  
-2	953	Verifying an Alien Dictionary	55.00%
+2	953	Verifying an Alien Dictionary	55.00%              ---------------1, String
 3	973	K Closest Points to Origin	62.00%, ----1, use composite and sorting
 4	680	Valid Palindrome II	36.00%
 5	301	Remove Invalid Parentheses	42.30% ----1, dfs 
 6	273	Integer to English Words	26.30%
 7	124	Binary Tree Maximum Path Sum	32.70% ----1,  recur helper track 1 global and return a local helping value
 8	67	Add Binary	43.10%                 -----1, similar to add String, details with loop
-9	238	Product of Array Except Self	59.10%
+9	238	Product of Array Except Self	59.10%           -----------1, prefix sum/product
 10	415	Add Strings	46.60%                  ------1, loop case study and char conversion 
 11	269	Alien Dictionary	33.50%          -----1, topo sorting
-12	199	Binary Tree Right Side View	52.50%
-13	438	Find All Anagrams in a String	41.30%
+12	199	Binary Tree Right Side View	52.50%           ----------1, bfs, shaull all own
+13	438	Find All Anagrams in a String	41.30%             ---------1, sliding window simple version, fixed size window
 14	23	Merge k Sorted Lists	39.00%          -----1,  heap
-15	278	First Bad Version	33.80%
+15	278	First Bad Version	33.80%          -----1, binary search, but left+1 may overflow integer
 16	297	Serialize and Deserialize Binary Tree	45.90%, ----1, reason from example, simple bfs 
 17	125	Valid Palindrome	34.90%
 18	986	Interval List Intersections	66.00%             -----1, 2p study example, pick 1 clean approach, and generalize
 19	211	Add and Search Word - Data structure design	35.10%
-20	523	Continuous Subarray Sum	24.40%
+20	523	Continuous Subarray Sum	24.40%                     -----------1, hash
 21	311	Sparse Matrix Multiplication	60.20%
 22	560	Subarray Sum Equals K	43.80%
 23	349	Intersection of Two Arrays	60.60%  ------------1, convert to set
@@ -26,38 +26,38 @@ rank	#	Title	Acceptance
 25	340	Longest Substring with At Most K Distinct Characters	43.20%
 26	139	Word Break	38.90%                  -------------1, dp, recur memo
 27	158	Read N Characters Given Read4 II - Call multiple times	31.70%
-28	543	Diameter of Binary Tree	48.00%
+28	543	Diameter of Binary Tree	48.00%         -----1, dfs, height for each node, at the same time track the max diameter(left height + right height)
 29	76	Minimum Window Substring	33.80% ---------- 0.9, sliding window
 30	689	Maximum Sum of 3 Non-Overlapping Subarrays	45.50%
-31	282	Expression Add Operators	35.00%
+31	282	Expression Add Operators	35.00%            ------------0.5, dfs backtracking, pretty hard
 32	426	Convert Binary Search Tree to Sorted Doubly Linked List	57.90%
-33	173	Binary Search Tree Iterator	54.40%
+33	173	Binary Search Tree Iterator	54.40%                ----------------1, use datastructure, stack
 34	56	Merge Intervals	38.40%                  ----------------1, sorting with lamda, loop, update prev
-35	270	Closest Binary Search Tree Value	46.80%
+35	270	Closest Binary Search Tree Value	46.80%  ---------1, binary search
 36	938	Range Sum of BST	80.00%
-37	140	Word Break II	30.40%
-38	721	Accounts Merge	46.80%
-39	65	Valid Number	14.90%
-40	398	Random Pick Index	54.10%
-41	215	Kth Largest Element in an Array	53.40%
-42	621	Task Scheduler	47.90%
-43	767	Reorganize String	47.20%
-44	636	Exclusive Time of Functions	51.10%
-45	88	Merge Sorted Array	38.60%
-46	249	Group Shifted Strings	52.40%
-47	236	Lowest Common Ancestor of a Binary Tree	43.60%
-48	785	Is Graph Bipartite?	46.30%
+37	140	Word Break II	30.40%             ----------------1, recur with memo
+38	721	Accounts Merge	46.80%            -----------------1, 
+39	65	Valid Number	14.90%     ---------------0.2, string only, details,
+40	398	Random Pick Index	54.10%,     ------- 1, reservoir sampling, linked list random node
+41	215	Kth Largest Element in an Array	53.40%   medium ----1, use heap, 
+42	621	Task Scheduler	47.90%                 ------1, 
+43	767	Reorganize String	47.20%          -------1, maxheap, similar to task scheduler
+44	636	Exclusive Time of Functions	51.10%   ---------1, use stack to store info, use example to figure details
+45	88	Merge Sorted Array	38.60%    ----------1,  clean design first, a new array with k in addition to i and j, from tail, that's smart
+46	249	Group Shifted Strings	52.40%       -----------1,  char diff, hash
+47	236	Lowest Common Ancestor of a Binary Tree	43.60%   ----1,  dfs
+48	785	Is Graph Bipartite?	46.30%     ----------0.9, bfs, dfs, union find, coloring with 2 colors
 49	286	Walls and Gates	53.10%
-50	658	Find K Closest Elements	40.00%
-51	670	Maximum Swap	42.30%
-52	1060	Missing Element in Sorted Array	54.50%
-53	42	Trapping Rain Water	47.50%
-54	29	Divide Two Integers	16.20%
-55	498	Diagonal Traverse	47.10%
+50	658	Find K Closest Elements	40.00%     ------1, binary search with clever condition to push left or right
+51	670	Maximum Swap	42.30%     ----------1, high index smaller digit, low index larger digit
+52	1060	Missing Element in Sorted Array	54.50%         -----------------1, binary search
+53	42	Trapping Rain Water	47.50%                 -----1, monotonic stack to store index
+54	29	Divide Two Integers	16.20%            ---------------1, bit shift down, edge case, sign dealing
+55	498	Diagonal Traverse	47.10%             -------------1, case study, idea to code, clean
 56	1026	Maximum Difference Between Node and Ancestor	64.00%
 57	824	Goat Latin	62.30%
 58	987	Vertical Order Traversal of a Binary Tree	34.50%
-59	528	Random Pick with Weight	43.60%
+59	528	Random Pick with Weight	43.60%           ------------1,  prefix sum, random.nextInt(...), binary search
 60	314	Binary Tree Vertical Order Traversal	43.80%
 61	50	Pow(x, n)	29.30%
 62	1197	Minimum Knight Moves	34.60%
@@ -231,7 +231,7 @@ rank	#	Title	Acceptance
 230	117	Populating Next Right Pointers in Each Node II	37.70%
 231	146	LRU Cache	31.70%
 232	111	Minimum Depth of Binary Tree	36.90%
-233	41	First Missing Positive	31.20%
+233	41	First Missing Positive	31.20%          --------------, array number value and index, specific condition get clever, linear time and constant space
 234	148	Sort List	40.40%
 235	105	Construct Binary Tree from Preorder and Inorder Traversal	46.80%
 236	53	Maximum Subarray	45.90%
@@ -249,8 +249,8 @@ rank	#	Title	Acceptance
 248	678	Valid Parenthesis String	30.80%
 249	346	Moving Average from Data Stream	69.60%
 250	60	Permutation Sequence	35.70%
-251	235	Lowest Common Ancestor of a Binary Search Tree	48.70%
-252	62	Unique Paths	52.00%
+251	235	Lowest Common Ancestor of a Binary Search Tree	48.70%    ----------1, recur 
+k52	62	Unique Paths	52.00%
 253	997	Find the Town Judge	50.10%
 254	26	Remove Duplicates from Sorted Array	44.00%
 255	191	Number of 1 Bits	47.90%

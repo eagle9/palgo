@@ -3,8 +3,10 @@
 idea forming may 2020
 0.    1.     2
 - | - - - | - -
-
-random number from 0-6, if less 1, return index 0,  
+w = {1, 3, 2}
+sum = {1, 4, 6}
+random number from 0-5, if < 1, return index 0, 
+   or first index that sum[index] > r
 else if r< 4, return 1,
 else return 2
 
@@ -18,7 +20,6 @@ class Solution {
     int [] sum;
     Random rand;
     public Solution(int[] w) {
-        
         sum = new int[w.length];
         sum[0] = w[0]; 
         for (int i = 1; i < w.length; ++i) {
@@ -30,6 +31,7 @@ class Solution {
     //use binary search to find the first index whose value > target
     //  while num[mid] > target, keep going to lower half: right = mid
     int pickIndex() {
+        //The nextInt(int n) is used to get a random number between 0(inclusive) and the number passed in this argument(n), exclusive.
         int target = rand.nextInt(sum[sum.length-1]);
         int left = 0, right = sum.length - 1;
         //first >  

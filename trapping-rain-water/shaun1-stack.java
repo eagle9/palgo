@@ -10,12 +10,11 @@ class Solution {
     public int trap(int[] height) {
         Stack<Integer> st = new Stack<>();
         int i = 0, res = 0;
-        for (; i < height.length;) {
-            //if (st.empty() || height[i] < st.top()) {
+        while(i < height.length) {
             if (st.isEmpty() || height[i] < height[st.peek()]) {
                 st.push(i++);
             }else {
-                // hi >= top
+                // height at i >= top index's height
                 int iBottom = st.pop();
                 if (!st.isEmpty()) {
                     int iLeft = st.peek(); //st.pop();
