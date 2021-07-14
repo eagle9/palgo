@@ -13,9 +13,8 @@ class Solution {
         int res = 0;
         for (int i = 0; i < nums.length; ++i) {
             prefixSum += nums[i];
-            
-        
 
+            //for prefixSum at i, what's the count for prefixSum - k? 
             if (mSum.containsKey(prefixSum -k )) {
                 res += mSum.get(prefixSum - k);
             }

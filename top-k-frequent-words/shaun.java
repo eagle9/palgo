@@ -1,41 +1,57 @@
+
 /*
 lt hash table and heap
 shaun understood, feb 25 2019
-Runtime: 9 ms, faster than 99.92% of Java online submissions for Top K Frequent Words.
-Memory Usage: 40.2 MB, less than 53.26% of Java online submissions for Top K Frequent Words.
+same solution to top k frequent elements
+Runtime: 16 ms, faster than 69.67% of Java online submissions for Top K Frequent Elements.
+Memory Usage: 42.6 MB, less than 12.23% of Java online submissions for Top K Frequent Elements.
 */
 class Solution {
-    public List<String> topKFrequent(String[] words, int k) {
-        Map<String, Integer> count = new HashMap();
-        for (String word: words) {
-            count.put(word, count.getOrDefault(word, 0) + 1);
+    public int [] topKFrequent(int[] nums, int k) {
+        Map<Integer, Integer> count = new HashMap();
+        for (int i: nums) {
+            count.put(i, count.getOrDefault(i, 0) + 1);
         }
         
-        Comparator<String> cmp = new Comparator<String>() {
-            public int compare(String a, String b) {
+        /*Comparator<Integer> cmp = new Comparator<Integer>() {
+            public int compare(Integer a, Integer b) {
                 int count1 = count.getOrDefault(a,0);
                 int count2 = count.getOrDefault(b,0);
                 //smaller count at top
                 if (count1 != count2) return count1 - count2;
-                //same count, greater word at top, z word will be removed
+                //same count, greater number at top, z word will be removed
                 return b.compareTo(a);
                 
             }
-        };
-        PriorityQueue<String> minHeap = new PriorityQueue<String>(cmp);
+        };*/
         
-        /*PriorityQueue<String> heap = new PriorityQueue<String>(
-                (w1, w2) -> count.get(w1).equals(count.get(w2)) ?
-                w2.compareTo(w1) : count.get(w1) - count.get(w2) );
-        */
-        for (String word: count.keySet()) {
-            minHeap.offer(word);
+        //min at the top, larger stays in the heap
+        //comparator by count
+        PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>((a,b) ->{
+            int count1 = count.getOrDefault(a,0);
+            int count2 = count.getOrDefault(b,0);
+            //smaller count at top, same order as a b
+            if (count1 != count2) return count1 - count2;
+                //same count, greater number at top, z word will be removed
+            return b.compareTo(a);
+        });
+       
+	   	//use minHeap, only keep <=k elements, min elements will be off the top	
+        for (Integer i: count.keySet()) {
+            minHeap.offer(i);
+            //keep the heap size at <= k
             if (minHeap.size() > k) minHeap.poll();
         }
-
-        List<String> ans = new ArrayList();
-        while (!minHeap.isEmpty()) ans.add(minHeap.poll());
-        Collections.reverse(ans);
+        
+        int len = minHeap.size();
+        int [] ans = new int[len];
+        int i = len -1;
+        while (!minHeap.isEmpty()) {
+            ans[i--] = minHeap.poll();
+        }
+        
         return ans;
     }
 }
+
+

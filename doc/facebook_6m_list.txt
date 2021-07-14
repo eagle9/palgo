@@ -19,8 +19,8 @@ rank	#	Title	Acceptance
 18	986	Interval List Intersections	66.00%             -----1, 2p study example, pick 1 clean approach, and generalize
 19	211	Add and Search Word - Data structure design	35.10%
 20	523	Continuous Subarray Sum	24.40%                     -----------1, hash
-21	311	Sparse Matrix Multiplication	60.20%
-22	560	Subarray Sum Equals K	43.80%
+21	311	Sparse Matrix Multiplication	60.20%         -----------1, for each row of A, record non zero col&value to a shorter list
+22	560	Subarray Sum Equals K	43.80%                  ----------1, prefix sum and hashtable
 23	349	Intersection of Two Arrays	60.60%  ------------1, convert to set
 24	31	Next Permutation	32.00%          --------1,  study example and generalize, loop
 25	340	Longest Substring with At Most K Distinct Characters	43.20%
@@ -71,16 +71,16 @@ rank	#	Title	Acceptance
 70	339	Nested List Weight Sum	72.40%
 71	33	Search in Rotated Sorted Array	34.20%
 72	43	Multiply Strings	33.10%
-73	133	Clone Graph	32.60%
+73	133	Clone Graph	32.60%                              --------------1, bfs, all nodes, for each node, and it nei, create edges
 74	936	Stamping The Sequence	38.50%
-75	98	Validate Binary Search Tree	27.30%
+75	98	Validate Binary Search Tree	27.30%          -----------------1,  recur naturally, but use member var
 76	34	Find First and Last Position of Element in Sorted Array	35.40%
 77	839	Similar String Groups	37.80%
 78	227	Basic Calculator II	36.10%
 79	246	Strobogrammatic Number	44.40%
 80	253	Meeting Rooms II	45.10%
 81	380	Insert Delete GetRandom O(1)	45.90%
-82	143	Reorder List	35.40%
+82	143	Reorder List	35.40%                ----------------1, reverse second half, draw pic
 83	1004	Max Consecutive Ones III	57.30%
 84	865	Smallest Subtree with all the Deepest Nodes	60.30%
 85	452	Minimum Number of Arrows to Burst Balloons	48.70%
@@ -91,8 +91,8 @@ rank	#	Title	Acceptance
 90	616	Add Bold Tag in String	41.80%
 91	825	Friends Of Appropriate Ages	41.70%
 92	1245	Tree Diameter	57.90%
-93	958	Check Completeness of a Binary Tree	51.40%
-94	692	Top K Frequent Words	50.10%
+93	958	Check Completeness of a Binary Tree	51.40%, -----------1, bfs
+94	692	Top K Frequent Words	50.10%   ------------------1, heap
 95	480	Sliding Window Median	36.00%
 96	121	Best Time to Buy and Sell Stock	49.80%
 97	138	Copy List with Random Pointer	34.00%,     ---------1, copy nodes first using map
