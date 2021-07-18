@@ -63,12 +63,12 @@ rank	#	Title	Acceptance
 62	1197	Minimum Knight Moves	34.60%
 63	247	Strobogrammatic Number II	46.90%
 64	896	Monotonic Array	57.10%
-65	71	Simplify Path	31.60%
+65	71	Simplify Path	31.60%         ----------------------1, stack
 66	863	All Nodes Distance K in Binary Tree	53.60%
 67	1123	Lowest Common Ancestor of Deepest Leaves	66.10%
 68	419	Battleships in a Board	68.80%
 69	304	Range Sum Query 2D - Immutable	37.00%
-70	339	Nested List Weight Sum	72.40%
+70	339	Nested List Weight Sum	72.40%                     -------------1, dfs recur helper(list, depth), recur function design
 71	33	Search in Rotated Sorted Array	34.20%
 72	43	Multiply Strings	33.10%
 73	133	Clone Graph	32.60%                              --------------1, bfs, all nodes, for each node, and it nei, create edges

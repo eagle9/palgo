@@ -1,1 +1,8 @@
 https://data-flair.training/blogs/zookeeper-barriers/
+
+etcd is used in kubernetes, for distributed kv, lock and cordination
+https://medium.com/@felipedutratine/distributed-lock-with-etcd-in-go-d21e7df145bc
+
+https://dzone.com/articles/apache-zookeeper-vs-etcd3#:~:text=In%20contrast%20to%20Apache%20ZooKeeper,to%20resolve%20drawbacks%20in%20ZooKeeper.&text=etcd%20uses%20the%20RAFT%20consensus,a%20distributed%20key%2Dvalue%20store.
+
+https://dzone.com/articles/apache-zookeeper-vs-etcd3

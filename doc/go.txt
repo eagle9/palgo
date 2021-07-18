@@ -15,3 +15,6 @@ gc (not in golang spec)
 be simple is complicated
 
 pick up key features from java apparently
+
+goroutine vs thread
+https://www.geeksforgeeks.org/golang-goroutine-vs-thread/

@@ -1,0 +1,12 @@
+jax.rs  --- jarkata restful web services
+  java rest api 
+jersey
+
+gRPC uses Protocol Buffer by default to serialize payload data. REST mainly relies on JSON or XML formats to send and receive data. gRPC has native code generation features. Developers must use a third-party tool like Swagger or Postman to produce code for API requests
+
+https://blog.dreamfactory.com/grpc-vs-rest-how-does-grpc-compare-with-traditional-rest-apis/
+
+https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/
+
+schema store
+cassandra, rest jax.rs, quirybuilder, guice module
