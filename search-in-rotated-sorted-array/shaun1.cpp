@@ -1,5 +1,11 @@
-//jz idea and code
-class Solution1 {
+/*
+ /
+/
+   /
+  /
+left pivot right
+*/
+class Solution {
 public:
     int search(vector<int>& nums, int target) {
         if (nums.empty()) return -1;
@@ -10,14 +16,14 @@ public:
             if (nums[mid] == target) {
                 return mid;
             }
-            if (nums[left] < nums[mid]) {
+            if (nums[left] < nums[mid]) { //mid in first half sorted from left to pivot
                 // situation 1, red line
                 if (nums[left] <= target && target <= nums[mid]) {
                     right = mid;
                 } else {
                     left = mid;
                 }
-            } else {
+            } else { // mid in second half from pivot to right
                 // situation 2, green line
                 if (nums[mid] <= target && target <= nums[right]) {
                     left = mid;
@@ -27,6 +33,7 @@ public:
             }
         } // while
         
+        //left + 1 = right
         if (nums[left] == target) {
             return left;
         }
@@ -37,8 +44,7 @@ public:
     }
 };
 
-//shaun code from jz idea, runtime 4ms, faster than 100%
-class Solution {
+class Solution2 {
 public:
     int search(vector<int>& nums, int target) {
         if (nums.empty()) return -1;
@@ -63,8 +69,7 @@ public:
 };
 
 //shaun own idea and code, wrong answer first several subs
-//not clear about mid position, which is key, all possibilities of mid position
-class Solution000 {
+class Solution3 {
 public:
     int search(vector<int>& nums, int target) {
         if (nums.empty()) return -1;
@@ -97,3 +102,4 @@ public:
         return -1;
     }
 };
+

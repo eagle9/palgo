@@ -27,3 +27,11 @@ end to end, summary of many industrial ML platforms
 https://www.kdnuggets.com/2020/07/tour-end-to-end-machine-learning-platforms.html
 
 
+recommender
+https://www.analyticssteps.com/blogs/what-are-recommendation-systems-machine-learning
+
+youtube recommender
+https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf
+
+neural network types 
+https://zhuanlan.zhihu.com/p/159305118
