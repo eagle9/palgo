@@ -35,3 +35,6 @@ https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/
 
 neural network types 
 https://zhuanlan.zhihu.com/p/159305118
+
+Federated learning
+https://medium.com/@ODSC/what-is-federated-learning-99c7fc9bc4f5

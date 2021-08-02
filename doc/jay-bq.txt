@@ -2,8 +2,7 @@ team size
 all se, or ML e, ds, tech lead
 project coming from ? EM or PM
   scrum master, agile coach, assign tasks
-  using jira?  to track project
-
+  using jira?  to track project also commit message refer to jira ticket
 
 how much freedom you have? 
   proactive, company goal, team goal, propose
@@ -15,3 +14,12 @@ collaboration
   branch merge
   code review
   cross functional team
+
+talk about
+biggest challenge and achievement;
+why do you leave
+what kind of working environment that suits you the best
+how to help teammates
+don't talk about yourself too much
+
+

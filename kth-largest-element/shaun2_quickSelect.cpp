@@ -14,14 +14,17 @@ public:
         return quickSelect(nums, size-k, 0, size-1);
     }
     
-    //define recursion: return  nums[sindex] such that <sindex, < nums[sindex]
-    //   > sindex, >= nums[sindex]
+    //define recursion: return  nums[sindex] such that if nums sorted ascending,
+    //  the sindex-th ranked(smaller higher rank) element
     int quickSelect(vector<int>& nums, int sindex, int left, int right) {
         //recursion exit? 
         if (left == right) return nums[left];
         int p = partition(nums, left, right);
-        //if (sindex = p) return nums[p];
+        
+        // bug earlier if sindex = p
+        //kth largest index == pivot index
         if (sindex == p) return nums[p];
+        //left, p range covers sindex
         else if (sindex < p) return quickSelect(nums, sindex, left, p-1);
         else return quickSelect(nums, sindex, p+1, right);
     }
@@ -32,6 +35,7 @@ public:
         //swap(nums[ipv], right); //place to pivot at right
         swap(nums[ipv], nums[right]);
         int i = left, j = right;
+        // smaller to left, greater to right
         while (i < j) {
             while (nums[i] < pivot && i < j) i++;
             while (nums[j] >= pivot && i < j) j--;
@@ -40,12 +44,14 @@ public:
                 swap(nums[i++], nums[j--]);
             }
         }
-        //i == j now
+        //i == j now, 1 number left unchecked
         if (nums[i] >= pivot) {
             swap(nums[i], nums[right]); //place pivot at final pivot index
             return i;
         }
+        //ni < pivot, put pivot to i+1
         swap(nums[i+1], nums[right]);
         return i+1;
     }
 };
+

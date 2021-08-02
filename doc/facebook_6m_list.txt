@@ -39,7 +39,7 @@ rank	#	Title	Acceptance
 38	721	Accounts Merge	46.80%            -----------------1, 
 39	65	Valid Number	14.90%     ---------------0.2, string only, details,
 40	398	Random Pick Index	54.10%,     ------- 1, reservoir sampling, linked list random node
-41	215	Kth Largest Element in an Array	53.40%   medium ----1, use heap, 
+41	215	Kth Largest Element in an Array	53.40%   medium ----1, use heap, and quickselect too, partition 
 42	621	Task Scheduler	47.90%                 ------1, 
 43	767	Reorganize String	47.20%          -------1, maxheap, similar to task scheduler
 44	636	Exclusive Time of Functions	51.10%   ---------1, use stack to store info, use example to figure details
@@ -58,14 +58,14 @@ rank	#	Title	Acceptance
 57	824	Goat Latin	62.30%
 58	987	Vertical Order Traversal of a Binary Tree	34.50%
 59	528	Random Pick with Weight	43.60%           ------------1,  prefix sum, random.nextInt(...), binary search
-60	314	Binary Tree Vertical Order Traversal	43.80%
-61	50	Pow(x, n)	29.30%
-62	1197	Minimum Knight Moves	34.60%
+60	314	Binary Tree Vertical Order Traversal	43.80%        --------------1, bfs, 1 queue for col, 1 queue for node
+61	50	Pow(x, n)	29.30%                      -------------1, 
+62	1197	Minimum Knight Moves	34.60%            ------------1, bfs shortest path in graph
 63	247	Strobogrammatic Number II	46.90%
-64	896	Monotonic Array	57.10%
+64	896	Monotonic Array	57.10%               -------------1, array
 65	71	Simplify Path	31.60%         ----------------------1, stack
-66	863	All Nodes Distance K in Binary Tree	53.60%
-67	1123	Lowest Common Ancestor of Deepest Leaves	66.10%
+66	863	All Nodes Distance K in Binary Tree	53.60%          --------------1, bfs level
+67	1123	Lowest Common Ancestor of Deepest Leaves	66.10%       -----------1, dfs
 68	419	Battleships in a Board	68.80%
 69	304	Range Sum Query 2D - Immutable	37.00%
 70	339	Nested List Weight Sum	72.40%                     -------------1, dfs recur helper(list, depth), recur function design
@@ -81,19 +81,19 @@ rank	#	Title	Acceptance
 80	253	Meeting Rooms II	45.10%              --------------------1, my own, sort
 81	380	Insert Delete GetRandom O(1)	45.90%
 82	143	Reorder List	35.40%                ----------------1, reverse second half, draw pic
-83	1004	Max Consecutive Ones III	57.30%
+83	1004	Max Consecutive Ones III	57.30%          -----------------1, sliding window
 84	865	Smallest Subtree with all the Deepest Nodes	60.30%
 85	452	Minimum Number of Arrows to Burst Balloons	48.70%
-86	708	Insert into a Sorted Circular Linked List	31.20%
+86	708	Insert into a Sorted Circular Linked List	31.20%  ------------1, list
 87	277	Find the Celebrity	40.80%
 88	10	Regular Expression Matching	26.40%
-89	463	Island Perimeter	63.20%
+89	463	Island Perimeter	63.20%         ----------------1, shaun own, observe and derive rule
 90	616	Add Bold Tag in String	41.80%
 91	825	Friends Of Appropriate Ages	41.70%
-92	1245	Tree Diameter	57.90%
+92	1245	Tree Diameter	57.90%             ---------------1, dfs, tree to graph
 93	958	Check Completeness of a Binary Tree	51.40%, -----------1, bfs
 94	692	Top K Frequent Words	50.10%   ------------------1, heap
-95	480	Sliding Window Median	36.00%
+95	480	Sliding Window Median	36.00%          -------------1, 
 96	121	Best Time to Buy and Sell Stock	49.80%
 97	138	Copy List with Random Pointer	34.00%,     ---------1, copy nodes first using map
 98	93	Restore IP Addresses	34.30%

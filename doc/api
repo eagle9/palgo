@@ -1,0 +1,9 @@
+https://codeburst.io/microservice-boundaries-five-characteristics-to-guide-your-design-89312b65cc27
+
+https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design
+
+https://restfulapi.net/rest-put-vs-post/
+
+https://shopify.engineering/deconstructing-monolith-designing-software-maximizes-developer-productivity
+
+There is a caching proxy (Apache Traffic Service) in front of Schema Store server which allows to cache different versions of schema. We cache all schema versions except for the 'latest' tag, so 'latest' always returns uncached version from the database
