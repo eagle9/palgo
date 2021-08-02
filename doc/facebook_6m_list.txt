@@ -89,17 +89,17 @@ rank	#	Title	Acceptance
 88	10	Regular Expression Matching	26.40%
 89	463	Island Perimeter	63.20%         ----------------1, shaun own, observe and derive rule
 90	616	Add Bold Tag in String	41.80%
-91	825	Friends Of Appropriate Ages	41.70%
+91	825	Friends Of Appropriate Ages	41.70%          ------------1, sort
 92	1245	Tree Diameter	57.90%             ---------------1, dfs, tree to graph
 93	958	Check Completeness of a Binary Tree	51.40%, -----------1, bfs
 94	692	Top K Frequent Words	50.10%   ------------------1, heap
 95	480	Sliding Window Median	36.00%          -------------1, 
 96	121	Best Time to Buy and Sell Stock	49.80%
 97	138	Copy List with Random Pointer	34.00%,     ---------1, copy nodes first using map
-98	93	Restore IP Addresses	34.30%
+98	93	Restore IP Addresses	34.30%               -------------1, recur with
 99	348	Design Tic-Tac-Toe	53.20%
 100	114	Flatten Binary Tree to Linked List	47.40%
-101	494	Target Sum	46.50%
+101	494	Target Sum	46.50%        ------------1, recur and dp
 102	1269	Number of Ways to Stay in the Same Place After Some Steps	41.70%
 103	1213	Intersection of Three Sorted Arrays	78.40%
 104	3	Longest Substring Without Repeating Characters	29.90%
@@ -115,7 +115,7 @@ rank	#	Title	Acceptance
 114	350	Intersection of Two Arrays II	50.70%
 115	921	Minimum Add to Make Parentheses Valid	72.30%
 116	875	Koko Eating Bananas	50.30%
-117	127	Word Ladder	28.30%
+117	127	Word Ladder	28.30%        ---------------1, bfs
 118	78	Subsets	59.00%           -------------0.1
 119	515	Find Largest Value in Each Tree Row	60.10%
 120	772	Basic Calculator III	40.70%                 ---------------
