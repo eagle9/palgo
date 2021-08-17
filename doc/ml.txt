@@ -38,3 +38,46 @@ https://zhuanlan.zhihu.com/p/159305118
 
 Federated learning
 https://medium.com/@ODSC/what-is-federated-learning-99c7fc9bc4f5
+PMML
+https://zhuanlan.zhihu.com/p/30378213
+https://zhuanlan.zhihu.com/p/79197337
+
+ml in production
+https://medium.com/analytics-and-data/overview-of-the-different-approaches-to-putting-machinelearning-ml-models-in-production-c699b34abf86
+
+PMML intro
+https://blog.csdn.net/wxk_1127/article/details/79797299
+
+MLeap  machine learning pipeline serde and runtime
+
+https://easyai.tech/ai-definition/reinforcement-learning/
+
+
+
+ml pipeline (quick tutorial with krish naik)
+  data analysis, feature engineering (scale minMaxScaler, log, categorical, missing value), feature selection
+  train test evaluation
+  model deploy to endpoint with sagemaker, number of instance and instance type
+  ec2, s3 bucket, lambda, sagemaker
+ 
+why deep learning? 
+https://towardsdatascience.com/why-deep-learning-is-needed-over-traditional-machine-learning-1b6a99177063 
+
+how to evaluate trained ML  model
+===============
+precision ---> of the predicated/inferred positives, how many of them are true positives, precision = TruePositive /(TruePositive + False Positive)
+        FP ---> detecting more problems 
+recall ---> for the true positives, we also get False negative,  how to assess the impact of false negative? 
+       for cancer positive, true positive number is very small, for this group, some are predicted positive (correct), some are predicated negative
+       recall = TP / (TP +FN)
+       FN --> fail to detech problems 
+
+      real \predicted   true  false
+      true              TP    FN      --------> recall
+      false             FP    TN 
+                        |
+                        precision
+ accurracy = (TP + TN) /total
+
+F1score的计算是这样的：1/F1score = 1/2(1/recall + 1/precision)*，简单换算后就成了：F1score=2recallprecision/(recall+precision)。同样F1score也是针对某个样本而言的。一般而言F1score用来综合precision和recall作为一个评价指标。还有F1score的变形，主要是添加一个权重系数可以根据需要对recall和precision赋予不同的权重。
+原文链接：https://blog.csdn.net/u014380165/article/details/77493978

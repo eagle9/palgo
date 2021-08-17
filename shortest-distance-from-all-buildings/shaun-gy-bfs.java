@@ -17,16 +17,17 @@ class Solution {
         int res = Integer.MAX_VALUE, buildingCnt = 0;
         int m = grid.length, n = grid[0].length;
         int [] [] dist = new int[m][n]; //distance from a building
-        int [] [] cnt = new int[m][n]; //what is this? 
+        int [] [] cnt = new int[m][n]; //what is this?  building count from i&j
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                cnt[i][j] = grid[i][j];
+                cnt[i][j] = grid[i][j]; //init
             }
         }
         int [] [] dir = {{0,-1},{-1,0},{0,1},{1,0}};
         
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
+                //if a building, start bfs from i&j
                 if (grid[i][j] == 1) {
                     buildingCnt++;
                     Queue<Pair> q = new LinkedList<>();
@@ -44,8 +45,8 @@ class Solution {
                                 int y = b + dir[k][1];
                                 //in bound, not visited, empty land
                                 if (x >= 0 && x < m && y >= 0 && y < n && grid[x][y] == 0 && !visited[x][y]) {
-                                    dist[x][y] += level;
-                                    cnt[x][y]++;
+                                    dist[x][y] += level; //dist from ij to xy
+                                    cnt[x][y]++;  //there is a building that can reach xy
                                     visited[x][y] = true;
                                     q.offer(new Pair(x,y));
                                 }
@@ -60,8 +61,9 @@ class Solution {
         }
         for (int i = 0; i < m; ++i) {
             for (int j = 0; j < n; ++j) {
+                //empty land that can reach all buildings
                 if (grid[i][j] == 0 && cnt[i][j] == buildingCnt) {
-                    res = Math.min(res, dist[i][j]);
+                    res = Math.min(res, dist[i][j]); //dist[ij] store the distance sum from all buildings
                 }
             }
         }

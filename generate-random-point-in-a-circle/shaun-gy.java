@@ -12,6 +12,7 @@ class Solution {
     }
     
     public double[] randPoint() {
+         //nextDouble 0 to 1 uniform distribution, *2-1 get -1 to 1
          while (true) {
             double x = (2*rand.nextDouble() - 1.0)*r;
             double y = (2*rand.nextDouble() - 1.0)*r;

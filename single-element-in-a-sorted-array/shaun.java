@@ -1,5 +1,5 @@
 //grandyang idea 2, 0ms, faster than 100%
-//not fully understand
+//not fully understand ====> understood now,  what's the cond to go left or right
 //found https://www.jianshu.com/p/ded42b5418c7
 //runtime 0ms, faster than 100%, memory less than 21%
 class Solution {

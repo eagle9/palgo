@@ -1,2 +1,20 @@
 https://github.com/resumejob/system-design-algorithms
 hyperloglog
+approximate algorithm that compute friends degree of separation
+
+fb guide
+=========
+me drive the conversation, engage officer along the way
+1. problem exploration, officer is the stakeholder, get requirements, clarification
+
+2. Handle data, data modeling
+
+3. responbility components, APIs
+
+4. completeness of the design, are all requirements are addressed? 
+
+5. trade offs, how to improve
+
+6. quantitive analysis of the designed  system
+
+7. deep dive

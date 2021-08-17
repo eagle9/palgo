@@ -47,7 +47,7 @@ rank	#	Title	Acceptance
 46	249	Group Shifted Strings	52.40%       -----------1,  char diff, hash
 47	236	Lowest Common Ancestor of a Binary Tree	43.60%   ----1,  dfs
 48	785	Is Graph Bipartite?	46.30%     ----------0.9, bfs, dfs, union find, coloring with 2 colors
-49	286	Walls and Gates	53.10%
+49	286	Walls and Gates	53.10%            -----------1, 
 50	658	Find K Closest Elements	40.00%     ------1, binary search with clever condition to push left or right
 51	670	Maximum Swap	42.30%     ----------1, high index smaller digit, low index larger digit
 52	1060	Missing Element in Sorted Array	54.50%         -----------------1, binary search
@@ -74,7 +74,7 @@ rank	#	Title	Acceptance
 73	133	Clone Graph	32.60%                              --------------1, bfs, all nodes, for each node, and it nei, create edges
 74	936	Stamping The Sequence	38.50%
 75	98	Validate Binary Search Tree	27.30%          -----------------1,  recur naturally, but use member var
-76	34	Find First and Last Position of Element in Sorted Array	35.40%
+76	34	Find First and Last Position of Element in Sorted Array	35.40% -----------1, binary search
 77	839	Similar String Groups	37.80%             -------------------1, union find, remember strings are anagram group 
 78	227	Basic Calculator II	36.10%            -----------------------1, 
 79	246	Strobogrammatic Number	44.40%
@@ -88,7 +88,7 @@ rank	#	Title	Acceptance
 87	277	Find the Celebrity	40.80%
 88	10	Regular Expression Matching	26.40%
 89	463	Island Perimeter	63.20%         ----------------1, shaun own, observe and derive rule
-90	616	Add Bold Tag in String	41.80%
+90	616	Add Bold Tag in String	41.80%         ---------------1, loop and bold array
 91	825	Friends Of Appropriate Ages	41.70%          ------------1, sort
 92	1245	Tree Diameter	57.90%             ---------------1, dfs, tree to graph
 93	958	Check Completeness of a Binary Tree	51.40%, -----------1, bfs
@@ -98,18 +98,18 @@ rank	#	Title	Acceptance
 97	138	Copy List with Random Pointer	34.00%,     ---------1, copy nodes first using map
 98	93	Restore IP Addresses	34.30%               -------------1, recur with
 99	348	Design Tic-Tac-Toe	53.20%
-100	114	Flatten Binary Tree to Linked List	47.40%
+100	114	Flatten Binary Tree to Linked List	47.40%                ------------------1
 101	494	Target Sum	46.50%        ------------1, recur and dp
 102	1269	Number of Ways to Stay in the Same Place After Some Steps	41.70%
 103	1213	Intersection of Three Sorted Arrays	78.40%
-104	3	Longest Substring Without Repeating Characters	29.90%
+104	3	Longest Substring Without Repeating Characters	29.90%   -------------1, shaun own sliding window
 105	529	Minesweeper	57.80%
-106	766	Toeplitz Matrix	64.00%
+106	766	Toeplitz Matrix	64.00%                         --------------------1
 107	109	Convert Sorted List to Binary Search Tree	45.90%
 108	676	Implement Magic Dictionary	53.50%
 109	855	Exam Room	42.00%
-110	15	3Sum	26.00%
-111	200	Number of Islands	45.70%
+110	15	3Sum	26.00%                       -----------1, tow pointer
+111	200	Number of Islands	45.70%        -----------1, dfs
 112	347	Top K Frequent Elements	59.70%
 113	1	Two Sum	45.30%
 114	350	Intersection of Two Arrays II	50.70%
@@ -118,17 +118,17 @@ rank	#	Title	Acceptance
 117	127	Word Ladder	28.30%        ---------------1, bfs
 118	78	Subsets	59.00%           -------------0.1
 119	515	Find Largest Value in Each Tree Row	60.10%
-120	772	Basic Calculator III	40.70%                 ---------------
+120	772	Basic Calculator III	40.70%                 ---------------, 0.7, stack and recur
 121	341	Flatten Nested List Iterator	51.80%
 122	548	Split Array with Equal Sum	44.70%
 123	332	Reconstruct Itinerary	34.50%                -----------------
 124	568	Maximum Vacation Days	40.00%               -------------
 125	323	Number of Connected Components in an Undirected Graph	54.80%
-126	39	Combination Sum	54.30%
+126	39	Combination Sum	54.30%         ----------------1, recur
 127	240	Search a 2D Matrix II	42.60%
-128	162	Find Peak Element	42.80%
-129	257	Binary Tree Paths	49.90%
-130	540	Single Element in a Sorted Array	57.60%
+128	162	Find Peak Element	42.80%       ------------1, binary search
+129	257	Binary Tree Paths	49.90%        ---------------1, recur and divide and conquer
+130	540	Single Element in a Sorted Array	57.60%         ------------1, binary search
 131	647	Palindromic Substrings	59.70%
 132	8	String to Integer (atoi)	15.10%
 133	157	Read N Characters Given Read4	32.90%
@@ -155,45 +155,45 @@ rank	#	Title	Acceptance
 154	778	Swim in Rising Water	51.60%
 155	319	Bulb Switcher	45.20%
 156	334	Increasing Triplet Subsequence	39.90%
-157	352	Data Stream as Disjoint Intervals	46.00%
+157	352	Data Stream as Disjoint Intervals	46.00%            --------------1, 
 158	550	Game Play Analysis IV	45.70%
-159	317	Shortest Distance from All Buildings	40.70%
+159	317	Shortest Distance from All Buildings	40.70%    ------------------1, bfs, but have to very smart about it 
 160	416	Partition Equal Subset Sum	42.80%
 161	20	Valid Parentheses	38.40%                 ------1, stack
 162	126	Word Ladder II	21.10%
-163	491	Increasing Subsequences	44.60%
-164	468	Validate IP Address	22.30%
+163	491	Increasing Subsequences	44.60%                --------1, recur, cursor candidate and backtrack
+164	468	Validate IP Address	22.30                   --------1, string and details%
 165	395	Longest Substring with At Least K Repeating Characters	40.60%
 166	160	Intersection of Two Linked Lists	38.80%
-167	1062	Longest Repeating Substring	55.40%
+167	1062	Longest Repeating Substring	55.40%       ---------1, dp, end i and end j max common suffix
 168	549	Binary Tree Longest Consecutive Sequence II	46.50%
 169	272	Closest Binary Search Tree Value II	49.40%
 170	74	Search a 2D Matrix	36.10%
 171	46	Permutations	61.50%
-172	329	Longest Increasing Path in a Matrix	42.60%
-173	1032	Stream of Characters	47.10%
+172	329	Longest Increasing Path in a Matrix	42.60%  ---------------------1,  dfs with +1 rule 
+173	1032	Stream of Characters	47.10%                   ----------------1, use trie, from tail of words, control buffer size
 174	886	Possible Bipartition	42.90%
 175	394	Decode String	48.60%
-176	128	Longest Consecutive Sequence	44.20%
-177	939	Minimum Area Rectangle	52.10%
+176	128	Longest Consecutive Sequence	44.20%             --------------1, hash, union find
+177	939	Minimum Area Rectangle	52.10%                ------------------1, use hash to store points
 178	567	Permutation in String	40.50%
 179	442	Find All Duplicates in an Array	64.70%
 180	388	Longest Absolute File Path	41.20%
-181	662	Maximum Width of Binary Tree	39.80%
+181	662	Maximum Width of Binary Tree	39.80%          -----------------1, bfs with node and pos
 182	417	Pacific Atlantic Water Flow	40.00%
 183	698	Partition to K Equal Sum Subsets	44.80%
-184	435	Non-overlapping Intervals	42.30%
+184	435	Non-overlapping Intervals	42.30%        --------------------1, greedy, sorting
 185	79	Word Search	34.10%
 186	4	Median of Two Sorted Arrays	28.80%
 187	977	Squares of a Sorted Array	72.50%
-188	57	Insert Interval	32.90%
+188	57	Insert Interval	32.90%                    ----------------------, sort and list
 189	679	24 Game	45.60%
-190	305	Number of Islands II	40.20%
+190	305	Number of Islands II	40.20%        ----------------1,union find
 191	92	Reverse Linked List II	37.80%
-192	210	Course Schedule II	38.70%
+192	210	Course Schedule II	38.70%            ----------------1, topo sort
 193	25	Reverse Nodes in k-Group	40.40%
 194	788	Rotated Digits	56.80%
-195	283	Move Zeroes	57.20%
+195	283	Move Zeroes	57.20%                    -------------1, storeIndex for non zero
 196	935	Knight Dialer	44.00%
 197	280	Wiggle Sort	63.10%
 198	166	Fraction to Recurring Decimal	21.00%
@@ -244,16 +244,16 @@ rank	#	Title	Acceptance
 243	48	Rotate Image	54.60%
 244	1019	Next Greater Node In Linked List	56.70%
 245	37	Sudoku Solver	41.80%
-246	399	Evaluate Division	50.50%
+246	399	Evaluate Division	50.50%        --------------1, bfs, uf
 247	209	Minimum Size Subarray Sum	37.20%
 248	678	Valid Parenthesis String	30.80%
 249	346	Moving Average from Data Stream	69.60%
 250	60	Permutation Sequence	35.70%
 251	235	Lowest Common Ancestor of a Binary Search Tree	48.70%    ----------1, recur 
-k52	62	Unique Paths	52.00%
+k52	62	Unique Paths	52.00%                     -----------------1, natural and easy dp
 253	997	Find the Town Judge	50.10%
-254	26	Remove Duplicates from Sorted Array	44.00%
-255	191	Number of 1 Bits	47.90%
+254	26	Remove Duplicates from Sorted Array	44.00%       ---------------1
+255	191	Number of 1 Bits	47.90%         ------------------1, n&n-1
 256	179	Largest Number	27.80%
 257	17	Letter Combinations of a Phone Number	45.50%
 258	430	Flatten a Multilevel Doubly Linked List	50.70%

@@ -14,7 +14,7 @@ public:
 
 /*
 lt idea
-The key idea here is to realize that for any number nn, doing a bit-wise AND of nn and n - 1n−1 flips the least-significant 11-bit in nn to 00. Why? Consider the binary representations of nn and n - 1, draw a picture you will understand. 
+The key idea here is to realize that for any number n, doing a bit-wise AND of n and n - 1 flips the least-significant 1-bit in n to 0. Why? Consider the binary representations of n and n - 1, draw a picture you will understand. 
 
 but this idea is not easy/natural to be formed. 
 runtime 4ms, faster than 97%, mem less than 65%

@@ -1,3 +1,17 @@
+fb guide by aaron
+========================
+*conflict --empathy, calm down to understand other, sit down 1 on 1, align, incorporate, reach agreement, 1 on 1 sync up meeting, design doc, PR review
+*ambiguous --- not tunnel vision, peripheral vision, multiple approaches, move fast, unblock that blocks, also choose the best approach, not just go from A to B
+*high impact, most challenging --- avoid quantify and try to paint it, these could be subjective and relative, key to back up with concrete examples
+*what motivates you --- team work and won, aligh with team and company goal, put the goal on my mind,  passion in problem solving and technical learning, make team project success and evolve agily, help others and contribute to collaborative environment
+*can you cut corners, clarify first what does this mean
+   ask for permission, present info for stake holders to make decision  
+https://www.quora.com/Can-you-cut-corners-on-a-project-to-meet-a-tight-deadline
+=========================== end fb
+
+What is the meaning of stakeholders in project management?
+Stakeholders are those with an interest in your project's outcome. They are typically the members of a project team, project managers, executives, project sponsors, customers, and users. ... It's essential to practice good stakeholder management and continuously communicate to collaborate on the project.
+
 Shane Chang  <<behavior interview questions >> summary
 your fit to the job is evaluated 
 at two major dimensions:
@@ -28,6 +42,3 @@ give one of the recent projects that resulted in a good outcome
 tell the recent project story with SAO approach. how you handle the project from beginning to end? describe the process
 of the project.  the story should come with a good result that proves your effective strategic thinking or management
 capability
-
-
-k

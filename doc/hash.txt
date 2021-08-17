@@ -1,0 +1,8 @@
+https://www.cnblogs.com/zerotomax/p/8687425.html#go2
+source code study of ConcurrentHashMap
+
+rb tree vs avl tree
+rb tree fast with insertion and deletion, trade of balance and speed, used widely in TreeMap, TreeSet, HashMap, ConcurrentHashMap and c++ stl
+
+avl tree faster with retrieval, used more in db index
+
