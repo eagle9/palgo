@@ -1,2 +1,8 @@
 CAP, AP system
   sacrifice C consistency level quorum 
+
+datastax driver 4 guide 
+https://www.cnblogs.com/datastax/p/13608461.html
+
+consistency
+https://docs.datastax.com/en/cassandra-oss/3.0/cassandra/dml/dmlConfigConsistency.html

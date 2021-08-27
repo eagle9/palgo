@@ -42,3 +42,46 @@ give one of the recent projects that resulted in a good outcome
 tell the recent project story with SAO approach. how you handle the project from beginning to end? describe the process
 of the project.  the story should come with a good result that proves your effective strategic thinking or management
 capability
+
+Jay's guidline
+what kind of environment you work the best
+culture fit and team work
+assess candidates ability to rally around teammates to march towards a common goal
+is he able to seek help from teammates when necessary? can he share ideas proactively
+is he modest and willing to learn
+what aspects of ML does he want to pursue
+talk about 1 project in your resume --- what's unique about the project/platform? 
+   was the candidate involved in a specific part of the project? does he interact with data scientists
+   spark integration, scale on demand feature ingestion into low latency feature store
+        efficient use of resource, external client in spark executors,  visualVM to find grow thread count or variables, add performance metrics 
+        feature data quality governance ----
+   ml workflow context to warehouse ---- best effort fitting evolving schema, structured and unstructure data, for index, evaluate model and rules
+
+
+team size
+all se, or ML e, ds, tech lead
+project coming from ? EM or PM
+  scrum master, agile coach, assign tasks
+  using jira?  to track project also commit message refer to jira ticket
+
+how much freedom you have?
+  design, undersand problem deeply and org goal context, even industry competitions
+  design idea, but can listen to different ideas, even critique, integrate, reach concensus, road map to delivery(release)
+  proactive, can initiate, company goal, team goal, propose
+  identify issues and propose solution, provide ideas support to teammates
+  break down large problems and collaborate
+
+collaboration, with different personalities
+  fork a repo
+  pull requests
+  branch merge
+  code review
+  cross functional team
+  2021 add ---> PR review is a key scene to work with your teammates, learn more, integrate ideas, reach agreement/concensus
+
+talk about
+	biggest(don't focus on how big it is, focus on the detailed approach) challenge and achievement;
+	why do you leave
+	what kind of working environment that suits you the best
+	how to help teammates
+	don't talk about yourself too much

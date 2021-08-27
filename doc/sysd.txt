@@ -18,3 +18,6 @@ me drive the conversation, engage officer along the way
 6. quantitive analysis of the designed  system
 
 7. deep dive
+
+
+http://aosabook.org/en/500L/dagoba-an-in-memory-graph-database.html

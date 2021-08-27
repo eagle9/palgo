@@ -81,3 +81,10 @@ recall ---> for the true positives, we also get False negative,  how to assess t
 
 F1score的计算是这样的：1/F1score = 1/2(1/recall + 1/precision)*，简单换算后就成了：F1score=2recallprecision/(recall+precision)。同样F1score也是针对某个样本而言的。一般而言F1score用来综合precision和recall作为一个评价指标。还有F1score的变形，主要是添加一个权重系数可以根据需要对recall和precision赋予不同的权重。
 原文链接：https://blog.csdn.net/u014380165/article/details/77493978
+
+
+
+tensorflow neural network 
+tf.nn.conv2d() 
+tf.nn.maxpool()
+https://github.com/ss-is-master-chief/MNIST-Digit.Recognizer-CNNs/blob/master/MNIST-Hand.Written.Digit.Recognition-CNN.ipynb
