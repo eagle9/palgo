@@ -17,6 +17,7 @@ class Solution {
         int ans = 0; //number of intervals
         //problem statement ---> n intervals between two same tasks
         //why cycle =n+1????
+        //there are n tasks between task 0 and 0', so cycle size is n+1
         int cycle = n+1; // a cycle has n tasks, [0 1 .. n-1 n] [0' ...] ---> a cycle length is n+1
         while (!maxHeap.isEmpty()) {
             int count = 0; // count of tasks assigned
@@ -29,7 +30,8 @@ class Solution {
             }
             //for each task in the assigned block, -- its count, push back into heap
             for (Pair p : block) {
-                if (--p.first > 0) {
+                p.first--;
+                if (p.first > 0) {
                     maxHeap.offer(p);
                 }
             }

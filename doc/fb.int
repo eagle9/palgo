@@ -1,0 +1,28 @@
+https://www.linkedin.com/in/prasadkarthik/
+context - event private public for people to attend
+event (post likes, comments, page of words)
+user -- rsvp, can be updated
+given a user and an event, predict how likely the user will attend the event
+
+feature (age, region, interests)
+event(activity type, location, time, page of words)
+user-event-cross(interaction between user and event, likes, comments(positive, negative), rsvp
+
+initial training data collection
+  training data generation component
+how to represent the features
+
+metrics 
+  event engagement(likes, comments, rsvp) == encode as vector
+
+active learning, friendly users to collect ground truth
+
+log loss formula
+how frequently the model used for infernce? 
+
+what's the most challenging part of the system? 
+
+[] <-- user
+
+https://www.linkedin.com/in/beipan/
+video relevance ranking

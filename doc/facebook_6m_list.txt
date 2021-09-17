@@ -28,9 +28,9 @@ rank	#	Title	Acceptance
 27	158	Read N Characters Given Read4 II - Call multiple times	31.70%
 28	543	Diameter of Binary Tree	48.00%         -----1, dfs, height for each node, at the same time track the max diameter(left height + right height)
 29	76	Minimum Window Substring	33.80% ---------- 0.9, sliding window
-30	689	Maximum Sum of 3 Non-Overlapping Subarrays	45.50%
+30	689	Maximum Sum of 3 Non-Overlapping Subarrays	45.50%, ----0.1, dp
 31	282	Expression Add Operators	35.00%            ------------0.5, dfs backtracking, pretty hard
-32	426	Convert Binary Search Tree to Sorted Doubly Linked List	57.90%
+32	426	Convert Binary Search Tree to Sorted Doubly Linked List	57.90%,  in order 
 33	173	Binary Search Tree Iterator	54.40%                ----------------1, use datastructure, stack
 34	56	Merge Intervals	38.40%                  ----------------1, sorting with lamda, loop, update prev
 35	270	Closest Binary Search Tree Value	46.80%  ---------1, binary search
@@ -67,12 +67,12 @@ rank	#	Title	Acceptance
 66	863	All Nodes Distance K in Binary Tree	53.60%          --------------1, bfs level
 67	1123	Lowest Common Ancestor of Deepest Leaves	66.10%       -----------1, dfs
 68	419	Battleships in a Board	68.80%
-69	304	Range Sum Query 2D - Immutable	37.00%
+69	304	Range Sum Query 2D - Immutable	37.00%             -------------1, prefix sum or area
 70	339	Nested List Weight Sum	72.40%                     -------------1, dfs recur helper(list, depth), recur function design
 71	33	Search in Rotated Sorted Array	34.20%           ---------------1, where is mid?
 72	43	Multiply Strings	33.10%
 73	133	Clone Graph	32.60%                              --------------1, bfs, all nodes, for each node, and it nei, create edges
-74	936	Stamping The Sequence	38.50%
+74	936	Stamping The Sequence	38.50%         -----1, greedy and simulation
 75	98	Validate Binary Search Tree	27.30%          -----------------1,  recur naturally, but use member var
 76	34	Find First and Last Position of Element in Sorted Array	35.40% -----------1, binary search
 77	839	Similar String Groups	37.80%             -------------------1, union find, remember strings are anagram group 
@@ -164,11 +164,11 @@ rank	#	Title	Acceptance
 163	491	Increasing Subsequences	44.60%                --------1, recur, cursor candidate and backtrack
 164	468	Validate IP Address	22.30                   --------1, string and details%
 165	395	Longest Substring with At Least K Repeating Characters	40.60%
-166	160	Intersection of Two Linked Lists	38.80%
+166	160	Intersection of Two Linked Lists	38.80%           ----------1, two pointers
 167	1062	Longest Repeating Substring	55.40%       ---------1, dp, end i and end j max common suffix
 168	549	Binary Tree Longest Consecutive Sequence II	46.50%
 169	272	Closest Binary Search Tree Value II	49.40%
-170	74	Search a 2D Matrix	36.10%
+170	74	Search a 2D Matrix	36.10%        ------binary search row and col
 171	46	Permutations	61.50%
 172	329	Longest Increasing Path in a Matrix	42.60%  ---------------------1,  dfs with +1 rule 
 173	1032	Stream of Characters	47.10%                   ----------------1, use trie, from tail of words, control buffer size

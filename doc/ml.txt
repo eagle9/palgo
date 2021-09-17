@@ -67,10 +67,12 @@ how to evaluate trained ML  model
 ===============
 precision ---> of the predicated/inferred positives, how many of them are true positives, precision = TruePositive /(TruePositive + False Positive)
         FP ---> detecting more problems 
+        base is all predicted positive,  
 recall ---> for the true positives, we also get False negative,  how to assess the impact of false negative? 
        for cancer positive, true positive number is very small, for this group, some are predicted positive (correct), some are predicated negative
        recall = TP / (TP +FN)
        FN --> fail to detech problems 
+       from ground truth perspective, base is ground truth positive 
 
       real \predicted   true  false
       true              TP    FN      --------> recall
@@ -88,3 +90,11 @@ tensorflow neural network
 tf.nn.conv2d() 
 tf.nn.maxpool()
 https://github.com/ss-is-master-chief/MNIST-Digit.Recognizer-CNNs/blob/master/MNIST-Hand.Written.Digit.Recognition-CNN.ipynb
+
+atguigu AI DL
+https://www.youtube.com/watch?v=KVYTIQ0feZ4&list=PLmOn9nNkQxJHETOAyV3mGeK9wAWyCqwIu&index=20
+
+ad engagement  binary classification task - a user engages with ad or not. 
+  model predicated probability that observation is of class 0 or 1
+    calculate log loss, best model is selected offline
+online metrics 
