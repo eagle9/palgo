@@ -1,4 +1,23 @@
-https://www.linkedin.com/in/prasadkarthik/
+total 8 rounds
+5 rounds of coding
+1 round bq
+2 rounds ML system design
+1 seminar about coding
+1 onsite training
+
+first phone coding --- a young girl
+ 1. top k closest points from 00
+ 2. calculator with just +- and *
+
+second phone coding --- a chinese engineer
+ just 1 
+ given list of lists
+ iterator next and hasNext
+   next should be constant time
+   i use merge, the proposal batch by batch
+
+9/13
+**ML System design --- https://www.linkedin.com/in/prasadkarthik/
 context - event private public for people to attend
 event (post likes, comments, page of words)
 user -- rsvp, can be updated
@@ -24,5 +43,58 @@ what's the most challenging part of the system?
 
 [] <-- user
 
-https://www.linkedin.com/in/beipan/
+***ML System design -- https://www.linkedin.com/in/beipan/
 video relevance ranking
+asked how to measure relevance, I answer NDCG that is suitable for recommendation
+user (age, id, region, interests)
+video (id, type, length, ...)
+user-video-cross (liked, commented, watched, impression center screen)
+how to represent feature, for example region, i started with 0-49. Citing NN needs numbers.
+it uses matrix computation.
+she questioned neighboring states could be distance in value. I replied that her question is great,
+feature represention vector should be close if they are close geographically. 
+
+i brought up candidate generation with simpler model, in the context of funnel approach
+she asked to focus on video ranking with in memory index 
+i replied with logistic regression, then NN
+why NN,   how many dimesions (start with intuitive dimesions, then add more. some dimensions do not have
+intuitive meanning, use existing embeddings, already tunned and works well in some tasks)
+how many layers and how many parameters depends on the performance/capacity constraints
+
+training data generation flow and model upate flow,  model inference 
+
+***coding --- forgot the interview officer
+1. output a city name randomly whose proablity is equivalent to its population size
+2. binary tree traveral and output the node by column and depth order
+
+9/16 
+coding -- jun chu, research scientist
+ 1.clone graph
+ 2.find local minimum, keep ask better than O(n)
+  i did consider O(lgn) ==> binary, but not clear how to apply it, citing
+not sorted, I gave up binary search
+end up with just naive way to find local minimum
+
+behavior -- ameya gupte, software engineering manager
+ * career change decision --- > stick with cs and get stronger
+ * blocker ---> OOM, find the cause and debug with partner team, fixed
+   longer term blocker --> engage partner team to use our spark integration api
+   spark integration is for scaling, on demand feature pipeline
+ * any constructive advice from your colleagues -- occupied with production issue fix, manager talked to meto look at and think about bigger picture 
+ * disagreement with coworker --  get schema evolution history from schema store, rather than from disk
+ * hard personality to work with --- 
+ * work on a project with very little information 
+
+coding --- sam van pelt, swe 
+ 1.given an array of building height from beach to inland, find the index from inland to beach that has ocean view. Asked to provide all test cases, i provided comprehensive cases
+ 2.maze represented with a 2D matrix, 0 can go through, 1 is barrier
+  find a path from left top corner to bottom right corner, return path in a List<int[]> 
+  int N = matrix.length;
+  int M = matrix[0].length;
+  I use bfs, node = i * M + j
+  q.offer(0)
+  if (x == N-1 && y == M-1) { //reached bottom right corner
+  }
+  use a hashMap to track prev node
+
+
