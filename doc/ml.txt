@@ -98,3 +98,14 @@ ad engagement  binary classification task - a user engages with ad or not.
   model predicated probability that observation is of class 0 or 1
     calculate log loss, best model is selected offline
 online metrics 
+
+
+jeff wilke, ai in operation and manufacturing
+free human from dredugory and unsafe, to more creative areas
+process improvement, lean, low skill area, audit or monitor
+forcasting, workflow a/b tests, stocastic process, variation
+sensors
+
+andrew ng, data centric ML, error analysis, label consistency 
+
+workflow, long tail scenarios, 
