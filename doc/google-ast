@@ -1,0 +1,6 @@
+profile id
+assistant id
+client  <-- ace, duplux, commands, tls, encry -> load balancer  <-> server comp1 <-> intent session info  
+                      							     <-> dialog snippet        <-> 
+
+

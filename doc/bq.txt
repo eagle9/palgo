@@ -85,3 +85,36 @@ talk about
 	what kind of working environment that suits you the best
 	how to help teammates
 	don't talk about yourself too much
+
+
+okr  objective and key results
+qualitative and ambitious goal/objectives, measureable results
+ojbective should be qualitative and state you want to achieve, in a form that inspires you
+key results should be quantitative and describe how to achieve the O with metrics to measure the progress
+ask the following question when write O:
+  - top 3 things to achieve
+  - what value to bring to org or users
+O should be memorable, asprirational and qualitative desc what to achieve
+  best work with team when define O
+  setting a small set of O(3-5) per period per year. Visible to other teams with an org
+  should be short, motivating and ambitious
+
+  what does the success of O look like
+  what should do to progress toward the O
+KR
+  a set of metrics that help measure progress
+  quantitative, specific, have a number or % to help measure success
+  a small set of KR(3-5) for each O
+  KR should SMART: specific, measureable, ambitious, relevent, time-bound
+
+OKR intent -> focus on goals, align with others, track progress, and stretch to achieve aspirational goals
+  focus -> 3-5
+  align -> share, transparent communicating ===> org goal
+  track -> accountability, track regularly
+  stretch -> always try to stretch and aim beyond. rethink the way they work and ask hard questions 
+
+
+
+  
+   help with alignment and accountability
+

@@ -109,3 +109,19 @@ sensors
 andrew ng, data centric ML, error analysis, label consistency 
 
 workflow, long tail scenarios, 
+
+
+
+google assistant
+  domain (personal -- easier to gauge engagement, information is harder to evaluat user engagement, command, music, stock, sports, etc. )
+  how helpful score (ranking categories, how many is good? ), use what loss function 
+  automatic speech recognition 
+  errors
+  turn(taking turn), intent, dialog
+
+
+model performance 
+  evaluated per domain, with AUC, balanced accurary
+   AUC computes the area under the ROC curve, which does not require optimizing a threshhold for each label
+  balanced accuracy is based on naive decision threshold 0.5 for binary classification. can be improved by domain-specific
+threshhold and probability calibration

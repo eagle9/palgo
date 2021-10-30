@@ -1,0 +1,30 @@
+Senior Software Engineer, Performance
+Google
+In-office:
+Sunnyvale, CA, USA
+
+Apply
+Qualifications
+Minimum qualifications:
+
+Bachelor's degree or equivalent practical experience.
+7 years of professional software development experience, or 5 years with an advanced degree.
+Experience in performance debugging of single-node systems and experience with design, analysis, and performance tools.
+Experience programming in Java, C/C++, C#, Objective C, Python, JavaScript, Kotlin, Dart, or Go.
+Preferred qualifications:
+
+Master's degree or PhD in Computer Science or related technical field.
+Experience analyzing and tuning operating systems, compilers, networking, IO subsystems, or accelerators.
+Experience debugging performance of multi-node (distributed) systems.
+Knowledge of experimental and statistical methods and tools for performance.
+About the job
+As a Software Engineer, you will optimize the architecture, storage, algorithms, and deployment of Google workloads. You will start with open ended problems and deep dive into the service to root cause and fix the problem. You will play an instrumental role in driving Google’s roadmaps to deliver cost-effective infrastructure and software systems. In this role, you will contribute knowledge in areas including the design of experiments, data analysis and visualization, end-to-end performance analysis and debugging for single-node systems and distributed systems, and system design for performance.
+
+Google is and always will be an engineering company. We hire people with a broad set of technical skills who are ready to take on some of technology's greatest challenges and make an impact on millions, if not billions, of users. At Google, engineers not only revolutionize search, they routinely work on massive scalability and storage solutions, large-scale applications and entirely new platforms for developers around the world. From Google Ads to Chrome, Android to YouTube, Social to Local, Google engineers are changing the world one technological achievement after another.
+
+Responsibilities
+Design and conduct experiments to evaluate system changes with respect to performance.
+Build and use tools and instrumentation to help monitor and analyze performance.
+Deep dive into performance anomalies with the intent of discovering their root cause for both single and multi-node (i.e., distributed) systems.
+Design systems and components with performance in mind, considering both algorithmic and system-level criteria.
+Coordinate with product engineers in all parts of the Software/Hardware stack
