@@ -1,2 +1,10 @@
 learn k8s with example
 https://dev.to/chuck_ha/understand-kubernetes-through-a-concrete-example-7d9
+
+operator -- operating pods, control loop, controller, etc. 
+  operator sdk
+  in java, quarkus io k8s client lib, the web site provides utils that you can create java project with pom made for you. 
+
+operator is helpful for stateful application in k8s cluster
+  also check helm charts that put all things togehter and work like package
+

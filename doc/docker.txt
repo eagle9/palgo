@@ -1,0 +1,57 @@
+
+docker container run -d -p 5000:5000 simple-flask-app
+  -d === --detach
+  -p === port
+docker container ls -a //
+
+docker container run --rm -it centos:7 bash
+
+docker 
+
+flask app with k8s
+set vm-driver to hyperkit, using docker won't be working 
+brew install kyperkit
+https://testdriven.io/blog/running-flask-on-kubernetes/
+
+========================
+docker version
+Client:
+ Cloud integration: 1.0.17
+ Version:           20.10.8
+ API version:       1.41
+ Go version:        go1.16.6
+kubectl version
+Client Version: version.Info{Major:"1", Minor:"21", GitVersion:"v1.21.5"
+minikube version
+minikube version: v1.24.0
+
+minikube start --memory=4096 --driver=hyperkit
+
+(base) shaun@SY-MPro-1319 ~ % minikube version
+minikube version: v1.24.0
+minikube status
+kubectl create deployment tomcat --image=tomcat:8.0
+kubectl expose deployment tomcat --type=NodePort --port=8080
+minikube service tomcat 
+open another terminal, run minikube tunnel
+then you will be able to see the tomcat web page
+minikube ssh
+  enter the linux runtime env, ps aux|grep tomcat
+https://cloud.tencent.com/developer/article/1588648?from=article.detail.1829921
+(base) shaun@shauns-MacBook-Pro-13-19 flask-vue-kubernetes % kubectl get pods
+NAME                        READY   STATUS    RESTARTS   AGE
+flask-56cf9f5df-dbsv8       1/1     Running   0          46m
+postgres-668b84984b-xbrjw   1/1     Running   0          48m
+tomcat-68cfc44b7b-9pq2z     1/1     Running   0          57m
+vue-7dd6d79fc4-8qkwj        1/1     Running   0          8m33s
+(base) shaun@shauns-MacBook-Pro-13-19 flask-vue-kubernetes % kubectl exec -it  tomcat-68cfc44b7b-9pq2z -- /bin/bash
+
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.2.0/aio/deploy/recommended.yaml
+
+kubectl api-versions #to find apiVersion
+kubectl ns
+
+operator for stateful applications
+  for example mysql-operator, cass-operator, elastic-operator
+
