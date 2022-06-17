@@ -1,0 +1,30 @@
+hacking google interview by mit
+algorithm design manual
+crakcing coding interview
+big NO notion 
+leetcode medium
+hackerrank topcoder interview cake
+projecteuler
+pramp online web peer interview practice 
+
+clean code, speed and efficiency and optimization
+sample topic: construct , traversla data structure
+dealing with larget data sets. 
+
+big O analysis
+sorting 
+caching
+
+corner cases and edges cases
+2 sys design
+how you think
+  decompose a problem 
+  derive requirements
+  ask question to get requirements
+  make trade off good
+  communicate idea clearly
+focus on design system with large scale
+  understand problem and commu idea
+  talking thru the idea, what I am doing
+
+
