@@ -1,7 +1,13 @@
 https://www.cnblogs.com/stulzq/p/8971531.html
 
-stress test
+stress test, scale test, soak test
 
 smoke tests functionality
 
 a/b test
+
+https://jmeter.apache.org/usermanual/build-db-test-plan.html
+  thread group
+  sampler, listener
+  how to create and run test  plan command line mode? 
+https://jmeter.apache.org/usermanual/best-practices.html
