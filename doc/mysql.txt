@@ -1,0 +1,36 @@
+drop user 'perfdev'@'%'; #% is the wildcard for any host
+create user 'perfdevr'@'%' identified by 'tempass';
+grant all privileges on *.* to 'perfdev'@'%';
+flush privileges; 
+
+select user,host from mysql.user;
+show processlist;
+SET global general_log = on;
+select @@GLOBAL.general_log;
+SET global general_log = off;
+select @@GLOBAL.general_log;
+where is general log file? 
+
+
+show create table my_table;
+CREATE TABLE my_table (
+  a smallint(5) unsigned NOT NULL,
+  b int(10) unsigned NOT NULL,
+  c int(10) unsigned DEFAULT NULL,
+  d int(10) unsigned NOT NULL DEFAULT '0',
+  e tinyint(4) NOT NULL DEFAULT '0',
+  f binary(16) NOT NULL,
+  g longblob NOT NULL,
+  PRIMARY KEY (a,b),
+  KEY key1 (e)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+cat ~/.mysql_history
+show tables like 'shaun_instance_%';
+
+mysql -u perfdev  -p -h mysql_host -P 3307  #default is 3306
+
+service mysql.server status|start|stop
+
+vi /etc/my.cnf
+# InnoDB
+datadir                         = /data/mysql/data
