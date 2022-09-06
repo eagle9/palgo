@@ -1,0 +1,12 @@
+uname -r #kernel release version, for example 3.10.0-1160.53.1.el7.x86_64
+
+109  yum list kernel --show-duplicates
+110  cat /etc/redhat-release
+111  less /var/log/yum.log
+112  fgrep kernel /var/log/yum.log
+113  yum install kernel-3.10.0-1160.53.1.el7
+114  yum downgrade kernel-3.10.0-1160.53.1.el7
+115  ls -l /boot/vmlinuz-*
+116  grubby --set-default /boot/vmlinuz-3.10.0-1160.53.1.el7.x86_64
+117  grubby --default-kernel
+118  reboot

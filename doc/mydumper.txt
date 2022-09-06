@@ -1,0 +1,35 @@
+--install mydumper and myloader
+102  release=$(curl -Ls -o /dev/null -w %{url_effective} https://github.com/mydumper/mydumper/releases/latest | cut -d'/' -f8)
+103  yum install https://github.com/mydumper/mydumper/releases/download/${release}/mydumper-${release:1}.el7.x86_64.rpm
+
+--migration script
+dump.sh {
+db=foo_database
+mydumper \
+--host=localhost \
+--user=foo \
+--password=`hiera dbFooPass` \
+--outputdir=./$db/ \
+--rows=10000000 \
+-G -E -R \
+--compress \
+--build-empty-files \
+--threads=16 \
+--compress-protocol \
+--regex '^('$db'\.)' \
+-L ./mydumper-logs.txt
+}
+
+load.sh {
+dbpass=`cat ../secrets/db-passwd`
+db=mydb
+myloader \
+--directory=/$HOME/data2/db_dump/$db \
+--verbose=3 \
+--threads=10 \
+--host=192.168.0.2 \
+--user=root \
+--password=$dbpass \
+--port=3306 \
+-s $db 
+}
