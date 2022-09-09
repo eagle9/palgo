@@ -1,0 +1,15 @@
+yum command hanging caused by corrupted database, fix as follows:
+manual remove rpm db and rebuild it
+ 94  rm /var/lib/rpm/__db*
+   95  rm /var/lib/rpm/.rpm.lock
+   96  rm /var/lib/rpm/.dbenv.lock
+   97  yum update
+   98  yum clean all
+   99  rpm --rebuilddb
+  100  yum update
+  101  yum install htop
+
+  102  release=$(curl -Ls -o /dev/null -w %{url_effective} https://github.com/mydumper/mydumper/releases/latest | cut -d'/' -f8)
+  103  yum install https://github.com/mydumper/mydumper/releases/download/${release}/mydumper-${release:1}.el7.x86_64.rpm
+
+el7 is chosen based on the actual os version, use command uname to find out
