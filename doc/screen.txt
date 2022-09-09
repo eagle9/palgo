@@ -1,0 +1,9 @@
+screen -ls #list all screen
+
+screen -S name1 #create a new screen with name "name1"
+
+ctrl + a + d #detach from the screen
+
+screen -r name1.  #recover the screen
+
+ctrl-a then : to enter command mode and type hardcopy -h run.log`kkk
