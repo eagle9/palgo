@@ -1,3 +1,20 @@
 about traffic control
 
 https://developer.aliyun.com/article/4000
+https://www.badunetworks.com/traffic-shaping-with-tc/
+
+
+tc qdisc add dev eth3 root netem delay 10ms 5ms
+#This would give us random variation of 10ms +/- 5ms, uniform distribution
+
+tc qdisc add dev eth3 root netem delay 10ms 5ms 25%
+#This means the added delay is 10ms +/- 5ms with the next random element depending 25% on the last one.  Note that this is an approximation, not a true statistical correlation.
+
+tc qdisc add dev eth3 root netem delay 10ms 5ms distribution normal
+#specify non-uniform distribution (normal, pareto, paretonormal)
+
+python tc command wrapper
+https://github.com/thombashi/tcconfig
+
+how to create your own distribution
+http://www.unixunique.com/2018/07/linux-network-emulator-custom-delay_9.html

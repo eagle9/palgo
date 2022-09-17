@@ -1,0 +1,11 @@
+https://towardsdatascience.com/feature-scaling-effectively-choose-input-variables-based-on-distributions-3032207c921f#:~:text=Summary,range%20of%20the%20data%20points.
+
+summary ===>
+Normalize Non-Gaussian features and Standardize Gaussian-like(bell shape) features
+using pipeline , it can improve model a little bit from 72 to 79%
+
+
+diab = datasets.load_diabetes()
+diab['target'] is dim ndarray
+
+df2 = pd.DataFrame(data= np.concatenate((diab['data'], diab['target'].reshape(-1,1)), axis=1), columns= diab['feature_names'] + ['target'])

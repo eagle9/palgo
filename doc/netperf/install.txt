@@ -1,0 +1,45 @@
+git clone <netperf github url>
+scp -r netperf server:~/
+ssh server
+cd netperf, the source code works with autotools (https://earthly.dev/blog/autoconf/)
+./autogen.sh
+sudo yum install automake libtool
+sudo yum groupinstall 'Development Tools'
+g++ gcc command not found after the yum groupinstall
+Error as follows as I noticed the version is too high for glibc-common and decided to downgrade it
+--> Finished Dependency Resolution
+Error: Package: glibc-2.17-325.el7_9.i686 (updates)
+           Requires: glibc-common = 2.17-325.el7_9
+           Installed: glibc-common-2.17-326.el7_9.x86_64 (@79_3.10.0-1160.71.1.el7)
+               glibc-common = 2.17-326.el7_9
+           Available: glibc-common-2.17-317.el7.x86_64 (base)
+
+sudo yum -y downgrade glibc glibc-common
+the groupinstall works without error:
+  sudo yum group install "Development Tools"
+./configure
+make 
+#complains makeinfo command not found, did googling and found  the following fix:
+sudo yum install texi2html texinfo
+make
+make check
+sudo make install
+finally netperf command available
+$ netperf -V
+Netperf version 2.7.1
+
+netperf -H host_foo -l -1000 -t TCP_RR -w 10ms -b 1 -v 2 -- -O min_latency,mean_latency,max_latency,stddev_latency,transaction_rate
+Packet rate control is not compiled in.
+Packet burst size is not compiled in.
+MIGRATED TCP REQUEST/RESPONSE TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to perf-oms-72cores-512gbram.us-west1-b.c.wd-dbeng-perf.internal () port 0 AF_INET : first burst 0
+Minimum      Mean         Maximum      Stddev       Transaction
+Latency      Latency      Latency      Latency      Rate
+Microseconds Microseconds Microseconds Microseconds Tran/s
+
+53           69.17        651          23.01        14431.264
+
+
+start ping with an interval of 10 milliseconds using:
+0.010 stands for 10ms
+-c specifying the count
+$ ping <host_foo or ip address> -c 100 -i 0.010
