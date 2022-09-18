@@ -1,0 +1,3 @@
+https://cromwell-intl.com/open-source/performance-tuning/disks.html
+
+network latency --> netperf
