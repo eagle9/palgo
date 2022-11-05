@@ -1,0 +1,60 @@
+#various useful python code snippet 
+async def get_foo(para1):
+  return await get_something()
+
+res = await get_foo(p1)
+
+
+pandas   
+
+
+pd.set_option('display.max_columns', 500)
+pd.set_option('display.max_rows', 500)
+pd.options.display.max_colwidth = 500  #display column width
+df.hide_index()
+
+( cond1 ) & ( cond2) equivalent to np.logical_and(c1, c2)
+df4[ (df4['Cache Latency'] == 0.093) \
+    & (df4['DB Read Latency'] < 5) \
+    & (df4['DB Read Latency'] != 0.3) \
+
+df4.drop_duplicates(subset="col1",
+                     keep='last', inplace=True)
+df2.drop(columns=['col_foo'], inplace=True)
+
+#groupby and aggregate
+gb= df.groupby(['company','org'])
+df_agg = gb.agg({
+        'begin_time': np.min,
+        'end_time': np.max,
+        'read_count': np.sum,
+        'read_time': np.mean
+        }).reset_index()
+df_agg.rename(columns= {
+        'begin_time': 'min_begin_time',
+        'end_time': 'max_end_time',
+        'read_count':'total_reads',
+        'read_time': 'avg_read_time'
+    })
+
+#read multiple csv files into 1 dataframe
+fn_list = [os.path.join(path, fn) for fn in os.listdir(path) if '.log' in fn]
+df_list = [pd.read_csv(fn, header=None, encoding='utf-8') for fn in fn_list]
+df = pd.concat(df_list) 
+#concat along columns use pd.concat([df1, df2], axis = 1)
+#use np.array can get shape
+#latency_array = np.array(  
+latency_array =     [[0.093, 0, 0, '4559450A|62D9DE6D'], [0.093, 0, 0, '45D7A960|62DED6BE'], [0.093, 0, 0, '|A41EC260|62D5029F'],
+            [0.093, 0.3, 12, '|6A61F2D0|62968B2E'], [0.093, 0.3, 12, '29953FDA|62C7CBC9'], 
+            [0.093,9, 24, '|9A50D06C|62C845D5'], [0.093,54, 96,'|3C6C6666|62CE6DAF'],
+            [2.093, 0, 0, '|BB727A2C|62E33311'], [5.093, 0, 0, '|F6E11600|62E36A85'],
+            [0.093, 4, 4, '|675883E2|630798BF'], [0.093, 2, 2, '|A5382948|630EF8CA'],
+            [0.093, 2, 2,'|A5382948|630EF8CA'], 
+            [0.093, 1, 1, '|92E5E1C6|6310F025'],
+                     [0.093, 0, 0, '|B587FB16|631772E2']
+           ]
+#)
+#print(latency_array.shape)
+df_latency = pd.DataFrame(data=latency_array,
+      columns=['Net Latency', 'DB Read Latency', 'DB Write Latency', 'request_id'])
+df_latency

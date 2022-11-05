@@ -1,9 +1,13 @@
+percona is behind open source mysql
+mysql performance tunining===>
+https://www.youtube.com/watch?v=0CqMv0ucqFA&t=9s
+
+
 sudo service mysql.server status
 sudo service mysql.server start/stop
 vi /etc/my.cnf
 vi /etc/init.d/mysql.server
 /usr/local/percona-server-5.7.31.34....
-
 
 drop user 'perfdev'@'%'; #% is the wildcard for any host
 create user 'perfdevr'@'%' identified by 'tempass';
@@ -47,3 +51,10 @@ set profiling=1;
 SELECT  * from foo;
 SELECT @@profiling;
 SHOW PROFILES;
+
+mysql -e <sql statement>
+
+show variables like 'version%'
+show variables like '%bin%log%'
+show variables like '%double%write%'
+show variables where variable_name in ('version', 'log_bin', 'innodedb_doublewrite')

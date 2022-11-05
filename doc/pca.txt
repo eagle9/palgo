@@ -1,0 +1,6 @@
+
+how to interpret PCA components
+https://scentellegher.github.io/machine-learning/2020/01/27/pca-loadings-sklearn.html
+
+how many components?  k =?  
+https://towardsdatascience.com/principal-component-analysis-pca-with-scikit-learn-1e84a0c731b0
