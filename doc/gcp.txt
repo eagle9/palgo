@@ -1,0 +1,13 @@
+create persistent disk with console.cloud.google.com
+lsblk   #lsblk 
+=============
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      8:0    0   20G  0 disk
+├─sda1   8:1    0  200M  0 part /boot/efi
+└─sda2   8:2    0 19.8G  0 part /
+sdb      8:16   0  512G  0 disk
+sdc      8:32   0 1000G  0 disk /mnt/disks/disk2
+
+
+gcloud beta compute ssh --zone "us-west1-b"   user@perf-foo-72cores-512gbram-1 --project "foo-dbeng-perf-test"
+gcloud [beta[ compute scp --recurse --zone xxx user@instance-host --project "xxxx"

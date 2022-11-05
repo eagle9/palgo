@@ -1,3 +1,10 @@
+sudo service mysql.server status
+sudo service mysql.server start/stop
+vi /etc/my.cnf
+vi /etc/init.d/mysql.server
+/usr/local/percona-server-5.7.31.34....
+
+
 drop user 'perfdev'@'%'; #% is the wildcard for any host
 create user 'perfdevr'@'%' identified by 'tempass';
 grant all privileges on *.* to 'perfdev'@'%';
@@ -34,3 +41,9 @@ service mysql.server status|start|stop
 vi /etc/my.cnf
 # InnoDB
 datadir                         = /data/mysql/data
+
+
+set profiling=1;
+SELECT  * from foo;
+SELECT @@profiling;
+SHOW PROFILES;
