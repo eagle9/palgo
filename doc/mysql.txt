@@ -10,8 +10,11 @@ vi /etc/init.d/mysql.server
 /usr/local/percona-server-5.7.31.34....
 
 drop user 'perfdev'@'%'; #% is the wildcard for any host
-create user 'perfdevr'@'%' identified by 'tempass';
-grant all privileges on *.* to 'perfdev'@'%';
+create user 'perfdev'@'%' identified by 'tempass';
+grant all privileges on *.* to 'perfdev'@'%'; #access denied
+grant all privileges on `%`.* to 'perfdev'@'%' ; #okay  https://stackoverflow.com/questions/8484722/access-denied-for-user-rootlocalhost-while-attempting-to-grant-privileges
+
+
 flush privileges; 
 
 select user,host from mysql.user;
