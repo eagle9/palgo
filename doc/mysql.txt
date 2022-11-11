@@ -1,3 +1,25 @@
+trouble shooting 
+ps -ef |grep mysqld #show process running
+but sudo service mysql.server status displayed error pid file not found
+used the following command and stopped the process
+sudo systemctl disable --now mysql.service
+
+# find /run/systemd/ | grep -i sql
+/run/systemd/generator.late/mysql.server8.service
+/run/systemd/generator.late/mini_producer-mysql_daily_status.stats.service
+/run/systemd/generator.late/mini_producer-mysql_db_size_extended.stats.service
+/run/systemd/generator.late/mysql.server.service
+/run/systemd/generator.late/mini_producer-mysql_table_size_extended.stats.service
+/run/systemd/generator.late/mysql.service
+[root@s-1 data]# less /run/systemd/generator.late/mysql.service
+
+# service mysql.server8.service status
+Redirecting to /bin/systemctl status mysql.server8.service
+● mysql.server8.service - LSB: start and stop MySQL (Percona Server)
+   Loaded: loaded (/etc/rc.d/init.d/mysql.server8; bad; vendor preset: disabled)
+   Active: inactive (dead)
+     Docs: man:systemd-sysv-generator(8)
+
 percona is behind open source mysql
 mysql performance tunining===>
 https://www.youtube.com/watch?v=0CqMv0ucqFA&t=9s
@@ -13,9 +35,7 @@ drop user 'perfdev'@'%'; #% is the wildcard for any host
 create user 'perfdev'@'%' identified by 'tempass';
 grant all privileges on *.* to 'perfdev'@'%'; #access denied
 grant all privileges on `%`.* to 'perfdev'@'%' ; #okay  https://stackoverflow.com/questions/8484722/access-denied-for-user-rootlocalhost-while-attempting-to-grant-privileges
-
-
-flush privileges; 
+flush privileges;  #this is key, don't forget this
 
 select user,host from mysql.user;
 show processlist;
@@ -25,7 +45,12 @@ SET global general_log = off;
 select @@GLOBAL.general_log;
 where is general log file? 
 
-
+mysql -uu -pp -hh -e "show variables like 'version'"
+show many variables
+==================
+show variables  where variable_name in ( 'version', 'sync_binlog', 'general_log', 'innodb_doublewrite', 'default_storage_engine', 'log_bin') ;
+show variables like '%connections%'
+show status like '%connections%'
 show create table my_table;
 CREATE TABLE my_table (
   a smallint(5) unsigned NOT NULL,
