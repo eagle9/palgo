@@ -1,3 +1,15 @@
+how to enable and disable hyper-threading
+https://www.baeldung.com/linux/disable-hyperthreading
+echo off | sudo tee /sys/devices/system/cpu/smt/control
+#verify ht is off, no pairing, nproc reduced in half
+grep -H . /sys/devices/system/cpu/cpu*/topology/thread_siblings_list
+nproc
+
+extract substring using awk
+$ STR="whatever dataBEGIN:Interesting dataEND:something else"
+$ awk -F'BEGIN:|END:' '{print $2}' <<< "$STR"
+Interesting data
+
 grep -v -e '^$' foo.txt |tr "\n" ","
 -e to use regex expression
 

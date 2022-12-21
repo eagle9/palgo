@@ -8,3 +8,8 @@ operator -- operating pods, control loop, controller, etc.
 operator is helpful for stateful application in k8s cluster
   also check helm charts that put all things togehter and work like package
 
+
+kc get pods -A |grep  shaun
+
+copy from local to pod
+kc cp mydumper   name-space/pod-name-6fd7767b49-wd7mb:/tmp/ -c container1 

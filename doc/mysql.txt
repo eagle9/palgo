@@ -1,5 +1,23 @@
-trouble shooting 
-ps -ef |grep mysqld #show process running
+mysql -uuser -ppass -hhost db -e "sql"
+select user from mysql.user where user like '%nag%'\G
+#enable promeheus monitoring, create nagios user
+cat /share/software/puppet/serve-files/nagios_user.sql
+alias |grep root  #find root pass from  
+mysql -uroot -p
+
+CREATE USER 'nagios'@'localhost' IDENTIFIED BY aPassKnownByExporter 
+#for pass sudo cat /pfshared/software/puppet/serve-files/nagios_user.sql
+alter user 'nagios'@'localhost' with MAX_USER_CONNECTIONS 3;
+GRANT PROCESS, REPLICATION CLIENT, SELECT on *.*  TO 'nagios'@'localhost'
+CREATE DATABASE IF NOT EXISTS vgmon;
+CREATE TABLE IF NOT EXISTS `heartbeat` (
+  `id` int(11) NOT NULL,
+  `ts` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+ps -ef |grep mysqld #show mysql daemon process running where the actual mysqld is located
 but sudo service mysql.server status displayed error pid file not found
 used the following command and stopped the process
 sudo systemctl disable --now mysql.service
@@ -24,9 +42,19 @@ percona is behind open source mysql
 mysql performance tunining===>
 https://www.youtube.com/watch?v=0CqMv0ucqFA&t=9s
 
-
+ls -l /etc/my.cnf  #link to my.conf.5 or my.conf.8.prod
 sudo service mysql.server status
 sudo service mysql.server start/stop
+after current mysql.server service stopped
+unlink my.cnf
+ln -s my.conf.8 my.conf
+cd /data
+cp mysql8 mysql
+chown -R mysql:mysql mysql
+service mysql.server8 start #/etc/init.d/mysql.server8
+if error check .err file under data/mysql/data 
+
+cd /data
 vi /etc/my.cnf
 vi /etc/init.d/mysql.server
 /usr/local/percona-server-5.7.31.34....
@@ -34,6 +62,8 @@ vi /etc/init.d/mysql.server
 drop user 'perfdev'@'%'; #% is the wildcard for any host
 create user 'perfdev'@'%' identified by 'tempass';
 grant all privileges on *.* to 'perfdev'@'%'; #access denied
+alter user 'perfdev'@'%' with MAX_QUERIES_PER_HOUR 3000000;
+select * from mysql.user where user in ('perfdev')\G
 grant all privileges on `%`.* to 'perfdev'@'%' ; #okay  https://stackoverflow.com/questions/8484722/access-denied-for-user-rootlocalhost-while-attempting-to-grant-privileges
 flush privileges;  #this is key, don't forget this
 

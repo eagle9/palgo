@@ -9,5 +9,3 @@ sdb      8:16   0  512G  0 disk
 sdc      8:32   0 1000G  0 disk /mnt/disks/disk2
 
 
-gcloud beta compute ssh --zone "us-west1-b"   user@perf-foo-72cores-512gbram-1 --project "foo-dbeng-perf-test"
-gcloud [beta[ compute scp --recurse --zone xxx user@instance-host --project "xxxx"

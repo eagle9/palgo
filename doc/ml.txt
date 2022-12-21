@@ -110,8 +110,6 @@ andrew ng, data centric ML, error analysis, label consistency
 
 workflow, long tail scenarios, 
 
-
-
 google assistant
   domain (personal -- easier to gauge engagement, information is harder to evaluat user engagement, command, music, stock, sports, etc. )
   how helpful score (ranking categories, how many is good? ), use what loss function 
