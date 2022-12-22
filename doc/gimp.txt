@@ -1,0 +1,14 @@
+first up install gimp for mac
+
+rotate jgp, png image first using preview, not gimp
+
+then open the image with gimp
+
+1) use <color picker tool> select the color near the text you want to edit
+
+2) use <paintbrush tool> to wipe the text out
+
+3) choose <text tool> to enter text at proper location,
+the text tool allows you choose color, you can move
+and resize the text box to control the text size and position 
+
