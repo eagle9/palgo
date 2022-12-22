@@ -8,8 +8,20 @@ operator -- operating pods, control loop, controller, etc.
 operator is helpful for stateful application in k8s cluster
   also check helm charts that put all things togehter and work like package
 
-
+before you can do kubectl, usually authentication is required
+alias kc='kubectl --kubeconfig=./kubeconfig'
 kc get pods -A |grep  shaun
 
 copy from local to pod
-kc cp mydumper   name-space/pod-name-6fd7767b49-wd7mb:/tmp/ -c container1 
+kc cp mydumper   name-space/pod-name:/tmp/ -c container1 
+copy from pod to local
+kc cp name-space/pod-name:/tmp/mydumper ./mydumper -c container1 
+
+host1:~$ ssh -F/dev/null -p 321 -L 9090:127.0.0.1:13000 host2 -o "ServerAliveInterval 240"
+host2:~$ kc port-forward  pod_name 13000:13020  #13000 is the port at local host, 13020 is the service port at pod_name
+note: host1:9090 <--> host2:13000 <--> pod_name:13020
+browser at host1: http://localhost:9090/servicel_url
+
+port forward using svc, rather than pod
+kc get svc -n scylla-monitoring  |grep grafana
+grafana                       ClusterIP   192.168.204.187   <none>        3000/TCP,9965/TCP            3d
