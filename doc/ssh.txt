@@ -1,0 +1,5 @@
+
+ssh -L 8080:localhost:80 user@1.2.3.4 -N
+L for local port forwarding
+N for no command, just establish connection 
+forward traffic from localhost 8080 to remote host 1.2.3.4 port 80
