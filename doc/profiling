@@ -1,0 +1,18 @@
+async-profiler
+
+  async --> asychronously collecting the stack trace sample and non blocking
+  the overhead depends on the frequency, at 1Hz, the overhead is minimal
+  
+  overhead also depends on profiling type(mode):  cpu and memory
+     cpu just stack trace, minimal
+     memor mode, have to track memory alloc and dealloc, which is more resource intensive
+  async-profiler is more suitable for cpu profiling, for memory, it can do with alloc event, but better analysis in conjunction with other tools
+
+  async-profiler suffers JVM safepoint bias, that means the methods between safepoint won't be sampled
+  JVM needs safepoint to suspend the execution of all threads to perform tasks that require a globally consistent view of the application's state
+  safepoints are locations in the application's code where all threads are guaranteed to be in a safe and consistent state
+
+    
+
+
+linux perf does not suffer JVM safepoint bias,  but it can not get JVM related insights
