@@ -1,0 +1,20 @@
+customized gpt
+  expanded knowledge, instructions, actions
+  program gpt with just talking to it (using natural language)
+  build your own gpt, distribute and let it be discovered
+
+
+openai assistant api
+tools
+  1.code interpreter
+    allows the model(gpt) to run code in a sandboxed safe environment
+      it can perform math, run code and even process files, 
+        generate charts on your behalf
+   with assisant api,  you app now able to call code interpreter directly and get its outputs directly in the API
+  2.retrieval 
+    no need for you to compute embeddings, to store them, to figure out semantic search. 
+    assistant api can figure all these out on your behalf
+
+  3.functional calling
+     
+

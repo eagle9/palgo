@@ -5,6 +5,10 @@ cat /share/software/puppet/serve-files/nagios_user.sql
 alias |grep root  #find root pass from  
 mysql -uroot -p
 
+mysql -h mydb.us-west-2.rds.amazonaws.com -u root -p
+ 
+CREATE USER 'foobar_admin'@'%' IDENTIFIED BY 'Usethepasswordfromcredstash';
+
 CREATE USER 'nagios'@'localhost' IDENTIFIED BY aPassKnownByExporter 
 #for pass sudo cat /pfshared/software/puppet/serve-files/nagios_user.sql
 alter user 'nagios'@'localhost' with MAX_USER_CONNECTIONS 3;
